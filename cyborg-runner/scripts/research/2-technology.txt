@@ -1,0 +1,93 @@
+# For basic technology
+
+import mods.ResearchTable;
+
+var tech = ResearchTable.addCategory(<xnet:controller>);
+
+// Ceramics
+ResearchTable.builder("ceramics", tech)
+  .setIcons(<ceramics:porcelain_barrel>)
+  .setTitle("Ceramics")
+  .setDescription("Apply logic and reasoning to determine how to work with clay.")
+  .addCondition(<minecraft:clay>*2)
+  .addCondition(<minecraft:coal_block>|<thermalfoundation:storage_resource>)
+  .setRewardStages("ceramics")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<ceramics:unfired_clay:4>*4)
+  .setMaxCount(1)
+  .build();
+
+// Artisan's Worktables (Advanced Crafting)
+ResearchTable.builder("advanced_crafting", tech)
+  .setIcons(<artisanworktables:worktable:5>)
+  .setTitle("Advanced Crafting")
+  .setRequiredResearches("ceramics")
+  .setDescription("Find out ways to craft more advanced work stations, as well as some items.")
+  .addCondition(<ceramics:porcelain>)
+  .addCondition(<ore:workbench>*4)
+  .setRewardStages("advanced_crafting")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<artisanworktables:artisans_cutters_stone>*1)
+  .setMaxCount(1)
+  .build();
+
+// Technology (Thermal Mods)
+ResearchTable.builder("technology", tech)
+  .setIcons(<thermalexpansion:machine>)
+  .setTitle("Technology")
+  .setRequiredResearches("ceramics")
+  .setDescription("Experiment for a bit an try to make some better devices.")
+  .addCondition(<thermalfoundation:material:259>)
+  .addCondition(<thermalfoundation:material:258>)
+  .addCondition(<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}))
+  .addCondition(<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}))
+  .setRewardStages("technology")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<minecraft:coal_block>*3)
+  .setMaxCount(1)
+  .build();
+
+// Storage Compression (Refined Storage)
+ResearchTable.builder("storage", tech)
+  .setIcons(<refinedstorage:controller>)
+  .setRequiredResearches("technology")
+  .setTitle("Storage Compression")
+  .setDescription("Look into ways to further compress storage.")
+  .addCondition(<ore:blockQuartz>)
+  .addCondition(<minecraft:iron_block>*2)
+  .addCondition(<minecraft:gold_ingot>*4)
+  .setRewardStages("storage_compression")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<refinedstorage:storage_part>)
+  .setMaxCount(1)
+  .build();
+
+// Advanced Tools (Thermal Innovation)
+ResearchTable.builder("advanced_tools", tech)
+  .setIcons(<thermalinnovation:drill:4>)
+  .setRequiredResearches("technology")
+  .setTitle("Advanced Tools")
+  .setDescription("Try to apply technology to tool crafting.")
+  .addCondition(<ore:ingotConstantan>*4)
+  .addCondition(<glacidus:glacidite_pickaxe>)
+  .setRewardStages("technological_tools")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<thermalfoundation:material:640>)
+  .setMaxCount(1)
+  .build();
+### EVERYTHING ABOVE THIS LINE HAS BEEN MIGRATED! ###
+
+
+// Ore Excavation
+ResearchTable.builder("mining", tech)
+  .setIcons(<minecraft:diamond_pickaxe>)
+  .setTitle("Ore Vein Excavation")
+  .setRequiredResearches("advanced_tools")
+  .setDescription("Determine how you may mine a large area of blocks at once.")
+  .addCondition(<minecraft:diamond_shovel>)
+  .addCondition(<minecraft:diamond_pickaxe>)
+  .setRewardStages("mining")
+  .setRewardCommands("/say Updating mining systems archives....update complete.")
+  .setRewardItems(<minecraft:experience_bottle>*4)
+  .setMaxCount(1)
+  .build();

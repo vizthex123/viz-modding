@@ -1,0 +1,46 @@
+Armour Tiers:
+
+Clay - Defense 2 (T1)  {7}
+Leather - Defense 2 (T1)  {7}
+Bone - Defense 2, Agility 2 (T2) {10, 1 Toughness}
+
+Chainmail - Agility 3 (T2.5) {12}
+Iron - Defense 5 (T3) {12, 2 Toughness}
+
+Gold - Defense 7, Agility 5 (T3.5) {8}
+Pristeel - Defense 10 (T4) {15, 4 Toughness}
+Diamond -  Defense 15, Agility 10 (T5) {20, 8 Toughness}
+
+Vulcanite - N/A (T6) {13}
+Glacidite - N/A (T7) {20, 8 Toughness}
+
+New Values:
+Leather - 7 (default)
+Clay - 7 + 1 Toughness
+Bone - 10 + 1 Toughness (current)
+
+Chainmail - 12 (default)
+Iron - 15 (default)
+
+Gold - 15 + 2 Toughness (Armor: 3/5/4/3, Toughness: 0/1/1/0)
+Pristeel - 17 + 4 Toughness (Armor: 3/6/5/3, Toughness: 1/1/1/1)
+Diamond - 20 + 8 Toughness (default)
+
+Vulcanite - 24 + 10 Toughness (Armor: 5/8/6/5, Toughness: 2/3/3/2)
+Glacidite - 30 + 15 Toughness (Armor: 7/9/8/6, Toughness: 3/5/4/3)
+
+
+
+TE Armours:
+Platinum - Same as Diamond, 12 Toughness (3 per piece) {20+8T}
+Steel - 16 + 5 Toughness (between Iron and Pristeel) {18+5T}
+Invar - Remove Toughness {16/4T}
+Bronze - 15 {16/4T}
+Constantan - {12}
+
+Electrum (Disable)
+
+
+Bonus Armour Sets:
+Modular Scuba - Make it the same as Iron
+Merialces Hide - Figure out where to place it

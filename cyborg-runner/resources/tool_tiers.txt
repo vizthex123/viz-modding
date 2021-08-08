@@ -1,0 +1,28 @@
+Requirements are Farming for Hoes, Attack for Swords, and Mining for Pickaxe/axe/shovel
+
+Bone - 1 (no need to add to config)
+Iron - 3
+Gold - 3, Agility 3
+Pristeel - 5, Agility 5 (dagger is 1 less)
+Diamond - 10, Agility 10
+Tamrelite - 12, Agility 8
+Pendorite - 15, Gathering 10
+Kasai - 15, Building 3
+Latharium - 15, Farming 5
+Vulcanite - 20, Defense 5
+
+Glacidite - 16, Gathering 5
+
+Paxels - 1 higher than their component
+Universal Tools - 1 higher than paxel, Building 3. (Farming stat - 1 higher than hoe's requirement)
+
+
+Extras:
+All of Natura's - 5, Gathering 5
+
+
+Check on how to get Glacidus ones:
+Eukeite
+Underground
+Antinatric
+Glacidite

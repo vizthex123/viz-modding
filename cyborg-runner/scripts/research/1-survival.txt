@@ -1,0 +1,76 @@
+# For various survival-oriented things
+
+import mods.ResearchTable;
+
+var survival = ResearchTable.addCategory(<minecraft:furnace>);
+
+// Basic Cooking
+ResearchTable.builder("cooking", survival)
+  .setIcons(<minecraft:cooked_beef>)
+  .setTitle("Basic Cooking")
+  .setDescription("Experiment a bit and try to figure out how to cook a few basic meals.")
+  .addCondition(<ore:listAllmeatraw>*4)
+  .addCondition(<minecraft:melon_block>*2)
+  .setRewardStages("cooking")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<minecraft:coal:1>*1)
+  .setMaxCount(1)
+  .build();
+
+// Advanced Cooking
+ResearchTable.builder("advanced_cooking", survival)
+  .setIcons(<xlfoodmod:pumpkin_stew>)
+  .setTitle("Advanced Cooking")
+  .setDescription("See if it's possible to make more advanced foods. Like some kind of liquidy bowl of various ingredients?")
+  .setRequiredResearches("cooking")
+  .setRequiredResearches("advanced_crafting")
+  .addCondition(<minecraft:bread>*3)
+  .addCondition(<ore:listAllmeatcooked>*8)
+  .setRewardStages("advanced_cooking")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<minecraft:coal:1>*3)
+  .setMaxCount(1)
+  .build();
+
+// Special Cooking
+ResearchTable.builder("special_cooking", survival)
+  .setIcons(<minecraft:golden_apple>)
+  .setTitle("Special Cooking")
+  .setDescription("There are a few special foods that I could embue with some Gold, might make them more nutritious? Or at least taste interesting....")
+  .setRequiredResearches("advanced_cooking")
+  .addCondition(<minecraft:golden_apple>|<minecraft:golden_apple:1>)
+  .addCondition(<ore:advPie>*3)
+  .setRewardStages("special_cooking")
+  .setRewardCommands("/say Updating recipe archives....update complete. Why did you do this?")
+  .setRewardItems(<minecraft:coal:1>*6)
+  .setMaxCount(1)
+  .build();
+
+// Beverages
+ResearchTable.builder("drinks", survival)
+  .setIcons(<xlfoodmod:super_energy_drink>)
+  .setTitle("Beverages")
+  .setDescription("Some drinks might be nice while I'm running around. Hopefully better than what the IPC had.")
+  .setRequiredResearches("cooking")
+  .addCondition(<xlfoodmod:coffee_cup>*2)
+  .addCondition(<xlfoodmod:empty_can>*3)
+  .setRewardStages("drinks")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<minecraft:water_bucket>)
+  .setMaxCount(1)
+  .build();
+
+// Defense (Open Modular Turrets)
+ResearchTable.builder("defense", survival)
+  .setIcons(<openmodularturrets:turret_base:4>)
+  .setTitle("Base Defenses")
+  .setDescription("I'll need to be able to construct some basic defensive structures to ward off the plague's victims.")
+  .setRequiredResearches("advanced_crafting")
+  .addCondition(<ore:ingotBronze>*3)
+  .addCondition(<minecraft:stonebrick:*>*8)
+  .setRewardStages("base_defense")
+  .setRewardCommands("/say Updating recipe archives....update complete.")
+  .setRewardItems(<openblocks:beartrap>)
+  .setMaxCount(1)
+  .build();
+### EVERYTHING ABOVE THIS LINE HAS BEEN MIGRATED! ###

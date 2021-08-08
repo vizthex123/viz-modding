@@ -1,0 +1,10 @@
+nutrient.nutrition:sugars=Sugars
+nutrient.nutrition:grain=Grains
+nutrient.nutrition:fruit=Fruits
+nutrient.nutrition:protein=Proteins
+nutrient.nutrition:vegetable=Vegetables
+nutrient.nutrition:dairy=Dairy
+potion.nutrition:toughness=Fortitude
+material.athenaeum.iridium=Iridium
+tile.artisanworktables.worktable.chemist.name=Scientist's Worktable
+tile.artisanworktables.workstation.chemist.name=Scientist's Workstation
