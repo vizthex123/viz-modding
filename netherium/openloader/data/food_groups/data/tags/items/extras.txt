@@ -1,0 +1,18 @@
+fruits:
+, "contenttweaker:fruit_gummy"
+
+grains:
+, "contenttweaker:cellulose_capsule"
+
+proteins:
+, "contenttweaker:protein_supplement"
+
+sugars:
+, "contenttweaker:sugar_pill"
+
+vegetables:
+, "contenttweaker:vegetable_capsule"
+
+
+vitamins:
+, "contenttweaker:vitamin_tablet", "contenttweaker:multi_vitamins", "contenttweaker:fruit_gummy", "contenttweaker:veggetable_capsule", "contenttweaker:protein_supplement", "contenttweaker:cellulose_capsule"

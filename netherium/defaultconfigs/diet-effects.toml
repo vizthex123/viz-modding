@@ -1,0 +1,129 @@
+[[effects]]
+    [[effects.conditions]]
+        groups = ["grains", "proteins", "fruits", "vegetables", "vitamins"]
+        match = "every"
+        above = 0.85
+        below = 1.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.max_health"
+        operation = "add"
+        amount = 2.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.attack_damage"
+        operation = "add"
+        amount = 0.5
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["proteins", "vitamins"]
+        match = "all"
+        above = 0.9
+        below = 1.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.armor_toughness"
+        operation = "add"
+        amount = 2.0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["vitamins"]
+        match = "every"
+        above = 0.8
+        below = 1.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.luck"
+        operation = "add"
+        amount = 1.0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["vitamins", "sugars"]
+        match = "every"
+        above = 0.85
+        below = 1.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.movement_speed"
+        operation = "add"
+        amount = 0.05
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["proteins", "fruits", "vegetables", "grains"]
+        match = "average"
+        above = 0.6
+        below = 1.0
+		
+    [[effects.attributes]]
+        name = "minecraft:generic.knockback_resistance"
+        operation = "add"
+        amount = 1.0
+		
+		
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["fruits"]
+        match = "all"
+        above = 0.0
+        below = 0.2
+		
+    [[effects.status_effects]]
+        name = "minecraft:weakness"
+        power = 0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["vegetables"]
+        match = "all"
+        above = 0.0
+        below = 0.3
+		
+    [[effects.status_effects]]
+        name = "minecraft:posion"
+        power = 0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["vitamins"]
+        match = "all"
+        above = 0.0
+        below = 0.35
+
+    [[effects.status_effects]]
+        name = "minecraft:blindness"
+        power = 0
+		
+    [[effects.status_effects]]
+        name = "minecraft:slowness"
+        power = 0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["proteins"]
+        match = "all"
+        above = 0.0
+        below = 0.25
+
+    [[effects.status_effects]]
+        name = "minecraft:slowness"
+        power = 1
+		
+    [[effects.status_effects]]
+        name = "minecraft:hunger"
+        power = 0
+		
+[[effects]]
+    [[effects.conditions]]
+        groups = ["sugars"]
+        match = "all"
+        above = 0.0
+        below = 0.15
+
+    [[effects.status_effects]]
+        name = "minecraft:slowness"
+        power = 0

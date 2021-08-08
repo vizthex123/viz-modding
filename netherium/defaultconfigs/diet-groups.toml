@@ -1,0 +1,53 @@
+[[groups]]
+    name = "grains"
+    icon = "minecraft:bread"
+    color = "#d4a31c"
+    order = 1
+    default_value = 0.5
+    gain_multiplier = 1.0
+    decay_multiplier = 1.0
+	
+[[groups]]
+    name = "fruits"
+    icon = "minecraft:apple"
+    color = "#d41c53"
+    order = 2
+    default_value = 0.45
+    gain_multiplier = 1.0
+    decay_multiplier = 1.0
+
+[[groups]]
+    name = "vegetables"
+    icon = "minecraft:carrot"
+    color = "#31d41c"
+    order = 3
+    default_value = 0.4
+    gain_multiplier = 1.0
+    decay_multiplier = 1.0
+	
+[[groups]]
+    name = "proteins"
+    icon = "minecraft:cooked_beef"
+    color = "#d4781c"
+    order = 4
+    default_value = 0.35
+    gain_multiplier = 1.0
+    decay_multiplier = 0.85
+	
+[[groups]]
+    name = "vitamins"
+    icon = "contenttweaker:multi_vitamins"
+    color = "#ff8fe9"
+    order = 5
+    default_value = 0.6
+    gain_multiplier = 1.0
+    decay_multiplier = 0.5
+	
+[[groups]]
+    name = "sugars"
+    icon = "minecraft:honey_bottle"
+    color = "#ffffff"
+    order = 6
+    default_value = 0.75
+    gain_multiplier = 1.0
+    decay_multiplier = 1.25
