@@ -1,4 +1,4 @@
-# viz-modding
+# vizthex's Project Repo
 The GitHub repository for all of my Minecraft modpacks. Mods will have their own seperate repositories (since it's a bunch of code).
  
 From now on, this is where you'll report issues, make suggestions, etc. outside of the Discord (or even CurseForge comments - just **don't** report issues there).
