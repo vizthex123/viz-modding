@@ -1,0 +1,19 @@
+{
+	"general": {
+	"initialSpawnDimension": 0
+},
+"rules": [
+		{
+			"appliesTo": [
+					0
+			],
+			"canRespawnHere": true,
+			"canSleepHere": true,
+			"spawnPoint": {
+					"posX": 125,
+					"posY": 230,
+					"posZ": 1416
+			}
+		}
+	]
+}
