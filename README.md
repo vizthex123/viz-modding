@@ -5,6 +5,11 @@ From now on, this is where you'll report issues, make suggestions, etc. outside 
 
 The files in here will be my scripts, custom item textures, default configs (if the pack is for 1.16) and a few development notes I've made.
 
+*If you would like to provide translations for my ContentTweaker items, please make a [pull request.](https://github.com/vizthex123/viz-projects/pulls) Don't forget to include the lang file(s)!*
+
+*If you would like to translate one of my mods, make a pull request on that mod's page. Don't forget to include the lang file(s)!*
+
+
 Discord (for all of my projects): https://discord.gg/NtwzA6X
 
 Report/view issues here: https://github.com/vizthex123/viz-modding/issues
