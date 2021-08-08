@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "DesertDungeon",
+  "items": [
+    {
+      "weight": 25.946786880493164,
+      "min": 2,
+      "max": 8,
+      "item": {
+        "id": "minecraft:diamond",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 25.946786880493164,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "minecraft:emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 35.04269027709961,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:gold_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 50.30833435058594,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

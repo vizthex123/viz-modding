@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "TerrorTomb",
+  "items": [
+    {
+      "weight": 2.9194812774658203,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:beef",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.910394668579102,
+      "min": 1,
+      "max": 14,
+      "item": {
+        "id": "minecraft:porkchop",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.540874481201172,
+      "min": 1,
+      "max": 18,
+      "item": {
+        "id": "minecraft:chicken",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.065970420837402,
+      "min": 1,
+      "max": 11,
+      "item": {
+        "id": "minecraft:rabbit",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

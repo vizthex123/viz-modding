@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "TerrorTomb",
+  "items": [
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_helmet",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_chestplate",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_leggings",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_boots",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 5.2210845947265625,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "minecraft:iron_block",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.5707483291625977,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "minecraft:gold_block",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.333380699157715,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_pickaxe",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.333380699157715,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_axe",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

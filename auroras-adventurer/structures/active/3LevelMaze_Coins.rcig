@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "3LevelMaze",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "ordinarycoins:coinbronze",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "ordinarycoins:coinsilver",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25986868143081665,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "ordinarycoins:coingold",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.12706157565116882,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "ordinarycoins:coinplatinum",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "$reccomplex \u0026 mod:ordinarycoins"
+}

@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "DesertDungeon",
+  "items": [
+    {
+      "weight": 25.946786880493164,
+      "min": 1,
+      "max": 17,
+      "item": {
+        "id": "minecraft:arrow",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 25.946786880493164,
+      "min": 3,
+      "max": 16,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:harming"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 25.946786880493164,
+      "min": 4,
+      "max": 20,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:healing"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

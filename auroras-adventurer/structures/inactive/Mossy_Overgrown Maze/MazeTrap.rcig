@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "vizMaze",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 6,
+      "max": 20,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:harming"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

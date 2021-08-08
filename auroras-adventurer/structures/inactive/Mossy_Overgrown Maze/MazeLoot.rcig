@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "vizMaze",
+  "items": [
+    {
+      "weight": 22.68061065673828,
+      "min": 1,
+      "max": 12,
+      "item": {
+        "id": "minecraft:slime_ball",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 17.973718643188477,
+      "min": 4,
+      "max": 6,
+      "item": {
+        "id": "minecraft:gold_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 38.06190872192383,
+      "min": 2,
+      "max": 7,
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

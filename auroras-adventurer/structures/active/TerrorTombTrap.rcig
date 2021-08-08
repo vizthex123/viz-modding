@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "TerrorTomb",
+  "items": [
+    {
+      "weight": 99.99998474121094,
+      "min": 1,
+      "max": 18,
+      "item": {
+        "id": "minecraft:tipped_arrow",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:strong_harming"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

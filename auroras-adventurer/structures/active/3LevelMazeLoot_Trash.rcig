@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "3LevelMaze",
+  "items": [
+    {
+      "weight": 99.99998474121094,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:web",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
