@@ -43,7 +43,8 @@ print("3-above_average_amc.zs loading...");
 <tag:items:amc-value:105>.add(<item:minecraft:cod_bucket>);
 <tag:items:amc-value:105>.add(<item:minecraft:tropical_fish_bucket>);
 
-<tag:items:amc-value:125>.add(<item:extendedcrafting:pedestal>);
+<tag:items:amc-value:110>.add(<item:minecraft:skull_banner_pattern>);
+
 <tag:items:amc-value:125>.add(<item:minecraft:nautilus_shell>);
 <tag:items:amc-value:125>.add(<item:minecraft:turtle_helmet>);
 <tag:items:amc-value:125>.add(<item:minecraft:minecart>);
@@ -94,7 +95,6 @@ print("3-above_average_amc.zs loading...");
 <tag:items:amc-value:175>.add(<item:minecraft:cauldron>);
 
 <tag:items:amc-value:180>.add(<item:minecraft:coal_block>);
-<tag:items:amc-value:180>.add(<item:thermal:lead_block>);
 <tag:items:amc-value:180>.add(<item:minecraft:lectern>);
 
 <tag:items:amc-value:180>.add(<item:watercan:watercan_iron>); // Should be 179
@@ -119,7 +119,6 @@ print("3-above_average_amc.zs loading...");
 
 <tag:items:amc-value:210>.add(<item:minecraft:dark_prismarine>);
 
-<tag:items:amc-value:215>.add(<item:extendedcrafting:frame>);
 <tag:items:amc-value:215>.add(<item:minecraft:map>);
 
 <tag:items:amc-value:225>.add(<item:minecraft:prismarine_bricks>);

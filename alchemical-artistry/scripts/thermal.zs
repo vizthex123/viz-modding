@@ -1,8 +1,17 @@
 # Adds recipes to Thermal "Series'" stuff
 
 import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.item.IItemStack;
 
 print("thermal.zs loading...");
+
+// Make the Gearworking Die from any gears
+// Not sure why this isn't hte default tbh...
+<recipetype:minecraft:crafting>.removeRecipe(<item:thermal:press_gear_die>);
+craftingTable.addShaped("gear_press_unused", <item:thermal:press_gear_die>, 
+    [[<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>],
+    [<item:thermal:invar_plate>, <tag:items:forge:gears>, <item:thermal:invar_plate>],
+    [<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>]]);
 
 // Sawdust > Paper
 craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>, 

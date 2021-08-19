@@ -28,13 +28,18 @@ val white = "\u00A7f";
 <tag:items:amc-value:5000>.add(<item:minecraft:nether_star>);
 <tag:items:amc-value:5000>.add(<item:minecraft:elytra>);
 
+<tag:items:amc-value:5010>.add(<item:minecraft:mojang_banner_pattern>);
+
 <tag:items:amc-value:5305>.add(<item:minecraft:beacon>);
+
 
 // 6,000's AMC
 <tag:items:amc-value:6000>.add(<item:minecraft:conduit>);
 
+
 // 7,000's AMC
 <tag:items:amc-value:7000>.add(<item:minecraft:diamond_horse_armor>);
+
 
 // 9,000's AMC
 <tag:items:amc-value:9000>.add(<item:minecraft:diamond_block>);
@@ -46,7 +51,5 @@ val white = "\u00A7f";
 
 <tag:items:amc-value:19800>.add(<item:minecraft:netherite_block>);
 
-// Way too high AMC's
-<tag:items:amc-value:45000>.add(<item:extendedcrafting:nether_star_block>);
 
 print("7-insane_amc.zs loaded");

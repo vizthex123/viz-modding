@@ -40,6 +40,11 @@ new ItemBuilder()
     .withMaxStackSize(64)
     .build("alchemical_crystallization_catalyst");
 
+// Alchemical Crystalpression Catalyst
+new ItemBuilder()
+    .withMaxStackSize(64)
+    .build("alchemical_crystalpress_catalyst");
+
 
 ### AMC Crystals
 # Gained by Ender Crafting/Induction Smelting items with odd values (6, 27, 72, etc.)

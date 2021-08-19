@@ -49,11 +49,15 @@ val white = "\u00A7f";
 
 
 // 3,000's AMC
-<tag:items:amc-value:3150>.add(<item:minecraft:respawn_anchor>);
 <tag:items:amc-value:3049>.add(<item:heartcanisters:empty_canister>);
+<tag:items:amc-value:3150>.add(<item:minecraft:respawn_anchor>);
 <tag:items:amc-value:3299>.add(<item:heartcanisters:heart_canister>);
+
+<tag:items:amc-value:3605>.add(<item:disenchanting:disenchanter>);
+
 
 // 4,000's AMC [End]
 <tag:items:amc-value:4080>.add(<item:watercan:watercan_diamond>); // Should be 4,079
+
 
 print("6-extreme.zs loaded");

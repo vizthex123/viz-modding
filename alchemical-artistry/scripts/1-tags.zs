@@ -14,6 +14,13 @@ print("1-tags.zs loading...");
 <tag:items:forge:workbench>.add(<item:minecraft:crafting_table>);
 
 
+# Music Discs
+<tag:items:minecraft:music_discs>.add(<item:oddwatermobs:bathosphere>);
+<tag:items:minecraft:music_discs>.add(<item:oddwatermobs:coelacanth_record>);
+<tag:items:minecraft:music_discs>.add(<item:oddwatermobs:seapig_record>);
+
+
+
 # Mushrooms
 <tag:items:forge:mushrooms>.add(<item:minecraft:warped_fungus>);
 <tag:items:forge:mushrooms>.add(<item:minecraft:crimson_fungus>);

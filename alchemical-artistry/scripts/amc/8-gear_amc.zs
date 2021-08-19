@@ -106,9 +106,13 @@ print("8-gear_amc.zs loading...");
 // Hazmat
 
 
+// Diving
+
 
 # Misc
 <tag:items:amc-value:100>.add(<item:minecraft:shears>);
+<tag:items:amc-value:30>.add(<item:minecraft:shield>);
+<tag:items:amc-value:30>.add(<item:minecraft:lead>); // Should be 33
 
 
 print("8-gear_amc.zs loaded");

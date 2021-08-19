@@ -9,7 +9,39 @@ furnace.removeByName("recipe");
 craftingTable.removeByName("recipeName");
 */
 
-// With Skeleton Tweaks' swords
+// Unused Extended Crafting content
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ultimate_table>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ultimate_auto_table>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ultimate_component>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ultimate_catalyst>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ender_component>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ender_catalyst>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:enhanced_ender_component>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:enhanced_ender_catalyst>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crystaltine_component>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crystaltine_catalyst>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:the_ultimate_component>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:the_ultimate_catalyst>);
+
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ender_star>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:ender_star_block>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:enhanced_ender_nugget>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:enhanced_ender_ingot>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:enhanced_ender_ingot_block>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crystaltine_nugget>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crystaltine_ingot>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crystaltine_block>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:the_ultimate_nugget>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:the_ultimate_ingot>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:the_ultimate_block>);
+
+
+mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:ender_star>);
+mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:enhanced_ender_ingot>);
+mods.extendedcrafting.TableCrafting.remove(<item:extendedcrafting:crystaltine_ingot>);
+
+
+// Wither Skeleton Tweaks' swords
 <recipetype:minecraft:crafting>.removeRecipe(<item:wstweaks:lava_blade>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:wstweaks:blaze_blade>);
 

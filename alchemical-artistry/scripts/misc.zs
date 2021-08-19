@@ -1,5 +1,7 @@
 # Adds recipes that don't fit anywhere else
+
 import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.SmithingManager;
 
 print("misc.zs loading...");
@@ -68,6 +70,20 @@ craftingTable.addShaped("advanced_auto_table", <item:extendedcrafting:advanced_a
     [<item:extendedcrafting:redstone_component>, <item:extendedcrafting:advanced_table>, <item:extendedcrafting:redstone_component>],
     [<item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:advanced_component>, <item:extendedcrafting:redstone_ingot>]]);
 
+// Elite
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:elite_table>);
+craftingTable.addShaped("elite_table", <item:extendedcrafting:elite_table>, 
+    [[<item:minecraft:diamond>, <item:extendedcrafting:elite_component>, <item:minecraft:diamond>],
+    [<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:advanced_table>, <item:extendedcrafting:black_iron_slate>],
+    [<item:minecraft:diamond>, <item:extendedcrafting:black_iron_slate>, <item:minecraft:diamond>]]);
+
+// Elite Autocrafting
+<recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:elite_auto_table>);
+craftingTable.addShaped("elite_auto_table", <item:extendedcrafting:elite_auto_table>, 
+    [[<item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:redstone_ingot>],
+    [<item:extendedcrafting:redstone_component>, <item:extendedcrafting:elite_table>, <item:extendedcrafting:redstone_component>],
+    [<item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:elite_component>, <item:extendedcrafting:redstone_ingot>]]);
+
 // New Quantum Compressor recipe
 <recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:compressor>);
 mods.extendedcrafting.TableCrafting.addShaped("quantum_compressor", 0, <item:extendedcrafting:compressor>, 
@@ -78,9 +94,9 @@ mods.extendedcrafting.TableCrafting.addShaped("quantum_compressor", 0, <item:ext
 // New Crafting Core recipes
 <recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:crafting_core>);
 mods.extendedcrafting.TableCrafting.addShaped("crafting_core", 0, <item:extendedcrafting:crafting_core>, 
-	[[<item:minecraft:diamond>, <item:extendedcrafting:advanced_catalyst>, <item:minecraft:diamond>], 
+	[[<item:heartcanisters:cut_diamond>, <item:extendedcrafting:advanced_catalyst>, <item:heartcanisters:cut_diamond>], 
 	[<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:frame>, <item:extendedcrafting:black_iron_slate>], 
-	[<item:minecraft:diamond>, <item:extendedcrafting:black_iron_slate>, <item:minecraft:diamond>]]);
+	[<item:heartcanisters:cut_diamond>, <item:extendedcrafting:black_iron_slate>, <item:heartcanisters:cut_diamond>]]);
 
 // New Pedestal recipes
 <recipetype:minecraft:crafting>.removeRecipe(<item:extendedcrafting:pedestal>);

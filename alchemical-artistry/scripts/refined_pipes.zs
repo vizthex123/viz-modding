@@ -34,7 +34,7 @@ craftingTable.addShaped("item_pipe_1", <item:refinedpipes:basic_item_pipe>*6,
 
 // Tier 2 (Improved)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:improved_item_pipe>);
-craftingTable.addShaped("item_pipe_2", <item:refinedpipes:improved_item_pipe>*6, 
+craftingTable.addShaped("item_pipe_2", <item:refinedpipes:improved_item_pipe>*3, 
     [[<item:refinedpipes:basic_item_pipe>, <item:refinedpipes:basic_item_pipe>, <item:refinedpipes:basic_item_pipe>],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [<item:refinedpipes:basic_item_pipe>, <item:refinedpipes:basic_item_pipe>, <item:refinedpipes:basic_item_pipe>]]);
@@ -46,7 +46,7 @@ craftingTable.addShaped("improved_item_pipe", <item:refinedpipes:improved_item_p
 
 // Tier 3 (Advanced)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
-craftingTable.addShaped("item_pipe_3", <item:refinedpipes:advanced_item_pipe>*6, 
+craftingTable.addShaped("item_pipe_3", <item:refinedpipes:advanced_item_pipe>*3, 
     [[<item:refinedpipes:improved_item_pipe>, <item:refinedpipes:improved_item_pipe>, <item:refinedpipes:improved_item_pipe>],
     [<tag:items:forge:glass>, <tag:items:thermal:glass/hardened>, <tag:items:forge:glass>],
     [<item:refinedpipes:improved_item_pipe>, <item:refinedpipes:improved_item_pipe>, <item:refinedpipes:improved_item_pipe>]]);
@@ -68,7 +68,7 @@ craftingTable.addShaped("fluid_pipe_1", <item:refinedpipes:basic_fluid_pipe>*6,
 
 // Tier 2 (Improved)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:improved_fluid_pipe>);
-craftingTable.addShaped("fluid_pipe_2", <item:refinedpipes:improved_fluid_pipe>*6,
+craftingTable.addShaped("fluid_pipe_2", <item:refinedpipes:improved_fluid_pipe>*3,
     [[<item:refinedpipes:basic_fluid_pipe>, <item:refinedpipes:basic_fluid_pipe>, <item:refinedpipes:basic_fluid_pipe>],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [<item:refinedpipes:basic_fluid_pipe>, <item:refinedpipes:basic_fluid_pipe>, <item:refinedpipes:basic_fluid_pipe>]]);
@@ -80,7 +80,7 @@ craftingTable.addShaped("improved_fluid_pipe", <item:refinedpipes:improved_fluid
 	
 // Tier 3 (Advanced)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
-craftingTable.addShaped("fluid_pipe_3", <item:refinedpipes:advanced_fluid_pipe>*6,
+craftingTable.addShaped("fluid_pipe_3", <item:refinedpipes:advanced_fluid_pipe>*3,
     [[<item:refinedpipes:improved_fluid_pipe>, <item:refinedpipes:improved_fluid_pipe>, <item:refinedpipes:improved_fluid_pipe>],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [<item:refinedpipes:improved_fluid_pipe>, <item:refinedpipes:improved_fluid_pipe>, <item:refinedpipes:improved_fluid_pipe>]]);
@@ -92,7 +92,7 @@ craftingTable.addShaped("advanced_fluid_pipe", <item:refinedpipes:advanced_fluid
 
 // Tier 4 (Elite)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:elite_fluid_pipe>);
-craftingTable.addShaped("fluid_pipe_4", <item:refinedpipes:elite_fluid_pipe>*6,
+craftingTable.addShaped("fluid_pipe_4", <item:refinedpipes:elite_fluid_pipe>*3,
     [[<item:refinedpipes:advanced_fluid_pipe>, <item:refinedpipes:advanced_fluid_pipe>, <item:refinedpipes:advanced_fluid_pipe>],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [<item:refinedpipes:advanced_fluid_pipe>, <item:refinedpipes:advanced_fluid_pipe>, <item:refinedpipes:advanced_fluid_pipe>]]);
@@ -104,7 +104,7 @@ craftingTable.addShaped("elite_fluid_pipe", <item:refinedpipes:elite_fluid_pipe>
 
 // Tier 5 (Ultimate)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:ultimate_fluid_pipe>);
-craftingTable.addShaped("fluid_pipe_5", <item:refinedpipes:ultimate_fluid_pipe>*6,
+craftingTable.addShaped("fluid_pipe_5", <item:refinedpipes:ultimate_fluid_pipe>*3,
     [[<item:refinedpipes:elite_fluid_pipe>, <item:refinedpipes:elite_fluid_pipe>, <item:refinedpipes:elite_fluid_pipe>],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [<item:refinedpipes:elite_fluid_pipe>, <item:refinedpipes:elite_fluid_pipe>, <item:refinedpipes:elite_fluid_pipe>]]);
@@ -120,14 +120,14 @@ craftingTable.addShaped("ultimate_fluid_pipe", <item:refinedpipes:ultimate_fluid
 // Tier 1 (Basic)
 // Same as the original recipe, but uses the proper tags
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:basic_energy_pipe>);
-craftingTable.addShaped("energy_pipe_1", <item:refinedpipes:basic_energy_pipe>*6, 
+craftingTable.addShaped("energy_pipe_1", <item:refinedpipes:basic_energy_pipe>*6,
     [[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
-    [<tag:items:forge:glass>, <item:minecraft:redstone_block>, <tag:items:forge:glass>],
+    [<item:minecraft:redstone>, <tag:items:forge:glass>, <item:minecraft:redstone>],
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]]);
 	
 // Tier 2 (Improved)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:improved_energy_pipe>);
-craftingTable.addShaped("energy_pipe_2", <item:refinedpipes:improved_energy_pipe>*6, 
+craftingTable.addShaped("energy_pipe_2", <item:refinedpipes:improved_energy_pipe>*3,
     [[<item:refinedpipes:basic_energy_pipe>, <item:refinedpipes:basic_energy_pipe>, <item:refinedpipes:basic_energy_pipe>],
     [<tag:items:forge:glass>, <item:minecraft:redstone>|<item:minecraft:glowstone_dust>, <tag:items:forge:glass>],
     [<item:refinedpipes:basic_energy_pipe>, <item:refinedpipes:basic_energy_pipe>, <item:refinedpipes:basic_energy_pipe>]]);
@@ -139,7 +139,7 @@ craftingTable.addShaped("improved_energy_pipe", <item:refinedpipes:improved_ener
 
 // Tier 3 (Advanced)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:advanced_energy_pipe>);
-craftingTable.addShaped("energy_pipe_3", <item:refinedpipes:advanced_energy_pipe>*6, 
+craftingTable.addShaped("energy_pipe_3", <item:refinedpipes:advanced_energy_pipe>*3, 
     [[<item:refinedpipes:improved_energy_pipe>, <item:refinedpipes:improved_energy_pipe>, <item:refinedpipes:improved_energy_pipe>],
     [<tag:items:forge:glass>, <item:minecraft:redstone_block>|<item:minecraft:glowstone>, <tag:items:forge:glass>],
     [<item:refinedpipes:improved_energy_pipe>, <item:refinedpipes:improved_energy_pipe>, <item:refinedpipes:improved_energy_pipe>]]);
@@ -151,7 +151,7 @@ craftingTable.addShaped("advanced_energy_pipe", <item:refinedpipes:advanced_ener
 
 // Tier 4 (Elite)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:elite_energy_pipe>);
-craftingTable.addShaped("energy_pipe_4", <item:refinedpipes:elite_energy_pipe>*6, 
+craftingTable.addShaped("energy_pipe_4", <item:refinedpipes:elite_energy_pipe>*3, 
     [[<item:refinedpipes:advanced_energy_pipe>, <item:refinedpipes:advanced_energy_pipe>, <item:refinedpipes:advanced_energy_pipe>],
     [<tag:items:forge:glass>, <item:minecraft:glowstone>, <tag:items:forge:glass>],
     [<item:refinedpipes:advanced_energy_pipe>, <item:refinedpipes:advanced_energy_pipe>, <item:refinedpipes:advanced_energy_pipe>]]);
@@ -163,7 +163,7 @@ craftingTable.addShaped("elite_energy_pipe", <item:refinedpipes:elite_energy_pip
 	
 // Tier 5 (Ultimate)
 <recipetype:minecraft:crafting>.removeRecipe(<item:refinedpipes:ultimate_energy_pipe>);
-craftingTable.addShaped("energy_pipe_5", <item:refinedpipes:ultimate_energy_pipe>*6, 
+craftingTable.addShaped("energy_pipe_5", <item:refinedpipes:ultimate_energy_pipe>*3, 
     [[<item:refinedpipes:elite_energy_pipe>, <item:refinedpipes:elite_energy_pipe>, <item:refinedpipes:elite_energy_pipe>],
     [<item:minecraft:popped_chorus_fruit>, <tag:items:thermal:glass/hardened>, <item:minecraft:popped_chorus_fruit>],
     [<item:refinedpipes:elite_energy_pipe>, <item:refinedpipes:elite_energy_pipe>, <item:refinedpipes:elite_energy_pipe>]]);

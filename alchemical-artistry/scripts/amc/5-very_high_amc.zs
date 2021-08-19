@@ -36,7 +36,9 @@ for item in lift.elements {
 
 // 700's AMC
 <tag:items:amc-value:707>.add(<item:minecraft:end_crystal>);
+
 <tag:items:amc-value:750>.add(<item:minecraft:anvil>);
+<tag:items:amc-value:750>.add(<item:minecraft:piglin_banner_pattern>);
 
 
 // 900's AMC

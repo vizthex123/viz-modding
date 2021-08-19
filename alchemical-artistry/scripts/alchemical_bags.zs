@@ -27,11 +27,15 @@ mods.extendedcrafting.CompressionCrafting.addRecipe("cobble_to_crate", <item:min
 mods.extendedcrafting.CompressionCrafting.addRecipe("dirt_to_bag", <item:minecraft:dirt>, <item:contenttweaker:100-bag>, 100, <item:contenttweaker:alchemical_catalyst>, 10000, 50);
 mods.extendedcrafting.CompressionCrafting.addRecipe("dirt_to_crate", <item:minecraft:dirt>, <item:contenttweaker:250-crate>, 250, <item:contenttweaker:advanced_alchemical_catalyst>, 25000, 125);
 
+mods.extendedcrafting.CompressionCrafting.addRecipe("microscopic_to_bag", <item:contenttweaker:amc_crystal_microscopic>, <item:contenttweaker:1-bag>, 200, <item:extendedcrafting:black_iron_slate>, 1000, 1);
+mods.extendedcrafting.CompressionCrafting.addRecipe("submicroscopic_to_bag", <item:contenttweaker:amc_crystal_submicroscopic>, <item:contenttweaker:1-bag>, 1000, <item:extendedcrafting:black_iron_slate>, 1000, 1);
+
 
 // 1 AMC Bag
 craftingTable.addShapeless("1-bag", <item:contenttweaker:1-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:1>]);
 
 craftingTable.addShapeless("1-bag_0.75", <item:contenttweaker:1-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:0.75>, <tag:items:amc-value:0.25>]);
+craftingTable.addShapeless("1-bag_0.5", <item:contenttweaker:1-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:0.5>, <tag:items:amc-value:0.5>]);
 craftingTable.addShapeless("1-bag_0.25", <item:contenttweaker:1-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:0.25>, <tag:items:amc-value:0.25>, <tag:items:amc-value:0.25>, <tag:items:amc-value:0.25>]);
 
 craftingTable.addShapeless("2-bag_to_1", <item:contenttweaker:1-bag>*2, [<item:contenttweaker:2-bag>]);
@@ -47,6 +51,8 @@ craftingTable.addShapeless("2-bag_combine", <item:contenttweaker:2-bag>, [<item:
 
 // 5 AMC Bag
 craftingTable.addShapeless("5-bag", <item:contenttweaker:5-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:5>]);
+craftingTable.addShapeless("5-bag_4", <item:contenttweaker:5-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:4>, <tag:items:amc-value:1>]);
+craftingTable.addShapeless("5-bag_3", <item:contenttweaker:5-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:3>, <tag:items:amc-value:2>]);
 craftingTable.addShapeless("5-bag_2", <item:contenttweaker:5-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:2>, <tag:items:amc-value:2>, <tag:items:amc-value:1>]);
 craftingTable.addShapeless("5-bag_1", <item:contenttweaker:5-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:1>, <tag:items:amc-value:1>, <tag:items:amc-value:1>, <tag:items:amc-value:1>, <tag:items:amc-value:1>]);
 
@@ -61,6 +67,10 @@ craftingTable.addShapeless("25-bag_to_5", <item:contenttweaker:5-bag>*5, [<item:
 
 // 10 AMC Bag
 craftingTable.addShapeless("10-amc-bag", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:10>]);
+craftingTable.addShapeless("10-amc-bag_9", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:9>, <tag:items:amc-value:1>]);
+craftingTable.addShapeless("10-amc-bag_7", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:7>, <tag:items:amc-value:3>]);
+craftingTable.addShapeless("10-amc-bag_8", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:8>, <tag:items:amc-value:2>]);
+craftingTable.addShapeless("10-amc-bag_6", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:6>, <tag:items:amc-value:4>]);
 craftingTable.addShapeless("10-amc-bag_5", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:5>, <tag:items:amc-value:5>]);
 craftingTable.addShapeless("10-amc-bag_2", <item:contenttweaker:10-bag>, [<item:contenttweaker:bag>, <tag:items:amc-value:2>, <tag:items:amc-value:2>, <tag:items:amc-value:2>, <tag:items:amc-value:2>, <tag:items:amc-value:2>]);
 
@@ -138,11 +148,6 @@ craftingTable.addShapeless("500-crate_to_100", <item:contenttweaker:100-bag>*5, 
 
 
 // 1,000 AMC
-mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_9000", 0, <item:contenttweaker:1k-crate>*9, [<item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <tag:items:amc-value:9000>]);
-mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_7000", 0, <item:contenttweaker:1k-crate>*7, [<item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <tag:items:amc-value:7000>]);
-mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_6000", 0, <item:contenttweaker:1k-crate>*6, [<item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <tag:items:amc-value:6000>]);
-mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_4000", 0, <item:contenttweaker:1k-crate>*4, [<item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <item:contenttweaker:crate>, <tag:items:amc-value:4000>]);
-
 mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_1000", 0, <item:contenttweaker:1k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:1000>]);
 mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_900", 0, <item:contenttweaker:1k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:900>, <tag:items:amc-value:100>]);
 mods.extendedcrafting.TableCrafting.addShapeless("1k-crate_500", 0, <item:contenttweaker:1k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:500>, <tag:items:amc-value:500>]);
@@ -176,7 +181,9 @@ mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_9000", 0, <item:cont
 
 mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_8000", 0, <item:contenttweaker:10k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:8000>, <tag:items:amc-value:1000>, <tag:items:amc-value:1000>]);
 
-mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_7000", 0, <item:contenttweaker:10k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:7000>, <tag:items:amc-value:1000>, <tag:items:amc-value:1000>, <tag:items:amc-value:1000>]);
+mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_7000", 0, <item:contenttweaker:10k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:7000>, <tag:items:amc-value:1000>, <tag:items:amc-value:1000>, <tag:items:amc-value:1000>]); // makes this use 3k if any items get that value
+
+mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_6000", 0, <item:contenttweaker:10k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:6000>, <tag:items:amc-value:4000>]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("10k-crate_5000", 0, <item:contenttweaker:10k-crate>, [<item:contenttweaker:crate>, <tag:items:amc-value:5000>, <tag:items:amc-value:5000>]);
 

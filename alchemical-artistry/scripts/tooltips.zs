@@ -57,6 +57,7 @@ val clf = "\u00A7r";
 // Catalysts
 <item:contenttweaker:alchemical_crystallization_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
 <item:contenttweaker:alchemical_compression_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
+<item:contenttweaker:alchemical_crystalpress_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
 
 #	<item:contenttweaker:ticket_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:ticket_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
@@ -94,5 +95,6 @@ val clf = "\u00A7r";
 <item:bloodmagic:magicianbloodorb>.addTooltip(red + "Maximum LP: 150,000");
 <item:bloodmagic:masterbloodorb>.addTooltip(red + "Maximum LP: 1,000,000");
 
+<item:thermal:energy_cell_frame>.addShiftTooltip(red + "Error 404: AMC not found!");
 
 print("tooltips.zs loaded");

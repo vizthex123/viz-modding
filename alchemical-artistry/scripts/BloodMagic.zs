@@ -11,7 +11,7 @@ Extra outputs can be weighted with % amount at the end (like TE machines do)
 
 # Craft the Sigil of the Frozen Lake
 // Reagent
-<recipetype:bloodmagic:alchemytable>.addRecipe("frozen_reagent", <item:contenttweaker:frozen_reagent>, [<item:bloodmagic:reagentwater>, <item:bloodmagic:reagentair>, <item:minecraft:packed_ice>|<item:minecraft:blue_ice>|<item:minecraft:ice>|<item:mowziesmobs:ice_crystal>, <item:minecraft:water_bucket>], 5000, 200, 3);
+<recipetype:bloodmagic:alchemytable>.addRecipe("frozen_reagent", <item:contenttweaker:frozen_reagent>, [<item:bloodmagic:reagentwater>, <item:bloodmagic:reagentair>, <item:minecraft:packed_ice>|<item:minecraft:blue_ice>|<item:minecraft:ice>|<item:mowziesmobs:ice_crystal>, <item:minecraft:water_bucket>], 5000, 200, 2);
 
 // Sigil
 // Need to change the texture later though

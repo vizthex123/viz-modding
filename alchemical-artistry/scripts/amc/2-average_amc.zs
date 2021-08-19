@@ -11,8 +11,11 @@ print("2-average_amc.zs loading...");
 Average is 26 - 100 AMC
 */
 
+
 // 20's AMC
 <tag:items:amc-value:26>.add(<item:minecraft:soul_lantern>); // Should be 26.216
+<tag:items:amc-value:26>.add(<item:minecraft:spectral_arrow>); // Should be 26.75
+
 <tag:items:amc-value:28>.add(<item:minecraft:stonecutter>);
 
 
@@ -39,8 +42,6 @@ Average is 26 - 100 AMC
 <tag:items:amc-value:30>.add(<item:minecraft:redstone_ore>);
 
 <tag:items:amc-value:30>.add(<item:minecraft:fire_charge>); // Should be 32.333
-<tag:items:amc-value:30>.add(<item:minecraft:shield>);
-<tag:items:amc-value:30>.add(<item:minecraft:lead>); // Should be 33
 
 <tag:items:amc-value:35>.add(<item:minecraft:cooked_rabbit>);
 <tag:items:amc-value:35>.add(<item:minecraft:rabbit>);
@@ -48,7 +49,6 @@ Average is 26 - 100 AMC
 <tag:items:amc-value:35>.add(<item:minecraft:redstone>);
 <tag:items:amc-value:35>.add(<item:minecraft:gunpowder>);
 <tag:items:amc-value:35>.add(<item:minecraft:redstone_torch>); // Should be 35.25
-<tag:items:amc-value:35>.add(<item:extendedcrafting:black_iron_ingot>);
 
 <tag:items:amc-value:36>.add(<item:minecraft:red_nether_brick_stairs>);
 <tag:items:amc-value:36>.add(<item:thermal:charcoal_block>);
@@ -101,6 +101,7 @@ for item in bed.elements {
 <tag:items:amc-value:50>.add(<item:minecraft:zombie_head>);
 <tag:items:amc-value:50>.add(<item:minecraft:skeleton_skull>);
 <tag:items:amc-value:50>.add(<item:minecraft:blaze_powder>);
+<tag:items:amc-value:50>.add(<item:mowziesmobs:glowing_jelly>);
 <tag:items:amc-value:50>.add(<item:minecraft:slime_ball>);
 
 <tag:items:amc-value:50>.add(<item:minecraft:cocoa_beans>);
@@ -121,8 +122,6 @@ for item in bed.elements {
 
 
 // 70's AMC
-<tag:items:amc-value:70>.add(<item:extendedcrafting:black_iron_slate>);
-
 <tag:items:amc-value:72>.add(<item:minecraft:dispenser>);
 
 <tag:items:amc-value:75>.add(<item:minecraft:bucket>);
@@ -141,6 +140,7 @@ for item in bed.elements {
 <tag:items:amc-value:80>.add(<item:craftingautomat:autocrafter>); // Should be like, 79. But nah. Let's hope no one exploits it lol.
 <tag:items:amc-value:80>.add(<item:minecraft:piston>); // Should be like, 79. But nah. Let's hope no one exploits it lol.
 
+<tag:items:amc-value:85>.add(<item:minecraft:creeper_banner_pattern>);
 
 
 // 90's AMC [End]

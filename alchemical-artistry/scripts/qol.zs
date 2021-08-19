@@ -22,8 +22,8 @@ craftingTable.addShaped("recipeName", <output>,
 
 // Make 16 Sticks at once
 craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16, 
-    [[<tag:items:minecraft:logs>, <item:minecraft:air>],
-    [<tag:items:minecraft:logs>, <item:minecraft:air>]]);
+    [[<tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>]]);
 
 // Make 4 chests at once
 craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4, 
@@ -31,13 +31,13 @@ craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4,
     [<tag:items:minecraft:logs>, <item:minecraft:air>, <tag:items:minecraft:logs>],
     [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>]]);
 
-/*
 // Smoke Rotten Flesh into Leather
-smoker.addRecipe("flesh_to_leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.0, 10);
+furnace.addRecipe("flesh_to_leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.0, 400);
+smoker.addRecipe("flesh_to_leather_smoker", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.0, 200);
 
 // Blast Furnace glass
-blastFurnace.addRecipe("sand_to_glass", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 5);
-*/
+blastFurnace.addRecipe("sand_to_glass", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
+
 // Make Anvils out of Lead
 craftingTable.addShaped("lead_anvil", <item:minecraft:anvil>, 
     [[<tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>],

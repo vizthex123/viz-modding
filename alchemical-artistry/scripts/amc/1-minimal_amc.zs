@@ -77,6 +77,8 @@ for item in rockwool.elements {
 <tag:items:amc-value:5.333>.add(<item:minecraft:acacia_wood>);
 <tag:items:amc-value:5.333>.add(<item:minecraft:dark_oak_wood>);
 
+<tag:items:amc-value:5.555>.add(<item:minecraft:gold_nugget>);
+
 val carpet = <tag:items:minecraft:carpets>;
 val amc10 = <tag:items:amc-value:10.666>;
 
@@ -363,9 +365,9 @@ for item in sflower.elements {
 
 <tag:items:amc-value:4>.add(<item:minecraft:crafting_table>);
 
-<tag:items:amc-value:4>.add(<item:thermal:slag>);
 <tag:items:amc-value:4>.add(<item:minecraft:soul_torch>); // Should be 4.06 etc
 
+<tag:items:amc-value:4.5>.add(<item:portablecraftingtable:portable_crafting_table>);
 
 // 5 AMC
 // Oops, all coral!
@@ -520,7 +522,7 @@ for item in sflower.elements {
 
 <tag:items:amc-value:9>.add(<item:minecraft:mossy_stone_brick_stairs>);
 <tag:items:amc-value:9>.add(<item:minecraft:mossy_cobblestone_stairs>);
-<tag:items:amc-value:9>.add(<item:minecraft:rail>); // Should be 9.37500
+<tag:items:amc-value:9>.add(<item:minecraft:rail>); // Should be 9.375
 
 // 10's AMC
 <tag:items:amc-value:10>.add(<item:minecraft:lapis_lazuli>);
@@ -554,6 +556,7 @@ for item in sflower.elements {
 <tag:items:amc-value:12.5>.add(<item:minecraft:bow>); // Should be 12.75
 
 <tag:items:amc-value:13>.add(<item:minecraft:fletching_table>);
+<tag:items:amc-value:13>.add(<item:minecraft:flower_banner_pattern>);
 
 <tag:items:amc-value:15>.add(<item:minecraft:carrot_on_a_stick>); // Should be 14.75
 <tag:items:amc-value:15>.add(<item:minecraft:warped_fungus_on_a_stick>); // Should be 14.75
@@ -574,7 +577,6 @@ for item in sflower.elements {
 
 // 20's AMC
 <tag:items:amc-value:20>.add(<item:minecraft:honey_block>);
-<tag:items:amc-value:20>.add(<item:thermal:lead_ingot>);
 <tag:items:amc-value:20>.add(<item:minecraft:coal_ore>);
 <tag:items:amc-value:20>.add(<item:minecraft:coal>);
 

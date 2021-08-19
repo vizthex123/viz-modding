@@ -16,7 +16,6 @@ print("4-high_amc.zs loading...");
 
 <tag:items:amc-value:305>.add(<item:minecraft:tnt_minecart>);
 
-<tag:items:amc-value:315>.add(<item:extendedcrafting:black_iron_block>);
 <tag:items:amc-value:315>.add(<item:minecraft:dark_prismarine_stairs>);
 <tag:items:amc-value:315>.add(<item:minecraft:redstone_block>);
 
@@ -43,5 +42,7 @@ print("4-high_amc.zs loading...");
 
 <tag:items:amc-value:500>.add(<item:minecraft:dragon_head>);
 <tag:items:amc-value:500>.add(<item:minecraft:ender_pearl>);
+
+<tag:items:amc-value:500>.add(<item:minecraft:globe_banner_pattern>);
 
 print("4-high_amc.zs loaded");

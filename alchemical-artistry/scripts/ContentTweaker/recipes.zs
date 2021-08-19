@@ -22,6 +22,16 @@ do item:minecraft:air for empty spaces
 
 # Tokens & Tickets are in amc_recipes.zs!
 
+# Alchemical Sampling (the goal of the modpack)
+mods.extendedcrafting.TableCrafting.addShaped("alchemical_sampling", 0, <item:contenttweaker:alchemical_sampling>,
+	[[<item:contenttweaker:very_advanced_alchemical_catalyst>, <item:minecraft:air>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:azure_token>, <item:contenttweaker:alchemical_compression_catalyst>, <item:minecraft:air>, <item:contenttweaker:very_advanced_alchemical_catalyst>], 
+	[<item:minecraft:air>, <item:contenttweaker:ashen_token>, <tag:items:amc-value:25>, <item:contenttweaker:ticket>, <tag:items:amc-value:50>, <item:contenttweaker:ashen_token>, <item:minecraft:air>], 
+	[<item:contenttweaker:alchemical_crystallization_catalyst>, <tag:items:amc-value:5000>, <item:contenttweaker:amc_crystal_submicroscopic>, <item:contenttweaker:amc_crystal_microscopic>, <item:contenttweaker:amc_crystal_submicroscopic>, <tag:items:amc-value:100>, <item:contenttweaker:alchemical_crystallization_catalyst>], 
+	[<item:contenttweaker:minium_token>, <item:contenttweaker:ticket>, <item:contenttweaker:amc_crystal_microscopic>, <item:contenttweaker:10k-crate>, <item:contenttweaker:amc_crystal_microscopic>, <item:contenttweaker:ticket>, <item:contenttweaker:verdant_token>], 
+	[<item:contenttweaker:alchemical_crystallization_catalyst>, <tag:items:amc-value:2500>, <item:contenttweaker:amc_crystal_submicroscopic>, <item:contenttweaker:amc_crystal_microscopic>, <item:contenttweaker:amc_crystal_submicroscopic>, <tag:items:amc-value:250>, <item:contenttweaker:alchemical_crystallization_catalyst>], 
+	[<item:minecraft:air>, <item:contenttweaker:ashen_token>, <tag:items:amc-value:1000>, <item:contenttweaker:ticket>, <tag:items:amc-value:500>, <item:contenttweaker:ashen_token>, <item:minecraft:air>], 
+	[<item:contenttweaker:very_advanced_alchemical_catalyst>, <item:minecraft:air>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:alchemist_token>, <item:contenttweaker:alchemical_compression_catalyst>, <item:minecraft:air>, <item:contenttweaker:very_advanced_alchemical_catalyst>]]);
+
 // Alchemical Bag
 craftingTable.addShaped("bag", <item:contenttweaker:bag>*4, 
 	[[<item:minecraft:air>, <tag:items:forge:string>, <item:minecraft:air>],
@@ -90,6 +100,9 @@ mods.extendedcrafting.TableCrafting.addShapeless("compression_catalyst_advanced"
 
 mods.extendedcrafting.TableCrafting.addShapeless("compression_catalyst_very_advanced", 0, <item:contenttweaker:alchemical_compression_catalyst>*16,
 	[<item:contenttweaker:very_advanced_alchemical_catalyst>, <item:contenttweaker:very_advanced_alchemical_catalyst>]);
+
+// Crystalpression
+craftingTable.addShapeless("crystalpression_catalyst", <item:contenttweaker:alchemical_crystalpress_catalyst>, [<item:contenttweaker:alchemical_crystallization_catalyst>, <item:contenttweaker:alchemical_compression_catalyst>]);
 
 // Basic
 mods.extendedcrafting.TableCrafting.addShaped("alchemical_catalyst", 0, <item:contenttweaker:alchemical_catalyst>, 
