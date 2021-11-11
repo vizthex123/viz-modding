@@ -24,22 +24,22 @@ craftingTable.addShapeless("pity_to_simple_tank", <item:industrialforegoing:simp
 
 # Dischargers
 // Starter > Basic
-craftingTable.addShapeless("starter_to_basic", <item:powah:energy_discharger_basic>, [<item:powah:energy_discharger_starter>, <item:powah:capacitor_basic>, <item:powah:capacitor_basic>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
+craftingTable.addShapeless("discharger-starter_to_basic", <item:powah:energy_discharger_basic>, [<item:powah:energy_discharger_starter>, <item:powah:capacitor_basic>, <item:powah:capacitor_basic>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
 
 // Basic > Hardened
-craftingTable.addShapeless("basic_to_hardened", <item:powah:energy_discharger_hardened>, [<item:powah:energy_discharger_basic>, <item:powah:capacitor_hardened>, <item:powah:capacitor_hardened>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
+craftingTable.addShapeless("discharger-basic_to_hardened", <item:powah:energy_discharger_hardened>, [<item:powah:energy_discharger_basic>, <item:powah:capacitor_hardened>, <item:powah:capacitor_hardened>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
 
 // Hardened > Blazing
-craftingTable.addShapeless("hardened_to_blazing", <item:powah:energy_discharger_blazing>, [<item:powah:energy_discharger_hardened>, <item:powah:capacitor_blazing>, <item:powah:capacitor_blazing>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
+craftingTable.addShapeless("discharger-hardened_to_blazing", <item:powah:energy_discharger_blazing>, [<item:powah:energy_discharger_hardened>, <item:powah:capacitor_blazing>, <item:powah:capacitor_blazing>, <item:powah:dielectric_rod_horizontal>|<item:powah:dielectric_rod>]);
 
 // Blazing > Niotic
-craftingTable.addShapeless("blazing_to_niotic", <item:powah:energy_discharger_niotic>, [<item:powah:energy_discharger_blazing>, <item:powah:capacitor_niotic>, <item:powah:capacitor_niotic>, <item:powah:dielectric_casing>]);
+craftingTable.addShapeless("discharger-blazing_to_niotic", <item:powah:energy_discharger_niotic>, [<item:powah:energy_discharger_blazing>, <item:powah:capacitor_niotic>, <item:powah:capacitor_niotic>, <item:powah:dielectric_casing>]);
 
 // Niotic > Spirited
-craftingTable.addShapeless("niotic_to_spirited", <item:powah:energy_discharger_spirited>, [<item:powah:energy_discharger_niotic>, <item:powah:capacitor_spirited>, <item:powah:capacitor_spirited>, <item:powah:dielectric_casing>]);
+craftingTable.addShapeless("discharger-niotic_to_spirited", <item:powah:energy_discharger_spirited>, [<item:powah:energy_discharger_niotic>, <item:powah:capacitor_spirited>, <item:powah:capacitor_spirited>, <item:powah:dielectric_casing>]);
 
 // Spirited > Nitro
-craftingTable.addShapeless("spirited_to_nitro", <item:powah:energy_discharger_nitro>, [<item:powah:energy_discharger_spirited>, <item:powah:capacitor_nitro>, <item:powah:capacitor_nitro>, <item:powah:dielectric_casing>]);
+craftingTable.addShapeless("discharger-spirited_to_nitro", <item:powah:energy_discharger_nitro>, [<item:powah:energy_discharger_spirited>, <item:powah:capacitor_nitro>, <item:powah:capacitor_nitro>, <item:powah:dielectric_casing>]);
 
 
 print("machine_upgrades.zs loaded");

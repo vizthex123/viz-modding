@@ -12,8 +12,9 @@ print("BurnTimes.zs loading...");
 <item:minecraft:magma_block>.burnTime = 1600;
 <item:comfortable_nether:popped_pummeler_remnant>.burnTime = 1000;
 <item:minecraft:dried_kelp_block>.burnTime = 4000;
-<item:minecraft:dried_kelp>.burnTime = 445;
+<item:minecraft:dried_kelp>.burnTime = 400;
 <item:extcaves:plant_fiber>.burnTime = 50;
+
 
 # Fuel values for uranium fuel cores
 <item:contenttweaker:uranium_pellet>.burnTime = 1600;

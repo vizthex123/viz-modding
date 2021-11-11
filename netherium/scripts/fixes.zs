@@ -1,5 +1,6 @@
 # Fixes various recipes/items
 print("fixes.zs loading...");
+
 /*
 furnace.addRecipe("recipeName", <output>, <input>, xp, cooktime-10s default);
 
@@ -15,23 +16,6 @@ craftingTable.removeByName("recipeName");
 
 do item:minecraft:air for empty spaces
 */
-
-# Fix Storage Racks not using their respective tags
-# Hoping the author fixes them himself though. Recipes are annoying.
-// Warped
-craftingTable.removeByName("storageracks:warped_wood_rack");
-craftingTable.addShaped("warped_wood_rack_fixed", <item:storageracks:warped_wood_rack>, 
-    [[<item:minecraft:warped_slab>, <item:minecraft:warped_slab>, <item:minecraft:warped_slab>],
-    [<tag:items:forge:rods/wooden>, <tag:items:minecraft:planks>, <tag:items:forge:rods/wooden>],
-    [<item:minecraft:warped_slab>, <item:minecraft:warped_slab>, <item:minecraft:warped_slab>]]);
-
-// Crimson
-craftingTable.removeByName("storageracks:crimson_wood_rack");
-craftingTable.addShaped("crimson_wood_rack_fixed", <item:storageracks:crimson_wood_rack>, 
-    [[<item:minecraft:crimson_slab>, <item:minecraft:crimson_slab>, <item:minecraft:crimson_slab>],
-    [<tag:items:forge:rods/wooden>, <tag:items:minecraft:planks>, <tag:items:forge:rods/wooden>],
-    [<item:minecraft:crimson_slab>, <item:minecraft:crimson_slab>, <item:minecraft:crimson_slab>]]);
-
 
 // Fix the recipe for the Culinary Generator not using any kind of cooked meat
 <recipetype:minecraft:crafting>.removeRecipe(<item:industrialforegoing:mycelial_culinary>);

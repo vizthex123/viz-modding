@@ -32,6 +32,7 @@ do fluid:minecraft:empty for empty fluids
 [<tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>],
 [<tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>]]);
 
+
 # Fixes how various crushed ores don't have recipes
 #Why is it broken?! >:{
 # Each one has blasting (also create's one), smelting, and washing

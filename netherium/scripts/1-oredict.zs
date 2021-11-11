@@ -1,7 +1,8 @@
+# Adds ""tags"" (rip my oredict :c) to items
 import crafttweaker.api.tag.MCTag;
+
 print("1_oredict.zs loading...");
 
-# Adds ""tags"" (rip my oredict :c) to items
 /*
 <tag>.add(<item>);
 */
@@ -57,19 +58,21 @@ print("1_oredict.zs loading...");
 
 
 # Water-providing items
+// Must give 100+ mB of Water
 <tag:items:water_provider>.add(<item:comfortable_nether:insatiable_blubber>);
 <tag:items:water_provider>.add(<item:comfortable_nether:weeping_abscess>);
-<tag:items:water_provider>.add(<item:comfortable_nether:abscess_danish>);
+<tag:items:water_provider>.add(<item:comfortable_nether:fume_puffer_2>);
 <tag:items:water_provider>.add(<item:comfortable_nether:stuffed_filter>);
 <tag:items:water_provider>.add(<item:comfortable_nether:baleen_filter>);
+<tag:items:water_provider>.add(<item:comfortable_nether:tangleweed>);
 <tag:items:water_provider>.add(<item:comfortable_nether:docile_soul>);
 <tag:items:water_provider>.add(<item:minecraft:warped_wart_block>);
 <tag:items:water_provider>.add(<item:minecraft:nether_wart_block>);
-<tag:items:water_provider>.add(<item:minecraft:rotten_flesh>);
 <tag:items:water_provider>.add(<item:biomesoplenty:watergrass>);
+<tag:items:water_provider>.add(<item:minecraft:rotten_flesh>);
 
 
-# Adds proper tags to electrodynamics' ores
+# Adds proper tags to Electrodynamics' ores
 <tag:items:forge:ores/copper>.add(<item:electrodynamics:orecopper>);
 <tag:items:forge:ores/silver>.add(<item:electrodynamics:oresilver>);
 <tag:items:forge:ores/lead>.add(<item:electrodynamics:orelead>);

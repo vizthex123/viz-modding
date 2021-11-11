@@ -1,5 +1,5 @@
 # Hides things from JEI, or adds info about them
-# Big sad they removedt he in-game item hiding system </3
+# Big sad they removed the in-game item hiding system </3
 print("JEI.zs loading...");
 
 /*
@@ -48,6 +48,13 @@ mods.jei.JEI.hideItem(<item:foodpouches:small_automatic_food_pouch>);
 mods.jei.JEI.hideItem(<item:foodpouches:medium_automatic_food_pouch>);
 mods.jei.JEI.hideItem(<item:foodpouches:large_automatic_food_pouch>);
 mods.jei.JEI.hideItem(<item:foodpouches:massive_automatic_food_pouch>);
+
+
+
+# Hides Comfortable Nether items
+mods.jei.JEI.hideItem(<item:comfortable_nether:suspicious_soul_sand>);
+mods.jei.JEI.hideItem(<item:comfortable_nether:fume_puffer>);
+mods.jei.JEI.hideItem(<item:comfortable_nether:grimstem>);
 
 
 

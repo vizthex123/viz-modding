@@ -103,3 +103,11 @@ new ItemBuilder()
 new ItemBuilder()
     .withMaxStackSize(4)
     .build("wrapped_fuel_core");
+
+
+
+# Portal
+// Used as the modpack icon, as well as being a secret easter egg thing. Can be converted into some resources.
+new ItemBuilder()
+    .withMaxStackSize(1)
+    .build("portal");

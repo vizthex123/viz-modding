@@ -21,32 +21,6 @@ craftingTable.removeByName("recipeName");
 do item:minecraft:air for empty spaces
 */
 
-// Turn Plant Fibers into String
-craftingTable.addShaped("fiber_to_string", <item:minecraft:string>, 
-    [[<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>],
-    [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>],
-    [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>]]);
-
-// Turn Plant Fibers into Paper
-craftingTable.addShaped("fiber_to_paper", <item:minecraft:paper>, 
-    [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>],
-    [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>]]);
-
-// Convert Nether furnaces to Overworld ones
-craftingTable.addShapeless("nether_to_blast", <item:minecraft:blast_furnace>, [<item:netherrocks:nether_blast_furnace>, <item:minecraft:iron_ingot>]);
-craftingTable.addShapeless("nether_to_smoker", <item:minecraft:smoker>, [<item:netherrocks:nether_smoker>, <tag:items:minecraft:logs>]);
-craftingTable.addShapeless("nether_to_furnace", <item:minecraft:furnace>, [<item:netherrocks:nether_furnace>, <tag:items:forge:cobblestone>]);
-
-// Empty guage of its fluid
-craftingTable.addShapeless("empty_gauge", <item:tconstruct:scorched_fuel_gauge>, [<item:tconstruct:scorched_fuel_gauge>]);
-
-// Make Anvils out of Lead
-craftingTable.addShaped("lead_anvil", <item:minecraft:anvil>, 
-    [[<tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>],
-    [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>]]);
-
 // New Ring of Attraction recipe
 craftingTable.removeByName("ring_of_attraction:ring_of_attraction");
 craftingTable.addShaped("magnet_ring", <item:ring_of_attraction:ring_of_attraction>, 
@@ -91,37 +65,6 @@ craftingTable.addShaped("chemical_tank", <item:xpbioreactor:chemical_tank>,
     [<tag:items:forge:glass>, <item:minecraft:blaze_powder>, <tag:items:forge:glass>],
     [<tag:items:forge:glass>, <tag:items:forge:tank>, <tag:items:forge:glass>]]);
 
-// Make 16 Sticks at once
-craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16, 
-    [[<tag:items:minecraft:logs>, <item:minecraft:air>],
-    [<tag:items:minecraft:logs>, <item:minecraft:air>]]);
-
-// Make 4 chests at once
-craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4, 
-    [[<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>],
-    [<tag:items:minecraft:logs>, <item:minecraft:air>, <tag:items:minecraft:logs>],
-    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>]]);
-
-// Convert Bones into Wood
-craftingTable.addShapeless("bones_to_wood", <item:minecraft:warped_stem>*3, [<item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:bone>]);
-
-// Convert wrap to the other kind
-craftingTable.addShapeless("crimson_to_warped", <item:comfortable_nether:warped_rotten_wrap>, [<item:minecraft:warped_fungus>, <item:comfortable_nether:crimson_rotten_wrap>]);
-
-craftingTable.addShapeless("warped_to_crimson", <item:comfortable_nether:crimson_rotten_wrap>, [<item:minecraft:crimson_fungus>, <item:comfortable_nether:warped_rotten_wrap>]);
-
-<recipetype:create:mixing>.addRecipe("warped_to_crimson_gilded", "none", <item:comfortable_nether:crimson_rotten_wrap>*2, [<item:comfortable_nether:golden_warped_fungus>, <item:comfortable_nether:warped_rotten_wrap>]);
-
-// Smelt Rotten Flesh into Leather
-furnace.addRecipe("flesh_to_leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.5, 300);
-smoker.addRecipe("flesh_to_leather_smoker", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.5, 200);
-
-// Adds an alt recipe Furnace that uses Basalt
-craftingTable.addShaped("furnace_basalt", <item:minecraft:furnace>, 
-    [[<item:minecraft:basalt>, <item:minecraft:basalt>, <item:minecraft:basalt>],
-    [<item:minecraft:basalt>, <item:minecraft:air>, <item:minecraft:basalt>],
-    [<item:minecraft:basalt>, <item:minecraft:basalt>, <item:minecraft:basalt>]]);
-
 // Changes the Nether Furnace to not require Flint & Steel
 craftingTable.removeByName("netherrocks:nether_furnace");
 craftingTable.addShaped("nether_furnace", <item:netherrocks:nether_furnace>, 
@@ -129,33 +72,11 @@ craftingTable.addShaped("nether_furnace", <item:netherrocks:nether_furnace>,
     [<item:minecraft:netherrack>, <item:minecraft:air>, <item:minecraft:netherrack>],
     [<item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>]]);
 
-// Extract Cobblestone from Netherrack
-craftingTable.addShapeless("netherrack_to_cobble", <item:minecraft:cobblestone>, [<item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:flint>]);
-
-// Get Flint from Netherrack
-craftingTable.addShapeless("netherrack_to_flint", <item:minecraft:flint>, [<item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>]);
-
-// Convert Flesh into Brambles
-craftingTable.addShapeless("flesh_to_brambles", <item:biomesoplenty:bramble>, [<item:biomesoplenty:flesh>,<item:biomesoplenty:flesh>, <item:biomesoplenty:flesh>, <item:biomesoplenty:flesh>]);
-
-// Convert Brambles to Sticks
-craftingTable.addShaped("brambles_to_sticks", <item:minecraft:stick>*3, 
-    [[<item:biomesoplenty:bramble>, <item:minecraft:air>],
-    [<item:biomesoplenty:bramble>, <item:minecraft:air>]]);
-
 // Alt recipe for stone pickaxe that uses Netherrack
 craftingTable.addShaped("stone_pickaxe_alt", <item:minecraft:stone_pickaxe>, 
     [[<item:minecraft:netherrack>, <item:minecraft:magma_block>, <item:minecraft:netherrack>],
     [<item:minecraft:netherrack>, <item:biomesoplenty:bramble>, <item:minecraft:netherrack>],
     [<item:minecraft:air>, <item:biomesoplenty:bramble>, <item:minecraft:air>]]);
-
-// Recipe to make sticks from vines
-craftingTable.addShapeless("vines_to_sticks", <item:minecraft:stick>*2, [<tag:items:vine>]);
-
-// Make Mushroom Soup out of the nether fungi
-craftingTable.addShapeless("mushroom-stew_nether", <item:minecraft:mushroom_stew>, [<item:minecraft:crimson_fungus>, <item:minecraft:warped_fungus>, <item:minecraft:bowl>]);
-
-craftingTable.addShapeless("mushroom-stew_nether_gilded", <item:minecraft:mushroom_stew>, [<item:comfortable_nether:golden_warped_fungus>, <item:minecraft:bowl>]);
 
 
 ## Change recipe for the Repair Chests
