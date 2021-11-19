@@ -32,7 +32,7 @@ craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4,
     [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>]]);
 
 // Turn Plant Fibers into String
-craftingTable.addShaped("fiber_to_string", <item:minecraft:string>, 
+craftingTable.addShaped("fiber_to_string", <item:minecraft:string>*3, 
     [[<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>],
     [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>],
     [<item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>, <item:extcaves:plant_fiber>]]);
@@ -56,8 +56,8 @@ smoker.addRecipe("flesh_to_leather_smoker", <item:minecraft:leather>, <item:mine
 
 // Make Anvils out of Lead
 craftingTable.addShaped("lead_anvil", <item:minecraft:anvil>, 
-    [[<tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>],
-    [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
+    [[<item:minecraft:air>, <tag:items:forge:storage_blocks/lead>, <item:minecraft:air>],
+    [<item:minecraft:air>, <tag:items:forge:storage_blocks/lead>, <item:minecraft:air>],
     [<tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>]]);
 
 // Convert Bones into Wood

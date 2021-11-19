@@ -106,8 +106,7 @@ new ItemBuilder()
 
 
 
-# Portal
-// Used as the modpack icon, as well as being a secret easter egg thing. Can be converted into some resources.
+# Netherrack Fuel Pod
 new ItemBuilder()
-    .withMaxStackSize(1)
-    .build("portal");
+    .withMaxStackSize(64)
+    .build("netherrack_fuel_pod");

@@ -19,9 +19,9 @@ mods.jei.JEI.addInfo(<item:xpbioreactor:xp_bioreactor>, ["Converts many types of
 
 mods.jei.JEI.addInfo(<item:comfortable_nether:weeping_abscess>, ["Harvested from Weeping Liana" + "\nAlso grows into it if planted on Soul Sand"]);
 
-mods.jei.JEI.addInfo(<item:netherrocks:nether_smoker>, ["Only accepts the following fuels:", "Netherrack - 1 item", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
-mods.jei.JEI.addInfo(<item:netherrocks:nether_furnace>, ["Only accepts the following fuels:", "Netherrack - 1 item", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
-mods.jei.JEI.addInfo(<item:netherrocks:nether_blast_furnace>, ["Only accepts the following fuels:", "Netherrack - 1 item", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
+mods.jei.JEI.addInfo(<item:netherrocks:nether_smoker>, ["Only accepts the following fuels:", "Netherrack - 2 items", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
+mods.jei.JEI.addInfo(<item:netherrocks:nether_furnace>, ["Only accepts the following fuels:", "Netherrack - 2 items", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
+mods.jei.JEI.addInfo(<item:netherrocks:nether_blast_furnace>, ["Only accepts the following fuels:", "Netherrack - 2 items", "Blaze Rod - 24 items", "Fyrite Ingot - 80 items"]);
 
 mods.jei.JEI.addInfo(<item:minecraft:phantom_membrane>, ["Can be used to repair Elytras"]);
 mods.jei.JEI.addInfo(<item:enderitemod:enderite_ore>, ["Must be weakened with explosions before it can be mined"]);

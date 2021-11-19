@@ -15,6 +15,7 @@ print("BurnTimes.zs loading...");
 <item:minecraft:dried_kelp>.burnTime = 400;
 <item:extcaves:plant_fiber>.burnTime = 50;
 
+<item:contenttweaker:netherrack_fuel_pod>.burnTime = 800;
 
 # Fuel values for uranium fuel cores
 <item:contenttweaker:uranium_pellet>.burnTime = 1600;

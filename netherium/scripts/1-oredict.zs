@@ -17,7 +17,8 @@ print("1_oredict.zs loading...");
 
 
 # Roots
-<tag:items:roots>.add(<item:comfortable_nether:compacted_nether_roots>);
+<tag:items:roots>.add(<item:comfortable_nether:dried_crimson_roots>);
+<tag:items:roots>.add(<item:comfortable_nether:dried_warped_roots>);
 <tag:items:roots>.add(<item:minecraft:crimson_roots>);
 <tag:items:roots>.add(<item:minecraft:warped_roots>);
 <tag:items:roots>.add(<item:byg:tall_crimson_roots>);

@@ -134,7 +134,7 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:mixing>.removeRecipe(<item:create:andesite_alloy>);
 <recipetype:create:mixing>.addRecipe("andesite_alloy_buffed", "none", <item:create:andesite_alloy>*2, [<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>], [], 100);
 
-<recipetype:create:mixing>.addRecipe("andesite_alloy", "none", <item:create:andesite_alloy>, [<item:minecraft:andesite>, <tag:items:forge:nuggets/iron>], [], 100);
+<recipetype:create:mixing>.addRecipe("andesite_alloy", "none", <item:create:andesite_alloy>, [<item:minecraft:andesite>, <tag:items:forge:nuggets/iron>], [], 50);
 
 // Make Mushroom Stew with any OreDict-supported shrooms
 <recipetype:create:mixing>.addRecipe("mushroom-stew_oredict", "none", <item:minecraft:mushroom_stew>, [<item:minecraft:bowl>, <tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>], [], 30);
@@ -163,7 +163,7 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:mixing>.addRecipe("coin_press_lava", "superheated", <item:xpcoins:coin_press>, [<item:xpcoins:uncured_coin_press>], [<fluid:lava>*4000]);
 
 
-### Melt things into Lava
+### Melt things into Lava ###
 // Melt Magma Blocks into Lava
 <recipetype:create:mixing>.addRecipe("magma_to_lava", "heated", <fluid:lava>*500, [<item:minecraft:magma_block>, <item:minecraft:charcoal>|<item:minecraft:coal>|<item:minecraft:flint>], [], 1200);
 
@@ -193,11 +193,14 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 // Liquify Pink Slimeballs into Pink Slime (fluid)
 <recipetype:create:mixing>.addRecipe("liquify_pink_slime", "none", <fluid:industrialforegoing:pink_slime>*250, [<item:industrialforegoing:pink_slime>], [], 60);
 
-// Liquify Roots to water
-<recipetype:create:mixing>.addRecipe("roots_to_water", "none", <fluid:water>*50, [<tag:items:roots>, <tag:items:roots>], [], 20);
+// Liquify Roots into Water
+<recipetype:create:mixing>.addRecipe("roots_to_water", "none", <fluid:water>*50, [<tag:items:roots>*4], [], 30);
+
+// Liquify Compacted Nether Roots into Water
+<recipetype:create:mixing>.addRecipe("compacted_roots_to_water", "none", <fluid:water>*100, [<item:comfortable_nether:compacted_nether_roots>], [], 20);
 
 // Liquify Rotten Flesh into Water
-<recipetype:create:mixing>.addRecipe("flesh_to_water", "none", <fluid:water>*125, [<item:minecraft:rotten_flesh>]);
+<recipetype:create:mixing>.addRecipe("flesh_to_water", "none", <fluid:water>*125, [<item:minecraft:rotten_flesh>], [], 140);
 
 // Liquify Abscess, Insatiable Blubbers, and the Danishes into Water
 <recipetype:create:mixing>.addRecipe("abscess_to_water", "heated", <fluid:water>*125, [<item:comfortable_nether:weeping_abscess>]);
@@ -215,11 +218,6 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 // Liquify Free Souls into water
 <recipetype:create:mixing>.addRecipe("souls_to_water", "superheated", <fluid:water>*2500, [<item:comfortable_nether:docile_soul>*3]);
 
-// Liquify Phantom Membranes into water
-<recipetype:create:mixing>.addRecipe("membrane_to_water", "heated", <fluid:water>*1000, [<item:minecraft:phantom_membrane>, <item:minecraft:phantom_membrane>]);
-
-<recipetype:create:mixing>.addRecipe("membrane_to_water_tag", "none", <fluid:water>*500, [<item:minecraft:phantom_membrane>, <tag:items:water_provider>]);
-
 // Liquify Baleen Filters into water
 <recipetype:create:mixing>.addRecipe("filter_to_lava", "heated", <fluid:water>*250, [<item:comfortable_nether:baleen_filter>]);
 
@@ -227,10 +225,15 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:mixing>.addRecipe("tangleweed_to_water", "none", <fluid:water>*100, [<item:comfortable_nether:tangleweed>], [], 60);
 
 // Liquify Fume Puffers into Water
-<recipetype:create:mixing>.addRecipe("fume_puffer_to_water", "none", <fluid:water>*250, [<item:comfortable_nether:fume_puffer_2>], [], 200);
+<recipetype:create:mixing>.addRecipe("fume_puffer_to_water", "none", <fluid:water>*250, [<item:comfortable_nether:fume_puffer_2>], [], 100);
 
 // Liquify Plant Fibers into Water
 <recipetype:create:mixing>.addRecipe("fibers_to_water", "none", <fluid:water>*100, [<item:extcaves:plant_fiber>*4], [], 30);
+
+// Liquify Phantom Membranes into water
+<recipetype:create:mixing>.addRecipe("membrane_to_water", "heated", <fluid:water>*1000, [<item:minecraft:phantom_membrane>, <item:minecraft:phantom_membrane>]);
+
+<recipetype:create:mixing>.addRecipe("membrane_to_water_tag", "none", <fluid:water>*500, [<item:minecraft:phantom_membrane>, <tag:items:water_provider>]);
 
 #-----------------------------------------------------------------------------
 # Compacting recipes
@@ -265,29 +268,42 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:milling>.addRecipe("mill_brambles_to_sticks", [<item:minecraft:stick>, <item:minecraft:stick> % 25, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: "minecraft:thorns" as string}]}) % 1], <item:biomesoplenty:bramble>, 10);
 
 // Mill Vines into Wraps & Fungi
-<recipetype:create:milling>.addRecipe("vines_to_crimson_wraps", [<item:comfortable_nether:crimson_rotten_wrap> % 40, <item:minecraft:crimson_fungus> % 25], <item:minecraft:weeping_vines>, 30);
-<recipetype:create:milling>.addRecipe("vines_to_warped_wraps", [<item:comfortable_nether:warped_rotten_wrap> % 40, <item:minecraft:warped_fungus> % 25], <item:minecraft:twisting_vines>, 30);
+<recipetype:create:milling>.addRecipe("weeping_vine_to_crimson_wraps", [<item:comfortable_nether:crimson_rotten_wrap> % 35, <item:minecraft:crimson_fungus> % 25, <item:minecraft:stick> % 100], <item:minecraft:weeping_vines>, 30);
+
+<recipetype:create:milling>.addRecipe("twisting_vine_to_warped_wraps", [<item:comfortable_nether:warped_rotten_wrap> % 35, <item:minecraft:warped_fungus> % 25, <item:minecraft:stick> % 100], <item:minecraft:twisting_vines>, 30);
 
 // Mill Pummeler Remnants into Magma Cream
 <recipetype:create:milling>.addRecipe("mill_pummeler_remnants", [<item:minecraft:magma_cream> % 15], <item:comfortable_nether:pummeler_remnant>, 240);
+
 <recipetype:create:milling>.addRecipe("mill_popped_pummeler_remnants", [<item:minecraft:magma_cream> % 25], <item:comfortable_nether:popped_pummeler_remnant>, 200);
 
 // Mill Wallcreep into Rotten Flesh & Wraps
-<recipetype:create:milling>.addRecipe("wallcreep_to_food", [<item:minecraft:rotten_flesh> % 25, <item:comfortable_nether:warped_rotten_wrap> % 30, <item:comfortable_nether:crimson_rotten_wrap> % 30, <item:industrialforegoing:pink_slime> % 10], <item:comfortable_nether:wallcreep>, 40);
+<recipetype:create:milling>.addRecipe("wallcreep_bloom_to_food", [<item:comfortable_nether:warped_rotten_wrap>*2 % 50, <item:comfortable_nether:crimson_rotten_wrap>*2 % 50, <item:industrialforegoing:pink_slime> % 50], <item:comfortable_nether:wallcreep_bulb>, 50);
+
+<recipetype:create:milling>.addRecipe("wallcreep_to_food", [<item:minecraft:rotten_flesh>*2, <item:comfortable_nether:warped_rotten_wrap>*3 % 50, <item:comfortable_nether:crimson_rotten_wrap>*3 % 50, <item:comfortable_nether:wallcreep_bulb>*5 % 25, <item:industrialforegoing:pink_slime>*2 % 100], <item:comfortable_nether:wallcreep>, 80);
 
 // Mill Piled Residue to Basalt and Blackstone
-<recipetype:create:milling>.addRecipe("residue_to_rocks", [<item:minecraft:basalt> % 50, <item:minecraft:blackstone> % 75], <item:comfortable_nether:piled_residue>);
+<recipetype:create:milling>.addRecipe("residue_to_rocks", [<item:minecraft:basalt> % 50, <item:minecraft:blackstone> % 75], <item:comfortable_nether:piled_residue>, 60);
 
 // Mill Nether Bricks into Cinder Flour
-<recipetype:create:milling>.addRecipe("bricks_to_flour", [<item:create:cinder_flour>], <item:minecraft:nether_bricks>);
+<recipetype:create:milling>.addRecipe("bricks_to_flour", [<item:create:cinder_flour>], <item:minecraft:nether_bricks>, 100);
 
 // Mill Dustsprouts into Sticks & String
-<recipetype:create:milling>.addRecipe("sprout_to_sticks", [<item:minecraft:stick>*2, <item:minecraft:string> % 35], <item:comfortable_nether:dustsprout>);
+<recipetype:create:milling>.addRecipe("sprout_to_sticks", [<item:minecraft:stick>*2, <item:minecraft:string> % 35], <item:comfortable_nether:dustsprout>, 20);
 
 // Mill Shroomlight into Glowstone & Mushrooms
-<recipetype:create:milling>.addRecipe("mill_shroomlight_to_glowstone", [<item:minecraft:glowstone_dust> % 50, <item:minecraft:brown_mushroom> % 15, <item:minecraft:red_mushroom> % 15], <item:minecraft:shroomlight>);
+<recipetype:create:milling>.addRecipe("mill_shroomlight_to_glowstone", [<item:minecraft:glowstone_dust> % 50, <item:minecraft:brown_mushroom> % 15, <item:minecraft:red_mushroom> % 15], <item:minecraft:shroomlight>, 60);
 
-### Recycling Recipes
+// Mill down Golden Apples (both kinds) into Gold & Apples
+<recipetype:create:milling>.addRecipe("mill_golden_apple", [<item:minecraft:apple> % 25, <item:minecraft:gold_ingot>*2 % 50, <item:minecraft:gold_nugget>*3 % 50, <item:minecraft:gold_nugget>*3 % 35], <item:minecraft:golden_apple>, 200);
+
+<recipetype:create:milling>.addRecipe("mill_enchanted_golden_apple", [<item:minecraft:apple> % 25, <item:minecraft:gold_ingot>*4 % 100, <item:minecraft:gold_nugget>*6 % 75, <item:minecraft:gold_nugget>*6 % 50], <item:minecraft:enchanted_golden_apple>, 400);
+
+
+
+
+
+### Recycling Recipes ###
 // Recycle Doused Torches (both kinds)
 <recipetype:create:milling>.addRecipe("recycle_doused_torch", [<item:minicoal2:minicharcoal>*4 % 50, <item:minicoal2:minicoal>*4 % 50], <item:valhelsia_structures:doused_torch>);
 
@@ -317,13 +333,13 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:crushing>.addRecipe("crush_popped_pummeler_remnants", [<item:minecraft:blackstone> % 65, <item:minecraft:magma_cream> % 50], <item:comfortable_nether:popped_pummeler_remnant>, 100);
 
 // Crush Gilded Blackstone into Gold
-<recipetype:create:crushing>.addRecipe("gilded_blackstone_crushing", [<item:create:crushed_gold_ore>, <item:minecraft:gold_nugget>*6 % 25, <item:tconstruct:rose_gold_nugget> % 10, <item:minecraft:blackstone> % 85], <item:minecraft:gilded_blackstone>);
+<recipetype:create:crushing>.addRecipe("gilded_blackstone_crushing", [<item:create:crushed_gold_ore>*2, <item:minecraft:gold_nugget>*6 % 25, <item:tconstruct:rose_gold_nugget> % 15, <item:minecraft:blackstone> % 85], <item:minecraft:gilded_blackstone>);
 
 // Crush Soul Soil into Soul Sand
 <recipetype:create:crushing>.addRecipe("soil_to_sand", [<item:minecraft:soul_sand> % 25, <item:comfortable_nether:docile_soul> % 10], <item:minecraft:soul_soil>);
 
 // Crush Shroomlight into Glowstone & Fungi (and mushrooms)
-<recipetype:create:crushing>.addRecipe("shroomlight_to_glowstone", [<item:minecraft:glowstone_dust> % 65, <item:minecraft:crimson_fungus> % 50, <item:minecraft:warped_fungus> % 50, <item:minecraft:brown_mushroom> % 25, <item:minecraft:red_mushroom> % 25], <item:minecraft:shroomlight>);
+<recipetype:create:crushing>.addRecipe("shroomlight_to_glowstone", [<item:minecraft:glowstone_dust>*2 % 65, <item:minecraft:crimson_fungus> % 50, <item:minecraft:warped_fungus> % 50, <item:minecraft:brown_mushroom> % 25, <item:minecraft:red_mushroom> % 25], <item:minecraft:shroomlight>);
 
 // Crush Warped Wart into Warped Fungus and Nether Wart
 <recipetype:create:crushing>.addRecipe("warped_wart_to_nether_wart", [<item:minecraft:warped_fungus>, <item:minecraft:warped_fungus> % 50, <item:minecraft:nether_wart> % 50], <item:minecraft:warped_wart_block>, 60);
@@ -369,8 +385,8 @@ craftingTable.addShaped("spout", <item:create:spout>,
 // Buff Zinc recipe for Andesite Alloy
 craftingTable.removeByName("create:crafting/materials/andesite_alloy_from_zinc");
 craftingTable.addShapedMirrored("andesite_alloy_buffed", <item:create:andesite_alloy>*2, 
-    [[<tag:items:forge:nuggets/zinc>, <item:minecraft:andesite>],
-    [<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>]]);
+    [[<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>],
+    [<tag:items:forge:nuggets/zinc>, <item:minecraft:andesite>]]);
 
 	
 	

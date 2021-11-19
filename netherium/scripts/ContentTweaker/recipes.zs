@@ -30,7 +30,11 @@ craftingTable.addShapeless("pink_to_green", <item:tconstruct:earth_slime_crystal
 # Lapis Sheets
 <recipetype:create:pressing>.addRecipe("lapis_sheet", [<item:contenttweaker:lapis_sheet>*2], <item:minecraft:lapis_block>);
 
-# Uranium fuel items
+# Netherrack Fuel Pod
+craftingTable.addShapeless("netherrack_fuel_pod", <item:contenttweaker:netherrack_fuel_pod>, [<tag:items:forge:netherrack>, <tag:items:forge:netherrack>, <tag:items:forge:netherrack>, <tag:items:forge:netherrack>]);
+
+
+### Uranium fuel items
 val uranium = <item:powah:uraninite>;
 # val ublock = <item:powah:uraninite_block>;
 val impure = <item:electrodynamics:impuredustvanadium>;
