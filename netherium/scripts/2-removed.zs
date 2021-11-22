@@ -9,6 +9,7 @@ furnace.removeByName("recipe");
 craftingTable.removeByName("recipeName");
 */
 
+
 # Backpack upgrades
 <recipetype:minecraft:crafting>.removeRecipe(<item:sophisticatedbackpacks:feeding_upgrade>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:sophisticatedbackpacks:restock_upgrade>);
@@ -30,11 +31,6 @@ craftingTable.removeByName("recipeName");
 # Uranite smelting, forces you to use a blast furnace
 // I hate whoever named these >:{
 <recipetype:minecraft:smelting>.removeRecipe(<item:powah:uraninite>);
-/*
-furnace.removeByName("powah:smelting/uraninite_crystal_from_furance");
-furnace.removeByName("powah:smelting/uraninite_crystal_poor_from_furance");
-furnace.removeByName("powah:smelting/uraninite_crystal_dense_from_furance");
-*/
 
 
 # Unused crushed ores
@@ -50,13 +46,21 @@ furnace.removeByName("powah:smelting/uraninite_crystal_dense_from_furance");
 <recipetype:create:crushing>.removeRecipe(<item:foodpouches:large_automatic_food_pouch>);
 <recipetype:create:crushing>.removeRecipe(<item:foodpouches:massive_automatic_food_pouch>);
 
+<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:small_automatic_food_pouch>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:medium_automatic_food_pouch>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:large_automatic_food_pouch>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:massive_automatic_food_pouch>);
+
 
 # Misc
+craftingTable.removeByName("powah:crafting/uraninite_raw_dense_to_poor");
+
+<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:creative_food_pouch>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:anointeditems:lightness_oil>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:minecraft:magma_cream>);
-<recipetype:minecraft:crafting>.removeRecipe(<item:foodpouches:creative_food_pouch>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:bno:copper_block>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:tconstruct:copper_ingot>);
+<recipetype:minecraft:crafting>.removeRecipe(<item:minecraft:sticky_piston>);
 
 
 print("removed.zs loaded");

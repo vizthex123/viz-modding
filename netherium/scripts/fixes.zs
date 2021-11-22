@@ -17,6 +17,13 @@ craftingTable.removeByName("recipeName");
 do item:minecraft:air for empty spaces
 */
 
+// Cook fish into fish
+furnace.addRecipe("fish_to_fish", <item:minecraft:cooked_cod>, <item:minecraft:tropical_fish>, 0.35, 200);
+smoker.addRecipe("fish_to_fish_smoker", <item:minecraft:cooked_cod>, <item:minecraft:tropical_fish>, 0.35, 100);
+
+furnace.addRecipe("pufferfish_to_fish", <item:minecraft:cooked_salmon>*2, <item:minecraft:pufferfish>, 0.75, 200);
+smoker.addRecipe("pufferfish_to_fish_smoker", <item:minecraft:cooked_salmon>*2, <item:minecraft:pufferfish>, 0.75, 100);
+
 // Fix the recipe for the Culinary Generator not using any kind of cooked meat
 <recipetype:minecraft:crafting>.removeRecipe(<item:industrialforegoing:mycelial_culinary>);
 craftingTable.addShaped("culinary_generator", <item:industrialforegoing:mycelial_culinary>, 
@@ -26,26 +33,26 @@ craftingTable.addShaped("culinary_generator", <item:industrialforegoing:mycelial
 
 // Fix torches not using the proper tags
 <recipetype:minecraft:crafting>.removeRecipe(<item:minecraft:torch>);
-craftingTable.addShaped("torch", <item:minecraft:torch>*4, 
-    [[<item:minecraft:charcoal>|<item:minecraft:coal>|<item:byg:lignite>, <item:minecraft:air>],
+craftingTable.addShapedMirrored("torch_mini_coal", <item:minecraft:torch>, 
+    [[<item:minicoal2:minicharcoal>|<item:minicoal2:minicoal>, <item:minecraft:air>],
     [<tag:items:forge:rods/wooden>, <item:minecraft:air>]]);
 
-craftingTable.addShaped("torch_anthracite", <item:minecraft:torch>*6, 
+craftingTable.addShapedMirrored("torch_anthracite", <item:minecraft:torch>*6, 
     [[<item:byg:anthracite>, <item:minecraft:air>],
     [<tag:items:forge:rods/wooden>, <item:minecraft:air>]]);
 
-craftingTable.addShaped("torch_mini_coal", <item:minecraft:torch>, 
-    [[<item:minicoal2:minicharcoal>|<item:minicoal2:minicoal>, <item:minecraft:air>],
+craftingTable.addShapedMirrored("torch", <item:minecraft:torch>*4, 
+    [[<item:minecraft:charcoal>|<item:minecraft:coal>|<item:byg:lignite>, <item:minecraft:air>],
     [<tag:items:forge:rods/wooden>, <item:minecraft:air>]]);
 
 // Fix the duplicate Soul Torch recipes
 <recipetype:minecraft:crafting>.removeRecipe(<item:minecraft:soul_torch>);
-craftingTable.addShaped("soul_torch_coal", <item:minecraft:soul_torch>*4, 
+craftingTable.addShapedMirrored("soul_torch_coal", <item:minecraft:soul_torch>*4, 
     [[<item:minecraft:air>, <tag:items:minecraft:coals>, <item:minecraft:air>],
     [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:soul_sand>|<item:minecraft:soul_soil>, <item:minecraft:air>]]);
 
-craftingTable.addShaped("soul_torch_souls", <item:minecraft:soul_torch>*8, 
+craftingTable.addShapedMirrored("soul_torch_souls", <item:minecraft:soul_torch>*8, 
     [[<item:minecraft:air>, <item:comfortable_nether:docile_soul>, <item:minecraft:air>],
     [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:soul_sand>|<item:minecraft:soul_soil>, <item:minecraft:air>]]);

@@ -20,8 +20,17 @@ craftingTable.addShaped("recipeName", <output>,
 <recipetype:thermal:smelter>.addRecipe("name", [<4-outputs>], [<3-inputs>], 0, rf);
 */
 
+// Empty tinker's fluid containers of their fluid
+craftingTable.addShapeless("empty_seared_tank", <item:tconstruct:seared_fuel_tank>, [<item:tconstruct:seared_fuel_tank>]);
+craftingTable.addShapeless("empty_ingot_tank", <item:tconstruct:seared_ingot_tank>, [<item:tconstruct:seared_ingot_tank>]);
+craftingTable.addShapeless("empty_seared_gauge", <item:tconstruct:seared_fuel_gauge>, [<item:tconstruct:seared_fuel_gauge>]);
+
+craftingTable.addShapeless("empty_scorched_ingot_tank", <item:tconstruct:scorched_ingot_tank>, [<item:tconstruct:scorched_ingot_tank>]);
+craftingTable.addShapeless("empty_scorched_tank", <item:tconstruct:scorched_fuel_tank>, [<item:tconstruct:scorched_fuel_tank>]);
+craftingTable.addShapeless("empty_scorched_gauge", <item:tconstruct:scorched_fuel_gauge>, [<item:tconstruct:scorched_fuel_gauge>]);
+
 // Make 16 Sticks at once
-craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16, 
+craftingTable.addShapedMirrored("logs_to_sticks", <item:minecraft:stick>*16, 
     [[<tag:items:minecraft:logs>],
     [<tag:items:minecraft:logs>]]);
 
@@ -47,8 +56,13 @@ craftingTable.addShapeless("nether_to_blast", <item:minecraft:blast_furnace>, [<
 craftingTable.addShapeless("nether_to_smoker", <item:minecraft:smoker>, [<item:netherrocks:nether_smoker>, <tag:items:minecraft:logs>]);
 craftingTable.addShapeless("nether_to_furnace", <item:minecraft:furnace>, [<item:netherrocks:nether_furnace>, <tag:items:forge:cobblestone>]);
 
-// Empty guage of its fluid
-craftingTable.addShapeless("empty_gauge", <item:tconstruct:scorched_fuel_gauge>, [<item:tconstruct:scorched_fuel_gauge>]);
+// Make Glass in a Blast Furnace
+// Still have no clue why tf this isn't in vanilla yet
+blastFurnace.addRecipe("blast_sand_to_glass", <item:minecraft:glass>, <item:minecraft:sand>, 0.0, 100);
+
+// Make Stone in a Blast Furnace
+// Still have no clue why tf this isn't in vanilla yet
+blastFurnace.addRecipe("blast_cobble_to_stone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.0, 100);
 
 // Smelt Rotten Flesh into Leather
 furnace.addRecipe("flesh_to_leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 1.5, 300);
@@ -86,7 +100,7 @@ craftingTable.addShapeless("netherrack_to_cobble", <item:minecraft:cobblestone>,
 craftingTable.addShapeless("netherrack_to_flint", <item:minecraft:flint>, [<item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>, <item:minecraft:netherrack>]);
 
 // Convert Flesh into Brambles
-craftingTable.addShapeless("flesh_to_brambles", <item:biomesoplenty:bramble>, [<item:biomesoplenty:flesh>,<item:biomesoplenty:flesh>, <item:biomesoplenty:flesh>, <item:biomesoplenty:flesh>]);
+craftingTable.addShapeless("flesh_to_brambles", <item:biomesoplenty:bramble>*2, [<item:biomesoplenty:flesh>,<item:biomesoplenty:flesh>]);
 
 // Convert Brambles to Sticks
 craftingTable.addShaped("brambles_to_sticks", <item:minecraft:stick>*3, 

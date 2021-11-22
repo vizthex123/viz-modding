@@ -17,9 +17,6 @@ craftingTable.removeByName("recipeName");
 do item:minecraft:air for empty spaces
 */
 
-# Add a recipe for the Bottle of Vitamins
-
-
 # Slime crystals
 blastFurnace.addRecipe("pink_slime_crystal", <item:contenttweaker:pink_slime_crystal>, <item:industrialforegoing:pink_slime>, 2.5, 400);
 blastFurnace.addRecipe("blood_crystal", <item:contenttweaker:blood_crystal>, <item:tconstruct:blood_slime_ball>, 5.0, 500);
@@ -36,37 +33,27 @@ craftingTable.addShapeless("netherrack_fuel_pod", <item:contenttweaker:netherrac
 
 ### Uranium fuel items
 val uranium = <item:powah:uraninite>;
-# val ublock = <item:powah:uraninite_block>;
 val impure = <item:electrodynamics:impuredustvanadium>;
 val pure = <item:electrodynamics:dustvanadium>;
 
-// Pellet
-craftingTable.addShapeless("uranium_pellet", <item:contenttweaker:uranium_pellet>, [<tag:items:minecraft:coals>, uranium, uranium]);
 
-<recipetype:create:compacting>.addRecipe("uranium_pellet_compact", "none", <item:contenttweaker:uranium_pellet>, [<tag:items:minecraft:coals>, uranium, uranium], [], 200);
+// Pellet
+<recipetype:create:compacting>.addRecipe("uranium_pellet", "none", <item:contenttweaker:uranium_pellet>, [uranium*2], [], 20);
+
 
 // Drop
-craftingTable.addShaped("uranium_drop", <item:contenttweaker:uranium_drop>*2, 
-    [[uranium, uranium, uranium],
-    [uranium, <item:minecraft:redstone>, uranium],
-    [uranium, uranium, uranium]]);
+<recipetype:create:compacting>.addRecipe("uranium_drop", "none", <item:contenttweaker:uranium_drop>, [<tag:items:forge:fuel_dust>, uranium*8], [], 40);
 
-craftingTable.addShapeless("uranium_drop_combine", <item:contenttweaker:uranium_drop>, [<tag:items:minecraft:coals>, <item:minecraft:redstone>, <item:contenttweaker:uranium_pellet>, <item:contenttweaker:uranium_pellet>]);
+<recipetype:create:compacting>.addRecipe("uranium_drop_combine", "none", <item:contenttweaker:uranium_drop>, [<tag:items:forge:fuel_dust>, <item:contenttweaker:uranium_pellet>*2], [], 40);
 
-<recipetype:create:compacting>.addRecipe("uranium_drop_compact", "none", <item:contenttweaker:uranium_drop>, [<tag:items:minecraft:coals>, <item:minecraft:redstone>, <item:contenttweaker:uranium_pellet>*2], [], 200);
 
 // Canister
-craftingTable.addShapeless("uranium_canister_combine", <item:contenttweaker:uranium_canister>, [<item:tconstruct:copper_can>, <item:contenttweaker:uranium_drop>, <item:contenttweaker:uranium_drop>]);
+<recipetype:create:compacting>.addRecipe("uranium_canister", "none", <item:contenttweaker:uranium_canister>, [<item:tconstruct:copper_can>, <item:contenttweaker:uranium_drop>*2], [], 50);
 
-<recipetype:create:compacting>.addRecipe("uranium_canister_compact", "none", <item:contenttweaker:uranium_canister>, [<item:tconstruct:copper_can>, <item:contenttweaker:uranium_drop>*2], [], 200);
 
 // Rod
-craftingTable.addShaped("uranium_rod", <item:contenttweaker:uranium_rod>,
-[[<item:powah:capacitor_basic>, <item:minecraft:air>, <item:powah:capacitor_basic>],
-[<item:contenttweaker:uranium_canister>, <item:minecraft:air>, <item:contenttweaker:uranium_canister>],
-[<item:powah:capacitor_basic>, <item:minecraft:air>, <item:powah:capacitor_basic>]]);
+<recipetype:create:compacting>.addRecipe("uranium_rod", "none", <item:contenttweaker:uranium_rod>, [<item:contenttweaker:uranium_canister>*4, <item:powah:capacitor_basic_large>*2], [], 60);
 
-<recipetype:create:compacting>.addRecipe("uranium_rod_compact", "none", <item:contenttweaker:uranium_rod>, [<item:contenttweaker:uranium_canister>*2, <item:powah:capacitor_basic>*4], [], 300);
 
 // Fuel Core
 <recipetype:create:mechanical_crafting>.addRecipe("uranium_core_impure", <item:contenttweaker:uranium_fuel_core>,
@@ -76,6 +63,8 @@ craftingTable.addShaped("uranium_rod", <item:contenttweaker:uranium_rod>,
 
 <recipetype:create:mechanical_crafting>.addRecipe("uranium_core_pure", <item:contenttweaker:uranium_fuel_core>,
 [[<item:contenttweaker:uranium_rod>, pure, <item:contenttweaker:uranium_rod>]]);
+
+
 
 # Wrapped Fuel Core recipes
 // Craft

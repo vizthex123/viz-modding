@@ -19,10 +19,10 @@ print("BurnTimes.zs loading...");
 
 # Fuel values for uranium fuel cores
 <item:contenttweaker:uranium_pellet>.burnTime = 1600;
-<item:contenttweaker:uranium_drop>.burnTime = 3200;
-<item:contenttweaker:uranium_canister>.burnTime = 6400;
-<item:contenttweaker:uranium_rod>.burnTime = 12800;
-<item:contenttweaker:uranium_fuel_core>.burnTime = 25600;
+<item:contenttweaker:uranium_drop>.burnTime = 4000;
+<item:contenttweaker:uranium_canister>.burnTime = 9600;
+<item:contenttweaker:uranium_rod>.burnTime = 25600;
+<item:contenttweaker:uranium_fuel_core>.burnTime = 102400;
 /*
 <item:contenttweaker:uranium_power_core>.burnTime = 81920;
 <item:contenttweaker:dense_uranium_power_core>.burnTime = 163840;

@@ -132,9 +132,9 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 
 // Buff the recipe to make Andesite Alloy with Zinc
 <recipetype:create:mixing>.removeRecipe(<item:create:andesite_alloy>);
-<recipetype:create:mixing>.addRecipe("andesite_alloy_buffed", "none", <item:create:andesite_alloy>*2, [<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>], [], 100);
+<recipetype:create:mixing>.addRecipe("andesite_alloy", "none", <item:create:andesite_alloy>, [<item:minecraft:andesite>, <tag:items:forge:nuggets/iron>], [], 20);
 
-<recipetype:create:mixing>.addRecipe("andesite_alloy", "none", <item:create:andesite_alloy>, [<item:minecraft:andesite>, <tag:items:forge:nuggets/iron>], [], 50);
+<recipetype:create:mixing>.addRecipe("andesite_alloy_buffed", "none", <item:create:andesite_alloy>*2, [<item:minecraft:andesite>, <tag:items:forge:nuggets/zinc>], [], 40);
 
 // Make Mushroom Stew with any OreDict-supported shrooms
 <recipetype:create:mixing>.addRecipe("mushroom-stew_oredict", "none", <item:minecraft:mushroom_stew>, [<item:minecraft:bowl>, <tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>], [], 30);
@@ -185,6 +185,7 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 
 // Melt Flaming Abscesses into Lava
 <recipetype:create:mixing>.addRecipe("abscess_to_lava", "none", <fluid:lava>*125, [<item:comfortable_nether:flaming_abscess>]);
+
 
 ### Liquify things into water
 // Liquify Watergrass into Water
@@ -237,9 +238,14 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 
 #-----------------------------------------------------------------------------
 # Compacting recipes
+
+// Compact Slimy Seeds into Seed Oil
+<recipetype:create:compacting>.addRecipe("slimy-seeds_to_oil", "none", <fluid:createaddition:seed_oil>*240, [<tag:items:tconstruct:slimy_grass_seeds>], [], 100);
+
+// Compact tiny/large capacitors to regular ones
 <recipetype:create:compacting>.addRecipe("compact_large_capacitor", "none", <item:powah:capacitor_basic>*2, [<item:powah:capacitor_basic_large>], [], 20);
 
-<recipetype:create:compacting>.addRecipe("compact_tiny_capacitor", "none", <item:powah:capacitor_basic>, [<item:powah:capacitor_basic_tiny>, <item:powah:capacitor_basic_tiny>], [], 30);
+<recipetype:create:compacting>.addRecipe("compact_tiny_capacitor", "none", <item:powah:capacitor_basic>, [<item:powah:capacitor_basic_tiny>, <item:powah:capacitor_basic_tiny>], [], 40);
 
 // Alt recipes for Blaze Cake Base
 <recipetype:create:compacting>.addRecipe("blaze_cake_base_abscess", "none", <item:create:blaze_cake_base>, [<item:comfortable_nether:weeping_abscess>, <item:create:cinder_flour>], [], 600);
@@ -299,26 +305,6 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 
 <recipetype:create:milling>.addRecipe("mill_enchanted_golden_apple", [<item:minecraft:apple> % 25, <item:minecraft:gold_ingot>*4 % 100, <item:minecraft:gold_nugget>*6 % 75, <item:minecraft:gold_nugget>*6 % 50], <item:minecraft:enchanted_golden_apple>, 400);
 
-
-
-
-
-### Recycling Recipes ###
-// Recycle Doused Torches (both kinds)
-<recipetype:create:milling>.addRecipe("recycle_doused_torch", [<item:minicoal2:minicharcoal>*4 % 50, <item:minicoal2:minicoal>*4 % 50], <item:valhelsia_structures:doused_torch>);
-
-<recipetype:create:milling>.addRecipe("recycle_doused_soul_torch", [<item:minicoal2:minicharcoal>*4 % 30, <item:minicoal2:minicoal>*4 % 30, <item:comfortable_nether:docile_soul> % 30], <item:valhelsia_structures:doused_soul_torch>);
-
-// Recycle fungus & carrot on a stick, as well as fishing rods
-<recipetype:create:milling>.addRecipe("recycle_fungus_on_a_stick", [<item:minecraft:warped_fungus>, <item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:warped_fungus_on_a_stick>);
-
-<recipetype:create:milling>.addRecipe("recycle_carrot_on_a_stick", [<item:minecraft:carrot>, <item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:carrot_on_a_stick>);
-
-<recipetype:create:milling>.addRecipe("recycle_fishing_rod", [<item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:fishing_rod>);
-
-// Recycle Bows into Sticks & String
-<recipetype:create:milling>.addRecipe("recycle_bow", [<item:minecraft:stick>*2 % 55, <item:minecraft:string> % 40, <item:minecraft:string> % 30], <item:minecraft:bow>);
-
 #-----------------------------------------------------------------------------
 # Crushing Recipes
 
@@ -348,18 +334,19 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 <recipetype:create:crushing>.addRecipe("crush_stone", [<item:minecraft:cobblestone>, <item:minecraft:gravel> % 25, <item:minecraft:sand> % 15], <tag:items:forge:stone>);
 
 // Crush Vanadinite to Impure Dust
-// Not as good as using the machine, but still not bad
-<recipetype:create:crushing>.addRecipe("crush_vanadinite", [<item:electrodynamics:impuredustvanadium>, <item:electrodynamics:impuredustvanadium> % 50, <item:electrodynamics:dustvanadium> % 5, <item:create:crushed_lead_ore>*3 % 15, <item:minecraft:cobblestone> % 15], <item:electrodynamics:orevanadinite>, 400);
+// Not as good as using the electrodynamics machines, but still not bad
+<recipetype:create:crushing>.addRecipe("crush_vanadinite", [<item:jaopca:create_crushed_ores.vanadium>*2, <item:electrodynamics:impuredustvanadium>*2 % 50, <item:electrodynamics:impuredustvanadium> % 35, <item:electrodynamics:dustvanadium> % 5, <item:create:crushed_lead_ore>*3 % 15, <item:minecraft:cobblestone> % 15], <item:electrodynamics:orevanadinite>, 400);
 
 # Crush Electrodynamic's useless ores
 // Uraninite
-<recipetype:create:crushing>.addRecipe("crush_uraninite", [<item:powah:uraninite_raw_poor>, <item:powah:uraninite_raw_poor>*2 % 35, <item:powah:uraninite_raw> % 15, <item:powah:uraninite_raw_dense> % 5, <item:minecraft:cobblestone> % 20], <item:electrodynamics:oreuraninite>, 150);
+<recipetype:create:crushing>.addRecipe("crush_uraninite", [<item:powah:uraninite_raw_poor>*2, <item:powah:uraninite_raw_poor> % 50, <item:powah:uraninite_raw> % 20, <item:powah:uraninite_raw_dense> % 5, <item:minecraft:cobblestone> % 20], <item:electrodynamics:oreuraninite>, 150);
 
 // Thorianite
-<recipetype:create:crushing>.addRecipe("crush_thorianite", [<item:powah:uraninite_raw>*2, <item:powah:uraninite_raw_poor>*3 % 40, <item:minecraft:redstone>*6 % 25, <item:minecraft:coal>*2 % 50, <item:minecraft:cobblestone> % 15], <item:electrodynamics:orethorianite>, 600);
+<recipetype:create:crushing>.addRecipe("crush_thorianite", [<item:powah:uraninite_raw>*2, <item:powah:uraninite_raw_poor>*3 % 40, <item:minecraft:redstone>*6 % 25, <item:minecraft:coal>*2 % 50, <item:electrodynamics:impuredustvanadium>*2 % 15, <item:electrodynamics:dustvanadium> % 5, <item:minecraft:cobblestone> % 25], <item:electrodynamics:orethorianite>, 600);
 
 // Monazite
-<recipetype:create:crushing>.addRecipe("crush_monazite", [<item:powah:uraninite_raw_dense> % 50, <item:electrodynamics:orethorianite> % 25, <item:minecraft:cobblestone> % 30], <item:electrodynamics:oremonazite>, 300);
+<recipetype:create:crushing>.addRecipe("crush_monazite", [<item:powah:uraninite_raw>, <item:powah:uraninite_raw_dense>*2 % 50, <item:electrodynamics:orethorianite> % 25, <item:minecraft:cobblestone> % 35], <item:electrodynamics:oremonazite>, 300);
+
 
 #-----------------------------------------------------------------------------
 # Misc recipes
@@ -405,5 +392,30 @@ craftingTable.addShapedMirrored("andesite_alloy_buffed", <item:create:andesite_a
 
 <recipetype:create:pressing>.addRecipe("nether-brick_to_netherrack", [<item:minecraft:netherrack>*2 % 100, <item:minecraft:netherrack> % 50], <item:minecraft:nether_bricks>);
 
+
+
+### Recycling Recipes ###
+# Uses millstone and crusher
+
+// Recycle Doused Torches (both kinds)
+<recipetype:create:milling>.addRecipe("recycle_doused_torch", [<item:minicoal2:minicharcoal>*4 % 50, <item:minicoal2:minicoal>*4 % 50], <item:valhelsia_structures:doused_torch>);
+
+<recipetype:create:milling>.addRecipe("recycle_doused_soul_torch", [<item:minicoal2:minicharcoal>*4 % 30, <item:minicoal2:minicoal>*4 % 30, <item:comfortable_nether:docile_soul> % 30], <item:valhelsia_structures:doused_soul_torch>);
+
+// Recycle fungus & carrot on a stick, as well as fishing rods
+<recipetype:create:milling>.addRecipe("recycle_fungus_on_a_stick", [<item:minecraft:warped_fungus>, <item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:warped_fungus_on_a_stick>);
+
+<recipetype:create:milling>.addRecipe("recycle_carrot_on_a_stick", [<item:minecraft:carrot>, <item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:carrot_on_a_stick>);
+
+<recipetype:create:milling>.addRecipe("recycle_fishing_rod", [<item:minecraft:stick>*2 % 50, <item:minecraft:string> % 50], <item:minecraft:fishing_rod>);
+
+// Recycle Bows into Sticks & String
+<recipetype:create:milling>.addRecipe("recycle_bow", [<item:minecraft:stick>*2 % 55, <item:minecraft:string> % 40, <item:minecraft:string> % 30], <item:minecraft:bow>);
+
+// Recycle Name Tags into Paper & String
+<recipetype:create:milling>.addRecipe("recycle_name_tag", [<item:minecraft:paper>*2 % 35, <item:minecraft:string>*2 % 35, <item:minecraft:string> % 35], <item:minecraft:name_tag>);
+
+// Recycle Respawn Anchors into Crying Obsidian & Glowstone
+<recipetype:create:crushing>.addRecipe("recycle_respawn_anchor", [<item:minecraft:crying_obsidian>, <item:minecraft:crying_obsidian> % 50, <item:minecraft:glowstone_dust>*4, <item:minecraft:glowstone_dust>*4 % 50], <item:minecraft:respawn_anchor>, 400);
 
 print("create.zs loaded");

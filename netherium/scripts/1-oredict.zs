@@ -7,6 +7,16 @@ print("1_oredict.zs loading...");
 <tag>.add(<item>);
 */
 
+# Fuel Dust
+<tag:items:forge:fuel_dust>.add(<item:minecraft:redstone>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustvanadium>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:impuredustvanadium>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustsulfur>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustniter>);
+<tag:items:forge:fuel_dust>.add(<item:fluxnetworks:flux_dust>);
+
+
+
 # Cooked Meat
 <tag:items:forge:cooked_meat>.add(<item:minecraft:cooked_cod>);
 <tag:items:forge:cooked_meat>.add(<item:minecraft:cooked_beef>);
@@ -39,12 +49,22 @@ print("1_oredict.zs loading...");
 
 
 # Mushrooms
+<tag:items:forge:mushrooms>.remove(<item:minecraft:brown_mushroom_block>);
+<tag:items:forge:mushrooms>.remove(<item:minecraft:red_mushroom_block>);
 <tag:items:forge:mushrooms>.add(<item:minecraft:crimson_fungus>);
 <tag:items:forge:mushrooms>.add(<item:minecraft:warped_fungus>);
+
+<tag:items:forge:mushrooms>.add(<item:extcaves:mushroom_lumishroom>);
+<tag:items:forge:mushrooms>.add(<item:extcaves:mushroom_sweetshroom>);
+<tag:items:forge:mushrooms>.add(<item:extcaves:mushroom_goldishroom>);
+<tag:items:forge:mushrooms>.add(<item:extcaves:mushroom_shinyshroom>);
+<tag:items:forge:mushrooms>.add(<item:extcaves:mushroom_fluoshroom>);
+
 <tag:items:forge:mushrooms>.add(<item:byg:shulkren_fungus>);
 <tag:items:forge:mushrooms>.add(<item:byg:fungal_imparius>);
 <tag:items:forge:mushrooms>.add(<item:byg:soul_shroom>);
 <tag:items:forge:mushrooms>.add(<item:byg:death_cap>);
+
 
 
 # Tanks

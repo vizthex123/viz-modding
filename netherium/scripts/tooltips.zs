@@ -61,8 +61,8 @@ val clf = "\u00A7r";
 // Uranium fuel stacksizes
 <item:contenttweaker:uranium_pellet>.addTooltip(white + "Stacks to 32");
 <item:contenttweaker:uranium_drop>.addTooltip(white + "Stacks to 16");
-<item:contenttweaker:uranium_canister>.addTooltip(white + "Stacks to 8");
-<item:contenttweaker:uranium_rod>.addTooltip(white + "Stacks to 4");
+<item:contenttweaker:uranium_canister>.addTooltip(white + "Stacks to 4");
+<item:contenttweaker:uranium_rod>.addTooltip(white + "Stacks to 2");
 <item:contenttweaker:uranium_fuel_core>.addTooltip(red + "Does not stack");
 <item:contenttweaker:wrapped_fuel_core>.addTooltip(white + "Stacks to 4");
 

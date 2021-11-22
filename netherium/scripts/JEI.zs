@@ -26,6 +26,7 @@ mods.jei.JEI.addInfo(<item:netherrocks:nether_blast_furnace>, ["Only accepts the
 mods.jei.JEI.addInfo(<item:minecraft:phantom_membrane>, ["Can be used to repair Elytras"]);
 mods.jei.JEI.addInfo(<item:enderitemod:enderite_ore>, ["Must be weakened with explosions before it can be mined"]);
 
+mods.jei.JEI.addInfo(<item:powah:uraninite_block>, ["Crafting has been disabled due to a conflict with the Uranium Fuel Pellet recipe.", "It will make blocks when you try to craft lots of Pellets at once.", "If you have a fix for this, please let me know"]);
 
 
 # Hides misc items
