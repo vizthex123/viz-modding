@@ -7,14 +7,26 @@ print("1_oredict.zs loading...");
 <tag>.add(<item>);
 */
 
+# Pure Glass
+# Use for Fluid Pipes
+<tag:items:forge:pure_glass>.add(<item:minecraft:glass>);
+<tag:items:forge:pure_glass>.add(<item:byg:therium_glass>);
+<tag:items:forge:pure_glass>.add(<item:tconstruct:clear_glass>);
+<tag:items:forge:pure_glass>.add(<item:electrodynamics:glassclear>);
+
+
 # Fuel Dust
+# Use for Uranium Fuel Drops
 <tag:items:forge:fuel_dust>.add(<item:minecraft:redstone>);
-<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustvanadium>);
-<tag:items:forge:fuel_dust>.add(<item:electrodynamics:impuredustvanadium>);
-<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustsulfur>);
-<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustniter>);
 <tag:items:forge:fuel_dust>.add(<item:fluxnetworks:flux_dust>);
 
+<tag:items:forge:fuel_dust>.add(<item:netherrocks:fyrite_dust>);
+
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustniter>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustsulfur>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustvanadium>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:impuredustvanadium>);
+<tag:items:forge:fuel_dust>.add(<item:electrodynamics:dustsuperconductive>);
 
 
 # Cooked Meat
@@ -27,6 +39,7 @@ print("1_oredict.zs loading...");
 
 
 # Roots
+# Used to make Water
 <tag:items:roots>.add(<item:comfortable_nether:dried_crimson_roots>);
 <tag:items:roots>.add(<item:comfortable_nether:dried_warped_roots>);
 <tag:items:roots>.add(<item:minecraft:crimson_roots>);
@@ -37,6 +50,7 @@ print("1_oredict.zs loading...");
 
 
 # Vines
+# Used to make Sticks
 <tag:items:vine>.add(<item:minecraft:weeping_vines>);
 <tag:items:vine>.add(<item:minecraft:twisting_vines>);
 
@@ -66,8 +80,15 @@ print("1_oredict.zs loading...");
 <tag:items:forge:mushrooms>.add(<item:byg:death_cap>);
 
 
+# Uranium
+# Used to unify the Uranium recipes in Create's Crusher
+<tag:items:forge:ores/uranium>.add(<item:powah:uraninite_ore_poor>);
+<tag:items:forge:ores/uranium>.add(<item:powah:uraninite_ore>);
+<tag:items:forge:ores/uranium>.add(<item:powah:uraninite_ore_dense>);
+
 
 # Tanks
+# Used for the Spout
 <tag:items:forge:tank>.add(<item:create:fluid_tank>);
 <tag:items:forge:tank>.add(<item:tconstruct:seared_fuel_tank>);
 <tag:items:forge:tank>.add(<item:tconstruct:seared_ingot_tank>);
@@ -79,6 +100,7 @@ print("1_oredict.zs loading...");
 
 
 # Water-providing items
+# Combined with Phantom Membranes to make 500 mB of Water
 // Must give 100+ mB of Water
 <tag:items:water_provider>.add(<item:comfortable_nether:insatiable_blubber>);
 <tag:items:water_provider>.add(<item:comfortable_nether:weeping_abscess>);
@@ -100,12 +122,28 @@ print("1_oredict.zs loading...");
 <tag:items:forge:ores/tin>.add(<item:electrodynamics:oretin>);
 
 
+# Storage Racks
+// Mainly for the quest
+<tag:items:storage_rack>.add(<item:storageracks:oak_wood_rack>);
+<tag:items:storage_rack>.add(<item:storageracks:birch_wood_rack>);
+<tag:items:storage_rack>.add(<item:storageracks:jungle_wood_rack>);
+<tag:items:storage_rack>.add(<item:storageracks:acacia_wood_rack>);
+<tag:items:storage_rack>.add(<item:storageracks:dark_oak_wood_rack>);
+
+<tag:items:storage_rack>.add(<item:storageracks:cactus_wood_rack>);
+
+<tag:items:storage_rack>.add(<item:storageracks:warped_wood_rack>);
+<tag:items:storage_rack>.add(<item:storageracks:crimson_wood_rack>);
+
+
+
+
+
+
 # Misc
 <tag:items:forge:stone>.add(<item:extcaves:lavastone>);
 <tag:items:forge:stone>.add(<item:extcaves:sedimentstone>);
 <tag:items:minecraft:stone_tool_materials>.add(<item:minecraft:basalt>);
-<tag:items:nether_storage_rack>.add(<item:storageracks:warped_wood_rack>);
-<tag:items:nether_storage_rack>.add(<item:storageracks:crimson_wood_rack>);
 <tag:items:forge:slimeballs>.add(<item:byg:embur_gel_ball>);
 
 print("1_oredict.zs loaded");

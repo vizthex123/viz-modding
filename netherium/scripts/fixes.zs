@@ -17,6 +17,11 @@ craftingTable.removeByName("recipeName");
 do item:minecraft:air for empty spaces
 */
 
+
+// Fix the duplicate Fire Charge recipes
+<recipetype:minecraft:crafting>.removeRecipe(<item:minecraft:fire_charge>);
+craftingTable.addShapeless("fire_charge_fixed", <item:minecraft:fire_charge>*3, [<item:minecraft:blaze_powder>, <item:minecraft:blaze_powder>, <tag:items:minecraft:coals>]);
+
 // Cook fish into fish
 furnace.addRecipe("fish_to_fish", <item:minecraft:cooked_cod>, <item:minecraft:tropical_fish>, 0.35, 200);
 smoker.addRecipe("fish_to_fish_smoker", <item:minecraft:cooked_cod>, <item:minecraft:tropical_fish>, 0.35, 100);
@@ -24,7 +29,7 @@ smoker.addRecipe("fish_to_fish_smoker", <item:minecraft:cooked_cod>, <item:minec
 furnace.addRecipe("pufferfish_to_fish", <item:minecraft:cooked_salmon>*2, <item:minecraft:pufferfish>, 0.75, 200);
 smoker.addRecipe("pufferfish_to_fish_smoker", <item:minecraft:cooked_salmon>*2, <item:minecraft:pufferfish>, 0.75, 100);
 
-// Fix the recipe for the Culinary Generator not using any kind of cooked meat
+// Fix the recipe for the Culinary Generator not using all kinds of cooked meat
 <recipetype:minecraft:crafting>.removeRecipe(<item:industrialforegoing:mycelial_culinary>);
 craftingTable.addShaped("culinary_generator", <item:industrialforegoing:mycelial_culinary>, 
     [[<tag:items:forge:crops>, <tag:items:forge:crops>, <tag:items:forge:crops>],

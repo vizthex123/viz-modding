@@ -18,11 +18,8 @@ do item:minecraft:air for empty spaces
 */
 
 # Slime crystals
-blastFurnace.addRecipe("pink_slime_crystal", <item:contenttweaker:pink_slime_crystal>, <item:industrialforegoing:pink_slime>, 2.5, 400);
+blastFurnace.addRecipe("pink_slime_crystal", <item:contenttweaker:pink_slime_crystal>, <item:industrialforegoing:pink_slime>, 2.5, 300);
 blastFurnace.addRecipe("blood_crystal", <item:contenttweaker:blood_crystal>, <item:tconstruct:blood_slime_ball>, 5.0, 500);
-
-craftingTable.addShapeless("blood_to_green", <item:tconstruct:earth_slime_crystal>*2, [<item:contenttweaker:blood_crystal>]);
-craftingTable.addShapeless("pink_to_green", <item:tconstruct:earth_slime_crystal>*5, [<item:contenttweaker:pink_slime_crystal>]);
 
 # Lapis Sheets
 <recipetype:create:pressing>.addRecipe("lapis_sheet", [<item:contenttweaker:lapis_sheet>*2], <item:minecraft:lapis_block>);

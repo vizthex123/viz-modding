@@ -1,8 +1,0 @@
-# Adds starting items to the Sustain Yourself mode, if enabled.
-# To enable the mode, rename this script to sustain.zs and follow the directions in the book you get when entering a new world.
-print("sustain.zs loading...");
-
-mods.initialinventory.InvHandler.addStartingItem("water", <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})*3);
-mods.initialinventory.InvHandler.addStartingItem("soul_water", <item:watersource:soul_water_bottle>);
-
-print("sustain.zs loaded");

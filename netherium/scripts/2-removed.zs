@@ -29,7 +29,6 @@ craftingTable.removeByName("recipeName");
 
 
 # Uranite smelting, forces you to use a blast furnace
-// I hate whoever named these >:{
 <recipetype:minecraft:smelting>.removeRecipe(<item:powah:uraninite>);
 
 

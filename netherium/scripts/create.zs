@@ -339,7 +339,7 @@ craftingTable.removeByName("minecraft:netherite_ingot");
 
 # Crush Electrodynamic's useless ores
 // Uraninite
-<recipetype:create:crushing>.addRecipe("crush_uraninite", [<item:powah:uraninite_raw_poor>*2, <item:powah:uraninite_raw_poor> % 50, <item:powah:uraninite_raw> % 20, <item:powah:uraninite_raw_dense> % 5, <item:minecraft:cobblestone> % 20], <item:electrodynamics:oreuraninite>, 150);
+<recipetype:create:crushing>.addRecipe("crush_uraninite", [<item:powah:uraninite_raw_poor>*2, <item:powah:uraninite_raw_poor>*2 % 50, <item:powah:uraninite_raw> % 20, <item:powah:uraninite_raw_dense> % 5, <item:minecraft:cobblestone> % 20], <tag:items:forge:ores/uranium>, 150);
 
 // Thorianite
 <recipetype:create:crushing>.addRecipe("crush_thorianite", [<item:powah:uraninite_raw>*2, <item:powah:uraninite_raw_poor>*3 % 40, <item:minecraft:redstone>*6 % 25, <item:minecraft:coal>*2 % 50, <item:electrodynamics:impuredustvanadium>*2 % 15, <item:electrodynamics:dustvanadium> % 5, <item:minecraft:cobblestone> % 25], <item:electrodynamics:orethorianite>, 600);
@@ -416,6 +416,6 @@ craftingTable.addShapedMirrored("andesite_alloy_buffed", <item:create:andesite_a
 <recipetype:create:milling>.addRecipe("recycle_name_tag", [<item:minecraft:paper>*2 % 35, <item:minecraft:string>*2 % 35, <item:minecraft:string> % 35], <item:minecraft:name_tag>);
 
 // Recycle Respawn Anchors into Crying Obsidian & Glowstone
-<recipetype:create:crushing>.addRecipe("recycle_respawn_anchor", [<item:minecraft:crying_obsidian>, <item:minecraft:crying_obsidian> % 50, <item:minecraft:glowstone_dust>*4, <item:minecraft:glowstone_dust>*4 % 50], <item:minecraft:respawn_anchor>, 400);
+<recipetype:create:crushing>.addRecipe("recycle_respawn_anchor", [<item:minecraft:crying_obsidian>*2, <item:minecraft:crying_obsidian>*2 % 50, <item:minecraft:glowstone_dust>*4, <item:minecraft:glowstone_dust>*4 % 50, <item:minecraft:glowstone_dust>*4 % 25], <item:minecraft:respawn_anchor>, 400);
 
 print("create.zs loaded");

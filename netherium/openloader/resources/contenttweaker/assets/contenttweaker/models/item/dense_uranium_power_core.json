@@ -1,6 +1,0 @@
-{
-  "parent" : "item/generated",
-  "textures" :
-  {"layer0" : "contenttweaker:item/dense_uranium_power_core"
-  }
-}
