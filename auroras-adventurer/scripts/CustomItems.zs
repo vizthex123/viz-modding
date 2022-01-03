@@ -1,4 +1,4 @@
-# Add uses for my items
+# Add uses for my items from the Aurorian Items mod
 
 print("Loading CustomItems.zs...");
 
@@ -9,12 +9,13 @@ recipes.addShapeless(<aurorianitems:portalcatalyst>, [<actuallyadditions:item_cr
 recipes.remove(<theaurorian:lavenderseeds>);
 recipes.addShapeless(<theaurorian:lavenderseeds>, [<theaurorian:lavender>, <theaurorian:lavender>]);
 recipes.addShapeless(<aurorianitems:lavenderflour>, [<theaurorian:lavender>]);
+
 furnace.addRecipe(<theaurorian:lavenderbread>, <aurorianitems:lavenderflour>, 0.4);
 
 // Compressed Shard
 recipes.addShapeless(<aurorianitems:compressedshard>, [<retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>, <bloodmagic:component:14>, <retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>, <retroexchange:transmutation_shard>]);
 
-// Dried Flesh (can also be smelted into Leather)
+// Leather from Prepared Flesh
 furnace.addRecipe(<minecraft:leather>, <aurorianitems:preparedflesh>, 0.10);
 
 // Crystalline Compound

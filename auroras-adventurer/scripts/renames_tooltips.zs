@@ -100,7 +100,7 @@ print("Loading renames_tooltips.zs...");
 <ebwizardry:astral_diamond>.addTooltip(format.green("Or you can make 10 Million RF"));
 <industrialforegoing:mob_duplicator>.addTooltip("Or ''Spawner''");
 
-
+<actuallyadditions:item_misc:20>.addTooltip(format.aqua("Has a variety of applications"));
 
 
 

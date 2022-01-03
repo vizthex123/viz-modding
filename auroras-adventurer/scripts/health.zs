@@ -1,10 +1,19 @@
 # Anything related to health or healing
 
 print("Loading health.zs...");
-print("Remember the Life/Soul Essence recipes are in health.zs");
+print("Remember the Life & Soul Essence recipes are in health.zs");
 
 // Tooltip for XP Level usage on Heart Containers
-<scalinghealth:heartcontainer>.addTooltip(format.darkRed("Consumes 2 XP levels"));
+<scalinghealth:heartcontainer>.addTooltip(format.darkRed("Consumes 3 XP levels"));
+
+// Melt coins into XP
+// 1 Aurum = 20 XP
+// Uses 4k RF, 8k for platinum
+// Gives a nugget half the time - might change later
+mods.thermalexpansion.Centrifuge.addRecipe([<thermalfoundation:material:192> % 50], <ordinarycoins:coinbronze>, <liquid:experience>*20, 4000);
+mods.thermalexpansion.Centrifuge.addRecipe([<thermalfoundation:material:194> % 50], <ordinarycoins:coinsilver>, <liquid:experience>*100, 4000);
+mods.thermalexpansion.Centrifuge.addRecipe([<minecraft:gold_nugget> % 50], <ordinarycoins:coingold>, <liquid:experience>*200, 4000);
+mods.thermalexpansion.Centrifuge.addRecipe([<thermalfoundation:material:198> % 50], <ordinarycoins:coingold>, <liquid:experience>*1000, 8000);
 
 // Life/Soul Essence recipes (Elementaristics)
 mods.thermalexpansion.Refinery.addRecipe(<liquid:blood>*1000, <elementaristics:essence:10>%50, <liquid:lifeessence>*4000, 12000);
@@ -19,36 +28,32 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<bhc:blue_heart>, <minecraft:go
 mods.thermalexpansion.InductionSmelter.addRecipe(<bhc:blue_heart>*2, <minecraft:golden_apple:1>, <elementaristics:essence:10>, 50000, <bhc:blue_heart>, 50);
 
 mods.bloodmagic.BloodAltar.addRecipe(<bhc:blue_heart>, <bhc:green_heart>, 2, 25000, 105, 150);
-mods.bloodmagic.BloodAltar.addRecipe(<bhc:blue_heart>, <bhc:orange_heart>, 4, 12500, 75, 100);
+mods.bloodmagic.BloodAltar.addRecipe(<bhc:blue_heart>, <bhc:yellow_heart>, 4, 12500, 75, 100);
 
 // Alternate recipes for the Blue Heart Canister
 recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:green_heart_canister>, <ore:gemValuable>, <bhc:blue_heart>, <elementaristics:essence:16>, <elementaristics:essence:10>, <elementaristics:essence:10>]);
 
-recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:orange_heart_canister>, <ore:gemValuable>, <bhc:blue_heart>, <elementaristics:essence:9>, <elementaristics:essence:9>, <elementaristics:essence:9>]);
+recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:yellow_heart_canister>, <ore:gemValuable>, <bhc:blue_heart>, <elementaristics:essence:9>, <elementaristics:essence:9>, <elementaristics:essence:9>]);
 
 // Heart Dust crafting recipes
 // Heart Dust can be used to make healing items from Scaling Health, and Life Essence from Elementaristics
 recipes.addShapeless(<scalinghealth:heartdust>*32, [<levelhearts:heart_container>]);
 recipes.addShapeless(<scalinghealth:heartdust>*8, [<levelhearts:heart_piece>]);
 recipes.addShapeless(<scalinghealth:heartdust>*4, [<bhc:red_heart>]);
-recipes.addShapeless(<scalinghealth:heartdust>*32, [<bhc:orange_heart>]);
+recipes.addShapeless(<scalinghealth:heartdust>*32, [<bhc:yellow_heart>]);
 recipes.addShapeless(<scalinghealth:heartdust>*48, [<bhc:blue_heart>]);
 recipes.addShapeless(<scalinghealth:heartdust>*64, [<bhc:green_heart>]);
 
-// Change Heart Amulet recipe
-// Imported from old builds of The Cyborg Runner
-# https://www.curseforge.com/minecraft/modpacks/the-cyborg-runner/files/all?filter-status=2&filter-game-version=
-
 // Heart Amulet recipe change
 recipes.remove(<bhc:heart_amulet>);
-recipes.addShaped(<bhc:heart_amulet>, [[<ore:string>, <bhc:red_heart>, <ore:string>],
-                                  		                    [<bhc:red_heart>, <ore:blockGlass>, <bhc:red_heart>],
-                                   		                    [null, <bhc:red_heart>, null]]);
+recipes.addShaped(<bhc:heart_amulet>, [[<ore:string>, <ore:itemHeart>, <ore:string>],
+																      [<ore:itemHeart>, <ore:blockGlass>, <ore:itemHeart>],
+																	  [null, <ore:itemHeart>, null]]);
 // Tooltips on how to get them
 <bhc:red_heart>.addTooltip(format.aqua("Drops from all enemies with a 5% chance"));
 <bhc:red_heart>.addTooltip(format.aqua("Can be eaten to restore 20 HP (10 Hearts)"));
-<bhc:orange_heart>.addTooltip(format.aqua("Drops from all Boss Mobs (100%)"));
-<bhc:orange_heart>.addTooltip(format.aqua("Can be eaten to restore 40 HP (20 Hearts)"));
+<bhc:yellow_heart>.addTooltip(format.aqua("Drops from all Boss Mobs (100%)"));
+<bhc:yellow_heart>.addTooltip(format.aqua("Can be eaten to restore 40 HP (20 Hearts)"));
 <bhc:green_heart>.addTooltip(format.aqua("Drops from the Ender Dragon (100%)"));
 <bhc:green_heart>.addTooltip(format.aqua("Can be eaten to restore 60 HP (30 Hearts)"));
 <bhc:blue_heart>.addTooltip(format.aqua("Drops from Evokers (100%)"));

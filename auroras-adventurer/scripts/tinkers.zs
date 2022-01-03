@@ -80,10 +80,10 @@ mods.tconstruct.Melting.addRecipe(<liquid:tamoltenauroriansteel>*432, <theaurori
 mods.tconstruct.Melting.addRecipe(<liquid:tamoltenauroriansteel>*288, <theaurorian:auroriansteelhoe:*>);
 
 // Coins
-mods.tconstruct.Melting.addRecipe(<liquid:copper>*48, <ordinarycoins:coinbronze>);
-mods.tconstruct.Melting.addRecipe(<liquid:silver>*48, <ordinarycoins:coinsilver>);
-mods.tconstruct.Melting.addRecipe(<liquid:gold>*48, <ordinarycoins:coingold>);
-mods.tconstruct.Melting.addRecipe(<liquid:platinum>*48, <ordinarycoins:coinplatinum>);
+mods.tconstruct.Melting.addRecipe(<liquid:copper>*16, <ordinarycoins:coinbronze>);
+mods.tconstruct.Melting.addRecipe(<liquid:silver>*16, <ordinarycoins:coinsilver>);
+mods.tconstruct.Melting.addRecipe(<liquid:gold>*16, <ordinarycoins:coingold>);
+mods.tconstruct.Melting.addRecipe(<liquid:platinum>*16, <ordinarycoins:coinplatinum>);
 
 // Misc
 mods.tconstruct.Melting.addRecipe(<liquid:bronze>*144, <forestry:broken_bronze_pickaxe>, 250);
