@@ -79,17 +79,19 @@ recipes.addShaped(<buildcraftcore:engine>, [[<ore:plankWood>, <ore:plankWood>, <
 // Golden Revolver recipe
 recipes.remove(<techguns:goldenrevolver>);
 recipes.addShaped(<techguns:goldenrevolver>.withTag({ammo: 0 as short, ammovariant: "default", camo: 0 as byte}), [[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
-                                   			              [<minecraft:gold_ingot>, <foundry:revolver:*>, <minecraft:gold_ingot>],
-                                     			              [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]]);
+                                   			                 [<minecraft:gold_ingot>, <foundry:revolver:*>|<techguns:revolver:*>, <minecraft:gold_ingot>],
+                                     			             [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]]);
+															 
 // Miner's Ring recipes
 recipes.addShapeless(<baubles:ring>, [<mekanismtools:bronzepickaxe>, <projectred-core:resource_item:105>|<minecraft:redstone>, <projectred-core:resource_item:105>|<minecraft:redstone>]);
-recipes.addShapeless(<baubles:ring>, [<minecraft:iron_pickaxe>, <projectred-core:resource_item:105>|<minecraft:redstone>]);
+recipes.addShapeless(<baubles:ring>, [<minecraft:iron_pickaxe>, <minecraft:redstone>|<projectred-core:resource_item:105>]);
 
 // Shop recipe
 recipes.remove(<adminshop:shop>);
 recipes.addShaped(<adminshop:shop>, [[<ore:plankWood>, <ore:blockGlass>, <ore:plankWood>],
                                      			 [<ore:plankWood>, <ore:ingotBronze>, <ore:plankWood>],
                                      			 [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+												 
 // Auto-seller recipe
 recipes.remove(<adminshop:seller>);
 recipes.addShaped(<adminshop:seller>, [[<minecraft:iron_ingot>, <minecraft:hopper>, <minecraft:iron_ingot>],

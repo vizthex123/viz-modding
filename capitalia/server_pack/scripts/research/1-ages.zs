@@ -2,7 +2,7 @@
 
 import mods.ResearchTable;
 
-var ages = ResearchTable.addCategory(<mekanismgenerators:reactor>);
+var ages = ResearchTable.addCategory(<advancedrocketry:monitoringstation>);
 
 # Stone Age
 ResearchTable.builder("stone_age", ages)
@@ -109,8 +109,7 @@ ResearchTable.builder("atomic_age", ages)
   .setDescription("Research ways to harness atomic fusion for your own means. Allows you to harness AI to power your mining operations.")
   .addCondition(<contenttweaker:datadisk_information>*4)
   .addCondition(<contenttweaker:datadisk_machine>*12)
-  .addCondition(<contenttweaker:datadisk_industrial>*24)
-  .addCondition(<contenttweaker:datadisk_iron>*64)
+  .addCondition(<fluid:research>*8000)
   .setRewardStages("atomic_age")
   .setRewardCommands("/say You can now harness the power of the atom")
   .setRewardItems(<minecraft:experience_bottle>*32)
@@ -125,11 +124,10 @@ ResearchTable.builder("space_age", ages)
   .setRequiredResearches("atomic_age")
   .setRequiredResearches("advanced_circuitry")
   .setDescription("Research how to launch rockets into space. This will allow you to explore & exploit other worlds to improve industry.")
-  .addCondition(<contenttweaker:datadisk_atomic>*6)
+  .addCondition(<contenttweaker:datadisk_atomic>*8)
   .addCondition(<contenttweaker:datadisk_information>*12)
   .addCondition(<contenttweaker:datadisk_machine>*24)
-  .addCondition(<contenttweaker:datadisk_industrial>*48)
-  .addCondition(<contenttweaker:datadisk_iron>*96)
+  .addCondition(<fluid:research>*16000)
   .setRewardStages("space_age")
   .setRewardCommands("/say You have mastered space travel")
   .setRewardItems(<minecraft:experience_bottle>*64)

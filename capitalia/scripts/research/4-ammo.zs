@@ -6,12 +6,11 @@ var ammo  = ResearchTable.addCategory(<foundry:roundjacketed>);
 
 
 // Tipped Arrows
-
 ResearchTable.builder("tipped", ammo)
   .setIcons(<minecraft:tipped_arrow>.withTag({Potion: "techguns:radregenerationpotion"}))
   .setTitle("Tipped Arrows")
   .setRequiredResearches("bow")
-  .setDescription("Research a peculiar arrow that makes foes shine brightly.")
+  .setDescription("Research ways to infuse arrows with potions.")
   .addCondition(<contenttweaker:datadisk_military>)
   .setRewardStages("tipped")
   .setRewardCommands("/say You can now craft Spectral Arrows")
@@ -20,7 +19,6 @@ ResearchTable.builder("tipped", ammo)
   .build();
 
 // Spectral Arrows
-
 ResearchTable.builder("spectral", ammo)
   .setIcons(<minecraft:spectral_arrow>)
   .setTitle("Phase-Shifting Arrows")
@@ -37,12 +35,11 @@ ResearchTable.builder("spectral", ammo)
 
 
 // Elemental
-
 ResearchTable.builder("elemental_ammo", ammo)
   .setIcons(<foundry:roundfire>)
   .setTitle("Elemental Ammunition")
   .setRequiredResearches("revolver")
-  .setDescription("Research ways to add elemental effects to your ammunition. Lets you light enemies on fire, poison, or freeze them.")
+  .setDescription("Research ways to add elemental effects to your ammunition. Lets you combust, poison, or freeze enemies.")
   .addCondition(<contenttweaker:datadisk_military>)
   .setRewardStages("elemental_ammo")
   .setRewardCommands("/say You can now craft Incendiary, Poison, and Snow rounds")
@@ -52,12 +49,11 @@ ResearchTable.builder("elemental_ammo", ammo)
 
 
 // Jacketed
-
 ResearchTable.builder("jacketed_ammo", ammo)
   .setIcons(<foundry:roundjacketed>)
   .setTitle("Jacketed Ammunition")
   .setRequiredResearches("revolver")
-  .setDescription("Research jacketed ammunition, which can travel furthur.")
+  .setDescription("Research jacketed ammunition, which can travel furthur than standard ammo.")
   .addCondition(<contenttweaker:datadisk_military>*2)
   .setRewardStages("jacketed_ammo")
   .setRewardCommands("/say You can now craft Jacketed Rounds & its components")
@@ -65,8 +61,8 @@ ResearchTable.builder("jacketed_ammo", ammo)
   .setMaxCount(1)
   .build();
 
-// Armour-Piercing Rounds
 
+// Armour-Piercing Rounds
 ResearchTable.builder("ap_ammo", ammo)
   .setIcons(<foundry:roundap>)
   .setTitle("Armour-Piercing Rounds")
@@ -82,7 +78,6 @@ ResearchTable.builder("ap_ammo", ammo)
 
 
 // Armour-Piercing Shells
-
 ResearchTable.builder("ap_ammo_2", ammo)
   .setIcons(<foundry:shellap>)
   .setTitle("Armour-Piercing Shells")
@@ -97,7 +92,6 @@ ResearchTable.builder("ap_ammo_2", ammo)
 
 
 // Lumium Rounds
-
 ResearchTable.builder("advanced_ammo", ammo)
   .setIcons(<foundry:roundlumium>)
   .setTitle("Advanced Rounds")
@@ -113,7 +107,6 @@ ResearchTable.builder("advanced_ammo", ammo)
 
 
 // Lumium Shells
-
 ResearchTable.builder("advanced_ammo_2", ammo)
   .setIcons(<foundry:shelllumium>)
   .setTitle("Advanced Shells")

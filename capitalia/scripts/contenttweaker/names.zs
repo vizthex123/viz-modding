@@ -1,6 +1,7 @@
 # Names my custom items because I'm a dumb boi who can't use lang files properly lol
 
 // Data Disks
+<contenttweaker:datadisk_stone_unref>.displayName = "Stone Data Lump";
 <contenttweaker:datadisk_stone>.displayName = "Stone Data Chunk";
 <contenttweaker:datadisk_bronze>.displayName = "Bronze Data Disk";
 <contenttweaker:datadisk_iron>.displayName = "Iron Data Disk";

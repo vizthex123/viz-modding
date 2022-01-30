@@ -67,6 +67,12 @@ stonedata.setMaxStackSize(64);
 
 stonedata.register();
 
+// Stone Lump
+var stonedatalump = VanillaFactory.createItem("datadisk_stone_unref");
+stonedatalump.setMaxStackSize(64);
+
+stonedatalump.register();
+
 
 // Bronze
 var bronzedata = VanillaFactory.createItem("datadisk_bronze");

@@ -12,6 +12,8 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("iron_age.zs loading...");
 
 # Iron Age
+mods.ItemStages.addItemStage("iron_age", <extendedcrafting:table_advanced>);
+
 mods.ItemStages.addItemStage("iron_age", <minecraft:repeater>);
 mods.ItemStages.addItemStage("iron_age", <minecraft:comparator>);
 

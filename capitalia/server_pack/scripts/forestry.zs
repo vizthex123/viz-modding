@@ -25,8 +25,9 @@ mods.forestry.Squeezer.addRecipe(<liquid:honey>*1000, [<biomesoplenty:honey_bloc
 // Miner's Backpack uses bronze instead
 recipes.remove(<forestry:miner_bag>);
 recipes.addShaped(<forestry:miner_bag>, [[<minecraft:string>, <ore:wool>, <minecraft:string>],
-                              			    [<ore:ingotBronze>, <ore:chestWood>, <ore:ingotBronze>],
-                               		    	    [<minecraft:string>, <ore:wool>, <minecraft:string>]]);
+				    [<ore:ingotBronze>, <ore:chestWood>, <ore:ingotBronze>],
+				    [<minecraft:string>, <ore:wool>, <minecraft:string>]]);
+
 /*
 // Alternate Woven Miner's & Digger's Backpack recipes
 mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:miner_bag_t2>, 

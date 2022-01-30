@@ -1,5 +1,6 @@
 # Adds recipes to Mekanism machines
 print("mekanism.zs loading...");
+
 /*
 mods.mekanism.crusher.addRecipe(<output>, <input>);
 
@@ -45,19 +46,19 @@ mods.mekanism.enrichment.addRecipe(<magneticraft:ores:3>, <magneticraft:dusts:5>
 */
 
 # Tooltips for the various items you can use in the Metallurgic Infuser
-<minecraft:coal>.addShiftTooltip(format.green("Gives 10 Carbon in a Metallurigc Infuser"));
-<minecraft:coal:1>.addShiftTooltip(format.green("Gives 20 Carbon in a Metallurigc Infuser"));
-<mekanism:compressedcarbon>.addTooltip(format.green("Gives 80 Carbon in a Metallurigc Infuser"));
-<minecraft:coal_block>.addTooltip(format.green("Gives 90 Carbon in a Metallurigc Infuser"));
-<mekanism:basicblock:3>.addTooltip(format.green("Gives 180 Carbon in a Metallurigc Infuser"));
+<minecraft:coal>.addShiftTooltip(format.green("Gives 10 Carbon in a Metallurgic Infuser"));
+<minecraft:coal:1>.addShiftTooltip(format.green("Gives 20 Carbon in a Metallurgic Infuser"));
+<mekanism:compressedcarbon>.addTooltip(format.green("Gives 80 Carbon in a Metallurgic Infuser"));
+<minecraft:coal_block>.addTooltip(format.green("Gives 90 Carbon in a Metallurgic Infuser"));
+<mekanism:basicblock:3>.addTooltip(format.green("Gives 180 Carbon in a Metallurgic Infuser"));
 
-<minecraft:redstone>.addShiftTooltip(format.green("Gives 10 Redstone in a Metallurigc Infuser"));
-<mekanism:compressedredstone>.addTooltip(format.green("Gives 80 Redstone in a Metallurigc Infuser"));
-<minecraft:redstone_block>.addTooltip(format.green("Gives 90 Redstone in a Metallurigc Infuser"));
+<minecraft:redstone>.addShiftTooltip(format.green("Gives 10 Redstone in a Metallurgic Infuser"));
+<mekanism:compressedredstone>.addTooltip(format.green("Gives 80 Redstone in a Metallurgic Infuser"));
+<minecraft:redstone_block>.addTooltip(format.green("Gives 90 Redstone in a Metallurgic Infuser"));
 
-<mekanism:otherdust>.addTooltip(format.green("Gives 10 Diamond in a Metallurigc Infuser"));
-<mekanism:compresseddiamond>.addTooltip(format.green("Gives 80 Diamond in a Metallurigc Infuser"));
-<mekanism:otherdust:5>.addTooltip(format.green("Gives 10 Obsidian in a Metallurigc Infuser"));
-<mekanism:compressedobsidian>.addTooltip(format.green("Gives 80 Obsidian in a Metallurigc Infuser"));
+<mekanism:otherdust>.addTooltip(format.green("Gives 10 Diamond in a Metallurgic Infuser"));
+<mekanism:compresseddiamond>.addTooltip(format.green("Gives 80 Diamond in a Metallurgic Infuser"));
+<mekanism:otherdust:5>.addTooltip(format.green("Gives 10 Obsidian in a Metallurgic Infuser"));
+<mekanism:compressedobsidian>.addTooltip(format.green("Gives 80 Obsidian in a Metallurgic Infuser"));
 
 print("mekanism.zs loaded");

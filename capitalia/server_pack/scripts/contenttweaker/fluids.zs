@@ -4,7 +4,7 @@ import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.VanillaFactory;
 
-var research = VanillaFactory.createFluid("liquid_research", Color.fromHex("BA55D3"));
+var research = VanillaFactory.createFluid("research", Color.fromHex("BA55D3"));
 research.luminosity = 8;
 research.viscosity = 2500;
 

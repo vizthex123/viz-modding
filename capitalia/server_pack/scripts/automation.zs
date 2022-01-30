@@ -46,12 +46,12 @@ recipes.addShaped(<logisticalautomation:conveyor_normal>*4, [[<logisticalautomat
 recipes.remove(<simplequarry:fuel_quarry>);
 recipes.remove(<simplequarry:powered_quarry>);
 recipes.addShaped(<simplequarry:fuel_quarry>, [[<ore:stone>, <projectred-core:resource_item:105>|<minecraft:redstone>|<mekanism:otherdust:3>, <ore:stone>],
-                                    			               [<ore:ingotGold>, <mekanismtools:stonepaxel>, <ore:ingotGold>],
+                                    			               [<ore:ingotGold>, <mekanismtools:stonepaxel:*>, <ore:ingotGold>],
                                       			               [<ore:stone>, <progressiveautomation:miner_stone>, <ore:stone>]]);
 
 recipes.addShaped(<simplequarry:powered_quarry>, [[<ore:ingotGold>, <projectred-core:resource_item:105>|<minecraft:redstone>, <ore:ingotGold>],
                                      				     [<ore:ingotGold>, <simplequarry:fuel_quarry>, <ore:ingotGold>],
-                                  				     [<ore:ingotGold>, <minecraft:iron_pickaxe>|<mekanismtools:bronzepaxel>, <ore:ingotGold>]]);
+                                  				     [<ore:ingotGold>, <minecraft:iron_pickaxe:*>|<mekanismtools:bronzepaxel:*>, <ore:ingotGold>]]);
 // Changes BuildCraft Quarry's recipe
 recipes.remove(<buildcraftbuilders:quarry>);
 recipes.addShaped(<buildcraftbuilders:quarry>, [[<ore:gearIron>, <projectred-core:resource_item:105>, <ore:gearIron>],

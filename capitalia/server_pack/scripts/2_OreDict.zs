@@ -14,11 +14,20 @@ print("2_OreDict.zs loading...");
 <ore:workbench>.add(<marblecraftingtable:marble_crafting_table>);
 
 
+// Chests
+<ore:chest>.add(<appliedenergistics2:smooth_sky_stone_chest>);
+<ore:chest>.add(<appliedenergistics2:sky_stone_chest>);
+<ore:chest>.add(<extrautils2:largishchest>);
+<ore:chestWood>.add(<extrautils2:largishchest>);
+
+
+
 // Circuits
 <ore:circuitBasic>.add(<advancedrocketry:ic>);
 <ore:circuitElite>.remove(<techguns:itemshared:66>);
 <ore:circuitAdvanced>.add(<techguns:itemshared:66>);
 <ore:circuitAdvanced>.add(<advancedrocketry:ic:2>);
+
 
 // Berries as dye
 <ore:dyeRed>.add(<natura:edibles:2>);
@@ -29,7 +38,6 @@ print("2_OreDict.zs loading...");
 <ore:dyeGray>.add(<natura:edibles:7>);
 <ore:dyeCyan>.add(<natura:edibles:8>);
 <ore:dyeGreen>.add(<natura:edibles:9>);
-
 
 
 // Misc

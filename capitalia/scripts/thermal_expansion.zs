@@ -81,9 +81,9 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*3, <minecraft:soul_s
 
 // Convert XP to Research
 // Varies based on how easy it is to get that version of liquid XP
-mods.thermalexpansion.Refinery.addRecipe(<fluid:liquid_research>*750, null, <liquid:experience>*4000, 12000);
-mods.thermalexpansion.Refinery.addRecipe(<fluid:liquid_research>*250, null, <liquid:xpjuice>*3000, 10000);
-mods.thermalexpansion.Refinery.addRecipe(<fluid:liquid_research>*500, null, <liquid:essence>*2000, 8000);
+mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*750, null, <liquid:experience>*4000, 12000);
+mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*250, null, <liquid:xpjuice>*3000, 10000);
+mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*500, null, <liquid:essence>*2000, 8000);
 /*
 // BoP Honey > Forestry Honey
 mods.thermalexpansion.Refinery.addRecipe(<liquid:fluid.for.honey>*100, null, <liquid:honey>*100, 1000);
@@ -92,10 +92,20 @@ mods.thermalexpansion.Refinery.addRecipe(<liquid:fluid.for.honey>*100, null, <li
 mods.thermalexpansion.Refinery.addRecipe(<liquid:if.protein>*250, null, <liquid:blood>*1000, 6000);
 
 // Alien Goo > Liquified Research
-mods.thermalexpansion.Refinery.addRecipe(<liquid:liquid_research>*250, null, <liquid:alien_goo>*500, 8000);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:research>*250, null, <liquid:alien_goo>*500, 8000);
+
+// Sky Stone > Alien Goo
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*50, <appliedenergistics2:sky_stone_block>, 3000);
+
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*50, <appliedenergistics2:smooth_sky_stone_block>, 1500);
 
 // Sky Stone Dust > Alien Goo
-mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*100, <appliedenergistics2:material:45>, 2000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*100, <appliedenergistics2:material:45>, 2000);
+
+// Sky Stone Chests > Alien Goo
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*500, <appliedenergistics2:sky_stone_chest>, 4000);
+
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*500, <appliedenergistics2:smooth_sky_stone_chest>, 2000);
 
 // Alien Blaster > Alien Goo (rip alien goo blocks I guess?)
 mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*10000, <techguns:alienblaster:*>, 20000);
@@ -110,24 +120,25 @@ mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<for
 mods.thermalexpansion.Refinery.addRecipe(null, <forestry:honey_drop>%25, <liquid:honey>*500, 4000);
 
 
-
 ### Research Disks
 // Disk > Fluid
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*5, <contenttweaker:datadisk_stone>, 2000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*10, <contenttweaker:datadisk_military>, 4000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*15, <contenttweaker:datadisk_bronze>, 6000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*25, <contenttweaker:datadisk_iron>, 8000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*500, <contenttweaker:datadisk_industrial>, 16000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*1250, <contenttweaker:datadisk_machine>, 32000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*1500, <contenttweaker:datadisk_information>, 48000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:liquid_research>*2000, <contenttweaker:datadisk_atomic>, 65536);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*5, <contenttweaker:datadisk_stone>, 2000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*10, <contenttweaker:datadisk_military>, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*15, <contenttweaker:datadisk_bronze>, 6000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*25, <contenttweaker:datadisk_iron>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*500, <contenttweaker:datadisk_industrial>, 16000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*1250, <contenttweaker:datadisk_machine>, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*1500, <contenttweaker:datadisk_information>, 48000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*2000, <contenttweaker:datadisk_atomic>, 65536);
 
 // Fluid > Disks
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_industrial>, <contenttweaker:datadisk_industrial_unref>, <fluid:liquid_research>*750, 24000);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_machine>, <contenttweaker:datadisk_machine_unref>, <fluid:liquid_research>*1875, 48000);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_information>, <contenttweaker:datadisk_information_unref>, <fluid:liquid_research>*2250, 64000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_industrial>, <contenttweaker:datadisk_industrial_unref>, <fluid:research>*750, 24000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_machine>, <contenttweaker:datadisk_machine_unref>, <fluid:research>*2000, 48000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_information>, <contenttweaker:datadisk_information_unref>, <fluid:research>*2500, 64000);
 
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>, <contenttweaker:neutron>, <fluid:liquid_research>*3000, 72000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>, <contenttweaker:neutron>, <fluid:research>*3000, 72000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>, <contenttweaker:electron>, <fluid:research>*4000, 64000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>, <contenttweaker:proton>, <fluid:research>*4000, 48000);
 
 // Value Tooltips
 <contenttweaker:datadisk_military>.addTooltip(format.gold("Can be melted into 10 mB of Liquified Research"));

@@ -57,7 +57,6 @@ mods.jei.JEI.removeAndHide(<ironfurnaces:obsidian_furnace_idle>);
 mods.jei.JEI.removeAndHide(<ironfurnaces:diamond_furnace_active>);
 mods.jei.JEI.removeAndHide(<ironfurnaces:glass_furnace_active>);
 mods.jei.JEI.removeAndHide(<ironfurnaces:obsidian_furnace_active>);
-mods.jei.JEI.removeAndHide(<techguns:revolver>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:capacitor_wooden>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:capacitor_stone>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:capacitor_iron>);

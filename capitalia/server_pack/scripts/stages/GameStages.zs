@@ -29,6 +29,7 @@ mods.ItemStages.stageModItems("ae2", "appliedenergistics2");
 mods.ItemStages.stageModItems("wireless_power", "fluxnetworks");
 
 
+
 # Re-stage items
 mods.ItemStages.removeItemStage(<advancedrocketry:misc:1>);
 mods.ItemStages.removeItemStage(<foundry:refractoryglass>);
@@ -99,6 +100,7 @@ mods.ItemStages.removeItemStage(<appliedenergistics2:smooth_sky_stone_block>);
 mods.ItemStages.removeItemStage(<appliedenergistics2:smooth_sky_stone_chest>);
 mods.ItemStages.removeItemStage(<appliedenergistics2:sky_stone_chest>);
 mods.ItemStages.removeItemStage(<appliedenergistics2:material:45>);
+
 
 // Misc stage removals
 mods.ItemStages.removeItemStage(<advancedrocketry:misc>);

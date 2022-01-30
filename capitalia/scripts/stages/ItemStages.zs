@@ -123,6 +123,7 @@ mods.recipestages.Recipes.setRecipeStage("advanced_circuitry", <advancedrocketry
 # 		Foundry's guns & their parts				           #
 #############################################################################
 # Revolver & parts
+mods.ItemStages.addItemStage("revolver", <techguns:revolver>);
 mods.ItemStages.addItemStage("revolver", <foundry:revolver>);
 mods.ItemStages.addItemStage("revolver", <foundry:mold:16>);
 mods.ItemStages.addItemStage("revolver", <foundry:mold:17>);
@@ -254,8 +255,9 @@ mods.recipestages.Recipes.setRecipeStage("pistol", <techguns:itemshared:11>);
 mods.recipestages.Recipes.setRecipeStage("pistol", <techguns:itemshared:12>);
 
 
-// Oil
+// Oil-Related Items
 mods.ItemStages.addItemStage("oil", <thermalexpansion:machine:7>);
+mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:258>);
 mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:368>);
 mods.ItemStages.addItemStage("oil", <industrialforegoing:fluid_pump>);
 mods.ItemStages.addItemStage("oil", <buildcraftfactory:pump>);

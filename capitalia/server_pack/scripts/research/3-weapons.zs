@@ -6,7 +6,6 @@ var weapons = ResearchTable.addCategory(<minecraft:bow>);
 
 
 // Bow(s)
-
 ResearchTable.builder("bow", weapons)
   .setIcons(<minecraft:bow>)
   .setTitle("Primitive Weapon Research")
@@ -21,14 +20,13 @@ ResearchTable.builder("bow", weapons)
 
 
 // Hand Cannon
-
 ResearchTable.builder("stone_gun", weapons)
   .setIcons(<techguns:handcannon>)
   .setTitle("Primitive Handgun Research")
   .setRequiredResearches("stone_age")
   .setRequiredResearches("bow")
   .setDescription("Research a weapon made out of stone")
-  .addCondition(<contenttweaker:datadisk_military>)
+  .addCondition(<contenttweaker:datadisk_stone>)
   .setRewardStages("stone_gun")
   .setRewardCommands("/say You've found a way to make a basic stone gun")
   .setRewardItems(<techguns:itemshared>*2)
@@ -37,7 +35,6 @@ ResearchTable.builder("stone_gun", weapons)
 
 
 // Revolver Research
-
 ResearchTable.builder("revolver", weapons)
   .setIcons(<foundry:revolver>)
   .setTitle("Basic Handgun Research")
@@ -53,14 +50,13 @@ ResearchTable.builder("revolver", weapons)
 
 
 // Golden Revolver
-
 ResearchTable.builder("golden_revolver", weapons)
   .setIcons(<techguns:goldenrevolver>)
   .setTitle("Improved Handgun Research")
   .setRequiredResearches("revolver")
   .setRequiredResearches("bow")
   .setDescription("Research a more powerful ranged weapon")
-  .addCondition(<contenttweaker:datadisk_military>*5)
+  .addCondition(<contenttweaker:datadisk_military>*4)
   .setRewardStages("golden_revolver")
   .setRewardCommands("/say You can now upgrade your revolver")
   .setRewardItems(<techguns:itemshared:1>)
@@ -69,7 +65,6 @@ ResearchTable.builder("golden_revolver", weapons)
 
 
 // Pistol research
-
 ResearchTable.builder("pistol", weapons)
   .setIcons(<techguns:pistol>)
   .setTitle("Pistol Research")
@@ -86,7 +81,6 @@ ResearchTable.builder("pistol", weapons)
 
 
 // Shotgun Research
-
 ResearchTable.builder("shotgun", weapons)
   .setIcons(<foundry:shotgun>)
   .setTitle("Basic Shotgun Research")

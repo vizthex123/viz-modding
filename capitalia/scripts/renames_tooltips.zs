@@ -135,10 +135,17 @@ print("renamed_tooltips.zs loading...");
 
 
 
-
 # Dungeon Loot
 <minecraft:iron_horse_armor>.addTooltip(format.aqua("Can be melted into Iron"));
 <minecraft:golden_horse_armor>.addTooltip(format.aqua("Can be melted into Gold"));
+
+
+// Alien Goo amounts
+<appliedenergistics2:material:45>.addTooltip(format.green("Contains trace amounts of alien material"));
+<appliedenergistics2:sky_stone_block>.addTooltip(format.green("Contains trace amounts of alien material"));
+<appliedenergistics2:smooth_sky_stone_block>.addTooltip(format.green("Contains trace amounts of alien material"));
+<appliedenergistics2:smooth_sky_stone_chest>.addTooltip(format.green("Contains trace amounts of alien material"));
+<appliedenergistics2:sky_stone_chest>.addTooltip(format.green("Contains trace amounts of alien material"));
 
 
 // References
