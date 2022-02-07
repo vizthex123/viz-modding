@@ -1,0 +1,31 @@
+32767 is ignore data in FTGU json files
+
+Constants:
+wood
+cobblestone
+fancystone
+stone
+
+terracotta
+concrete
+
+fuel
+hot
+cold
+
+food
+knowledge
+
+,
+				"decipher": {
+					"decipher": {
+						"block": "minecraft:diamond_ore",
+						"data": 32767
+					},
+					"hint": "This is exceptionally strong. If refined properly, it could make some superior tools."
+					"decipher": {
+						"block": "minecraft:emerald_ore",
+						"data": 32767
+					},
+					"hint": "This is too scarce to forge tools out of, but perhaps some of the local people would appriciate it."
+				}

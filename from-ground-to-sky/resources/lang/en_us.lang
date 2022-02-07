@@ -1,0 +1,6 @@
+nutrient.nutrition:grain=Grains
+nutrient.nutrition:fruit=Fruits
+nutrient.nutrition:protein=Proteins
+nutrient.nutrition:vegetable=Vegetables
+nutrient.nutrition:dairy=Dairy
+potion.nutrition:toughness=Fortitude
