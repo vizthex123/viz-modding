@@ -8,19 +8,17 @@ print("XLFood.zs loading...");
 # Change the recipe for Tomato & Hot Sauce because balancing
 furnace.remove(<xlfoodmod:hot_sauce>);
 furnace.remove(<xlfoodmod:tomato_sauce>);
-recipes.addShapeless(<contenttweaker:bottled_pepper>, [<minecraft:glass_bottle>, <xlfoodmod:pepper>]);
-recipes.addShapeless(<contenttweaker:bottled_tomato>, [<minecraft:glass_bottle>, <ore:cropTomato>]);
 
 furnace.addRecipe(<xlfoodmod:hot_sauce>, <contenttweaker:bottled_pepper>, 0.5);
 furnace.addRecipe(<xlfoodmod:tomato_sauce>, <contenttweaker:bottled_tomato>, 0.5);
 
 // Also Chocolate Syrup
 furnace.remove(<xlfoodmod:chocolate_syrup>);
-recipes.addShapeless(<contenttweaker:bottled_cocoa>, [<minecraft:glass_bottle>, <minecraft:dye:3>]);
-
 furnace.addRecipe(<xlfoodmod:chocolate_syrup>, <contenttweaker:bottled_cocoa>, 0.5);
 
-# New recipes for XL Food items
+# Bottled stuff is in recipes.zs
+
+### New recipes for XL Food items
 
 // Alternate Cooked Dough recipe
 RecipeBuilder.get("chef")
@@ -339,7 +337,7 @@ recipes.remove(<xlfoodmod:bottom_bun>);
 
 // Top
 RecipeBuilder.get("chef")
-  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>])
+  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>])
   .setFluid(<liquid:water> * 500)
   .addOutput(<xlfoodmod:top_bun>)
   .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))

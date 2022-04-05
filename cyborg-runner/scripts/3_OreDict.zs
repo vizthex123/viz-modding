@@ -148,12 +148,6 @@ chestw.add(<extrautils2:largishchest>);
 chestw.add(<glacidus:underground_chest>);
 
 
-// Circuits
-<ore:circuitBasic>.add(<matteroverdrive:isolinear_circuit>);
-<ore:circuitAdvanced>.add(<matteroverdrive:isolinear_circuit:1>);
-<ore:circuitElite>.add(<matteroverdrive:isolinear_circuit:2>);
-<ore:circuitUltimate>.add(<matteroverdrive:isolinear_circuit:3>);
-
 // Misc
 /*
 <ore:dustSalt>.add(<alchemistry:mineral_salt>);

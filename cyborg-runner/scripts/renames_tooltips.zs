@@ -100,10 +100,9 @@ print("renames_tooltips.zs loading...");
 <contenttweaker:wrapped_bone>.addTooltip(format.white("I could probably ignite this, perhaps as a make-shift light source?"));
 <xlfoodmod:vanilla_flower>.addTooltip(format.white("Probably not edible on its own, but I could extract the raw vanilla and use that to cook."));
 <compactmachines3:machine:*>.addTooltip(format.white("I could probably recycle this later on."));
-<mystcraft:blockcrystal>.addTooltip(format.white("This seems to be charged with something....perhaps I could extract that later on?"));
-<matteroverdrive:matter_dust>.addTooltip(format.white("I could refine this into usable matter again"));
-<matteroverdrive:matter_dust_refined>.addTooltip(format.white("I can decompose this again to get the matter back"));
-
+<mystcraft:blockcrystal>.addTooltip(format.white("This seems to be charged with something....perhaps I could extract it later on?"));
+<xp_ore:xp_ore_drained>.addTooltip(format.white("I could probably siphon a few more drops out of this."));
+<pyramidplunder:urn>.addTooltip(format.white("I should be able to smash this into gold, maybe even melt it down?"));
 
 
 

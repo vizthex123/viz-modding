@@ -170,16 +170,79 @@ RecipeBuilder.get("mason")
   .setName("crush_purple_sandstone")
   .create();
 
+# Sift BYG dirts
+// Sift Coarse Dirt into Dirt
+RecipeBuilder.get("mason")
+  .setShapeless([<minecraft:dirt:1>])
+  .setFluid(<liquid:water> * 100)
+  .addTool(<ore:artisansSifter>, 5)
+  .addOutput(<minecraft:dirt>)
+  .setExtraOutputOne(<minecraft:dirt>, 0.5)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("sift_coarse_dirt")
+  .create();
+
+// Sift Meadow Dirt into Dirt
+RecipeBuilder.get("mason")
+  .setShapeless([<byg:meadowdirt>])
+  .setFluid(<liquid:water> * 200)
+  .addTool(<ore:artisansSifter>, 20)
+  .addOutput(<minecraft:dirt>)
+  .setExtraOutputOne(<minecraft:dirt>*2, 0.5)
+  .setExtraOutputTwo(<minecraft:dirt:1>, 0.6)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("sift_meadow_dirt")
+  .create();
+
+// Sift Pasture Dirt into Dirt
+RecipeBuilder.get("mason")
+  .setShapeless([<byg:pasturdirt>])
+  .setFluid(<liquid:water> * 200)
+  .addTool(<ore:artisansSifter>, 15)
+  .addOutput(<alchemistry:element:7>) // Nitrogen
+  .setExtraOutputOne(<minecraft:dirt>, 1.0)
+  .setExtraOutputTwo(<minecraft:dirt:1>, 0.45)
+  .setExtraOutputThree(<alchemistry:element:7>*2, 0.45)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("sift_pasture_dirt")
+  .create();
+
+// Sift Peat Dirt into Dirt
+RecipeBuilder.get("mason")
+  .setShapeless([<byg:peatdirt>])
+  .setFluid(<liquid:water> * 250)
+  .addTool(<ore:artisansSifter>, 25)
+  .addOutput(<alchemistry:compound>*2) // Cellulose
+  .setExtraOutputOne(<minecraft:dirt>, 1.0)
+  .setExtraOutputTwo(<minecraft:dirt:1>, 0.35)
+  .setExtraOutputThree(<alchemistry:compound>*2, 0.45)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("sift_peat_dirt")
+  .create();
+
 // Sift Sandy Dirt into Sand & Dirt
 RecipeBuilder.get("mason")
   .setShapeless([<byg:sandydirt>])
   .setFluid(<liquid:water> * 100)
-  .addTool(<ore:artisansSifter>, 15)
+  .addTool(<ore:artisansSifter>, 10)
   .addOutput(<minecraft:sand>)
   .setExtraOutputOne(<minecraft:dirt>, 1.0)
   .setExtraOutputTwo(<minecraft:dirt:1>, 0.5)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("sift_sandy_dirt")
+  .create();
+
+// Sift Hardened Dirt into Cobblestone & Dirt
+RecipeBuilder.get("mason")
+  .setShapeless([<byg:sandydirt>])
+  .setFluid(<liquid:water> * 500)
+  .addTool(<ore:artisansSifter>, 35)
+  .addOutput(<minecraft:cobblestone>)
+  .setExtraOutputOne(<minecraft:dirt>, 1.0)
+  .setExtraOutputTwo(<minecraft:dirt>, 0.75)
+  .setExtraOutputThree(<minecraft:cobblestone>, 0.75)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("sift_hardened_dirt")
   .create();
 
 # Sift Sand > Dusts (of various kinds)

@@ -1,7 +1,6 @@
 # Adds recipes to machines from Thermal Expansion
 
 import mods.thermalexpansion.Refinery;
-
 print("thermal_expansion.zs loading...");
 
 /*
@@ -10,7 +9,14 @@ mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, 
 
 mods.thermalexpansion.Refinery.addRecipe(<fluid_output>, <item_output> % *, <fluid_input>, RF);
 * % chance from 1 - 100 (item outputs are optional)
+
+https://docs.blamejared.com/1.12/en/Mods/Modtweaker/ThermalExpansion/Redstone_Furnace
 */
+
+// Process Ancient Urns into Gold
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gold_ingot>, <pyramidplunder:urn>, 6000, <minecraft:gold_ingot>, 50);
+
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>*2, <pyramidplunder:urn>, 6000);
 
 // Alternate Compress Carbon Block recipe
 // Main one is in artisan_worktables.zs
@@ -24,11 +30,14 @@ mods.thermalexpansion.Compactor.addPressRecipe(<nibrockscoal:gold_coal>, <nibroc
 mods.thermalexpansion.Compactor.addPressRecipe(<nibrockscoal:diamond_coal>, <nibrockscoal:gold_coal>*2, 8000);
 
 // Turn Destabilized Redstone into Redstone
-mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*25, <minecraft:redstone> % 21, <liquid:redstone>*50, 4000);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*25, <minecraft:redstone> % 25, <liquid:redstone>*50, 4000);
 
 // Turn Crysium into Cryotheum
 mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*25, <glacidus:crysium>, 8000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*250, <glacidus:crystal_block>, 24000);
+
+// Turn XP Ore into XP
+mods.thermalexpansion.Crucible.addRecipe(<liquid:experience>*50, <xp_ore:xp_ore_drained>, 4000);
 
 // Should fix all the steel recipe duplicates
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:768>, <minecraft:iron_ingot>);
@@ -71,17 +80,6 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>*2, <ceramics:clay_bo
 // Process Better Slimes & other mobs into their drops
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:black_slime>, [<betterslimes:black_slime>%100, <betterslimes:black_slime>%50, <minecraft:slime_ball>%25], null, 4000);
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:blue_slime>, [<betterslimes:blue_slime>%100, <betterslimes:blue_slime>%50, <minecraft:slime_ball>%25], null, 4000);
-
-// Process Alien Bugs into Alien Goo
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:alienbug>, [<jjcoin:silver_coin>*2%100, <jjcoin:silver_coin>%50, <jjcoin:gold_coin>%10], <liquid:alien_goo>*2500, 8000, 75);
-
-// Process Nether Wasps into Honey (because reasons lol?)
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<forestry:honeydew>%25, <forestry:honey_drop>%50], <liquid:honey>*100, 5000, 50);
-
-
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:imp>, [<natura:materials:6>%75, <natura:edibles>%50], <liquid:lava>*25, 4000);
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:nitrocreeper>, [(<minecraft:gunpowder>*3)%100], null, 4000, 200);
 */
-
 
 print("thermal_expansion.zs loaded");

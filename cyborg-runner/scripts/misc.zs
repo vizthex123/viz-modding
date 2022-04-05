@@ -10,6 +10,19 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Craft Cursed  & Enchanted Hearts
+recipes.addShaped(<scalinghealth:difficultychanger>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],
+                                      [<scalinghealth:heartdust>, <minecraft:bread>|<xlfoodmod:cheesy_bread>||<byg:pumpkinbread>|<xlfoodmod:baguette>|<xlfoodmod:rice_bread>|<xlfoodmod:corn_bread>|<xlfoodmod:potato_bread>, <scalinghealth:heartdust>],
+                                      [<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>]]);
+
+recipes.addShaped(<scalinghealth:difficultychanger:1>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],
+                                      [<scalinghealth:heartdust>, <minecraft:rotten_flesh>|<xlfoodmod:flesh>|<byg:cookedflesh>, <scalinghealth:heartdust>],
+                                      [<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>]]);
+
+// Smelt Ancient Urns into Gold
+// Redstone Furnace boosts this recipe
+furnace.addRecipe(<minecraft:gold_nugget>*5, <pyramidplunder:urn>, 1.0);
+
 // Alternate Hopper recipe
 recipes.addShaped(<minecraft:hopper>, [[<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
                                       		                    [<minecraft:iron_ingot>, <ore:logWood>, <minecraft:iron_ingot>],
@@ -65,9 +78,6 @@ recipes.addShapeless(<minicoal:minicoal>*64, [<nibrockscoal:diamond_coal>]);
 
 // Crimson Coal > Mini Coal
 recipes.addShapeless(<minicoal:minicoal>*12, [<cm:crimson_coal>]);
-
-// Craft Cursed Hearts
-recipes.addShapeless(<scalinghealth:difficultychanger>, [<minecraft:coal>|<minecraft:coal:1>, <minecraft:flint>, <scalinghealth:difficultychanger:1>]);
 
 // Make Translocators the first form of item/fluid transport
 recipes.remove(<translocators:translocator_part>);
@@ -154,19 +164,13 @@ recipes.addShapeless(<minecraft:chest>, [<minecraft:trapped_chest>, <minecraft:f
 // Gravel -> Flint
 recipes.addShapeless(<minecraft:flint>, [<minecraft:gravel>, <minecraft:gravel>, <minecraft:gravel>, <minecraft:gravel>]);
 
-// Bone Torch & wrapped bone recipes
+// Bone Torch tweak
 // To make them the early-game lighting method
 recipes.remove(<bonetorch:bonetorch>);
 recipes.addShapeless(<bonetorch:bonetorch>, [<minecraft:flint_and_steel:*>.transformDamage(1), <contenttweaker:wrapped_bone>]);
 
-recipes.addShapeless(<contenttweaker:wrapped_bone>, [<ore:string>, <minecraft:bone>]);
 recipes.addShapeless(<bonetorch:bonetorch>*4, [<minecraft:coal>|<minecraft:coal:1>, <ore:bone>]);
 
-// Faulty (DIY Melon) Circuit
-// I don't even know...
-recipes.addShapedMirrored(<contenttweaker:faulty_circuit>, [[null, null, <ore:dustSalt>],
-                                     					 [<minecraft:glowstone_dust>|<minecraft:redstone>, <minecraft:melon_block>, <minecraft:glowstone_dust>|<minecraft:redstone>],
-                                 					 [<ore:dustSalt>, null, null]]);
 // Basic Circuit re-work
 // Makes 2 per craft, and costs about the same
 // Also lets you upgrade a DIY Melon Circuit into a Basic one
@@ -191,14 +195,6 @@ recipes.remove(<multistorage:stone_storage>);
 recipes.addShaped(<multistorage:stone_storage>, [[<ore:stone>, <ore:stickStone>, <ore:stone>],
                                 			 	[<ore:stickStone>, <extrautils2:compressedcobblestone:1>, <ore:stickStone>],
                                  			                    [<ore:stone>, <ore:stickStone>, <ore:stone>]]);
-// Iron Ring recipe
-recipes.addShaped(<contenttweaker:ring>, [[null, <minecraft:iron_ingot>, null],
-                                		 	      [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
-                                  			      [null, <minecraft:iron_ingot>, null]]);
-
-// Slime Green recipe
-recipes.addShapeless(<contenttweaker:slime_green>, [<minecraft:slime_ball>]);
-
 // Repair Flint & Steel
 recipes.addShapeless(<minecraft:flint_and_steel>, [<minecraft:flint_and_steel:*>, <minecraft:flint>]);
 

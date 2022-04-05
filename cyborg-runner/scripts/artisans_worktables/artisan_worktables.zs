@@ -14,7 +14,6 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 
 <artisanworktables:worktable:5>.addTooltip(format.aqua("Works as a normal crafting table"));
 <artisanworktables:workstation:5>.addTooltip(format.aqua("Works as a normal crafting table"));
-#	<artisanworktables:workshop:5>.addTooltip(format.aqua("Works as a normal crafting table"));
 <artisanworktables:mechanical_toolbox>.addTooltip(format.aqua("Refills broken tools in Worktables/stations/shops"));
 <artisanworktables:mechanical_toolbox>.addTooltip(format.aqua("Retains contents when broken"));
 <artisanworktables:toolbox>.addTooltip(format.aqua("Retains contents when broken"));

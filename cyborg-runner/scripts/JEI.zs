@@ -20,7 +20,9 @@ mods.jei.JEI.addDescription(<coalprocessing:diamond_machine>,"Place a Compressed
 mods.jei.JEI.addDescription(<minecraft:coal_ore>,"Can rarely drop Concentrated, Refined, Pure, or Crimson coal.");
 mods.jei.JEI.addDescription(<densemetals:dense_coal_ore>,"Can drop Concentrated, Refined, Pure, or Crimson coal. Drops more often than regular Coal Ore.");
 mods.jei.JEI.addDescription(<superores:super_coal>,"Can drop Concentrated, Refined, Pure, or Crimson coal. Drops more often than Dense Coal Ore.");
-mods.jei.JEI.addDescription(<mystcraft:unlinkedbook>,"Crafted with 1 Linking Panel and 1 Leather. Right-click to link to your current location. Use it to teleport back to the linked location. Once.");
+mods.jei.JEI.addDescription(<mystcraft:unlinkedbook>,"Crafted with 1 Link Panel Page and 1 Leather. Right-click to link to your current location. Use it to teleport back to the linked location. Only works once! (Unless you can place it on kind of book holding device?)");
+
+mods.jei.JEI.addDescription(<mystcraft:agebook>,"Crafted with 1 Link Panel Page and 1 Leather. Right-click to link to your current location. Use it to teleport back to the linked location. Only works once! (Unless you can place it on kind of book holding device?)");
 
 mods.jei.JEI.addDescription(<artisanworktables:design_pattern>,"Can be used to save recipes you craft a lot. If a design table is placed near other Artisan tables, you can use these on any of the tables.");
 
@@ -28,8 +30,7 @@ mods.jei.JEI.addDescription(<glacidus:merialces_hide>,"Occasionally drops from M
 
 
 
-
-// Remove Ceramics items
+// Remove Ceramics' items
 mods.jei.JEI.removeAndHide(<ceramics:clay_bucket_block>);
 mods.jei.JEI.removeAndHide(<ceramics:clay_helmet_raw>);
 mods.jei.JEI.removeAndHide(<ceramics:clay_chestplate_raw>);
