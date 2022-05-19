@@ -19,6 +19,8 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:0>.add(<item:>);
 */
 
+<tag:items:amc-value:2>.add(<item:thermal:syrup_bottle>);
+
 <tag:items:amc-value:180>.add(<item:thermal:copper_block>);
 <tag:items:amc-value:180>.add(<item:thermal:tin_block>);
 <tag:items:amc-value:450>.add(<item:thermal:lead_block>);
@@ -91,11 +93,14 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:1000>.add(<item:thermal:emerald_dust>);
 
 
+<tag:items:amc-value:25>.add(<item:thermal:iron_plate>);
+<tag:items:amc-value:50>.add(<item:thermal:gold_plate>);
 <tag:items:amc-value:20>.add(<item:thermal:copper_plate>);
 <tag:items:amc-value:20>.add(<item:thermal:tin_plate>);
 <tag:items:amc-value:50>.add(<item:thermal:lead_plate>);
 <tag:items:amc-value:50>.add(<item:thermal:silver_plate>);
 <tag:items:amc-value:35>.add(<item:thermal:nickel_plate>);
+<tag:items:amc-value:2200>.add(<item:thermal:netherite_plate>);
 
 <tag:items:amc-value:20>.add(<item:thermal:bronze_plate>);
 <tag:items:amc-value:50>.add(<item:thermal:electrum_plate>);
@@ -191,10 +196,18 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:450>.add(<item:thermal:rubber_block>);
 <tag:items:amc-value:50>.add(<item:thermal:rubber>);
 
-<tag:items:amc-value:36>.add(<item:thermal:slag_block>);
 <tag:items:amc-value:4>.add(<item:thermal:slag>);
-<tag:items:amc-value:225>.add(<item:thermal:rich_slag_block>);
+<tag:items:amc-value:36>.add(<item:thermal:slag_block>);
+<tag:items:amc-value:36>.add(<item:thermal:polished_slag>);
+<tag:items:amc-value:36>.add(<item:thermal:chiseled_slag>);
+<tag:items:amc-value:36>.add(<item:thermal:slag_bricks>);
+<tag:items:amc-value:36>.add(<item:thermal:cracked_slag_bricks>);
+
 <tag:items:amc-value:25>.add(<item:thermal:rich_slag>);
+<tag:items:amc-value:100>.add(<item:thermal:polished_rich_slag>);
+<tag:items:amc-value:100>.add(<item:thermal:chiseled_rich_slag>);
+<tag:items:amc-value:100>.add(<item:thermal:rich_slag_bricks>);
+<tag:items:amc-value:100>.add(<item:thermal:cracked_rich_slag_bricks>);
 
 <tag:items:amc-value:90>.add(<item:thermal:sugar_cane_block>);
 <tag:items:amc-value:2.25>.add(<item:thermal:bamboo_block>);
@@ -339,10 +352,16 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:509>.add(<item:thermal:machine_crafter>);
 
 <tag:items:amc-value:305>.add(<item:thermal:dynamo_stirling>); // Should  be 307
+
+<tag:items:amc-value:325>.add(<item:thermal:dynamo_gourmand>);
 <tag:items:amc-value:325>.add(<item:thermal:dynamo_compression>);
-<tag:items:amc-value:715>.add(<item:thermal:dynamo_magmatic>);
+
 <tag:items:amc-value:345>.add(<item:thermal:dynamo_numismatic>);
 <tag:items:amc-value:425>.add(<item:thermal:dynamo_lapidary>);
+
+<tag:items:amc-value:495>.add(<item:thermal:dynamo_disenchantment>);
+
+<tag:items:amc-value:715>.add(<item:thermal:dynamo_magmatic>);
 
 <tag:items:amc-value:1340>.add(<item:thermal:press_coin_die>);
 <tag:items:amc-value:500>.add(<item:thermal:press_gear_die>); // Not accurate but I don't wanna average values rn
@@ -356,24 +375,46 @@ purple: 5,000+ (insane)
 
 <tag:items:amc-value:18.5>.add(<item:thermal:crossover_rail>);
 <tag:items:amc-value:25.5>.add(<item:thermal:prismarine_rail>); // Should be 25.666 etc.
+
+<tag:items:amc-value:36>.add(<item:thermal:charcoal_block>);
+<tag:items:amc-value:36>.add(<item:thermal:slot_seal>); // Should be 36.108
+
 <tag:items:amc-value:50.5>.add(<item:thermal:prismarine_crossover_rail>);
-<tag:items:amc-value:72>.add(<item:thermal:prismarine_powered_rail>); // Should be 71.666 etc.
+
+<tag:items:amc-value:25.5>.add(<item:thermal:lumium_rail>); // Should be 26.5
+
 <tag:items:amc-value:45>.add(<item:thermal:prismarine_activator_rail>); // Should be 46.666 etc.
 <tag:items:amc-value:45>.add(<item:thermal:prismarine_detector_rail>); // Should be 46.666 etc.
-<tag:items:amc-value:25.5>.add(<item:thermal:lumium_rail>); // Should be 26.5
-<tag:items:amc-value:50.5>.add(<item:thermal:lumium_crossover_rail>); // Should be 53.5
-<tag:items:amc-value:72>.add(<item:thermal:lumium_powered_rail>); // Should be 72.5
 <tag:items:amc-value:47.5>.add(<item:thermal:lumium_activator_rail>);
 <tag:items:amc-value:47.5>.add(<item:thermal:lumium_detector_rail>);
-<tag:items:amc-value:450>.add(<item:thermal:underwater_minecart>);
-<tag:items:amc-value:500>.add(<item:thermal:slime_tnt_minecart>);
-<tag:items:amc-value:440>.add(<item:thermal:redstone_tnt_minecart>);
+
+<tag:items:amc-value:50.5>.add(<item:thermal:lumium_crossover_rail>); // Should be 53.5
+
+<tag:items:amc-value:72>.add(<item:thermal:lumium_powered_rail>); // Should be 72.5
+<tag:items:amc-value:72>.add(<item:thermal:prismarine_powered_rail>); // Should be 71.666 etc.
+
 <tag:items:amc-value:350>.add(<item:thermal:glowstone_tnt_minecart>);
-<tag:items:amc-value:2300>.add(<item:thermal:ender_tnt_minecart>);
+
+<tag:items:amc-value:440>.add(<item:thermal:redstone_tnt_minecart>);
+<tag:items:amc-value:450>.add(<item:thermal:underwater_minecart>);
+
+<tag:items:amc-value:500>.add(<item:thermal:slime_tnt_minecart>);
 <tag:items:amc-value:500>.add(<item:thermal:fire_tnt_minecart>);
 <tag:items:amc-value:500>.add(<item:thermal:earth_tnt_minecart>);
 <tag:items:amc-value:500>.add(<item:thermal:ice_tnt_minecart>);
 <tag:items:amc-value:500>.add(<item:thermal:lightning_tnt_minecart>);
+
+<tag:items:amc-value:20>.add(<item:thermal:machine_null_augment>); // Should be 19.108
+
+<tag:items:amc-value:136>.add(<item:thermal:satchel>);
+
+<tag:items:amc-value:750>.add(<item:thermal:netherite_coin>); // Should be 733.3333333333333
+
+<tag:items:amc-value:2200>.add(<item:thermal:netherite_dust>);
+
+<tag:items:amc-value:2300>.add(<item:thermal:ender_tnt_minecart>);
+
+<tag:items:amc-value:8802.777>.add(<item:thermal:ender_tnt_minecart>);
 
 
 # AMC Recipes
@@ -408,13 +449,16 @@ RF cost is 100x (total) AMC value
 <recipetype:thermal:smelter>.addRecipe("crystallize_bamboo_block", [<item:contenttweaker:amc_crystal_small> % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:2.25>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 250);
 
 // Crystallize Crossover Rails [18.5]
-<recipetype:thermal:smelter>.addRecipe("crystalpress_crossover_rail", [<item:contenttweaker:amc_crystal_large>*3 % 100, <item:contenttweaker:amc_crystal_small> % 100, <item:contenttweaker:amc_crystal_tiny> % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:18.5>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 1000);
+<recipetype:thermal:smelter>.addRecipe("crystallize_crossover_rail", [<item:contenttweaker:amc_crystal_large>*3 % 100, <item:contenttweaker:amc_crystal_small> % 100, <item:contenttweaker:amc_crystal_tiny> % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:18.5>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 1000);
 
 // Crystalpress Lumuim Redstone Rails [47.5]
 <recipetype:thermal:smelter>.addRecipe("crystalpress_47.5-amc", [<item:contenttweaker:25-bag> % 100, <item:contenttweaker:10-bag>*2 % 100, <item:contenttweaker:2-bag> % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:47.5>, <item:contenttweaker:alchemical_crystalpress_catalyst>], 0, 1000);
 
 // Crystalpress Grenades [91.25]
 <recipetype:thermal:smelter>.addRecipe("crystalpress_grenades", [<item:contenttweaker:25-bag>*3 % 100, <item:contenttweaker:5-bag>*3 % 100, <item:contenttweaker:1-bag> % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:91.25>, <item:contenttweaker:alchemical_crystalpress_catalyst>], 0, 1500);
+
+// Compress Satchels [136]
+<recipetype:thermal:smelter>.addRecipe("compress_satchel", [<item:contenttweaker:100-bag> % 100, <item:contenttweaker:25-bag> % 100, <item:contenttweaker:10-bag> % 100, <item:contenttweaker:1-bag> % 100], [<tag:items:amc-value:136>, <item:contenttweaker:alchemical_compression_catalyst>], 0, 2000);
 
 // Compres Hazmat Helmet [195]
 mods.extendedcrafting.EnderCrafting.addShapeless("compress_hazmat_helmet", <item:contenttweaker:5-bag>*39, [<tag:items:amc-value:195>, <item:contenttweaker:alchemical_compression_catalyst>], 3);
@@ -424,6 +468,11 @@ mods.extendedcrafting.EnderCrafting.addShapeless("compress_220-amc", <item:conte
 
 // Compress Signalum Coin [245]
 mods.extendedcrafting.EnderCrafting.addShapeless("compress_signalum_coin", <item:contenttweaker:5-bag>*49, [<tag:items:amc-value:245>, <item:contenttweaker:alchemical_compression_catalyst>], 3);
+
+// Compress Resevoir [267]
+<recipetype:thermal:smelter>.addRecipe("compress_resevoir", [<item:contenttweaker:100-bag>*2 % 100, <item:contenttweaker:10-bag>*6 % 100, <item:contenttweaker:5-bag> % 100, <item:contenttweaker:2-bag> % 100], [<tag:items:amc-value:267>, <item:contenttweaker:alchemical_compression_catalyst>], 0, 2000);
+
+mods.extendedcrafting.EnderCrafting.addShapeless("compress_267-amc", <item:contenttweaker:10-bag>*27, [<tag:items:amc-value:267>, <item:contenttweaker:alchemical_compression_catalyst>], 5);
 
 // Compress Constantan Block [270]
 mods.extendedcrafting.EnderCrafting.addShapeless("compress_270-amc", <item:contenttweaker:10-bag>*27, [<tag:items:amc-value:270>, <item:contenttweaker:alchemical_compression_catalyst>], 5);
@@ -593,11 +642,14 @@ mods.extendedcrafting.EnderCrafting.addShapeless("compress_cycle_augment", <item
 // Compress Reinforced Integral Components [6,750]
 mods.extendedcrafting.EnderCrafting.addShapeless("compress_integral_components_2", <item:contenttweaker:250-crate>*27, [<tag:items:amc-value:6750>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:alchemical_compression_catalyst>, <item:contenttweaker:alchemical_compression_catalyst>], 30);
 
+// Crystalpress Netherite Gear [8,802.777]
+<recipetype:thermal:smelter>.addRecipe("crystalpress_netherite_gear", [<item:contenttweaker:1k-crate>*8 % 100, <item:contenttweaker:100-bag>*8 % 100, <item:contenttweaker:2-bag> % 100, <item:contenttweaker:amc_crystal_submicroscopic>*777 % 100], [<tag:items:amc-value:8802.777>, <item:contenttweaker:alchemical_crystalpress_catalyst>*3, <item:contenttweaker:advanced_alchemical_catalyst>], 0, 8000);
+
 // Compress Enderium Block [9,675]
 <recipetype:thermal:smelter>.addRecipe("compress_enderium_block", [<item:contenttweaker:5k-crate> % 100, <item:contenttweaker:1k-crate>*4 % 100, <item:contenttweaker:100-bag>*7 % 100, <item:contenttweaker:25-bag>*3 % 100], [<tag:items:amc-value:9675>, <item:contenttweaker:alchemical_compression_catalyst>*5], 0, 12000);
 
-### 10k+ (60s or 16k RF) {2 Advanced Catalysts}
+### 10k+ (60s or 16k RF) {Very Advanced Catalyst}
 // Compress Resonant Integral Components [12,400]
-<recipetype:thermal:smelter>.addRecipe("compress_integral_components_3", [<item:contenttweaker:10k-crate> % 100, <item:contenttweaker:1k-crate>*2 % 100, <item:contenttweaker:100-bag>*4 % 100], [<tag:items:amc-value:12400>, <item:contenttweaker:advanced_alchemical_catalyst>*2], 0, 16000);
+<recipetype:thermal:smelter>.addRecipe("compress_integral_components_3", [<item:contenttweaker:10k-crate> % 100, <item:contenttweaker:1k-crate>*2 % 100, <item:contenttweaker:100-bag>*4 % 100], [<tag:items:amc-value:12400>, <item:contenttweaker:very_advanced_alchemical_catalyst>], 0, 16000);
 
 print("thermal_amc.zs loaded");

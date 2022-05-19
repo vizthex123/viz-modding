@@ -55,8 +55,13 @@ val clf = "\u00A7r";
 
 
 // Catalysts
+<item:contenttweaker:alchemical_crystallization_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:alchemical_crystallization_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
+
+<item:contenttweaker:alchemical_compression_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:alchemical_compression_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
+
+<item:contenttweaker:alchemical_crystalpress_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:alchemical_crystalpress_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
 
 #	<item:contenttweaker:ticket_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
@@ -67,6 +72,9 @@ val clf = "\u00A7r";
 
 <item:contenttweaker:advanced_alchemical_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:advanced_alchemical_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
+
+<item:contenttweaker:very_advanced_alchemical_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
+<item:contenttweaker:very_advanced_alchemical_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");
 
 <item:contenttweaker:token_catalyst>.addTooltip(gold + "Catalysts don't get consumed during crafting");
 <item:contenttweaker:token_catalyst>.addShiftTooltip(red + "Cannot have an AMC value due to the unique Alchemical Signature on it");

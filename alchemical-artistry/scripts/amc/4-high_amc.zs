@@ -5,7 +5,9 @@ import crafttweaker.api.tag.MCTag;
 
 print("4-high_amc.zs loading...");
 
+
 // 200's AMC
+<tag:items:amc-value:267>.add(<item:thermal:fluid_reservoir>);
 <tag:items:amc-value:280>.add(<item:watercan:watercan_gold>); // Should be 279
 
 
@@ -19,12 +21,12 @@ print("4-high_amc.zs loading...");
 <tag:items:amc-value:315>.add(<item:minecraft:dark_prismarine_stairs>);
 <tag:items:amc-value:315>.add(<item:minecraft:redstone_block>);
 
-
 <tag:items:amc-value:350>.add(<item:minecraft:sea_lantern>);
 
 <tag:items:amc-value:350>.add(<item:minecraft:golden_horse_armor>);
 
 <tag:items:amc-value:350>.add(<item:minecraft:cake>); // Should be 363, but uuhhhh the bucket stay so you can't count them or something?
+
 
 // 400's AMC
 <tag:items:amc-value:415>.add(<item:minecraft:golden_apple>);
@@ -44,5 +46,7 @@ print("4-high_amc.zs loading...");
 <tag:items:amc-value:500>.add(<item:minecraft:ender_pearl>);
 
 <tag:items:amc-value:500>.add(<item:minecraft:globe_banner_pattern>);
+
+<tag:items:amc-value:500>.add(<item:oddwatermobs:hydrothermal_vent>);
 
 print("4-high_amc.zs loaded");

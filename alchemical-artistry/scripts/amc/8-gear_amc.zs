@@ -16,7 +16,7 @@ print("8-gear_amc.zs loading...");
 
 
 // Stone Tools
-<tag:items:amc-value:2.75>.add(<item:minecraft:stone_sword>);
+<tag:items:amc-value:5.25>.add(<item:minecraft:stone_sword>);
 <tag:items:amc-value:8>.add(<item:minecraft:stone_pickaxe>);
 <tag:items:amc-value:3>.add(<item:minecraft:stone_shovel>);
 <tag:items:amc-value:5.5>.add(<item:minecraft:stone_hoe>);
@@ -108,6 +108,23 @@ print("8-gear_amc.zs loading...");
 
 // Diving
 
+
+# Mowzie's Mobs stuff
+<tag:items:amc-value:250>.add(<item:mowziesmobs:naga_fang>);
+<tag:items:amc-value:275.25>.add(<item:mowziesmobs:naga_fang_dagger>);
+<tag:items:amc-value:50>.add(<item:mowziesmobs:dart>);
+<tag:items:amc-value:100>.add(<item:mowziesmobs:spear>);
+<tag:items:amc-value:100>.add(<item:mowziesmobs:blowgun>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_fury>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_fear>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_rage>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_bliss>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_misery>);
+<tag:items:amc-value:500>.add(<item:mowziesmobs:barakoa_mask_faith>);
+<tag:items:amc-value:5000>.add(<item:mowziesmobs:ice_crystal>);
+<tag:items:amc-value:10000>.add(<item:mowziesmobs:wrought_axe>);
+<tag:items:amc-value:10000>.add(<item:mowziesmobs:wrought_helmet>);
+<tag:items:amc-value:10000>.add(<item:mowziesmobs:barako_mask>);
 
 # Misc
 <tag:items:amc-value:100>.add(<item:minecraft:shears>);

@@ -40,13 +40,65 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:804>.add(<item:bloodmagic:masterritualstone>);
 
 
+// Sigils
+// Most of them are gonna be the same as their reagent since I'm lazy
+<tag:items:amc-value:35>.add(<item:bloodmagic:divinationsigil>);
+<tag:items:amc-value:50>.add(<item:bloodmagic:seersigil>);
+<tag:items:amc-value:25>.add(<item:bloodmagic:growthsigil>);
+<tag:items:amc-value:210>.add(<item:bloodmagic:miningsigil>);
+<tag:items:amc-value:330>.add(<item:bloodmagic:sigilofmagnetism>);
+<tag:items:amc-value:405>.add(<item:bloodmagic:icesigil>);
+<tag:items:amc-value:160>.add(<item:bloodmagic:watersigil>);
+<tag:items:amc-value:290>.add(<item:bloodmagic:lavasigil>);
+<tag:items:amc-value:120>.add(<item:bloodmagic:voidsigil>);
+<tag:items:amc-value:170>.add(<item:bloodmagic:airsigil>);
+<tag:items:amc-value:85>.add(<item:bloodmagic:bloodlightsigil>);
+<tag:items:amc-value:495>.add(<item:bloodmagic:sigilofholding>);
 
 
-// Materials
-<tag:items:amc-value:100>.add(<item:bloodmagic:weakbloodshard>);
-<tag:items:amc-value:75>.add(<item:bloodmagic:life_essence_bucket>);
+// Tartaric Gems & Sentient Tools
+<tag:items:amc-value:96>.add(<item:bloodmagic:soulgempetty>);
+<tag:items:amc-value:1500>.add(<item:bloodmagic:soulgemlesser>); // Should be 1,501
+<tag:items:amc-value:2950>.add(<item:bloodmagic:soulgemcommon>); // Should be 2,952
+<tag:items:amc-value:3050>.add(<item:bloodmagic:soulgemgreater>); // Not accurate
 
-<tag:items:amc-value:0.75>.add(<item:bloodmagic:slate_vial>);
+<tag:items:amc-value:145>.add(<item:bloodmagic:soulsword>); // Should be 146.25
+<tag:items:amc-value:170>.add(<item:bloodmagic:soulaxe>); // Should be 171.5
+<tag:items:amc-value:170>.add(<item:bloodmagic:soulpickaxe>); // Should be 171.5
+<tag:items:amc-value:120>.add(<item:bloodmagic:soulshovel>); // Should be 121.5
+<tag:items:amc-value:145>.add(<item:bloodmagic:soulscythe>); // Should be 146.25
+
+
+// Blood Orbs & Misc Tools
+<tag:items:amc-value:1000>.add(<item:bloodmagic:weakbloodorb>);
+<tag:items:amc-value:315>.add(<item:bloodmagic:apprenticebloodorb>);
+<tag:items:amc-value:450>.add(<item:bloodmagic:magicianbloodorb>);
+<tag:items:amc-value:100>.add(<item:bloodmagic:masterbloodorb>);
+
+<tag:items:amc-value:4440>.add(<item:bloodmagic:ritualdiviner>); // Should be 4,440.25
+<tag:items:amc-value:4802>.add(<item:bloodmagic:ritualdivinerdusk>); // Should be 4,802.25
+
+<tag:items:amc-value:4>.add(<item:bloodmagic:throwing_dagger>); // Should be 3.375
+<tag:items:amc-value:0.25>.add(<item:bloodmagic:throwing_dagger_syringe>);
+
+
+// Routing Stuff
+<tag:items:amc-value:85>.add(<item:bloodmagic:demonwillgauge>); // Not accurate
+<tag:items:amc-value:50>.add(<item:bloodmagic:itemroutingnode>); // Should be 49.5
+<tag:items:amc-value:150>.add(<item:bloodmagic:inputroutingnode>); // Should be 147.5
+<tag:items:amc-value:225>.add(<item:bloodmagic:outputroutingnode>); // Should be 222.5
+<tag:items:amc-value:1226>.add(<item:bloodmagic:masterroutingnode>);
+
+<tag:items:amc-value:20>.add(<item:bloodmagic:noderouter>); // Should be 21.25
+<tag:items:amc-value:3>.add(<item:bloodmagic:componentframeparts>);
+<tag:items:amc-value:70>.add(<item:bloodmagic:itemrouterfilterexact>);
+<tag:items:amc-value:305>.add(<item:bloodmagic:itemrouterfilteroredict>); // Should be 306.647
+<tag:items:amc-value:2548>.add(<item:bloodmagic:itemrouterfilterenchant>);
+<tag:items:amc-value:45>.add(<item:bloodmagic:itemrouterfiltermoditems>); // Should be 46
+<tag:items:amc-value:50>.add(<item:bloodmagic:itemrouterfiltercomposite>); // Should be like 51.5-ish but idfk
+
+
+// Anointments
 <tag:items:amc-value:110>.add(<item:bloodmagic:melee_anointment>); // Should be 110.75
 <tag:items:amc-value:28.305>.add(<item:bloodmagic:silk_touch_anointment>);
 <tag:items:amc-value:60>.add(<item:bloodmagic:fortune_anointment>); // Should be 57.75
@@ -55,8 +107,35 @@ purple: 5,000+ (insane)
 <tag:items:amc-value:40>.add(<item:bloodmagic:quick_draw_anointment>); // Should be 40.75
 <tag:items:amc-value:30>.add(<item:bloodmagic:looting_anointment>); // Should be 32.75
 <tag:items:amc-value:50>.add(<item:bloodmagic:bow_power_anointment>); // Should be 48.25
-# Will Power isn't in the mod yet
 <tag:items:amc-value:30>.add(<item:bloodmagic:smelting_anointment>); // Should be 30.75
+
+
+// Polishes
+<tag:items:amc-value:30>.add(<item:bloodmagic:bow_velocity_anointment>); // Should be 28.805
+<tag:items:amc-value:360>.add(<item:bloodmagic:melee_anointment_l>);
+<tag:items:amc-value:200>.add(<item:bloodmagic:silk_touch_anointment_l>); // Should be 195.86
+<tag:items:amc-value:257>.add(<item:bloodmagic:fortune_anointment_l>);
+<tag:items:amc-value:350>.add(<item:bloodmagic:holy_water_anointment_l>);
+<tag:items:amc-value:5161>.add(<item:bloodmagic:hidden_knowledge_anointment_l>);
+<tag:items:amc-value:220>.add(<item:bloodmagic:quick_draw_anointment_l>);
+<tag:items:amc-value:220>.add(<item:bloodmagic:looting_anointment_l>);
+<tag:items:amc-value:235>.add(<item:bloodmagic:bow_power_anointment_l>); // Should be 237.5
+<tag:items:amc-value:185>.add(<item:bloodmagic:bow_power_anointment_2>); // Should be 187.5
+<tag:items:amc-value:185>.add(<item:bloodmagic:bow_power_anointment_strong>); // Should be 187.5
+
+
+// Materials
+<tag:items:amc-value:20>.add(<item:bloodmagic:saltpeter>); // Could also be 17.333
+<tag:items:amc-value:50>.add(<item:bloodmagic:weak_tau>);
+<tag:items:amc-value:100>.add(<item:bloodmagic:strong_tau>);
+
+<tag:items:amc-value:100>.add(<item:bloodmagic:weakbloodshard>);
+<tag:items:amc-value:75>.add(<item:bloodmagic:life_essence_bucket>);
+
+<tag:items:amc-value:0.75>.add(<item:bloodmagic:slate_vial>);
+<tag:items:amc-value:150>.add(<item:bloodmagic:tauoil>); // Should be 154
+# Will Power isn't in the mod yet
+
 
 
 // Inscription Tools

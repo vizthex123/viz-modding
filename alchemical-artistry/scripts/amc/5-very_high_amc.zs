@@ -40,7 +40,6 @@ for item in lift.elements {
 <tag:items:amc-value:750>.add(<item:minecraft:anvil>);
 <tag:items:amc-value:750>.add(<item:minecraft:piglin_banner_pattern>);
 
-
 // 900's AMC
 <tag:items:amc-value:900>.add(<item:rftoolsbase:infused_enderpearl>);
 

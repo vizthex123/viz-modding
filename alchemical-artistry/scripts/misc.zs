@@ -30,6 +30,14 @@ do item:minecraft:air for empty spaces
 min chance is the chance to get extra outputs(?)
 */
 
+// Make Torches out of Dwarf Torches
+craftingTable.addShaped("dwarf_upgrade", <item:minecraft:torch>, 
+    [[<item:dwarfcoal:stone_dwarf_torch>|<item:dwarfcoal:dwarf_torch>, <item:dwarfcoal:stone_dwarf_torch>|<item:dwarfcoal:dwarf_torch>],
+    [<item:dwarfcoal:stone_dwarf_torch>|<item:dwarfcoal:dwarf_torch>, <item:dwarfcoal:stone_dwarf_torch>|<item:dwarfcoal:dwarf_torch>]]);
+
+// Make Flint out of Gravel
+craftingTable.addShapeless("flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>]);
+
 // Change the Netherite Hammer & Excavator to use a Smithing Table
 <recipetype:minecraft:crafting>.removeRecipe(<item:vanillahammers:netherite_hammer>);
 <recipetype:minecraft:crafting>.removeRecipe(<item:vanillaexcavators:netherite_excavator>);

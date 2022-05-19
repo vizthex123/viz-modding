@@ -109,7 +109,7 @@ RF cost is 100x (total) AMC value
 // Iron Sword (Worth 50.25)
 <recipetype:thermal:smelter>.addRecipe("crystallize_iron_sword", [<item:contenttweaker:amc_crystal_large>*10 % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:50.25>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 1500);
 
-// Golden Shovel
+// Golden Shovel (Worth 50.5)
 <recipetype:thermal:smelter>.addRecipe("crystallize_golden_shovel", [<item:contenttweaker:amc_crystal_large>*10 % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:50.5>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 1500);
 
 // Rabbit Stew (Worth 52.25)
@@ -124,17 +124,20 @@ RF cost is 100x (total) AMC value
 // Banners (Worth 96.25)
 <recipetype:thermal:smelter>.addRecipe("crystallize_96.25-amc", [<item:contenttweaker:amc_crystal_large>*19 % 100, <item:contenttweaker:amc_crystal_tiny> % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:96.25>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 3000);
 
-// Golden Sword
+// Golden Sword (Worth 100.25)
 <recipetype:thermal:smelter>.addRecipe("crystallize_100.25-amc", [<item:contenttweaker:amc_crystal_large>*20 % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:100.25>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 4000);
 
-// Golden Hoe
+// Golden Hoe (Worth 100.5)
 <recipetype:thermal:smelter>.addRecipe("crystallize_100.5-amc", [<item:contenttweaker:amc_crystal_large>*20 % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:100.5>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 4000);
 
 // Primsarine Brick Slab (Worth 112.5)
 <recipetype:thermal:smelter>.addRecipe("crystallize_prismarine_brick_slab", [<item:contenttweaker:amc_crystal_small>*56 % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<item:minecraft:prismarine_brick_slab>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 4000);
 
-// Golden Pick(axe)
+// Golden Pick(axe) (Worth 150.5)
 <recipetype:thermal:smelter>.addRecipe("crystallize_150.5-amc", [<item:contenttweaker:amc_crystal_large>*30 % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<tag:items:amc-value:150.5>, <item:contenttweaker:alchemical_crystallization_catalyst>], 0, 4000);
+
+// Naga Fang Dagger (Worth 275.25)
+<recipetype:thermal:smelter>.addRecipe("crystalpress_275.25-amc", [<item:contenttweaker:250-crate> % 100, <item:contenttweaker:25-bag> % 100, <item:contenttweaker:amc_crystal_miniscule> % 100], [<tag:items:amc-value:275.25>, <item:contenttweaker:alchemical_crystalpress_catalyst>], 0, 4000);
 
 // Primsarine Brick Stairs (Worth 337.5)
 <recipetype:thermal:smelter>.addRecipe("crystallize_prismarine_brick_stairs", [<item:contenttweaker:amc_crystal_large>*64 % 100, <item:contenttweaker:amc_crystal_large>*3 % 100, <item:contenttweaker:amc_crystal_small> % 100, <item:contenttweaker:amc_crystal_miniscule>*2 % 100], [<item:minecraft:prismarine_brick_stairs>, <item:contenttweaker:alchemical_crystallization_catalyst>*2], 0, 4000);

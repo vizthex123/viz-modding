@@ -8,9 +8,8 @@ print("2-average_amc.zs loading...");
 /*
 <tag:items:amc-value:>.add(<item:>);
 
-Average is 26 - 100 AMC
+Average is 26 - 99 AMC
 */
-
 
 // 20's AMC
 <tag:items:amc-value:26>.add(<item:minecraft:soul_lantern>); // Should be 26.216
@@ -51,10 +50,8 @@ Average is 26 - 100 AMC
 <tag:items:amc-value:35>.add(<item:minecraft:redstone_torch>); // Should be 35.25
 
 <tag:items:amc-value:36>.add(<item:minecraft:red_nether_brick_stairs>);
-<tag:items:amc-value:36>.add(<item:thermal:charcoal_block>);
 <tag:items:amc-value:36>.add(<item:minecraft:bone_block>);
 
-<tag:items:amc-value:37.5>.add(<item:minecraft:bone_block>);
 
 
 // 40's AMC
@@ -111,6 +108,7 @@ for item in bed.elements {
 <tag:items:amc-value:54>.add(<item:minecraft:hay_block>);
 <tag:items:amc-value:55>.add(<item:minecraft:powered_rail>);
 <tag:items:amc-value:55>.add(<item:minecraft:book>);
+<tag:items:amc-value:55>.add(<item:ftbquests:book>); // Should be 56
 
 
 

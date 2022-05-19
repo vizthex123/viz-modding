@@ -429,6 +429,7 @@ for item in sflower.elements {
 <tag:items:amc-value:5>.add(<item:minecraft:dark_oak_boat>);
 
 <tag:items:amc-value:5>.add(<item:minecraft:flint>);
+<tag:items:amc-value:5>.add(<item:gravestone:gravestone>);
 
 
 
@@ -579,6 +580,9 @@ for item in sflower.elements {
 <tag:items:amc-value:20>.add(<item:minecraft:honey_block>);
 <tag:items:amc-value:20>.add(<item:minecraft:coal_ore>);
 <tag:items:amc-value:20>.add(<item:minecraft:coal>);
+
+<tag:items:amc-value:20>.add(<item:minecraft:coal>); // Should be 19.08
+
 
 <tag:items:amc-value:24>.add(<item:minecraft:red_nether_bricks>);
 

@@ -205,6 +205,10 @@ default colour is white
     tooltip.insert(1, dark_gray + "Contains 18 AMC");
 });
 
+<tag:items:amc-value:18.5>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
+    tooltip.insert(1, dark_gray + "Contains 18 AMC");
+});
+
 <tag:items:amc-value:20>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
     tooltip.insert(1, dark_gray + "Contains 20 AMC");
 });
@@ -359,6 +363,10 @@ default colour is white
 
 <tag:items:amc-value:135>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
     tooltip.insert(1, dark_blue + "Contains 135 AMC");
+});
+
+<tag:items:amc-value:136>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
+    tooltip.insert(1, dark_blue + "Contains 136 AMC");
 });
 
 <tag:items:amc-value:140>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
@@ -948,6 +956,9 @@ default colour is white
     tooltip.insert(1, dark_blue + "Contains 245 AMC");
 });
 
+<tag:items:amc-value:267>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
+    tooltip.insert(1, dark_aqua + "Contains 267 AMC");
+});
 
 <tag:items:amc-value:270>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
     tooltip.insert(1, dark_aqua + "Contains 270 AMC");
@@ -1020,7 +1031,7 @@ default colour is white
 
 // 500+
 <tag:items:amc-value:509>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
-    tooltip.insert(1, aqua + "Contains 509AMC");
+    tooltip.insert(1, aqua + "Contains 509 AMC");
 });
 
 <tag:items:amc-value:525>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
@@ -1293,6 +1304,10 @@ default colour is white
 
 <tag:items:amc-value:8495>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
     tooltip.insert(1, purple + "Contains 8,495 AMC");
+});
+
+<tag:items:amc-value:8802.777>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {
+    tooltip.insert(1, purple + "Contains 8,802.777 AMC");
 });
 
 <tag:items:amc-value:9000.5>.asIIngredient().modifyTooltip((stack, tooltip, advanced) => {

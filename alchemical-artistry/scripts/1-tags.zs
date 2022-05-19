@@ -15,6 +15,7 @@ print("1-tags.zs loading...");
 
 
 # Music Discs
+<tag:items:minecraft:music_discs>.add(<item:mowziesmobs:music_disc_petiole>);
 <tag:items:minecraft:music_discs>.add(<item:oddwatermobs:bathosphere>);
 <tag:items:minecraft:music_discs>.add(<item:oddwatermobs:coelacanth_record>);
 <tag:items:minecraft:music_discs>.add(<item:oddwatermobs:seapig_record>);

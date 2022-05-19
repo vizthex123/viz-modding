@@ -5,6 +5,12 @@ import crafttweaker.api.tag.MCTag;
 
 print("3-above_average_amc.zs loading...");
 
+/*
+<tag:items:amc-value:>.add(<item:>);
+
+Average is 100 - 250 AMC
+*/
+
 // 100's AMC
 <tag:items:amc-value:100>.add(<item:minecraft:milk_bucket>);
 <tag:items:amc-value:100>.add(<item:minecraft:phantom_membrane>);
