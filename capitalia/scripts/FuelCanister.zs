@@ -3,11 +3,15 @@
 <item>.addShiftTooltip("Tooltip");
 */
 
-// Recipe
+// Recipes
 recipes.remove(<fuelcanister:empty_fuel_canister>);
 recipes.addShaped(<fuelcanister:empty_fuel_canister>, [[null, <ore:plankWood>, <ore:ingotBronze>],
                                  				          [<ore:plankWood>, null, <ore:ingotBronze>],
                               				          [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]]);
+
+recipes.addShaped(<fuelcanister:empty_fuel_canister>, [[null, <ore:plankWood>, <minecraft:iron_ingot>],
+                                 				          [<ore:plankWood>, null, <minecraft:iron_ingot>],
+                              				          [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 
 // Hold SHIFT for info
 <fuelcanister:empty_fuel_canister>.addTooltip("Hold SHIFT for accepted items");

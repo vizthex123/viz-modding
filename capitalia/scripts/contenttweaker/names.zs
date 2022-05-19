@@ -18,15 +18,22 @@
 <contenttweaker:electron>.displayName = "Electron Data Model";
 
 <contenttweaker:datadisk_military>.displayName = "Military Data Packet";
-/*
-# Rocky Chunks
-<contenttweaker:rockyiridium>.displayName = "Iridium Rocky Chunk";
-<contenttweaker:rockytitanium>.displayName = "Titanium Rocky Chunk";
-<contenttweaker:rockyplatinum>.displayName = "Platinum Rocky Chunk";
-*/
-<contenttweaker:rockyuranium>.displayName = "Uranium Rocky Chunk";
-<contenttweaker:rockyquartz>.displayName = "Nether Quartz Rocky Chunk";
+
 
 # Misc Items
 <contenttweaker:paxelmold>.displayName = "Paxel Mold";
 <contenttweaker:crystalcompound>.displayName = "Crystal Compound";
+<contenttweaker:rockyuranium>.displayName = "Uranium Rocky Chunk";
+<contenttweaker:rockyquartz>.displayName = "Nether Quartz Rocky Chunk";
+
+<contenttweaker:alien_goo_sample>.displayName = "Alien Material Sample";
+<contenttweaker:hell_goo_sample>.displayName = "Hellish Material Sample";
+
+
+# Tooltips
+// Melting value tooltips are in thermal_expansion.zs
+<contenttweaker:paxelmold>.addTooltip(format.gray("Uses 400 mB of liquid Bronze, Iron, or Steel"));
+<contenttweaker:paxelmold>.addTooltip(format.white("Also needs Sticks or Iron Ingots"));
+
+<contenttweaker:alien_goo_sample>.addTooltip(format.red("Workaround item since TechGuns' gear don't like being used in recipes"));
+<contenttweaker:hell_goo_sample>.addTooltip(format.red("Workaround item since TechGuns' gear don't like being used in recipes"));

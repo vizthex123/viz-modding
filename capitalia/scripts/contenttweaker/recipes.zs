@@ -1,17 +1,22 @@
 # Recipes for all my custom items
 print("recipes.zs loading...");
 
+# Workaround item recipes
+# Each one is worth 1k fluid
+recipes.addShapeless(<contenttweaker:alien_goo_sample>*10, [<techguns:alienblaster:*>]);
+
+recipes.addShapeless(<contenttweaker:hell_goo_sample>*10, [<techguns:netherblaster:*>]);
+recipes.addShapeless(<contenttweaker:hell_goo_sample>*5, [<techguns:t4_praetor_helmet:*>]);
+recipes.addShapeless(<contenttweaker:hell_goo_sample>*8, [<techguns:t4_praetor_chestplate:*>]);
+recipes.addShapeless(<contenttweaker:hell_goo_sample>*7, [<techguns:t4_praetor_leggings:*>]);
+recipes.addShapeless(<contenttweaker:hell_goo_sample>*4, [<techguns:t4_praetor_boots:*>]);
+
+
 // Data Disk recipes
 // Starts at Iron since you need to power the machine
-recipes.addShapeless(<contenttweaker:datadisk_military>, [<ore:arrow>, <ore:arrow>, <ore:arrow>, <ore:arrow>]);
-recipes.addShapeless(<contenttweaker:datadisk_military>*2, [<foundry:roundnormal>, <foundry:roundnormal>, <foundry:roundnormal>, <foundry:roundnormal>]);
-recipes.addShapeless(<contenttweaker:datadisk_military>*3, [<foundry:roundhollow>, <foundry:roundhollow>, <foundry:roundhollow>, <foundry:roundhollow>]);
-recipes.addShapeless(<contenttweaker:datadisk_military>*4, [<foundry:roundap>, <foundry:roundap>, <foundry:roundap>, <foundry:roundap>]);
-
-
-recipes.addShapeless(<contenttweaker:datadisk_stone>, [<extrautils2:compressedcobblestone>, <ore:cobblestone>]);
+recipes.addShapeless(<contenttweaker:datadisk_stone>, [<extrautils2:compressedcobblestone>, <minecraft:cobblestone>]);
 recipes.addShapeless(<contenttweaker:datadisk_stone>, [<contenttweaker:datadisk_stone_unref>, <contenttweaker:datadisk_stone_unref>]);
-recipes.addShapeless(<contenttweaker:datadisk_stone_unref>, [<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>]);
+recipes.addShapeless(<contenttweaker:datadisk_stone_unref>, [<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<projectred-exploration:stone>|<magneticraft:limestone>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<projectred-exploration:stone>|<magneticraft:limestone>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<projectred-exploration:stone>|<magneticraft:limestone>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<projectred-exploration:stone>|<magneticraft:limestone>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<projectred-exploration:stone>|<magneticraft:limestone>]);
 
 recipes.addShapeless(<contenttweaker:datadisk_bronze>, [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
 recipes.addShapeless(<contenttweaker:datadisk_iron>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);

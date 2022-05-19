@@ -1,4 +1,4 @@
-# For all the extra technology research that doens't fit into 1-ages.zs
+# For all the extra technology research that doesn't fit into 1-ages.zs
 
 import mods.ResearchTable;
 
@@ -13,7 +13,7 @@ ResearchTable.builder("advanced_circuitry", tech)
   .addCondition(<contenttweaker:datadisk_industrial>*1)
   .addCondition(<ore:circuitBasic>*12)
   .setRewardStages("advanced_circuitry")
-  .setRewardCommands("/say You can now solder more advanced circuits.")
+  .setRewardCommands("/say I can now solder more advanced circuits.")
   .setRewardItems(<mekanism:controlcircuit:1>*1)
   .setMaxCount(1)
   .build();
@@ -27,7 +27,7 @@ ResearchTable.builder("oil", tech)
   .setDescription("Research ways to obtain and utilize Oil for powergen, and other purposes.")
   .addCondition(<fluid:research>*500)
   .setRewardStages("oil")
-  .setRewardCommands("/say You can now pump and process oil and other fluids.")
+  .setRewardCommands("/say I can now pump and process oil and other fluids.")
   .setRewardItems(<buildcraftfactory:tank>*1)
   .setMaxCount(1)
   .build();
@@ -41,7 +41,7 @@ ResearchTable.builder("wireless_power", tech)
   .setDescription("Research ways to harness advanced technology to transmit power wirelessly.")
   .addCondition(<fluid:alien_goo>*500)
   .setRewardStages("wireless_power")
-  .setRewardCommands("/say You can now transmit electricity wirelessly")
+  .setRewardCommands("/say I can now transmit electricity wirelessly")
   .setRewardItems(<fluxnetworks:fluxstorage>*1)
   .setMaxCount(1)
   .build();
@@ -58,7 +58,7 @@ ResearchTable.builder("basic_reactor", tech)
   .addCondition(<contenttweaker:datadisk_industrial>*8)
   .addCondition(<fluid:research>*2000)
   .setRewardStages("basic_reactor")
-  .setRewardCommands("/say You can now create a basic fission reactor")
+  .setRewardCommands("/say I can now create a basic fission reactor")
   .setRewardItems(<superores:super_yellorite>*2)
   .setMaxCount(1)
   .build();
@@ -74,7 +74,7 @@ ResearchTable.builder("ae2", tech)
   .addCondition(<contenttweaker:datadisk_information>*4)
   .addCondition(<fluid:alien_goo>*1000)
   .setRewardStages("ae2")
-  .setRewardCommands("/say You've improved upon your discovery of matter-energy conversion.")
+  .setRewardCommands("/say I've improved upon your discovery of matter-energy conversion.")
   .setRewardItems(<appliedenergistics2:storage_cell_4k>.withTag({"@0": 16, ic: 16, it: 1 as short, "#0": {Craft: 0 as byte, Cnt: 16 as long, id: "minecraft:experience_bottle", Count: 1 as byte, Damage: 0 as short, Req: 0 as long}}))
   .setMaxCount(1)
   .build();

@@ -16,6 +16,7 @@ mods.jei.JEI.addDescription(<appliedenergistics2:part:460>,"Can be converted int
 mods.jei.JEI.addDescription(<refinedstorage:security_card>,"Not consumed when used to craft a Security Manager");
 mods.jei.JEI.addDescription(<appliedenergistics2:part:301>,"Acts like Silk Touch when breaking a block");
 mods.jei.JEI.addDescription(<thermalexpansion:morb>,"Can be used to catch entities, and process them in a Centrifugal Seperator with the Enstabulation Apparatus augment. Can be upgraded and made reusable with 3 Signalum Nuggets.");
+mods.jei.JEI.addDescription(<waystones:waystone>,"Can be bought for $1,000 in any shop kiosk");
 
 
 // Hidden Items

@@ -5,7 +5,13 @@
 <item>.addShiftTooltip("Tooltip");
 */
 
-print("renamed_tooltips.zs loading...");
+print("renames_tooltips.zs loading...");
+
+# Name Fixes
+<libvulpes:productdust>.displayName = "Dilithium Dust";
+<libvulpes:productgem>.displayName = "Dilithium Crystal";
+<libvulpes:ore0>.displayName = "Dilithium Ore";
+####################
 
 <adminshop:shop>.displayName = "Intergalactic Shop Kiosk";
 <adminshop:buyer>.displayName = "Intergalactic Auto-Buyer";
@@ -147,8 +153,7 @@ print("renamed_tooltips.zs loading...");
 <appliedenergistics2:smooth_sky_stone_chest>.addTooltip(format.green("Contains trace amounts of alien material"));
 <appliedenergistics2:sky_stone_chest>.addTooltip(format.green("Contains trace amounts of alien material"));
 
-
 // References
 <biomesoplenty:plant_1:9>.addShiftTooltip(format.darkGray("I am root!"));
 
-print("renamed_tooltips.zs loaded");
+print("renames_tooltips.zs loaded");

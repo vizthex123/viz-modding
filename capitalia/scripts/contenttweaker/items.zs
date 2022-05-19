@@ -2,27 +2,8 @@
 
 import mods.contenttweaker.Item;
 import mods.contenttweaker.VanillaFactory;
+
 print("items.zs loading...");
-
-/*
-// Rocky Titanium
-var rockytitanium = VanillaFactory.createItem("rockytitanium");
-rockytitanium.setMaxStackSize(64);
-
-rockytitanium.register();
-
-// Rocky Iridium
-var rockyiridium = VanillaFactory.createItem("rockyiridium");
-rockyiridium.setMaxStackSize(64);
-
-rockyiridium.register();
-
-// Rocky Platinum
-var rockyplatinum = VanillaFactory.createItem("rockyplatinum");
-rockyplatinum.setMaxStackSize(64);
-
-rockyplatinum.register();
-*/
 
 // Rocky Uranium
 var rockyuranium = VanillaFactory.createItem("rockyuranium");
@@ -156,5 +137,17 @@ militarydata.setMaxStackSize(64);
 
 militarydata.register();
 
+
+# Workaround items for goo recipes
+# Stupid techguns metadata whatever >:{
+var aliengoo = VanillaFactory.createItem("alien_goo_sample");
+aliengoo.setMaxStackSize(64);
+
+aliengoo.register();
+
+var hellgoo = VanillaFactory.createItem("hell_goo_sample");
+hellgoo.setMaxStackSize(64);
+
+hellgoo.register();
 
 print("items.zs loaded");

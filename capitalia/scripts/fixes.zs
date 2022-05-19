@@ -10,45 +10,6 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
-# Upgrade Magnets to Fluxomagnets
-// Stone/Iron > Basic
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_stone>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:enrichedalloy>]);
-
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_iron>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>]);
-
-// Gold/Redstone > Hardened
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:1>, [<tieredmagnets:magnet_durability_gold>|<tieredmagnets:magnet_durability_redstone>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <mekanism:enrichedalloy>]);
-
-// Lapis/Obsidian > Reinforced
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:2>, [<tieredmagnets:magnet_durability_lapis>, <tieredmagnets:magnet_durability_obsidian>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:reinforcedalloy>]);
-
-// Diamond/Emerald > Signalum
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:3>, [<tieredmagnets:magnet_durability_diamond>|<tieredmagnets:magnet_durability_emerald>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
-
-# Fix all the PA miners to use any damage value & oredict
-recipes.remove(<progressiveautomation:miner_wooden>);
-recipes.remove(<progressiveautomation:miner_stone>);
-recipes.remove(<progressiveautomation:miner_iron>);
-recipes.remove(<progressiveautomation:miner_diamond>);
-
-recipes.addShaped(<progressiveautomation:miner_wooden>, [[<ore:plankWood>, <ore:chest>, <ore:plankWood>],
-											[<ore:plankWood>, <minecraft:furnace>, <ore:plankWood>],
-											[<ore:plankWood>, <minecraft:wooden_pickaxe:*>, <ore:plankWood>]]);
-
-recipes.addShaped(<progressiveautomation:miner_stone>, [[<ore:stone>, <ore:stone>, <ore:stone>],
-											[<ore:stone>, <progressiveautomation:miner_wooden>, <ore:stone>],
-											[<ore:stone>, <minecraft:stone_pickaxe:*>, <ore:stone>]]);
-
-recipes.addShaped(<progressiveautomation:miner_iron>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-											[<minecraft:iron_ingot>, <progressiveautomation:miner_stone>, <minecraft:iron_ingot>],
-											[<minecraft:iron_ingot>, <minecraft:iron_pickaxe:*>, <minecraft:iron_ingot>]]);
-
-recipes.addShaped(<progressiveautomation:miner_diamond>, [[null, <minecraft:diamond>|<mekanism:otherdust>, null],
-											[<minecraft:diamond>|<mekanism:otherdust>, <progressiveautomation:miner_iron>, <minecraft:diamond>|<mekanism:otherdust>],
-											[null, <minecraft:diamond>|<mekanism:otherdust>, null]]);
-
-
-
 // Cut cost of Efficiency Upgrades because they're bad
 recipes.remove(<solarflux:efficiency_upgrade>);
 recipes.addShapeless(<solarflux:efficiency_upgrade>, [<solarflux:mirror>, <solarflux:blank_upgrade>]);
@@ -135,7 +96,7 @@ recipes.addShaped(<natura:materials:5>*3, [[null, <natura:sticks:9>, null],
                                                                                       [<natura:nether_leaves>, <natura:sticks:9>, <natura:nether_leaves>],
                                                                                       [<natura:nether_leaves>, <natura:sticks:9>, <natura:nether_leaves>]]);
 
-// Make the Woden Hopper (Wopper) cheaper
+// Make the Wooden Hopper (Wopper) cheaper
 recipes.remove(<wopper:wopper>);
 recipes.addShaped(<wopper:wopper>, [[<ore:plankWood>, null, <ore:plankWood>],
                                 		                  [<ore:plankWood>, null, <ore:plankWood>],

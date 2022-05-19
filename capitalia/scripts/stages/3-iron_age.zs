@@ -12,6 +12,10 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("iron_age.zs loading...");
 
 # Iron Age
+mods.ItemStages.addItemStage("iron_age", <magneticraft:light_plates>);
+mods.ItemStages.addItemStage("iron_age", <magneticraft:heavy_plates>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:32>);
+
 mods.ItemStages.addItemStage("iron_age", <extendedcrafting:table_advanced>);
 
 mods.ItemStages.addItemStage("iron_age", <minecraft:repeater>);

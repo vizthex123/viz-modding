@@ -48,9 +48,6 @@ mods.foundry.Melting.addRecipe(<liquid:liquidgold>*50, <forestry:bronze_shovel>,
 
 
 
-
-
-
 // Reduce copper to 800K
 mods.foundry.Melting.removeRecipe(<ore:oreCopper>.firstItem);
 mods.foundry.Melting.addRecipe(<liquid:liquidcopper>*150, <ore:oreCopper>, 800);
@@ -159,14 +156,14 @@ recipes.remove(<foundry:machine>);
 recipes.addShaped(<foundry:machine>, [[<minecraft:brick>, <minecraft:furnace>, <minecraft:brick>],
                           			[<minecraft:brick>, <foundry:componentblock:3>, <minecraft:brick>],
                                 		       	[<minecraft:brick>, <ore:plateBronze>, <minecraft:brick>]]);
-mods.foundry.Melting.addRecipe(<liquid:liquidbronze>*500, <foundry:machine>, 1625);
+mods.foundry.Melting.addRecipe(<liquid:liquidbronze>*400, <foundry:machine>, 1600);
 
 // Standard Crucible
 recipes.remove(<foundry:machine:8>);
 recipes.addShaped(<foundry:machine:8>, [[<foundry:component:2>, <foundry:bronzecauldron>, <foundry:component:2>],
                                			   [<foundry:component:2>, <foundry:componentblock>, <foundry:component:2>],
                                   		       	   [<foundry:component:2>, <ore:plateIron>, <foundry:component:2>]]);
-mods.foundry.Melting.addRecipe(<liquid:liquidiron>*500, <foundry:machine:8>, 3000);
+mods.foundry.Melting.addRecipe(<liquid:liquidiron>*400, <foundry:machine:8>, 3000);
 
 // Advanced Crucible
 recipes.remove(<foundry:machine:7>);
@@ -190,9 +187,8 @@ mods.foundry.Casting.addRecipe(<libvulpes:productrod:1>*4, <liquid:liquidiron>*3
 mods.foundry.Casting.addRecipe(<libvulpes:productrod:4>*4, <liquid:liquidcopper>*300, <foundry:mold:3>, null, 50);
 mods.foundry.Casting.addRecipe(<libvulpes:productrod:6>*4, <liquid:liquidsteel>*300, <foundry:mold:3>, null, 50);
 
-// Iron Barrel (Tech Guns) recipe
-recipes.remove(<techguns:itemshared:38>);
-mods.foundry.Casting.addRecipe(<techguns:itemshared:38>, <liquid:liquidiron>*500, <foundry:mold:19>, <minecraft:iron_ingot>, 300);
+// Melt down Barrels from TechGuns
+mods.foundry.Melting.addRecipe(<liquid:liquidiron>*600, <techguns:itemshared:38>, 1850);
 
 // Alloy Furnace recipe fixer
 // Because they have 47 recipes for the same stupid item and that's annoying & dumb.
@@ -207,110 +203,6 @@ mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:161>*2, <minecra
 mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>);
 mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>*2, <thermalfoundation:material:802>, <minecraft:iron_ingot>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:glass:3>*2, <mekanism:otherdust:6>*4, <magneticraft:ingots:3>);
-
-
-# Changes the way you craft tools & armour
-# Lets you use the caster & molds to make the item for cheaper
-// Casting Removal
-/*
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:12>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:13>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:14>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:15>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidiron>, <foundry:mold:11>);
-
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:12>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:13>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:14>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:15>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:7>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:11>);
-
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:12>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:13>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:14>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:15>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsteel>, <foundry:mold:11>);
-
-
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidnickel>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidinvar>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidtin>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsilver>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidelectrum>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidaluminum>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcopper>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidplatinum>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcupronickel>, <foundry:mold:7>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidgold>, <foundry:mold:7>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidnickel>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidinvar>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidtin>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsilver>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidelectrum>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidaluminum>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcopper>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidplatinum>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcupronickel>, <foundry:mold:8>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidgold>, <foundry:mold:8>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidnickel>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidinvar>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidtin>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsilver>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidelectrum>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidaluminum>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcopper>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidplatinum>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcupronickel>, <foundry:mold:9>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidgold>, <foundry:mold:9>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidnickel>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidinvar>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidtin>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsilver>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidelectrum>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidaluminum>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcopper>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidplatinum>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcupronickel>, <foundry:mold:10>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidgold>, <foundry:mold:10>);
-
-mods.foundry.Casting.removeRecipe(<liquid:liquidnickel>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidinvar>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidtin>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidsilver>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidelectrum>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidaluminum>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcopper>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidplatinum>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidcupronickel>, <foundry:mold:11>);
-mods.foundry.Casting.removeRecipe(<liquid:liquidgold>, <foundry:mold:11>);
-*/
 
 # Recipe Additions
 // Bronze
@@ -418,9 +310,6 @@ recipes.addShaped(<contenttweaker:paxelmold>, [[<foundry:component:1>, <foundry:
 <foundry:mold:25>.addTooltip(format.gray("Uses 150 mB of liquid Steel"));
 
 <foundry:mold:26>.addTooltip(format.gray("Uses 11 mB of liquid metal"));
-
-<contenttweaker:paxelmold>.addTooltip(format.gray("Uses 500 mB of liquid Bronze, Iron, or Steel"));
-<contenttweaker:paxelmold>.addTooltip(format.white("Also needs Sticks or Iron Ingots"));
 
 // Remove capsule NBT
 recipes.addShapeless(<foundry:fluidcontainer>, [<foundry:fluidcontainer>]);

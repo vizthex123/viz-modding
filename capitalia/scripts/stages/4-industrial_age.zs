@@ -17,6 +17,7 @@ mods.ItemStages.addItemStage("industrial_age", <magneticraft:crafting:2>);
 mods.ItemStages.addItemStage("industrial_age", <libvulpes:battery>);
 mods.ItemStages.addItemStage("industrial_age", <mekanism:ingot:1>);
 
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:132>);
 mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:161>);
 mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:162>);
 

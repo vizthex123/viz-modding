@@ -4,6 +4,9 @@ furnace.setFuel(<item>, TIME*);
 * 200 = 1 item smelted
 */
 
+// Wooden Gun Stock
+furnace.setFuel(<techguns:itemshared:42>, 400);
+
 // BoP Roots & Reeds
 furnace.setFuel(<biomesoplenty:plant_1:8>, 75);
 furnace.setFuel(<biomesoplenty:plant_1:9>, 150);

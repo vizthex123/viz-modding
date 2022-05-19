@@ -144,10 +144,11 @@ mods.recipestages.Recipes.setRecipeStage("revolver", <foundry:mold:21>);
 mods.recipestages.Recipes.setRecipeStage("revolver", <foundry:component:4>);
 mods.recipestages.Recipes.setRecipeStage("revolver", <foundry:component:5>);
 
+mods.ItemStages.addItemStage("revolver", <techguns:itemshared:1>);
+
 
 # Golden Revolver
 mods.ItemStages.addItemStage("golden_revolver", <techguns:goldenrevolver>);
-mods.ItemStages.addItemStage("golden_revolver", <techguns:itemshared:1>);
 
 mods.recipestages.Recipes.setRecipeStage("golden_revolver", <techguns:goldenrevolver>);
 mods.recipestages.Recipes.setRecipeStage("golden_revolver", <techguns:itemshared:1>);

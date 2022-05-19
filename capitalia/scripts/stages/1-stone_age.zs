@@ -12,6 +12,8 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("stone_age.zs loading...");
 
 # Stone Age
+mods.ItemStages.addItemStage("stone_age", <minecraft:furnace>);
+
 mods.ItemStages.addItemStage("stone_age", <thermalfoundation:tool.shears_stone>);
 mods.recipestages.Recipes.setRecipeStage("stone_age", <thermalfoundation:tool.shears_stone>);
 

@@ -72,12 +72,20 @@ mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-exploration:stone:11>
 ############################################################################################
 #				MACHINE RECIPES					    #
 ############################################################################################
+ // Combine light plates into regular ones
+mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:32>, <magneticraft:light_plates>*4, 4000);
+mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:33>, <magneticraft:light_plates:1>*4, 4000);
+mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:320>, <magneticraft:light_plates:2>*4, 4000);
+mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:323>, <magneticraft:light_plates:3>*4, 4000);
+# Tungsten skipped since there's no (useful) plate version
+mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:352>, <magneticraft:light_plates:6>*4, 4000);
+
 // Refractory Glass in the Induction Smelter
 mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:blockGlass>.firstItem, <minecraft:clay_ball>, 8000);
 mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:sand>.firstItem, <minecraft:clay_ball>*2, 6000);
 
 // Convert Soul Sand into regular Sand
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*3, <minecraft:soul_sand>, 13666, <extrautils2:ingredients:10>, 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_sand>, 13666, <extrautils2:ingredients:10>, 4); // Each number in the recipe is a reference to one considered "unlucky" (except for the sand result)
 
 // Convert XP to Research
 // Varies based on how easy it is to get that version of liquid XP
@@ -88,9 +96,22 @@ mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*500, null, <liquid:ess
 // BoP Honey > Forestry Honey
 mods.thermalexpansion.Refinery.addRecipe(<liquid:fluid.for.honey>*100, null, <liquid:honey>*100, 1000);
 */
+
+// Process Nether Wasps into Honey (because reasons lol?)
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<forestry:honeydew>%25, <forestry:honey_drop>%50], <liquid:honey>*100, 5000, 50);
+
+// Fractionate Honey > Honey Drops
+mods.thermalexpansion.Refinery.addRecipe(null, <forestry:honey_drop>%25, <liquid:honey>*500, 4000);
+
 // Blood > Protein (1,000 > 250)
 mods.thermalexpansion.Refinery.addRecipe(<liquid:if.protein>*250, null, <liquid:blood>*1000, 6000);
 
+
+# Process workaround items into their fluids
+mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*1000, <contenttweaker:alien_goo_sample>, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*1000, <contenttweaker:hell_goo_sample>, 4000);
+
+### Alien & Hellish Goo Recipes ###
 // Alien Goo > Liquified Research
 mods.thermalexpansion.Refinery.addRecipe(<liquid:research>*250, null, <liquid:alien_goo>*500, 8000);
 
@@ -112,13 +133,34 @@ mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*10000, <techguns:alie
 
 // Process Alien Bugs into Alien Goo
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:alienbug>, [<jjcoin:silver_coin>*2%100, <jjcoin:silver_coin>%50, <jjcoin:gold_coin>%10], <liquid:alien_goo>*2500, 8000, 75);
+##########
+// Hellish Viscera > Liquified Research
+mods.thermalexpansion.Refinery.addRecipe(<liquid:research>*250, null, <liquid:hell_goo>*1000, 16000);
 
-// Process Nether Wasps into Honey (because reasons lol?)
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<forestry:honeydew>%25, <forestry:honey_drop>%50], <liquid:honey>*100, 5000, 50);
+// Process Imp Leather into Hellish Viscera
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*500, <natura:materials:6>, 5000);
 
-// Fractionate Honey > Honey Drops
-mods.thermalexpansion.Refinery.addRecipe(null, <forestry:honey_drop>%25, <liquid:honey>*500, 4000);
+// Process Nether Armour into Hellish Viscera
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*5000, <techguns:t4_praetor_helmet:*>, 10000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*8000, <techguns:t4_praetor_chestplate:*>, 16000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*7000, <techguns:t4_praetor_leggings:*>, 14000);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*4000, <techguns:t4_praetor_boots:*>, 8000);
 
+// Process Nether Blasters into Hellish Viscera
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*10000, <techguns:netherblaster:*>, 16000);
+
+// Process Nether Charges into Hellish Viscera
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*1000, <techguns:itemshared:76>, 8000);
+
+// Process Cybernetic Parts into Hellish Viscera
+mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*2000, <techguns:itemshared:69>, 8000);
+/*
+// Process Cyberdemons into Hellish Viscera
+# Can't get the game to remove the recipe, so I'll jsut disable it for now
+mods.thermalexpansion.Centrifuge.removeRecipeMob(<entity:techguns:cyberdemon>);
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:cyberdemon>, [<techguns:itemshared:69>*2%75, <jjcoin:diamond_coin>%10, <jjcoin:gold_coin>*2%100, <jjcoin:silver_coin>*5%100], <liquid:hell_goo>*10000, 16000, 100);
+*/
+##################################################
 
 ### Research Disks
 // Disk > Fluid

@@ -85,6 +85,7 @@ print("values.zs loading...");
 <foundry:shellnormal>.addShiftTooltip(format.gold("Worth $1.60"));
 <foundry:shellap>.addShiftTooltip(format.gold("Worth $1.95"));
 <foundry:shelllumium>.addShiftTooltip(format.gold("Worth $5.15"));
+<techguns:itemshared>.addShiftTooltip(format.gold("Worth $0.05"));
 <techguns:itemshared:1>.addShiftTooltip(format.gold("Worth $0.50"));
 <techguns:itemshared:11>.addShiftTooltip(format.gold("Worth $2.25"));
 <techguns:itemshared:109>.addShiftTooltip(format.gold("Worth $4"));
@@ -92,7 +93,7 @@ print("values.zs loading...");
 
 
 # Misc
-<baubles:ring>.addShiftTooltip(format.gold("Worth $30"));
+<baubles:ring>.addShiftTooltip(format.gold("Worth $25"));
 <biomesoplenty:honeycomb>.addShiftTooltip(format.gold("Worth $7.50"));
 <biomesoplenty:filled_honeycomb>.addShiftTooltip(format.gold("Worth $10"));
 <minecraft:tnt>.addShiftTooltip(format.gold("Worth $30"));

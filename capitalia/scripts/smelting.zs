@@ -4,7 +4,7 @@ print("smelting.zs loading...");
 
 // Smelt Flint and Steel into Iron
 // Even though I blacklisted them form LootBags, they keep showing up
-furnace.addRecipe(<minecraft:iron_ingot>, <minecraft:flint_and_steel>, 1.0);
+furnace.addRecipe(<minecraft:iron_ingot>, <minecraft:flint_and_steel:*>, 1.0);
 
 // Smelt Compasses & Clocks
 furnace.addRecipe(<minecraft:iron_ingot>*2, <minecraft:compass>, 1.0);
@@ -59,12 +59,12 @@ furnace.addRecipe(<minecraft:diamond>*1, <minecraft:diamond_shovel:*>, 0.1);
 furnace.addRecipe(<minecraft:diamond>*2, <minecraft:diamond_axe:*>, 0.3);
 furnace.addRecipe(<minecraft:diamond>*1, <minecraft:diamond_hoe:*>, 0.2);
 
-furnace.addRecipe(<minecraft:iron_ingot>*4, <mekanismtools:ironpaxel>, 1.5);
-furnace.addRecipe(<minecraft:gold_ingot>*4, <mekanismtools:goldpaxel>, 2.0);
-furnace.addRecipe(<minecraft:dye:4>*5, <mekanismtools:lapislazulipaxel>, 2.5);
-furnace.addRecipe(<mekanism:ingot:3>*4, <mekanismtools:glowstonepaxel>, 3.0);
-furnace.addRecipe(<mekanism:ingot:1>*4, <mekanismtools:osmiumpaxel>, 3.5);
-furnace.addRecipe(<thermalfoundation:material:163>*4, <mekanismtools:bronzepaxel>, 4.5);
-furnace.addRecipe(<mekanism:ingot>*4, <mekanismtools:obsidianpaxel>, 5.0);
+furnace.addRecipe(<minecraft:iron_ingot>*4, <mekanismtools:ironpaxel:*>, 1.5);
+furnace.addRecipe(<minecraft:gold_ingot>*4, <mekanismtools:goldpaxel:*>, 2.0);
+furnace.addRecipe(<minecraft:dye:4>*5, <mekanismtools:lapislazulipaxel:*>, 2.5);
+furnace.addRecipe(<mekanism:ingot:3>*4, <mekanismtools:glowstonepaxel:*>, 3.0);
+furnace.addRecipe(<mekanism:ingot:1>*4, <mekanismtools:osmiumpaxel:*>, 3.5);
+furnace.addRecipe(<thermalfoundation:material:163>*4, <mekanismtools:bronzepaxel:*>, 4.5);
+furnace.addRecipe(<mekanism:ingot>*4, <mekanismtools:obsidianpaxel:*>, 5.0);
 
 print("smelting.zs loaded");

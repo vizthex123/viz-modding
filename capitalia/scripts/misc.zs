@@ -15,9 +15,9 @@ recipes.addShapeless(<openblocks:tank>, [<openblocks:tank>]);
 
 // More recipes for Shroom Powder
 recipes.addShapeless(<biomesoplenty:shroompowder>, [<biomesoplenty:mushroom:1>]);
-recipes.addShapeless(<biomesoplenty:shroompowder>, [<biomesoplenty:mushroom:2>]);
-recipes.addShapeless(<biomesoplenty:shroompowder>*2, [<biomesoplenty:mushroom:3>]);
-recipes.addShapeless(<biomesoplenty:shroompowder>*3, [<biomesoplenty:mushroom:4>]);
+recipes.addShapeless(<biomesoplenty:shroompowder>*2, [<biomesoplenty:mushroom:2>, <biomesoplenty:mushroom:2>]);
+recipes.addShapeless(<biomesoplenty:shroompowder>*4, [<biomesoplenty:mushroom:3>, <biomesoplenty:mushroom:3>]);
+recipes.addShapeless(<biomesoplenty:shroompowder>*6, [<biomesoplenty:mushroom:4>, <biomesoplenty:mushroom:4>]);
 recipes.addShapeless(<biomesoplenty:shroompowder>*5, [<biomesoplenty:mushroom:5>]);
 
 // Add a use for shroom powder
@@ -133,19 +133,37 @@ furnace.addRecipe(<minecraft:glass>*6, <minecraft:sandstone:2>, 0.6);
 recipes.addShaped(<exchangers:exchanger_core_tier1>, [[<ore:logWood>, null, <ore:logWood>],
                                      				            [<ore:dustRedstone>, <minecraft:ender_pearl>, <ore:dustRedstone>],
                                 			 	            [<ore:logWood>, null, <ore:logWood>]]);
-// Cheaper RF Engine
+
+# Cheaper RF Engine
 // Easier than changing every recipe lol, plus these things are kind of pointless on their own. All PA stuff is supposed to be early-game anyway.
 recipes.remove(<progressiveautomation:rf_engine>);
 recipes.addShaped(<progressiveautomation:rf_engine>, [[<ore:ingotCopper>, <minecraft:gold_ingot>, <ore:ingotCopper>],
                                       				          [<ore:ingotBronze>, <ore:dustRedstone>, <ore:ingotBronze>],
                                    				          [<ore:ingotCopper>, <ore:ingotBronze>, <ore:ingotCopper>]]);
-// Cheaper Diamond Miner
-// Why does it need 10 by default?!
+
+# Change all the PA miners to use any damage value & oredict
+recipes.remove(<progressiveautomation:miner_wooden>);
+recipes.remove(<progressiveautomation:miner_stone>);
+recipes.remove(<progressiveautomation:miner_iron>);
 recipes.remove(<progressiveautomation:miner_diamond>);
-recipes.addShaped(<progressiveautomation:miner_diamond>, [[null, <minecraft:diamond>, null],
-                                    					  [<minecraft:diamond>, <progressiveautomation:miner_iron>, <minecraft:diamond>],
-                              					  [null, <minecraft:diamond>, null]]);
-// Cheaper PA Upgrades
+
+recipes.addShaped(<progressiveautomation:miner_wooden>, [[<ore:plankWood>, <ore:chest>, <ore:plankWood>],
+						  [<ore:plankWood>, <minecraft:furnace>, <ore:plankWood>],
+						  [<ore:plankWood>, <minecraft:wooden_pickaxe:*>, <ore:plankWood>]]);
+
+recipes.addShaped(<progressiveautomation:miner_stone>, [[<ore:stone>, <ore:stone>, <ore:stone>],
+					                 [<ore:stone>, <progressiveautomation:miner_wooden>, <ore:stone>],
+					                 [<ore:stone>, <minecraft:stone_pickaxe:*>, <ore:stone>]]);
+
+recipes.addShaped(<progressiveautomation:miner_iron>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+					              [<ore:ingotIron>, <progressiveautomation:miner_stone>, <ore:ingotIron>],
+ 					              [<ore:ingotIron>, <minecraft:iron_pickaxe:*>, <ore:ingotIron>]]);
+
+recipes.addShaped(<progressiveautomation:miner_diamond>, [[null, <minecraft:diamond>|<mekanism:otherdust>, null],
+						    [<minecraft:diamond>|<mekanism:otherdust>, <progressiveautomation:miner_iron>, <minecraft:diamond>|<mekanism:otherdust>],
+						    [null, <minecraft:diamond>|<mekanism:otherdust>, null]]);
+
+# Cheaper PA Upgrades
 recipes.remove(<progressiveautomation:wood_upgrade>);
 recipes.remove(<progressiveautomation:stone_upgrade>);
 recipes.remove(<progressiveautomation:iron_upgrade>);
@@ -165,5 +183,21 @@ recipes.addShapeless(<progressiveautomation:diamond_upgrade>, [<progressiveautom
 
 // Alt recipe that uses Emeralds, because those things are kinda pointless
 recipes.addShapeless(<progressiveautomation:diamond_upgrade>*2, [<progressiveautomation:iron_upgrade>, <ore:gemEmerald>]);
+
+
+# Upgrade Magnets to Fluxomagnets
+// Stone/Iron > Basic
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_stone>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:enrichedalloy>]);
+
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_iron>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>]);
+
+// Gold/Redstone > Hardened
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:1>, [<tieredmagnets:magnet_durability_gold>|<tieredmagnets:magnet_durability_redstone>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <mekanism:enrichedalloy>]);
+
+// Lapis/Obsidian > Reinforced
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:2>, [<tieredmagnets:magnet_durability_lapis>, <tieredmagnets:magnet_durability_obsidian>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:reinforcedalloy>]);
+
+// Diamond/Emerald > Signalum
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:3>, [<tieredmagnets:magnet_durability_diamond>|<tieredmagnets:magnet_durability_emerald>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
 
 print("misc.zs loaded");
