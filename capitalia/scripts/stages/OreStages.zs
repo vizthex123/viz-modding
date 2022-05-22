@@ -67,6 +67,8 @@ mods.ItemStages.addItemStage("industrial_age", <ore:oreLead>);
 mods.ItemStages.addItemStage("industrial_age", <ore:oreSilver>);
 mods.ItemStages.addItemStage("industrial_age", <ore:oreOsmium>);
 mods.ItemStages.addItemStage("industrial_age", <ore:oreAluminum>);
+mods.ItemStages.addItemStage("industrial_age", <ore:oreTungsten>);
+mods.ItemStages.addItemStage("industrial_age", <ore:oreTitanium>);
 
 mods.ItemStages.addItemStage("industrial_age", <superores:super_lead>);
 mods.ItemStages.addItemStage("industrial_age", <superores:super_silver>);
@@ -78,6 +80,8 @@ mods.ItemStages.setUnfamiliarName("Scrap Deposit...?", <ore:oreLead>);
 mods.ItemStages.setUnfamiliarName("Coins...?", <ore:oreSilver>);
 mods.ItemStages.setUnfamiliarName("Titanium...?", <ore:oreOsmium>);
 mods.ItemStages.setUnfamiliarName("Probably Aluminium?", <ore:oreAluminum>);
+mods.ItemStages.setUnfamiliarName("Condensed Coal?", <ore:oreTungsten>);
+mods.ItemStages.setUnfamiliarName("Osmium...?", <ore:oreTitanium>);
 
 mods.ItemStages.setUnfamiliarName("Scrap Mound...?", <superores:super_lead>);
 mods.ItemStages.setUnfamiliarName("Coin Pile...?", <superores:super_silver>);

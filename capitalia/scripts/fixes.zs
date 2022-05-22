@@ -10,6 +10,12 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Fix Bronze recipes
+recipes.addShaped(<thermalfoundation:material:163>, [[<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],
+                                      [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],
+                                      [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>]]);
+recipes.addShapeless(<thermalfoundation:material:163>*9, [<ore:blockBronze>]);
+
 // Cut cost of Efficiency Upgrades because they're bad
 recipes.remove(<solarflux:efficiency_upgrade>);
 recipes.addShapeless(<solarflux:efficiency_upgrade>, [<solarflux:mirror>, <solarflux:blank_upgrade>]);
@@ -23,7 +29,7 @@ recipes.addShaped(<mekanism:basicblock:3>, [[<minecraft:coal:1>, <minecraft:coal
                                     		                                [<minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>]]);
 
 // Convert for Mekanism, if you want that for the Metallurgic Infuser
-recipes.addShapeless(<mekanism:basicblock:3>, [<forestry:charcoal>, <minecraft:flint>]);
+recipes.addShapeless(<mekanism:basicblock:3>, [<ore:blockCharcoal>, <minecraft:flint>]);
 
 // Craftable Barley Seeds (since they dron't drop from farmed ores unless broken)
 recipes.addShapeless(<natura:overworld_seeds>*2, [<natura:materials>, <natura:materials>]);

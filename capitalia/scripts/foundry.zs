@@ -197,7 +197,7 @@ mods.foundry.AlloyFurnace.clear();
 
 mods.foundry.AlloyFurnace.addRecipe(<foundry:refractoryglass>, <ore:blockGlass>, <minecraft:clay_ball>);
 mods.foundry.AlloyFurnace.addRecipe(<foundry:refractoryglass>, <ore:sand>, <minecraft:clay_ball>*2);
-mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:2>*4, <mekanism:ingot:5>*3, <mekanism:ingot:6>);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:163>*4, <thermalfoundation:material:128>*3, <thermalfoundation:material:129>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:162>*3, <minecraft:iron_ingot>*2, <ore:ingotNickel>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:161>*2, <minecraft:gold_ingot>*2, <magneticraft:ingots:12>*2);
 mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>);
@@ -265,7 +265,7 @@ recipes.addShaped(<contenttweaker:paxelmold>, [[<foundry:component:1>, <foundry:
 <foundry:machine:1>.removeTooltip("Casts items from liquid metal using mold");
 <foundry:machine:1>.addTooltip("Casts items from liquid metals using molds");
 
-<foundry:machine:1>.addTooltip(format.aqua("Can be melted back into Bronze"));
+<foundry:machine>.addTooltip(format.aqua("Can be melted back into Bronze"));
 <foundry:machine:8>.addTooltip(format.aqua("Can be melted back into Iron"));
 
 // Mold Tooltips

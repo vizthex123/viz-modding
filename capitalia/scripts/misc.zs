@@ -159,6 +159,10 @@ recipes.addShaped(<progressiveautomation:miner_iron>, [[<ore:ingotIron>, <ore:in
 					              [<ore:ingotIron>, <progressiveautomation:miner_stone>, <ore:ingotIron>],
  					              [<ore:ingotIron>, <minecraft:iron_pickaxe:*>, <ore:ingotIron>]]);
 
+recipes.addShaped(<progressiveautomation:miner_iron>, [[null, <ore:ingotIron>, null],
+					              [<ore:ingotIron>, <simplequarry:fuel_quarry>, <ore:ingotIron>],
+ 					              [null, <ore:ingotIron>, null]]);
+
 recipes.addShaped(<progressiveautomation:miner_diamond>, [[null, <minecraft:diamond>|<mekanism:otherdust>, null],
 						    [<minecraft:diamond>|<mekanism:otherdust>, <progressiveautomation:miner_iron>, <minecraft:diamond>|<mekanism:otherdust>],
 						    [null, <minecraft:diamond>|<mekanism:otherdust>, null]]);

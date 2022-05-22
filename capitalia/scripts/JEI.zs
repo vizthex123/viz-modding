@@ -80,17 +80,19 @@ mods.jei.JEI.removeAndHide(<progressiveautomation:wither_stone>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:wither_iron>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:wither_gold>);
 mods.jei.JEI.removeAndHide(<progressiveautomation:wither_diamond>);
-mods.jei.JEI.removeAndHide(<thermalfoundation:tome_lexicon>);
-mods.jei.JEI.removeAndHide(<thermalexpansion:device:7>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:storage_resource>);
 mods.jei.JEI.removeAndHide(<appliedenergistics2:crafting_monitor>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:device:7>);
 mods.jei.JEI.removeAndHide(<projectred-exploration:backpack:*>);
 
-# Remove ore dictioary conversion items
+# Remove ore dictionary conversion items
+/*
 mods.jei.JEI.removeAndHide(<industrialforegoing:fluiddictionary_converter>);
 mods.jei.JEI.removeAndHide(<industrialforegoing:oredictionary_converter>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:tome_lexicon>);
 mods.jei.JEI.removeAndHide(<mekanism:machineblock3:3>);
 mods.jei.JEI.removeAndHide(<mekanism:dictionary>);
+*/
 
 # Removed extra TE machines I don't want people to use
 mods.jei.JEI.removeAndHide(<thermalexpansion:machine:12>);

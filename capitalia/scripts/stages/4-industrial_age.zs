@@ -17,9 +17,21 @@ mods.ItemStages.addItemStage("industrial_age", <magneticraft:crafting:2>);
 mods.ItemStages.addItemStage("industrial_age", <libvulpes:battery>);
 mods.ItemStages.addItemStage("industrial_age", <mekanism:ingot:1>);
 
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:132>);
+mods.ItemStages.addItemStage("industrial_age", <ore:ingotAluminum>);
+mods.ItemStages.addItemStage("industrial_age", <ore:ingotTungsten>);
+mods.ItemStages.addItemStage("industrial_age", <ore:ingotTitanium>);
+
+mods.ItemStages.addItemStage("industrial_age", <ore:nuggetAluminum>);
+mods.ItemStages.addItemStage("industrial_age", <ore:nuggetTungsten>);
+mods.ItemStages.addItemStage("industrial_age", <ore:nuggetTitanium>);
+
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:97>);
 mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:161>);
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:225>);
+
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:98>);
 mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:162>);
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:226>);
 
 mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:tool.shears_steel>);
 
