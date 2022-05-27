@@ -13,6 +13,7 @@ mods.ItemStages.stageModItems("industrial_age", "industrialforegoing");
 
 mods.ItemStages.stageModItems("machine_age", "thermalinnvoation");
 mods.ItemStages.stageModItems("machine_age", "thermaldynamics");
+mods.ItemStages.stageModItems("machine_age", "thermalexpansion");
 
 
 mods.ItemStages.stageModItems("basic_reactor", "bigreactors");
@@ -45,6 +46,48 @@ mods.ItemStages.addItemStage("industrial_age", <libvulpes:motor>);
 mods.recipestages.Recipes.setRecipeStage("industrial_age", <libvulpes:motor>);
 mods.ItemStages.addItemStage("industrial_age", <libvulpes:advancedmotor>);
 mods.recipestages.Recipes.setRecipeStage("industrial_age", <libvulpes:advancedmotor>);
+
+mods.ItemStages.removeItemStage(<thermalexpansion:strongbox>);
+mods.ItemStages.removeItemStage(<thermalexpansion:cache>);
+mods.ItemStages.removeItemStage(<thermalexpansion:tank>);
+mods.ItemStages.removeItemStage(<thermalexpansion:frame:128>);
+mods.ItemStages.removeItemStage(<thermalexpansion:cell>);
+
+mods.ItemStages.addItemStage("iron_age", <thermalexpansion:strongbox>);
+mods.ItemStages.addItemStage("iron_age", <thermalexpansion:cache>);
+mods.ItemStages.addItemStage("iron_age", <thermalexpansion:tank>);
+mods.ItemStages.addItemStage("iron_age", <thermalexpansion:frame:128>);
+mods.ItemStages.addItemStage("iron_age", <thermalexpansion:cell>);
+
+mods.ItemStages.removeItemStage(<thermalexpansion:satchel:*>);
+mods.ItemStages.addItemStage("bronze_age", <thermalexpansion:satchel:*>);
+
+mods.ItemStages.removeItemStage(<thermalfoundation:material:97>);
+mods.ItemStages.removeItemStage(<thermalfoundation:material:161>);
+mods.ItemStages.removeItemStage(<thermalfoundation:material:225>);
+
+mods.ItemStages.removeItemStage(<thermalfoundation:material:98>);
+mods.ItemStages.removeItemStage(<thermalfoundation:material:162>);
+mods.ItemStages.removeItemStage(<thermalfoundation:material:226>);
+mods.ItemStages.removeItemStage(<thermalfoundation:material:515>);
+
+mods.ItemStages.removeItemStage(<thermalfoundation:tool.shears_steel>);
+
+
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:97>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:161>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:225>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:515>);
+
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:98>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:162>);
+mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:226>);
+
+mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:tool.shears_steel>);
+
+
+
+
 
 
 mods.ItemStages.removeItemStage(<advancedrocketry:sawblade>);
@@ -91,6 +134,12 @@ mods.ItemStages.addItemStage("industrial_age", <advancedrocketry:blastbrick>);
 
 mods.ItemStages.removeItemStage(<advancedrocketry:arcfurnace>);
 mods.ItemStages.addItemStage("atomic_age", <advancedrocketry:arcfurnace>);
+
+mods.ItemStages.removeItemStage(<appliedenergistics2:quantum_ring>);
+mods.ItemStages.addItemStage("atomic_age", <appliedenergistics2:quantum_ring>);
+
+mods.ItemStages.removeItemStage(<appliedenergistics2:quantum_link>);
+mods.ItemStages.addItemStage("atomic_age", <appliedenergistics2:quantum_link>);
 
 
 

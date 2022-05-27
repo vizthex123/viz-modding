@@ -7,8 +7,9 @@ furnace.setFuel(<item>, TIME*);
 // Wooden Gun Stock
 furnace.setFuel(<techguns:itemshared:42>, 400);
 
-// BoP Roots & Reeds
+// BoP Stuff
 furnace.setFuel(<biomesoplenty:plant_1:8>, 75);
+furnace.setFuel(<biomesoplenty:plant_1:5>, 100);
 furnace.setFuel(<biomesoplenty:plant_1:9>, 150);
 
 // Sugar Cane - 0 > 50

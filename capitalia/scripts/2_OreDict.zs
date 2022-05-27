@@ -30,6 +30,7 @@ print("2_OreDict.zs loading...");
 
 
 // Berries as dye
+<ore:dyeRed>.add(<biomesoplenty:berries>);
 <ore:dyeRed>.add(<natura:edibles:2>);
 <ore:dyeBlue>.add(<natura:edibles:3>);
 <ore:dyeBlack>.add(<natura:edibles:4>);
@@ -38,6 +39,18 @@ print("2_OreDict.zs loading...");
 <ore:dyeGray>.add(<natura:edibles:7>);
 <ore:dyeCyan>.add(<natura:edibles:8>);
 <ore:dyeGreen>.add(<natura:edibles:9>);
+
+
+// Berry OreDict
+<ore:berry>.add(<biomesoplenty:berries>);
+<ore:berry>.add(<natura:edibles:2>);
+<ore:berry>.add(<natura:edibles:3>);
+<ore:berry>.add(<natura:edibles:4>);
+<ore:berry>.add(<natura:edibles:5>);
+<ore:berry>.add(<natura:edibles:6>);
+<ore:berry>.add(<natura:edibles:7>);
+<ore:berry>.add(<natura:edibles:8>);
+<ore:berry>.add(<natura:edibles:9>);
 
 
 // Misc

@@ -166,7 +166,6 @@ Extractor.add(<biomesoplenty:log_3:6>, <fluid:latex>*1);
 Extractor.add(<biomesoplenty:log_3:7>, <fluid:latex>*2);
 
 
-
 /*
 recipes.addShaped(<output>, [[<null>, <null>, <null>],
                                     	                    [<null>, <null>, <null>],

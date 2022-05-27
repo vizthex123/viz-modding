@@ -120,51 +120,50 @@ recipes.remove(<appliedenergistics2:part:380>);
 recipes.remove(<appliedenergistics2:part:480>);
 recipes.remove(<appliedenergistics2:part:520>);
 
-// Regular
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:380>, [<refinedstorage:grid>, <ore:itemIlluminatedPanel>, <appliedenergistics2:material:22>, <appliedenergistics2:material:43>, <advancedrocketry:ic:3>, <appliedenergistics2:material:44>], 30);
+	// Regular
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:380>, [<refinedstorage:grid>, <advancedrocketry:ic:3>, <appliedenergistics2:material:22>, <appliedenergistics2:material:43>, <ore:itemIlluminatedPanel>, <appliedenergistics2:material:44>], 30);
 
-// Crafting
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:360>, [<ore:workbench>, <appliedenergistics2:part:380>, <advancedrocketry:ic:3>, <appliedenergistics2:material:23>], 25);
+	// Crafting
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:360>, [<ore:workbench>, <advancedrocketry:ic:3>, <appliedenergistics2:part:380>, <appliedenergistics2:material:23>], 25);
 
-// Pattern
+	// Pattern
 mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:340>, [<appliedenergistics2:part:380>, <advancedrocketry:ic:3>, <appliedenergistics2:material:22>], 25);
 
-// Fluid
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:520>, [<appliedenergistics2:part:380>, <minecraft:bucket>, <advancedrocketry:ic:3>, <appliedenergistics2:material:22>], 20);
+	// Fluid
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:520>, [<appliedenergistics2:part:380>, <advancedrocketry:ic:3>, <minecraft:bucket>, <appliedenergistics2:material:22>], 20);
 
-// Interface
-recipes.remove(<appliedenergistics2:part:480>);
+	// Interface
 mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:480>, [<appliedenergistics2:interface>|<appliedenergistics2:part:440>, <advancedrocketry:ic:3>, <appliedenergistics2:part:380>], 30);
 
 // ME Drive
 recipes.remove(<appliedenergistics2:drive>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:drive>, 8000, 800, <appliedenergistics2:chest>, [<refinedstorage:storage:1>, <appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:drive>, 80000, 800, <appliedenergistics2:chest>, [<refinedstorage:storage:1>, <appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
 
 // ME Chest
 recipes.remove(<appliedenergistics2:chest>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:chest>, 4000, 400, <refinedstorage:storage>, [<refinedstorage:core>, <refinedstorage:core:1>, <refinedstorage:processor:3>, <refinedstorage:processor:4>, <refinedstorage:processor:5>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:chest>, 40000, 400, <refinedstorage:storage>, [<refinedstorage:core>, <refinedstorage:core:1>, <refinedstorage:processor:3>, <refinedstorage:processor:4>, <refinedstorage:processor:5>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
 
 // ME Interface
 recipes.removeShaped(<appliedenergistics2:interface>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:interface>, 5000, 25, <minecraft:iron_block>, [<ore:blockGlass>, <ore:blockGlass>, <appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:interface>, 50000, 250, <minecraft:iron_block>, [<ore:blockGlass>, <ore:blockGlass>, <appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>]);
 
 	// Fluid Interface
 recipes.removeShaped(<appliedenergistics2:fluid_interface>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_interface>, 4000, 20, <appliedenergistics2:interface>, [<minecraft:bucket>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_interface>, 40000, 400, <appliedenergistics2:interface>, [<minecraft:bucket>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>]);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_interface>, 1500, 15, <appliedenergistics2:interface>, [<claybucket:claybucket>, <claybucket:claybucket>, <claybucket:claybucket>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_interface>, 40000, 200, <appliedenergistics2:interface>, [<claybucket:claybucket>, <claybucket:claybucket>, <claybucket:claybucket>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>]);
 
 	// Dual Interface
 recipes.removeByRecipeName("ae2fc:dual_interface");
-mods.extendedcrafting.EnderCrafting.addShapeless(<ae2fc:dual_interface>, [<appliedenergistics2:interface>, <appliedenergistics2:fluid_interface>, <ore:blockSlime>, <advancedrocketry:ic:4>, <advancedrocketry:ic:5>], 120);
+mods.extendedcrafting.EnderCrafting.addShapeless(<ae2fc:dual_interface>, [ <appliedenergistics2:fluid_interface>, <ore:blockSlime>, <appliedenergistics2:interface>, <advancedrocketry:ic:4>, <advancedrocketry:ic:5>], 120);
 
 // Cell Workbench
 recipes.remove(<appliedenergistics2:cell_workbench>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:cell_workbench>, 1000, 10, <marblecraftingtable:marble_crafting_table>, [<ore:blockWool>, <ore:blockWool>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <refinedstorage:processor:3>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:cell_workbench>, 10000, 1000, <marblecraftingtable:marble_crafting_table>, [<ore:blockWool>, <ore:blockWool>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <refinedstorage:processor:3>]);
 
 // ME IO Port
 recipes.remove(<appliedenergistics2:io_port>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:io_port>, 2500, 25, <appliedenergistics2:chest>, [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:22>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:io_port>, 25000, 250, <appliedenergistics2:chest>, [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:22>]);
 
 // Matter Condensor
 recipes.remove(<appliedenergistics2:condenser>);
@@ -188,7 +187,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<ae2stuff:grower>, 32768, 51
 
 // Crafting Unit
 recipes.remove(<appliedenergistics2:crafting_unit>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_unit>, 1000, 5, <appliedenergistics2:fluix_block>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:23>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_unit>, 16000, 64, <appliedenergistics2:fluix_block>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:23>]);
 
 
 # Crafting CPUs
@@ -198,20 +197,20 @@ recipes.remove(<appliedenergistics2:crafting_storage_16k>);
 recipes.remove(<appliedenergistics2:crafting_storage_64k>);
 
 // 1k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_1k>, 1000, 6, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:35>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_1k>, 10240, 128, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:35>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
 
 // 4k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_4k>, 2000, 12, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:36>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_4k>, 40960, 256, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:36>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
 
 // 16k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_16k>, 4000, 25, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:37>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_16k>, 163840, 512, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:37>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
 
 // 64k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_64k>, 8000, 50, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:38>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_storage_64k>, 655360, 1024, <appliedenergistics2:crafting_unit>, [<appliedenergistics2:material:38>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:24>]);
 
 // Co-Processor
 recipes.remove(<appliedenergistics2:crafting_accelerator>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_accelerator>, 1525, 15, <appliedenergistics2:crafting_unit>, [<refinedstorage:processor:5>, <refinedstorage:processor:3>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_accelerator>, 64000, 96, <appliedenergistics2:crafting_unit>, [<refinedstorage:processor:5>, <refinedstorage:processor:3>]);
 
 # Storage Cells
 recipes.remove(<appliedenergistics2:storage_cell_1k>);
@@ -252,11 +251,11 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_s
 
 // Molecular Assembler
 recipes.remove(<appliedenergistics2:molecular_assembler>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 500, <minecraft:crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 250, <minecraft:crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 505, <sct:stone_crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 500, <sct:stone_crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 510, <marblecraftingtable:marble_crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:molecular_assembler>, 50000, 1000, <marblecraftingtable:marble_crafting_table>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <appliedenergistics2:material:43>, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]);
 
 // Light Detecting Fixture
 recipes.remove(<appliedenergistics2:light_detector>);
@@ -359,32 +358,32 @@ recipes.remove(<appliedenergistics2:quantum_link>);
 recipes.remove(<appliedenergistics2:quantum_ring>);
 
 // Ring
-mods.extendedcrafting.TableCrafting.addShaped(2, <appliedenergistics2:quantum_ring>*8, 
-	[[<ore:plateChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <ore:gearChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <ore:plateChargedCertusQuartz>], 
-	[<ore:plateChargedCertusQuartz>, <minecraft:iron_bars>, <ore:blockIron>, <minecraft:iron_bars>, <ore:plateChargedCertusQuartz>], 
-	[<ore:gearChargedCertusQuartz>, <mekanism:machineblock3>, <ore:blockElectrotine>, <mekanism:machineblock3>, <ore:gearChargedCertusQuartz>], 
-	[<ore:plateChargedCertusQuartz>, <minecraft:iron_bars>, <ore:blockIron>, <minecraft:iron_bars>, <ore:plateChargedCertusQuartz>], 
-	[<ore:plateChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <ore:gearChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <ore:plateChargedCertusQuartz>]]);
+mods.extendedcrafting.TableCrafting.addShaped(2, <appliedenergistics2:quantum_ring>*16, 
+	[[<jaopca:item_platechargedcertusquartz>, <thermalfoundation:material:326>, <projectred-core:resource_item:342>, <thermalfoundation:material:326>, <jaopca:item_platechargedcertusquartz>], 
+	[<thermalfoundation:material:326>, <projectred-exploration:stone:11>, <thermalfoundation:material:263>, <projectred-exploration:stone:11>, <thermalfoundation:material:326>], 
+	[<projectred-core:resource_item:342>, <jaopca:item_gearchargedcertusquartz>, <mekanism:machineblock3>, <jaopca:item_gearchargedcertusquartz>, <projectred-core:resource_item:342>], 
+	[<thermalfoundation:material:326>, <projectred-exploration:stone:11>, <thermalfoundation:material:263>, <projectred-exploration:stone:11>, <thermalfoundation:material:326>], 
+	[<jaopca:item_platechargedcertusquartz>, <thermalfoundation:material:326>, <projectred-core:resource_item:342>, <thermalfoundation:material:326>, <jaopca:item_platechargedcertusquartz>]]);
 
 // Chamber
-mods.extendedcrafting.TableCrafting.addShaped(0, <appliedenergistics2:quantum_link>, 
-	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], 
-	[<ore:blockGlass>, <mekanism:atomicalloy>, <ore:blockGlass>], 
-	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <appliedenergistics2:quantum_link>*2, 
+	[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>], 
+	[<appliedenergistics2:quartz_glass>, <mekanism:atomicalloy>, <appliedenergistics2:quartz_glass>], 
+	[<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>]]);
 
 // P2P Tunnel
 recipes.remove(<appliedenergistics2:part:460>);
 mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:part:460>*2, [[null, <appliedenergistics2:material:22>, null],
 						                                            [<minecraft:gold_ingot>, <appliedenergistics2:material:24>, <minecraft:gold_ingot>],
-								    [<appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>]], 45);
+																	[<appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>]], 45);
 
 // Advanced Card
 recipes.remove(<appliedenergistics2:material:28>);
 recipes.addShapedMirrored(<appliedenergistics2:material:28>*2, [[<minecraft:diamond>, <minecraft:iron_ingot>, null],
                                      					          [<projectred-core:resource_item:105>, <appliedenergistics2:material:23>, <minecraft:iron_ingot>],
-                                  					         [<minecraft:diamond>, <minecraft:iron_ingot>, null]]);
+																  [<minecraft:diamond>, <minecraft:iron_ingot>, null]]);
 #######################
-#	Cables	          #
+#		Cables		#
 #######################
 /*
 Ender Crafting:
@@ -409,22 +408,20 @@ mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:part:140>*6, 
 mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:36>, [<ore:blockWool>, <appliedenergistics2:part:16>], 5); 
 
 // Dense
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:516>, [<appliedenergistics2:part:36>, <appliedenergistics2:part:36>, <appliedenergistics2:part:36>, <appliedenergistics2:part:36>], 10); 
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:516>, [<appliedenergistics2:part:36>, <appliedenergistics2:part:36>, <appliedenergistics2:part:36>, <appliedenergistics2:part:36>], 5); 
 
-##############
-# Glass Cables  #
-##############
 
+# Glass Cables
 recipes.remove(<appliedenergistics2:part:16>);
 recipes.remove(<appliedenergistics2:part:56>);
 recipes.remove(<appliedenergistics2:part:76>);
 
 // Fluix
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:16>*4, [<appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:part:140>], 10); 
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:16>*4, [<appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:part:140>], 5); 
 
 mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:part:16>*16, [[<appliedenergistics2:material:12>, <appliedenergistics2:material:12>, <appliedenergistics2:material:12>],
 [<appliedenergistics2:part:140>, <appliedenergistics2:part:140>, <appliedenergistics2:part:140>],
-[<appliedenergistics2:material:12>, <appliedenergistics2:material:12>, <appliedenergistics2:material:12>]], 45); 
+[<appliedenergistics2:material:12>, <appliedenergistics2:material:12>, <appliedenergistics2:material:12>]], 30); 
 
 # Smart Cables
 // Fluix
@@ -437,6 +434,7 @@ mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:76>, 
 mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:76>, [<appliedenergistics2:part:516>, <minecraft:glowstone_dust>, <minecraft:redstone>], 10);
 
 // Matter Cannon
+// Cheaper than the default one
 recipes.remove(<appliedenergistics2:matter_cannon>);
 mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <appliedenergistics2:matter_cannon>, 
 	[[<appliedenergistics2:material:43>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>], 
@@ -445,13 +443,10 @@ mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <appliedenergistics2:ma
 
 /* Disabled Content:
 
-Meteorite Compass
 Quartz Grindstone & Crank
-Meteorite Compass
-All Sky Stone stuff
-Portable Cell
 Entropy Manipulator
 Charged Staff
+Portable Cell
 */
 
 print("AE2.zs loaded");

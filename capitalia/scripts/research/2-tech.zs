@@ -33,6 +33,22 @@ ResearchTable.builder("oil", tech)
   .build();
 
 
+// Lava Generation
+ResearchTable.builder("lava", tech)
+  .setIcons(<thermalexpansion:dynamo:1>)
+  .setTitle("Lava Generation")
+  .setRequiredResearches("machine_age")
+  .setRequiredResearches("oil")
+  .setDescription("Research ways to pump magma to the surface, rendering it into usable lava")
+  .addCondition(<fluid:hell_goo>*500)
+  .addCondition(<fluid:research>*1000)
+  .setRewardStages("lava")
+  .setRewardCommands("/say I can now process lava, and use it to generate power")
+  .setRewardItems(<extrautils2:passivegenerator:2>*1)
+  .setMaxCount(1)
+  .build();
+
+
 // Wireless Power
 ResearchTable.builder("wireless_power", tech)
   .setIcons(<fluxnetworks:fluxpoint>)

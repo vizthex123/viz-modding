@@ -11,7 +11,8 @@ print("renames_tooltips.zs loading...");
 <libvulpes:productdust>.displayName = "Dilithium Dust";
 <libvulpes:productgem>.displayName = "Dilithium Crystal";
 <libvulpes:ore0>.displayName = "Dilithium Ore";
-####################
+<libvulpes:battery>.displayName = "Small Battery";
+########################################
 
 <adminshop:shop>.displayName = "Intergalactic Shop Kiosk";
 <adminshop:buyer>.displayName = "Intergalactic Auto-Buyer";
@@ -87,6 +88,16 @@ print("renames_tooltips.zs loading...");
 ###############################################################################
 # 				TOOLTIPS				               #
 ###############################################################################
+<logisticalautomation:filter>.addTooltip(format.white("Sorts items based on its internal filter"));
+<logisticalautomation:alternator>.addTooltip(format.white("Alternates output sides for every 1 input"));
+<logisticalautomation:junction>.addTooltip(format.white("Evenly combines 2 belts into 1"));
+<logisticalautomation:splitter>.addTooltip(format.white("Splits 1 belt input onto 2 belts"));
+<logisticalautomation:extractor>.addTooltip(format.white("Extracts items from the block its placed next to"));
+<logisticalautomation:blowtorch>.addTooltip(format.white("Damages nearby enemies, and sets them on fire"));
+<logisticalautomation:poly_blowtorch>.addTooltip(format.white("Damages nearby enemies, and sets them on fire"));
+<logisticalautomation:grate>.addTooltip(format.white("Allows items to pass when open"));
+<logisticalautomation:grate>.addTooltip(format.aqua("Affected by redstone signals"));
+
 <libvulpes:ore0>.addTooltip(format.aqua("Best to save this for later."));
 <magneticraft:small_tank>.addTooltip(format.aqua("Holds 32,000 mB of fluid"));
 <magneticraft:small_tank>.addTooltip(format.red("Doesn't retain contents when broken."));
@@ -118,10 +129,12 @@ print("renames_tooltips.zs loading...");
 
 <waystones:waystone>.addTooltip(format.gold("Can be purchased for $1,000"));
 <waystones:waystone>.addTooltip(format.green("Or maybe you'll encounter them on your adventures..."));
+
 <waystones:return_scroll>.addTooltip(format.aqua("Single-use item to return to whatever Waystone was used (or placed) last"));
 <waystones:bound_scroll>.addTooltip(format.aqua("Single-use item to teleport to whatever Waystone it was bound too"));
 <waystones:warp_scroll>.addTooltip(format.aqua("Single-use item to teleport to any Waystone"));
 <waystones:warp_stone>.addTooltip(format.aqua("Acts like a portable Waystone"));
+<waystones:warp_stone>.addTooltip(format.white("Can be crafted in the Machine Age"));
 
 <ssc:basic_crate>.addTooltip(format.red("InvTweaks sorting doesn't work"));
 <ssc:hardened_crate>.addTooltip(format.red("InvTweaks sorting doesn't work"));

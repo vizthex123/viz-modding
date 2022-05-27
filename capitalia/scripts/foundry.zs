@@ -47,6 +47,9 @@ mods.foundry.Melting.addRecipe(<liquid:liquidgold>*200, <forestry:bronze_pickaxe
 mods.foundry.Melting.addRecipe(<liquid:liquidgold>*50, <forestry:bronze_shovel>, 1000);
 
 
+// Melt down random things
+mods.foundry.Melting.addRecipe(<liquid:liquidiron>*45, <minecraft:iron_bars>, 1000);
+
 
 // Reduce copper to 800K
 mods.foundry.Melting.removeRecipe(<ore:oreCopper>.firstItem);
@@ -154,22 +157,22 @@ mods.foundry.Melting.addRecipe(<liquid:liquidbronze>*50, <foundry:component:11>,
 // Basic Crucible
 recipes.remove(<foundry:machine>);
 recipes.addShaped(<foundry:machine>, [[<minecraft:brick>, <minecraft:furnace>, <minecraft:brick>],
-                          			[<minecraft:brick>, <foundry:componentblock:3>, <minecraft:brick>],
-                                		       	[<minecraft:brick>, <ore:plateBronze>, <minecraft:brick>]]);
+                                   			[<minecraft:brick>, <foundry:componentblock:3>, <minecraft:brick>],
+                                   			[<minecraft:brick>, <ore:plateBronze>, <minecraft:brick>]]);
 mods.foundry.Melting.addRecipe(<liquid:liquidbronze>*400, <foundry:machine>, 1600);
 
 // Standard Crucible
 recipes.remove(<foundry:machine:8>);
 recipes.addShaped(<foundry:machine:8>, [[<foundry:component:2>, <foundry:bronzecauldron>, <foundry:component:2>],
-                               			   [<foundry:component:2>, <foundry:componentblock>, <foundry:component:2>],
-                                  		       	   [<foundry:component:2>, <ore:plateIron>, <foundry:component:2>]]);
+                                   			   [<foundry:component:2>, <foundry:componentblock>, <foundry:component:2>],
+                                   			   [<foundry:component:2>, <ore:plateIron>, <foundry:component:2>]]);
 mods.foundry.Melting.addRecipe(<liquid:liquidiron>*400, <foundry:machine:8>, 3000);
 
 // Advanced Crucible
 recipes.remove(<foundry:machine:7>);
 recipes.addShaped(<foundry:machine:7>, [[<foundry:component:18>, <minecraft:cauldron>, <foundry:component:18>],
-                               			   [<foundry:component:18>, <foundry:componentblock:2>, <foundry:component:18>],
-                                  		       	   [<foundry:component:18>, <ore:plateSteel>, <foundry:component:18>]]);
+                                   			   [<foundry:component:18>, <foundry:componentblock:2>, <foundry:component:18>],
+                                   			   [<foundry:component:18>, <ore:plateSteel>, <foundry:component:18>]]);
 
 // Inferno Clay recipe change
 recipes.remove(<foundry:component:17>);
@@ -190,19 +193,19 @@ mods.foundry.Casting.addRecipe(<libvulpes:productrod:6>*4, <liquid:liquidsteel>*
 // Melt down Barrels from TechGuns
 mods.foundry.Melting.addRecipe(<liquid:liquidiron>*600, <techguns:itemshared:38>, 1850);
 
-// Alloy Furnace recipe fixer
-// Because they have 47 recipes for the same stupid item and that's annoying & dumb.
-// NOTE: Does not support the ore dictionary! (for {most} ingots at least) Idk why, it just hates working.
+# Alloy Furnace recipe fixer
+// Because they have 47 recipes for the same damn item and that's annoying af
+// NOTE: Does not support the ore dictionary! (for ingots at least) Idk why, it just hates working.
 mods.foundry.AlloyFurnace.clear();
 
 mods.foundry.AlloyFurnace.addRecipe(<foundry:refractoryglass>, <ore:blockGlass>, <minecraft:clay_ball>);
 mods.foundry.AlloyFurnace.addRecipe(<foundry:refractoryglass>, <ore:sand>, <minecraft:clay_ball>*2);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:163>*4, <thermalfoundation:material:128>*3, <thermalfoundation:material:129>);
-mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:162>*3, <minecraft:iron_ingot>*2, <ore:ingotNickel>);
-mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:161>*2, <minecraft:gold_ingot>*2, <magneticraft:ingots:12>*2);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:162>*3, <minecraft:iron_ingot>*2, <thermalfoundation:material:133>);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:161>*2, <minecraft:gold_ingot>*2, <thermalfoundation:material:130>*2);
 mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>);
 mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>*2, <thermalfoundation:material:802>, <minecraft:iron_ingot>);
-mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:glass:3>*2, <mekanism:otherdust:6>*4, <magneticraft:ingots:3>);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:glass:3>*2, <thermalfoundation:material:770>*4, <thermalfoundation:material:131>);
 
 # Recipe Additions
 // Bronze
@@ -254,7 +257,7 @@ mods.foundry.Casting.addRecipe(<mekanismtools:steelpaxel>, <liquid:liquidsteel>*
 // Paxel Mold
 // Because the stupid mold station hates me :c
 recipes.addShaped(<contenttweaker:paxelmold>, [[<foundry:component:1>, <foundry:component:1>, null],
-                               			                 [<foundry:component:1>, <foundry:component:1>, <foundry:component:1>],
+															     [<foundry:component:1>, <foundry:component:1>, <foundry:component:1>],
                                      			                 [null, <foundry:component:1>, null]]);
 
 # Renames & Tooltips
@@ -317,5 +320,10 @@ recipes.addShapeless(<foundry:fluidcontainer>, [<foundry:fluidcontainer>]);
 // Melt down dungeon loot
 mods.foundry.Melting.addRecipe(<liquid:liquidiron>*700, <minecraft:iron_horse_armor>, 1900);
 mods.foundry.Melting.addRecipe(<liquid:liquidgold>*700, <minecraft:golden_horse_armor>, 1500);
+
+// Fix Bronze being wrong
+mods.foundry.Casting.removeRecipe(<liquid:liquidbronze>, <foundry:mold>);
+mods.foundry.Casting.addRecipe(<thermalfoundation:material:163>, <liquid:liquidbronze>*100, <foundry:mold>);
+
 
 print("foundry.zs loaded");

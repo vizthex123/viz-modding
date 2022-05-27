@@ -13,10 +13,9 @@ recipes.addShapeless(<contenttweaker:hell_goo_sample>*4, [<techguns:t4_praetor_b
 
 
 // Data Disk recipes
-// Starts at Iron since you need to power the machine
 recipes.addShapeless(<contenttweaker:datadisk_stone>, [<extrautils2:compressedcobblestone>, <minecraft:cobblestone>]);
 recipes.addShapeless(<contenttweaker:datadisk_stone>, [<contenttweaker:datadisk_stone_unref>, <contenttweaker:datadisk_stone_unref>]);
-recipes.addShapeless(<contenttweaker:datadisk_stone_unref>, [<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>]);
+recipes.addShapeless(<contenttweaker:datadisk_stone_unref>, [<minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>]);
 
 recipes.addShapeless(<contenttweaker:datadisk_bronze>, [<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>]);
 recipes.addShapeless(<contenttweaker:datadisk_iron>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
@@ -28,8 +27,8 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_inf
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_atomic>*4, [<contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:neutron>, <contenttweaker:electron>, <contenttweaker:electron>, <contenttweaker:electron>, <contenttweaker:electron>]);
 
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:datadisk_industrial>, <contenttweaker:datadisk_industrial_unref>, 8, <extendedcrafting:material:8>, 5000, 50);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:datadisk_machine>, <contenttweaker:datadisk_machine_unref>, 16, <extendedcrafting:material:9>, 10000, 100);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:datadisk_industrial>, <contenttweaker:datadisk_industrial_unref>, 8, <extendedcrafting:material:8>, 10000, 50);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:datadisk_machine>, <contenttweaker:datadisk_machine_unref>, 16, <extendedcrafting:material:9>, 25000, 100);
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:datadisk_information>, <contenttweaker:datadisk_information_unref>, 16, <extendedcrafting:material:10>, 50000, 500);
 
 

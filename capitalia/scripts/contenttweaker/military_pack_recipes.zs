@@ -10,11 +10,11 @@ recipes.addShapeless(<contenttweaker:datadisk_military>*2, [<foundry:roundnormal
 recipes.addShapeless(<contenttweaker:datadisk_military>*3, [<foundry:roundhollow>, <foundry:roundhollow>, <foundry:roundhollow>, <foundry:roundhollow>]);
 recipes.addShapeless(<contenttweaker:datadisk_military>*4, [<foundry:roundap>, <foundry:roundap>, <foundry:roundap>, <foundry:roundap>]);
 
-// TechGuns
+### TechGuns Ammo ###
 // Stone Bullet
 recipes.addShapeless(<contenttweaker:datadisk_military>, [<techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>, <techguns:itemshared>]);
 
-### Rounds ###
+# Rounds #
 // Pistol
 recipes.addShapeless(<contenttweaker:datadisk_military>*2, [<techguns:itemshared:1>, <techguns:itemshared:1>, <techguns:itemshared:1>, <techguns:itemshared:1>]);
 	// Magazine
@@ -46,12 +46,17 @@ recipes.addShapeless(<contenttweaker:datadisk_military>*8, [<techguns:itemshared
 // Advanced Rounds
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*8, [<techguns:itemshared:6>, <techguns:itemshared:6>, <techguns:itemshared:6>, <techguns:itemshared:6>]);
 
-### Magazine Recipes ###
+# Magazine Recipes #
 
 // SMG
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*4, [<techguns:itemshared:9>]);
 	// Incendiary
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*12, [<techguns:itemshared:112>]);
+
+// Rifle
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*8, [<techguns:itemshared:3>]);
+	// Incendiary
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*16, [<techguns:itemshared:110>]);
 
 // Assault Rifle
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*12, [<techguns:itemshared:13>]);
@@ -78,6 +83,18 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_mil
 	// Explosive
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*32, [<techguns:itemshared:143>]);
 
+// Redstone Battery
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*16, [<techguns:itemshared:125>]);
+
+// Gauss Rifle Slugs
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*20, [<techguns:itemshared:127>]);
+
+// Rocket
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*32, [<techguns:itemshared:145>]);
+	// High Velocity
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*48, [<techguns:itemshared:145>]);
+	// Tactical Nuke
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_military>*128, [<techguns:itemshared:145>]);
 
 
 

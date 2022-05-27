@@ -25,16 +25,6 @@ mods.ItemStages.addItemStage("industrial_age", <ore:nuggetAluminum>);
 mods.ItemStages.addItemStage("industrial_age", <ore:nuggetTungsten>);
 mods.ItemStages.addItemStage("industrial_age", <ore:nuggetTitanium>);
 
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:97>);
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:161>);
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:225>);
-
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:98>);
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:162>);
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:material:226>);
-
-mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:tool.shears_steel>);
-
 mods.ItemStages.addItemStage("industrial_age", <minecraft:diamond>);
 
 
@@ -76,7 +66,6 @@ mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:itemjetpack:6>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods:1>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods:2>);
-mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods:4>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitem:4>);
 /*
 mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:1>);

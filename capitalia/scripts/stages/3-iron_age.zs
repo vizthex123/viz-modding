@@ -12,6 +12,11 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("iron_age.zs loading...");
 
 # Iron Age
+mods.ItemStages.addItemStage("iron_age", <forestry:fabricator>);
+mods.ItemStages.addItemStage("iron_age", <forestry:trade_station>);
+
+mods.ItemStages.addItemStage("iron_age", <extendedcrafting:table_basic>);
+
 mods.ItemStages.addItemStage("iron_age", <magneticraft:light_plates>);
 mods.ItemStages.addItemStage("iron_age", <magneticraft:heavy_plates>);
 mods.ItemStages.addItemStage("iron_age", <thermalfoundation:material:32>);
@@ -36,10 +41,6 @@ mods.ItemStages.addItemStage("iron_age", <ssc:hardened_crate>);
 mods.ItemStages.addItemStage("iron_age", <jecalculation:item_calculator>);
 
 mods.ItemStages.addItemStage("iron_age", <multistorage:vault:*>);
-
-mods.ItemStages.addItemStage("iron_age", <thermalexpansion:cache>);
-
-mods.ItemStages.addItemStage("iron_age", <thermalexpansion:tank>);
 
 mods.ItemStages.addItemStage("iron_age", <mekanismgenerators:generator>);
 

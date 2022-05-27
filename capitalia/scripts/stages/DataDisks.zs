@@ -22,4 +22,5 @@ mods.ItemStages.addItemStage("atomic_age", <contenttweaker:neutron>);
 mods.ItemStages.addItemStage("atomic_age", <contenttweaker:electron>);
 mods.ItemStages.addItemStage("atomic_age", <contenttweaker:datadisk_atomic>);
 
+print("Data Disk recipes are in recipes.zs!");
 print("DataDisks.zs loaded");

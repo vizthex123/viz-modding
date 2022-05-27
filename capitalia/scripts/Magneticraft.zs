@@ -49,20 +49,19 @@ mods.magneticraft.SluiceBox.addRecipe(<contenttweaker:rockyquartz>, 1.0, <minecr
 
 // Craft Bronze Plates early on
 // Uses the same durability as processing one ore does
-recipes.addShapeless(<techguns:itemshared:49>, [<magneticraft:stone_hammer:*>.transformDamage(5), <ore:ingotBronze>]);
-recipes.addShapeless(<techguns:itemshared:49>, [<magneticraft:iron_hammer:*>.transformDamage(4), <ore:ingotBronze>]);
-recipes.addShapeless(<techguns:itemshared:49>, [<magneticraft:steel_hammer:*>.transformDamage(3), <ore:ingotBronze>]);
+recipes.addShapeless(<thermalfoundation:material:355>, [<magneticraft:stone_hammer:*>.transformDamage(5), <ore:ingotBronze>]);
+recipes.addShapeless(<thermalfoundation:material:355>, [<magneticraft:iron_hammer:*>.transformDamage(4), <ore:ingotBronze>]);
+recipes.addShapeless(<thermalfoundation:material:355>, [<magneticraft:steel_hammer:*>.transformDamage(3), <ore:ingotBronze>]);
 
 // Same as above, but for Iron plates
 // Uses 2x the durability
-recipes.addShapeless(<techguns:itemshared:46>, [<magneticraft:stone_hammer:*>.transformDamage(10), <minecraft:iron_ingot>]);
-recipes.addShapeless(<techguns:itemshared:46>, [<magneticraft:iron_hammer:*>.transformDamage(8), <minecraft:iron_ingot>]);
-recipes.addShapeless(<techguns:itemshared:46>, [<magneticraft:steel_hammer:*>.transformDamage(6), <minecraft:iron_ingot>]);
+recipes.addShapeless(<thermalfoundation:material:32>, [<magneticraft:stone_hammer:*>.transformDamage(10), <minecraft:iron_ingot>]);
+recipes.addShapeless(<thermalfoundation:material:32>, [<magneticraft:iron_hammer:*>.transformDamage(8), <minecraft:iron_ingot>]);
+recipes.addShapeless(<thermalfoundation:material:32>, [<magneticraft:steel_hammer:*>.transformDamage(6), <minecraft:iron_ingot>]);
 
 // Same as above, but for Steel plates
 // Uses 4x the durability
-recipes.addShapeless(<techguns:itemshared:50>, [<magneticraft:stone_hammer:*>.transformDamage(20), <ore:ingotSteel>]);
-recipes.addShapeless(<techguns:itemshared:50>, [<magneticraft:iron_hammer:*>.transformDamage(16), <ore:ingotSteel>]);
-recipes.addShapeless(<techguns:itemshared:50>, [<magneticraft:steel_hammer:*>.transformDamage(12), <ore:ingotSteel>]);
+recipes.addShapeless(<thermalfoundation:material:352>, [<magneticraft:iron_hammer:*>.transformDamage(16), <ore:ingotSteel>]);
+recipes.addShapeless(<thermalfoundation:material:352>, [<magneticraft:steel_hammer:*>.transformDamage(12), <ore:ingotSteel>]);
 
 print("magneticraft.zs loaded");

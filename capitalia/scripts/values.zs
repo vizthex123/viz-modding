@@ -34,14 +34,15 @@ print("values.zs loading...");
 <minecraft:brick_block>.addShiftTooltip(format.gold("Worth $4"));
 
 
-// Terracotta
+# Terracotta
 <minecraft:hardened_clay>.addShiftTooltip(format.gold("Worth $1"));
 <minecraft:stained_hardened_clay:*>.addShiftTooltip(format.gold("Worth $2.50"));
 
 
 # Gems/Alloys
-// Project red ones, diamonds, lapis, etc.
-// rubies/sapphires/peridots all sell for 175
+# Project red ones, diamonds, lapis, etc.
+# Rubies/sapphires/peridots all sell for 175
+<ore:dustSulfur>.addShiftTooltip(format.gold("Worth $0.50"));
 <ore:dustSalt>.addShiftTooltip(format.gold("Worth $0.25"));
 <forestry:apatite>.addShiftTooltip(format.gold("Worth $0.75"));
 <minecraft:dye:4>.addShiftTooltip(format.gold("Worth $5"));
@@ -51,27 +52,38 @@ print("values.zs loading...");
 <ore:gemRuby>.addShiftTooltip(format.gold("Worth $175"));
 <ore:gemSapphire>.addShiftTooltip(format.gold("Worth $175"));
 <ore:gemPeridot>.addShiftTooltip(format.gold("Worth $175"));
+<ore:ingotPlatinum>.addShiftTooltip(format.gold("Worth $1,000"));
+<ore:ingotIridium>.addShiftTooltip(format.gold("Worth $2,500"));
+<ore:ingotMithril>.addShiftTooltip(format.gold("Worth $5,000"));
 <ore:ingotBronze>.addShiftTooltip(format.gold("Worth $4"));
 <ore:ingotSteel>.addShiftTooltip(format.gold("Worth $6"));
 <ore:ingotInvar>.addShiftTooltip(format.gold("Worth $8"));
+<ore:ingotElectrum>.addShiftTooltip(format.gold("Worth $12"));
+<ore:ingotSignalum>.addShiftTooltip(format.gold("Worth $25"));
+<ore:ingotEnderium>.addShiftTooltip(format.gold("Worth $50"));
 <techguns:itemshared:84>.addShiftTooltip(format.gold("Worth $12"));
-<advancedrocketry:productingot>.addShiftTooltip(format.gold("Worth $50"));
-<advancedrocketry:productingot:1>.addShiftTooltip(format.gold("Worth $100"));
+<advancedrocketry:productingot>.addShiftTooltip(format.gold("Worth $100"));
+<advancedrocketry:productingot:1>.addShiftTooltip(format.gold("Worth $250"));
 <mekanism:ingot>.addShiftTooltip(format.gold("Worth $20"));
 <mekanism:ingot:3>.addShiftTooltip(format.gold("Worth $30"));
 
 
 
 # Industry
-<magneticraft:conveyor_belt>.addShiftTooltip(format.gold("Worth $8"));
-<logisticalautomation:conveyor_normal>.addShiftTooltip(format.gold("Worth $12"));
+<logisticalautomation:iron_motor_set>.addShiftTooltip(format.gold("Worth $100"));
+<logisticalautomation:gold_motor_set>.addShiftTooltip(format.gold("Worth $250"));
+<logisticalautomation:diamond_motor_set>.addShiftTooltip(format.gold("Worth $1,000"));
+<logisticalautomation:conveyor_normal>.addShiftTooltip(format.gold("Worth $15"));
+<logisticalautomation:conveyor_fast>.addShiftTooltip(format.gold("Worth $50"));
+<logisticalautomation:conveyor_express>.addShiftTooltip(format.gold("Worth $150"));
+<magneticraft:conveyor_belt>.addShiftTooltip(format.gold("Worth $10"));
 <extrautils2:crafter>.addShiftTooltip(format.gold("Worth $50"));
+<ironfurnaces:diamond_furnace_idle>.addTooltip(format.gold("Worth $1,250"));
 <progressiveautomation:miner_diamond>.addTooltip(format.gold("Worth $3,000"));
 <simplequarry:powered_quarry>.addTooltip(format.gold("Worth $5,000"));
-<extrautils2:quarryproxy>.addTooltip(format.gold("Worth $8,500"));
 <buildcraftbuilders:quarry>.addTooltip(format.gold("Worth $10,000"));
-<extrautils2:quarry>.addTooltip(format.gold("Worth $25,000"));
-
+<extrautils2:quarryproxy>.addTooltip(format.gold("Worth $15,000"));
+<extrautils2:quarry>.addTooltip(format.gold("Worth $100,000"));
 
 
 # Ammo
@@ -80,12 +92,13 @@ print("values.zs loading...");
 <foundry:roundnormal>.addShiftTooltip(format.gold("Worth $1.50"));
 <foundry:roundjacketed>.addShiftTooltip(format.gold("Worth $1.75"));
 <foundry:roundhollow>.addShiftTooltip(format.gold("Worth $1.65"));
-<foundry:roundap>.addShiftTooltip(format.gold("Worth $2"));
-<foundry:roundlumium>.addShiftTooltip(format.gold("Worth $5"));
+<foundry:roundap>.addShiftTooltip(format.gold("Worth $3"));
+<foundry:roundlumium>.addShiftTooltip(format.gold("Worth $10"));
 <foundry:shellnormal>.addShiftTooltip(format.gold("Worth $1.60"));
-<foundry:shellap>.addShiftTooltip(format.gold("Worth $1.95"));
-<foundry:shelllumium>.addShiftTooltip(format.gold("Worth $5.15"));
+<foundry:shellap>.addShiftTooltip(format.gold("Worth $5"));
+<foundry:shelllumium>.addShiftTooltip(format.gold("Worth $12"));
 <techguns:itemshared>.addShiftTooltip(format.gold("Worth $0.05"));
+<techguns:itemshared:2>.addShiftTooltip(format.gold("Worth $0.75"));
 <techguns:itemshared:1>.addShiftTooltip(format.gold("Worth $0.50"));
 <techguns:itemshared:11>.addShiftTooltip(format.gold("Worth $2.25"));
 <techguns:itemshared:109>.addShiftTooltip(format.gold("Worth $4"));
@@ -109,21 +122,23 @@ print("values.zs loading...");
 <extendedcrafting:material:36>.addShiftTooltip(format.gold("Worth $150"));
 <extendedcrafting:material:40>.addTooltip(format.gold("Worth $7,500"));
 <extendedcrafting:material:48>.addTooltip(format.gold("Worth $10,000"));
-<extendedcrafting:material:24>.addTooltip(format.gold("Worth $5,000"));
+<extendedcrafting:material:24>.addTooltip(format.gold("Worth $50,000"));
+<openblocks:technicolor_glasses>.addTooltip(format.gold("Worth $1,500"));
+<ore:record>.addTooltip(format.gold("Worth $1,000"));
 
 
 /*
-// Opinium Cores
+# Opinium Cores
 <extrautils2:opinium>.addTooltip(format.gold("Worth $250"));
 <extrautils2:opinium:1>.addTooltip(format.gold("Worth $600"));
 <extrautils2:opinium:2>.addTooltip(format.gold("Worth $1,250"));
 */
 
 
-// Coins
-<thermalfoundation:coin:70>.addTooltip(format.gold("Worth $100"));
-<thermalfoundation:coin:71>.addTooltip(format.gold("Worth $125"));
-<thermalfoundation:coin:72>.addTooltip(format.gold("Worth $250"));
+# Coins
+<thermalfoundation:coin:70>.addTooltip(format.gold("Worth $350"));
+<thermalfoundation:coin:71>.addTooltip(format.gold("Worth $850"));
+<thermalfoundation:coin:72>.addTooltip(format.gold("Worth $1,675"));
 
 print("values.zs loaded.");
 print("If anything breaks, blame Jonab03.");

@@ -12,6 +12,7 @@ recipes.remove(<minecraft:golden_horse_armor>);
 recipes.remove(<minecraft:diamond_horse_armor>);
 recipes.remove(<waystones:waystone>);
 recipes.remove(<natura:sticks:*>);
+recipes.removeByRecipeName("minecraft:comparator");
 recipes.removeByRecipeName("thermalexpansion:morb_2");
 
 

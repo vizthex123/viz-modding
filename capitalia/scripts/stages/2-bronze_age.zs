@@ -12,7 +12,8 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("bronze_age.zs loading...");
 
 # Bronze Age
-mods.ItemStages.addItemStage("bronze_age", <extendedcrafting:table_basic>);
+mods.ItemStages.addItemStage("bronze_age", <forestry:sturdy_machine>);
+mods.ItemStages.addItemStage("bronze_age", <forestry:carpenter>);
 
 mods.ItemStages.addItemStage("bronze_age", <jecalculation:item_calculator:1>);
 

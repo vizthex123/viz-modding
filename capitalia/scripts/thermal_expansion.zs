@@ -1,6 +1,7 @@
 # Adds new items to TE Machines/Dynamos, or removes them
 
 import mods.thermalexpansion.Refinery;
+import mods.thermalexpansion.SteamDynamo;
 import mods.thermalexpansion.NumisticDynamo;
 import mods.thermalexpansion.MagmaticDynamo;
 import mods.thermalexpansion.EnervationDynamo;
@@ -8,21 +9,23 @@ import mods.thermalexpansion.CompressionDynamo;
 
 print("Loading thermal_expansion.zs...");
 
+# Steam Dynamo
+mods.thermalexpansion.SteamDynamo.removeFuel(<advancedrocketry:misc:1>);
+mods.thermalexpansion.SteamDynamo.addFuel(<advancedrocketry:misc:1>, 50000);
+
 # Numismatic Dynamo
 // Gems
 mods.thermalexpansion.NumisticDynamo.removeGemFuel(<forestry:apatite>);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<forestry:apatite>, 10000);
 
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<extrautils2:suncrystal>.withTag({}), 1500000);
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<biomesoplenty:crystal_shard>, 500000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<extrautils2:suncrystal>, 1500000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<biomesoplenty:crystal_shard>, 1000000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<projectred-core:resource_item:200>, 200000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<projectred-core:resource_item:201>, 200000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<projectred-core:resource_item:202>, 200000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<libvulpes:productgem>, 100000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<appliedenergistics2:material>, 25000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<appliedenergistics2:material:1>, 35000);
-
-
 
 // Coins
 // Value * 500 = RF Value
@@ -45,6 +48,7 @@ mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:fuel_mixed_heavy_heat_1>, 5
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:fuel_light_heat_1>, 700000);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:fuel_mixed_light_heat_1>, 260000);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:fuel_gaseous_heat_1>, 150000);
+mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:enrichedlava>, 250000);
 
 
 # Compression Dynamo
@@ -65,13 +69,53 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fuel_gaseous_heat_2>, 12
 # Enervation Dynamo
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-core:resource_item:105>, 88000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-exploration:stone:11>, 880000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<techguns:itemshared:97>, 25000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<techguns:itemshared:98>, 1000000);
 
-
-
+# Change the recipe for the Magmatic Dynamo
+recipes.remove(<thermalexpansion:dynamo:1>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:dynamo:1>, 
+	[[null, <thermalfoundation:material:514>, null], 
+	[<mekanism:ingot:4>, <thermalfoundation:material:290>, <mekanism:ingot:4>], 
+	[<thermalfoundation:material:354>, <projectred-core:resource_item:104>, <thermalfoundation:material:354>]]);
 
 ############################################################################################
 #				MACHINE RECIPES					    #
 ############################################################################################
+// Convert Universal Cables into Fluxducts
+recipes.addShaped(<thermaldynamics:duct_0>*4, [[null, null, null],
+                                      [<mekanism:transmitter>.withTag({tier: 0}), <thermalfoundation:material:131>, <mekanism:transmitter>.withTag({tier: 0})],
+                                      [null, null, null]]);
+
+recipes.addShaped(<thermaldynamics:duct_0:1>*4, [[null, null, null],
+                                      [<mekanism:transmitter>.withTag({tier: 1}), <thermalfoundation:material:162>, <mekanism:transmitter>.withTag({tier: 1})],
+                                      [null, null, null]]);
+
+mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:3>*2, <mekanism:transmitter>.withTag({tier: 2}), <liquid:redstone>*100, 1000);
+
+mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:4>*2, <mekanism:transmitter>.withTag({tier: 3}), <liquid:ender>*100, 1000);
+
+// Fixes ores in the Pulverizer
+mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:ore0>);
+#mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:ore0:8>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<mekanism:oreblock>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<magneticraft:ores:3>);
+#mods.thermalexpansion.Pulverizer.removeRecipe(<techguns:basicore:3>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<techguns:basicore:4>);
+
+mods.thermalexpansion.Pulverizer.addRecipe(<mekanism:dust:2>*2, <mekanism:oreblock>, 4000);
+mods.thermalexpansion.Pulverizer.addRecipe(<magneticraft:dusts:5>*2, <magneticraft:ores:3>, 4000, <minecraft:coal>, 15);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productgem>, <libvulpes:ore0>, 4000, <libvulpes:productgem>, 50);
+#mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:7>*2, <libvulpes:ore0:8>, 4000, <magneticraft:dusts:5>, 20);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:7>*2, <techguns:basicore:3>, 4000, <magneticraft:dusts:5>, 20);
+mods.thermalexpansion.Pulverizer.addRecipe(<techguns:itemshared:97>*2, <techguns:basicore:4>, 4000, <techguns:itemshared:97>, 10);
+
+
+// Upgrade Chargepads into Energetic Infusers
+recipes.addShaped(<thermalexpansion:machine:9>, [[null, <thermalfoundation:material:515>, null], 
+	[<projectred-core:resource_item:105>, <mekanism:machineblock:14>, <projectred-core:resource_item:105>], 
+	[<thermalfoundation:material:261>, <thermalfoundation:material:161>, <thermalfoundation:material:261>]]);
+
  // Combine light plates into regular ones
 mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:32>, <magneticraft:light_plates>*4, 4000);
 mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:33>, <magneticraft:light_plates:1>*4, 4000);
@@ -81,11 +125,12 @@ mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:323>,
 mods.thermalexpansion.Compactor.addPressRecipe(<thermalfoundation:material:352>, <magneticraft:light_plates:6>*4, 4000);
 
 // Refractory Glass in the Induction Smelter
-mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:blockGlass>.firstItem, <minecraft:clay_ball>, 8000);
-mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:sand>.firstItem, <minecraft:clay_ball>*2, 6000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:blockGlass>.firstItem, <minecraft:clay_ball>, 4000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:sand>.firstItem, <minecraft:clay_ball>*2, 8000);
 
 // Convert Soul Sand into regular Sand
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_sand>, 13666, <extrautils2:ingredients:10>, 4); // Each number in the recipe is a reference to one considered "unlucky" (except for the sand result)
+// Each number in the recipe is a reference to one considered "unlucky" (except for the sand result, that's for balance)
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_sand>, 13666, <extrautils2:ingredients:10>, 4);
 
 // Convert XP to Research
 // Varies based on how easy it is to get that version of liquid XP
@@ -154,12 +199,10 @@ mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*1000, <techguns:itemsh
 
 // Process Cybernetic Parts into Hellish Viscera
 mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*2000, <techguns:itemshared:69>, 8000);
-/*
+
 // Process Cyberdemons into Hellish Viscera
-# Can't get the game to remove the recipe, so I'll jsut disable it for now
-mods.thermalexpansion.Centrifuge.removeRecipeMob(<entity:techguns:cyberdemon>);
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:cyberdemon>, [<techguns:itemshared:69>*2%75, <jjcoin:diamond_coin>%10, <jjcoin:gold_coin>*2%100, <jjcoin:silver_coin>*5%100], <liquid:hell_goo>*10000, 16000, 100);
-*/
+
 ##################################################
 
 ### Research Disks
@@ -197,12 +240,10 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>,
 
 # Change the recipes for the TE machines
 // Pulverizer
-recipes.remove(<thermalexpansion:machine>);
 recipes.addShaped(<thermalexpansion:machine:1>, [[null, <logisticalautomation:gold_motor_set>, null],
                                    			                      [<minecraft:flint>, <mekanism:machineblock>, <minecraft:flint>],
                                   				   [<ore:gearBronze>, <thermalfoundation:material:513>, <ore:gearBronze>]]);
 // Redstone Furnace
-recipes.remove(<thermalexpansion:machine>);
 recipes.addShaped(<thermalexpansion:machine>, [[null, <logisticalautomation:iron_motor_set>, null],
                                    				[<extrautils2:ingredients:1>, <mekanism:machineblock:10>, <extrautils2:ingredients:1>],
                                   				[<ore:gearBronze>, <thermalfoundation:material:513>, <ore:gearBronze>]]);

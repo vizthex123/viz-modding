@@ -46,6 +46,7 @@ mods.jei.JEI.hide(<compactmachines3:wall>);
 
 // Removed & Hidden Items
 // For items I want to disable, or for items that aren't used in anything
+mods.jei.JEI.removeAndHide(<extendedcrafting:table_ultimate>);
 mods.jei.JEI.removeAndHide(<forestry:bronze_shovel>);
 mods.jei.JEI.removeAndHide(<forestry:bronze_pickaxe>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:163>);
@@ -185,6 +186,11 @@ mods.jei.JEI.hide(<buildcraftbuilders:schematic_single>);
 
 // Balance
 mods.jei.JEI.removeAndHide(<industrialforegoing:material_stonework_factory>);
-
+mods.jei.JEI.removeAndHide(<industrialforegoing:lava_fabricator>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:496>);
+mods.jei.JEI.removeAndHide(<thermalexpansion:augment:497>);
+mods.jei.JEI.removeAndHide(<progressiveautomation:cobble_upgrade>);
+mods.jei.JEI.removeAndHide(<extrautils2:ingredients:8>);
+mods.jei.JEI.removeAndHide(<openblocks:block_breaker>);
 
 print("JEI.zs loaded");

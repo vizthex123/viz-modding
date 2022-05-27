@@ -10,6 +10,25 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Fix Bronze Gears not being craftable
+// Stupid recipe confclits >:{
+recipes.remove(<thermalfoundation:material:291>);
+recipes.addShaped(<thermalfoundation:material:291>, [[null, <ore:ingotBronze>, null],
+                                      [<ore:ingotBronze>, <minecraft:iron_nugget>, <ore:ingotBronze>],
+                                      [null, <ore:ingotBronze>, null]]);
+									  
+recipes.addShaped(<thermalfoundation:material:291>, [[null, <ore:ingotBronze>, null],
+                                      [<ore:ingotBronze>, <buildcraftcore:gear_stone>, <ore:ingotBronze>],
+                                      [null, <ore:ingotBronze>, null]]);
+									  
+// Fix Steel Nuggets not being crafted into Mekanism steel
+recipes.addShaped(<mekanism:ingot:4>, [[<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>],
+                                      [<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>],
+                                      [<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>]]);
+
+// Smeltable Steel Blend
+furnace.addRecipe(<mekanism:ingot:4>, <thermalfoundation:material:96>, 0);
+
 // Fix Bronze recipes
 recipes.addShaped(<thermalfoundation:material:163>, [[<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],
                                       [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],

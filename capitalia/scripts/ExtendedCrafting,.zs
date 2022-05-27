@@ -33,8 +33,6 @@ mods.extendedcrafting.EnderCrafting.remove(<output>);
 // Tooltips
 <extendedcrafting:table_basic>.addTooltip(format.green("Works like a normal crafting table"));
 <extendedcrafting:table_basic>.addTooltip(format.green("Retains contents if UI is closed"));
-<extendedcrafting:table_elite>.addTooltip(format.red("Currently useless!"));
-<extendedcrafting:table_ultimate>.addTooltip(format.red("Currently useless!"));
 
 // Buff Pedestal crafting
 recipes.remove(<extendedcrafting:pedestal>);
@@ -93,9 +91,9 @@ recipes.addShapeless(<extendedcrafting:material:15>, [<extendedcrafting:material
 
 // Change the recipe for the Basic Crafting Table
 recipes.remove(<extendedcrafting:table_basic>);
-recipes.addShaped(<extendedcrafting:table_basic>, [[<extendedcrafting:material:14>, <extendedcrafting:material:8>, <extendedcrafting:material:14>],
+recipes.addShaped(<extendedcrafting:table_basic>, [[<extendedcrafting:material:14>, <extendedcrafting:material:14>, <extendedcrafting:material:14>],
                                     			                     [<ore:workbench>, <ore:blockBronze>, <ore:workbench>],
-                                    			                     [<extendedcrafting:material:14>, <extendedcrafting:material:2>, <extendedcrafting:material:14>]]);
+                                    			                     [<extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>]]);
 
 // Change Ender Crafter recipe so you can get it pre-Nether
 recipes.remove(<extendedcrafting:ender_crafter>);
@@ -147,27 +145,27 @@ mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <advancedrocketry:produ
 // Quantum Quarry
 recipes.remove(<extrautils2:quarry>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <extrautils2:quarry>, 
-	[[<minecraft:nether_brick>, <minecraft:nether_brick>, <extendedcrafting:material:11>, <minecraft:nether_brick>, <minecraft:nether_brick>], 
-	[<minecraft:nether_brick>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <minecraft:nether_brick>], 
-	[<extendedcrafting:material:11>, <extrautils2:decorativesolid:7>, <buildcraftbuilders:quarry>, <extrautils2:decorativesolid:7>, <extendedcrafting:material:11>], 
-	[<minecraft:nether_brick>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <minecraft:nether_brick>], 
-	[<minecraft:nether_brick>, <minecraft:nether_brick>, <extendedcrafting:material:11>, <minecraft:nether_brick>, <minecraft:nether_brick>]]);
+	[[<thermalfoundation:material:326>, <extrautils2:decorativesolid:7>, <extendedcrafting:material:11>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:326>], 
+	[<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:263>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>], 
+	[<extendedcrafting:material:11>, <thermalfoundation:material:264>, <buildcraftbuilders:quarry>, <thermalfoundation:material:264>, <extendedcrafting:material:11>], 
+	[<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:263>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>], 
+	[<thermalfoundation:material:326>, <extrautils2:decorativesolid:7>, <extendedcrafting:material:11>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:326>]]);
 
 // Quantum Quarry Actuator
 recipes.remove(<extrautils2:quarryproxy>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <extrautils2:quarryproxy>*6, 
 	[[null, null, <techguns:itemshared:103>, null, null], 
-	[<ore:netherrack>, <ore:netherrack>, <ore:stickTitaniumAluminide>, <ore:netherrack>, <ore:netherrack>], 
-	[<ore:netherrack>, <ore:stickTitaniumAluminide>, <ore:stickTitaniumAluminide>, <ore:stickTitaniumAluminide>, <ore:netherrack>], 
+	[null, <extendedcrafting:material:36>, <thermalfoundation:material:263>, <extendedcrafting:material:36>, null], 
+	[<thermalfoundation:material:326>, <thermalfoundation:material:263>, <thermalfoundation:material:263>, <thermalfoundation:material:263>, <thermalfoundation:material:326>], 
 	[<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>], 
 	[<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>]]);
 
 // Alternate recipe
 mods.extendedcrafting.TableCrafting.addShaped(2, <extrautils2:quarryproxy>*6, 
 	[[null, null, <techguns:itemshared:103>, null, null], 
-	[null, null, <ore:stickTitaniumIridium>, null, null], 
-	[<ore:netherrack>, <ore:stickTitaniumIridium>, <ore:stickTitaniumIridium>, <ore:stickTitaniumIridium>, <ore:netherrack>], 
-	[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>, <ore:netherrack>, <ore:netherrack>], 
+	[null, null, <thermalfoundation:material:326>, null, null], 
+	[null, <thermalfoundation:material:136>, <thermalfoundation:material:263>, <thermalfoundation:material:136>, null], 
+	[null, <thermalfoundation:material:359>, <thermalfoundation:material:359>, <thermalfoundation:material:359>, null], 
 	[<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>]]);
 
 // Change the recipe for Warp Stones
@@ -176,6 +174,24 @@ recipes.remove(<waystones:warp_stone>);
 mods.extendedcrafting.CombinationCrafting.addRecipe(<waystones:warp_stone>, 22500, 225, <extrautils2:ingredients:2>, [<waystones:warp_scroll>, <waystones:warp_scroll>, <waystones:warp_scroll>, <waystones:bound_scroll>, <waystones:bound_scroll>, <waystones:bound_scroll>, <waystones:return_scroll>, <waystones:return_scroll>, <waystones:return_scroll>]);
 
 
+# New Angel Ring recipes
+// Players have to use the conversion recipes to make the others
+recipes.removeShaped(<extrautils2:angelring>);
+recipes.removeShaped(<extrautils2:angelring:1>);
+recipes.removeShaped(<extrautils2:angelring:2>);
+recipes.removeShaped(<extrautils2:angelring:3>);
+recipes.removeShaped(<extrautils2:angelring:4>);
+recipes.removeShaped(<extrautils2:angelring:5>);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:angelring>, 
+	[[<ore:blockGlass>, <ore:blockGlass>, <extrautils2:ingredients:11>, <extrautils2:chickenring:1>, <extrautils2:ingredients:11>, <ore:blockGlass>, <ore:blockGlass>], 
+	[<ore:blockGlass>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <ore:blockGlass>], 
+	[<thermalfoundation:material:33>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <thermalfoundation:material:33>], 
+	[<thermalfoundation:material:33>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <simplyjetpacks:itemjetpack:33>.withTag({Energy: 0, JetpackParticle: 0}), <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <thermalfoundation:material:33>], 
+	[<thermalfoundation:material:33>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <thermalfoundation:material:33>], 
+	[<ore:blockGlass>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <ore:blockGlass>], 
+	[<ore:blockGlass>, <ore:blockGlass>, <extrautils2:ingredients:11>, <extrautils2:chickenring>, <extrautils2:ingredients:11>, <ore:blockGlass>, <ore:blockGlass>]]);
+	
 // Diamond Tools
 recipes.remove(<minecraft:diamond_sword>);
 recipes.remove(<minecraft:diamond_pickaxe>);
@@ -238,10 +254,10 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <minecraft:diamond_boots>,
 recipes.remove(<bedrockores:bedrock_miner>);
 mods.extendedcrafting.TableCrafting.addShaped(2, <bedrockores:bedrock_miner>, 
 	[[null, null, <buildcraftbuilders:quarry>, null, null], 
-	[null, <ore:blockRedstone>, <ore:blockRedstone>, <ore:blockRedstone>, null], 
-	[<ore:blockIron>, <minecraft:piston>, <minecraft:piston>, <minecraft:piston>, <ore:blockIron>], 
-	[<ore:blockIron>, <ore:blockRedstone>, <ore:blockRedstone>, <ore:blockRedstone>, <ore:blockIron>], 
-	[<ore:obsidian>, <ore:blockDiamond>, <ore:obsidian>, <ore:blockDiamond>, <ore:obsidian>]]);
+	[null, <thermalfoundation:material:327>, <projectred-core:resource_item:342>, <thermalfoundation:material:327>, null], 
+	[<thermalfoundation:material:262>, <projectred-core:resource_item:104>, <progressiveautomation:miner_diamond>, <projectred-core:resource_item:104>, <thermalfoundation:material:262>], 
+	[<thermalfoundation:material:262>, <thermalfoundation:material:327>, <projectred-core:resource_item:342>, <thermalfoundation:material:327>, <thermalfoundation:material:262>], 
+	[<minecraft:obsidian>, <minecraft:diamond_block>, <minecraft:obsidian>, <minecraft:diamond_block>, <minecraft:obsidian>]]);
 
 # Black Hole stuff
 // Unit
@@ -261,5 +277,42 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <industrialforegoing:black_hole
 	[<minecraft:bucket>, <minecraft:ender_eye>, <mekanism:basicblock:8>|<thermalexpansion:frame>, <minecraft:ender_eye>, <minecraft:bucket>], 
 	[<minecraft:bucket>, <minecraft:diamond>|<minecraft:emerald>, <minecraft:ender_eye>, <minecraft:diamond>|<minecraft:emerald>, <minecraft:bucket>], 
 	[<minecraft:bucket>, <minecraft:bucket>, <minecraft:bucket>, <minecraft:bucket>, <minecraft:bucket>]]);
+
+// Changed the Ranged Pump recipe
+recipes.remove(<rangedpumps:pump>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <rangedpumps:pump>, 
+	[[<minecraft:obsidian>, <thermalfoundation:material:32>, <minecraft:obsidian>], 
+	[<thermalfoundation:material:32>, <thermalfoundation:material:290>, <thermalfoundation:material:32>], 
+	[<minecraft:obsidian>, <thermalfoundation:material:32>, <minecraft:obsidian>]]);
+
+// Change the recipe for the Magmatic Generator
+recipes.remove(<extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}));
+mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}),
+	[[<projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>], 
+	[<projectred-core:resource_item:104>, <thermalfoundation:material:293>, <projectred-core:resource_item:104>], 
+	[<thermalfoundation:material:353>, <extrautils2:machine>.withTag({Type: "extrautils2:generator"}), <thermalfoundation:material:353>]]);
+
+// Ultimate Ingot recipe
+mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:32>*2, 
+	[[<techguns:itemshared:84>, null, <thermalfoundation:material:165>, <thermalfoundation:material:167>, <thermalfoundation:material:166>, null, <techguns:itemshared:84>], 
+	[null, <mekanism:ingot>, <projectred-core:resource_item:104>, <extrautils2:ingredients:11>, <projectred-core:resource_item:104>, <mekanism:ingot>, null], 
+	[<thermalfoundation:material:166>, <projectred-core:resource_item:104>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <projectred-core:resource_item:104>, <thermalfoundation:material:165>], 
+	[<thermalfoundation:material:167>, <extrautils2:ingredients:11>, <extrautils2:ingredients:17>, <extendedcrafting:material:12>, <extrautils2:ingredients:17>, <extrautils2:ingredients:11>, <thermalfoundation:material:167>], 
+	[<thermalfoundation:material:165>, <projectred-core:resource_item:104>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <projectred-core:resource_item:104>, <thermalfoundation:material:166>], 
+	[null, <mekanism:ingot>, <projectred-core:resource_item:104>, <extrautils2:ingredients:11>, <projectred-core:resource_item:104>, <mekanism:ingot>, null], 
+	[<techguns:itemshared:84>, null, <thermalfoundation:material:166>, <thermalfoundation:material:167>, <thermalfoundation:material:165>, null, <techguns:itemshared:84>]]);
+
+// Billionaire's Singularity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity_custom:1>, <extendedcrafting:singularity_custom>, 1000, <extendedcrafting:material:13>, 1000000000, 1000000);
+
+// Removes Diamond & Emerald nuggets since TE has those already
+recipes.removeByRecipeName("extendedcrafting:emerald_nugget_from");
+recipes.removeByRecipeName("extendedcrafting:diamond_nugget_from");
+
+<ore:nuggetEmerald>.remove(<extendedcrafting:material:129>);
+<ore:nuggetDiamond>.remove(<extendedcrafting:material:128>);
+
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:129>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:128>);
 
 print("ExtendedCrafting.zs loaded");

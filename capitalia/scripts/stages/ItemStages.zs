@@ -12,7 +12,7 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 
 print("ItemStages.zs loading...");
 
-	// Bows
+// Bows
 mods.ItemStages.addItemStage("bow", <minecraft:bow>);
 
 mods.recipestages.Recipes.setRecipeStage("bow", <minecraft:bow>);
@@ -25,7 +25,7 @@ mods.ItemStages.addItemStage("spectral", <minecraft:spectral_arrow>);
 mods.recipestages.Recipes.setRecipeStage("spectral", <minecraft:spectral_arrow>);
 
 
-	// Hand Cannon
+// Hand Cannon
 mods.ItemStages.addItemStage("stone_gun", <techguns:itemshared>);
 mods.ItemStages.addItemStage("stone_gun", <techguns:itemshared:37>);
 mods.ItemStages.addItemStage("stone_gun", <techguns:itemshared:42>);
@@ -75,6 +75,7 @@ mods.recipestages.Recipes.setRecipeStage("industrial_age", <tieredmagnets:magnet
 mods.recipestages.Recipes.setRecipeStage("industrial_age", <tieredmagnets:magnet_magic_durability_lapis>);
 mods.recipestages.Recipes.setRecipeStage("machine_age", <tieredmagnets:magnet_magic_durability_diamond>);
 mods.recipestages.Recipes.setRecipeStage("machine_age", <tieredmagnets:magnet_magic_durability_emerald>);
+
 
 // Wireless Power stuff
 mods.ItemStages.addItemStage("wireless_power", <extrautils2:powerbattery>);
@@ -257,13 +258,25 @@ mods.recipestages.Recipes.setRecipeStage("pistol", <techguns:itemshared:12>);
 
 
 // Oil-Related Items
+mods.ItemStages.removeItemStage(<thermalexpansion:machine:7>);
+mods.ItemStages.removeItemStage(<thermalexpansion:augment:258>);
+mods.ItemStages.removeItemStage(<thermalexpansion:augment:368>);
+
 mods.ItemStages.addItemStage("oil", <thermalexpansion:machine:7>);
 mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:258>);
 mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:368>);
 mods.ItemStages.addItemStage("oil", <industrialforegoing:fluid_pump>);
 mods.ItemStages.addItemStage("oil", <buildcraftfactory:pump>);
-mods.ItemStages.addItemStage("oil", <rangedpumps:pump>);
 
+
+// Lava-Related Items
+// Biogas stays since it needs 2 fluids
+mods.ItemStages.removeItemStage(<thermalexpansion:dynamo:1>);
+
+mods.ItemStages.addItemStage("lava", <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}));
+mods.ItemStages.addItemStage("lava", <extrautils2:passivegenerator:2>);
+mods.ItemStages.addItemStage("lava", <thermalexpansion:dynamo:1>);
+mods.ItemStages.addItemStage("lava", <rangedpumps:pump>);
 
 // Misc
 mods.ItemStages.addItemStage("ae2", <contenttweaker:crystalcompound>);
