@@ -12,13 +12,12 @@ mods.ItemStages.setUnfamiliarName("Name", <item>);
 print("atomic_age.zs loading...");
 
 # Atomic Age
-mods.ItemStages.addItemStage("atomic_age", <mekanism:machineblock3>);
-
 mods.ItemStages.addItemStage("atomic_age", <bedrockores:bedrock_miner>);
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <bedrockores:bedrock_miner>);
+
+mods.ItemStages.addItemStage("atomic_age", <mekanism:machineblock3>);
+mods.ItemStages.addItemStage("atomic_age", <mekanism:controlcircuit:3>);
 
 mods.ItemStages.addItemStage("atomic_age", <mekanism:atomicalloy>);
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <mekanism:atomicalloy>);
 
 mods.ItemStages.addItemStage("atomic_age", <mekanism:teleportationcore>);
 mods.ItemStages.addItemStage("atomic_age", <mekanism:machineblock:4>);

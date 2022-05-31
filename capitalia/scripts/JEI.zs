@@ -1,4 +1,7 @@
 # Hides and/or removes items from JEI
+
+import mods.jei.JEI;
+
 /*
 mods.jei.JEI.hide(<ITEM>);
 mods.jei.JEI.hide(<LIQUID>);
@@ -11,12 +14,13 @@ mods.jei.JEI.addItem(<ITEM TO RE-ADD>);
 print("JEI.zs loading...");
 
 // Item Info
-mods.jei.JEI.addDescription(<appliedenergistics2:facade>.withTag({damage: 0, item: "minecraft:stone"}),"You can substitute the Stone for any non-tileEntity block");
+mods.jei.JEI.addDescription(<appliedenergistics2:facade>.withTag({damage: 0, item: "minecraft:stone"}),"You can substitute the Stone for any non-tileEntity block to make that type of facade");
 mods.jei.JEI.addDescription(<appliedenergistics2:part:460>,"Can be converted into other P2P tunnels by right-clicking with the following item(s): Energy P2P - Fluxduct, Fluid P2P - Bucket/Fluiduct/etc., Item P2P - Hopper, Light P2P - Torch/Glowstone (block), Redstone P2P - Redstone dust/repeater/comparator. If you right-click on an ME P2P tunnel with a memory card bound to another type (e.g. an energy tunnel), it will auto-convert the P2P.");
 mods.jei.JEI.addDescription(<refinedstorage:security_card>,"Not consumed when used to craft a Security Manager");
 mods.jei.JEI.addDescription(<appliedenergistics2:part:301>,"Acts like Silk Touch when breaking a block");
-mods.jei.JEI.addDescription(<thermalexpansion:morb>,"Can be used to catch entities, and process them in a Centrifugal Seperator with the Enstabulation Apparatus augment. Can be upgraded and made reusable with 3 Signalum Nuggets.");
-mods.jei.JEI.addDescription(<waystones:waystone>,"Can be bought for $1,000 in any shop kiosk");
+mods.jei.JEI.addDescription(<thermalexpansion:morb>,"Can be used to catch entities, and process them in a Centrifugal Seperator with the Enstabulation Apparatus augment.");
+mods.jei.JEI.addDescription(<waystones:waystone>,"Can be bought for $1,000 in a shop kiosk");
+mods.jei.JEI.addDescription(<extrautils2:supermobspawner>,"Spawns enemies like Cursed Earth does. Right-click a spawner with a Drop of Evil to make one.");
 
 
 // Hidden Items
@@ -107,6 +111,7 @@ mods.jei.JEI.removeAndHide(<refinedstorage:grid:3>);
 mods.jei.JEI.removeAndHide(<refinedstorage:crafting_monitor>);
 mods.jei.JEI.removeAndHide(<refinedstorage:wireless_crafting_monitor>);
 mods.jei.JEI.removeAndHide(<refinedstorage:crafter>);
+mods.jei.JEI.removeAndHide(<refinedstorage:interface>);
 mods.jei.JEI.removeAndHide(<refinedstorage:disk_drive>);
 mods.jei.JEI.removeAndHide(<refinedstorage:storage:2>);
 mods.jei.JEI.removeAndHide(<refinedstorage:storage:3>);

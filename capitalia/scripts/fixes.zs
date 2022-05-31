@@ -10,57 +10,21 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
-// Fix Bronze Gears not being craftable
-// Stupid recipe confclits >:{
-recipes.remove(<thermalfoundation:material:291>);
-recipes.addShaped(<thermalfoundation:material:291>, [[null, <ore:ingotBronze>, null],
-                                      [<ore:ingotBronze>, <minecraft:iron_nugget>, <ore:ingotBronze>],
-                                      [null, <ore:ingotBronze>, null]]);
-									  
-recipes.addShaped(<thermalfoundation:material:291>, [[null, <ore:ingotBronze>, null],
-                                      [<ore:ingotBronze>, <buildcraftcore:gear_stone>, <ore:ingotBronze>],
-                                      [null, <ore:ingotBronze>, null]]);
-									  
-// Fix Steel Nuggets not being crafted into Mekanism steel
-recipes.addShaped(<mekanism:ingot:4>, [[<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>],
-                                      [<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>],
-                                      [<thermalfoundation:material:224>, <thermalfoundation:material:224>, <thermalfoundation:material:224>]]);
+// Make the Berry Medley use the "berry" oredict entry
+recipes.remove(<natura:soups:9>);
+recipes.addShapeless(<natura:soups:9>, [<ore:bowlWood>, <ore:berry>, <ore:berry>, <ore:berry>]);
 
-// Smeltable Steel Blend
-furnace.addRecipe(<mekanism:ingot:4>, <thermalfoundation:material:96>, 0);
-
-// Fix Bronze recipes
-recipes.addShaped(<thermalfoundation:material:163>, [[<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],
-                                      [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>],
-                                      [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>]]);
-recipes.addShapeless(<thermalfoundation:material:163>*9, [<ore:blockBronze>]);
-
-// Cut cost of Efficiency Upgrades because they're bad
-recipes.remove(<solarflux:efficiency_upgrade>);
-recipes.addShapeless(<solarflux:efficiency_upgrade>, [<solarflux:mirror>, <solarflux:blank_upgrade>]);
-
-// Fix duplicate Block of Charcoal recipes
-recipes.remove(<chisel:block_charcoal2>);
-recipes.remove(<mekanism:basicblock:3>);
-recipes.removeByRecipeName("forestry:charcoal_block");
-recipes.addShaped(<mekanism:basicblock:3>, [[<minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>],
-                                  		                                [<minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>],
-                                    		                                [<minecraft:coal:1>, <minecraft:coal:1>, <minecraft:coal:1>]]);
-
-// Convert for Mekanism, if you want that for the Metallurgic Infuser
-recipes.addShapeless(<mekanism:basicblock:3>, [<ore:blockCharcoal>, <minecraft:flint>]);
+recipes.addShapeless(<natura:soups:9>*2, [<ore:bowlWood>, <ore:bowlWood>, <ore:berry>, <ore:berry>, <ore:berry>, <ore:berry>]);
 
 // Craftable Barley Seeds (since they dron't drop from farmed ores unless broken)
 recipes.addShapeless(<natura:overworld_seeds>*2, [<natura:materials>, <natura:materials>]);
-
-// Fix how the quarry mines basalt instead of the cobblestone
-recipes.addShapeless(<projectred-exploration:stone:2>, [<projectred-exploration:stone:3>]);
 
 // Fix duplicate OB Sponge recipes
 recipes.remove(<openblocks:sponge>);
 recipes.addShapeless(<openblocks:sponge>, [<ore:wool>, <ore:slimeball>]);
 
 // Fix Heavy Cloth recipe
+// Uses OreDict entries
 recipes.remove(<techguns:itemshared:60>);
 recipes.addShaped(<techguns:itemshared:60>*3, [[null, <ore:wool>, null],
 					[<ore:wool>, <ore:leather>, <ore:wool>],

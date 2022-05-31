@@ -12,6 +12,7 @@ print("renames_tooltips.zs loading...");
 <libvulpes:productgem>.displayName = "Dilithium Crystal";
 <libvulpes:ore0>.displayName = "Dilithium Ore";
 <libvulpes:battery>.displayName = "Small Battery";
+
 ########################################
 
 <adminshop:shop>.displayName = "Intergalactic Shop Kiosk";
@@ -46,7 +47,6 @@ print("renames_tooltips.zs loading...");
 <bigreactors:reactorpowertaprf>.displayName = "Reactor Power Tap";
 <bigreactors:turbinepowertaprf>.displayName = "Turbine Power Tap";
 
-<refinedstorage:controller>.displayName = "RS Controller";
 <superfactorymanager:manager>.displayName = "Factory Manager";
 <mekanism:basicblock:8>.displayName = "Steel Machine Casing";
 <mekanism:biofuel>.displayName = "Bio-Matter";
@@ -55,10 +55,7 @@ print("renames_tooltips.zs loading...");
 <compactmachines3:machine:5>.displayName = "Huge Compact Machine";
 <multistorage:vault:7>.displayName = "Vault Power Connector";
 <mekanismgenerators:generator:6>.displayName = "Wind Turbine";
-<refinedstorage:grid>.displayName = "Basic Terminal";
 <extendedcrafting:pedestal>.displayName = "Black Iron Pedestal";
-<refinedstorage:quartz_enriched_iron>.displayName = "Quartz-Enriched Iron";
-<refinedstorage:portable_grid>.displayName = "Portable System";
 <techguns:itemshared:65>.displayName = "Basic Circuit Board";
 <buildcraftcore:gear_wood>.displayName = "Wooden Gear";
 <openblocks:sponge_on_a_stick>.displayName = "Sponge on a Stick";
@@ -111,7 +108,6 @@ print("renames_tooltips.zs loading...");
 <industrialforegoing:mob_relocator>.addTooltip("Or 'Grinder'");
 <industrialforegoing:mob_slaughter_factory>.addTooltip("Or 'Slaughterhouse'");
 
-<refinedstorage:cutting_tool>.addTooltip(format.white("Combine with a block to craft facades"));
 <tieredmagnets:magnetic_projector>.addTooltip(format.aqua("Copies the attributes of magnets placed inside"));
 <tieredmagnets:magnetic_insulator>.addTooltip(format.aqua("Prevents magnets from working in a set area"));
 <techguns:itemshared:97>.addTooltip("Or 'Uranium Dust'");
@@ -168,5 +164,7 @@ print("renames_tooltips.zs loading...");
 
 // References
 <biomesoplenty:plant_1:9>.addShiftTooltip(format.darkGray("I am root!"));
+<longfallboots:longfallboots>.addShiftTooltip(format.white("This seems familiar...."));
+<xnet:facade>.addShiftTooltip(format.white("Not to be confused with Fassad"));
 
 print("renames_tooltips.zs loaded");

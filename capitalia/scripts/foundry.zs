@@ -12,6 +12,10 @@ mods.foundry.Melting.addRecipe(<liquid_output>, <input>, @Optional int melting_p
 
 print("foundry.zs loading...");
 
+// Tooltips about how things are useless
+<foundry:mold:5>.addTooltip(format.red("Cannot be used to craft anything!"));
+<foundry:mold:6>.addTooltip(format.red("Cannot be used to craft anything!"));
+
 // Add Paxel Cast
 mods.foundry.Casting.addMold(<contenttweaker:paxelmold>);
 
@@ -180,15 +184,8 @@ recipes.addShaped(<foundry:component:17>*8, [[<foundry:component:1>, <foundry:co
                                    			                [<foundry:component:1>, <minecraft:lava_bucket>, <foundry:component:1>],
                                   	  		                [<foundry:component:1>, <foundry:component:1>, <foundry:component:1>]]);
 
-// Rods (LibVuples) Recipes
-// Advanced & Alloy ones are in ExtendedCrafting.zs
-recipes.remove(<libvulpes:productrod:1>);
-recipes.remove(<libvulpes:productrod:4>);
-recipes.remove(<libvulpes:productrod:6>);
-
-mods.foundry.Casting.addRecipe(<libvulpes:productrod:1>*4, <liquid:liquidiron>*300, <foundry:mold:3>, null, 50);
-mods.foundry.Casting.addRecipe(<libvulpes:productrod:4>*4, <liquid:liquidcopper>*300, <foundry:mold:3>, null, 50);
-mods.foundry.Casting.addRecipe(<libvulpes:productrod:6>*4, <liquid:liquidsteel>*300, <foundry:mold:3>, null, 50);
+// Iron Rod recipe
+mods.foundry.Casting.addRecipe(<libvulpes:productrod:1>*2, <liquid:liquidiron>*400, <foundry:mold:3>, null, 50);
 
 // Melt down Barrels from TechGuns
 mods.foundry.Melting.addRecipe(<liquid:liquidiron>*600, <techguns:itemshared:38>, 1850);
@@ -203,8 +200,8 @@ mods.foundry.AlloyFurnace.addRecipe(<foundry:refractoryglass>, <ore:sand>, <mine
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:163>*4, <thermalfoundation:material:128>*3, <thermalfoundation:material:129>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:162>*3, <minecraft:iron_ingot>*2, <thermalfoundation:material:133>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:161>*2, <minecraft:gold_ingot>*2, <thermalfoundation:material:130>*2);
-mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>);
-mods.foundry.AlloyFurnace.addRecipe(<mekanism:ingot:4>*2, <thermalfoundation:material:802>, <minecraft:iron_ingot>);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:160>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>);
+mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:material:160>*2, <thermalfoundation:material:802>, <minecraft:iron_ingot>);
 mods.foundry.AlloyFurnace.addRecipe(<thermalfoundation:glass:3>*2, <thermalfoundation:material:770>*4, <thermalfoundation:material:131>);
 
 # Recipe Additions
@@ -295,22 +292,22 @@ recipes.addShaped(<contenttweaker:paxelmold>, [[<foundry:component:1>, <foundry:
 <foundry:mold:14>.addTooltip(format.gray("Uses 700 mB of liquid metal"));
 <foundry:mold:15>.addTooltip(format.gray("Uses 400 mB of liquid metal"));
 
-<foundry:mold:16>.addTooltip(format.gray("Uses 25 mB of liquid Lead, Steel, or Lumium"));
+<foundry:mold:16>.addTooltip(format.gray("Uses 25 mB of Liquid Lead, Steel, or Lumium"));
 <foundry:mold:16>.addTooltip(format.gray("Uses 25 mB of Liquid Copper to make a Jacketed Bullet"));
-<foundry:mold:17>.addTooltip(format.gray("Uses 50 mB of liquid lead"));
-<foundry:mold:18>.addTooltip(format.gray("Uses 25 mB of liquid bronze"));
+<foundry:mold:17>.addTooltip(format.gray("Uses 50 mB of Liquid Lead"));
+<foundry:mold:18>.addTooltip(format.gray("Uses 25 mB of Liquid Bronze"));
 
-<foundry:mold:19>.addTooltip(format.gray("Uses 500 mB of liquid iron"));
+<foundry:mold:19>.addTooltip(format.gray("Uses 500 mB of Liquid Iron"));
 <foundry:mold:19>.addTooltip(format.gray("Also needs an iron ingot"));
 <foundry:mold:19>.addTooltip(format.white("Only needs 150 mB for gun barrels"));
 
-<foundry:mold:20>.addTooltip(format.gray("Uses 100 mB of liquid iron"));
-<foundry:mold:21>.addTooltip(format.gray("Uses 150 mB of liquid iron"));
+<foundry:mold:20>.addTooltip(format.gray("Uses 100 mB of Liquid Iron"));
+<foundry:mold:21>.addTooltip(format.gray("Uses 150 mB of Liquid Iron"));
 
-<foundry:mold:22>.addTooltip(format.gray("Uses 10 mB of liquid Lead, Steel, or Lumium"));
-<foundry:mold:23>.addTooltip(format.gray("Uses 50 mB of liquid Bronze"));
-<foundry:mold:24>.addTooltip(format.gray("Uses 50 mB of liquid steel"));
-<foundry:mold:25>.addTooltip(format.gray("Uses 150 mB of liquid Steel"));
+<foundry:mold:22>.addTooltip(format.gray("Uses 10 mB of Liquid Lead, Steel, or Lumium"));
+<foundry:mold:23>.addTooltip(format.gray("Uses 50 mB of Liquid Bronze"));
+<foundry:mold:24>.addTooltip(format.gray("Uses 50 mB of Liquid Steel"));
+<foundry:mold:25>.addTooltip(format.gray("Uses 150 mB of Liquid Steel"));
 
 <foundry:mold:26>.addTooltip(format.gray("Uses 11 mB of liquid metal"));
 

@@ -7,7 +7,7 @@ print("durability.zs loading...");
 
 // Misc
 <refinedstorage:cutting_tool>.maxDamage = 50;
-<longfallboots:longfallboots>.maxDamage = 300;
+<longfallboots:longfallboots>.maxDamage = 512;
 <magneticraft:stone_hammer>.maxDamage = 79;
 <magneticraft:iron_hammer>.maxDamage = 255;
 <magneticraft:steel_hammer>.maxDamage = 767;
@@ -15,6 +15,7 @@ print("durability.zs loading...");
 <foundry:revolver>.maxDamage = 255;
 <foundry:shotgun>.maxDamage = 255;
 <natura:flint_and_blaze>.maxDamage = 256;
+
 
 // Buff Iron tools
 <minecraft:iron_sword>.maxDamage = 500;
@@ -91,7 +92,7 @@ print("Mekanism item durabilities have been changed in the mod's config!");
 <thermalfoundation:tool.hammer_steel>.maxDamage = 1400;
 <thermalfoundation:tool.excavator_steel>.maxDamage = 1400;
 
-// base x1.25 (rounded down)
+// Paxels (rounded down)
 <mekanismtools:woodpaxel>.maxDamage = 75;
 <mekanismtools:stonepaxel>.maxDamage = 160;
 <mekanismtools:ironpaxel>.maxDamage = 625;

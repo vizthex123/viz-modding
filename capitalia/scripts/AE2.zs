@@ -1,6 +1,4 @@
 # Changes recipes for AE2's blocks & items. Mostly to integrate them with Refined Storage.
-// RS stuff is removed in JEI.zs
-// Also has a couple misc RS recipes so I don't have to hunt them down in misc.zs
 print("AE2.zs loading...");
 /*
 recipes.remove(<>);
@@ -14,51 +12,18 @@ Combination Crafting: (Crafting Core + Pedestals)
 mods.extendedcrafting.CombinationCrafting.addRecipe(<output>, rfCost, RFRATE, <catalyst>, [<input1>, <input2>, <up to 48 max>]);
 
 mods.extendedcrafting.CombinationCrafting.remove(<output>);
+
+Ender Crafting:
+mods.extendedcrafting.EnderCrafting.addShaped(<output>, [[<input>, <input>, <input>], [<input>, <input>, <input>], [<input>, <input>, <input>]], SECONDS);
+
+mods.extendedcrafting.EnderCrafting.addShapeless(<output>, [<input1>, <input2>, <up to 9 max>], SECONDS); 
+
+mods.extendedcrafting.EnderCrafting.remove(<output>);
 */
 
-// Fixes how Quartz-Enriched Iron isn't shapeless (why?)
-recipes.remove(<refinedstorage:quartz_enriched_iron>);
-recipes.addShapeless(<refinedstorage:quartz_enriched_iron>*4, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:quartz>]);
-recipes.addShapeless(<refinedstorage:quartz_enriched_iron>*9, [<refinedstorage:quartz_enriched_iron_block>]);
-
-// Alternate recipe for the 4k storage block
-// Lets it use either a 4k core, or 3 1k cores/storages
-recipes.addShaped(<refinedstorage:storage:1>, [[<refinedstorage:quartz_enriched_iron>, <projectred-core:resource_item:105>, <refinedstorage:quartz_enriched_iron>],
-                                   			              [<refinedstorage:storage>|<refinedstorage:storage_part>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:storage>|<refinedstorage:storage_part>],
-                                  			              [<refinedstorage:quartz_enriched_iron>, <refinedstorage:storage>|<refinedstorage:storage_part>, <refinedstorage:quartz_enriched_iron>]]);
-
-// Change recipe for the Matter-Energy Manipulation  (Construction) Core
-recipes.remove(<refinedstorage:core>);
-recipes.addShapeless(<refinedstorage:core>, [<refinedstorage:processor:3>, <projectred-core:resource_item:105>]);
-recipes.addShapeless(<refinedstorage:core>, [<refinedstorage:processor:3>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>]);
-
-// Change recipe for the Network & Security Cards
-recipes.remove(<refinedstorage:network_card>);
-recipes.remove(<refinedstorage:security_card>);
-recipes.addShaped(<refinedstorage:network_card>, [[<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>],
-                                   			                       [<minecraft:paper>, <refinedstorage:processor:3>, <minecraft:paper>],
-                                   				   [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]]);
-
-recipes.addShaped(<refinedstorage:security_card>, [[<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>],
-                                   			                       [<refinedstorage:processor:4>, <refinedstorage:network_card>, <refinedstorage:processor:4>],
-                                   				   [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]]);
-
-// Change recipe for the Security Manager
-recipes.remove(<refinedstorage:security_manager>);
-recipes.addShaped(<refinedstorage:security_manager>, [[<refinedstorage:quartz_enriched_iron>, <ore:chestWood>, <refinedstorage:quartz_enriched_iron>],
-                                     				          [<minecraft:redstone>|<projectred-core:resource_item:105>, <refinedstorage:machine_casing>, <minecraft:redstone>|<projectred-core:resource_item:105>],
-                                   				          [<refinedstorage:quartz_enriched_iron>, <refinedstorage:security_card>.reuse(), <refinedstorage:quartz_enriched_iron>]]);
-
-// Craftable 4k disk
-// For use with the Portable Grid
-recipes.remove(<refinedstorage:storage_disk:1>);
-recipes.addShapeless(<refinedstorage:storage_disk:1>, [<refinedstorage:storage:1>, <advancedrocketry:ic:3>, <ore:circuitAdvanced>]);
-
-// Portable Grid
-recipes.remove(<refinedstorage:portable_grid>);
-recipes.addShaped(<refinedstorage:portable_grid>, [[<refinedstorage:quartz_enriched_iron>, <ore:circuitAdvanced>, <refinedstorage:quartz_enriched_iron>],
-                                   				  [<refinedstorage:quartz_enriched_iron>, <refinedstorage:grid>, <refinedstorage:quartz_enriched_iron>],
-                                      				  [<refinedstorage:quartz_enriched_iron>, <refinedstorage:storage>, <refinedstorage:quartz_enriched_iron>]]);
+#####################################
+#						Components							#
+#####################################
 
 // Convert RS Processors to AE2
 recipes.remove(<appliedenergistics2:material:22>);
@@ -87,18 +52,27 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <appliedenergistics2:materia
 
 // Quartz Glass
 recipes.remove(<appliedenergistics2:quartz_glass>);
-mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:quartz_glass>*8, [[<extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>],
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:quartz_glass>*8, [[<foundry:refractoryglass>, <foundry:refractoryglass>, <foundry:refractoryglass>],
 [<ore:dustQuartz>, <ore:dustQuartz>, <ore:dustQuartz>],
-[<extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>]], 5); 
+[<foundry:refractoryglass>, <foundry:refractoryglass>, <foundry:refractoryglass>]], 5); 
+
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:quartz_glass>*16, [[<extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>],
+[<ore:dustQuartz>, <ore:dustQuartz>, <ore:dustQuartz>],
+[<extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>, <extrautils2:decorativeglass:5>]], 10); 
+
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:quartz_glass>*32, [[<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>],
+[<ore:dustQuartz>, <ore:dustQuartz>, <ore:dustQuartz>],
+[<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>]], 20); 
 
 // Fluix Pearl
+// Same recipe, but uses Ender Crafting instead
 recipes.remove(<appliedenergistics2:material:9>);
 mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:material:9>, [[<appliedenergistics2:material:8>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:8>],
 [<appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <minecraft:ender_pearl>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>],
 [<appliedenergistics2:material:8>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:8>]], 20); 
 
 #####################################
-#	Device Crafting		 #
+#							Devices								#
 #####################################
 /*
 Combination Crafting: (Crafting Core + Pedestals)
@@ -135,13 +109,13 @@ mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:520>,
 	// Interface
 mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:480>, [<appliedenergistics2:interface>|<appliedenergistics2:part:440>, <advancedrocketry:ic:3>, <appliedenergistics2:part:380>], 30);
 
-// ME Drive
-recipes.remove(<appliedenergistics2:drive>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:drive>, 80000, 800, <appliedenergistics2:chest>, [<refinedstorage:storage:1>, <appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
-
 // ME Chest
 recipes.remove(<appliedenergistics2:chest>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:chest>, 40000, 400, <refinedstorage:storage>, [<refinedstorage:core>, <refinedstorage:core:1>, <refinedstorage:processor:3>, <refinedstorage:processor:4>, <refinedstorage:processor:5>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:chest>, 40000, 400, <refinedstorage:machine_casing>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:core>, <refinedstorage:core:1>, <refinedstorage:processor:3>, <refinedstorage:processor:4>, <refinedstorage:processor:5>]);
+
+// ME Drive
+recipes.remove(<appliedenergistics2:drive>);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:drive>, 80000, 800, <appliedenergistics2:chest>, [<appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <appliedenergistics2:material:24>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
 
 // ME Interface
 recipes.removeShaped(<appliedenergistics2:interface>);
@@ -175,7 +149,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:energy_
 
 // Dense Energy Cell
 recipes.remove(<appliedenergistics2:dense_energy_cell>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:dense_energy_cell>, 8192, 256, <appliedenergistics2:fluix_block>, [<appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:dense_energy_cell>, 8192, 256, <appliedenergistics2:fluix_block>, [<appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>, <appliedenergistics2:energy_cell>]);
 
 // Crystal Growth Accelerator
 recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
@@ -212,6 +186,70 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:craftin
 recipes.remove(<appliedenergistics2:crafting_accelerator>);
 mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:crafting_accelerator>, 64000, 96, <appliedenergistics2:crafting_unit>, [<refinedstorage:processor:5>, <refinedstorage:processor:3>]);
 
+# Storage Components
+# Uses the same recipe, but moves it to Basic crafting
+
+recipes.remove(<appliedenergistics2:material:35>);
+recipes.remove(<appliedenergistics2:material:36>);
+recipes.remove(<appliedenergistics2:material:37>);
+recipes.remove(<appliedenergistics2:material:38>);
+
+// 1k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:35>,
+	[[<minecraft:redstone>, <appliedenergistics2:material>, <minecraft:redstone>], 
+	[<appliedenergistics2:material>, <appliedenergistics2:material:22>, <appliedenergistics2:material>], 
+	[<minecraft:redstone>, <appliedenergistics2:material>, <minecraft:redstone>]]);
+
+// 4k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:36>,
+	[[<minecraft:redstone>, <appliedenergistics2:material:23>, <minecraft:redstone>], 
+	[<appliedenergistics2:material:35>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:35>], 
+	[<minecraft:redstone>, <appliedenergistics2:material:35>, <minecraft:redstone>]]);
+
+// 16k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:37>,
+	[[<minecraft:glowstone_dust>, <appliedenergistics2:material:23>, <minecraft:glowstone_dust>], 
+	[<appliedenergistics2:material:36>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:36>], 
+	[<minecraft:glowstone_dust>, <appliedenergistics2:material:36>, <minecraft:glowstone_dust>]]);
+
+// 64k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:38>,
+	[[<minecraft:glowstone_dust>, <appliedenergistics2:material:23>, <minecraft:glowstone_dust>], 
+	[<appliedenergistics2:material:37>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:37>], 
+	[<minecraft:glowstone_dust>, <appliedenergistics2:material:37>, <minecraft:glowstone_dust>]]);
+
+# Fluid Storage Components
+# Uses the same recipe, but moves it to Basic crafting
+
+recipes.remove(<appliedenergistics2:material:54>);
+recipes.remove(<appliedenergistics2:material:55>);
+recipes.remove(<appliedenergistics2:material:56>);
+recipes.remove(<appliedenergistics2:material:57>);
+
+// 1k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:54>,
+	[[<minecraft:dye:4>, <appliedenergistics2:material>, <minecraft:dye:4>], 
+	[<appliedenergistics2:material>, <appliedenergistics2:material:22>, <appliedenergistics2:material>], 
+	[<minecraft:dye:4>, <appliedenergistics2:material>, <minecraft:dye:4>]]);
+
+// 4k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:55>,
+	[[<minecraft:dye:4>, <appliedenergistics2:material:23>, <minecraft:dye:4>], 
+	[<appliedenergistics2:material:54>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:54>], 
+	[<minecraft:dye:4>, <appliedenergistics2:material:54>, <minecraft:dye:4>]]);
+
+// 16k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:56>,
+	[[<minecraft:dye:4>, <appliedenergistics2:material:23>, <minecraft:dye:4>], 
+	[<appliedenergistics2:material:55>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:55>], 
+	[<minecraft:dye:4>, <appliedenergistics2:material:55>, <minecraft:dye:4>]]);
+
+// 64k
+mods.extendedcrafting.TableCrafting.addShaped(1, <appliedenergistics2:material:56>,
+	[[<minecraft:dye:4>, <appliedenergistics2:material:23>, <minecraft:dye:4>], 
+	[<appliedenergistics2:material:56>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:56>], 
+	[<minecraft:dye:4>, <appliedenergistics2:material:56>, <minecraft:dye:4>]]);
+
 # Storage Cells
 recipes.remove(<appliedenergistics2:storage_cell_1k>);
 recipes.remove(<appliedenergistics2:storage_cell_4k>);
@@ -219,16 +257,24 @@ recipes.remove(<appliedenergistics2:storage_cell_16k>);
 recipes.remove(<appliedenergistics2:storage_cell_64k>);
 
 // 1k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_1k>, 1024, 32, <appliedenergistics2:material:39>, [<appliedenergistics2:material:35>, <appliedenergistics2:material>|<appliedenergistics2:material:10>, <appliedenergistics2:material>|<appliedenergistics2:material:10>, <appliedenergistics2:material>|<appliedenergistics2:material:10>, <projectred-core:resource_item:105>, <minecraft:redstone>, <minecraft:redstone>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_1k>, 1024, 32, <appliedenergistics2:material:39>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:35>, <projectred-core:resource_item:105>, <minecraft:redstone>, <minecraft:redstone>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+
+	// Alt recipe that uses the 1k block from RS
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_1k>, 1024, 64, <refinedstorage:storage>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:35>, <projectred-core:resource_item:104>, <refinedstorage:processor:3>, <refinedstorage:processor:4>]);
 
 // 4k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_4k>, 4096, 64, <appliedenergistics2:material:39>, [<appliedenergistics2:material:36>, <projectred-core:resource_item:105>, <minecraft:redstone>, <minecraft:redstone>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_4k>, 4096, 64, <appliedenergistics2:material:39>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:36>, <projectred-core:resource_item:105>, <minecraft:redstone>, <minecraft:redstone>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+
+	// Alt recipes that use the 4k disk/block from RS
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_4k>, 4096, 128, <refinedstorage:storage:1>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:36>, <projectred-core:resource_item:104>, <refinedstorage:processor:3>, <refinedstorage:processor:4>]);
+
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_4k>, 4096, 160, <refinedstorage:storage_disk:1>, [<appliedenergistics2:material:39>, <appliedenergistics2:material:36>, <projectred-core:resource_item:104>, <refinedstorage:processor:3>, <refinedstorage:processor:4>]);
 
 // 16k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_16k>, 16384, 128, <appliedenergistics2:material:39>, [<appliedenergistics2:material:37>, <projectred-core:resource_item:105>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_16k>, 16384, 128, <appliedenergistics2:material:39>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:37>, <projectred-core:resource_item:105>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
 
 // 64k
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_64k>, 65536, 256, <appliedenergistics2:material:39>, [<appliedenergistics2:material:38>, <projectred-core:resource_item:105>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:storage_cell_64k>, 65536, 256, <appliedenergistics2:material:39>, [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <appliedenergistics2:material:38>, <projectred-core:resource_item:105>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
 
 # Fluid Storage Cells
 recipes.remove(<appliedenergistics2:fluid_storage_cell_1k>);
@@ -247,6 +293,53 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_s
 
 //64k
 mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:fluid_storage_cell_64k>, 65536, 256, <appliedenergistics2:material:39>, [<appliedenergistics2:material:57>, <projectred-core:resource_item:105>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <appliedenergistics2:material:22>, <appliedenergistics2:material:23>]);
+
+# Spatial Components
+# Uses the same recipe, but moves it to the Ender Crafter
+
+recipes.remove(<appliedenergistics2:material:32>);
+recipes.remove(<appliedenergistics2:material:33>);
+recipes.remove(<appliedenergistics2:material:34>);
+
+// 2^3
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:material:32>,
+	[[<minecraft:glowstone_dust>, <appliedenergistics2:material:9>, <minecraft:glowstone_dust>], 
+	[<appliedenergistics2:material:9>, <appliedenergistics2:material:24>, <appliedenergistics2:material:9>], 
+	[<minecraft:glowstone_dust>, <appliedenergistics2:material:9>, <minecraft:glowstone_dust>]], 8);
+
+// 16^3
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:material:33>,
+	[[<minecraft:glowstone_dust>, <appliedenergistics2:material:32>, <minecraft:glowstone_dust>], 
+	[<appliedenergistics2:material:32>, <appliedenergistics2:material:24>, <appliedenergistics2:material:32>], 
+	[<minecraft:glowstone_dust>, <appliedenergistics2:material:32>, <minecraft:glowstone_dust>]], 16);
+
+// 128^3
+mods.extendedcrafting.EnderCrafting.addShaped(<appliedenergistics2:material:34>,
+	[[<minecraft:glowstone_dust>, <appliedenergistics2:material:33>, <minecraft:glowstone_dust>], 
+	[<appliedenergistics2:material:33>, <appliedenergistics2:material:24>, <appliedenergistics2:material:33>], 
+	[<minecraft:glowstone_dust>, <appliedenergistics2:material:33>, <minecraft:glowstone_dust>]], 32);
+
+# Spatial Cells
+# RF cost is the cubed amount * 1,000
+# RF rate is the cubed amount
+
+recipes.remove(<appliedenergistics2:spatial_storage_cell_2_cubed>);
+recipes.remove(<appliedenergistics2:spatial_storage_cell_16_cubed>);
+recipes.remove(<appliedenergistics2:spatial_storage_cell_128_cubed>);
+
+// 2^3
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:spatial_storage_cell_2_cubed>, 8000, 8, <appliedenergistics2:material:32>, [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <projectred-core:resource_item:342>, <projectred-core:resource_item:104>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+
+// 16^3
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:spatial_storage_cell_16_cubed>, 4096000, 4096, <appliedenergistics2:material:33>, [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <projectred-core:resource_item:342>, <projectred-core:resource_item:104>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+
+// 128^3
+// This one doesn't follow the above formula for RF amounts since it makes absurb numbers
+// Instead, it's just double the cost for the 16^3 cell
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:spatial_storage_cell_128_cubed>, 8192000, 8192, <appliedenergistics2:material:34>, [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <projectred-core:resource_item:342>, <projectred-core:resource_item:104>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]);
+
+
+
 
 
 // Molecular Assembler
@@ -339,19 +432,19 @@ mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:302>,
 
 // Identity
 recipes.remove(<appliedenergistics2:part:301>);
-mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:301>, [<appliedenergistics2:part:300>, <appliedenergistics2:material:9>], 5); 
+mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:301>, [<appliedenergistics2:part:300>, <appliedenergistics2:material:9>], 5);
 
 // Security Terminal
 recipes.remove(<appliedenergistics2:security_station>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:security_station>, 2500, 35, <refinedstorage:security_manager>, [<refinedstorage:storage>, <advancedrocketry:ic:3>, <ore:circuitAdvanced>, <appliedenergistics2:material:22>, <refinedstorage:network_card>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:security_station>, 10000, 50, <refinedstorage:security_manager>, [<refinedstorage:security_card>, <advancedrocketry:ic:3>, <ore:circuitAdvanced>, <appliedenergistics2:material:22>]);
 
 // Energy Acceptor
 recipes.remove(<appliedenergistics2:energy_acceptor>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:energy_acceptor>, 5000, 50, <refinedstorage:core>, [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <refinedstorage:processor:3>, <refinedstorage:processor:5>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:energy_acceptor>, 5000, 5, <refinedstorage:core>, [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <refinedstorage:processor:3>, <refinedstorage:processor:5>]);
 
 // ME Controller
 recipes.remove(<appliedenergistics2:controller>);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:controller>, 50000, 255, <refinedstorage:controller>, [<appliedenergistics2:energy_acceptor>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <ore:gearChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <appliedenergistics2:material:24>, <appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<appliedenergistics2:controller>, 262144, 255, <refinedstorage:controller>, [<appliedenergistics2:energy_acceptor>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, <ore:gearChargedCertusQuartz>, <ore:plateChargedCertusQuartz>, <appliedenergistics2:material:24>, <appliedenergistics2:material:23>, <appliedenergistics2:material:22>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>, <extrautils2:decorativesolid:3>]);
 
 # Quantum Ring & Chamber
 recipes.remove(<appliedenergistics2:quantum_link>);
@@ -436,7 +529,7 @@ mods.extendedcrafting.EnderCrafting.addShapeless(<appliedenergistics2:part:76>, 
 // Matter Cannon
 // Cheaper than the default one
 recipes.remove(<appliedenergistics2:matter_cannon>);
-mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <appliedenergistics2:matter_cannon>, 
+mods.extendedcrafting.TableCrafting.addShapedMirrored(1, <appliedenergistics2:matter_cannon>, 
 	[[<appliedenergistics2:material:43>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>], 
 	[null, <appliedenergistics2:material:35>, <appliedenergistics2:energy_cell>], 
 	[null, null, <refinedstorage:quartz_enriched_iron>]]);

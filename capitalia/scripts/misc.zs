@@ -13,6 +13,17 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 // Clear OB tank NBT
 recipes.addShapeless(<openblocks:tank>, [<openblocks:tank>]);
 
+// Change the Imp Leather > Leather recipe to make 6 instead of 1
+recipes.removeByRecipeName("natura:common/leather");
+recipes.addShaped(<minecraft:leather>*6, [[<natura:materials:6>, <natura:materials:6>, null],
+                                      [<natura:materials:6>, <natura:materials:6>, null],
+                                      [null, null, null]]);
+									  
+// Lead Anvil recipe
+recipes.addShaped(<minecraft:anvil>, [[<ore:blockLead>, <ore:blockLead>, <ore:blockLead>],
+                                      [null, <ore:ingotLead>, null],
+                                      [<ore:ingotLead>, <ore:ingotLead>, <ore:ingotLead>]]);
+
 // More recipes for Shroom Powder
 recipes.addShapeless(<biomesoplenty:shroompowder>, [<biomesoplenty:mushroom:1>]);
 recipes.addShapeless(<biomesoplenty:shroompowder>*2, [<biomesoplenty:mushroom:2>, <biomesoplenty:mushroom:2>]);
@@ -97,10 +108,6 @@ recipes.remove(<adminshop:seller>);
 recipes.addShaped(<adminshop:seller>, [[<minecraft:iron_ingot>, <minecraft:hopper>, <minecraft:iron_ingot>],
                                      		 	[<minecraft:bucket>|<claybucket:claybucket>, <ore:blockGlass>, <projectred-core:resource_item:105>|<minecraft:redstone>],
                                      			[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
-
-// Change Marble Table recipe
-recipes.remove(<marblecraftingtable:marble_crafting_table>);
-recipes.addShapeless(<marblecraftingtable:marble_crafting_table>, [<sct:stone_crafting_table>, <ore:dyeWhite>, <ore:dyeWhite>]);
 
 // Convert Fuel Pellets back into Coal
 recipes.addShapeless(<minecraft:coal>, [<progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>, <progressiveautomation:coal_pellet>]);
@@ -191,17 +198,19 @@ recipes.addShapeless(<progressiveautomation:diamond_upgrade>*2, [<progressiveaut
 
 # Upgrade Magnets to Fluxomagnets
 // Stone/Iron > Basic
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_stone>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:enrichedalloy>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_stone:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
 
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_iron>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet>, [<tieredmagnets:magnet_durability_iron:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
 
 // Gold/Redstone > Hardened
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:1>, [<tieredmagnets:magnet_durability_gold>|<tieredmagnets:magnet_durability_redstone>, <projectred-core:resource_item:103>, <projectred-core:resource_item:103>, <projectred-core:resource_item:104>, <mekanism:enrichedalloy>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:1>, [<tieredmagnets:magnet_durability_gold:*>|<tieredmagnets:magnet_durability_redstone:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:enrichedalloy>]);
 
 // Lapis/Obsidian > Reinforced
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:2>, [<tieredmagnets:magnet_durability_lapis>, <tieredmagnets:magnet_durability_obsidian>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:103>, <mekanism:reinforcedalloy>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:2>, [<tieredmagnets:magnet_durability_lapis:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>]);
+
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:2>, [<tieredmagnets:magnet_durability_obsidian:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
 
 // Diamond/Emerald > Signalum
-mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:3>, [<tieredmagnets:magnet_durability_diamond>|<tieredmagnets:magnet_durability_emerald>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <thermalinnovation:magnet:3>, [<tieredmagnets:magnet_durability_diamond:*>|<tieredmagnets:magnet_durability_emerald:*>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <projectred-core:resource_item:104>, <mekanism:reinforcedalloy>]);
 
 print("misc.zs loaded");

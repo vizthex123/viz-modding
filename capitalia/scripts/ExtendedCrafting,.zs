@@ -23,9 +23,9 @@ mods.extendedcrafting.CompressionCrafting.remove(<output>);
 
 
 Ender Crafting:
-mods.extendedcrafting.EnderCrafting.addShaped(<output>, [[<input>, <input>, <input>], [<input>, <input>, <input>], [<input>, <input>, <input>]], SECONDS); 
+mods.extendedcrafting.EnderCrafting.addShaped(<output>, [[<input>, <input>, <input>], [<input>, <input>, <input>], [<input>, <input>, <input>]], SECONDS);
 
-mods.extendedcrafting.EnderCrafting.addShapeless(<output>, [<input1>, <input2>, <up to 9 max>], SECONDS); 
+mods.extendedcrafting.EnderCrafting.addShapeless(<output>, [<input1>, <input2>, <up to 9 max>], SECONDS);
 
 mods.extendedcrafting.EnderCrafting.remove(<output>);
 */
@@ -33,6 +33,16 @@ mods.extendedcrafting.EnderCrafting.remove(<output>);
 // Tooltips
 <extendedcrafting:table_basic>.addTooltip(format.green("Works like a normal crafting table"));
 <extendedcrafting:table_basic>.addTooltip(format.green("Retains contents if UI is closed"));
+<extendedcrafting:table_advanced>.addTooltip(format.green("Retains contents if UI is closed"));
+<extendedcrafting:table_elite>.addTooltip(format.green("Retains contents if UI is closed"));
+
+// Moves Long Fall Boots to a Basic Crafting Table
+// Uses the same recipe
+recipes.remove(<longfallboots:longfallboots>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <longfallboots:longfallboots>, 
+	[[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], 
+	[<minecraft:obsidian>, null, <minecraft:obsidian>], 
+	[<minecraft:diamond>, null, <minecraft:diamond>]]);
 
 // Buff Pedestal crafting
 recipes.remove(<extendedcrafting:pedestal>);
@@ -119,12 +129,12 @@ mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:36>*6, 
 // Advanced Rods (Titanium & Iridium)
 recipes.removeShaped(<libvulpes:productrod:7>);
 recipes.removeShaped(<libvulpes:productrod:10>);
-mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <libvulpes:productrod:7>*4, 
+mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <libvulpes:productrod:7>*3, 
 	[[null, null, <ore:ingotTitanium>], 
 	[null, <ore:ingotTitanium>, null], 
 	[<ore:ingotTitanium>, null, null]]);
 
-mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <libvulpes:productrod:10>*4, 
+mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <libvulpes:productrod:10>*3, 
 	[[null, null, <ore:ingotIridium>], 
 	[null, <ore:ingotIridium>, null], 
 	[<ore:ingotIridium>, null, null]]);
@@ -132,12 +142,12 @@ mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <libvulpes:productrod:1
 // Alloy Rods (Titanium-Alumide & Titanium-Iridium)
 recipes.removeShaped(<advancedrocketry:productrod>);
 recipes.removeShaped(<advancedrocketry:productrod:1>);
-mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <advancedrocketry:productrod>*4, 
+mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <advancedrocketry:productrod>, 
 	[[null, null, <ore:ingotTitaniumAluminide>], 
 	[null, <ore:ingotTitaniumAluminide>, null], 
 	[<ore:ingotTitaniumAluminide>, null, null]]);
 
-mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <advancedrocketry:productrod:1>*4, 
+mods.extendedcrafting.TableCrafting.addShapedMirrored(0, <advancedrocketry:productrod:1>, 
 	[[null, null, <ore:ingotTitaniumIridium>], 
 	[null, <ore:ingotTitaniumIridium>, null], 
 	[<ore:ingotTitaniumIridium>, null, null]]);

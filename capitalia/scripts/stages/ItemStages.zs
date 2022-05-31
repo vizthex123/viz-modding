@@ -259,11 +259,9 @@ mods.recipestages.Recipes.setRecipeStage("pistol", <techguns:itemshared:12>);
 
 // Oil-Related Items
 mods.ItemStages.removeItemStage(<thermalexpansion:machine:7>);
-mods.ItemStages.removeItemStage(<thermalexpansion:augment:258>);
 mods.ItemStages.removeItemStage(<thermalexpansion:augment:368>);
 
 mods.ItemStages.addItemStage("oil", <thermalexpansion:machine:7>);
-mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:258>);
 mods.ItemStages.addItemStage("oil", <thermalexpansion:augment:368>);
 mods.ItemStages.addItemStage("oil", <industrialforegoing:fluid_pump>);
 mods.ItemStages.addItemStage("oil", <buildcraftfactory:pump>);
@@ -272,8 +270,11 @@ mods.ItemStages.addItemStage("oil", <buildcraftfactory:pump>);
 // Lava-Related Items
 // Biogas stays since it needs 2 fluids
 mods.ItemStages.removeItemStage(<thermalexpansion:dynamo:1>);
+mods.ItemStages.removeItemStage(<thermalexpansion:augment:352>);
+
 
 mods.ItemStages.addItemStage("lava", <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}));
+mods.ItemStages.addItemStage("lava", <thermalexpansion:augment:352>);
 mods.ItemStages.addItemStage("lava", <extrautils2:passivegenerator:2>);
 mods.ItemStages.addItemStage("lava", <thermalexpansion:dynamo:1>);
 mods.ItemStages.addItemStage("lava", <rangedpumps:pump>);

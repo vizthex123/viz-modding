@@ -4,13 +4,14 @@ furnace.setFuel(<item>, TIME*);
 * 200 = 1 item smelted
 */
 
-// Wooden Gun Stock
-furnace.setFuel(<techguns:itemshared:42>, 400);
-
 // BoP Stuff
 furnace.setFuel(<biomesoplenty:plant_1:8>, 75);
 furnace.setFuel(<biomesoplenty:plant_1:5>, 100);
 furnace.setFuel(<biomesoplenty:plant_1:9>, 150);
+furnace.setFuel(<biomesoplenty:bramble_plant>, 400);
+
+// Wooden Gun Stock
+furnace.setFuel(<techguns:itemshared:42>, 400);
 
 // Sugar Cane - 0 > 50
 furnace.setFuel(<minecraft:reeds>, 50);
@@ -44,10 +45,6 @@ furnace.setFuel(<progressiveautomation:coal_pellet>, 200);
 
 // Sugar Cane - 0 > 50
 furnace.setFuel(<minecraft:reeds>, 50);
-
-// BoP Roots & Reeds
-furnace.setFuel(<biomesoplenty:plant_1:8>, 75);
-furnace.setFuel(<biomesoplenty:plant_1:9>, 150);
 
 // Charcoal Log - 300 > 800 (half a Charcoal)
 furnace.setFuel(<advancedrocketry:charcoallog>, 800);

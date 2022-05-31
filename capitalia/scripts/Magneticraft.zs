@@ -28,18 +28,15 @@ mods.magneticraft.CrushingTable.addRecipe(<minecraft:ender_pearl>, <appliedenerg
 mods.magneticraft.CrushingTable.addRecipe(<advancedrocketry:misc:1>, <industrialforegoing:artificial_dye:15>);
 
 // Crushing Table recipes for my custom rocky chunks
-// Make Platinum and Iridium need an Iron hammer, and Titanium require Steel
-#	mods.magneticraft.CrushingTable.addRecipe(<libvulpes:ore0>, <libvulpes:productdust>*2);
+// Make Platinum, Iridium, and Titanium require a Steel Hammer
 mods.magneticraft.CrushingTable.addRecipe(<ore:oreTitanium>, <jaopca:item_rockychunktitanium>);
 mods.magneticraft.CrushingTable.addRecipe(<ore:orePlatinum>, <jaopca:item_rockychunkplatinum>);
 mods.magneticraft.CrushingTable.addRecipe(<ore:oreIridium>, <jaopca:item_rockychunkiridium>);
 mods.magneticraft.CrushingTable.addRecipe(<ore:oreUranium>, <contenttweaker:rockyuranium>);
 mods.magneticraft.CrushingTable.addRecipe(<ore:oreQuartz>, <contenttweaker:rockyquartz>);
 
-
 mods.magneticraft.SluiceBox.addRecipe(<contenttweaker:rockyuranium>, 1.0, <techguns:itemshared:97>*2, 0.50, <bigreactors:dustyellorium>);
 mods.magneticraft.SluiceBox.addRecipe(<contenttweaker:rockyquartz>, 1.0, <minecraft:quartz>, 0.50, <minecraft:quartz>);
-
 
 <magneticraft:stone_hammer>.addTooltip(format.white("Can process 16 items before breaking"));
 <magneticraft:iron_hammer>.addTooltip(format.white("Can process 64 items before breaking"));

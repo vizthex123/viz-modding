@@ -11,10 +11,9 @@ mods.ItemStages.stageModItems("iron_age", "simplequarry");
 
 mods.ItemStages.stageModItems("industrial_age", "industrialforegoing");
 
-mods.ItemStages.stageModItems("machine_age", "thermalinnvoation");
 mods.ItemStages.stageModItems("machine_age", "thermaldynamics");
 mods.ItemStages.stageModItems("machine_age", "thermalexpansion");
-
+mods.ItemStages.stageModItems("machine_age", "thermalinnovation");
 
 mods.ItemStages.stageModItems("basic_reactor", "bigreactors");
 mods.ItemStages.removeItemStage(<bigreactors:dustyellorium>);

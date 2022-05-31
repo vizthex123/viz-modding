@@ -35,7 +35,6 @@ mods.thermalexpansion.NumisticDynamo.addFuel(<jjcoin:gold_coin>, 50000);
 mods.thermalexpansion.NumisticDynamo.addFuel(<jjcoin:diamond_coin>, 500000);
 
 
-
 # Magmatic Dynamo
 // Searing Fuels
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:oil_residue>, 50000);
@@ -65,7 +64,6 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fuel_mixed_light_heat_2>
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fuel_gaseous_heat_2>, 125000);
 
 
-
 # Enervation Dynamo
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-core:resource_item:105>, 88000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-exploration:stone:11>, 880000);
@@ -76,12 +74,19 @@ mods.thermalexpansion.EnervationDynamo.addFuel(<techguns:itemshared:98>, 1000000
 recipes.remove(<thermalexpansion:dynamo:1>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:dynamo:1>, 
 	[[null, <thermalfoundation:material:514>, null], 
-	[<mekanism:ingot:4>, <thermalfoundation:material:290>, <mekanism:ingot:4>], 
+	[<ore:ingotSteel>, <thermalfoundation:material:290>, <ore:ingotSteel>], 
 	[<thermalfoundation:material:354>, <projectred-core:resource_item:104>, <thermalfoundation:material:354>]]);
 
 ############################################################################################
-#				MACHINE RECIPES					    #
+#					    RECIPES					    #
 ############################################################################################
+
+// Induction Smelter Carbon Brick recipe for Steel
+mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:160>, <advancedrocketry:misc:1>, <minecraft:iron_ingot>, 4000);
+
+// Upgrade Hardened Fluxducts to Reinforced ones
+mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:2>, <thermaldynamics:duct_0:1>, <liquid:redstone>*400, 1600);
+
 // Convert Universal Cables into Fluxducts
 recipes.addShaped(<thermaldynamics:duct_0>*4, [[null, null, null],
                                       [<mekanism:transmitter>.withTag({tier: 0}), <thermalfoundation:material:131>, <mekanism:transmitter>.withTag({tier: 0})],
@@ -94,13 +99,21 @@ recipes.addShaped(<thermaldynamics:duct_0:1>*4, [[null, null, null],
 mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:3>*2, <mekanism:transmitter>.withTag({tier: 2}), <liquid:redstone>*100, 1000);
 
 mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:4>*2, <mekanism:transmitter>.withTag({tier: 3}), <liquid:ender>*100, 1000);
-
+	
+// Compact Electrotine Blocks into Flux (Flux Networks)
+mods.thermalexpansion.Compactor.addStorageRecipe(<fluxnetworks:flux>*4, <projectred-exploration:stone:11>, 16000);
+/*
+// Fix compacting recipes for Carbon Bricks
+mods.thermalexpansion.Compactor.removeStorageRecipe(<advancedrocketry:misc:1>);
+mods.thermalexpansion.Compactor.addStorageRecipe(<advancedrocketry:misc:1>, <minecraft:coal>, 4000);
+mods.thermalexpansion.Compactor.addStorageRecipe(<advancedrocketry:misc:1>*2, <minecraft:coal:1>, 4000);
+Not working because TE is dumb and won't let me remove them
+*/
 // Fixes ores in the Pulverizer
 mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:ore0>);
-#mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:ore0:8>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:ore0:8>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<mekanism:oreblock>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<magneticraft:ores:3>);
-#mods.thermalexpansion.Pulverizer.removeRecipe(<techguns:basicore:3>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<techguns:basicore:4>);
 
 mods.thermalexpansion.Pulverizer.addRecipe(<mekanism:dust:2>*2, <mekanism:oreblock>, 4000);
@@ -137,20 +150,19 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_s
 mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*750, null, <liquid:experience>*4000, 12000);
 mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*250, null, <liquid:xpjuice>*3000, 10000);
 mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*500, null, <liquid:essence>*2000, 8000);
+
 /*
 // BoP Honey > Forestry Honey
 mods.thermalexpansion.Refinery.addRecipe(<liquid:fluid.for.honey>*100, null, <liquid:honey>*100, 1000);
+
+Not loading into the game because of Forestry bugs I guess
 */
 
-// Process Nether Wasps into Honey (because reasons lol?)
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<forestry:honeydew>%25, <forestry:honey_drop>%50], <liquid:honey>*100, 5000, 50);
-
 // Fractionate Honey > Honey Drops
-mods.thermalexpansion.Refinery.addRecipe(null, <forestry:honey_drop>%25, <liquid:honey>*500, 4000);
+mods.thermalexpansion.Refinery.addRecipe(null, <forestry:honey_drop>%50, <liquid:honey>*500, 4000);
 
 // Blood > Protein (1,000 > 250)
 mods.thermalexpansion.Refinery.addRecipe(<liquid:if.protein>*250, null, <liquid:blood>*1000, 6000);
-
 
 # Process workaround items into their fluids
 mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*1000, <contenttweaker:alien_goo_sample>, 4000);
@@ -166,7 +178,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*50, <appliedenergist
 mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*50, <appliedenergistics2:smooth_sky_stone_block>, 1500);
 
 // Sky Stone Dust > Alien Goo
-mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*100, <appliedenergistics2:material:45>, 2000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*100, <appliedenergistics2:material:45>, 1750);
 
 // Sky Stone Chests > Alien Goo
 mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*500, <appliedenergistics2:sky_stone_chest>, 4000);
@@ -177,13 +189,10 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:alien_goo>*500, <appliedenergis
 mods.thermalexpansion.Crucible.addRecipe(<fluid:alien_goo>*10000, <techguns:alienblaster:*>, 20000);
 
 // Process Alien Bugs into Alien Goo
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:alienbug>, [<jjcoin:silver_coin>*2%100, <jjcoin:silver_coin>%50, <jjcoin:gold_coin>%10], <liquid:alien_goo>*2500, 8000, 75);
-##########
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:alienbug>, [<jjcoin:silver_coin>*2%100, <jjcoin:silver_coin>%50, <jjcoin:gold_coin>%10], <liquid:alien_goo>*2500, 8000, 25);
+##################################################
 // Hellish Viscera > Liquified Research
 mods.thermalexpansion.Refinery.addRecipe(<liquid:research>*250, null, <liquid:hell_goo>*1000, 16000);
-
-// Process Imp Leather into Hellish Viscera
-mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*500, <natura:materials:6>, 5000);
 
 // Process Nether Armour into Hellish Viscera
 mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*5000, <techguns:t4_praetor_helmet:*>, 10000);
@@ -197,11 +206,116 @@ mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*10000, <techguns:nethe
 // Process Nether Charges into Hellish Viscera
 mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*1000, <techguns:itemshared:76>, 8000);
 
-// Process Cybernetic Parts into Hellish Viscera
-mods.thermalexpansion.Crucible.addRecipe(<fluid:hell_goo>*2000, <techguns:itemshared:69>, 8000);
-
 // Process Cyberdemons into Hellish Viscera
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:cyberdemon>, [<techguns:itemshared:69>*2%75, <jjcoin:diamond_coin>%10, <jjcoin:gold_coin>*2%100, <jjcoin:silver_coin>*5%100], <liquid:hell_goo>*10000, 16000, 100);
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:cyberdemon>, [<techguns:itemshared:69>*2%75, <jjcoin:diamond_coin>%10, <jjcoin:silver_coin>*25%100], <liquid:hell_goo>*4000, 16000, 50);
+
+##################################################
+# Process various mobs into resources
+
+// Process Nether Wasps into Honey (because reasons lol?)
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:biomesoplenty:wasp>, [<forestry:honeydew>%25, <forestry:honey_drop>%50], <liquid:honey>*100, 5000, 1);
+
+// Process Imps into Imp Leather
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:imp>, [<natura:materials:6>%50, <natura:materials:6>%50], <fluid:hell_goo>*250, 4000, 1);
+
+// Process Nitro Creepers into Gunpowder
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:nitrocreeper>, [<minecraft:gunpowder>*3%50], <fluid:hell_goo>*500, 4000, 2);
+
+### Better Slimes mobs ###
+// Blue Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:blue_slime>, [<betterslimes:blue_slime>*2%50], null, 4000, 3);
+
+// Red Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:red_slime>, [<betterslimes:red_slime>*2%50], null, 4000, 3);
+
+// Yellow Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:yellow_slime>, [<betterslimes:yellow_slime>*2%50], null, 4000, 3);
+
+// Black Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:black_slime>, [<betterslimes:black_slime>*2%50], null, 4000, 3);
+
+// Purple Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:purple_slime>, [<betterslimes:purple_slime>*2%50], null, 4000, 3);
+
+// Ice Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:ice_slime>, [<minecraft:ice>%50, <betterslimes:black_slime>*2%50], null, 5000, 4);
+
+// Jungle Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:jungle_slime>, [<minecraft:vine>*2%65, <minecraft:slime_ball>*2%50, <minecraft:gold_nugget>%30], null, 4000, 4);
+
+// Sand Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:sand_slime>, [<minecraft:sand>*2%65, <minecraft:slime_ball>*2%50, <minecraft:red_flower>%30], null, 4000, 4);
+
+// Spectral Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:spectral_slime>, [<betterslimes:purple_slime>*2%50], null, 4000, 3);
+
+// King Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:king_slime>, [<minecraft:gold_ingot>*2%100, <betterslimes:blue_slime>*10%50, <betterslimes:blue_slime>*5%75], null, 8000, 5);
+
+// Iron Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:iron_slime>, [<minecraft:iron_ingot>*2%50, <minecraft:iron_nugget>*3%65, <betterslimes:black_slime>*2%50], null, 6000, 4);
+
+// Gold Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:gold_slime>, [<minecraft:gold_ingot>*2%50, <minecraft:gold_nugget>*3%65, <betterslimes:yellow_slime>*2%50], null, 6000, 4);
+
+// Knight Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:knight_slime>, [<minecraft:iron_ingot>*2%65, <minecraft:iron_nugget>*3%765, <betterslimes:blue_slime>*2%50], null, 8000, 5);
+
+// Haunted Slime
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:haunted_slime>, [<betterslimes:red_slime>*2%50, <extrautils2:ingredients:10>%25], null, 6000, 5);
+
+### TechGuns mobs ###
+# Seems like 1 XP value = 20 mB of XP (1 XP point)
+// Zombie Farmer
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:zombiefarmer>, [<minecraft:rotten_flesh>*2%75, <minecraft:wheat>*2%50, <techguns:itemshared:60>%50], null, 4000, 10);
+
+// Zombie Miner
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:zombieminer>, [<minecraft:rotten_flesh>*2%75, <minecraft:coal>%65, <techguns:itemshared:60>%50], null, 4000, 15);
+
+// Zombie Soldier
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:zombiesoldier>, [<minecraft:rotten_flesh>*2%75, <minecraft:gunpowder>*2%50, <techguns:itemshared:60>*2%50], null, 4000, 20);
+
+// Army Soldier
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:armysoldier>, [<minecraft:iron_ingot>*2%50], null, 6000, 25);
+
+// Commando
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:commando>, [<techguns:itemshared:56>*4%50], null, 8000, 35);
+
+// Bandit
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:bandit>, [<minecraft:iron_ingot>*2%50, <minecraft:gunpowder>%75, <techguns:itemshared:60>*2%50], null, 4000, 12);
+
+// Dictator Dave is skipped since he's a boss
+
+// Skeleton Soldier
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:skeletonsoldier>, [<minecraft:coal>*2%45, <minecraft:gunpowder>%60, <minecraft:bone>*2%50], null, 6000, 25);
+
+// Psycho Steve is skipped since he's a miniboss
+
+// Stormtrooper
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:stormtrooper>, [<techguns:itemshared:55>*4%50], null, 8000, 50);
+
+// Outcast
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:outcast>, [<techguns:itemshared:84>*4%50], null, 12000, 50);
+
+// Zombie Pigman Soldier
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:zombiepigmansoldier>, [<techguns:itemshared:84>*3%50, <thermalfoundation:material:771>*2%35, <minecraft:gold_ingot>*2%40], null, 4000, 20);
+
+// Super Mutant
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:supermutantbasic>, [<techguns:itemshared:69>*2%45, <minecraft:blaze_rod>%35, <minecraft:ghast_tear>%25], null, 8000, 50);
+
+// Elite Super Mutant
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:supermutantelite>, [<techguns:itemshared:69>*3%35, <minecraft:blaze_rod>*2%30, <minecraft:ghast_tear>*2%20], null, 16000, 100);
+
+// Heavy Super Mutant
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:supermutantheavy>, [<techguns:itemshared:69>*4%30, <minecraft:blaze_rod>*3%25, <minecraft:ghast_tear>*3%15], null, 24000, 150);
+
+// Attack Helicopter is skipped since it's a machine
+
+// Ghastling
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:ghastling>, [<thermalfoundation:material:771>*2%25, <minecraft:ghast_tear>%10], null, 4000, 6);
+
+// Zombie Policeman
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:techguns:zombiepoliceman>, [<techguns:itemshared:60>*2%50, <minecraft:rotten_flesh>%75, <minecraft:iron_ingot>%40], null, 4000, 20);
 
 ##################################################
 
@@ -214,7 +328,7 @@ mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*25, <contenttweaker:da
 mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*500, <contenttweaker:datadisk_industrial>, 16000);
 mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*1250, <contenttweaker:datadisk_machine>, 32000);
 mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*1500, <contenttweaker:datadisk_information>, 48000);
-mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*2000, <contenttweaker:datadisk_atomic>, 65536);
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*2000, <contenttweaker:datadisk_atomic>, 64000);
 
 // Fluid > Disks
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_industrial>, <contenttweaker:datadisk_industrial_unref>, <fluid:research>*750, 24000);
@@ -238,7 +352,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:datadisk_atomic>,
 
 <techguns:alienblaster:*>.addTooltip(format.aqua("May contian remnants of the aliens who crafted this."));
 
-# Change the recipes for the TE machines
+# Add recipes for TE machines
 // Pulverizer
 recipes.addShaped(<thermalexpansion:machine:1>, [[null, <logisticalautomation:gold_motor_set>, null],
                                    			                      [<minecraft:flint>, <mekanism:machineblock>, <minecraft:flint>],

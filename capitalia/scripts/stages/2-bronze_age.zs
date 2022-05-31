@@ -18,7 +18,6 @@ mods.ItemStages.addItemStage("bronze_age", <forestry:carpenter>);
 mods.ItemStages.addItemStage("bronze_age", <jecalculation:item_calculator:1>);
 
 mods.ItemStages.addItemStage("bronze_age", <ore:ingotBronze>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:ingotBronze>);
 
 mods.ItemStages.addItemStage("bronze_age", <minecraft:gold_nugget>);
 mods.ItemStages.addItemStage("bronze_age", <minecraft:gold_block>);
@@ -28,19 +27,9 @@ mods.ItemStages.addItemStage("bronze_age", <contenttweaker:paxelmold>);
 mods.ItemStages.addItemStage("bronze_age", <adminshop:shop>);
 mods.ItemStages.addItemStage("bronze_age", <adminshop:seller>);
 mods.ItemStages.addItemStage("bronze_age", <forestry:squeezer>);
-/*
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <contenttweaker:paxelmold>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <adminshop:shop>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <adminshop:seller>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <forestry:squeezer>);
-*/
 
 mods.ItemStages.addItemStage("bronze_age", <fuelcanister:empty_fuel_canister>);
 mods.ItemStages.addItemStage("bronze_age", <thermalexpansion:strongbox>);
-/*
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <fuelcanister:empty_fuel_canister>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <thermalexpansion:strongbox>);
-*/
 
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzesword>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzepickaxe>);
@@ -48,14 +37,7 @@ mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzeshovel>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzehoe>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzeaxe>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzepaxel>);
-/*
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzesword>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzepickaxe>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzeshovel>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzehoe>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzeaxe>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <mekanismtools:bronzepaxel>);
-*/
+
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzehelmet>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzechestplate>);
 mods.ItemStages.addItemStage("bronze_age", <mekanismtools:bronzeleggings>);
@@ -66,17 +48,9 @@ mods.ItemStages.addItemStage("bronze_age", <ore:blockBronze>);
 mods.ItemStages.addItemStage("bronze_age", <ore:plateBronze>);
 mods.ItemStages.addItemStage("bronze_age", <ore:gearBronze>);
 mods.ItemStages.addItemStage("bronze_age", <ore:dustBronze>);
-/*
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:nuggetBronze>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:blockBronze>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:plateBronze>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:gearBronze>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <ore:dustBronze>);
-*/
+
 mods.ItemStages.addItemStage("bronze_age", <tieredmagnets:magnet_magic_durability_stone>);
 mods.ItemStages.addItemStage("bronze_age", <simplequarry:fuel_quarry>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <simplequarry:fuel_quarry>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <thermalexpansion:strongbox>);
 
 
 	// Foundry's items
@@ -124,13 +98,6 @@ mods.ItemStages.addItemStage("bronze_age", <foundry:refractoryhopper>);
 mods.ItemStages.addItemStage("bronze_age", <foundry:refractorytank>);
 mods.ItemStages.addItemStage("bronze_age", <foundry:refractorytankstandard>);
 mods.ItemStages.addItemStage("bronze_age", <foundry:infernotank>);
-mods.ItemStages.addItemStage("bronze_age", <foundry:cokeoven>);
-/*
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <foundry:componentblock>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <foundry:componentblock:1>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <foundry:componentblock:2>);
-mods.recipestages.Recipes.setRecipeStage("bronze_age", <foundry:componentblock:3>);
-*/
 
 // Interface Staging
 mods.ItemStages.addItemStage("bronze_age", <extendedcrafting:interface>);

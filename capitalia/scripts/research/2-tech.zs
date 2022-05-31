@@ -90,7 +90,7 @@ ResearchTable.builder("ae2", tech)
   .addCondition(<contenttweaker:datadisk_information>*4)
   .addCondition(<fluid:alien_goo>*1000)
   .setRewardStages("ae2")
-  .setRewardCommands("/say I've improved upon your discovery of matter-energy conversion.")
+  .setRewardCommands("/say I've improved upon my discovery of matter-energy conversion.")
   .setRewardItems(<appliedenergistics2:storage_cell_4k>.withTag({"@0": 16, ic: 16, it: 1 as short, "#0": {Craft: 0 as byte, Cnt: 16 as long, id: "minecraft:experience_bottle", Count: 1 as byte, Damage: 0 as short, Req: 0 as long}}))
   .setMaxCount(1)
   .build();

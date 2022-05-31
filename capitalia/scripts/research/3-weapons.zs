@@ -59,7 +59,7 @@ ResearchTable.builder("golden_revolver", weapons)
   .setDescription("Research a more powerful ranged weapon")
   .addCondition(<contenttweaker:datadisk_military>*4)
   .setRewardStages("golden_revolver")
-  .setRewardCommands("/say I can now upgrade your revolver")
+  .setRewardCommands("/say I can now upgrade my revolver")
   .setRewardItems(<techguns:itemshared:1>)
   .setMaxCount(1)
   .build();

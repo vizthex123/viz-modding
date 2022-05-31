@@ -5,6 +5,13 @@ recipes.remove(<>);
 
 print("removed.zs loading...");
 
+// Remove the Iron Rod recipe (re-added in ExtendedCrafting.zs and foundry.zs)
+recipes.remove(<libvulpes:productrod:1>);
+
+// Duplicate Steel recipes
+recipes.removeByRecipeName("advancedrocketry:unpackingotsteel");
+recipes.removeByRecipeName("advancedrocketry:unpackblocksteel");
+
 // Misc
 recipes.remove(<minecraft:saddle>);
 recipes.remove(<minecraft:iron_horse_armor>);
@@ -14,11 +21,5 @@ recipes.remove(<waystones:waystone>);
 recipes.remove(<natura:sticks:*>);
 recipes.removeByRecipeName("minecraft:comparator");
 recipes.removeByRecipeName("thermalexpansion:morb_2");
-
-
-// Tooltips about how things are useless
-<foundry:mold:5>.addTooltip(format.red("Cannot be used to craft anything!"));
-<foundry:mold:6>.addTooltip(format.red("Cannot be used to craft anything!"));
-
 
 print("removed.zs loaded");
