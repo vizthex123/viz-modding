@@ -1,0 +1,10 @@
+Info for the modpack dev.
+You shouldn't be reading this!
+
+Quest shapes:
+Circle - default
+Square - tech
+Rounded Square - Create
+Diamond - Deep Resonance
+Octogon - magic
+Hexagon - exploration
