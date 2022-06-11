@@ -1,0 +1,3 @@
+All of the logs are inside of the pilot-logs.dock file, if you want to read them all at once.
+
+They will all have .pdf versions too, just in case you want them as smaller & more digestible tidbits.
