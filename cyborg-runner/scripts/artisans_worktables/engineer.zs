@@ -68,7 +68,7 @@ RecipeBuilder.get("engineer")
 
 // Fix up your Solarskin
 RecipeBuilder.get("engineer")
-  .setShapeless([<contenttweaker:damaged_solarskin>, <minecraft:iron_ingot>, <minecraft:glowstone_dust>, <minecraft:redstone>])
+  .setShapeless([<contenttweaker:damaged_solarskin>, <minecraft:iron_ingot>, <minecraft:glowstone_dust>, <projectred-core:resource_item:105>|<minecraft:redstone>])
   .addTool(<ore:artisansSolderer>, 3)
   .addOutput(<cyberware:skin_upgrades>.withTag({cyberwareQuality: "cyberware.quality.scavenged"}))
   .addRequirement(FTGU.allOf(["cyborg:crafting/engineering"]))

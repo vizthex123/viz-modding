@@ -5,9 +5,9 @@
 
 <contenttweaker:coin_mold>.displayName = "Toilary Mold";
 <contenttweaker:slime_green>.displayName = "Slime Green";
-<contenttweaker:ring>.displayName = "Iron Ring";
 <contenttweaker:faulty_circuit>.displayName = "DIY Melon Circuit";
 <contenttweaker:wrapped_bone>.displayName = "Wrapped Bone";
+<contenttweaker:ring>.displayName = "Iron Ring";
 
 <contenttweaker:bottled_tomato>.displayName = "Bottled Tomato";
 <contenttweaker:bottled_pepper>.displayName = "Bottled Pepper";

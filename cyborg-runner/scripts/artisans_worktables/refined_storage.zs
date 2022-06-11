@@ -308,7 +308,7 @@ recipes.remove(<storagetech:fluiddiskworkbench>);
 RecipeBuilder.get("engineer")
   .setShaped([
     [<extrautils2:ingredients:11>, <refinedstorage:core>, <extrautils2:ingredients:11>],
-    [<refinedstorage:processor:5>, <refinedstorage:storage_part:1>, <refinedstorage:processor:5>],
+    [<refinedstorage:processor:5>, <refinedstorage:storage_part:3>, <refinedstorage:processor:5>],
     [<extrautils2:ingredients:11>, <artisanworktables:workstation:5>, <extrautils2:ingredients:11>]])
   .addTool(<ore:artisansHammer>, 25)
   .addTool(<ore:artisansChisel>, 15)

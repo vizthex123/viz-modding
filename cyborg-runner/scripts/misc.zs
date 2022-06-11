@@ -12,7 +12,7 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 
 // Craft Cursed  & Enchanted Hearts
 recipes.addShaped(<scalinghealth:difficultychanger>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],
-                                      [<scalinghealth:heartdust>, <minecraft:bread>|<xlfoodmod:cheesy_bread>||<byg:pumpkinbread>|<xlfoodmod:baguette>|<xlfoodmod:rice_bread>|<xlfoodmod:corn_bread>|<xlfoodmod:potato_bread>, <scalinghealth:heartdust>],
+                                      [<scalinghealth:heartdust>, <minecraft:bread>|<xlfoodmod:cheesy_bread>|<byg:pumpkinbread>|<xlfoodmod:baguette>|<xlfoodmod:rice_bread>|<xlfoodmod:corn_bread>|<xlfoodmod:potato_bread>, <scalinghealth:heartdust>],
                                       [<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>]]);
 
 recipes.addShaped(<scalinghealth:difficultychanger:1>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],

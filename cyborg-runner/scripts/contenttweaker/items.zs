@@ -26,14 +26,14 @@ slime_green.setMaxStackSize(64);
 slime_green.register();
 
 
-// Ring
+// Iron Ring
 var ring = VanillaFactory.createItem("ring");
 ring.setMaxStackSize(16);
 
 ring.register();
 
 
-// Faulty Circuit
+// DIY Melon Circuit
 var faulty_circuit = VanillaFactory.createItem("faulty_circuit");
 faulty_circuit.setMaxStackSize(64);
 
@@ -47,7 +47,7 @@ wrapped_bone.setMaxStackSize(64);
 wrapped_bone.register();
 
 
-// Bottled Veggies
+# Bottled Foods
 var bottled_tomato = VanillaFactory.createItem("bottled_tomato");
 bottled_tomato.setMaxStackSize(64);
 
@@ -59,7 +59,6 @@ bottled_pepper.setMaxStackSize(64);
 
 bottled_pepper.register();
 
-// Bottled Cocoa Beans
 var bottled_cocoa = VanillaFactory.createItem("bottled_cocoa");
 bottled_cocoa.setMaxStackSize(64);
 
