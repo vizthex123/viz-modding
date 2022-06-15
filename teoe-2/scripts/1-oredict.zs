@@ -8,17 +8,34 @@ print("1_oredict.zs loading...");
 <tag>.remove(<item>);
 */
 
+# Paxels (quest)
+<tag:items:teoe:paxels>.add(<item:easypaxellite:wood_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:stone_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:iron_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:golden_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:diamond_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:netherite_paxel>);
+
+
+# Furnaces (quest + recipe)
+<tag:items:teoe:furnace>.add(<item:minecraft:furnace>);
+<tag:items:teoe:furnace>.add(<item:quark:blackstone_furnace>);
+<tag:items:teoe:furnace>.add(<item:quark:deepslate_furnace>);
+
+
 # Crafting Storage (for the quest)
 <tag:items:teoe:crafting_storage>.add(<item:ae2:1k_crafting_storage>);
 <tag:items:teoe:crafting_storage>.add(<item:ae2:4k_crafting_storage>);
 <tag:items:teoe:crafting_storage>.add(<item:ae2:16k_crafting_storage>);
 <tag:items:teoe:crafting_storage>.add(<item:ae2:64k_crafting_storage>);
 
+
 # Chest Upgrades (for the quest)
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:iron_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_copper_chest_upgrade>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_to_iron_chest_upgrade>);
+
 
 # Beacon Base
 # Mainly for the Gaia quest, but can be used to find them easier
@@ -30,6 +47,7 @@ print("1_oredict.zs loading...");
 <tag:items:teoe:beacon_base>.add(<item:tconstruct:queens_slime_block>);
 <tag:items:teoe:beacon_base>.add(<item:tconstruct:manyullyn_block>);
 <tag:items:teoe:beacon_base>.add(<item:tconstruct:hepatizon_block>);
+
 
 # TEoE Planks
 # Used in my custom Chest recipe
@@ -92,7 +110,7 @@ print("1_oredict.zs loading...");
 <tag:items:teoe:planks>.add(<item:naturesaura:ancient_planks>);
 
 
-# Vine
+# Vines
 <tag:items:teoe:vines>.add(<item:minecraft:vine>);
 <tag:items:teoe:vines>.add(<item:minecraft:weeping_vines>);
 <tag:items:teoe:vines>.add(<item:minecraft:twisting_vines>);
@@ -125,6 +143,15 @@ print("1_oredict.zs loading...");
 <tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:ultimate_energy_pipe>);
 
 
+
+# Music Discs
+<tag:items:minecraft:music_discs>.add(<item:ob_aquamirae:musicdischorizon>);
+<tag:items:minecraft:music_discs>.add(<item:conjurer_illager:music_disc_delve_deeper>);
+<tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_honey_bee_rat_faced_boy>);
+<tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov>);
+
+
+
 # Misc
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_mossy>);
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_default>);
@@ -143,6 +170,7 @@ print("1_oredict.zs loading...");
 
 <tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
 <tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
+
 
 
 # Obscuria Tooltips
@@ -239,6 +267,19 @@ print("1_oredict.zs loading...");
 <tag:items:forge:tooltips/durability>.add(<item:reliquary:shears_of_winter>);
 <tag:items:forge:tooltips/durability>.add(<item:the_bumblezone:stinger_spear>);
 <tag:items:forge:tooltips/durability>.add(<item:additionaladditions:crossbow_with_spyglass>);
+
+
+
+
+# Blacklisted Randomium drops
+/*
+<tag:items:randomium:blacklist>.add(<item:reliquary:shears_of_winter>);
+mods are blacklisted in the config
+*/
+
+
+
+
 
 # Banned Uncrafting Table items
 /*

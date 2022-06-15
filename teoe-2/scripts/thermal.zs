@@ -22,8 +22,8 @@ craftingTable.addShaped("crescent_hammer", <item:thermal:wrench>,
 // Alt Redstone Furnace recipe
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
-    [<item:minecraft:bricks>, <item:rftoolsbase:machine_frame>, <item:minecraft:bricks>],
-    [<item:minecraft:smoker>, <item:thermal:rf_coil>, <item:minecraft:furnace>]]);
+    [<item:minecraft:bricks>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <item:minecraft:bricks>],
+    [<item:minecraft:smoker>, <item:thermal:rf_coil>, <tag:items:teoe:furnace>]]);
 
 # Re-does the recipes for Rubber
 // Flowers
@@ -71,6 +71,7 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
     [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
 
 
+
 ### Machine Recipes ###
 /*
 <recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
@@ -81,6 +82,13 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 */
+
+// Pulverize Music Discs into Lead Coins
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_music_discs", [<item:thermal:lead_coin>*2 % 100, <item:thermal:lead_coin> % 50], <tag:items:minecraft:music_discs>, 0.0, 2000);
+
+// Process Limestone into Bones (Fossils)
+// Replace with Lime when ContentTweaker updates
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_limestone", [<item:minecraft:bone> % 50], <item:quark:limestone>|<item:create:limestone>, 0.0, 4000);
 
 ### Induction Smelter recycling recipes
 # Horse Armours

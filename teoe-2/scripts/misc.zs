@@ -19,6 +19,12 @@ FurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredi
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Vanilla ladder recipe
+craftingTable.addShaped("ladder_sticks", <item:minecraft:ladder>*3,
+    [[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>],
+    [<tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>],
+    [<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>]]);
+
 // Upgrade Wooden Hoppers to a normal one
 craftingTable.addShaped("wooden_hopper_upgrade", <item:woodenhopper:wooden_hopper>,
     [[<item:minecraft:iron_ingot>, <tag:items:minecraft:logs>, <item:minecraft:iron_ingot>],
