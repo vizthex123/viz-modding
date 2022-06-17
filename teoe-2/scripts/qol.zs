@@ -13,11 +13,18 @@ craftingTable.addShaped("recipeName", <output>,
     [<input>, <input>, <input>]]);
 
 <recipetype:thermal:smelter>.addRecipe("name", [<4-outputs>], [<3-inputs>], 0, rf);
+
+blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
+
+furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
+
+// Smelt coloured Glass Shards into regular ones
+furnace.addRecipe("smelt_glass_shards", <item:quark:clear_shard>, <tag:items:quark:shards>, 0, 100);
 
 // Smelt Dripleaves into Green Dye
 furnace.addRecipe("dripleaf_dye", <item:minecraft:green_dye>, <item:minecraft:big_dripleaf>, 1.5, 200);
-furnace.addRecipe("dripleaf_dye2", <item:minecraft:green_dye>, <item:minecraft:small_dripleaf>, 2.0, 200);
+furnace.addRecipe("dripleaf_dye_small", <item:minecraft:green_dye>, <item:minecraft:small_dripleaf>, 2.0, 200);
 
 // Convert webs into string
 craftingTable.addShapeless("web_to_string", <item:minecraft:string>, [<item:minecraft:cobweb>]);

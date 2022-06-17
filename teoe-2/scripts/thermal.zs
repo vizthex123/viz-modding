@@ -22,8 +22,8 @@ craftingTable.addShaped("crescent_hammer", <item:thermal:wrench>,
 // Alt Redstone Furnace recipe
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
-    [<item:minecraft:bricks>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <item:minecraft:bricks>],
-    [<item:minecraft:smoker>, <item:thermal:rf_coil>, <tag:items:teoe:furnace>]]);
+    [<item:minecraft:smoker>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <tag:items:teoe:furnace>],
+    [<tag:items:forge:gears/copper>, <item:thermal:rf_coil>, <tag:items:forge:gears/copper>]]);
 
 # Re-does the recipes for Rubber
 // Flowers

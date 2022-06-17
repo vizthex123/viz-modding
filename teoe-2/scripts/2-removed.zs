@@ -13,9 +13,18 @@ craftingTable.removeByName("tconstruct:common/materials/copper_ingot_from_nugget
 // Force Fiery Ingots to be made in a Smithing Table
 craftingTable.removeByName("twilightforest:equipment/fiery_ingot_crafting");
 
+
+# Industrial Foregoing's stuff
+craftingTable.remove(<item:industrialforegoing:iron_gear>);
+craftingTable.remove(<item:industrialforegoing:gold_gear>);
+craftingTable.remove(<item:industrialforegoing:diamond_gear>);
+
+
 # Misc
+furnace.removeByName("ob_core:platinum_raw_smelt");
+
 craftingTable.remove(<item:wstweaks:lava_blade>);
 craftingTable.remove(<item:wstweaks:blaze_blade>);
-furnace.removeByName("ob_core:platinum_raw_smelt");
+craftingTable.removeByName("minecraft:lead");
 
 print("2-removed.zs loaded");

@@ -171,6 +171,13 @@ print("1_oredict.zs loading...");
 <tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
 <tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
 
+<tag:items:forge:gears>.remove(<item:industrialforegoing:iron_gear>);
+<tag:items:forge:gears>.remove(<item:industrialforegoing:gold_gear>);
+<tag:items:forge:gears>.remove(<item:industrialforegoing:diamond_gear>);
+
+<tag:items:forge:gears/iron>.remove(<item:industrialforegoing:iron_gear>);
+<tag:items:forge:gears/gold>.remove(<item:industrialforegoing:gold_gear>);
+<tag:items:forge:gears/diamond>.remove(<item:industrialforegoing:diamond_gear>);
 
 
 # Obscuria Tooltips
