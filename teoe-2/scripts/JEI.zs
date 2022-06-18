@@ -17,6 +17,7 @@ mods.jei.JEI.hideRecipe("category", "recipeName");
 mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins"]);
 mods.jei.JEI.addDescription(<item:ae2:me_p2p_tunnel>, ["Right-click with an accepted item to change it to that type of P2P tunel" + "Filter JEI with $attunment to see the accepted list (since it uses item tags)"]);
 mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla wood to make that variation of a ladder"]);
+mods.jei.JEI.addDescription(<item:twilightforest:uncrafting_table>, ["Uncrafting has been disabled, but I can't hide the JEI panel."]);
 
 
 

@@ -86,74 +86,26 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 // Pulverize Music Discs into Lead Coins
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_music_discs", [<item:thermal:lead_coin>*2 % 100, <item:thermal:lead_coin> % 50], <tag:items:minecraft:music_discs>, 0.0, 2000);
 
+// Pulverizer Blank Runes into Lead Coins
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_blank_runes", [<item:thermal:lead_coin>*3 % 100], <item:quark:blank_rune>, 0.0, 2000);
+
 // Process Limestone into Bones (Fossils)
 // Replace with Lime when ContentTweaker updates
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_limestone", [<item:minecraft:bone> % 50], <item:quark:limestone>|<item:create:limestone>, 0.0, 4000);
 
-### Induction Smelter recycling recipes
-# Horse Armours
-// Iron
-<recipetype:thermal:smelter>.addRecipe("smelt_iron_horse_armour", [<item:minecraft:iron_ingot>*3 % 75], [<item:minecraft:iron_horse_armor>], 10, 3000);
-
-// Gold
-<recipetype:thermal:smelter>.addRecipe("smelt_gold_horse_armour", [<item:minecraft:gold_ingot>*3 % 75], [<item:minecraft:golden_horse_armor>], 20, 3500);
-
-// Diamond
-<recipetype:thermal:smelter>.addRecipe("smelt_diamond_horse_armour", [<item:minecraft:diamond>*3 % 75], [<item:minecraft:diamond_horse_armor>], 30, 4000);
-
-// Ametrine
-<recipetype:thermal:smelter>.addRecipe("smelt_ametrine_horse_armour", [<item:byg:ametrine_gems>*3 % 75], [<item:byg:ametrine_horse_armor>], 30, 6000);
-
-// Pendorite
-<recipetype:thermal:smelter>.addRecipe("smelt_pendorite_horse_armour", [<item:byg:pendorite_ingot>*3 % 75], [<item:byg:ametrine_horse_armor>], 30, 8000);
-
-// Spyglass
-<recipetype:thermal:smelter>.addRecipe("smelt_spyglass", [<item:minecraft:copper_ingot> % 100, <item:minecraft:amethyst_shard> % 50], [<item:minecraft:spyglass>], 0, 2000);
-
-// Flint & Steel
-<recipetype:thermal:smelter>.addRecipe("smelt_fas", [<item:minecraft:iron_nugget>*6 % 100], [<item:minecraft:flint_and_steel>], 0, 1000);
-
-// Bell
-<recipetype:thermal:smelter>.addRecipe("smelt_bell", [<item:minecraft:gold_ingot>*2 % 100], [<item:minecraft:bell>], 10, 2000);
-
-// Clock
-<recipetype:thermal:smelter>.addRecipe("smelt_clock", [<item:minecraft:gold_ingot>*2 % 100, <item:minecraft:gold_nugget>*6 % 50], [<item:minecraft:clock>], 0, 2000);
-
-// Compass
-<recipetype:thermal:smelter>.addRecipe("smelt_compass", [<item:minecraft:iron_ingot>*2 % 100, <item:minecraft:iron_nugget>*6 % 50], [<item:minecraft:compass>], 0, 2000);
-
-// Rose Gold Armour
-<recipetype:thermal:smelter>.addRecipe("smelt_rose_helmet", [<item:minecraft:gold_ingot>*2 % 100, <item:minecraft:copper_ingot> % 50], [<item:additionaladditions:rose_gold_helmet>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_rose_chestplate", [<item:minecraft:gold_ingot>*2 % 100, <item:minecraft:copper_ingot> % 50], [<item:additionaladditions:rose_gold_chestplate>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_rose_leggings", [<item:minecraft:gold_ingot>*2 % 100, <item:minecraft:copper_ingot> % 50], [<item:additionaladditions:rose_gold_leggings>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_rose_boots", [<item:minecraft:gold_ingot> % 100, <item:minecraft:copper_ingot> % 50], [<item:additionaladditions:rose_gold_boots>], 0, 2000);
-
-// Chainmail Armour
-<recipetype:thermal:smelter>.addRecipe("smelt_chain_helmet", [<item:minecraft:iron_ingot> % 100, <item:minecraft:iron_ingot> % 50], [<item:minecraft:chainmail_helmet>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_chain_chestplate", [<item:minecraft:iron_ingot>*2 % 100], [<item:minecraft:chainmail_chestplate>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_chain_leggings", [<item:minecraft:iron_ingot> % 100, <item:minecraft:iron_ingot> % 75], [<item:minecraft:chainmail_leggings>], 0, 2000);
-<recipetype:thermal:smelter>.addRecipe("smelt_chain_boots", [<item:minecraft:iron_ingot> % 100], [<item:minecraft:chainmail_boots>], 0, 2000);
-
-
-// Pulverize Depth Meters into Copper
-<recipetype:thermal:pulverizer>.addRecipe("depth_meter", [<item:minecraft:copper_ingot>*3 % 50, <item:thermal:copper_nugget>*6 % 65], <item:additionaladditions:depth_meter>, 0, 4000);
-
-// Induction Smelt Depth Meters into Copper
-<recipetype:thermal:smelter>.addRecipe("smelt_depth_meter", [<item:minecraft:copper_ingot>*4 % 75, <item:thermal:copper_nugget>*7 % 65, <item:minecraft:redstone> % 50], [<item:additionaladditions:depth_meter>], 0, 4000);
-
-// Pulverize Gold Rings into Gold
-<recipetype:thermal:pulverizer>.addRecipe("gold_ring", [<item:minecraft:gold_ingot>*2 % 50], <item:additionaladditions:gold_ring>, 0, 4000);
-
-// Induction Smelt Gold Rings into Gold
-<recipetype:thermal:smelter>.addRecipe("smelt_gold_ring", [<item:minecraft:gold_ingot>*2 % 100, <item:minecraft:gold_nugget>*6 % 75], [<item:additionaladditions:gold_ring>], 0, 4000);
-
 // Pulverize Certus Quartz into Dust
 <recipetype:thermal:pulverizer>.addRecipe("certus_dust", [<item:ae2:certus_quartz_dust> % 100], <item:ae2:certus_quartz_crystal>|<item:ae2:charged_certus_quartz_crystal>, 0, 2000);
 
-// Recycle Spent Filters
-<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:minecraft:clay_ball>, <item:deepresonance:spent_filter_material>], 0, 4000);
+// Fractionate Sugar Water into Water
+<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar>%50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
-<recipetype:thermal:smelter>.addRecipe("bulk_recycle_filters", [<item:deepresonance:filter_material>*8 % 50], [<item:minecraft:clay>, <item:deepresonance:spent_filter_material>*8], 0, 16000);
+// Turn Planks into Sawdust
+// Not quite sure why this isn't done by default...
+<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 0, 1000);
+
+// Pyrolyze BYG coals into coal coke
+<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke> % 100, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
+<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_lignite", [ <item:thermal:coal_coke> % 100, <item:thermal:tar> % 45], <fluid:thermal:light_oil>*100, <item:byg:lignite>, 3000);
 
 /*
 # Craft Rods in the Blast Chiller
@@ -169,13 +121,6 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 // Brass
 <recipetype:thermal:chiller>.addRecipe("brass_rod", <item:createaddition:brass_rod>, <item:thermal:chiller_rod_cast>, <fluid:tconstruct:molten_brass>*180, 3200);
 */
-// Fractionate Sugar Water into Water
-<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar>%50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
-
-// Turn Planks into Sawdust
-// Not quite sure why this isn't done by default...
-<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 0, 1000);
-
 
 
 # Pulverize Corundum blocks into crystals
@@ -230,5 +175,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:thermal:sawdust>, 1.05, 1.1, 0.9, 0.5, 0.75);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
+
+
 
 print("thermal.zs loaded");

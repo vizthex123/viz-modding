@@ -47,4 +47,40 @@ craftingTable.addShaped("magma_generator",<item:industrialforegoing:mycelial_mag
     [<item:minecraft:redstone>, <item:thermal:dynamo_magmatic>, <item:minecraft:redstone>],
     [<tag:items:forge:gears/emerald>, <item:industrialforegoing:machine_frame_simple>, <tag:items:forge:gears/emerald>]]);
 
+
+# Upgrade Black Hole units
+// Common > Pity
+<recipetype:create:mechanical_crafting>.addRecipe("common_to_pity", <item:industrialforegoing:pity_black_hole_unit>,
+[[<item:industrialforegoing:common_black_hole_unit>, <item:industrialforegoing:machine_frame_pity>, <item:extendedcrafting:ender_ingot>]]);
+
+// Pity > Simple
+<recipetype:create:mechanical_crafting>.addRecipe("pity_to_simple", <item:industrialforegoing:simple_black_hole_unit>,
+[[<item:industrialforegoing:pity_black_hole_unit>, <item:industrialforegoing:machine_frame_simple>, <item:extendedcrafting:ender_ingot>]]);
+
+// Simple > Advanced
+<recipetype:create:mechanical_crafting>.addRecipe("simple_to_advanced", <item:industrialforegoing:advanced_black_hole_unit>,
+[[<item:industrialforegoing:simple_black_hole_unit>, <item:industrialforegoing:machine_frame_advanced>, <item:extendedcrafting:ender_ingot>]]);
+
+// Advanced > Supreme
+<recipetype:create:mechanical_crafting>.addRecipe("advanced_to_supreme", <item:industrialforegoing:supreme_black_hole_unit>,
+[[<item:industrialforegoing:advanced_black_hole_unit>, <item:industrialforegoing:machine_frame_supreme>, <item:extendedcrafting:ender_ingot>]]);
+
+	 # Tanks
+// Common > Pity
+<recipetype:create:mechanical_crafting>.addRecipe("common_to_pity_tank", <item:industrialforegoing:pity_black_hole_tank>,
+[[<item:industrialforegoing:common_black_hole_tank>, <item:industrialforegoing:machine_frame_pity>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+
+// Pity > Simple
+<recipetype:create:mechanical_crafting>.addRecipe("pity_to_simple_tank", <item:industrialforegoing:simple_black_hole_tank>,
+[[<item:industrialforegoing:pity_black_hole_tank>, <item:industrialforegoing:machine_frame_simple>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+
+// Simple > Advanced
+<recipetype:create:mechanical_crafting>.addRecipe("simple_to_advanced_tank", <item:industrialforegoing:advanced_black_hole_tank>,
+[[<item:industrialforegoing:simple_black_hole_tank>, <item:industrialforegoing:machine_frame_advanced>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+
+// Advanced > Supreme
+<recipetype:create:mechanical_crafting>.addRecipe("advanced_to_supreme_tank", <item:industrialforegoing:supreme_black_hole_tank>,
+[[<item:industrialforegoing:advanced_black_hole_tank>, <item:industrialforegoing:machine_frame_supreme>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+
+
 print("industrial_foregoing.zs loaded");

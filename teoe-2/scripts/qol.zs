@@ -19,6 +19,26 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Buffs the rope recipe to give 2 instead of 1 per craft
+craftingTable.remove(<item:additionaladditions:rope>);
+craftingTable.addShaped("rope", <item:additionaladditions:rope>*2,
+    [[<tag:items:forge:string>],
+    [<tag:items:forge:string>]]);
+
+// Make the rope coils from quark give 6 instead of 3
+craftingTable.remove(<item:quark:rope>);
+craftingTable.addShaped("rope_coil", <item:quark:rope>*6,
+    [[<tag:items:forge:string>, <tag:items:forge:string>],
+    [<tag:items:forge:string>, <tag:items:forge:string>],
+    [<tag:items:forge:string>, <tag:items:forge:string>]]);
+
+// Convert Ropes into Rope Coils (and vice versa)
+craftingTable.addShaped("rope_coiling", <item:quark:rope>,
+    [[<item:additionaladditions:rope>, <item:additionaladditions:rope>],
+    [<item:additionaladditions:rope>, <item:additionaladditions:rope>]]);
+
+craftingTable.addShapeless("rope_uncoiling", <item:additionaladditions:rope>*4, [<item:quark:rope>]);
+
 // Smelt coloured Glass Shards into regular ones
 furnace.addRecipe("smelt_glass_shards", <item:quark:clear_shard>, <tag:items:quark:shards>, 0, 100);
 
@@ -36,7 +56,7 @@ craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16,
 
 // Make Anvils out of Lead
 craftingTable.addShaped("lead_anvil", <item:minecraft:anvil>, 
-    [[<tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>, <tag:items:forge:storage_blocks/lead>],
+    [[<item:minecraft:air>, <tag:items:forge:storage_blocks/lead>, <item:minecraft:air>],
     [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
     [<tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>, <tag:items:forge:ingots/lead>]]);
 

@@ -10,6 +10,39 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+# Craft basic pipes with Zinc
+// Item
+craftingTable.addShaped("basic_item_zinc", <item:refinedpipes:basic_item_pipe>*3,
+    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
+
+// Fluid
+craftingTable.addShaped("basic_fluid_zinc", <item:refinedpipes:basic_fluid_pipe>*3,
+    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<tag:items:forge:slimeballs>, <tag:items:forge:glass>, <tag:items:forge:slimeballs>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
+
+	// Fluid (Honeycomb)
+craftingTable.addShaped("basic_fluid_zinc_honeycomb", <item:refinedpipes:basic_fluid_pipe>*3,
+    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<item:minecraft:honeycomb>, <tag:items:forge:glass>, <item:minecraft:honeycomb>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
+
+// Energy
+craftingTable.addShaped("basic_energy_zinc", <item:refinedpipes:basic_energy_pipe>*3,
+    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<tag:items:forge:glass>, <item:minecraft:redstone_block>, <tag:items:forge:glass>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
+
+// Extractor
+craftingTable.addShaped("basic_extractor_zinc", <item:refinedpipes:basic_extractor_attachment>,
+    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [<item:create:zinc_ingot>, <item:minecraft:piston>, <item:create:zinc_ingot>]]);
+
+
+
 # Item Pipes
 // Basic > Improved
 craftingTable.addShaped("basic_item_upgrade", <item:refinedpipes:improved_item_pipe>*3,

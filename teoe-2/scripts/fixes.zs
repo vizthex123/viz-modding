@@ -14,19 +14,6 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
-// Buffs the rope recipe to give 2 instead of 1 per craft
-craftingTable.remove(<item:additionaladditions:rope>);
-craftingTable.addShaped("rope", <item:additionaladditions:rope>*2,
-    [[<tag:items:forge:string>],
-    [<tag:items:forge:string>]]);
-
-	// Make the ones from Quark give 6 instead of 3
-craftingTable.remove(<item:quark:rope>);
-craftingTable.addShaped("rope_coil", <item:quark:rope>*8,
-    [[<tag:items:forge:string>, <tag:items:forge:string>],
-    [<tag:items:forge:string>, <tag:items:forge:string>],
-    [<tag:items:forge:string>, <tag:items:forge:string>]]);
-
 // Fixes chests not being craftable with modded planks
 craftingTable.addShaped("chest", <item:minecraft:chest>,
     [[<tag:items:teoe:planks>, <tag:items:teoe:planks>, <tag:items:teoe:planks>],

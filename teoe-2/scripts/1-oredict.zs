@@ -1,4 +1,4 @@
-# Adds ""tags"" (rip my oredict :c) to items
+# Adds tags to items
 
 import crafttweaker.api.tag.MCTag;
 
@@ -7,6 +7,40 @@ print("1_oredict.zs loading...");
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
+
+# Boats
+<tag:items:minecraft:boats>.add(<item:byg:aspen_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:baobab_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:blue_enchanted_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:cherry_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:cika_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:cypress_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:ebony_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:fir_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:green_enchanted_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:holly_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:jacaranda_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:mahogany_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:mangrove_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:maple_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:palm_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:pine_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:rainbow_eucalyptus_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:redwood_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:skyris_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:willow_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:witch_hazel_boat>);
+<tag:items:minecraft:boats>.add(<item:byg:zelkova_boat>);
+
+<tag:items:minecraft:boats>.add(<item:quark:blossom_boat>);
+<tag:items:minecraft:boats>.add(<item:quark:azalea_boat>);
+
+# Quartz (portal frame recipe)
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:smooth_quartz>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:chiseled_quartz_block>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_block>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_bricks>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_pillar>);
 
 # Paxels (quest)
 <tag:items:teoe:paxels>.add(<item:easypaxellite:wood_paxel>);
@@ -278,23 +312,32 @@ print("1_oredict.zs loading...");
 
 
 
-# Blacklisted Randomium drops
+# Whitelisted Randomium drops
 /*
-<tag:items:randomium:blacklist>.add(<item:reliquary:shears_of_winter>);
+<tag:items:randomium:whitelist>.add(<item>);
 mods are blacklisted in the config
 */
 
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
+<tag:items:randomium:whitelist>.add(<item:create:raw_zinc>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_tin>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_lead>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_silver>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
+<tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
+<tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
 
+<tag:items:randomium:whitelist>.add(<item:botania:manasteel_ingot>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
 
-
-
-# Banned Uncrafting Table items
 /*
-twilightforest:banned_uncraftables - can't be uncrafted
-twilightforest:banned_uncrafting_ingredients - can't be gained from uncrafting
+# Portal Modules (quest)
+<tag:items:teoe:portal_modules>.add(<item:portality:module_energy>);
+<tag:items:teoe:portal_modules>.add(<item:portality:module_fluids>);
+<tag:items:teoe:portal_modules>.add(<item:portality:module_items>);
+<tag:items:teoe:portal_modules>.add(<item:portality:module_interdimensional>);
 */
-<tag:items:twilightforest:banned_uncraftables>.add(<item:minecraft:wither_skeleton_skull>);
-
-<tag:items:twilightforest:banned_uncrafting_ingredients>.add(<item:byg:pollen_block>);
 
 print("1_oredict.zs loaded");

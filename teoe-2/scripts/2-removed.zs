@@ -25,6 +25,8 @@ furnace.removeByName("ob_core:platinum_raw_smelt");
 
 craftingTable.remove(<item:wstweaks:lava_blade>);
 craftingTable.remove(<item:wstweaks:blaze_blade>);
+craftingTable.remove(<item:essentials:slotted_chest>);
 craftingTable.removeByName("minecraft:lead");
+craftingTable.removeByName("minecraft:sticky_piston");
 
 print("2-removed.zs loaded");
