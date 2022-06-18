@@ -1,7 +1,7 @@
 ---
 name: Crash Report
-about: File a crash report to help me make modpacks better.
-title: "[Crash]"
+about: File a crash report
+title: ''
 labels: Crash
 assignees: vizthex123
 
@@ -16,6 +16,6 @@ assignees: vizthex123
 
 
 
-***Be sure to attach the crash report and game log!***
+***Be sure to attach the game log!***
 
-*Also add a label for the project this is intended for*
+*To do so, navigate to the `logs` folder inside of the modpack's folder. Right-click on the pack then `open folder` to get there, or navigate to the CurseForge install location.*
