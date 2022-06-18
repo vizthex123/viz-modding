@@ -15,6 +15,6 @@ Discord (for all of my projects): https://discord.gg/NtwzA6X
 
 Report/view issues here: https://github.com/vizthex123/viz-projects/issues
 
-Wiki (mostly links to my YouTube tutorials): https://github.com/vizthex123/viz-projects/wiki
+Wiki (for every project): https://raddev.fandom.com/wiki/Radiance_Development_Wiki
 
 Trello boards (to-do lists) for all of my modpacks: https://trello.com/radiancedevelopment 
