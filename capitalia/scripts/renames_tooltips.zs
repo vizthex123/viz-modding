@@ -13,6 +13,19 @@ print("renames_tooltips.zs loading...");
 <libvulpes:ore0>.displayName = "Dilithium Ore";
 <libvulpes:battery>.displayName = "Small Battery";
 
+
+# Casing Fixes
+<openblocks:sponge_on_a_stick>.displayName = "Sponge on a Stick";
+
+<magneticraft:wind_turbine>.displayName = "Wind Turbine";
+<magneticraft:electric_furnace>.displayName = "Electric Furnace";
+<magneticraft:rf_transformer>.displayName = "RF Transformer";
+<magneticraft:electric_cable>.displayName = "Electric Cable";
+<magneticraft:small_tank>.displayName = "Small Tank";
+<magneticraft:heat_sink>.displayName = "Heat Sink";
+<magneticraft:brick_furnace>.displayName = "Brick Furnace";
+
+
 ########################################
 
 <adminshop:shop>.displayName = "Intergalactic Shop Kiosk";
@@ -58,9 +71,6 @@ print("renames_tooltips.zs loading...");
 <extendedcrafting:pedestal>.displayName = "Black Iron Pedestal";
 <techguns:itemshared:65>.displayName = "Basic Circuit Board";
 <buildcraftcore:gear_wood>.displayName = "Wooden Gear";
-<openblocks:sponge_on_a_stick>.displayName = "Sponge on a Stick";
-<magneticraft:brick_furnace>.displayName = "Brick Furnace";
-
 
 
 
@@ -142,7 +152,6 @@ print("renames_tooltips.zs loading...");
 <ironfurnaces:diamond_furnace_idle>.addTooltip(format.gold("1 Fuel (200 Burn Time) smelts 8 Items"));
 <extendedcrafting:ender_alternator>.addTooltip(format.aqua("Allows the Ender Crafter to function"));
 <forestry:letters>.addTooltip(format.aqua("Spent letters can be turned into paper"));
-
 
 
 

@@ -14,12 +14,12 @@ recipes.addShapeless(<output>, [<input1>, <INPUT2>, <INPUT3>, <ETC. {UP TO 9 MAX
 https://github.com/Magneticraft-Team/Magneticraft/wiki/CraftTweaker
 */
 
-<ore:dustIron>.addTooltip(format.red("Note that the ingots are still staged!"));
-<ore:dustGold>.addTooltip(format.red("Note that the ingots are still staged!"));
-<ore:dustOsmium>.addTooltip(format.red("Note that the ingots are still staged!"));
-<ore:dustAluminum>.addTooltip(format.red("Note that the ingots are still staged!"));
-<ore:dustTungsten>.addTooltip(format.red("Note that the ingots are still staged!"));
-<ore:dustTitanium>.addTooltip(format.red("Note that the ingots are still staged!"));
+<ore:dustIron>.addTooltip(format.red("Note that the ingot is still staged!"));
+<ore:dustGold>.addTooltip(format.red("Note that the ingot is still staged!"));
+<ore:dustOsmium>.addTooltip(format.red("Note that the ingot is still staged!"));
+<ore:dustAluminum>.addTooltip(format.red("Note that the ingot is still staged!"));
+<ore:dustTungsten>.addTooltip(format.red("Note that the ingot is still staged!"));
+<ore:dustTitanium>.addTooltip(format.red("Note that the ingot is still staged!"));
 
 // Crushing Table recipe for Ender (Pearl) Dust
 mods.magneticraft.CrushingTable.addRecipe(<minecraft:ender_pearl>, <appliedenergistics2:material:46>);

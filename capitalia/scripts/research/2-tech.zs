@@ -82,6 +82,7 @@ ResearchTable.builder("basic_reactor", tech)
 
 // Advanced Matter-Energy Conversion (AE2 research)
 // Information Age unlocks Refined Storage
+// Cell has 16 Bottles of Enchanting in it
 ResearchTable.builder("ae2", tech)
   .setIcons(<appliedenergistics2:controller>)
   .setTitle("Advanced Matter-Energy Conversion")

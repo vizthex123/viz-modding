@@ -10,6 +10,11 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Alt bronze gear recipe for autocrafting
+recipes.addShaped(<thermalfoundation:material:291>, [[null, <ore:ingotBronze>, null],
+                                      [<ore:ingotBronze>, <minecraft:iron_nugget>, <ore:ingotBronze>],
+                                      [null, <ore:ingotBronze>, null]]);
+
 // Make the Berry Medley use the "berry" oredict entry
 recipes.remove(<natura:soups:9>);
 recipes.addShapeless(<natura:soups:9>, [<ore:bowlWood>, <ore:berry>, <ore:berry>, <ore:berry>]);

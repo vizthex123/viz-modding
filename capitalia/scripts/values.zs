@@ -125,21 +125,15 @@ print("values.zs loading...");
 <minecraft:golden_apple>.addTooltip(format.gold("Worth $300"));
 <minecraft:golden_apple:1>.addTooltip(format.gold("Worth $2,500"));
 <minecraft:nether_star>.addTooltip(format.gold("Worth $5,000"));
+<openblocks:technicolor_glasses>.addTooltip(format.gold("Worth $1,500"));
+<ore:record>.addTooltip(format.gold("Worth $1,000"));
+
 <extendedcrafting:material>.addShiftTooltip(format.gold("Worth $25"));
 <extendedcrafting:material:36>.addShiftTooltip(format.gold("Worth $150"));
 <extendedcrafting:material:40>.addTooltip(format.gold("Worth $7,500"));
 <extendedcrafting:material:48>.addTooltip(format.gold("Worth $10,000"));
 <extendedcrafting:material:24>.addTooltip(format.gold("Worth $50,000"));
-<openblocks:technicolor_glasses>.addTooltip(format.gold("Worth $1,500"));
-<ore:record>.addTooltip(format.gold("Worth $1,000"));
-
-
-/*
-# Opinium Cores
-<extrautils2:opinium>.addTooltip(format.gold("Worth $250"));
-<extrautils2:opinium:1>.addTooltip(format.gold("Worth $600"));
-<extrautils2:opinium:2>.addTooltip(format.gold("Worth $1,250"));
-*/
+<extendedcrafting:material:32>.addTooltip(format.gold("Worth $250,000"));
 
 
 # Coins

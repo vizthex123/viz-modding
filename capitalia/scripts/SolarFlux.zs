@@ -67,13 +67,13 @@ recipes.addShaped(<solarflux:solar_panel_1>, [[<solarflux:mirror>, <solarflux:mi
 // 2
 recipes.remove(<solarflux:solar_panel_2>);
 recipes.addShaped(<solarflux:solar_panel_2>, [[<solarflux:solar_panel_1>, <solarflux:solar_panel_1>, <solarflux:solar_panel_1>],
-                                    			           [<solarflux:solar_panel_1>, <projectred-core:resource_item:342>, <solarflux:solar_panel_1>],
+                                    			           [<solarflux:solar_panel_1>, <projectred-core:resource_item:320>, <solarflux:solar_panel_1>],
                          		                               [<solarflux:solar_panel_1>, <solarflux:solar_panel_1>, <solarflux:solar_panel_1>]]);
 // 3
 recipes.remove(<solarflux:solar_panel_3>);
 recipes.addShaped(<solarflux:solar_panel_3>, [[<solarflux:photovoltaic_cell_1>, <solarflux:photovoltaic_cell_1>, <solarflux:photovoltaic_cell_1>],
                                     	             		           [<solarflux:solar_panel_2>, <ore:circuitBasic>, <solarflux:solar_panel_2>],
-                                                         		           [<solarflux:solar_panel_2>, <projectred-core:resource_item:104>, <solarflux:solar_panel_2>]]);
+                                                         		           [<solarflux:solar_panel_2>, <projectred-core:resource_item:104>|<projectred-core:resource_item:342>, <solarflux:solar_panel_2>]]);
 // 4
 recipes.remove(<solarflux:solar_panel_4>);
 recipes.addShaped(<solarflux:solar_panel_4>, [[<solarflux:photovoltaic_cell_2>, <solarflux:photovoltaic_cell_2>, <solarflux:photovoltaic_cell_2>],

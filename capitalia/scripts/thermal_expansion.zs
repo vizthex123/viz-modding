@@ -119,7 +119,7 @@ mods.thermalexpansion.Pulverizer.removeRecipe(<techguns:basicore:4>);
 mods.thermalexpansion.Pulverizer.addRecipe(<mekanism:dust:2>*2, <mekanism:oreblock>, 4000);
 mods.thermalexpansion.Pulverizer.addRecipe(<magneticraft:dusts:5>*2, <magneticraft:ores:3>, 4000, <minecraft:coal>, 15);
 mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productgem>, <libvulpes:ore0>, 4000, <libvulpes:productgem>, 50);
-#mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:7>*2, <libvulpes:ore0:8>, 4000, <magneticraft:dusts:5>, 20);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:7>*2, <libvulpes:ore0:8>, 4000, <magneticraft:dusts:5>, 20);
 mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:7>*2, <techguns:basicore:3>, 4000, <magneticraft:dusts:5>, 20);
 mods.thermalexpansion.Pulverizer.addRecipe(<techguns:itemshared:97>*2, <techguns:basicore:4>, 4000, <techguns:itemshared:97>, 10);
 
@@ -142,14 +142,19 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore
 mods.thermalexpansion.InductionSmelter.addRecipe(<foundry:refractoryglass>, <ore:sand>.firstItem, <minecraft:clay_ball>*2, 8000);
 
 // Convert Soul Sand into regular Sand
-// Each number in the recipe is a reference to one considered "unlucky" (except for the sand result, that's for balance)
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_sand>, 13666, <extrautils2:ingredients:10>, 4);
+// Each number in the recipe is a reference to one related to luck (except for the sand result, that's for balance)
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>*2, <minecraft:soul_sand>, 4666, <extrautils2:ingredients:10>, 7);
 
-// Convert XP to Research
-// Varies based on how easy it is to get that version of liquid XP
-mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*750, null, <liquid:experience>*4000, 12000);
-mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*250, null, <liquid:xpjuice>*3000, 10000);
-mods.thermalexpansion.Refinery.addRecipe(<fluid:research>*500, null, <liquid:essence>*2000, 8000);
+# XP to Research Processing Tree
+# Varies based on how easy it is to get that version of liquid XP
+# Fractionate liquid XP variants into Fluidic Theorems, which need to be infused into a disk to make a knowledge unit, which can then be melted into Liqified Research
+mods.thermalexpansion.Refinery.addRecipe(<fluid:theorems>*2000, <contenttweaker:dataunit> % 20, <liquid:experience>*3000, 8000);
+mods.thermalexpansion.Refinery.addRecipe(<fluid:theorems>*1000, <contenttweaker:dataunit> % 15, <liquid:xpjuice>*2000, 6000);
+mods.thermalexpansion.Refinery.addRecipe(<fluid:theorems>*500, <contenttweaker:dataunit> % 10, <liquid:essence>*1000, 4000);
+
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:dataunit>, <contenttweaker:dataunit_empty>, <fluid:theorems>*1000, 8000);
+
+mods.thermalexpansion.Crucible.addRecipe(<fluid:research>*2000, <contenttweaker:dataunit>, 4000);
 
 /*
 // BoP Honey > Forestry Honey

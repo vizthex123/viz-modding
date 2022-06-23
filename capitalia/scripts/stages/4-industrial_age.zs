@@ -34,7 +34,6 @@ mods.ItemStages.addItemStage("industrial_age", <multistorage:stone_storage:4>);
 
 
 mods.ItemStages.addItemStage("industrial_age", <ore:ingotSteel>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <ore:ingotSteel>);
 
 mods.ItemStages.addItemStage("industrial_age", <extendedcrafting:compressor>);
 
@@ -67,33 +66,12 @@ mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods:1>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitemmods:2>);
 mods.ItemStages.addItemStage("industrial_age", <simplyjetpacks:metaitem:4>);
-/*
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:1>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:2>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:3>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:4>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:5>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:itemjetpack:6>);
-
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:metaitemmods>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:metaitemmods:1>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:metaitemmods:2>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:metaitemmods:4>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <simplyjetpacks:metaitem:4>);
-*/
 
 
 // Mekanism Components
 mods.ItemStages.addItemStage("industrial_age", <mekanism:enrichedalloy>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <mekanism:enrichedalloy>);
 
 mods.ItemStages.addItemStage("industrial_age", <mekanism:controlcircuit>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <mekanism:controlcircuit>);
-
-
-
-
-
 
 
 // Mekanism

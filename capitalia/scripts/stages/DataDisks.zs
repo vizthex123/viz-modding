@@ -13,6 +13,8 @@ mods.ItemStages.addItemStage("industrial_age", <contenttweaker:datadisk_industri
 
 mods.ItemStages.addItemStage("machine_age", <contenttweaker:datadisk_machine>);
 mods.ItemStages.addItemStage("machine_age", <contenttweaker:datadisk_machine_unref>);
+mods.ItemStages.addItemStage("machine_age", <contenttweaker:dataunit_empty>);
+mods.ItemStages.addItemStage("machine_age", <contenttweaker:dataunit>);
 
 mods.ItemStages.addItemStage("information_age", <contenttweaker:datadisk_information>);
 mods.ItemStages.addItemStage("information_age", <contenttweaker:datadisk_information_unref>);

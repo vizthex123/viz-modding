@@ -11,8 +11,12 @@ recipes.addShapeless(<contenttweaker:hell_goo_sample>*8, [<techguns:t4_praetor_c
 recipes.addShapeless(<contenttweaker:hell_goo_sample>*7, [<techguns:t4_praetor_leggings:*>]);
 recipes.addShapeless(<contenttweaker:hell_goo_sample>*4, [<techguns:t4_praetor_boots:*>]);
 
+# Empty Knowledge Data Unit
+recipes.addShaped(<contenttweaker:dataunit_empty>, [[<thermalfoundation:material:162>, <ore:paneGlass>, <thermalfoundation:material:162>],
+                                      [<ore:paneGlass>, null, <ore:paneGlass>],
+                                      [<thermalfoundation:material:162>, <ore:paneGlass>, <thermalfoundation:material:162>]]);
 
-// Data Disk recipes
+# Data Disk recipes
 recipes.addShapeless(<contenttweaker:datadisk_stone>, [<extrautils2:compressedcobblestone>, <minecraft:cobblestone>]);
 recipes.addShapeless(<contenttweaker:datadisk_stone>, [<contenttweaker:datadisk_stone_unref>, <contenttweaker:datadisk_stone_unref>]);
 recipes.addShapeless(<contenttweaker:datadisk_stone_unref>, [<minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>|<chisel:basalt2:7>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>|<chisel:basalt2:7>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>|<chisel:basalt2:7>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>|<chisel:basalt2:7>, <minecraft:cobblestone>|<minecraft:stone:1>|<minecraft:stone:3>|<minecraft:stone:5>|<chisel:marble2:7>|<projectred-exploration:stone>|<chisel:limestone2:7>|<magneticraft:limestone>|<projectred-exploration:stone:2>|<chisel:basalt2:7>]);
@@ -21,7 +25,9 @@ recipes.addShapeless(<contenttweaker:datadisk_bronze>, [<ore:ingotBronze>, <ore:
 recipes.addShapeless(<contenttweaker:datadisk_iron>, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
 
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_industrial_unref>, [<ore:ingotSteel>, <mekanism:enrichedalloy>, <mekanism:enrichedalloy>]);
-mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_machine_unref>*2, [<mekanism:basicblock:8>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>]);
+
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_machine_unref>*2, [<mekanism:basicblock:8>|<thermalexpansion:frame>|<magneticraft:multiblock_parts:1>|<magneticraft:multiblock_parts>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>]);
+
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_information_unref>*4, [<ore:ingotCarbon>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:processor:5>, <refinedstorage:processor:4>, <refinedstorage:processor:3>]);
 
 mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:datadisk_atomic>*4, [<contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:proton>, <contenttweaker:neutron>, <contenttweaker:electron>, <contenttweaker:electron>, <contenttweaker:electron>, <contenttweaker:electron>]);

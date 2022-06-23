@@ -37,14 +37,11 @@ mods.ItemStages.removeItemStage(<advancedrocketry:ic:3>);
 mods.ItemStages.addItemStage("iron_age", <advancedrocketry:ic:3>);
 
 mods.ItemStages.addItemStage("iron_age", <libvulpes:structuremachine>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <libvulpes:structuremachine>);
 
 mods.ItemStages.removeItemStage(<libvulpes:motor>);
 mods.ItemStages.removeItemStage(<libvulpes:advancedmotor>);
 mods.ItemStages.addItemStage("industrial_age", <libvulpes:motor>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <libvulpes:motor>);
 mods.ItemStages.addItemStage("industrial_age", <libvulpes:advancedmotor>);
-mods.recipestages.Recipes.setRecipeStage("industrial_age", <libvulpes:advancedmotor>);
 
 mods.ItemStages.removeItemStage(<thermalexpansion:strongbox>);
 mods.ItemStages.removeItemStage(<thermalexpansion:cache>);
@@ -86,16 +83,11 @@ mods.ItemStages.addItemStage("industrial_age", <thermalfoundation:tool.shears_st
 
 
 
-
-
-
 mods.ItemStages.removeItemStage(<advancedrocketry:sawblade>);
 mods.ItemStages.addItemStage("iron_age", <advancedrocketry:sawblade>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <advancedrocketry:sawblade>);
 
 mods.ItemStages.removeItemStage(<advancedrocketry:sawbladeiron>);
 mods.ItemStages.addItemStage("iron_age", <advancedrocketry:sawbladeiron>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <advancedrocketry:sawbladeiron>);
 
 
 mods.ItemStages.removeItemStage(<simplequarry:fuel_quarry>);

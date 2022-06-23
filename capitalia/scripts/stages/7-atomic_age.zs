@@ -22,14 +22,6 @@ mods.ItemStages.addItemStage("atomic_age", <mekanism:atomicalloy>);
 mods.ItemStages.addItemStage("atomic_age", <mekanism:teleportationcore>);
 mods.ItemStages.addItemStage("atomic_age", <mekanism:machineblock:4>);
 mods.ItemStages.addItemStage("atomic_age", <mekanism:machineblock:13>);
-/*
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <mekanism:teleportationcore>);
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <mekanism:machineblock:4>);
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <mekanism:machineblock:13>);
-
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <extrautils2:quarry>);
-mods.recipestages.Recipes.setRecipeStage("atomic_age", <extrautils2:quarryproxy>);
-*/
 
 mods.ItemStages.addItemStage("atomic_age", <extrautils2:quarry>);
 mods.ItemStages.addItemStage("atomic_age", <extrautils2:quarryproxy>);

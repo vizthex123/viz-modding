@@ -29,12 +29,17 @@ crystalcompound.setMaxStackSize(64);
 
 crystalcompound.register();
 
+// Knowedge Data Unit
+var dataunit = VanillaFactory.createItem("dataunit");
+dataunit .setMaxStackSize(64);
 
+dataunit .register();
 
+// Empty Knowedge Data Unit
+var xpdata = VanillaFactory.createItem("dataunit_empty");
+xpdata.setMaxStackSize(64);
 
-
-
-
+xpdata.register();
 
 
 
@@ -136,6 +141,7 @@ var militarydata = VanillaFactory.createItem("datadisk_military");
 militarydata.setMaxStackSize(64);
 
 militarydata.register();
+
 
 
 # Workaround items for goo recipes

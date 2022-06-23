@@ -20,6 +20,7 @@
 <contenttweaker:datadisk_military>.displayName = "Military Data Packet";
 
 
+
 # Misc Items
 <contenttweaker:paxelmold>.displayName = "Paxel Mold";
 <contenttweaker:crystalcompound>.displayName = "Crystal Compound";
@@ -28,6 +29,9 @@
 
 <contenttweaker:alien_goo_sample>.displayName = "Alien Material Sample";
 <contenttweaker:hell_goo_sample>.displayName = "Hellish Material Sample";
+
+<contenttweaker:dataunit>.displayName = "Knowledge Data Unit";
+<contenttweaker:dataunit_empty>.displayName = "Empty Knowledge Data Unit";
 
 
 # Tooltips

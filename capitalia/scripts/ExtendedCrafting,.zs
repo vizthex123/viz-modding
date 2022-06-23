@@ -302,8 +302,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:machine>.withTag({
 	[<projectred-core:resource_item:104>, <thermalfoundation:material:293>, <projectred-core:resource_item:104>], 
 	[<thermalfoundation:material:353>, <extrautils2:machine>.withTag({Type: "extrautils2:generator"}), <thermalfoundation:material:353>]]);
 
+// Billionaire's Singularity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity_custom:1>, <extendedcrafting:singularity_custom>, 1000, <extendedcrafting:material:13>, 1000000000, 1000000);
+
+
+
 // Ultimate Ingot recipe
-mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:32>*2, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:32>*4, 
 	[[<techguns:itemshared:84>, null, <thermalfoundation:material:165>, <thermalfoundation:material:167>, <thermalfoundation:material:166>, null, <techguns:itemshared:84>], 
 	[null, <mekanism:ingot>, <projectred-core:resource_item:104>, <extrautils2:ingredients:11>, <projectred-core:resource_item:104>, <mekanism:ingot>, null], 
 	[<thermalfoundation:material:166>, <projectred-core:resource_item:104>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <projectred-core:resource_item:104>, <thermalfoundation:material:165>], 
@@ -312,10 +317,18 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:32>*
 	[null, <mekanism:ingot>, <projectred-core:resource_item:104>, <extrautils2:ingredients:11>, <projectred-core:resource_item:104>, <mekanism:ingot>, null], 
 	[<techguns:itemshared:84>, null, <thermalfoundation:material:166>, <thermalfoundation:material:167>, <thermalfoundation:material:165>, null, <techguns:itemshared:84>]]);
 
-// Billionaire's Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity_custom:1>, <extendedcrafting:singularity_custom>, 1000, <extendedcrafting:material:13>, 1000000000, 1000000);
+// Ultimate Singularity recipe
+mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:singularity_ultimate>,
+	[[<extendedcrafting:material:32>, null, <extendedcrafting:singularity_custom:1>, <extendedcrafting:material:48>, <extendedcrafting:singularity_custom:1>, null, <extendedcrafting:material:32>], 
+	[null, <extendedcrafting:material:32>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <extendedcrafting:material:32>, null], 
+	[null, <extendedcrafting:material:36>, <extendedcrafting:material:32>, <extendedcrafting:singularity_custom:1>, <extendedcrafting:material:32>, <extendedcrafting:material:36>, null], 
+	[<extendedcrafting:singularity_custom:1>, <extendedcrafting:singularity_custom:1>, <bigreactors:blockludicrite>, <extendedcrafting:material:13>, <bigreactors:blockludicrite>, <extendedcrafting:singularity_custom:1>, <extendedcrafting:singularity_custom:1>], 
+	[null, <extendedcrafting:material:36>, <extendedcrafting:material:32>, <extendedcrafting:singularity_custom:1>, <extendedcrafting:material:32>, <extendedcrafting:material:36>, null], 
+	[null, <extendedcrafting:material:32>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <extendedcrafting:material:32>, null], 
+	[<extendedcrafting:material:32>, null, <extendedcrafting:singularity_custom:1>, <extendedcrafting:material:48>, <extendedcrafting:singularity_custom:1>, null, <extendedcrafting:material:32>]]);
 
-// Removes Diamond & Emerald nuggets since TE has those already
+
+# Removes Diamond & Emerald nuggets since TE has those already
 recipes.removeByRecipeName("extendedcrafting:emerald_nugget_from");
 recipes.removeByRecipeName("extendedcrafting:diamond_nugget_from");
 

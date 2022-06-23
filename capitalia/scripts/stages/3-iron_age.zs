@@ -34,7 +34,6 @@ mods.ItemStages.addItemStage("iron_age", <projectred-core:resource_item:252>);
 
 
 mods.ItemStages.addItemStage("iron_age", <minecraft:shears>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <minecraft:shears>);
 
 mods.ItemStages.addItemStage("iron_age", <ssc:hardened_crate>);
 
@@ -50,10 +49,7 @@ mods.ItemStages.addItemStage("iron_age", <adminshop:seller>);
 
 mods.ItemStages.addItemStage("iron_age", <progressiveautomation:miner_iron>);
 mods.ItemStages.addItemStage("iron_age", <progressiveautomation:miner_diamond>);
-/*
-mods.recipestages.Recipes.setRecipeStage("iron_age", <progressiveautomation:miner_iron>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <progressiveautomation:miner_diamond>);
-*/
+
 mods.ItemStages.addItemStage("iron_age", <techguns:basicmachine:1>);
 
 mods.ItemStages.addItemStage("iron_age", <techguns:basicmachine:2>);
@@ -73,25 +69,10 @@ mods.ItemStages.addItemStage("iron_age", <logisticalautomation:iron_stick>);
 mods.ItemStages.addItemStage("iron_age", <logisticalautomation:iron_motor_set>);
 mods.ItemStages.addItemStage("iron_age", <logisticalautomation:gold_motor_set>);
 mods.ItemStages.addItemStage("iron_age", <logisticalautomation:diamond_motor_set>);
-/*
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:leather_belt_set>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:roller_set>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:iron_stick>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:iron_motor_set>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:gold_motor_set>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:diamond_motor_set>);
 
 mods.ItemStages.addItemStage("iron_age", <thermalexpansion:cache>);
 mods.ItemStages.addItemStage("iron_age", <thermalexpansion:tank>);
 
-mods.recipestages.Recipes.setRecipeStage("iron_age", <thermalexpansion:cache>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <thermalexpansion:tank>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <logisticalautomation:extractor>);
-
-mods.recipestages.Recipes.setRecipeStage("iron_age", <minecraft:iron_nugget>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <minecraft:iron_block>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <minecraft:iron_ingot>);
-*/
 mods.ItemStages.addItemStage("iron_age", <minecraft:bucket>);
 mods.ItemStages.addItemStage("iron_age", <minecraft:hopper>);
 mods.ItemStages.addItemStage("iron_age", <faufil:hopperfilter>);
@@ -123,15 +104,10 @@ mods.ItemStages.addItemStage("iron_age", <techguns:itemshared:57>);
 // Magneticraft Blocks
 mods.ItemStages.addItemStage("iron_age", <magneticraft:multiblock_parts:2>);
 mods.ItemStages.addItemStage("iron_age", <magneticraft:multiblock_parts:5>);
-/*
-mods.recipestages.Recipes.setRecipeStage("iron_age", <magneticraft:multiblock_parts:2>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <magneticraft:multiblock_parts:5>);
-*/
+
+
 // Furnaces
 mods.ItemStages.addItemStage("iron_age", <ironfurnaces:iron_furnace_idle>);
 mods.ItemStages.addItemStage("iron_age", <ironfurnaces:gold_furnace_idle>);
-/*
-mods.recipestages.Recipes.setRecipeStage("iron_age", <ironfurnaces:iron_furnace_idle>);
-mods.recipestages.Recipes.setRecipeStage("iron_age", <ironfurnaces:gold_furnace_idle>);
-*/
+
 print("iron_age.zs loaded");

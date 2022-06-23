@@ -4,22 +4,7 @@ print("information_age is mainly in GameStage.zs, since it's only items from RS 
 
 print("information_age.zs loading...");
 
-// RS items that remain
-/*
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:controller>);
-
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:controller>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:grid>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:portable_grid>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage:1>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage_part>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage_part:1>);
-
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:security_manager>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:security_card>);
-mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:network_card>);
-*/
+// Remaining RS items
 mods.ItemStages.addItemStage("information_age", <refinedstorage:controller>);
 mods.ItemStages.addItemStage("information_age", <refinedstorage:grid>);
 mods.ItemStages.addItemStage("information_age", <refinedstorage:portable_grid>);
@@ -47,25 +32,17 @@ mods.ItemStages.addItemStage("information_age", <refinedstorage:quartz_enriched_
 mods.ItemStages.addItemStage("information_age", <refinedstorage:machine_casing>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:silicon>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:silicon>);
-
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:disk_manipulator>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:disk_manipulator>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:interface>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:interface>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:storage_disk:1>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage_disk:1>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:storage_monitor>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:storage_monitor>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:filter>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:filter>);
 
 mods.ItemStages.addItemStage("information_age", <refinedstorage:cutting_tool>);
-#mods.recipestages.Recipes.setRecipeStage("information_age", <refinedstorage:cutting_tool>);
 
 print("information_age.zs loaded");
