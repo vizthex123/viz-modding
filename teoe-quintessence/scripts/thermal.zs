@@ -83,14 +83,8 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 */
 
-// Pulverize Music Discs into Lead Coins
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_music_discs", [<item:thermal:lead_coin>*2 % 100, <item:thermal:lead_coin> % 50], <tag:items:minecraft:music_discs>, 0.0, 2000);
-
-// Pulverizer Blank Runes into Lead Coins
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_blank_runes", [<item:thermal:lead_coin>*3 % 100], <item:quark:blank_rune>, 0.0, 2000);
-
 // Process Limestone into Bones (Fossils)
-// Replace with Lime when ContentTweaker updates
+// TODO: Replace with Lime when ContentTweaker updates
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_limestone", [<item:minecraft:bone> % 50], <item:quark:limestone>|<item:create:limestone>, 0.0, 4000);
 
 // Pulverize Certus Quartz into Dust
@@ -155,19 +149,20 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 Min chance is the minium chance to trigger the catalyst (I guess?)
 */
 # Pulverizer
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.4, 0.3);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_shard", <item:minecraft:prismarine_shard>, 1.45, 1.65, 1.3, 0.45, 0.4);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_crystal", <item:minecraft:prismarine_crystals>, 1.35, 2.0, 1.5, 0.6, 0.25);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.0, 2.5, 0.8, 0.8); // Idk the min chance so let's hope this is close enough
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("amethyst_catalyst", <item:minecraft:amethyst_shard>, 1.0, 0.75, 0.35, 0.55, 0.35);
 
-	// Corundum Crystals
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.4, 0.3);
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
+
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.0, 2.5, 0.5, 0.8); // Idk the min chance for Cinnabar so let's hope this is close enough
+
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 1.25, 1.0, 0.85, 0.5, 0.5);
-
 
 # Induction Smelter
 <recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.75);
-<recipetype:thermal:smelter_catalyst>.addCatalyst("fire_charge", <item:minecraft:fire_charge>, 1.25, 1.5, 0.3, 0.6, 0.55);
+<recipetype:thermal:smelter_catalyst>.addCatalyst("fire_charge_catalyst", <item:minecraft:fire_charge>, 1.25, 1.5, 0.3, 0.6, 0.55);
 <recipetype:thermal:smelter_catalyst>.addCatalyst("lava_bucket", <item:minecraft:lava_bucket>, 1.0, 1.25, 0.75, 1.0, 0.35);
 
 

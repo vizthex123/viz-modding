@@ -1,0 +1,59 @@
+
+#Client configuration settings
+[client]
+
+	#Quality Settings
+	[client.settings]
+		#How many items the traders should render as stock. Useful to avoid lag in trader-rich areas.
+		#FULL: Renders all items based on stock as intended.
+		#PARTIAL: Renders only 1 item per trade slot regardless of stock.
+		#NONE: Traders do not render items.
+		#Allowed Values: FULL, PARTIAL, NONE
+		traderRenderType = "FULL"
+
+	#Wallet Slot Settings
+	[client.wallet_slot]
+		#The x position that the wallet slot will be placed at in the players inventory.
+		#Range: -255 ~ 255
+		slotX = 100
+		#The y position that the wallet slot will be placed at in the players inventory.
+		#Range: -255 ~ 255
+		slotY = 59
+		#The x position that the wallet slot will be placed at in the players creative inventory.
+		#Range: -255 ~ 255
+		creativeSlotX = 126
+		#The y position that the wallet slot will be placed at in the players creative inventory.
+		#Range: -255 ~ 255
+		creativeSlotY = 19
+		#The x offset that the wallet button should be placed at relative to the wallet slot position.
+		#Range: -255 ~ 255
+		buttonX = 20
+		#The y offset that the wallet button should be placed at relative to the wallet slot position.
+		#Range: -255 ~ 255
+		buttonY = 5
+
+	#Inventory Button Settings
+	[client.inventory_buttons]
+		#The x position that the notification & team manager buttons will be placed at in the players inventory.
+		#Range: > -2147483648
+		buttonX = 152
+		#The x position that the notification & team manager buttons will be placed at in the players inventory.
+		#Range: > -2147483648
+		buttonY = 3
+		#The x position that the notification & team manager buttons will be placed at in the players creative inventory.
+		#Range: > -2147483648
+		buttonCreativeX = 171
+		#The y position that the notification & team manager buttons will be placed at in the players creative inventory.
+		#Range: > -2147483648
+		buttonCreativeY = 3
+
+	#Notification Settings
+	[client.notification]
+		#Whether notifications should be posted in your chat when you receive them.
+		notificationsInChat = true
+
+	#Sound Settings
+	[client.sounds]
+		#Whether Money Mending should make a noise when triggered.
+		moneyMendingClink = true
+

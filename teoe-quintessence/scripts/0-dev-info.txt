@@ -8,3 +8,6 @@ Rounded Square - Create
 Diamond - Deep Resonance
 Octogon - magic
 Hexagon - exploration
+
+
+wallet slot is at 100, 59, open button is at 20, 5 (x, y)

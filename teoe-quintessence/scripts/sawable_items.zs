@@ -1,18 +1,24 @@
 # Adds recipes to saw various items
-# Script by vizthex
-# https://www.curseforge.com/members/vizthex/projects
-# v2.0 - made for 1.14+
+
 /*
 <recipetype:thermal:sawmill>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int energy);
 
-Average RF use is 1 or 2k
+Average RF use is 1 - 2k
 */
 
 print("sawable_items.zs loading...");
 
+
+# Hats
+// Conjurer
+<recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [<item:minecraft:leather>*2 % 100, <item:minecraft:leather> % 50], <item:conjurer_illager:conjurer_hat>, 1000);
+
+// Forgotten
+<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*3 % 100, <item:minecraft:string>*2 % 50], <item:quark:forgotten_hat>, 1000);
+
 // Item Frames
 <recipetype:thermal:sawmill>.addRecipe("saw_item_frame", [<item:minecraft:stick>*4 % 100], <item:minecraft:item_frame>, 500);
-<recipetype:thermal:sawmill>.addRecipe("saw_glow_item_frame", [<item:minecraft:stick>*4 % 100, <item:minecraft:glow_ink_sac> % 25], <item:minecraft:glow_item_frame>, 750);
+<recipetype:thermal:sawmill>.addRecipe("saw_glow_item_frame", [<item:minecraft:stick>*4 % 100, <item:minecraft:glow_ink_sac> % 25], <item:minecraft:glow_item_frame>, 500);
 
 // Barrels
 <recipetype:thermal:sawmill>.addRecipe("saw_barrels", [<item:thermal:sawdust>*4 % 50, <item:minecraft:stick>*2 % 100], <item:minecraft:barrel>, 1000);
@@ -106,5 +112,6 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_green_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:green_bed>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_red_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:red_bed>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_black_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:black_bed>, 2000);
+
 
 print("sawable_items.zs loaded");

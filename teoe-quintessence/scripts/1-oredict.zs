@@ -35,53 +35,6 @@ print("1_oredict.zs loading...");
 <tag:items:minecraft:boats>.add(<item:quark:blossom_boat>);
 <tag:items:minecraft:boats>.add(<item:quark:azalea_boat>);
 
-# Quartz (portal frame recipe)
-<tag:items:teoe:quartz_blocks>.add(<item:minecraft:smooth_quartz>);
-<tag:items:teoe:quartz_blocks>.add(<item:minecraft:chiseled_quartz_block>);
-<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_block>);
-<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_bricks>);
-<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_pillar>);
-
-# Paxels (quest)
-<tag:items:teoe:paxels>.add(<item:easypaxellite:wood_paxel>);
-<tag:items:teoe:paxels>.add(<item:easypaxellite:stone_paxel>);
-<tag:items:teoe:paxels>.add(<item:easypaxellite:iron_paxel>);
-<tag:items:teoe:paxels>.add(<item:easypaxellite:golden_paxel>);
-<tag:items:teoe:paxels>.add(<item:easypaxellite:diamond_paxel>);
-<tag:items:teoe:paxels>.add(<item:easypaxellite:netherite_paxel>);
-
-
-# Furnaces (quest + recipe)
-<tag:items:teoe:furnace>.add(<item:minecraft:furnace>);
-<tag:items:teoe:furnace>.add(<item:quark:blackstone_furnace>);
-<tag:items:teoe:furnace>.add(<item:quark:deepslate_furnace>);
-
-
-# Crafting Storage (for the quest)
-<tag:items:teoe:crafting_storage>.add(<item:ae2:1k_crafting_storage>);
-<tag:items:teoe:crafting_storage>.add(<item:ae2:4k_crafting_storage>);
-<tag:items:teoe:crafting_storage>.add(<item:ae2:16k_crafting_storage>);
-<tag:items:teoe:crafting_storage>.add(<item:ae2:64k_crafting_storage>);
-
-
-# Chest Upgrades (for the quest)
-<tag:items:teoe:better_chest>.add(<item:ironchest:copper_chest>);
-<tag:items:teoe:better_chest>.add(<item:ironchest:iron_chest>);
-<tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_copper_chest_upgrade>);
-<tag:items:teoe:better_chest>.add(<item:ironchest:copper_to_iron_chest_upgrade>);
-
-
-# Beacon Base
-# Mainly for the Gaia quest, but can be used to find them easier
-<tag:items:teoe:beacon_base>.add(<item:minecraft:iron_block>);
-<tag:items:teoe:beacon_base>.add(<item:minecraft:gold_block>);
-<tag:items:teoe:beacon_base>.add(<item:minecraft:diamond_block>);
-<tag:items:teoe:beacon_base>.add(<item:minecraft:netherite_block>);
-<tag:items:teoe:beacon_base>.add(<item:tconstruct:cobalt_block>);
-<tag:items:teoe:beacon_base>.add(<item:tconstruct:queens_slime_block>);
-<tag:items:teoe:beacon_base>.add(<item:tconstruct:manyullyn_block>);
-<tag:items:teoe:beacon_base>.add(<item:tconstruct:hepatizon_block>);
-
 
 # TEoE Planks
 # Used in my custom Chest recipe
@@ -186,34 +139,6 @@ print("1_oredict.zs loading...");
 
 
 
-# Misc
-<tag:items:teoe:apothecary>.add(<item:botania:apothecary_mossy>);
-<tag:items:teoe:apothecary>.add(<item:botania:apothecary_default>);
-
-<tag:items:forge:ingots/platinum>.add(<item:ob_core:platinum_ingot>);
-<tag:items:forge:nuggets/platinum>.add(<item:ob_core:platinum_nugget>);
-
-<tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
-
-<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
-
-
-# Tag Removal
-<tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);
-<tag:items:forge:ingots/rose_gold>.remove(<item:thermal:rose_gold_ingot>);
-
-<tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
-<tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
-
-<tag:items:forge:gears>.remove(<item:industrialforegoing:iron_gear>);
-<tag:items:forge:gears>.remove(<item:industrialforegoing:gold_gear>);
-<tag:items:forge:gears>.remove(<item:industrialforegoing:diamond_gear>);
-
-<tag:items:forge:gears/iron>.remove(<item:industrialforegoing:iron_gear>);
-<tag:items:forge:gears/gold>.remove(<item:industrialforegoing:gold_gear>);
-<tag:items:forge:gears/diamond>.remove(<item:industrialforegoing:diamond_gear>);
-
-
 # Obscuria Tooltips
 <tag:items:forge:tooltips/custom>.add(<item:thermal:flux_drill>);
 <tag:items:forge:tooltips/custom>.add(<item:thermal:flux_saw>);
@@ -311,13 +236,11 @@ print("1_oredict.zs loading...");
 
 
 
-
-# Whitelisted Randomium drops
 /*
 <tag:items:randomium:whitelist>.add(<item>);
 mods are blacklisted in the config
 */
-
+# Whitelisted Randomium drops
 <tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
 <tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
 <tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
@@ -332,6 +255,11 @@ mods are blacklisted in the config
 <tag:items:randomium:whitelist>.add(<item:botania:manasteel_ingot>);
 <tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
 
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
+
 /*
 # Portal Modules (quest)
 <tag:items:teoe:portal_modules>.add(<item:portality:module_energy>);
@@ -339,5 +267,123 @@ mods are blacklisted in the config
 <tag:items:teoe:portal_modules>.add(<item:portality:module_items>);
 <tag:items:teoe:portal_modules>.add(<item:portality:module_interdimensional>);
 */
+
+# Corundum (quest)
+<tag:items:teoe:corundum>.add(<item:quark:red_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:orange_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:yellow_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:green_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:blue_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:indigo_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:violet_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:white_corundum_cluster>);
+<tag:items:teoe:corundum>.add(<item:quark:black_corundum_cluster>);
+
+
+# Ropes (quest)
+<tag:items:teoe:rope>.add(<item:quark:rope>);
+<tag:items:teoe:rope>.add(<item:additionaladditions:rope>);
+
+
+# Waystones (quest)
+<tag:items:teoe:waystones>.add(<item:waystones:waystone>);
+<tag:items:teoe:waystones>.add(<item:waystones:mossy_waystone>);
+<tag:items:teoe:waystones>.add(<item:waystones:sandy_waystone>);
+
+
+# Diving Gear (quest)
+<tag:items:teoe:diving_helmet>.add(<item:ob_aquamirae:three_bolt_helmet>);
+<tag:items:teoe:diving_helmet>.add(<item:thermal:diving_helmet>);
+<tag:items:teoe:diving_helmet>.add(<item:create:diving_helmet>);
+
+<tag:items:teoe:diving_chestplate>.add(<item:ob_aquamirae:three_bolt_chestplate>);
+<tag:items:teoe:diving_chestplate>.add(<item:thermal:diving_chestplate>);
+<tag:items:teoe:diving_chestplate>.add(<item:create:copper_backtank>);
+
+<tag:items:teoe:diving_boots>.add(<item:thermal:diving_boots>);
+<tag:items:teoe:diving_boots>.add(<item:create:diving_boots>);
+
+
+# Quartz (portal frame recipe)
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:smooth_quartz>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:chiseled_quartz_block>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_block>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_bricks>);
+<tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_pillar>);
+
+
+# Paxels (quest)
+<tag:items:teoe:paxels>.add(<item:easypaxellite:wood_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:stone_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:iron_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:golden_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:diamond_paxel>);
+<tag:items:teoe:paxels>.add(<item:easypaxellite:netherite_paxel>);
+
+
+# Furnaces (quest + recipes)
+<tag:items:teoe:furnace>.add(<item:minecraft:furnace>);
+<tag:items:teoe:furnace>.add(<item:quark:blackstone_furnace>);
+<tag:items:teoe:furnace>.add(<item:quark:deepslate_furnace>);
+
+
+# Crafting Storage (quest)
+<tag:items:teoe:crafting_storage>.add(<item:ae2:1k_crafting_storage>);
+<tag:items:teoe:crafting_storage>.add(<item:ae2:4k_crafting_storage>);
+<tag:items:teoe:crafting_storage>.add(<item:ae2:16k_crafting_storage>);
+<tag:items:teoe:crafting_storage>.add(<item:ae2:64k_crafting_storage>);
+
+
+# Chest Upgrades (quest)
+<tag:items:teoe:better_chest>.add(<item:ironchest:copper_chest>);
+<tag:items:teoe:better_chest>.add(<item:ironchest:iron_chest>);
+<tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_copper_chest_upgrade>);
+<tag:items:teoe:better_chest>.add(<item:ironchest:copper_to_iron_chest_upgrade>);
+
+
+# Beacon Base
+# Mainly for the Gaia quest, but can be used to find them easier
+<tag:items:teoe:beacon_base>.add(<item:minecraft:iron_block>);
+<tag:items:teoe:beacon_base>.add(<item:minecraft:gold_block>);
+<tag:items:teoe:beacon_base>.add(<item:minecraft:diamond_block>);
+<tag:items:teoe:beacon_base>.add(<item:minecraft:netherite_block>);
+<tag:items:teoe:beacon_base>.add(<item:tconstruct:cobalt_block>);
+<tag:items:teoe:beacon_base>.add(<item:tconstruct:queens_slime_block>);
+<tag:items:teoe:beacon_base>.add(<item:tconstruct:manyullyn_block>);
+<tag:items:teoe:beacon_base>.add(<item:tconstruct:hepatizon_block>);
+
+
+# Misc
+<tag:items:teoe:apothecary>.add(<item:botania:apothecary_mossy>);
+<tag:items:teoe:apothecary>.add(<item:botania:apothecary_default>);
+
+<tag:items:forge:ingots/platinum>.add(<item:ob_core:platinum_ingot>);
+<tag:items:forge:nuggets/platinum>.add(<item:ob_core:platinum_nugget>);
+
+<tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
+
+<tag:items:minecraft:coals>.add(<item:malum:arcane_charcoal>);
+
+<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
+
+
+# Tag Removal
+<tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);
+<tag:items:forge:ingots/rose_gold>.remove(<item:thermal:rose_gold_ingot>);
+
+<tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
+<tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
+
+<tag:items:forge:gears>.remove(<item:industrialforegoing:iron_gear>);
+<tag:items:forge:gears>.remove(<item:industrialforegoing:gold_gear>);
+<tag:items:forge:gears>.remove(<item:industrialforegoing:diamond_gear>);
+
+<tag:items:forge:gears/iron>.remove(<item:industrialforegoing:iron_gear>);
+<tag:items:forge:gears/gold>.remove(<item:industrialforegoing:gold_gear>);
+<tag:items:forge:gears/diamond>.remove(<item:industrialforegoing:diamond_gear>);
+
+<tag:items:byg:purple_dye>.remove(<item:byg:tall_allium>);
+<tag:items:byg:pink_dye>.remove(<item:byg:tall_pink_allium>);
+<tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
 
 print("1_oredict.zs loaded");

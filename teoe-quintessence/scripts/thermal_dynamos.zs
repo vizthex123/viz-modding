@@ -5,10 +5,11 @@ print("thermal_dynamos.zs loading...");
 # Lapidary
 # Adds/removes various gemstone-like things
 <recipetype:thermal:lapidary_fuel>.removeFuel(<item:minecraft:quartz>);
+<recipetype:thermal:lapidary_fuel>.removeFuel(<item:minecraft:amethyst_shard>);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("nether_quartz", <item:minecraft:quartz>, 50000);
 <recipetype:thermal:lapidary_fuel>.addFuel("prismarine_shard_fuel", <item:minecraft:prismarine_shard>, 50000);
-<recipetype:thermal:lapidary_fuel>.addFuel("amethyst", <item:minecraft:amethyst_shard>, 65000);
+<recipetype:thermal:lapidary_fuel>.addFuel("amethyst_fuel", <item:minecraft:amethyst_shard>, 75000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("dimshard", <item:rftoolsbase:dimensionalshard>, 1000000);
 <recipetype:thermal:lapidary_fuel>.addFuel("apatite", <item:thermal:apatite>, 25000);
@@ -19,6 +20,7 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.addFuel("carminite", <item:twilightforest:carminite>, 75000);
 <recipetype:thermal:lapidary_fuel>.addFuel("ametrine", <item:byg:ametrine_gems>, 250000);
 
+<recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 30000);
 
 
 # Misc

@@ -1,0 +1,66 @@
+
+#Common configuration settings
+[common]
+	#Level of debug messages to be shown in the logs.
+	#0-All debug messages. 1-Warnings/Errors only. 2-Errors only. 3-No debug messages.
+	#Note: All debug messages will still be sent debug.log regardless of settings.
+	#Range: 0 ~ 3
+	debugLevel = 0
+
+	#Villager Related Settings.
+	[common.villagers]
+		#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
+		addCustomWanderingTrades = true
+		#Whether the banker villager profession will have any registered trades. The banker sells Lightman's Currency items for coins.
+		addBanker = true
+		#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
+		addCashier = true
+
+	#Entity loot settings. Accepts entity ids (i.e. minecraft:zombie)
+	[common.entity_loot]
+		#Whether coins can be dropped by entities. Does not effect chest loot generation.
+		enableEntityDrops = true
+		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
+		enableSpawnerEntityDrops = false
+		#Entities that will occasionally drop copper coins.
+		copper = ["minecraft:zombie", "minecraft:slime", "minecraft:silverfish", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
+		#Entities that will occasionally drop copper -> iron coins.
+		iron = ["minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:magma_cube", "minecraft:zombie_villager", "minecraft:drowned", "minecraft:endermite", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin", "minecraft:zombified_piglin", "twilightforest:carminite_ghastguard", "twilightforest:carminite_golem", "twilightforest:king_spider", "twilightforest:lower_goblin_knight", "twilightforest:upper_goblin_knight", "twilightforest:stable_ice_core", "twilightforest:unstable_ice_core", "twilightforest:troll", "twilightforest:yeti", "thermal:blitz", "thermal:blizz", "thermal:basalz", "ob_core:ancient_paladin", "ob_aquamirae:anglerfish", "ob_aquamirae:tortured_soul"]
+		#Entities that will occasionally drop copper -> gold coins.
+		gold = ["minecraft:guardian", "minecraft:elder_guardian", "minecraft:phantom", "minecraft:piglin_brute", "minecraft:enderman", "twilightforest:blockchain_goblin", "twilightforest:giant_miner", "twilightforest:armored_giant", "quark:forgotten"]
+		#Entities that will occasionally drop copper -> emerald coins.
+		emerald = ["minecraft:evoker", "minecraft:vindicator", "minecraft:pillager", "minecraft:ravager", "minecraft:shulker"]
+		#Entities that will occasionally drop copper -> diamond coins.
+		diamond = []
+		#Entities that will occasionally drop copper -> netherite coins.
+		netherite = []
+		#Entities that will drop a large amount of copper coins.
+		boss_copper = ["twilightforest:minoshroom", "twilightforest:knight_phantom"]
+		#Entities that will drop a large amount of copper -> iron coins.
+		boss_iron = ["twilightforest:naga", "twilightforest:lich", "twilightforest:snow_queen", "ob_aquamirae:maze_mother", "conjurer_illager:conjurer"]
+		#Entities that will drop a large amount of copper -> gold coins.
+		boss_gold = ["minecraft:ender_dragon", "minecraft:wither", "twilightforest:alpha_yeti", "ob_aquamirae:captain_cornelia"]
+		#Entities that will drop a large amount of copper -> emerald coins.
+		boss_emerald = ["twilightforest:ur_ghast", "twilightforest:hydra", "botania:doppleganger"]
+		#Entities that will drop a large amount of copper -> diamond coins.
+		boss_diamond = []
+		#Entities that will drop a large amount of copper -> netherite coins.
+		boss_netherite = []
+
+	#Chest loot settings.
+	[common.chest_loot]
+		#Whether coins can spawn in chests Does not effect entity loot drops.
+		enableChestLoot = true
+		#Chests that will occasionally spawn copper coins.
+		copper = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_toolsmith", "minecraft:chests/village/village_weaponsmith", "repurposed_structures:chests/ruined_portals/end/small_portal", "twilightforest:structures/hill_1"]
+		#Chests that will occasionally spawn copper -> iron coins.
+		iron = ["minecraft:chests/abandoned_mineshaft", "minecraft:chests/woodland_mansion", "betterdeserttemples:chests/pot", "betterdungeons:skeleton_dungeon/chests/middle", "betterdungeons:zombie_dungeon/chests/special", "byg:chests/village/village_red_rock_market", "dungeons_arise:chests/illager_corsair/illager_corsair_treasure", "dungeons_arise:chests/illager_windmill/illager_windmill_treasure", "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_treasure", "dungeons_arise:chests/mining_system/mining_system_treasure", "dungeons_arise:chests/mushroom_house/mushroom_house_treasure", "rare-ice:blocks/rare_ice", "repurposed_structures:chests/ruined_portals/end/large_portal", "repurposed_structures:chests/villages/crimson_weaponsmith", "repurposed_structures:chests/villages/warped_weaponsmith", "twilightforest:structures/hill_2"]
+		#Chests that will occasionally spawn copper -> gold coins.
+		gold = ["minecraft:chests/shipwreck_treasure", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "betterdeserttemples:chests/tomb", "betterstrongholds:chests/treasure", "dungeons_arise:chests/bandit_towers/bandit_towers_treasure", "dungeons_arise:chests/ceryneian_hind/ceryneian_hind_treasure", "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure", "dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure", "dungeons_arise:chests/infested_temple/infested_temple_top_treasure", "dungeons_arise:chests/mushroom_mines/mushroom_mines_treasure", "dungeons_arise:chests/scorched_mines/scorched_mines_treasure", "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure", "rare-ice:chests/rare_ice", "repurposed_structures:chests/bastions/underground/treasure", "repurposed_structures:chests/shipwrecks/crimson/treasure", "repurposed_structures:chests/shipwrecks/warped/treasure", "repurposed_structures:chests/shipwrecks/nether_bricks/treasure", "terralith:village/desert/treasure", "twilightforest:structures/hill_3"]
+		#Chests that will occasionally spawn copper -> emerald coins.
+		emerald = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/buried_treasure", "betterdeserttemples:chests/tomb_pharoh", "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure", "dungeons_arise:chests/plague_asylum/plague_asylum_treasure", "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure", "repurposed_structures:chests/shipwrecks/end/treasure", "twilightforest:structures/labyrinth_vault"]
+		#Chests that will occasionally spawn copper -> diamond coins.
+		diamond = ["minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure", "betterdeserttemples:chests/pharaoh_hidden", "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure"]
+		#Chests that will occasionally spawn copper -> netherite coins.
+		netherite = ["ae2:chests/meteorite"]
+

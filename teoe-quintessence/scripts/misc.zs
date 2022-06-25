@@ -1,4 +1,4 @@
-# Change miscellaneous recipes that don't fit into another script
+# Changes miscellaneous recipes that don't fit into another script
 
 import crafttweaker.api.tag.MCTag;
 
@@ -12,10 +12,8 @@ craftingTable.addShaped("name", <item:output>,
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 
-BlastFurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 
-FurnaceManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 

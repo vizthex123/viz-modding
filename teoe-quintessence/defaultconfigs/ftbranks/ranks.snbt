@@ -1,0 +1,35 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		condition: "always_active"
+		ftbranks.name_format: "<{name}>"
+	}
+	vip: {
+		name: "VIP"
+		power: 5
+		ftbranks.name_format: "<&bVIP {name}&r>"
+	}
+	dragonslayer: {
+		name: "Dragonslayer"
+		power: 10
+		ftbranks.name_format: "<&dDragonslayer {name}&r>"
+	}
+	essence_gatherer: {
+		name: "Essence_Gatherer"
+		power: 20
+		ftbranks.name_format: "<&cEssence Gatherer {name}&r>"
+	}
+	admin: {
+		name: "Admin"
+		power: 25
+		condition: "op"
+		ftbranks.name_format: "<&2{name}&r>"
+	}
+	owner: {
+		name: "owner"
+		power: 50
+		condition: "op"
+		ftbranks.name_format: "<&5{name}&r>"
+	}
+}
