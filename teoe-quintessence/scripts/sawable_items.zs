@@ -16,6 +16,11 @@ print("sawable_items.zs loading...");
 // Forgotten
 <recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*3 % 100, <item:minecraft:string>*2 % 50], <item:quark:forgotten_hat>, 1000);
 
+# Other Items
+
+// Leads
+<recipetype:thermal:sawmill>.addRecipe("saw_lead", [<item:minecraft:slime_ball> % 50, <item:minecraft:string>*2 % 100], <item:minecraft:lead>, 500);
+
 // Item Frames
 <recipetype:thermal:sawmill>.addRecipe("saw_item_frame", [<item:minecraft:stick>*4 % 100], <item:minecraft:item_frame>, 500);
 <recipetype:thermal:sawmill>.addRecipe("saw_glow_item_frame", [<item:minecraft:stick>*4 % 100, <item:minecraft:glow_ink_sac> % 25], <item:minecraft:glow_item_frame>, 500);
@@ -62,8 +67,6 @@ print("sawable_items.zs loading...");
 // Blank Scrolls
 <recipetype:thermal:sawmill>.addRecipe("saw_scrolls", [<item:minecraft:paper>*2 % 50, <item:minecraft:stick> % 100], <item:enigmaticlegacy:thicc_scroll>, 1000);
 
-
-
 // Saw signs into sticks
 <recipetype:thermal:sawmill>.addRecipe("saw_signs", [<item:minecraft:stick>*4 % 75, <item:minecraft:stick>*2 % 50], <tag:items:minecraft:signs>, 1000);
 
@@ -71,6 +74,19 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_book", [<item:minecraft:paper>*2 % 75, <item:minecraft:leather> % 35], <item:minecraft:book>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_book_and_quill", [<item:minecraft:paper>*2 % 75, <item:minecraft:leather> % 35, <item:minecraft:feather> % 25], <item:minecraft:writable_book>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_written_book", [<item:minecraft:paper>*2 % 75, <item:minecraft:leather> % 35], <item:minecraft:written_book>, 2000);
+
+// Saw Wool into String
+<recipetype:thermal:sawmill>.addRecipe("saw_wool", [<item:minecraft:string>*2 % 100, <item:minecraft:string>*2 % 50], <tag:items:minecraft:wool>, 1000);
+
+// Note Blocks
+<recipetype:thermal:sawmill>.addRecipe("saw_note_block", [<item:thermal:sawdust>*4 % 100, <item:minecraft:redstone> % 50], <item:minecraft:note_block>, 2000);
+
+// Jukeboxes
+<recipetype:thermal:sawmill>.addRecipe("saw_jukebox", [<item:thermal:sawdust>*4 % 100, <item:minecraft:diamond> % 50], <item:minecraft:jukebox>, 2000);
+
+// TNT
+<recipetype:thermal:sawmill>.addRecipe("saw_tnt", [<item:minecraft:sand>*2 % 100, <item:minecraft:gunpowder>*3 % 50], <item:minecraft:tnt>, 2000);
+
 
 // Saw Carpets into String
 // This took too long to re-write

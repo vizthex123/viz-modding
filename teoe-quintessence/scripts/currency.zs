@@ -20,9 +20,14 @@ For Extended Crafting, use the recipe maker
 
 # Ticket recipe info
 mods.jei.JEI.addDescription(<item:minecraft:paper>, ["Can be used to make tickets in a Ticket Machine"]);
-mods.jei.JEI.addDescription(<item:lightmanscurrency:ticket>, ["Crafted by placing anything with the ticket_material tag into a Ticket Machine (mainly paper)"]);
-mods.jei.JEI.addDescription(<item:lightmanscurrency:master_ticket>, ["Crafted by placing anything with the ticket_material tag into a Ticket Machine (mainly paper)"]);
-mods.jei.JEI.addDescription(<item:lightmanscurrency:ticket_stub>, ["Crafted by placing anything with the ticket_material tag into a Ticket Machine (mainly paper)"]); 
+
+
+# New Trading Core recipe
+craftingTable.remove(<item:lightmanscurrency:trading_core>);
+craftingTable.addShaped("trading_core", <item:lightmanscurrency:trading_core>,
+    [[<tag:items:lightmanscurrency:coin>, <item:minecraft:redstone>, <tag:items:lightmanscurrency:coin>],
+    [<tag:items:lightmanscurrency:coin>, <tag:items:forge:ingots>, <tag:items:lightmanscurrency:coin>],
+    [<tag:items:lightmanscurrency:coin>, <item:minecraft:redstone>, <tag:items:lightmanscurrency:coin>]]);
 
 
 # New wallet recipes
@@ -34,7 +39,7 @@ craftingTable.remove(<item:lightmanscurrency:wallet_diamond>);
 craftingTable.remove(<item:lightmanscurrency:wallet_netherite>);
 
 // Copper
-mods.extendedcrafting.TableCrafting.addShaped("copper_wallet", 1, <item:lightmanscurrency:wallet_copper>,
+craftingTable.addShaped("copper_wallet", <item:lightmanscurrency:wallet_copper>,
 	[[<item:minecraft:air>, <tag:items:forge:nuggets>, <item:minecraft:air>], 
 	[<item:minecraft:leather>, <item:minecraft:copper_ingot>, <item:minecraft:leather>], 
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
@@ -46,7 +51,7 @@ mods.extendedcrafting.TableCrafting.addShaped("iron_wallet", 1, <item:lightmansc
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("iron_wallet_upgrade", 1, <item:lightmanscurrency:wallet_iron>,
-	[<item:lightmanscurrency:wallet_copper>, <item:minecraft:iron_ingot>, <item:lightmanscurrency:coin_iron>]);
+	[<item:lightmanscurrency:wallet_copper>, <item:lightmanscurrency:coinpile_iron>, <item:minecraft:iron_ingot>]);
 
 // Gold
 mods.extendedcrafting.TableCrafting.addShaped("gold_wallet", 1, <item:lightmanscurrency:wallet_gold>,
@@ -55,7 +60,7 @@ mods.extendedcrafting.TableCrafting.addShaped("gold_wallet", 1, <item:lightmansc
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("gold_wallet_upgrade", 1, <item:lightmanscurrency:wallet_gold>,
-	[<item:lightmanscurrency:wallet_iron>, <item:minecraft:gold_ingot>, <item:lightmanscurrency:coin_gold>]);
+	[<item:lightmanscurrency:wallet_iron>, <item:lightmanscurrency:coinpile_gold>, <item:minecraft:gold_ingot>]);
 
 // Emerald
 mods.extendedcrafting.TableCrafting.addShaped("emerald_wallet", 1, <item:lightmanscurrency:wallet_emerald>,
@@ -73,7 +78,7 @@ mods.extendedcrafting.TableCrafting.addShaped("diamond_wallet", 1, <item:lightma
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("diamond_wallet_upgrade", 1, <item:lightmanscurrency:wallet_diamond>,
-	[<item:lightmanscurrency:wallet_diamond>, <item:minecraft:diamond>, <item:lightmanscurrency:coin_diamond>]);
+	[<item:lightmanscurrency:wallet_emerald>, <item:minecraft:diamond>, <item:lightmanscurrency:coin_diamond>]);
 
 // Netherite
 mods.extendedcrafting.TableCrafting.addShaped("netherite_wallet", 1, <item:lightmanscurrency:wallet_netherite>,
@@ -82,7 +87,7 @@ mods.extendedcrafting.TableCrafting.addShaped("netherite_wallet", 1, <item:light
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("netherite_wallet_upgrade", 1, <item:lightmanscurrency:wallet_netherite>,
-	[<item:lightmanscurrency:wallet_emerald>, <item:minecraft:netherite_ingot>, <item:lightmanscurrency:coin_netherite>]);
+	[<item:lightmanscurrency:wallet_diamond>, <item:minecraft:netherite_ingot>, <item:lightmanscurrency:coin_netherite>]);
 
 
 
@@ -146,21 +151,42 @@ craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 
 
 
-### Recycling Recipes ###
-// Elytra > 100 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_gold> % 100], <item:minecraft:elytra>, 0.0, 2000);
+### Coinification Recipes ###
+# Takes 3k RF (about 10 seconds without upgrades?)
+# or 5 seconds in Crushing Wheels
+/*
+<recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
 
-// Music Discs > 25 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_iron>*2 % 100, <item:lightmanscurrency:coin_copper>*5 % 100], <tag:items:minecraft:music_discs>, 0.0, 2000);
+<recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration);
+*/
+// Elytra -> 100 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_gold> % 100], <item:minecraft:elytra>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_gold> % 100], <item:minecraft:elytra>, 5);
 
-// Blank Runes > 50 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_runes", [<item:lightmanscurrency:coin_iron>*5 % 100], <item:quark:blank_rune>, 0.0, 2000);
+// Music Discs -> 25 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_copper>*25 % 100], <tag:items:minecraft:music_discs>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_copper>*25 % 100], <tag:items:minecraft:music_discs>, 5);
 
-// Bouncy Balls > 5 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0.0, 2000);
+// Blank Runes -> 50 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_runes", [<item:lightmanscurrency:coin_iron>*5 % 100], <item:quark:blank_rune>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_blank_runes2", [<item:lightmanscurrency:coin_iron>*5 % 100], <item:quark:blank_rune>, 5);
+
+// Bouncy Balls -> 5 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_bouncy_balls2", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 5);
+
+// Unholy Grail -> 1,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_unholy_grail", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_unholy_grail2", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 5);
+
+// Architect's Inkwell > 1,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_inkwell", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_inkwell2", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 5);
+
 
 
 # Remove the Coin Minter since it's now useless
 craftingTable.remove(<item:lightmanscurrency:coinmint>);
+mods.jei.JEI.hideIngredient(<item:lightmanscurrency:coinmint>);
 
 print("currency.zs loaded");

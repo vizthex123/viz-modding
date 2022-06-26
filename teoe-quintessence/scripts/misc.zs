@@ -17,6 +17,20 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// New Quarry (fueled & powered) recipes
+craftingTable.remove(<item:squarry:fuel_quarry>);
+craftingTable.remove(<item:squarry:powered_quarry>);
+
+craftingTable.addShaped("fueled_quarry", <item:squarry:fuel_quarry>,
+	[[<tag:items:minecraft:coals>, <item:create:zinc_ingot>, <tag:items:minecraft:coals>], 
+	[<tag:items:teoe:furnace>, <item:thermal:lead_ingot>, <tag:items:teoe:furnace>], 
+	[<tag:items:minecraft:coals>, <item:create:zinc_ingot>, <tag:items:minecraft:coals>]]);
+
+mods.extendedcrafting.TableCrafting.addShaped("powered_quarry", 1, <item:squarry:powered_quarry>,
+	[[<item:thermal:constantan_ingot>, <item:minecraft:quartz>, <item:thermal:bronze_ingot>], 
+	[<item:minecraft:quartz>, <item:squarry:fuel_quarry>, <item:minecraft:quartz>], 
+	[<item:thermal:bronze_ingot>, <item:minecraft:quartz>, <item:thermal:constantan_ingot>]]);
+
 // Vanilla ladder recipe
 craftingTable.addShaped("ladder_sticks", <item:minecraft:ladder>*3,
     [[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>],

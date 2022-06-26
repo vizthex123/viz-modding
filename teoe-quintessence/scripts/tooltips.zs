@@ -33,8 +33,30 @@ val clf = "\u00A7r";
 <item>.addTooltip("tip");
 */
 
-// Tooltips
-<item:deepresonance:spent_filter_material>.addTooltip(gold + "Can be recycled into normal filters using Clay in an Induction Furnace");
+
+# Overslime restoration items
+<item:minecraft:slime_ball>.addTooltip(green + "Restores 10 points of Overslime");
+<item:minecraft:slime_block>.addTooltip(green + "Restores 108 points of Overslime");
+<item:tconstruct:earth_congealed_slime>.addTooltip(green + "Restores 45 points of Overslime");
+
+<item:tconstruct:ichor_slime_ball>.addTooltip(green + "Restores 100 points of Overslime");
+<item:tconstruct:ichor_slime>.addTooltip(green + "Restores 1,080 points of Overslime");
+<item:tconstruct:ichor_congealed_slime>.addTooltip(green + "Restores 450 points of Overslime");
+
+<item:tconstruct:sky_slime_ball>.addTooltip(green + "Restores 40 points of Overslime");
+<item:tconstruct:sky_slime>.addTooltip(green + "Restores 432 points of Overslime");
+<item:tconstruct:sky_congealed_slime>.addTooltip(green + "Restores 180 points of Overslime");
+
+
+
+# Recycling tooltips
+<item:additionaladditions:depth_meter>.addTooltip(aqua + "Can be recycled in an Induction Furnace");
+<item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Lime in an Induction Furnace");
+
+
+# Coinification tooltips
+<item:enigmaticlegacy:unholy_grail>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:enigmaticlegacy:lore_inscriber>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 
 
 print("tooltips.zs loaded");

@@ -11,12 +11,12 @@
 		ftbranks.name_format: "<&bVIP {name}&r>"
 	}
 	dragonslayer: {
-		name: "Dragonslayer"
+		name: "slayer"
 		power: 10
 		ftbranks.name_format: "<&dDragonslayer {name}&r>"
 	}
 	essence_gatherer: {
-		name: "Essence_Gatherer"
+		name: "gatherer"
 		power: 20
 		ftbranks.name_format: "<&cEssence Gatherer {name}&r>"
 	}

@@ -235,6 +235,15 @@ print("1_oredict.zs loading...");
 <tag:items:forge:tooltips/durability>.add(<item:additionaladditions:crossbow_with_spyglass>);
 
 
+<tag:items:forge:tooltips/custom>.add(<item:create:sand_paper>);
+<tag:items:forge:tooltips/durability>.add(<item:create:sand_paper>);
+
+<tag:items:forge:tooltips/custom>.add(<item:create:red_sand_paper>);
+<tag:items:forge:tooltips/durability>.add(<item:create:red_sand_paper>);
+
+<tag:items:forge:tooltips/custom>.add(<item:createaddition:diamond_grit_sandpaper>);
+<tag:items:forge:tooltips/durability>.add(<item:createaddition:diamond_grit_sandpaper>);
+
 
 /*
 <tag:items:randomium:whitelist>.add(<item>);
@@ -385,5 +394,10 @@ mods are blacklisted in the config
 <tag:items:byg:purple_dye>.remove(<item:byg:tall_allium>);
 <tag:items:byg:pink_dye>.remove(<item:byg:tall_pink_allium>);
 <tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
+
+<tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
+
+<tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
+<tag:items:forge:chests>.add(<item:ae2:smooth_sky_stone_chest>);
 
 print("1_oredict.zs loaded");

@@ -13,6 +13,7 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+
 // Fix the Enchantment Extractor being so expensive for no reason
 craftingTable.remove(<item:industrialforegoing:enchantment_extractor>);
 craftingTable.addShaped("enchantment_extractor", <item:industrialforegoing:enchantment_extractor>,
@@ -30,7 +31,7 @@ craftingTable.addShaped("furnace_generator", <item:industrialforegoing:mycelial_
     [<item:industrialforegoing:machine_frame_simple>, <item:thermal:rf_coil>, <item:thermal:dynamo_stirling>]]);
 
 craftingTable.addShaped("furnace_generator_coke", <item:industrialforegoing:mycelial_furnace>,
-    [[<item:minecraft:air>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:minecraft:air>],
+    [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
     [<item:thermal:coal_coke_block>, <tag:items:teoe:furnace>, <item:thermal:coal_coke_block>],
     [<item:minecraft:redstone>, <item:thermal:dynamo_stirling>, <item:minecraft:redstone>]]);
 

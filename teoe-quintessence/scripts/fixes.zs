@@ -9,10 +9,29 @@ craftingTable.addShapeless("name", <item:output>, [<item>]);
 craftingTable.addShaped("name", <item:output>,
     [[<item>, <item>, <item>],
     [<item>, <item>, <item>],
-    [<item>, <item, <item>]]);
+    [<item>, <item>, <item>]]);
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
+
+// Fix the Sticky Multi-Piston not using tags
+craftingTable.removeByName("essentials:multi_piston_sticky");
+craftingTable.addShapeless("sticky_multi_piston", <item:essentials:multi_piston_sticky>, [<item:essentials:multi_piston>, <tag:items:forge:slimeballs>]);
+
+// Fix the repeater recipes not using tags
+craftingTable.remove(<item:minecraft:repeater>);
+craftingTable.addShaped("repeater", <item:minecraft:repeater>,
+    [[<item:minecraft:redstone_torch>, <item:minecraft:redstone>, <item:minecraft:redstone_torch>],
+    [<tag:items:forge:stone>, <tag:items:forge:stone>, <tag:items:forge:stone>]]);
+
+craftingTable.addShaped("repeater_quark", <item:minecraft:repeater>,
+    [[<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:redstone>],
+    [<tag:items:balm:wooden_rods>, <item:minecraft:redstone>, <tag:items:balm:wooden_rods>],
+    [<tag:items:forge:stone>, <tag:items:forge:stone>, <tag:items:forge:stone>]]);
+
+// Fix the duplicate packing tape recipe
+craftingTable.remove(<item:packingtape:tape>);
+craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<tag:items:forge:slimeballs>, <item:minecraft:string>, <item:minecraft:paper>]);
 
 // Duplicate Fire Charge recipe
 craftingTable.remove(<item:minecraft:fire_charge>);

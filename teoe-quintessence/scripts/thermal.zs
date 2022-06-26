@@ -13,21 +13,39 @@ craftingTable.removeByName("name");
 */
 
 // Restore the old Cresent Hammer recipe
-craftingTable.remove(<item:thermal:wrench>);
-craftingTable.addShaped("crescent_hammer", <item:thermal:wrench>,
+mods.extendedcrafting.TableCrafting.addShaped("crescent_hammer", 1, <item:thermal:wrench>,
     [[<item:minecraft:iron_ingot>, <item:minecraft:air>, <item:minecraft:iron_ingot>],
     [<item:minecraft:air>, <item:thermal:tin_ingot>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>]]);
 
 // Alt Redstone Furnace recipe
+// Lets you replace a Furnace and Smoker
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
     [<item:minecraft:smoker>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <tag:items:teoe:furnace>],
     [<tag:items:forge:gears/copper>, <item:thermal:rf_coil>, <tag:items:forge:gears/copper>]]);
 
-# Re-does the recipes for Rubber
+// Make the Gearworking Die from any gears
+// Not sure why this isn't the default tbh...
+craftingTable.remove(<item:thermal:press_gear_die>);
+craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>, 
+    [[<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>],
+    [<item:thermal:invar_plate>, <tag:items:forge:gears>, <item:thermal:invar_plate>],
+    [<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>]]);
+
+// Sawdust > Paper
+craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>, 
+    [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
+
+
+# Replace rubber recipes to add more support
 // Flowers
 craftingTable.removeByName("thermal:rubber_from_dandelion");
+craftingTable.addShaped("rubber_saplings", <item:thermal:rubber>,
+    [[<tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>],
+    [<tag:items:minecraft:saplings>, <item:minecraft:water_bucket>, <tag:items:minecraft:saplings>],
+    [<tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>]]);
+
 craftingTable.addShaped("rubber_flowers", <item:thermal:rubber>,
     [[<tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>],
     [<tag:items:minecraft:small_flowers>, <item:minecraft:water_bucket>, <tag:items:minecraft:small_flowers>],
@@ -53,22 +71,10 @@ craftingTable.addShaped("rubber_slimy_vines", <item:thermal:rubber>*4,
     [<tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>]]);
 
 // Glow Lichen
-craftingTable.addShaped("rubber_glow", <item:thermal:rubber>*4,
+craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
     [[<item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>],
     [<item:minecraft:glow_lichen>, <item:minecraft:water_bucket>, <item:minecraft:glow_lichen>],
     [<item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>]]);
-
-// Make the Gearworking Die from any gears
-// Not sure why this isn't the default tbh...
-craftingTable.remove(<item:thermal:press_gear_die>);
-craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>, 
-    [[<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>],
-    [<item:thermal:invar_plate>, <tag:items:forge:gears>, <item:thermal:invar_plate>],
-    [<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>]]);
-
-// Sawdust > Paper
-craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>, 
-    [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
 
 
 
@@ -83,15 +89,11 @@ craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>,
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 */
 
-// Process Limestone into Bones (Fossils)
-// TODO: Replace with Lime when ContentTweaker updates
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_limestone", [<item:minecraft:bone> % 50], <item:quark:limestone>|<item:create:limestone>, 0.0, 4000);
-
 // Pulverize Certus Quartz into Dust
 <recipetype:thermal:pulverizer>.addRecipe("certus_dust", [<item:ae2:certus_quartz_dust> % 100], <item:ae2:certus_quartz_crystal>|<item:ae2:charged_certus_quartz_crystal>, 0, 2000);
 
 // Fractionate Sugar Water into Water
-<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar>%50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
+<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...

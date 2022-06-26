@@ -11,3 +11,10 @@ Hexagon - exploration
 
 
 wallet slot is at 100, 59, open button is at 20, 5 (x, y)
+
+
+Server Pack Exporting:
+
+Remove Rubidium & Legendary Tooltips (Causes a server crash)
+Remove excess JourneyMap folders
+Remove JEI world config
