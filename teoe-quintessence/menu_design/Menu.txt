@@ -1,0 +1,117 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 106
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 382b9ab7-bfbb-4cc1-af35-8a59e15780151656819380912
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = 29f2e7a6-8a6f-4189-83c2-466bd003a6811656819380912
+  y = 243
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 251
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 285c3a7f-3588-41cf-abaf-7f60588bce5f1656819380912
+  y = 265
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 343
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 91910817-cbcc-4181-b6a0-e421c7279ff81656819380912
+  y = 171
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 103
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 782af0a2-8774-4144-9727-7eb1ffa859f91656819380912
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = top-left
+  splash_color = #ffff00
+  hidden = false
+  x = 410
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 6fd33c18-382f-4fd9-964d-69d2fbaa818d1656819380912
+  y = 84
+  height = 30
+}
+
+customization {
+  orientation = top-left
+  delayappearanceseconds = 1.0
+  path = config/fancymenu/customization/teoe_menu.png
+  fadein = true
+  fadeinspeed = 1.0
+  x = 0
+  width = 480
+  action = addtexture
+  actionid = 6f48ccbd-09ef-4b7d-9acf-baf073793b911656819422070
+  y = 20
+  delayappearance = true
+  delayappearanceeverytime = false
+  height = 80
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\customization\discord.png
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = Discord
+  x = 116
+  width = 20
+  actionid = c8bd8fe8-3a9f-4414-836d-4c8bcdb96acc1656820279671
+  action = addbutton
+  y = 178
+  backgroundnormal = config\fancymenu\customization\discord.png
+  value = https://discord.gg/NtwzA6X
+  height = 24
+}
+

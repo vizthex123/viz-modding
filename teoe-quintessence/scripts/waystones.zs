@@ -23,22 +23,22 @@ craftingTable.removeByName("waystones:sharestone");
 
 mods.extendedcrafting.TableCrafting.addShaped("waystone", 1, <item:waystones:waystone>,
 	[[<item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
+	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
 	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("mossy_waystone", 1, <item:waystones:mossy_waystone>,
 	[[<item:minecraft:air>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:mossy_stone_bricks>, <item:waystones:warp_stone>, <item:minecraft:mossy_stone_bricks>], 
+	[<item:minecraft:mossy_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:mossy_stone_bricks>], 
 	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("sandy_waystone", 1, <item:waystones:sandy_waystone>,
 	[[<item:minecraft:air>, <item:minecraft:chiseled_sandstone>, <item:minecraft:air>], 
-	[<item:minecraft:chiseled_sandstone>, <item:waystones:warp_stone>, <item:minecraft:chiseled_sandstone>], 
+	[<item:minecraft:chiseled_sandstone>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:chiseled_sandstone>], 
 	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("sharestone", 1, <item:waystones:sharestone>,
 	[[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
+	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
 	[<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
 
 # New Portalstone recipe
@@ -46,32 +46,34 @@ mods.extendedcrafting.TableCrafting.addShaped("sharestone", 1, <item:waystones:s
 craftingTable.remove(<item:waystones:portstone>);
 mods.extendedcrafting.TableCrafting.addShaped("portstone", 1, <item:waystones:portstone>,
 	[[<item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
+	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
 	[<item:minecraft:polished_andesite>, <item:minecraft:polished_andesite>, <item:minecraft:polished_andesite>]]);
 	
 # New Warp Plate recipe
 craftingTable.remove(<item:waystones:warp_plate>);
 mods.extendedcrafting.TableCrafting.addShaped("warp_plate", 1, <item:waystones:warp_plate>,
 	[[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_dust>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:waystones:warp_dust>, <item:waystones:bound_scroll>, <item:waystones:warp_dust>], 
+	[<item:waystones:warp_dust>, <item:waystones:return_scroll>|<item:waystones:bound_scroll>|<item:waystones:warp_scroll>, <item:waystones:warp_dust>], 
 	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_dust>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>]]);
 
 # New Warp Stone recipe
 craftingTable.remove(<item:waystones:warp_stone>);
 mods.extendedcrafting.TableCrafting.addShaped("warp_stone", 1, <item:waystones:warp_stone>,
 	[[<item:waystones:warp_dust>, <item:minecraft:ender_pearl>, <item:waystones:warp_dust>], 
-	[<item:minecraft:ender_pearl>, <item:twilightforest:carminite>|<item:minecraft:emerald>|<item:botania:dragonstone>|<item:rftoolsbase:infused_diamond>, <item:minecraft:ender_pearl>], 
+	[<item:minecraft:ender_pearl>, <item:malum:processed_soulstone>|<item:twilightforest:carminite>|<item:minecraft:emerald>|<item:botania:dragonstone>|<item:rftoolsbase:infused_diamond>, <item:minecraft:ender_pearl>], 
 	[<item:waystones:warp_dust>, <item:minecraft:ender_pearl>, <item:waystones:warp_dust>]]);
 
 # New Warp Dust recipes
 # Adds tag support, lets it use ender pearl dust, and has alternate recipes
 craftingTable.remove(<item:waystones:warp_dust>);
+craftingTable.addShapeless("warp_dust_dust", <item:waystones:warp_dust>, [<item:botania:mana_powder>|<tag:items:forge:dusts/ender_pearl>, <tag:items:forge:dyes/purple>]);
 craftingTable.addShapeless("warp_dust", <item:waystones:warp_dust>*4, [<item:minecraft:ender_pearl>, <tag:items:forge:dyes/purple>]);
+
 mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_mana", 1, <item:waystones:warp_dust>*6, [<item:botania:mana_pearl>, <tag:items:forge:dyes/purple>]);
 mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_pixie", 1, <item:waystones:warp_dust>*8, [<item:botania:pixie_dust>, <tag:items:forge:dyes/purple>]);
-mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_infused", 1, <item:waystones:warp_dust>*12, [<item:rftoolsbase:infused_enderpearl>, <tag:items:forge:dyes/purple>]);
-
-craftingTable.addShapeless("warp_double_dust", <item:waystones:warp_dust>, [<tag:items:forge:dusts/ender_pearl>, <tag:items:forge:dyes/purple>]);
+mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_infused", 1, <item:waystones:warp_dust>*16, [<item:rftoolsbase:infused_enderpearl>, <tag:items:forge:dyes/purple>, <tag:items:forge:dyes/purple>]);
+mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_magic", 1, <item:waystones:warp_dust>*32, [<item:ob_core:magic_dust>, <tag:items:forge:dyes/purple>]);
+mods.extendedcrafting.TableCrafting.addShapeless("warp_dust_astral", 1, <item:waystones:warp_dust>*64, [<item:enigmaticlegacy:astral_dust>, <tag:items:forge:dyes/purple>, <tag:items:forge:dyes/purple>]);
 
 # Make Scrolls require Warp Dust
 // Same recipes otherwise

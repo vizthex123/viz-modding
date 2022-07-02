@@ -20,9 +20,6 @@ craftingTable.removeByName("minecraft:comparator");
 craftingTable.removeByName("minecraft:sticky_piston");
 craftingTable.removeByName("malum:lead_from_sapballs");
 craftingTable.removeByName("malum:sticky_piston_from_sapballs");
-craftingTable.removeByName("lightmanscurrency:coinjar_piggy_bank1");
-craftingTable.removeByName("nourished_nether:netherite_nuggets_to_ingot");
-craftingTable.removeByName("thermal:storage/netherite_ingot_from_nuggets");
 craftingTable.removeByName("twilightforest:equipment/fiery_ingot_crafting");
 smithing.removeByName("twilightforest:material/fiery_iron_ingot_reversed");
 

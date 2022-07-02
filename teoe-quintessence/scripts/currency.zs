@@ -25,9 +25,9 @@ mods.jei.JEI.addDescription(<item:minecraft:paper>, ["Can be used to make ticket
 # New Trading Core recipe
 craftingTable.remove(<item:lightmanscurrency:trading_core>);
 craftingTable.addShaped("trading_core", <item:lightmanscurrency:trading_core>,
-    [[<tag:items:lightmanscurrency:coin>, <item:minecraft:redstone>, <tag:items:lightmanscurrency:coin>],
+    [[<tag:items:lightmanscurrency:coin>, <tag:items:forge:dusts>, <tag:items:lightmanscurrency:coin>],
     [<tag:items:lightmanscurrency:coin>, <tag:items:forge:ingots>, <tag:items:lightmanscurrency:coin>],
-    [<tag:items:lightmanscurrency:coin>, <item:minecraft:redstone>, <tag:items:lightmanscurrency:coin>]]);
+    [<tag:items:lightmanscurrency:coin>, <tag:items:forge:dusts>, <tag:items:lightmanscurrency:coin>]]);
 
 
 # New wallet recipes
@@ -159,13 +159,13 @@ craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 
 <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration);
 */
-// Elytra -> 100 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_gold> % 100], <item:minecraft:elytra>, 0.0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_gold> % 100], <item:minecraft:elytra>, 5);
+// Elytra -> 2,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 5);
 
-// Music Discs -> 25 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_copper>*25 % 100], <tag:items:minecraft:music_discs>, 0.0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_copper>*25 % 100], <tag:items:minecraft:music_discs>, 5);
+// Music Discs -> 100 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 5);
 
 // Blank Runes -> 50 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_blank_runes", [<item:lightmanscurrency:coin_iron>*5 % 100], <item:quark:blank_rune>, 0.0, 3000);
@@ -175,6 +175,10 @@ craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 <recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0.0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_bouncy_balls2", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 5);
 
+// Throwing Card -> 1 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_throwing_cards", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_throwing_cards2", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 5);
+
 // Unholy Grail -> 1,000 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_unholy_grail", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 0.0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_unholy_grail2", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 5);
@@ -183,7 +187,9 @@ craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 <recipetype:thermal:pulverizer>.addRecipe("coinify_inkwell", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 0.0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_inkwell2", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 5);
 
-
+// Keystone of The Oblivion -> 5,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_keystone", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 0.0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_keystone2", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 5);
 
 # Remove the Coin Minter since it's now useless
 craftingTable.remove(<item:lightmanscurrency:coinmint>);

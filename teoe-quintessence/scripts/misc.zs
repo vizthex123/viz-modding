@@ -17,7 +17,14 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-// New Quarry (fueled & powered) recipes
+// Nature's Compass
+craftingTable.remove(<item:naturescompass:naturescompass>);
+craftingTable.addShaped("nature_compass", <item:naturescompass:naturescompass>,
+    [[<item:minecraft:air>, <item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>, <item:minecraft:air>],
+    [<item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>, <item:minecraft:compass>, <item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>],
+    [<item:minecraft:air>, <item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>, <item:minecraft:air>]]);
+
+// New Quarry recipes (fueled & powered) 
 craftingTable.remove(<item:squarry:fuel_quarry>);
 craftingTable.remove(<item:squarry:powered_quarry>);
 

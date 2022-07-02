@@ -89,6 +89,9 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 */
 
+// Smelt Illager Flesh into Leather
+<recipetype:thermal:furnace>.addRecipe("leather_illager", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>*2, 0, 4000);
+
 // Pulverize Certus Quartz into Dust
 <recipetype:thermal:pulverizer>.addRecipe("certus_dust", [<item:ae2:certus_quartz_dust> % 100], <item:ae2:certus_quartz_crystal>|<item:ae2:charged_certus_quartz_crystal>, 0, 2000);
 
@@ -97,7 +100,7 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...
-<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 0, 1000);
+<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 50], <tag:items:minecraft:planks>, 0, 1000);
 
 // Pyrolyze BYG coals into coal coke
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke> % 100, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
@@ -158,9 +161,10 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.4, 0.3);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
 
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.0, 2.5, 0.5, 0.8); // Idk the min chance for Cinnabar so let's hope this is close enough
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.8); // Idk the min chance for Cinnabar so let's hope this is close enough
 
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 1.25, 1.0, 0.85, 0.5, 0.5);
+
 
 # Induction Smelter
 <recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.75);
@@ -170,7 +174,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 
 # Phytogenic Insolator
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:thermal:sawdust>, 1.05, 1.1, 0.9, 0.5, 0.75);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:compressed_sawdust>, 1.1, 1.15, 0.85, 0.5, 0.75);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
 
 

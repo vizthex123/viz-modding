@@ -14,6 +14,15 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+// Fix the Netherite Nuggets > Ingot recipe
+craftingTable.removeByName("nourished_nether:netherite_nuggets_to_ingot");
+craftingTable.removeByName("thermal:storage/netherite_ingot_from_nuggets");
+craftingTable.removeByName("tconstruct:common/materials/netherite_ingot_from_nuggets");
+craftingTable.addShaped("netherite_ingot", <item:minecraft:netherite_ingot>,
+    [[<tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>],
+    [<tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>],
+    [<tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>, <tag:items:forge:nuggets/netherite>]]);
+
 // Fix the Sticky Multi-Piston not using tags
 craftingTable.removeByName("essentials:multi_piston_sticky");
 craftingTable.addShapeless("sticky_multi_piston", <item:essentials:multi_piston_sticky>, [<item:essentials:multi_piston>, <tag:items:forge:slimeballs>]);

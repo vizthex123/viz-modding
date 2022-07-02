@@ -3,13 +3,11 @@
 print("thermal_dynamos.zs loading...");
 
 # Stirling
-# I think CraftTweaker's changes aren't registered by TE
-<recipetype:thermal:stirling_fuel>.removeFuel(<item:kubejs:mdf>);
+# I think CraftTweaker's changes aren't registered by TE, oof
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:minecraft:dried_kelp_block>);
 
 <recipetype:thermal:stirling_fuel>.addFuel("kelp_block", <item:minecraft:dried_kelp_block>, 40000);
 <recipetype:thermal:stirling_fuel>.addFuel("bamboo_block", <item:thermal:bamboo_block>, 5000);
-<recipetype:thermal:stirling_fuel>.addFuel("mdf_fuel", <item:kubejs:mdf>, 2000);
 
 
 # Lapidary
@@ -18,6 +16,8 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.removeFuel(<item:minecraft:amethyst_shard>);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("nether_quartz", <item:minecraft:quartz>, 50000);
+<recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz", <item:nourished_nether:soul_quartz>, 60000);
+
 <recipetype:thermal:lapidary_fuel>.addFuel("prismarine_shard_fuel", <item:minecraft:prismarine_shard>, 50000);
 <recipetype:thermal:lapidary_fuel>.addFuel("amethyst_fuel", <item:minecraft:amethyst_shard>, 30000);
 

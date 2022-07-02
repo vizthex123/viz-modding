@@ -4,22 +4,27 @@ import crafttweaker.api.tag.MCTag;
 
 print("thermal_recycling.zs loading...");
 
+# Flower Pot
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_flower_pot", [<item:minecraft:clay_ball> % 100, <item:minecraft:clay_ball> % 50], <item:minecraft:flower_pot>, 0, 4000);
+
+############################################################
 # Horse Armours
 // Iron
-<recipetype:thermal:smelter>.addRecipe("smelt_iron_horse_armour", [<item:minecraft:iron_ingot>*3 % 75], [<item:minecraft:iron_horse_armor>], 10, 3000);
+<recipetype:thermal:smelter>.addRecipe("smelt_iron_horse_armour", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:iron_ingot>*3 % 50], [<item:minecraft:iron_horse_armor>], 10, 3000);
 
 // Gold
-<recipetype:thermal:smelter>.addRecipe("smelt_gold_horse_armour", [<item:minecraft:gold_ingot>*3 % 75], [<item:minecraft:golden_horse_armor>], 20, 3500);
+<recipetype:thermal:smelter>.addRecipe("smelt_gold_horse_armour", [<item:minecraft:gold_ingot>*3 % 100, <item:minecraft:gold_ingot>*3 % 50], [<item:minecraft:golden_horse_armor>], 20, 3500);
 
 // Diamond
-<recipetype:thermal:smelter>.addRecipe("smelt_diamond_horse_armour", [<item:minecraft:diamond>*3 % 75], [<item:minecraft:diamond_horse_armor>], 30, 4000);
+<recipetype:thermal:smelter>.addRecipe("smelt_diamond_horse_armour", [<item:minecraft:diamond>*3 % 100, <item:minecraft:diamond>*3 % 50], [<item:minecraft:diamond_horse_armor>], 30, 4000);
 
 // Ametrine
-<recipetype:thermal:smelter>.addRecipe("smelt_ametrine_horse_armour", [<item:byg:ametrine_gems>*3 % 75], [<item:byg:ametrine_horse_armor>], 30, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_ametrine_horse_armour", [<item:byg:ametrine_gems>*3 % 100, <item:byg:ametrine_gems>*3 % 50], [<item:byg:ametrine_horse_armor>], 30, 6000);
 
 // Pendorite
-<recipetype:thermal:smelter>.addRecipe("smelt_pendorite_horse_armour", [<item:byg:pendorite_ingot>*3 % 75], [<item:byg:ametrine_horse_armor>], 30, 8000);
-############################################################
+<recipetype:thermal:smelter>.addRecipe("smelt_pendorite_horse_armour", [<item:byg:pendorite_ingot>*3 % 100, <item:byg:pendorite_ingot>*3 % 50], [<item:byg:pendorite_horse_armor>], 30, 8000);
+
+
 
 # Bell
 <recipetype:thermal:smelter>.addRecipe("smelt_bell", [<item:minecraft:gold_ingot>*2 % 100], [<item:minecraft:bell>], 10, 2000);
@@ -62,6 +67,12 @@ print("thermal_recycling.zs loading...");
 
 # Magnetic Ring
 <recipetype:thermal:smelter>.addRecipe("smelt_magnet_ring", [<item:minecraft:gold_ingot> % 75, <item:minecraft:iron_ingot>*4 % 100, <item:minecraft:diamond> % 25, <item:minecraft:redstone> % 70], [<item:enigmaticlegacy:magnet_ring>], 0, 8000);
+
+# Heart of the Sea
+<recipetype:thermal:smelter>.addRecipe("process_heart", [<item:minecraft:emerald>*4 % 100, <item:minecraft:emerald>*2 % 50], [<item:minecraft:heart_of_the_sea>], 0, 8000);
+
+# Tridents
+<recipetype:thermal:smelter>.addRecipe("recycle_trident", [<item:minecraft:prismarine_shard> % 100, <item:minecraft:prismarine_shard> % 50], [<item:minecraft:trident>.anyDamage()], 0, 4000);
 
 # Recycle Spent Filters
 <recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, <item:kubejs:lime>], 0, 8000);

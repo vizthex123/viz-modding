@@ -5,6 +5,7 @@ import crafttweaker.api.tag.MCTag;
 print("qol.zs loading...");
 
 /*
+craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 
 craftingTable.addShapeless("recipeName", <output>, [<inputs>]);
@@ -20,6 +21,30 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
+
+// Reduces the cost of the tier 2 cooking book, and adds tag support
+craftingTable.remove(<item:cookingforblockheads:crafting_book>);
+craftingTable.addShaped("cooking_2", <item:cookingforblockheads:crafting_book>, 
+    [[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
+    [<tag:items:forge:workbenches>, <item:cookingforblockheads:recipe_book>, <tag:items:forge:workbenches>],
+    [<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]]);
+
+# Smelt modded bones into Gelatin
+# Campfires takes 2x the time
+campfire.addRecipe("campfire_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 1200);
+campfire.addRecipe("campfire_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 800);
+campfire.addRecipe("campfire_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:ob_aquamirae:spinefish_bones>|<item:food_enhancements:fish_bones>, 0.25, 600);
+
+furnace.addRecipe("smelt_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 600);
+furnace.addRecipe("smelt_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 400);
+furnace.addRecipe("smelt_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:ob_aquamirae:spinefish_bones>|<item:food_enhancements:fish_bones>, 0.25, 300);
+
+smoker.addRecipe("smoke_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 300);
+smoker.addRecipe("smoke_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 200);
+smoker.addRecipe("smoke_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:ob_aquamirae:spinefish_bones>|<item:food_enhancements:fish_bones>, 0.25, 150);
+
+// Use Sharp Bones from Aquamirae to make Bowls of Fish Bones
+craftingTable.addShapeless("fish_bones_bowl", <item:food_enhancements:bowl_of_fish_bones>, [<item:food_enhancements:bowl_of_water>, <item:ob_aquamirae:spinefish_bones>]);
 
 # Change torch recipes
 # Result is half the burn time of the item (e.g. Coal smelts 8 items, so it makes 4 torches)

@@ -8,7 +8,37 @@ print("1_oredict.zs loading...");
 <tag>.remove(<item>);
 */
 
-# Boats
+
+# Cooking for Blockheads' items (quests)
+<tag:items:teoe:upgrade>.add(<item:cookingforblockheads:heating_unit>);
+<tag:items:teoe:upgrade>.add(<item:cookingforblockheads:ice_unit>);
+<tag:items:teoe:upgrade>.add(<item:cookingforblockheads:preservation_chamber>);
+
+<tag:items:teoe:storage>.add(<item:cookingforblockheads:counter>);
+<tag:items:teoe:storage>.add(<item:cookingforblockheads:cabinet>);
+
+<tag:items:teoe:decor>.add(<item:cookingforblockheads:corner>);
+<tag:items:teoe:decor>.add(<item:cookingforblockheads:hanging_corner>);
+
+
+
+# Malum's pedestals & totem bases (quests)
+<tag:items:teoe:pedestal>.add(<item:malum:tainted_rock_item_pedestal>);
+<tag:items:teoe:pedestal>.add(<item:malum:twisted_rock_item_pedestal>);
+<tag:items:teoe:pedestal>.add(<item:malum:runewood_item_pedestal>);
+<tag:items:teoe:pedestal>.add(<item:malum:soulwood_item_pedestal>);
+
+<tag:items:teoe:pedestal>.add(<item:malum:tainted_rock_item_stand>);
+<tag:items:teoe:pedestal>.add(<item:malum:twisted_rock_item_stand>);
+<tag:items:teoe:pedestal>.add(<item:malum:runewood_item_stand>);
+<tag:items:teoe:pedestal>.add(<item:malum:soulwood_item_stand>);
+
+<tag:items:teoe:base>.add(<item:malum:runewood_totem_base>);
+<tag:items:teoe:base>.add(<item:malum:soulwood_totem_base>);
+
+
+
+# Boats (quest & recipe)
 <tag:items:minecraft:boats>.add(<item:byg:aspen_boat>);
 <tag:items:minecraft:boats>.add(<item:byg:baobab_boat>);
 <tag:items:minecraft:boats>.add(<item:byg:blue_enchanted_boat>);
@@ -34,6 +64,7 @@ print("1_oredict.zs loading...");
 
 <tag:items:minecraft:boats>.add(<item:quark:blossom_boat>);
 <tag:items:minecraft:boats>.add(<item:quark:azalea_boat>);
+
 
 
 # TEoE Planks
@@ -97,6 +128,7 @@ print("1_oredict.zs loading...");
 <tag:items:teoe:planks>.add(<item:naturesaura:ancient_planks>);
 
 
+
 # Vines
 <tag:items:teoe:vines>.add(<item:minecraft:vine>);
 <tag:items:teoe:vines>.add(<item:minecraft:weeping_vines>);
@@ -110,6 +142,7 @@ print("1_oredict.zs loading...");
 
 <tag:items:teoe:slimy_vines>.add(<item:tconstruct:sky_slime_vine>);
 <tag:items:teoe:slimy_vines>.add(<item:tconstruct:ender_slime_vine>);
+
 
 
 # Expands the list of accepted P2P tunnel items
@@ -136,114 +169,6 @@ print("1_oredict.zs loading...");
 <tag:items:minecraft:music_discs>.add(<item:conjurer_illager:music_disc_delve_deeper>);
 <tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_honey_bee_rat_faced_boy>);
 <tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov>);
-
-
-
-# Obscuria Tooltips
-<tag:items:forge:tooltips/custom>.add(<item:thermal:flux_drill>);
-<tag:items:forge:tooltips/custom>.add(<item:thermal:flux_saw>);
-<tag:items:forge:tooltips/custom>.add(<item:thermal:flux_capacitor>);
-<tag:items:forge:tooltips/custom>.add(<item:thermal:flux_magnet>);
-<tag:items:forge:tooltips/custom>.add(<item:thermal:rf_potato>);
-
-
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:bow>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:elytra>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:shield>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:shears>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:trident>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:crossbow>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:flint_and_steel>);
-<tag:items:forge:tooltips/custom>.add(<item:minecraft:fishing_rod>);
-
-<tag:items:forge:tooltips/custom>.add(<item:quark:pickarang>);
-<tag:items:forge:tooltips/custom>.add(<item:quark:flamerang>);
-<tag:items:forge:tooltips/custom>.add(<item:ae2:certus_quartz_cutting_knife>);
-<tag:items:forge:tooltips/custom>.add(<item:ae2:nether_quartz_cutting_knife>);
-
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:wood_paxel>);
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:stone_paxel>);
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:iron_paxel>);
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:golden_paxel>);
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:diamond_paxel>);
-<tag:items:forge:tooltips/custom>.add(<item:easypaxellite:netherite_paxel>);
-
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:ore_magnet>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:crumble_horn>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:block_and_chain>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:knightmetal_shield>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:peacock_feather_fan>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:triple_bow>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:seeker_bow>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:ender_bow>);
-<tag:items:forge:tooltips/custom>.add(<item:twilightforest:ice_bow>);
-
-<tag:items:forge:tooltips/custom>.add(<item:botania:crystal_bow>);
-<tag:items:forge:tooltips/custom>.add(<item:botania:livingwood_bow>);
-<tag:items:forge:tooltips/custom>.add(<item:botania:manasteel_shears>);
-<tag:items:forge:tooltips/custom>.add(<item:botania:elementium_shears>);
-
-<tag:items:forge:tooltips/custom>.add(<item:reliquary:shears_of_winter>);
-<tag:items:forge:tooltips/custom>.add(<item:the_bumblezone:stinger_spear>);
-<tag:items:forge:tooltips/custom>.add(<item:additionaladditions:crossbow_with_spyglass>);
-
-<tag:items:forge:tooltips/energy>.add(<item:thermal:flux_drill>);
-<tag:items:forge:tooltips/energy>.add(<item:thermal:flux_saw>);
-<tag:items:forge:tooltips/energy>.add(<item:thermal:flux_capacitor>);
-<tag:items:forge:tooltips/energy>.add(<item:thermal:flux_magnet>);
-<tag:items:forge:tooltips/energy>.add(<item:thermal:rf_potato>);
-
-
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:bow>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:elytra>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:shield>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:shears>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:trident>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:crossbow>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:flint_and_steel>);
-<tag:items:forge:tooltips/durability>.add(<item:minecraft:fishing_rod>);
-
-<tag:items:forge:tooltips/durability>.add(<item:quark:pickarang>);
-<tag:items:forge:tooltips/durability>.add(<item:quark:flamerang>);
-<tag:items:forge:tooltips/durability>.add(<item:ae2:certus_quartz_cutting_knife>);
-<tag:items:forge:tooltips/durability>.add(<item:ae2:nether_quartz_cutting_knife>);
-
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:wood_paxel>);
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:stone_paxel>);
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:iron_paxel>);
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:golden_paxel>);
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:diamond_paxel>);
-<tag:items:forge:tooltips/durability>.add(<item:easypaxellite:netherite_paxel>);
-
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:ore_magnet>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:crumble_horn>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:block_and_chain>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:knightmetal_shield>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:peacock_feather_fan>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:triple_bow>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:seeker_bow>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:ender_bow>);
-<tag:items:forge:tooltips/durability>.add(<item:twilightforest:ice_bow>);
-
-<tag:items:forge:tooltips/durability>.add(<item:botania:crystal_bow>);
-<tag:items:forge:tooltips/durability>.add(<item:botania:livingwood_bow>);
-<tag:items:forge:tooltips/durability>.add(<item:botania:manasteel_shears>);
-<tag:items:forge:tooltips/durability>.add(<item:botania:elementium_shears>);
-
-<tag:items:forge:tooltips/durability>.add(<item:reliquary:shears_of_winter>);
-<tag:items:forge:tooltips/durability>.add(<item:the_bumblezone:stinger_spear>);
-<tag:items:forge:tooltips/durability>.add(<item:additionaladditions:crossbow_with_spyglass>);
-
-
-<tag:items:forge:tooltips/custom>.add(<item:create:sand_paper>);
-<tag:items:forge:tooltips/durability>.add(<item:create:sand_paper>);
-
-<tag:items:forge:tooltips/custom>.add(<item:create:red_sand_paper>);
-<tag:items:forge:tooltips/durability>.add(<item:create:red_sand_paper>);
-
-<tag:items:forge:tooltips/custom>.add(<item:createaddition:diamond_grit_sandpaper>);
-<tag:items:forge:tooltips/durability>.add(<item:createaddition:diamond_grit_sandpaper>);
-
 
 /*
 <tag:items:randomium:whitelist>.add(<item>);
@@ -289,15 +214,18 @@ mods are blacklisted in the config
 <tag:items:teoe:corundum>.add(<item:quark:black_corundum_cluster>);
 
 
+
 # Ropes (quest)
 <tag:items:teoe:rope>.add(<item:quark:rope>);
 <tag:items:teoe:rope>.add(<item:additionaladditions:rope>);
+
 
 
 # Waystones (quest)
 <tag:items:teoe:waystones>.add(<item:waystones:waystone>);
 <tag:items:teoe:waystones>.add(<item:waystones:mossy_waystone>);
 <tag:items:teoe:waystones>.add(<item:waystones:sandy_waystone>);
+
 
 
 # Diving Gear (quest)
@@ -313,12 +241,14 @@ mods are blacklisted in the config
 <tag:items:teoe:diving_boots>.add(<item:create:diving_boots>);
 
 
+
 # Quartz (portal frame recipe)
 <tag:items:teoe:quartz_blocks>.add(<item:minecraft:smooth_quartz>);
 <tag:items:teoe:quartz_blocks>.add(<item:minecraft:chiseled_quartz_block>);
 <tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_block>);
 <tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_bricks>);
 <tag:items:teoe:quartz_blocks>.add(<item:minecraft:quartz_pillar>);
+
 
 
 # Paxels (quest)
@@ -330,10 +260,12 @@ mods are blacklisted in the config
 <tag:items:teoe:paxels>.add(<item:easypaxellite:netherite_paxel>);
 
 
+
 # Furnaces (quest + recipes)
 <tag:items:teoe:furnace>.add(<item:minecraft:furnace>);
 <tag:items:teoe:furnace>.add(<item:quark:blackstone_furnace>);
 <tag:items:teoe:furnace>.add(<item:quark:deepslate_furnace>);
+
 
 
 # Crafting Storage (quest)
@@ -343,11 +275,13 @@ mods are blacklisted in the config
 <tag:items:teoe:crafting_storage>.add(<item:ae2:64k_crafting_storage>);
 
 
+
 # Chest Upgrades (quest)
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:iron_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_copper_chest_upgrade>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_to_iron_chest_upgrade>);
+
 
 
 # Beacon Base
@@ -362,18 +296,68 @@ mods are blacklisted in the config
 <tag:items:teoe:beacon_base>.add(<item:tconstruct:hepatizon_block>);
 
 
-# Misc
+
+# Signs
+<tag:items:minecraft:signs>.add(<item:byg:aspen_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:baobab_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:blue_enchanted_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:bulbis_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:cherry_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:cika_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:cypress_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:ebony_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:ether_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:fir_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:green_enchanted_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:holly_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:imparius_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:jacaranda_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:lament_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:mahogany_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:mangrove_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:maple_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:nightshade_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:palm_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:pine_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:rainbow_eucalyptus_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:redwood_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:skyris_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:willow_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:witch_hazel_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:zelkova_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:sythian_sign>);
+<tag:items:minecraft:signs>.add(<item:byg:embur_sign>);
+<tag:items:minecraft:signs>.add(<item:quark:blossom_sign>);
+<tag:items:minecraft:signs>.add(<item:quark:azalea_sign>);
+<tag:items:minecraft:signs>.add(<item:malum:runewood_sign>);
+<tag:items:minecraft:signs>.add(<item:malum:soulwood_sign>);
+
+
+# Apothecaries (quest)
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_mossy>);
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_default>);
 
+
+# Misc
+<tag:items:forge:ingots>.add(<item:byg:pendorite_ingot>);
+<tag:items:forge:ingots>.add(<item:industrialforegoing:pink_slime_ingot>);
+
+<tag:items:forge:ingots>.add(<item:ob_core:platinum_ingot>);
 <tag:items:forge:ingots/platinum>.add(<item:ob_core:platinum_ingot>);
+
+<tag:items:forge:nuggets>.add(<item:ob_core:platinum_nugget>);
 <tag:items:forge:nuggets/platinum>.add(<item:ob_core:platinum_nugget>);
+<tag:items:forge:nuggets>.add(<item:nourished_nether:netherite_nugget>);
+<tag:items:forge:nuggets/netherite>.add(<item:nourished_nether:netherite_nugget>);
 
 <tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
 
 <tag:items:minecraft:coals>.add(<item:malum:arcane_charcoal>);
 
 <tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
+
+<tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
+<tag:items:forge:chests>.add(<item:ae2:smooth_sky_stone_chest>);
 
 
 # Tag Removal
@@ -396,8 +380,5 @@ mods are blacklisted in the config
 <tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
 
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
-
-<tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
-<tag:items:forge:chests>.add(<item:ae2:smooth_sky_stone_chest>);
 
 print("1_oredict.zs loaded");

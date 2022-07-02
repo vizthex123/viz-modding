@@ -1,4 +1,4 @@
-# Renames items, and/or adds tooltips to them
+# Adds tooltips to various items
 
 import crafttweaker.api.item.tooltip.ITooltipFunction;
 

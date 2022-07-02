@@ -21,7 +21,6 @@ mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla w
 mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
 
 
-
 # Hides infested blocks
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_stone>);
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_deepslate>);
@@ -31,6 +30,7 @@ mods.jei.JEI.hideIngredient(<item:minecraft:infested_mossy_stone_bricks>);
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_cracked_stone_bricks>);
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_chiseled_stone_bricks>);
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_stone_bricks>);
+
 
 
 # Hides creative-only items
@@ -57,15 +57,42 @@ mods.jei.JEI.hideIngredient(<item:thermal:machine_catalyst_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:tconstruct:creative_slot>);
 mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
 mods.jei.JEI.hideIngredient(<item:wormhole:creative_energy_cell>);
-
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);
 
 
 
+# Hides disabled items
+mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:iron_gear>);
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:gold_gear>);
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
+mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
+mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
+
+
 
 # Hides technical items
+mods.jei.JEI.hideIngredient(<item:minecraft:end_portal_frame>);
+
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:soul_crystal>);
 
+mods.jei.JEI.hideIngredient(<item:twilightforest:ore_meter>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:twilight_portal_miniature_structure>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:naga_courtyard_miniature_structure>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:lich_tower_miniature_structure>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:twisted_stone>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:twisted_stone_pillar>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:auroralized_glass>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:cinder_furnace>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:cinder_log>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:cinder_wood>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:slider>);
+
+mods.jei.JEI.hideIngredient(<item:twilightforest:pink_force_field>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:orange_force_field>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:green_force_field>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:blue_force_field>);
+mods.jei.JEI.hideIngredient(<item:twilightforest:violet_force_field>);
 
 
 # Hide Uncrafting

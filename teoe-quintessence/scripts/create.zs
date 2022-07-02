@@ -15,6 +15,8 @@ print("create.zs loading...");
 
 <recipetype:create:filling>.addRecipe("recipeName", <output>, <input>, <fluid>);
 
+<recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredientWithAmount input, @Optional(100) int duration)
+
 <recipetype:create:mechanical_crafting>.addRecipe("recipeName", <output>,
 [[<item>],
 [<item>],

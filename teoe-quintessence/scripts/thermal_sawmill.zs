@@ -6,7 +6,7 @@
 Average RF use is 1 - 2k
 */
 
-print("sawable_items.zs loading...");
+print("thermal_sawmill.zs loading...");
 
 
 # Hats
@@ -14,9 +14,12 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [<item:minecraft:leather>*2 % 100, <item:minecraft:leather> % 50], <item:conjurer_illager:conjurer_hat>, 1000);
 
 // Forgotten
-<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*3 % 100, <item:minecraft:string>*2 % 50], <item:quark:forgotten_hat>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*5 % 100, <item:minecraft:string>*3 % 50], <item:quark:forgotten_hat>, 1000);
 
-# Other Items
+
+### Other Items ####
+// Boats
+<recipetype:thermal:sawmill>.addRecipe("saw_boats", [<item:thermal:sawdust>*3 % 100], <tag:items:minecraft:boats>, 1000);
 
 // Leads
 <recipetype:thermal:sawmill>.addRecipe("saw_lead", [<item:minecraft:slime_ball> % 50, <item:minecraft:string>*2 % 100], <item:minecraft:lead>, 500);
@@ -35,7 +38,8 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_stand", [<item:minecraft:stick>*3 % 100, <item:minecraft:stick>*3 % 50], <item:minecraft:armor_stand>, 1000);
 
 // Maps
-<recipetype:thermal:sawmill>.addRecipe("saw_map", [<item:minecraft:paper>*4 % 50], <item:minecraft:map>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_map", [<item:minecraft:paper>*4 % 50], <item:minecraft:filled_map>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_empty_map", [<item:minecraft:paper>*4 % 50, <item:minecraft:redstone> % 25], <item:minecraft:map>, 1000);
 
 // Saddles
 <recipetype:thermal:sawmill>.addRecipe("saw_saddle", [<item:minecraft:leather>*4 % 75], <item:minecraft:saddle>, 1000);
@@ -44,7 +48,7 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_name_tag", [<item:minecraft:paper>*3 % 75, <item:minecraft:string>*2 % 50], <item:minecraft:name_tag>, 1000);
 
 // Leather Horse Armour
-<recipetype:thermal:sawmill>.addRecipe("saw_horse_armour", [<item:minecraft:leather>*3 % 75], <item:minecraft:leather_horse_armor>, 3000);
+<recipetype:thermal:sawmill>.addRecipe("saw_horse_armour", [<item:minecraft:leather>*3 % 100, <item:minecraft:leather>*3 % 50], <item:minecraft:leather_horse_armor>, 3000);
 
 // Lecterns
 <recipetype:thermal:sawmill>.addRecipe("saw_lectern", [<item:thermal:sawdust>*3 % 50, <item:minecraft:stick>*4 % 100], <item:minecraft:lectern>, 1000);
@@ -130,4 +134,29 @@ print("sawable_items.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_black_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:black_bed>, 2000);
 
 
-print("sawable_items.zs loaded");
+# Saw modded woods
+<recipetype:thermal:sawmill>.addRecipe("saw_livingwood", [<item:botania:livingwood_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:botania:livingwood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_dreamwood", [<item:botania:dreamwood_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:botania:dreamwood_logs>, 1000);
+
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_baobab", [<item:byg:baobab_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:baobab_logs>, 1000);
+
+<recipetype:thermal:sawmill>.addRecipe("saw_blue_enchanted", [<item:byg:blue_enchanted_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:blue_enchanted_logs>, 1000);
+/* eh, i'l finish it later
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6 % 100, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
+*/
+
+print("thermal_sawmill.zs loaded");
