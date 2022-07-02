@@ -1,32 +1,21 @@
 # Miscellaneous recipes
 
-# Enchanted Golden Apple
-recipes.remove(<minecraft:golden_apple:1>);
-recipes.addShaped(<minecraft:golden_apple:1>, [[<LootRoulette:L>, <minecraft:apple>, <LootRoulette:L>],
-                                                                                                   [null, <Avaritia:Resource:7>,null],
- 		                                                          [<LootRoulette:L>, <minecraft:apple>, <LootRoulette:L>]]);
 # Iridium Ore
 recipes.addShaped(<IC2:itemOreIridium>, [[<AWWayofTime:reinforcedSlate>, <IC2:itemUran235>, <Botania:manaResource>],
                                                                                    [<IC2:itemUran238>, <LogisticsPipes:item.pipeComponents:2>,<IC2:itemUran238>],
- 		                                          [<Thaumcraft:ItemShard:6>, <IC2:itemUran235>, <ewysworkshop:WorkshopTableUpgrade>]]);
+ 		                                          [<ewysworkshop:WorkshopTableUpgrade>, <IC2:itemUran235>, <Thaumcraft:ItemShard:6>]]);
+
 # Dragon Egg
 recipes.remove(<minecraft:dragon_egg>);
 recipes.addShaped(<minecraft:dragon_egg>, [[<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>],
                                                                                         [<Avaritia:Resource:1>, <Avaritia:Resource:4>,<Avaritia:Resource:1>],
  		                                                [<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>]]);
-# Ender Compass
-recipes.remove(<endercompass:ender_compass>);
-recipes.addShaped(<endercompass:ender_compass>, [[null, <minecraft:ender_pearl>, null],
-                                                     	                                            [<minecraft:ender_eye>, <minecraft:compass>, <minecraft:ender_eye>],
- 		            	    	                        [null, <minecraft:ender_pearl>, null]]);
 
-recipes.addShaped(<endercompass:ender_compass>, [[null, <minecraft:ender_eye>, null],
-                                                     	                                            [<minecraft:ender_pearl>, <minecraft:compass>, <minecraft:ender_pearl>],
- 		            	    	                        [null, <minecraft:ender_eye>, null]]);
 # Chance Icosahedron
 recipes.addShaped(<chancecubes:Chance_Icosahedron> * 16, [[<pandorasbox:pandorasBox>, <chancecubes:Chance_Cube>, <pandorasbox:pandorasBox>],
                                                                                                                           [<chancecubes:Chance_Cube>, <Avaritia:Resource:7>, <chancecubes:Chance_Cube>],
  		                                                                                  [<pandorasbox:pandorasBox>, <chancecubes:Chance_Cube>, <pandorasbox:pandorasBox>]]);
+
 # Craftable Nether Star recipes
 recipes.remove(<craftnstar:starcore>);
 recipes.remove(<craftnstar:starbranch>);
@@ -45,10 +34,12 @@ recipes.addShaped(<craftnstar:starcore>, [[<minecraft:glowstone>, <minecraft:dia
 recipes.addShaped(<minecraft:nether_star>, [[<minecraft:glowstone>, <craftnstar:starbranch>, <minecraft:glowstone>],
                                                                                        [<craftnstar:starbranch>, <craftnstar:starcore>, <craftnstar:starbranch>],
  		                                               [<minecraft:glowstone>, <craftnstar:starbranch>, <minecraft:glowstone>]]);
+
 # HQM Full Heart
 recipes.addShaped(<HardcoreQuesting:hearts:3>, [[null, <universalcoins:item.obsidian_coin>, null],
                                                      	                                            [<universalcoins:item.obsidian_coin>, <universalcoins:item.obsidian_coin>, <universalcoins:item.obsidian_coin>],
  		            	    	                        [null, <universalcoins:item.obsidian_coin>, null]]);
+
 # Lore Expansion Journal
 recipes.addShapeless(<LoreExp:journal>, [<minecraft:book>, <universalcoins:item.obsidian_coin>]);
 
