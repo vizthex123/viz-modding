@@ -6,17 +6,27 @@ Circle - default
 Square - tech
 Rounded Square - Create
 Diamond - Deep Resonance
-Octogon - magic
+Octagon - magic
 Hexagon - exploration
 
 
 wallet slot is at 100, 59 | open button is at 20, 5 (x, y)
 
 
+
 Server Pack Exporting:
 
 Add properties & readme
 
-Remove Rubidium & Legendary Tooltips (causes a server crash)
-Remove Item Stitching Fix (possible causing server crashes)
-Remove JEI world config (both versions)
+Remove the following mods & files:
+- Durability101
+- EffectsLeft (causes a server crash)
+- Equipment Compare
+- Fancy Menu (just in case)
+- Item Stitching Fix (possible causing server crashes)
+- ReAuth
+- Rubidium
+- Legendary Tooltips (causes a server crash)
+- Neko's Enchanted Books (causes a server crash)
+
+JEI world config (both versions)

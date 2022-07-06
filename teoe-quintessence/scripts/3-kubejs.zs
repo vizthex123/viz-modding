@@ -12,12 +12,19 @@ craftingTable.addShaped("name", <item:output>,
     [<item>, <item, <item>]]);
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
+
+blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
+
+furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
 # Tags
 <tag:items:minecraft:planks>.add(<item:kubejs:mdf>);
+<tag:items:create:crushed_ores>.add(<item:kubejs:crushed_platinum>);
 <tag:items:twilightforest:portal/activator>.add(<item:kubejs:portal_catalyst>);
 
+# Crushed Platinum
+blastFurnace.addRecipe("smelt_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 1.5, 200);
 
 # Lime
 <recipetype:create:crushing>.addRecipe("crush_limestone", [<item:kubejs:lime> % 100], <item:create:limestone>|<item:quark:limestone>, 5);
@@ -31,10 +38,14 @@ craftingTable.addShapeless("glue_sus", <item:kubejs:glue>, [<item:food_enhanceme
 # Super Glue (Create)
 craftingTable.addShapeless("super_glue", <item:create:super_glue>, [<item:kubejs:glue>, <tag:items:forge:plates/iron>]);
 
-# Compressed Sawdust
-<recipetype:create:pressing>.addRecipe("press_compressed_sawdust", [<item:kubejs:compressed_sawdust> % 100], <item:thermal:sawdust>*4, 2);
+# Compressed Sawdust & Sawdust Clump
+craftingTable.addShaped("sawdust_clump", <item:kubejs:sawdust_clump>,
+    [[<item:thermal:sawdust>, <item:thermal:sawdust>],
+    [<item:thermal:sawdust>, <item:thermal:sawdust>]]);
 
-<recipetype:thermal:press>.addRecipe("multipress_compressed_sawdust", [<item:kubejs:compressed_sawdust> % 100], <fluid:minecraft:empty>, [<item:thermal:sawdust>*4, <item:thermal:press_packing_2x2_die>], 1000);
+<recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust> % 100], <item:kubejs:sawdust_clump>, 2);
+
+<recipetype:thermal:press>.addRecipe("multipress_sawdust_clump", [<item:kubejs:compressed_sawdust> % 100], <fluid:minecraft:empty>, [<item:kubejs:sawdust_clump>, <item:minecraft:air>], 1000);
 
 furnace.addRecipe("smelt_charcoal", <item:minecraft:charcoal>, <item:kubejs:compressed_sawdust>, 0, 200);
 

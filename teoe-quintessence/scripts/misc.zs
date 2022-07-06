@@ -24,6 +24,13 @@ craftingTable.addShaped("nature_compass", <item:naturescompass:naturescompass>,
     [<item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>, <item:minecraft:compass>, <item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>],
     [<item:minecraft:air>, <item:naturesaura:gold_powder>|<item:kubejs:compressed_sawdust>, <item:minecraft:air>]]);
 
+// Reduces the cost of the tier 2 cooking book, and adds tag support
+craftingTable.remove(<item:cookingforblockheads:crafting_book>);
+craftingTable.addShaped("cooking_2", <item:cookingforblockheads:crafting_book>, 
+    [[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
+    [<tag:items:forge:workbenches>, <item:cookingforblockheads:recipe_book>, <tag:items:forge:workbenches>],
+    [<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]]);
+
 // New Quarry recipes (fueled & powered) 
 craftingTable.remove(<item:squarry:fuel_quarry>);
 craftingTable.remove(<item:squarry:powered_quarry>);

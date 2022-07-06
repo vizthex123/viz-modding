@@ -75,6 +75,32 @@ craftingTable.addShaped("ultimate_auto_table", <item:extendedcrafting:ultimate_a
     [<item:extendedcrafting:redstone_component>, <item:extendedcrafting:ultimate_table>, <item:extendedcrafting:redstone_component>],
     [<item:extendedcrafting:black_iron_ingot>, <item:lightmanscurrency:coinpile_emerald>, <item:extendedcrafting:black_iron_ingot>]]);
 
+# Crafting Core
+craftingTable.remove(<item:extendedcrafting:crafting_core>);
+craftingTable.addShaped("crafting_core", <item:extendedcrafting:crafting_core>,
+    [[<item:extendedcrafting:black_iron_ingot>, <item:lightmanscurrency:coin_diamond>|<item:rftoolsbase:infused_diamond>, <item:extendedcrafting:black_iron_ingot>],
+    [<item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:frame>, <item:extendedcrafting:black_iron_slate>],
+    [<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_slate>, <item:extendedcrafting:black_iron_ingot>]]);
+
+# Pedestals
+craftingTable.remove(<item:extendedcrafting:pedestal>);
+craftingTable.addShaped("cheap_pedestal", <item:extendedcrafting:pedestal>*2,
+    [[<item:minecraft:air>, <item:extendedcrafting:black_iron_ingot>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:extendedcrafting:black_iron_ingot>, <item:minecraft:air>],
+    [<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_ingot>]]);
+
+craftingTable.addShaped("pedestal", <item:extendedcrafting:pedestal>*6,
+    [[<item:minecraft:air>, <item:extendedcrafting:black_iron_ingot>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:extendedcrafting:black_iron_ingot>, <item:minecraft:air>],
+    [<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_block>, <item:extendedcrafting:black_iron_ingot>]]);
+
+# Fuel Canister with Zinc
+mods.extendedcrafting.TableCrafting.addShaped("fuel_canister_zinc", 2, <item:fuel_canister:fuel_canister>.withTag({Fuel: 0 as int}).withDamage(1024),
+	[[<item:minecraft:air>, <item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>], 
+	[<item:create:zinc_ingot>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:zinc_ingot>], 
+	[<item:create:zinc_ingot>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:zinc_ingot>], 
+	[<item:create:zinc_ingot>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:zinc_ingot>], 
+	[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
 
 # New Enchanted Golden Apple recipe
 # Replaces the one from Apotheosis
@@ -90,12 +116,12 @@ mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item
 
 
 # Ultimate Ingot recipe
-mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*2,
+mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*4,
 	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>], 
 	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>], 
 	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:twilightforest:carminite>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>], 
 	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>], 
-	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:enhanced_ender_ingot>|<item:extendedcrafting:ender_ingot>|<item:extendedcrafting:redstone_ingot>|<item:extendedcrafting:black_iron_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
+	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:black_iron_ingot>|<item:extendedcrafting:redstone_ingot>|<item:extendedcrafting:ender_ingot>|<item:extendedcrafting:enhanced_ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
 
 
 # Quintessence
@@ -110,5 +136,44 @@ mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:qu
 	[<item:minecraft:air>, <item:easypaxellite:netherite_paxel>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:squarry:powered_quarry>, <item:minecraft:air>, <item:minecraft:air>, <item:ae2things:disk_drive_64k>, <item:minecraft:air>], 
 	[<item:quark:flamerang>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:deepresonance:generator_controller>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:ae2:quantum_ring>]]);
 
+####################
+#		Creative Items
+####################
+
+# Creative Flux Coil
+mods.extendedcrafting.TableCrafting.addShaped("creative_flux_coil", 4, <item:thermal:rf_coil_creative_augment>*4,
+	[[<item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>], 
+	[<item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:machine_efficiency_augment>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:machine_speed_augment>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:extendedcrafting:enhanced_ender_ingot>, <item:kubejs:quintessence>, <item:thermal:rf_coil_augment>, <item:kubejs:quintessence>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:rf_coil_storage_augment>, <item:thermal:rf_coil_augment>, <item:thermal:energy_cell>, <item:thermal:rf_coil_augment>, <item:thermal:rf_coil_xfer_augment>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:extendedcrafting:enhanced_ender_ingot>, <item:kubejs:quintessence>, <item:thermal:rf_coil_augment>, <item:kubejs:quintessence>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:machine_speed_augment>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:machine_efficiency_augment>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>], 
+	[<item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>]]);
+
+# Creative Crate
+mods.extendedcrafting.TableCrafting.addShaped("creative_crate", 4, <item:create:creative_crate>*4,
+	[[<item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>], 
+	[<item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:ironchest:obsidian_chest>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:kubejs:quintessence>, <item:create:item_vault>, <item:kubejs:quintessence>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_extractor_attachment>, <item:ae2:chest>, <item:enderstorage:ender_chest>, <item:ae2:chest>, <item:refinedpipes:ultimate_extractor_attachment>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:kubejs:quintessence>, <item:create:item_vault>, <item:kubejs:quintessence>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:ironchest:obsidian_chest>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>], 
+	[<item:refinedpipes:advanced_item_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_item_pipe>]]);
+
+# Creative Blaze Cake
+mods.extendedcrafting.TableCrafting.addShaped("creative_blaze_cake", 4, <item:create:creative_blaze_cake>,
+	[[<item:twilightforest:experiment_115>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:twilightforest:experiment_115>], 
+	[<item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:sugar>, <item:create:blaze_cake>, <item:minecraft:cake>, <item:create:blaze_cake>, <item:minecraft:sugar>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:sugar>, <item:minecraft:cake>, <item:kubejs:quintessence>, <item:minecraft:cake>, <item:minecraft:sugar>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:sugar>, <item:create:blaze_cake>, <item:minecraft:cake>, <item:create:blaze_cake>, <item:minecraft:sugar>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>], 
+	[<item:twilightforest:experiment_115>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:twilightforest:experiment_115>]]);
 
 print("ExtendedCrafting.zs loaded");

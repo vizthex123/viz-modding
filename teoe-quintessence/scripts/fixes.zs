@@ -14,6 +14,13 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+// Make Nether Grout work with modded soul sands
+craftingTable.remove(<item:tconstruct:nether_grout>);
+craftingTable.addShapeless("nether_grout", <item:tconstruct:nether_grout>*2, [<item:minecraft:soul_sand>|<item:minecraft:soul_soil>|<item:byg:warped_soul_sand>|<item:byg:warped_soul_soil>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>]);
+
+craftingTable.addShapeless("nether_grout_sludge", <item:tconstruct:nether_grout>, [<item:nourished_nether:soul_sludge>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>|<item:minecraft:blaze_powder>]);
+
+
 // Fix the Netherite Nuggets > Ingot recipe
 craftingTable.removeByName("nourished_nether:netherite_nuggets_to_ingot");
 craftingTable.removeByName("thermal:storage/netherite_ingot_from_nuggets");

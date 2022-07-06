@@ -1,5 +1,7 @@
 # Adds recipes to saw various items
 
+import crafttweaker.api.tag.MCTag;
+
 /*
 <recipetype:thermal:sawmill>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int energy);
 
@@ -8,16 +10,16 @@ Average RF use is 1 - 2k
 
 print("thermal_sawmill.zs loading...");
 
+# Shelves & Card Displays
+<recipetype:thermal:sawmill>.addRecipe("saw_shelf", [<item:thermal:sawdust>*4 % 100], <tag:items:lightmanscurrency:shelf>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_card_display", [<item:thermal:sawdust>*16 % 100], <tag:items:lightmanscurrency:card_display>, 1000);
 
-# Hats
-// Conjurer
-<recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [<item:minecraft:leather>*2 % 100, <item:minecraft:leather> % 50], <item:conjurer_illager:conjurer_hat>, 1000);
+// Glowsticks
+<recipetype:thermal:sawmill>.addRecipe("saw_glowstick", [<item:thermal:sawdust> % 50, <item:minecraft:glow_ink_sac> % 50], <item:additionaladditions:glow_stick>, 1000);
 
-// Forgotten
-<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*5 % 100, <item:minecraft:string>*3 % 50], <item:quark:forgotten_hat>, 1000);
+// Ropes
+<recipetype:thermal:sawmill>.addRecipe("saw_ropes", [<item:minecraft:string> % 50], <tag:items:teoe:rope>, 1000);
 
-
-### Other Items ####
 // Boats
 <recipetype:thermal:sawmill>.addRecipe("saw_boats", [<item:thermal:sawdust>*3 % 100], <tag:items:minecraft:boats>, 1000);
 
@@ -38,8 +40,7 @@ print("thermal_sawmill.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_stand", [<item:minecraft:stick>*3 % 100, <item:minecraft:stick>*3 % 50], <item:minecraft:armor_stand>, 1000);
 
 // Maps
-<recipetype:thermal:sawmill>.addRecipe("saw_map", [<item:minecraft:paper>*4 % 50], <item:minecraft:filled_map>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_empty_map", [<item:minecraft:paper>*4 % 50, <item:minecraft:redstone> % 25], <item:minecraft:map>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_map", [<item:minecraft:paper>*4 % 50], <item:minecraft:map>|<item:minecraft:filled_map>, 1000);
 
 // Saddles
 <recipetype:thermal:sawmill>.addRecipe("saw_saddle", [<item:minecraft:leather>*4 % 75], <item:minecraft:saddle>, 1000);
@@ -92,8 +93,15 @@ print("thermal_sawmill.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_tnt", [<item:minecraft:sand>*2 % 100, <item:minecraft:gunpowder>*3 % 50], <item:minecraft:tnt>, 2000);
 
 
-// Saw Carpets into String
-// This took too long to re-write
+# Hats
+// Conjurer
+<recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [<item:minecraft:leather>*2 % 100, <item:minecraft:leather> % 50], <item:conjurer_illager:conjurer_hat>, 1000);
+
+// Forgotten
+<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [<item:minecraft:leather>*5 % 100, <item:minecraft:string>*3 % 50], <item:quark:forgotten_hat>, 1000);
+
+# Saw Carpets into String
+# This took too long to re-write
 <recipetype:thermal:sawmill>.addRecipe("saw_white_carpet", [<item:minecraft:string>*2 % 100, <item:minecraft:string>*2 % 50], <item:minecraft:white_carpet>, 500);
 <recipetype:thermal:sawmill>.addRecipe("saw_orange_carpet", [<item:minecraft:string>*2 % 100, <item:minecraft:string>*2 % 50], <item:minecraft:orange_carpet>, 500);
 <recipetype:thermal:sawmill>.addRecipe("saw_magenta_carpet", [<item:minecraft:string>*2 % 100, <item:minecraft:string>*2 % 50], <item:minecraft:magenta_carpet>, 500);
@@ -114,8 +122,8 @@ print("thermal_sawmill.zs loading...");
 <recipetype:thermal:sawmill>.addRecipe("saw_cattail_carpet", [<item:byg:cattail_sprout>*2 % 100, <item:byg:cattail_sprout>*2 % 50], <item:byg:cattail_thatch_carpet>, 500);
 
 
-// Saw beds into Sawdust and String
-// Please send help
+# Saw beds into Sawdust and String
+# Please send help
 <recipetype:thermal:sawmill>.addRecipe("saw_white_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:white_bed>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_orange_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:orange_bed>, 2000);
 <recipetype:thermal:sawmill>.addRecipe("saw_magenta_bed", [<item:thermal:sawdust> % 50, <item:minecraft:string>*4 % 50, <item:minecraft:string>*2 % 50], <item:minecraft:magenta_bed>, 2000);

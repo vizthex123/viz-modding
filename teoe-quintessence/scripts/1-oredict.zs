@@ -9,6 +9,12 @@ print("1_oredict.zs loading...");
 */
 
 
+# RF Coils (quest)
+<tag:items:teoe:coil>.add(<item:thermal:rf_coil_augment>);
+<tag:items:teoe:coil>.add(<item:thermal:rf_coil_storage_augment>);
+<tag:items:teoe:coil>.add(<item:thermal:rf_coil_xfer_augment>);
+
+
 # Cooking for Blockheads' items (quests)
 <tag:items:teoe:upgrade>.add(<item:cookingforblockheads:heating_unit>);
 <tag:items:teoe:upgrade>.add(<item:cookingforblockheads:ice_unit>);

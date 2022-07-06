@@ -4,10 +4,12 @@ print("thermal_dynamos.zs loading...");
 
 # Stirling
 # I think CraftTweaker's changes aren't registered by TE, oof
+<recipetype:thermal:stirling_fuel>.removeFuel(<item:quark:stick_block>);
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:minecraft:dried_kelp_block>);
 
-<recipetype:thermal:stirling_fuel>.addFuel("kelp_block", <item:minecraft:dried_kelp_block>, 40000);
+<recipetype:thermal:stirling_fuel>.addFuel("stick_block", <item:quark:stick_block>, 4000);
 <recipetype:thermal:stirling_fuel>.addFuel("bamboo_block", <item:thermal:bamboo_block>, 5000);
+<recipetype:thermal:stirling_fuel>.addFuel("kelp_block", <item:minecraft:dried_kelp_block>, 40000);
 
 
 # Lapidary
@@ -31,6 +33,17 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.addFuel("ametrine", <item:byg:ametrine_gems>, 250000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 30000);
+
+
+# Magmatic & Compression
+<recipetype:thermal:magmatic_fuel>.removeFuel(<fluid:minecraft:lava>);
+
+<recipetype:thermal:magmatic_fuel>.addFuel("lava", <fluid:minecraft:lava>, 5000);
+<recipetype:thermal:magmatic_fuel>.addFuel("magma", <fluid:tconstruct:magma>, 35000);
+<recipetype:thermal:magmatic_fuel>.addFuel("blazing_blood", <fluid:tconstruct:blazing_blood>, 50000);
+<recipetype:thermal:magmatic_fuel>.addFuel("fiery", <fluid:twilightforest:molten_fiery>, 75000);
+
+<recipetype:thermal:compression_fuel>.addFuel("venom", <fluid:tconstruct:venom> , 65000);
 
 
 print("thermal_dynamos.zs loaded");

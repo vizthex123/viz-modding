@@ -18,8 +18,10 @@ craftingTable.removeByName("essentials:piston");
 craftingTable.removeByName("minecraft:end_crystal");
 craftingTable.removeByName("minecraft:comparator");
 craftingTable.removeByName("minecraft:sticky_piston");
+craftingTable.removeByName("minecraft:magma_cream");
 craftingTable.removeByName("malum:lead_from_sapballs");
 craftingTable.removeByName("malum:sticky_piston_from_sapballs");
+craftingTable.removeByName("malum:magma_cream_from_sapballs");
 craftingTable.removeByName("twilightforest:equipment/fiery_ingot_crafting");
 smithing.removeByName("twilightforest:material/fiery_iron_ingot_reversed");
 

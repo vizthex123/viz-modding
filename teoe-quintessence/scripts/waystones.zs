@@ -13,55 +13,37 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 
 For Extended Crafting, use the recipe maker
+
+mods.extendedcrafting.CombinationCrafting.addRecipe(name, <output>, powerCost, [inputs], powerRate);
 */
 
 # New Waystone recipes
 craftingTable.remove(<item:waystones:waystone>);
-craftingTable.removeByName("waystones:mossy_waystone");
+craftingTable.remove(<item:waystones:mossy_waystone>);
 craftingTable.remove(<item:waystones:sandy_waystone>);
 craftingTable.removeByName("waystones:sharestone");
 
-mods.extendedcrafting.TableCrafting.addShaped("waystone", 1, <item:waystones:waystone>,
-	[[<item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("waystone", <item:waystones:waystone>, 10000, [<item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>], 350);
 
-mods.extendedcrafting.TableCrafting.addShaped("mossy_waystone", 1, <item:waystones:mossy_waystone>,
-	[[<item:minecraft:air>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:mossy_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:mossy_stone_bricks>], 
-	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("mossy_waystone", <item:waystones:mossy_waystone>, 10000, [<item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>], 350);
 
-mods.extendedcrafting.TableCrafting.addShaped("sandy_waystone", 1, <item:waystones:sandy_waystone>,
-	[[<item:minecraft:air>, <item:minecraft:chiseled_sandstone>, <item:minecraft:air>], 
-	[<item:minecraft:chiseled_sandstone>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:chiseled_sandstone>], 
-	[<item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("mossy_waystone_vines", <item:waystones:mossy_waystone>, 1000, [<item:waystones:waystone>, <item:minecraft:vine>|<item:byg:shulkren_vine>, <item:minecraft:vine>|<item:byg:shulkren_vine>, <item:minecraft:vine>|<item:byg:shulkren_vine>], 500);
 
-mods.extendedcrafting.TableCrafting.addShaped("sharestone", 1, <item:waystones:sharestone>,
-	[[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("sandy_waystone", <item:waystones:sandy_waystone>, 10000, [<item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:chiseled_sandstone>, <item:minecraft:chiseled_sandstone>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>], 350);
+
+mods.extendedcrafting.CombinationCrafting.addRecipe("sharestone", <item:waystones:sharestone>, 10000, [<item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>, <item:minecraft:obsidian>|<item:minecraft:crying_obsidian>], 500);
 
 # New Portalstone recipe
-# Same as before, but requires a Basic Table
 craftingTable.remove(<item:waystones:portstone>);
-mods.extendedcrafting.TableCrafting.addShaped("portstone", 1, <item:waystones:portstone>,
-	[[<item:minecraft:air>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:air>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:minecraft:polished_andesite>, <item:minecraft:polished_andesite>, <item:minecraft:polished_andesite>]]);
-	
+mods.extendedcrafting.CombinationCrafting.addRecipe("portstone", <item:waystones:portstone>, 8000, [<item:waystones:warp_stone>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:polished_andesite>, <item:minecraft:polished_andesite>], 160);
+
 # New Warp Plate recipe
 craftingTable.remove(<item:waystones:warp_plate>);
-mods.extendedcrafting.TableCrafting.addShaped("warp_plate", 1, <item:waystones:warp_plate>,
-	[[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_dust>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>], 
-	[<item:waystones:warp_dust>, <item:waystones:return_scroll>|<item:waystones:bound_scroll>|<item:waystones:warp_scroll>, <item:waystones:warp_dust>], 
-	[<item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_dust>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("warp_plate", <item:waystones:warp_plate>, 4000, [<item:waystones:warp_stone>|<item:waystones:return_scroll>|<item:waystones:bound_scroll>|<item:waystones:warp_scroll>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:minecraft:stone_bricks>|<item:minecraft:chiseled_stone_bricks>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>], 320);
 
 # New Warp Stone recipe
 craftingTable.remove(<item:waystones:warp_stone>);
-mods.extendedcrafting.TableCrafting.addShaped("warp_stone", 1, <item:waystones:warp_stone>,
-	[[<item:waystones:warp_dust>, <item:minecraft:ender_pearl>, <item:waystones:warp_dust>], 
-	[<item:minecraft:ender_pearl>, <item:malum:processed_soulstone>|<item:twilightforest:carminite>|<item:minecraft:emerald>|<item:botania:dragonstone>|<item:rftoolsbase:infused_diamond>, <item:minecraft:ender_pearl>], 
-	[<item:waystones:warp_dust>, <item:minecraft:ender_pearl>, <item:waystones:warp_dust>]]);
+mods.extendedcrafting.CombinationCrafting.addRecipe("warp_stone", <item:waystones:warp_stone>, 1000, [<item:twilightforest:carminite>|<item:ob_core:witchstone_shard>, <tag:items:forge:dusts/ender_pearl>, <tag:items:forge:dusts/ender_pearl>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>], 10);
 
 # New Warp Dust recipes
 # Adds tag support, lets it use ender pearl dust, and has alternate recipes

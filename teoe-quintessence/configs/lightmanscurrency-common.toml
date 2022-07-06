@@ -23,9 +23,9 @@
 		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
 		enableSpawnerEntityDrops = false
 		#Entities that will occasionally drop copper coins.
-		copper = ["minecraft:zombie", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
+		copper = ["minecraft:zombie", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith", "whisperwoods:zotzpyre"]
 		#Entities that will occasionally drop copper -> iron coins.
-		iron = ["minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:zombie_villager", "minecraft:drowned", "minecraft:vindicator", "minecraft:pillager", "minecraft:endermite", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin", "minecraft:zombified_piglin", "minecraft:piglin_brute", "twilightforest:carminite_ghastguard", "twilightforest:carminite_golem", "twilightforest:king_spider", "twilightforest:lower_goblin_knight", "twilightforest:upper_goblin_knight", "twilightforest:stable_ice_core", "twilightforest:unstable_ice_core", "twilightforest:troll", "twilightforest:yeti", "thermal:blitz", "thermal:blizz", "thermal:basalz", "ob_core:ancient_paladin", "ob_aquamirae:anglerfish", "ob_aquamirae:tortured_soul"]
+		iron = ["minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:zombie_villager", "minecraft:drowned", "minecraft:vindicator", "minecraft:pillager", "minecraft:endermite", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin", "minecraft:zombified_piglin", "minecraft:piglin_brute", "twilightforest:carminite_ghastguard", "twilightforest:carminite_golem", "twilightforest:king_spider", "twilightforest:lower_goblin_knight", "twilightforest:upper_goblin_knight", "twilightforest:stable_ice_core", "twilightforest:unstable_ice_core", "twilightforest:troll", "twilightforest:yeti", "thermal:blitz", "thermal:blizz", "thermal:basalz", "ob_core:ancient_paladin", "ob_aquamirae:anglerfish", "ob_aquamirae:tortured_soul", "whisperwoods:hidebehind"]
 		#Entities that will occasionally drop copper -> gold coins.
 		gold = ["minecraft:guardian", "minecraft:elder_guardian", "minecraft:phantom", "minecraft:enderman", "twilightforest:blockchain_goblin", "twilightforest:giant_miner", "twilightforest:armored_giant"]
 		#Entities that will occasionally drop copper -> emerald coins.
@@ -39,7 +39,7 @@
 		#Entities that will drop a large amount of copper -> iron coins.
 		boss_iron = ["twilightforest:naga", "twilightforest:lich", "twilightforest:snow_queen", "ob_aquamirae:maze_mother", "conjurer_illager:conjurer"]
 		#Entities that will drop a large amount of copper -> gold coins.
-		boss_gold = ["minecraft:ender_dragon", "minecraft:wither", "twilightforest:alpha_yeti", "ob_aquamirae:captain_cornelia"]
+		boss_gold = ["minecraft:ender_dragon", "minecraft:wither", "twilightforest:alpha_yeti", "ob_aquamirae:captain_cornelia", "whisperwoods:hirschgeist"]
 		#Entities that will drop a large amount of copper -> emerald coins.
 		boss_emerald = ["twilightforest:ur_ghast", "twilightforest:hydra", "botania:doppleganger"]
 		#Entities that will drop a large amount of copper -> diamond coins.
@@ -47,7 +47,7 @@
 		#Entities that will drop a large amount of copper -> netherite coins.
 		boss_netherite = []
 
-	#Chest loot settings.
+	#Chest loot settings. Note that any changes to these options will require a datapack reload (/reload) to be applied.
 	[common.chest_loot]
 		#Whether coins can spawn in chests Does not effect entity loot drops.
 		enableChestLoot = true

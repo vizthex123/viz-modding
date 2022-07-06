@@ -22,13 +22,6 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-// Reduces the cost of the tier 2 cooking book, and adds tag support
-craftingTable.remove(<item:cookingforblockheads:crafting_book>);
-craftingTable.addShaped("cooking_2", <item:cookingforblockheads:crafting_book>, 
-    [[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
-    [<tag:items:forge:workbenches>, <item:cookingforblockheads:recipe_book>, <tag:items:forge:workbenches>],
-    [<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]]);
-
 # Smelt modded bones into Gelatin
 # Campfires takes 2x the time
 campfire.addRecipe("campfire_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 1200);
