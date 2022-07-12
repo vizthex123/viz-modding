@@ -8,6 +8,20 @@ print("1_oredict.zs loading...");
 <tag>.remove(<item>);
 */
 
+# Sleepers (train track recipe)
+<tag:items:create:sleepers>.add(<item:minecraft:polished_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:create:cut_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:create:polished_cut_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:nourished_nether:smooth_basalt_slab>);
+<tag:items:create:sleepers>.add(<item:create:cut_tuff_slab>);
+<tag:items:create:sleepers>.add(<item:quark:polished_tuff_slab>);
+<tag:items:create:sleepers>.add(<item:quark:tuff_slab>);
+
+
+# Magic Dust (recipes)
+<tag:items:teoe:magic_dust>.add(<item:enigmaticlegacy:astral_dust>);
+<tag:items:teoe:magic_dust>.add(<item:ob_core:magic_dust>);
+
 
 # RF Coils (quest)
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_augment>);
@@ -151,24 +165,6 @@ print("1_oredict.zs loading...");
 
 
 
-# Expands the list of accepted P2P tunnel items
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:basic_item_pipe>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:improved_item_pipe>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:advanced_item_pipe>);
-
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:basic_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:improved_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:advanced_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:elite_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:ultimate_fluid_pipe>);
-
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:basic_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:improved_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:advanced_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:elite_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:ultimate_energy_pipe>);
-
-
 
 # Music Discs
 <tag:items:minecraft:music_discs>.add(<item:ob_aquamirae:musicdischorizon>);
@@ -180,6 +176,7 @@ print("1_oredict.zs loading...");
 <tag:items:randomium:whitelist>.add(<item>);
 mods are blacklisted in the config
 */
+
 # Whitelisted Randomium drops
 <tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
 <tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
@@ -191,12 +188,19 @@ mods are blacklisted in the config
 <tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
 <tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
 <tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
+<tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
 
-<tag:items:randomium:whitelist>.add(<item:botania:manasteel_ingot>);
 <tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_nether>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_end>);
 
 <tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinblock_copper>);
 <tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_iron>);
 <tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
 <tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
 
@@ -304,35 +308,6 @@ mods are blacklisted in the config
 
 
 # Signs
-<tag:items:minecraft:signs>.add(<item:byg:aspen_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:baobab_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:blue_enchanted_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:bulbis_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:cherry_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:cika_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:cypress_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:ebony_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:ether_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:fir_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:green_enchanted_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:holly_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:imparius_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:jacaranda_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:lament_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:mahogany_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:mangrove_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:maple_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:nightshade_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:palm_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:pine_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:rainbow_eucalyptus_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:redwood_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:skyris_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:willow_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:witch_hazel_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:zelkova_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:sythian_sign>);
-<tag:items:minecraft:signs>.add(<item:byg:embur_sign>);
 <tag:items:minecraft:signs>.add(<item:quark:blossom_sign>);
 <tag:items:minecraft:signs>.add(<item:quark:azalea_sign>);
 <tag:items:minecraft:signs>.add(<item:malum:runewood_sign>);
@@ -358,13 +333,19 @@ mods are blacklisted in the config
 
 <tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
 
+<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
+
 <tag:items:minecraft:coals>.add(<item:malum:arcane_charcoal>);
 
-<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
+<tag:items:forge:end_stones>.add(<item:geode:smooth_endstone>);
 
 <tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
 <tag:items:forge:chests>.add(<item:ae2:smooth_sky_stone_chest>);
 
+<tag:items:forge:limestone>.add(<item:quark:limestone>);
+<tag:items:forge:limestone>.add(<item:create:limestone>);
+
+<tag:items:create:crushed_ores>.add(<item:malum:crushed_soulstone>);
 
 # Tag Removal
 <tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);

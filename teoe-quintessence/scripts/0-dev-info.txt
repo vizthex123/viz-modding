@@ -13,6 +13,10 @@ Hexagon - exploration
 wallet slot is at 100, 59 | open button is at 20, 5 (x, y)
 
 
+1,000 RF = 1 Second for Create
+
+
+
 
 Server Pack Exporting:
 
@@ -24,8 +28,8 @@ Remove the following mods & files:
 - Equipment Compare
 - Fancy Menu (just in case)
 - Item Stitching Fix (possible causing server crashes)
-- ReAuth
-- Rubidium
+- ReAuth (harasses you about being installed on a server)
+- Rubidium (causes a server crash)
 - Legendary Tooltips (causes a server crash)
 - Neko's Enchanted Books (causes a server crash)
 

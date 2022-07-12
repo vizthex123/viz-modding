@@ -26,10 +26,10 @@ maxPowerInputPerBlock = 10000
 [crystals]
 	#The maximum kilo-RF (per 1000, so 1000 = 1milion RF) that a crystal with 100% power can hold
 	#Range: 1 ~ 2000000000
-	maximumStoredPower = 10000
+	maximumStoredPower = 2500
 	#The maximum RF/tick that a crystal with 100% efficiency can give
 	#Range: 1 ~ 20000
-	maximumPowerTick = 3200
+	maximumPowerTick = 4800
 
 [plate]
 	#Strength of radiation that a plate block gives when it has a redstone signal. 0 to disable
@@ -54,7 +54,7 @@ maxPowerInputPerBlock = 10000
 	powerMaximum = 10000
 	#The amount of RCL that is needed for one crystal
 	#Range: 100 ~ 80000
-	rclPerCrystal = 6000
+	rclPerCrystal = 4000
 	#The amount of RCL/t that is consumed during crystalizing
 	#Range: 1 ~ 100000
 	rclPerTick = 1
@@ -192,16 +192,16 @@ maxPowerInputPerBlock = 10000
 	maxRadiationMeter = 200000.0
 	#How much obsidian blocks radiation (0.0 is total block, 1.0 is not block at all)
 	#Range: 0.0 ~ 3.4028234663852886E38
-	radiationShieldObsidianFactor = 0.20000000298023224
+	radiationShieldObsidianFactor = 0.25
 	#How much dense obsidian blocks radiation (0.0 is total block, 1.0 is not block at all)
 	#Range: 0.0 ~ 3.4028234663852886E38
-	radiationShieldDenseObsidianFactor = 0.05000000074505806
+	radiationShieldDenseObsidianFactor = 0.05
 	#How much dense glass blocks radiation (0.0 is total block, 1.0 is not block at all)
 	#Range: 0.0 ~ 3.4028234663852886E38
-	radiationShieldDenseGlassFactor = 0.10000000149011612
+	radiationShieldDenseGlassFactor = 0.15
 	#How much dense lead blocks radiation (0.0 is total block, 1.0 is not block at all)
 	#Range: 0.0 ~ 3.4028234663852886E38
-	radiationShieldLeadFactor = 0.10000000149011612
+	radiationShieldLeadFactor = 0.1
 	#How much protection you get from radiation with 1 radiation suit piece equipped
 	#Range: 0.0 ~ 3.4028234663852886E38
 	suitProtection1 = 0.25
@@ -213,5 +213,5 @@ maxPowerInputPerBlock = 10000
 	suitProtection3 = 0.75
 	#How much protection you get from radiation with 4 radiation suit piece equipped
 	#Range: 0.0 ~ 3.4028234663852886E38
-	suitProtection4 = 0.949999988079071
+	suitProtection4 = 0.95
 

@@ -17,6 +17,7 @@ craftingTable.removeByName("minecraft:lead");
 craftingTable.removeByName("essentials:piston");
 craftingTable.removeByName("minecraft:end_crystal");
 craftingTable.removeByName("minecraft:comparator");
+craftingTable.removeByName("minecraft:glass_bottle");
 craftingTable.removeByName("minecraft:sticky_piston");
 craftingTable.removeByName("minecraft:magma_cream");
 craftingTable.removeByName("malum:lead_from_sapballs");
@@ -36,6 +37,7 @@ craftingTable.remove(<item:minecraft:name_tag>);
 craftingTable.remove(<item:wstweaks:lava_blade>);
 craftingTable.remove(<item:wstweaks:blaze_blade>);
 craftingTable.remove(<item:essentials:slotted_chest>);
+craftingTable.remove(<item:ae2:vibration_chamber>);
 
 
 print("2-removed.zs loaded");

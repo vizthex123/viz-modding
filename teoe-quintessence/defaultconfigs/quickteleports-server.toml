@@ -1,4 +1,0 @@
-#Timeout until a teleport request expires, in seconds. Place a copy of this config in the defaultconfigs/ folder in the main server/.minecraft directory (or make the folder if it's not there) to copy this to new worlds.
-#Range: > 0
-teleport_request_timeout = 60
-

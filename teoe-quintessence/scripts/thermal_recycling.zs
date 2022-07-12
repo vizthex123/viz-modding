@@ -11,6 +11,11 @@ print("thermal_recycling.zs loading...");
 */
 
 ### Pulverizer Recycling ###
+# Nautilus Shell
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_shell", [<item:minecraft:bone_meal>*4 % 100, <item:minecraft:bone_meal>*2 % 50], <item:minecraft:nautilus_shell>, 0, 4000);
+
+<recipetype:create:crushing>.addRecipe("crush_shell", [<item:minecraft:bone_meal>*4 % 100, <item:minecraft:bone_meal>*2 % 50], <item:minecraft:nautilus_shell>, 5);
+
 # Flower Pot
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_flower_pot", [<item:minecraft:clay_ball> % 100, <item:minecraft:clay_ball> % 50], <item:minecraft:flower_pot>, 0, 4000);
 
@@ -23,11 +28,23 @@ print("thermal_recycling.zs loading...");
 
 # Droppers & Dispensers
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_dispensers", [<item:minecraft:cobblestone>*3 % 100, <item:minecraft:cobblestone> % 50, <item:minecraft:redstone> % 75], <item:minecraft:dispenser>|<item:minecraft:dropper>, 0, 4000);
+
 <recipetype:create:crushing>.addRecipe("crush_dispensers", [<item:minecraft:cobblestone>*3 % 100, <item:minecraft:cobblestone> % 50, <item:minecraft:redstone> % 75], <item:minecraft:dispenser>|<item:minecraft:dropper>, 5);
 
 # Observers
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_observer", [<item:minecraft:cobblestone>*3 % 100, <item:minecraft:redstone> % 100, <item:minecraft:quartz> % 75], <item:minecraft:observer>, 0, 4000);
+
 <recipetype:create:crushing>.addRecipe("crush_observer", [<item:minecraft:cobblestone>*3 % 100, <item:minecraft:redstone> % 100, <item:minecraft:quartz> % 75], <item:minecraft:observer>, 5);
+
+# Repeaters
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_repeater", [<item:minecraft:cobblestone>*2 % 100, <item:minecraft:redstone>*2 % 100, <item:minecraft:redstone> % 50], <item:minecraft:repeater>, 0, 4000);
+
+<recipetype:create:crushing>.addRecipe("crush_repeater", [<item:minecraft:cobblestone>*2 % 100, <item:minecraft:redstone>*2 % 100, <item:minecraft:redstone> % 50], <item:minecraft:repeater>, 5);
+
+# Comparators
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_comparator", [<item:minecraft:cobblestone>*2 % 100, <item:minecraft:redstone>*2 % 100, <item:minecraft:redstone> % 50, <item:minecraft:quartz> % 25], <item:minecraft:comparator>, 0, 4000);
+
+<recipetype:create:crushing>.addRecipe("crush_comparator", [<item:minecraft:cobblestone>*2 % 100, <item:minecraft:redstone>*2 % 100, <item:minecraft:redstone> % 50, <item:minecraft:quartz> % 25], <item:minecraft:comparator>, 5);
 
 ############################################################
 # Horse Armours
@@ -74,7 +91,7 @@ print("thermal_recycling.zs loading...");
 <recipetype:thermal:smelter>.addRecipe("smelt_compass", [<item:minecraft:iron_ingot>*2 % 100, <item:minecraft:iron_nugget>*6 % 50], [<item:minecraft:compass>], 0, 2000);
 
 # Spyglass
-<recipetype:thermal:smelter>.addRecipe("smelt_spyglass", [<item:minecraft:copper_ingot> % 100, <item:minecraft:amethyst_shard> % 50], [<item:minecraft:spyglass>], 0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_spyglass", [<item:minecraft:copper_ingot> % 50, <item:minecraft:amethyst_shard> % 100], [<item:minecraft:spyglass>], 0, 2000);
 
 # Flint & Steel
 <recipetype:thermal:smelter>.addRecipe("smelt_fas", [<item:minecraft:iron_nugget>*6 % 100], [<item:minecraft:flint_and_steel>.anyDamage()], 0, 1000);
@@ -106,15 +123,16 @@ print("thermal_recycling.zs loading...");
 # Magnetic Ring
 <recipetype:thermal:smelter>.addRecipe("smelt_magnet_ring", [<item:minecraft:gold_ingot> % 75, <item:minecraft:iron_ingot>*4 % 100, <item:minecraft:diamond> % 25, <item:minecraft:redstone> % 70], [<item:enigmaticlegacy:magnet_ring>], 0, 8000);
 
-# Heart of the Sea
-<recipetype:thermal:smelter>.addRecipe("process_heart", [<item:minecraft:emerald>*4 % 100, <item:minecraft:emerald>*2 % 50], [<item:minecraft:heart_of_the_sea>], 15, 8000);
-
 # Tridents
 <recipetype:thermal:smelter>.addRecipe("recycle_trident", [<item:minecraft:prismarine_shard> % 100, <item:minecraft:prismarine_shard> % 50], [<item:minecraft:trident>.anyDamage()], 0, 4000);
 
+# Extradimensional Eye
+# Would be coinficiation if it wasn't craftable
+<recipetype:thermal:smelter>.addRecipe("recycle_eye", [<item:minecraft:gold_nugget>*20 % 100, <item:minecraft:phantom_membrane> % 50, <item:minecraft:blaze_powder> % 75, <item:minecraft:ender_eye> % 85], [<item:enigmaticlegacy:extradimensional_eye>], 0, 4000);
+
+
 # Recycle Spent Filters
 <recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, <item:kubejs:lime>], 0, 8000);
-
 
 
 ### Trading Stations ###
@@ -139,17 +157,15 @@ print("thermal_recycling.zs loading...");
 <recipetype:create:crushing>.addRecipe("crush_freezer", [<item:minecraft:black_concrete_powder>*2 % 100, <item:minecraft:black_concrete_powder>*2 % 50, <item:quark:dirty_shard>*4 % 75, <item:quark:dirty_shard>*2 % 75], <item:lightmanscurrency:freezer>, 5);
 
 # Speciality Traders
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_armour_display", [<item:minecraft:iron_ingot> % 100, <item:minecraft:iron_ingot> % 85, <item:quark:dirty_shard>*10 % 100, <item:quark:dirty_shard>*5 % 75], <item:lightmanscurrency:armor_display>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("crush_armour_display", [<item:minecraft:iron_ingot>*2 % 100, <item:quark:dirty_shard>*10 % 100, <item:quark:dirty_shard>*5 % 75], <item:lightmanscurrency:armor_display>, 5);
+<recipetype:thermal:smelter>.addRecipe("smelt_armour_display", [<item:minecraft:iron_ingot> % 100, <item:minecraft:iron_ingot> % 85, <item:quark:clear_shard>*10 % 100, <item:quark:clear_shard>*5 % 75], [<item:lightmanscurrency:armor_display>], 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_ticket_kiosk", [<item:minecraft:iron_ingot>*2 % 100, <item:minecraft:iron_ingot> % 85, <item:minecraft:redstone> % 100, <item:minecraft:redstone> % 80], <item:lightmanscurrency:ticket_kiosk>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("crush_ticket_kiosk", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:redstone>*2 % 100], <item:lightmanscurrency:ticket_kiosk>, 5);
+<recipetype:thermal:smelter>.addRecipe("smelt_ticket_kiosk", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:black_dye> % 90, <item:minecraft:redstone> % 100, <item:minecraft:redstone> % 80], [<item:lightmanscurrency:ticket_kiosk>], 0, 4000);
 
 // Ticket Machine
 <recipetype:thermal:smelter>.addRecipe("smelt_ticket_machine", [<item:minecraft:iron_ingot>*2 % 100, <item:minecraft:iron_ingot>*2 % 85, <item:minecraft:black_dye>*2 % 90, <item:minecraft:redstone>*3 % 75], [<item:lightmanscurrency:ticket_machine>], 0, 4000);
 
 // Paygate
-<recipetype:thermal:smelter>.addRecipe("smelt_paygate", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:iron_ingot>*3 % 75, <item:minecraft:redstone>*7 % 75], [<item:lightmanscurrency:paygate>], 0, 4000);
+<recipetype:thermal:smelter>.addRecipe("smelt_paygate", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:iron_ingot>*3 % 75, <item:minecraft:redstone>*7 % 75, <item:minecraft:redstone>*2 % 50], [<item:lightmanscurrency:paygate>], 0, 4000);
 
 // ATM
 <recipetype:thermal:smelter>.addRecipe("smelt_atm", [<item:minecraft:iron_ingot>*3 % 100, <item:minecraft:iron_ingot>*3 % 85, <item:minecraft:redstone> % 50, <item:quark:clear_shard>*2 % 65], [<item:lightmanscurrency:atm>], 0, 4000);

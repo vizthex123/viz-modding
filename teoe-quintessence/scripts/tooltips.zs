@@ -33,7 +33,7 @@ val clf = "\u00A7r";
 <item>.addTooltip("tip");
 */
 
-<item:quark:dirty_shard>.addTooltip(blue + "Can be smelted into Glass Shards");
+<item:quark:dirty_shard>.addTooltip(aqua + "Can be smelted into Glass Shards");
 
 # Overslime restoration items
 <item:minecraft:slime_ball>.addTooltip(green + "Restores 10 points of Overslime");
@@ -57,10 +57,15 @@ val clf = "\u00A7r";
 
 
 # Coinification tooltips
-<item:enigmaticlegacy:unholy_grail>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
-<item:enigmaticlegacy:lore_inscriber>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
-<item:enigmaticlegacy:earth_heart>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:enigmaticlegacy:unholy_grail>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:enigmaticlegacy:architect_eye>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:enigmaticlegacy:lore_inscriber>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:enigmaticlegacy:earth_heart>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:quark:diamond_heart>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+
+
+
+<item:tesseract:tesseract>.removeTooltip("Items, fluids, and energy can be transferred between multiple tesseracts");
 
 
 print("tooltips.zs loaded");

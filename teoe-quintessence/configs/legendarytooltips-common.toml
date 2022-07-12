@@ -40,14 +40,14 @@
 	#    Tooltip text - Will match any item with this text anywhere in the tooltip text (besides the name).  Examples: "^Legendary"
 	#    NBT tag - & followed by tag name and optional comparator (=, >, <, or !=) and value, in the format <tag><comparator><value> or just <tag>.  Examples: "&Damage=0", "&Tier>1", "&map!=128", "&Enchantments"
 	[client.definitions]
-		level0_entries = ["kubejs:quintessence", "extendedcrafting:the_ultimate_block", "extendedcrafting:the_ultimate_ingot", "extendedcrafting:the_ultimate_nugget", "extendedcrafting:the_ultimate_catalyst", "extendedcrafting:ultimate_singularity", "extendedcrafting:ultimate_table", "extendedcrafting:ultimate_auto_table", "create:creative_crate", "create:creative_blaze_cake", "thermal:rf_coil_creative_augment"]
-		level1_entries = ["minecraft:dragon_egg", "minecraft:dragon_breath", "minecraft:totem_of_undying", "minecraft:heart_of_the_sea", "extendedcrafting:ultimate_catalyst", "packagedexcrafting:ultimate_crafter", "extendedcrafting:crystaltine_ingot", "quantumquarryplus:quantum_quarry_plus"]
-		level2_entries = ["minecraft:nether_star", "extendedcrafting:nether_star_block", "quantumquarryplus:endercell"]
+		level0_entries = ["kubejs:quintessence", "extendedcrafting:the_ultimate_block", "extendedcrafting:the_ultimate_ingot", "extendedcrafting:the_ultimate_nugget", "extendedcrafting:the_ultimate_catalyst", "extendedcrafting:ultimate_singularity", "extendedcrafting:ultimate_table", "extendedcrafting:ultimate_auto_table", "extendedcrafting:compressor", "create:creative_crate", "create:creative_blaze_cake", "thermal:rf_coil_creative_augment", "tconstruct:creative_slot"]
+		level1_entries = ["minecraft:dragon_egg", "minecraft:dragon_breath", "minecraft:totem_of_undying", "minecraft:heart_of_the_sea", "extendedcrafting:ultimate_catalyst", "packagedexcrafting:ultimate_crafter", "extendedcrafting:enhanced_ender_ingot", "extendedcrafting:crystaltine_ingot", "quantumquarryplus:quantum_quarry_plus"]
+		level2_entries = ["minecraft:nether_star", "extendedcrafting:nether_star_block", "extendedcrafting:ender_star", "quantumquarryplus:endercell"]
 		level3_entries = ["lightmanscurrency:coinblock_netherite", "lightmanscurrency:coinpile_netherite", "lightmanscurrency:coin_netherite", "quantumquarryplus:endercell"]
-		level4_entries = ["!epic", "lightmanscurrency:coinblock_diamond", "lightmanscurrency:coinpile_diamond", "lightmanscurrency:coin_diamond", "quantumquarryplus:quarry_framw"]
-		level5_entries = ["!rare", "minecraft:elytra", "lightmanscurrency:coinblock_emerald", "lightmanscurrency:coinpile_emerald", "lightmanscurrency:coin_emerald", "waystones:warp_stone", "quantumquarryplus:ender_obsidian", "quantumquarryplus:upgrade_base", "quantumquarryplus:pump_upgrade", "quantumquarryplus:filter_upgrade"]
-		level6_entries = ["!uncommon", "kubejs:portal_catalyst", "lightmanscurrency:trading_core", "waystones:return_scroll", "waystones:bound_scroll", "waystoneswarp_scroll", "quantumquarryplus:earth_orb"]
-		level7_entries = []
+		level4_entries = ["!epic", "lightmanscurrency:coinblock_diamond", "lightmanscurrency:coinpile_diamond", "lightmanscurrency:coin_diamond", "quantumquarryplus:quarry_framw", "extendedcrafting:elite_table", "extendedcrafting:elite_auto_table"]
+		level5_entries = ["!rare", "minecraft:elytra", "lightmanscurrency:coinblock_emerald", "lightmanscurrency:coinpile_emerald", "lightmanscurrency:coin_emerald", "waystones:warp_stone", "quantumquarryplus:ender_obsidian", "quantumquarryplus:upgrade_base", "quantumquarryplus:pump_upgrade", "quantumquarryplus:filter_upgrade", "extendedcrafting:advanced_table", "extendedcrafting:advanced_auto_table", "ae2:name_press"]
+		level6_entries = ["!uncommon", "kubejs:portal_catalyst", "lightmanscurrency:trading_core", "waystones:return_scroll", "waystones:bound_scroll", "waystoneswarp_scroll", "quantumquarryplus:earth_orb", "extendedcrafting:basic_table", "extendedcrafting:basic_auto_table", "longfallboots:longfallboots", "ae2:silicon_press", "ae2:logic_processor_press", "ae2:calculation_processor_press", "ae2:engineering_processor_press"]
+		level7_entries = ["extendedcrafting:crafting_core", "extendedcrafting:pedestal", "extendedcrafting:frame"]
 		level8_entries = []
 		level9_entries = []
 		level10_entries = []
@@ -88,8 +88,8 @@
 		level6_start_color = "#45BC38"
 		level6_end_color = "#39992F"
 		level6_bg_color = -266991104
-		level7_start_color = -6723294
-		level7_end_color = -10864099
+		level7_start_color = "#212121"
+		level7_end_color = "#0A0A0A"
 		level7_bg_color = -266991104
 		level8_start_color = -6723294
 		level8_end_color = -10864099

@@ -51,7 +51,7 @@ mods.extendedcrafting.TableCrafting.addShaped("iron_wallet", 1, <item:lightmansc
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("iron_wallet_upgrade", 1, <item:lightmanscurrency:wallet_iron>,
-	[<item:lightmanscurrency:wallet_copper>, <item:lightmanscurrency:coinpile_iron>, <item:minecraft:iron_ingot>]);
+	[<item:lightmanscurrency:wallet_copper>, <item:minecraft:iron_ingot>, <item:lightmanscurrency:coin_iron>]);
 
 // Gold
 mods.extendedcrafting.TableCrafting.addShaped("gold_wallet", 1, <item:lightmanscurrency:wallet_gold>,
@@ -60,7 +60,7 @@ mods.extendedcrafting.TableCrafting.addShaped("gold_wallet", 1, <item:lightmansc
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 mods.extendedcrafting.TableCrafting.addShapeless("gold_wallet_upgrade", 1, <item:lightmanscurrency:wallet_gold>,
-	[<item:lightmanscurrency:wallet_iron>, <item:lightmanscurrency:coinpile_gold>, <item:minecraft:gold_ingot>]);
+	[<item:lightmanscurrency:wallet_iron>, <item:minecraft:gold_ingot>, <item:lightmanscurrency:coin_gold>]);
 
 // Emerald
 mods.extendedcrafting.TableCrafting.addShaped("emerald_wallet", 1, <item:lightmanscurrency:wallet_emerald>,
@@ -172,48 +172,80 @@ craftingTable.addShaped("special_network_upgrade", <item:lightmanscurrency:item_
 */
 
 // Elytra -> 2,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 5);
 
 // Music Discs -> 100 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 5);
 
-// Blank Runes -> 90 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_runes", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 0.0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_blank_runes2", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 5);
+// Heart of the Sea -> 50,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinfy_heart", [<item:lightmanscurrency:coin_diamond>*5 % 100], <item:minecraft:heart_of_the_sea>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinfy_heart2", [<item:lightmanscurrency:coin_diamond>*5 % 100], <item:minecraft:heart_of_the_sea>, 7);
 
+
+
+### AE2 ###
+// AE2 Presses -> 2,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_presses2", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 5);
+
+
+
+### Conjurer ###
 // Bouncy Balls -> 5 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_bouncy_balls2", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 5);
 
 // Throwing Card -> 1 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_throwing_cards", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_throwing_cards", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_throwing_cards2", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 5);
 
+
+
+## Enigmatic Legacy ###
 // Unholy Grail -> 1,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_unholy_grail", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_unholy_grail", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_unholy_grail2", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 5);
 
 // Architect's Inkwell -> 1,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_inkwell", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_inkwell", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_inkwell2", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 5);
 
-// Keystone of The Oblivion -> 5,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_keystone", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 0.0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_keystone2", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 5);
-
 // Heart of the Earth -> 2,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_earth_heart", [<item:lightmanscurrency:coin_emerald>*2 % 100], <item:enigmaticlegacy:earth_heart>, 0.0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_earth_heart", [<item:lightmanscurrency:coin_emerald>*2 % 100], <item:enigmaticlegacy:earth_heart>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_earth_heart2", [<item:lightmanscurrency:coin_emerald>*2 % 100], <item:enigmaticlegacy:earth_heart>, 5);
 
-// Heart of Diamond -> 3,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_diamond_heart", [<item:lightmanscurrency:coin_emerald>*3 % 100], <item:quark:diamond_heart>, 0.0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_diamond_heart2", [<item:lightmanscurrency:coin_emerald>*3 % 100], <item:quark:diamond_heart>, 5);
+// Keystone of The Oblivion -> 5,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_keystone", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_keystone2", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 5);
+
+// Dormant Eye -> 7,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_dormant_eye", [<item:lightmanscurrency:coin_emerald>*7 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:architect_eye>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_dormant_eye2", [<item:lightmanscurrency:coin_emerald>*7 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:architect_eye>, 5);
+
+// Enigmatic Amulet -> 10,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_enigmatic_amulet", [<item:lightmanscurrency:coin_diamond> % 100], <item:enigmaticlegacy:enigmatic_amulet>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_enigmatic_amulet2", [<item:lightmanscurrency:coin_diamond> % 100], <item:enigmaticlegacy:enigmatic_amulet>, 5);
 
 // Spellstones -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond> % 100], <tag:items:curios:spellstone>, 0.0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond> % 100], <tag:items:curios:spellstone>, 0, 4000);
 <recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond> % 100], <tag:items:curios:spellstone>, 7);
+
+
+### Quark ###
+// Blank Runes -> 90 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_rune", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_blank_rune2", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 5);
+
+// Soul bead -> 180 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_soul_bead", [<item:lightmanscurrency:coinpile_iron>*2 % 100], <item:quark:soul_bead>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_soul_bead2", [<item:lightmanscurrency:coinpile_iron>*2 % 100], <item:quark:soul_bead>, 5);
+
+// Heart of Diamond -> 10,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_diamond_heart", [<item:lightmanscurrency:coin_diamond> % 100], <item:quark:diamond_heart>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_diamond_heart2", [<item:lightmanscurrency:coin_diamond> % 100], <item:quark:diamond_heart>, 5);
+
 
 # Remove the Coin Minter since it's now useless
 craftingTable.remove(<item:lightmanscurrency:coinmint>);

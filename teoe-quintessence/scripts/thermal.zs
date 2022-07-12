@@ -13,20 +13,20 @@ craftingTable.removeByName("name");
 */
 
 // Restore the old Cresent Hammer recipe
-mods.extendedcrafting.TableCrafting.addShaped("crescent_hammer", 1, <item:thermal:wrench>,
+mods.extendedcrafting.TableCrafting.addShaped("old_hammer", 1, <item:thermal:wrench>,
     [[<item:minecraft:iron_ingot>, <item:minecraft:air>, <item:minecraft:iron_ingot>],
     [<item:minecraft:air>, <item:thermal:tin_ingot>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>]]);
 
 // Alt Redstone Furnace recipe
-// Lets you replace a Furnace and Smoker
+// Lets you upgrade a Furnace and Smoker since I hate having duplicates
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
     [<item:minecraft:smoker>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <tag:items:teoe:furnace>],
     [<tag:items:forge:gears/copper>, <item:thermal:rf_coil>, <tag:items:forge:gears/copper>]]);
 
 // Make the Gearworking Die from any gears
-// Not sure why this isn't the default tbh...
+// Not sure why this isn't the default...
 craftingTable.remove(<item:thermal:press_gear_die>);
 craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>, 
     [[<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>],
@@ -37,8 +37,16 @@ craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>,
 craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>, 
     [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
 
+// Add tag support to Tesseracts, and make them use the basic table
+craftingTable.remove(<item:tesseract:tesseract>);
+mods.extendedcrafting.TableCrafting.addShaped("tesseract", 1, <item:tesseract:tesseract>,
+    [[<item:thermal:enderium_ingot>, <tag:items:thermal:glass/hardened>, <item:thermal:enderium_ingot>],
+    [<tag:items:thermal:glass/hardened>, <item:thermal:machine_frame>, <tag:items:thermal:glass/hardened>],
+    [<item:thermal:enderium_ingot>, <tag:items:thermal:glass/hardened>, <item:thermal:enderium_ingot>]]);
 
-# Replace rubber recipes to add more support
+
+
+# Replace rubber recipes to add mod support
 // Flowers
 craftingTable.removeByName("thermal:rubber_from_dandelion");
 craftingTable.addShaped("rubber_saplings", <item:thermal:rubber>,
@@ -82,45 +90,87 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 /*
 <recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
 
+<recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
+
 <recipetype:thermal:chiller>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack inputFluid, int energy);
 
 <recipetype:thermal:refinery>.addRecipe(String name, MCWeightedItemStack itemOutput, IFluidStack[] fluidsOutput, IFluidStack inputFluid, int energy);
 
-<recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
+<recipetype:thermal:centrifuge>.addRecipe(String name, MCWeightedItemStack[] outputs, IFluidStack outputFluid, IIngredient ingredient, int energy);
+
+<recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
+
+// Pulverize Galcite into Coal
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_galcite", [<item:minecraft:coal>*4 % 100], <item:geode:galcite>, 0, 4000);
+
+// Pulverize Moss Carpets into Moss Paste
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 0, 500);
+
+// Process Bumblezone's items into honey(combs)
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_honey_crystal_shard", [<item:minecraft:sugar> % 50], <fluid:cofh_core:honey>*100, <item:the_bumblezone:honey_crystal_shards>, 4000);
+
+// Process Bumblezone's blocks into honey(combs)
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_porous_honeycomb", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*50, <item:the_bumblezone:porous_honeycomb_block>, 4000);
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_filled_porous_honeycomb", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*250, <item:the_bumblezone:filled_porous_honeycomb_block>, 4000);
+
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_brood_blocks", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50, <item:minecraft:bee_spawn_egg> % 25, <item:the_bumblezone:honey_slime_spawn_egg> % 25], <fluid:cofh_core:honey>*250, <item:the_bumblezone:empty_honeycomb_brood_block>|<item:the_bumblezone:honeycomb_brood_block>, 4000);
+
+// Melt honey-type blocks into Honey
+<recipetype:thermal:crucible>.addRecipe("melt_honey_crystal", <fluid:cofh_core:honey>*250, <item:the_bumblezone:honey_crystal>, 2000);
+<recipetype:thermal:crucible>.addRecipe("melt_honey_cocoon", <fluid:cofh_core:honey>*500, <item:the_bumblezone:honey_cocoon>, 2000);
+<recipetype:thermal:crucible>.addRecipe("melt_sticky_honey_residue", <fluid:cofh_core:honey>*25, <item:the_bumblezone:sticky_honey_residue>, 1000);
+
+// Process Frost Magma into Water & Magma Cream
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_frost_magma", [<item:minecraft:magma_cream> % 50, <item:minecraft:magma_cream> % 25], <fluid:minecraft:water>*1000, <item:byg:frost_magma>, 4000);
 
 // Smelt Illager Flesh into Leather
 <recipetype:thermal:furnace>.addRecipe("leather_illager", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>*2, 0, 4000);
 
-// Pulverize Certus Quartz into Dust
-<recipetype:thermal:pulverizer>.addRecipe("certus_dust", [<item:ae2:certus_quartz_dust> % 100], <item:ae2:certus_quartz_crystal>|<item:ae2:charged_certus_quartz_crystal>, 0, 2000);
-
 // Fractionate Sugar Water into Water
 <recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
+// Induction Smelt Lime to make Steel
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:forge:limestone>, <item:kubejs:lime>], 0, 1600);
+
+// Induction Smelt Ash into Charcoal
+<recipetype:thermal:smelter>.addRecipe("smelt_ash", [<item:minecraft:charcoal>], [<item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>*2], 0, 6400);
+
+// Induction Smelt Travertine into Cobblestone
+<recipetype:thermal:smelter>.addRecipe("smelt_travertine", [<item:minecraft:stone>], [<item:byg:travertine>], 0, 1600);
+
+// Induction Smelt slime crystals into slimeballs
+<recipetype:thermal:smelter>.addRecipe("smelt_earthslime", [<item:minecraft:slime_ball>*2 % 100], [<item:tconstruct:earth_slime_crystal>], 1.0, 2400);
+<recipetype:thermal:smelter>.addRecipe("smelt_skyslime", [<item:tconstruct:sky_slime_ball>*2 % 100], [<item:tconstruct:sky_slime_crystal>], 2.0, 2400);
+<recipetype:thermal:smelter>.addRecipe("smelt_ichorslime", [<item:tconstruct:ichor_slime_ball>*2 % 100], [<item:tconstruct:ichor_slime_crystal>], 3.0, 2400);
+<recipetype:thermal:smelter>.addRecipe("smelt_enderslime", [<item:tconstruct:ender_slime_ball>*2 % 100], [<item:tconstruct:ender_slime_crystal>], 4.0, 2400);
+
+// Induction Smelt platinum
+<recipetype:thermal:smelter>.addRecipe("smelt_platinum", [<item:ob_core:platinum_ingot>], [<item:ob_core:platinum_raw>], 3.0, 4800);
+
+// Pulverize Certus Quartz into Dust
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_certus_quartz", [<item:ae2:certus_quartz_dust> % 100], <tag:items:ae2:all_certus_quartz>, 0, 2000);
+
+// Crush Raw Quartz into Quartz
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_quartz", [<item:minecraft:quartz>, <item:minecraft:quartz> % 75, <item:minecraft:quartz>*2 % 50], <item:byg:raw_quartz_block>, 0, 4000);
+
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...
-<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 50], <tag:items:minecraft:planks>, 0, 1000);
+<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 0, 500);
 
 // Pyrolyze BYG coals into coal coke
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke> % 100, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_lignite", [ <item:thermal:coal_coke> % 100, <item:thermal:tar> % 45], <fluid:thermal:light_oil>*100, <item:byg:lignite>, 3000);
 
-/*
-# Craft Rods in the Blast Chiller
-// Copper
-<recipetype:thermal:chiller>.addRecipe("copper_rod", <item:createaddition:copper_rod>, <item:thermal:chiller_rod_cast>, <fluid:tconstruct:molten_copper>*180, 3200);
 
-// Iron
-<recipetype:thermal:chiller>.addRecipe("iron_rod", <item:createaddition:iron_rod>, <item:thermal:chiller_rod_cast>, <fluid:tconstruct:molten_iron>*180, 3200);
+// Pulverize Wrappist Blocks into Shards
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_wrappist_block", [<item:geode:wrappist_shard>*2 % 100],<item:geode:wrappist_block>, 0, 4000);
 
-// Gold
-<recipetype:thermal:chiller>.addRecipe("gold_rod", <item:createaddition:gold_rod>, <item:thermal:chiller_rod_cast>, <fluid:tconstruct:molten_gold>*180, 3200);
-
-// Brass
-<recipetype:thermal:chiller>.addRecipe("brass_rod", <item:createaddition:brass_rod>, <item:thermal:chiller_rod_cast>, <fluid:tconstruct:molten_brass>*180, 3200);
-*/
-
+// Pulverize Slime Crystal blocks into their crystal
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_earthslime", [<item:tconstruct:earth_slime_crystal>*2 % 100], <item:tconstruct:earth_slime_crystal_block>, 0.5, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_skyslime", [<item:tconstruct:sky_slime_crystal>*2 % 100], <item:tconstruct:sky_slime_crystal_block>, 1.0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_ichorslime", [<item:tconstruct:ichor_slime_crystal>*2 % 100], <item:tconstruct:ichor_slime_crystal_block>, 2.5, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_enderslime", [<item:tconstruct:ender_slime_crystal>*2 % 100], <item:tconstruct:ender_slime_crystal_block>, 5.0, 4000);
 
 # Pulverize Corundum blocks into crystals
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_red_corundum", [<item:quark:red_corundum_cluster>*2 % 100, <item:quark:red_corundum_cluster> % 50], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 0, 4000);
@@ -153,6 +203,7 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 Min chance is the minium chance to trigger the catalyst (I guess?)
 */
+
 # Pulverizer
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_shard", <item:minecraft:prismarine_shard>, 1.45, 1.65, 1.3, 0.4, 0.4);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_crystal", <item:minecraft:prismarine_crystals>, 1.35, 2.0, 1.5, 0.5, 0.25);
@@ -161,22 +212,24 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.35, 0.3);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
 
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.8); // Idk the min chance for Cinnabar so let's hope this is close enough
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("wrappist", <item:geode:wrappist_shard>, 2.0, 1.5, 0.9, 0.5, 0.7);
+
+// Idk the min chance for Cinnabar, so let's hope this is close enough
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.8);
 
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 1.25, 1.0, 0.85, 0.5, 0.65);
 
 
 # Induction Smelter
 <recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.75);
-<recipetype:thermal:smelter_catalyst>.addCatalyst("fire_charge_catalyst", <item:minecraft:fire_charge>, 1.25, 1.5, 0.3, 0.6, 0.55);
-<recipetype:thermal:smelter_catalyst>.addCatalyst("lava_bucket", <item:minecraft:lava_bucket>, 1.0, 1.25, 0.75, 1.0, 0.35);
+<recipetype:thermal:smelter_catalyst>.addCatalyst("magic_dust", <tag:items:teoe:magic_dust>, 3.0, 1.5, 2.25, 0.8, 0.75);
+
 
 
 # Phytogenic Insolator
+<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.0, 0.35, 0.75, 0.55);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:compressed_sawdust>, 1.1, 1.15, 0.85, 0.5, 0.75);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.75);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
-
-
 
 print("thermal.zs loaded");

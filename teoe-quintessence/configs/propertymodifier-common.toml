@@ -82,7 +82,7 @@
 #Settings related to items. Format is "item;value", unless stated otherwise.
 [items]
 	#The max durability an item has. Can only be set on damageable items. Default value: 0
-	max_damage = ["longfallboots:longfallboots;512", "easypaxellite:wood_paxel;78", "easypaxellite:stone_paxel;172", "easypaxellite:iron_paxel;325", "easypaxellite:golden_paxel;42", "easypaxellite:diamond_paxel;2030", "easypaxellite:netherite_paxel;2640", "ae2:fluix_sword;350", "ae2:fluix_pickaxe;350", "ae2:fluix_shovel;350", "ae2:fluix_axe;350", "ae2:fluix_hoe;350", "additionaladditions:gilded_netherite_sword;2200", "additionaladditions:gilded_netherite_pickaxe;2200", "additionaladditions:gilded_netherite_shovel;2200", "additionaladditions:gilded_netherite_hoe;2200", "additionaladditions:gilded_netherite_axe;2200", "additionaladditions:gilded_netherite_helmet;472", "additionaladditions:gilded_netherite_chestplate;657", "additionaladditions:gilded_netherite_leggings;620", "additionaladditions:gilded_netherite_boots;546", "quark:forgotten_hat;72"]
+	max_damage = ["quark:forgotten_hat;72", "longfallboots:longfallboots;512", "easypaxellite:wood_paxel;78", "easypaxellite:stone_paxel;172", "easypaxellite:iron_paxel;325", "easypaxellite:golden_paxel;42", "easypaxellite:diamond_paxel;2030", "easypaxellite:netherite_paxel;2640", "ae2:fluix_sword;350", "ae2:fluix_pickaxe;350", "ae2:fluix_shovel;350", "ae2:fluix_axe;350", "ae2:fluix_hoe;350", "additionaladditions:gilded_netherite_sword;2200", "additionaladditions:gilded_netherite_pickaxe;2200", "additionaladditions:gilded_netherite_shovel;2200", "additionaladditions:gilded_netherite_hoe;2200", "additionaladditions:gilded_netherite_axe;2200", "additionaladditions:gilded_netherite_helmet;472", "additionaladditions:gilded_netherite_chestplate;657", "additionaladditions:gilded_netherite_leggings;620", "additionaladditions:gilded_netherite_boots;546", "additionaladditions:rose_gold_sword;275", "additionaladditions:rose_gold_pickaxe:275", "additionaladditions:rose_gold_shovel;275", "additionaladditions:rose_gold_hoe;275", "additionaladditions:rose_gold_axe;275", "additionaladditions:rose_gold_helmet;177", "additionaladditions:rose_gold_chestplate;225", "additionaladditions:rose_gold_leggings;249", "additionaladditions:rose_gold_boots;129"]
 	#The max stack size an item has. Can't be set on damageable items. Default value: 64 (1 for damageable items)
 	max_stack_size = []
 	#The item group (= creative tab) of an item. Use "none" to remove the item from any item group. Default value: none
@@ -99,7 +99,7 @@
 	#Settings related to armor. Only armor items (excluding the elytra) can be affected, anything else will be skipped.
 	[items.armor]
 		#Sets the armor value.
-		defense = []
+		defense = ["additionaladditions:rose_gold_chestplate;6", "additionaladditions:rose_gold_chestplate;4"]
 		#Sets the armor toughness value. Default value: 0
 		toughness = []
 		#Sets the knockback resistance. Default value: 0
@@ -108,7 +108,7 @@
 	#Settings related to tools. Only tool, sword and trident items can be affected, anything else will be skipped.
 	[items.tools]
 		#Sets the attack damage.
-		attack_damage = ["minecraft:wooden_axe;3.5", "minecraft:stone_axe;4.5", "minecraft:iron_axe;4.5", "minecraft:golden_axe;3.5", "minecraft:diamond_axe;4.5", "minecraft:netherite_axe;5", "additionaladditions:gilded_netherite_axe;5", "additionaladditions:rose_gold_axe;4.5", "ae2:certus_quartz_axe;4.5", "ae2:nether_quartz_axe;4.5", "ae2:fluix_axe;4.5", "botania:manasteel_axe;4.5", "botania:elementium_axe;4.5", "enigmaticlegacy:etherium_axe;8.0", "byg:pendorite_axe;5.5", "byg:pendorite_battleaxe;10", "byg:pendorite_sword;15", "twilightforest:ironwood_axe;4.5", "twilightforest:steeleaf_axe;5", "twilightforest:knightmetal_axe;5", "minecraft:netherite_sword;9", "additionaladditions:gilded_netherite_sword;12", "easypaxellite:wood_paxel;3.5", "easypaxellite:stone_paxel;4", "easypaxellite:iron_paxel;4.5", "easypaxellite:golden_paxel;3.5", "easypaxellite:diamond_paxel;5", "easypaxellite:netherite_paxel;5.5", "ae2:fluix_sword;6.5", "ae2:fluix_pickaxe;4.5", "ae2:fluix_shovel;5", "ae2:fluix_hoe;1.5"]
+		attack_damage = ["minecraft:wooden_axe;3.5", "minecraft:stone_axe;4.5", "minecraft:iron_axe;4.5", "minecraft:golden_axe;3.5", "minecraft:diamond_axe;4.5", "minecraft:netherite_axe;5", "additionaladditions:gilded_netherite_axe;5", "additionaladditions:rose_gold_axe;4.25", "ae2:certus_quartz_axe;4.5", "ae2:nether_quartz_axe;4.5", "ae2:fluix_axe;4.5", "botania:manasteel_axe;4.5", "botania:elementium_axe;4.5", "enigmaticlegacy:etherium_axe;8.0", "byg:pendorite_axe;5.5", "byg:pendorite_battleaxe;10", "byg:pendorite_sword;15", "twilightforest:ironwood_axe;4.5", "twilightforest:steeleaf_axe;5", "twilightforest:knightmetal_axe;5", "minecraft:netherite_sword;9", "additionaladditions:rose_gold_sword;6.5", "additionaladditions:gilded_netherite_sword;12", "easypaxellite:wood_paxel;3.5", "easypaxellite:stone_paxel;4", "easypaxellite:iron_paxel;4.5", "easypaxellite:golden_paxel;3.5", "easypaxellite:diamond_paxel;5", "easypaxellite:netherite_paxel;5.5", "ae2:fluix_sword;6.5", "ae2:fluix_pickaxe;4.5", "ae2:fluix_shovel;5", "ae2:fluix_hoe;1.5"]
 		#Sets the attack speed.
 		attack_speed = []
 		#Sets the efficiency. Does not work for swords and tridents.

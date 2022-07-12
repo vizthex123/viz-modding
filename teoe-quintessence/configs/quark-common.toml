@@ -204,7 +204,7 @@
 		#Allowed values: [0,)
 		"Blaze Lantern Fuel Time" = 24000
 		#Allowed values: [0,)
-		"Stick Block Fuel Time" = 900
+		"Stick Block Fuel Time" = 1000
 		#Allowed values: [0,)
 		"Bamboo Bundle Fuel Time" = 500
 		"Enable Charcoal Block" = false
@@ -220,7 +220,7 @@
 		"Enable Beetroot Crate" = false
 		"Enable Cocoa Bean Sack" = true
 		"Enable Nether Wart Sack" = true
-		"Enable Gunpowder Sack" = true
+		"Enable Gunpowder Sack" = false
 		"Enable Berry Sack" = true
 		"Enable Glow Berry Sack" = true
 		"Enable Blaze Lantern" = true
@@ -430,9 +430,9 @@
 		#Does Dragon Breath return a bottle when used as a reagent or material?
 		"Effective Dragon Breath" = true
 		#Can torches can be used as fuel in furnaces?
-		"Torches Burn" = true
+		"Torches Burn" = false
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 
 	[tweaks.simple_harvest]
 		#Can players harvest crops with empty hand clicks?
@@ -1553,7 +1553,7 @@
 	"Totem Of Holding" = false
 	"Tiny Potato" = true
 	Pipes = true
-	"Matrix Enchanting" = false
+	"Matrix Enchanting" = true
 	Magnets = true
 	Crate = true
 	Backpack = true

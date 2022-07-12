@@ -22,6 +22,16 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// 8x Wool -> White Wool
+craftingTable.addShaped("white_wool", <item:minecraft:white_wool>*8, 
+    [[<tag:items:minecraft:wool>, <tag:items:minecraft:wool>, <tag:items:minecraft:wool>],
+    [<tag:items:minecraft:wool>, <item:minecraft:white_dye>, <tag:items:minecraft:wool>],
+    [<tag:items:minecraft:wool>, <tag:items:minecraft:wool>, <tag:items:minecraft:wool>]]);
+
+// Make Suspicious Stew use tags
+craftingTable.remove(<item:minecraft:suspicious_stew>);
+craftingTable.addShapeless("suspicious_stew", <item:minecraft:suspicious_stew>, [<tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>, <item:minecraft:bowl>, <tag:items:minecraft:flowers>]);
+
 # Smelt modded bones into Gelatin
 # Campfires takes 2x the time
 campfire.addRecipe("campfire_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 1200);
@@ -38,7 +48,7 @@ smoker.addRecipe("smoke_gelatin_fish_bones", <item:food_enhancements:gelatin>, <
 
 // Use Sharp Bones from Aquamirae to make Bowls of Fish Bones
 craftingTable.addShapeless("fish_bones_bowl", <item:food_enhancements:bowl_of_fish_bones>, [<item:food_enhancements:bowl_of_water>, <item:ob_aquamirae:spinefish_bones>]);
-
+# MAKE THIS EAT THE BOWLS!!
 # Change torch recipes
 # Result is half the burn time of the item (e.g. Coal smelts 8 items, so it makes 4 torches)
 craftingTable.removeByName("minecraft:torch");
@@ -122,6 +132,44 @@ blastFurnace.addRecipe("raw_nickel_block", <item:thermal:nickel_ingot>*9, <item:
 
 blastFurnace.addRecipe("raw_zinc_block", <item:create:zinc_ingot>*9, <item:create:raw_zinc_block>, 5.5, 600);
 
-blastFurnace.addRecipe("raw_pendorite_block", <item:byg:pendorite_scraps>*9, <item:byg:raw_pendorite_block>, 6.0, 900);
+blastFurnace.addRecipe("raw_soulstone_block", <item:malum:processed_soulstone>*18, <item:malum:block_of_raw_soulstone>, 2.0, 600);
+
+# Induction Smelter versions
+# Uses RF equal to 10x the raw block smelt time
+# Gives the same outputs, but multiplied by 9. 50% chance for byproduct.
+# Also gives 0.5 more XP
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_copper_block", [<item:minecraft:copper_ingot>*9, <item:minecraft:gold_nugget>*9 % 50], [<item:minecraft:raw_copper_block>], 5.5, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_iron_block", [<item:minecraft:iron_ingot>*9, <item:thermal:nickel_nugget>*9 % 50], [<item:minecraft:raw_iron_block>], 6.0, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_gold_block", [<item:minecraft:gold_ingot>*9, <item:thermal:copper_nugget>*9 % 50], [<item:minecraft:raw_gold_block>], 8.0, 6000);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_tin_block", [<item:minecraft:gold_ingot>*9, <item:thermal:apatite>*9 % 60], [<item:thermal:raw_tin_block>], 6.5, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_lead_block", [<item:thermal:lead_ingot>*9, <item:thermal:silver_nugget>*9 % 50], [<item:thermal:raw_lead_block>], 6.5, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_silver_block", [<item:thermal:silver_ingot>*9, <item:thermal:lead_nugget>*9 % 50], [<item:thermal:raw_silver_block>], 6.5, 6000);
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_nickel_block", [<item:create:zinc_ingot>*9, <item:thermal:copper_nugget>*9 % 50, <item:kubejs:iridium> % 15], [<item:thermal:raw_nickel_block>], 6.0, 6000);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_zinc_block", [<item:thermal:nickel_ingot>*9, <item:thermal:sulfur>*9 % 55], [<item:create:raw_zinc_block>], 6.5, 6000);
+
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_cobalt_block", [<item:tconstruct:cobalt_ingot>*9, <item:thermal:copper_nugget>*9 % 50, <item:thermal:nickel_nugget>*9 % 25], [<item:tconstruct:raw_cobalt_block>], 14, 6000);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_pendorite_block", [<item:byg:pendorite_scraps>*9, <item:minecraft:netherite_scrap>*9 % 50, <item:kubejs:iridium>*2, <item:kubejs:iridium> % 75], [<item:byg:raw_pendorite_block>], 6.5, 9000);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_platinum_block", [<item:ob_core:platinum_ingot>*9, <item:kubejs:iridium> % 25], [<item:ob_core:raw_platinum_block>], 30, 8000);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_soulstone_block", [<item:malum:processed_soulstone>*18, <item:malum:sacred_spirit>*3 % 50, <item:malum:arcane_spirit>*3 % 50], [<item:malum:block_of_raw_soulstone>], 2.5, 6000);
+
+
+# Raw Ores that aren't done by the mods
+# Also does the Crushed Ores
+<recipetype:thermal:smelter>.addRecipe("smelt_crushed_cobalt", [<item:tconstruct:cobalt_ingot>], [<item:kubejs:crushed_cobalt>], 1.0, 1600);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_pendorite", [<item:byg:pendorite_scraps>, <item:minecraft:netherite_scrap> % 75, <item:kubejs:iridium> % 25], [<item:byg:raw_pendorite>], 0.7, 3600);
+<recipetype:thermal:smelter>.addRecipe("smelt_crushed_pendorite", [<item:byg:pendorite_scraps>], [<item:kubejs:crushed_pendorite>], 0.4, 1800);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_platinum", [<item:ob_core:platinum_ingot>, <item:kubejs:iridium> % 75], [<item:byg:raw_pendorite>], 0.7, 3600);
+<recipetype:thermal:smelter>.addRecipe("smelt_crushed_platinum", [<item:ob_core:platinum_ingot>], [<item:kubejs:crushed_platinum>], 1.5, 2400);
+
+<recipetype:thermal:smelter>.addRecipe("smelt_raw_soulstone", [<item:malum:processed_soulstone>*2, <item:malum:sacred_spirit> % 50], [<item:malum:raw_soulstone>], 0.25, 3200);
+<recipetype:thermal:smelter>.addRecipe("smelt_crushed_soulstone", [<item:malum:processed_soulstone>*2, <item:malum:arcane_spirit> % 50], [<item:malum:crushed_soulstone>], 0.25, 1600);
 
 print("qol.zs loaded");

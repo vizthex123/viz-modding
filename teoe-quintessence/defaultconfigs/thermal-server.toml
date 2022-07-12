@@ -4,12 +4,12 @@
 	[Dynamos.Stirling]
 		#This sets the base power generation (RF/t) for the Stirling Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 20
 
 	[Dynamos.Compression]
 		#This sets the base power generation (RF/t) for the Compression Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 80
 
 	[Dynamos.Magmatic]
 		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
@@ -19,22 +19,22 @@
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 60
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 60
 
 	[Dynamos.Disenchantment]
 		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 120
 
 	[Dynamos.Gourmand]
 		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
 		#Range: 10 ~ 200
-		"Base Power" = 40
+		"Base Power" = 50
 
 [Machines]
 
@@ -191,4 +191,75 @@
 		#This sets the base time constant (in ticks) for the Arboreal Extractor.
 		#Range: 20 ~ 72000
 		"Time Constant" = 500
+
+	[Devices.Composter]
+		#This sets the base time constant (in ticks) for the Batch Composter.
+		#Range: 20 ~ 72000
+		"Time Constant" = 120
+		#If TRUE, the Batch Composter will have particle effects when operating.
+		Particles = true
+
+	[Devices.Fisher]
+		#This sets the base time constant (in ticks) for the Aquatic Entangler.
+		#Range: 400 ~ 72000
+		"Time Constant" = 4800
+		#This sets the time constant reduction (in ticks) per nearby Water source block for the Aquatic Entangler.
+		#Range: 1 ~ 1000
+		"Water Source Time Constant Reduction" = 20
+		#If TRUE, the Aquatic Entangler will have particle effects when operating.
+		Particles = true
+
+[Crops]
+	#If TRUE, Glimmercap Mushrooms produce light when fully grown. Disabling this may improve performance.
+	"Glowstone Mushroom Light" = true
+	#If TRUE, Fluxtooth Mushrooms produce light when fully grown. Disabling this may improve performance.
+	"Redstone Mushroom Light" = true
+	#If TRUE, Fluxtooth Mushrooms emit a redstone signal when fully grown. Disabling this may improve performance.
+	"Redstone Mushroom Signal" = true
+
+[Tools]
+
+	[Tools.Drill]
+		#This sets the maximum base RF capacity for the Fluxbore.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 50000
+
+	[Tools.Saw]
+		#This sets the maximum base RF capacity for the Fluxsaw.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 50000
+
+	[Tools.Capacitor]
+		#This sets the maximum base RF capacity for the Flux Capacitor.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 500000
+
+	[Tools.Magnet]
+		#This sets the maximum base RF capacity for the Flux Magnet.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 50000
+
+	[Tools.Reservoir]
+		#This sets the maximum base fluid capacity for the Reservoir.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 20000
+
+	[Tools."Potion Infuser"]
+		#This sets the maximum base fluid capacity for the Potion Infuser.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 4000
+
+	[Tools."Potion Quiver"]
+		#This sets the maximum base fluid capacity for the Alchemical Quiver.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 4000
+
+	[Tools."Watering Can"]
+		#This sets the maximum base fluid capacity for the Watering Can.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 4000
+		#If TRUE, the Watering Can can be used by Fake Players.
+		"Allow Fake Players" = false
+		#If TRUE, the Watering Can consumes source blocks when refilling.
+		"Consume Source Blocks" = true
 

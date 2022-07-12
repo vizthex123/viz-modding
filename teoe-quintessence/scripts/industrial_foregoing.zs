@@ -27,17 +27,18 @@ craftingTable.addShaped("enchantment_extractor", <item:industrialforegoing:encha
 craftingTable.remove(<item:industrialforegoing:mycelial_furnace>);
 craftingTable.addShaped("furnace_generator", <item:industrialforegoing:mycelial_furnace>,
 	[[<item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>],
-    [<item:minecraft:coal_block>|<item:thermal:charcoal_block>, <tag:items:teoe:furnace>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>],
-    [<item:industrialforegoing:machine_frame_simple>, <item:thermal:rf_coil>, <item:thermal:dynamo_stirling>]]);
+    [<item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:extendedcrafting:redstone_ingot>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>],
+    [<tag:items:teoe:furnace>, <item:industrialforegoing:machine_frame_simple>, <item:thermal:dynamo_stirling>]]);
 
 craftingTable.addShaped("furnace_generator_coke", <item:industrialforegoing:mycelial_furnace>,
-    [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [[<item:minecraft:air>, <item:thermal:dynamo_stirling>, <item:minecraft:air>],
     [<item:thermal:coal_coke_block>, <tag:items:teoe:furnace>, <item:thermal:coal_coke_block>],
-    [<item:minecraft:redstone>, <item:thermal:dynamo_stirling>, <item:minecraft:redstone>]]);
+    [<item:extendedcrafting:redstone_ingot>, <item:industrialforegoing:machine_frame_simple>, <item:extendedcrafting:redstone_ingot>]]);
 
 
 craftingTable.remove(<item:industrialforegoing:mycelial_magma>);
 craftingTable.remove(<item:industrialforegoing:mycelial_culinary>);
+craftingTable.remove(<item:industrialforegoing:mycelial_disenchantment>);
 craftingTable.addShaped("culinary_generator", <item:industrialforegoing:mycelial_culinary>,
     [[<tag:items:forge:crops>, <tag:items:forge:crops>, <tag:items:forge:crops>],
     [<tag:items:forge:crops>, <item:thermal:dynamo_gourmand>, <tag:items:forge:crops>],
@@ -46,7 +47,12 @@ craftingTable.addShaped("culinary_generator", <item:industrialforegoing:mycelial
 craftingTable.addShaped("magma_generator",<item:industrialforegoing:mycelial_magma>,
     [[<item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:redstone_ingot>, <item:extendedcrafting:redstone_ingot>],
     [<item:minecraft:redstone>, <item:thermal:dynamo_magmatic>, <item:minecraft:redstone>],
-    [<tag:items:forge:gears/emerald>, <item:industrialforegoing:machine_frame_simple>, <tag:items:forge:gears/emerald>]]);
+    [<tag:items:forge:gears/signalum>, <item:industrialforegoing:machine_frame_simple>, <tag:items:forge:gears/signalum>]]);
+
+craftingTable.addShaped("disenchantment_generator",<item:industrialforegoing:mycelial_disenchantment>,
+    [[<item:minecraft:book>, <item:minecraft:book>, <item:minecraft:book>],
+    [<item:minecraft:book>, <item:thermal:dynamo_disenchantment>, <item:minecraft:book>],
+    [<tag:items:forge:gears/emerald>, <item:industrialforegoing:machine_frame_advanced>, <tag:items:forge:gears/emerald>]]);
 
 
 # Upgrade Black Hole units
