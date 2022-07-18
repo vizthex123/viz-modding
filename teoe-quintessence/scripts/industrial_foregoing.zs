@@ -11,8 +11,15 @@ craftingTable.addShaped("name", <item:output>,
     [<item>, <item>, <item>]]);
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
-*/
 
+<recipetype:create:mechanical_crafting>.addRecipe("recipeName", <output>,
+[[<item>],
+[<item>],
+[<item>]]);
+
+Can add more rows as needed. Can be any shape.
+
+*/
 
 // Fix the Enchantment Extractor being so expensive for no reason
 craftingTable.remove(<item:industrialforegoing:enchantment_extractor>);
@@ -20,7 +27,6 @@ craftingTable.addShaped("enchantment_extractor", <item:industrialforegoing:encha
     [[<tag:items:forge:plastic>, <item:minecraft:nether_bricks>, <tag:items:forge:plastic>],
     [<item:minecraft:book>, <item:industrialforegoing:machine_frame_simple>, <item:minecraft:book>],
     [<item:minecraft:diamond>, <tag:items:forge:gears/emerald>, <item:minecraft:diamond>]]);
-
 
 
 # Change generator recipes to balance out the mycelial RF production vs. the TE equivalent
@@ -55,14 +61,15 @@ craftingTable.addShaped("disenchantment_generator",<item:industrialforegoing:myc
     [<tag:items:forge:gears/emerald>, <item:industrialforegoing:machine_frame_advanced>, <tag:items:forge:gears/emerald>]]);
 
 
-# Upgrade Black Hole units
+### Upgrade Black Hole units
+# Items
 // Common > Pity
 <recipetype:create:mechanical_crafting>.addRecipe("common_to_pity", <item:industrialforegoing:pity_black_hole_unit>,
-[[<item:industrialforegoing:common_black_hole_unit>, <item:industrialforegoing:machine_frame_pity>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:industrialforegoing:common_black_hole_unit>, <item:industrialforegoing:machine_frame_pity>, <tag:items:forge:dusts/ender_pearl>]]);
 
 // Pity > Simple
 <recipetype:create:mechanical_crafting>.addRecipe("pity_to_simple", <item:industrialforegoing:simple_black_hole_unit>,
-[[<item:industrialforegoing:pity_black_hole_unit>, <item:industrialforegoing:machine_frame_simple>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:industrialforegoing:pity_black_hole_unit>, <item:industrialforegoing:machine_frame_simple>, <item:minecraft:ender_eye>]]);
 
 // Simple > Advanced
 <recipetype:create:mechanical_crafting>.addRecipe("simple_to_advanced", <item:industrialforegoing:advanced_black_hole_unit>,
@@ -70,16 +77,18 @@ craftingTable.addShaped("disenchantment_generator",<item:industrialforegoing:myc
 
 // Advanced > Supreme
 <recipetype:create:mechanical_crafting>.addRecipe("advanced_to_supreme", <item:industrialforegoing:supreme_black_hole_unit>,
-[[<item:industrialforegoing:advanced_black_hole_unit>, <item:industrialforegoing:machine_frame_supreme>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:extendedcrafting:enhanced_ender_ingot>, <item:industrialforegoing:advanced_black_hole_unit>, <item:extendedcrafting:enhanced_ender_ingot>],
+[<item:extendedcrafting:enhanced_ender_ingot>, <item:industrialforegoing:machine_frame_supreme>, <item:extendedcrafting:enhanced_ender_ingot>]]);
 
-	 # Tanks
+
+# Tanks
 // Common > Pity
 <recipetype:create:mechanical_crafting>.addRecipe("common_to_pity_tank", <item:industrialforegoing:pity_black_hole_tank>,
-[[<item:industrialforegoing:common_black_hole_tank>, <item:industrialforegoing:machine_frame_pity>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:industrialforegoing:common_black_hole_tank>, <item:industrialforegoing:machine_frame_pity>, <item:minecraft:bucket>, <tag:items:forge:dusts/ender_pearl>]]);
 
 // Pity > Simple
 <recipetype:create:mechanical_crafting>.addRecipe("pity_to_simple_tank", <item:industrialforegoing:simple_black_hole_tank>,
-[[<item:industrialforegoing:pity_black_hole_tank>, <item:industrialforegoing:machine_frame_simple>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:industrialforegoing:pity_black_hole_tank>, <item:industrialforegoing:machine_frame_simple>, <item:minecraft:bucket>, <item:minecraft:ender_eye>]]);
 
 // Simple > Advanced
 <recipetype:create:mechanical_crafting>.addRecipe("simple_to_advanced_tank", <item:industrialforegoing:advanced_black_hole_tank>,
@@ -87,7 +96,8 @@ craftingTable.addShaped("disenchantment_generator",<item:industrialforegoing:myc
 
 // Advanced > Supreme
 <recipetype:create:mechanical_crafting>.addRecipe("advanced_to_supreme_tank", <item:industrialforegoing:supreme_black_hole_tank>,
-[[<item:industrialforegoing:advanced_black_hole_tank>, <item:industrialforegoing:machine_frame_supreme>, <item:minecraft:bucket>, <item:extendedcrafting:ender_ingot>]]);
+[[<item:extendedcrafting:enhanced_ender_ingot>, <item:industrialforegoing:advanced_black_hole_tank>, <item:extendedcrafting:enhanced_ender_ingot>],
+[<item:extendedcrafting:enhanced_ender_ingot>, <item:industrialforegoing:machine_frame_supreme>, <item:extendedcrafting:enhanced_ender_ingot>]]);
 
 
 print("industrial_foregoing.zs loaded");

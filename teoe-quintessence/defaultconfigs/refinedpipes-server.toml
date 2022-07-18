@@ -150,7 +150,7 @@
 				#Whether the redstone mode can be configured for this extractor.
 				canSetRedstoneMode = true
 				#Whether the extractor can be toggled between whitelist and blacklist.
-				canSetWhitelistBlacklist = false
+				canSetWhitelistBlacklist = true
 				#Whether the extractor can be toggled between routing modes.
 				canSetRoutingMode = false
 				#Whether the extractor can toggle exact mode.

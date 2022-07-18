@@ -22,6 +22,12 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Fuel Canister with Zinc
+craftingTable.addShaped("fuel_canister_zinc", <item:fuel_canister:fuel_canister>, 
+    [[<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:create:zinc_ingot>],
+    [<item:create:zinc_ingot>, <item:minecraft:air>, <item:create:zinc_ingot>],
+    [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
+
 // 8x Wool -> White Wool
 craftingTable.addShaped("white_wool", <item:minecraft:white_wool>*8, 
     [[<tag:items:minecraft:wool>, <tag:items:minecraft:wool>, <tag:items:minecraft:wool>],
@@ -47,34 +53,22 @@ smoker.addRecipe("smoke_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <
 smoker.addRecipe("smoke_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:ob_aquamirae:spinefish_bones>|<item:food_enhancements:fish_bones>, 0.25, 150);
 
 // Use Sharp Bones from Aquamirae to make Bowls of Fish Bones
+# TODO: Make this use the bowls
 craftingTable.addShapeless("fish_bones_bowl", <item:food_enhancements:bowl_of_fish_bones>, [<item:food_enhancements:bowl_of_water>, <item:ob_aquamirae:spinefish_bones>]);
-# MAKE THIS EAT THE BOWLS!!
+
 # Change torch recipes
-# Result is half the burn time of the item (e.g. Coal smelts 8 items, so it makes 4 torches)
 craftingTable.removeByName("minecraft:torch");
 craftingTable.removeByName("byg:torch_from_byg_coals");
 
-craftingTable.addShaped("torch", <item:minecraft:torch>*4, 
-    [[<item:minecraft:charcoal>|<item:minecraft:coal>|<item:malum:blazing_quartz>|<item:thermal:bitumen>],
+craftingTable.addShaped("4x_torch", <item:minecraft:torch>*4, 
+    [[<item:minecraft:charcoal>|<item:minecraft:coal>|<item:byg:lignite>|<item:thermal:bitumen>|<item:malum:blazing_quartz>],
     [<tag:items:balm:wooden_rods>]]);
 
 craftingTable.addShaped("8x_torch", <item:minecraft:torch>*8, 
-    [[<item:malum:arcane_charcoal>|<item:thermal:coal_coke>],
+    [[<item:malum:arcane_charcoal>|<item:thermal:coal_coke>|<item:byg:anthracite>],
     [<tag:items:balm:wooden_rods>]]);
 
-craftingTable.addShaped("6x_torch", <item:minecraft:torch>*6, 
-    [[<item:byg:anthracite>],
-    [<tag:items:balm:wooden_rods>]]);
-
-craftingTable.addShaped("3x_torch", <item:minecraft:torch>*3, 
-    [[<item:thermal:sulfur>|<item:byg:lignite>|<item:createaddition:biomass_pellet>],
-    [<tag:items:balm:wooden_rods>]]);
-
-craftingTable.addShaped("2x_torch", <item:minecraft:torch>*2, 
-    [[<item:thermal:rosin>|<item:thermal:tar>],
-    [<tag:items:balm:wooden_rods>]]);
-
-
+# Rope Changes
 // Buffs the rope recipe to give 2 instead of 1 per craft
 craftingTable.remove(<item:additionaladditions:rope>);
 craftingTable.addShaped("rope", <item:additionaladditions:rope>*2,
@@ -133,7 +127,7 @@ blastFurnace.addRecipe("raw_nickel_block", <item:thermal:nickel_ingot>*9, <item:
 blastFurnace.addRecipe("raw_zinc_block", <item:create:zinc_ingot>*9, <item:create:raw_zinc_block>, 5.5, 600);
 
 blastFurnace.addRecipe("raw_soulstone_block", <item:malum:processed_soulstone>*18, <item:malum:block_of_raw_soulstone>, 2.0, 600);
-
+/*
 # Induction Smelter versions
 # Uses RF equal to 10x the raw block smelt time
 # Gives the same outputs, but multiplied by 9. 50% chance for byproduct.
@@ -171,5 +165,5 @@ blastFurnace.addRecipe("raw_soulstone_block", <item:malum:processed_soulstone>*1
 
 <recipetype:thermal:smelter>.addRecipe("smelt_raw_soulstone", [<item:malum:processed_soulstone>*2, <item:malum:sacred_spirit> % 50], [<item:malum:raw_soulstone>], 0.25, 3200);
 <recipetype:thermal:smelter>.addRecipe("smelt_crushed_soulstone", [<item:malum:processed_soulstone>*2, <item:malum:arcane_spirit> % 50], [<item:malum:crushed_soulstone>], 0.25, 1600);
-
+*/
 print("qol.zs loaded");

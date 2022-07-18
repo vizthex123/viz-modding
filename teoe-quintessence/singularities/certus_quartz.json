@@ -1,0 +1,10 @@
+{
+  "name": "Certus Quartz",
+  "colors": [
+    "ADD8E6",
+    "92DFF3"
+  ],
+  "ingredient": {
+    "tag": "ae2:all_certus_quartz"
+  }
+}

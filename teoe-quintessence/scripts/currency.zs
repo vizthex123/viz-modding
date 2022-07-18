@@ -12,8 +12,6 @@ craftingTable.addShaped("name", <item:output>,
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 
-<recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
-
 For Extended Crafting, use the recipe maker
 */
 
@@ -100,12 +98,12 @@ craftingTable.removeByName("lightmanscurrency:coinpile_emerald1");
 craftingTable.removeByName("lightmanscurrency:coinpile_diamond1");
 craftingTable.removeByName("lightmanscurrency:coinpile_netherite1");
 
-<recipetype:thermal:press>.addRecipe("press_copper_pile", [<item:lightmanscurrency:coinpile_copper> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_copper>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_iron_pile", [<item:lightmanscurrency:coinpile_iron> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_iron>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_gold_pile", [<item:lightmanscurrency:coinpile_gold> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_gold>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_emerald_pile", [<item:lightmanscurrency:coinpile_emerald> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_emerald>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_diamond_pile", [<item:lightmanscurrency:coinpile_diamond> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_diamond>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_netherite_pile", [<item:lightmanscurrency:coinpile_netherite> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_netherite>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_copper_pile", [<item:lightmanscurrency:coinpile_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_copper>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_iron_pile", [<item:lightmanscurrency:coinpile_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_iron>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_gold_pile", [<item:lightmanscurrency:coinpile_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_gold>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_emerald_pile", [<item:lightmanscurrency:coinpile_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_emerald>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_diamond_pile", [<item:lightmanscurrency:coinpile_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_diamond>*9, <item:thermal:press_packing_3x3_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_netherite_pile", [<item:lightmanscurrency:coinpile_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_netherite>*9, <item:thermal:press_packing_3x3_die>], 2000);
 
 
 craftingTable.removeByName("lightmanscurrency:coinblock_copper");
@@ -115,12 +113,12 @@ craftingTable.removeByName("lightmanscurrency:coinblock_emerald");
 craftingTable.removeByName("lightmanscurrency:coinblock_diamond");
 craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 
-<recipetype:thermal:press>.addRecipe("press_copper_coin_block", [<item:lightmanscurrency:coinblock_copper> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_copper>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_iron_coin_block", [<item:lightmanscurrency:coinblock_iron> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_iron>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_gold_coin_block", [<item:lightmanscurrency:coinblock_gold> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_gold>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_emerald_coin_block", [<item:lightmanscurrency:coinblock_emerald> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_emerald>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_diamond_coin_block", [<item:lightmanscurrency:coinblock_diamond> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_diamond>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_netherite_coin_block", [<item:lightmanscurrency:coinblock_netherite> % 100], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_netherite>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_copper_coin_block", [<item:lightmanscurrency:coinblock_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_copper>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_iron_coin_block", [<item:lightmanscurrency:coinblock_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_iron>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_gold_coin_block", [<item:lightmanscurrency:coinblock_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_gold>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_emerald_coin_block", [<item:lightmanscurrency:coinblock_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_emerald>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_diamond_coin_block", [<item:lightmanscurrency:coinblock_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_diamond>*4, <item:thermal:press_packing_2x2_die>], 4000);
+<recipetype:thermal:press>.addRecipe("press_netherite_coin_block", [<item:lightmanscurrency:coinblock_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_netherite>*4, <item:thermal:press_packing_2x2_die>], 4000);
 
 
 
@@ -160,91 +158,6 @@ craftingTable.addShaped("special_network_upgrade", <item:lightmanscurrency:item_
     [[<item:minecraft:iron_ingot>, <tag:items:lightmanscurrency:trader_specialty>, <item:minecraft:iron_ingot>],
     [<item:minecraft:iron_ingot>, <item:lightmanscurrency:trading_core>, <item:minecraft:iron_ingot>],
     [<item:minecraft:iron_ingot>, <item:minecraft:ender_eye>, <item:minecraft:iron_ingot>]]);
-
-
-### Coinification Recipes ###
-# Takes 3k RF (about 10 seconds without upgrades?)
-# or 5 seconds in Crushing Wheels
-/*
-<recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
-
-<recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration);
-*/
-
-// Elytra -> 2,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:minecraft:elytra>, 5);
-
-// Music Discs -> 100 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_gold> % 100], <tag:items:minecraft:music_discs>, 5);
-
-// Heart of the Sea -> 50,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinfy_heart", [<item:lightmanscurrency:coin_diamond>*5 % 100], <item:minecraft:heart_of_the_sea>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinfy_heart2", [<item:lightmanscurrency:coin_diamond>*5 % 100], <item:minecraft:heart_of_the_sea>, 7);
-
-
-
-### AE2 ###
-// AE2 Presses -> 2,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_presses2", [<item:lightmanscurrency:coin_emerald>*2 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 5);
-
-
-
-### Conjurer ###
-// Bouncy Balls -> 5 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_bouncy_balls", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_bouncy_balls2", [<item:lightmanscurrency:coin_copper>*5 % 100], <item:conjurer_illager:throwable_ball>, 5);
-
-// Throwing Card -> 1 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_throwing_cards", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_throwing_cards2", [<item:lightmanscurrency:coin_copper> % 100], <item:conjurer_illager:throwing_card>*2, 5);
-
-
-
-## Enigmatic Legacy ###
-// Unholy Grail -> 1,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_unholy_grail", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_unholy_grail2", [<item:lightmanscurrency:coin_emerald> % 100], <item:enigmaticlegacy:unholy_grail>, 5);
-
-// Architect's Inkwell -> 1,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_inkwell", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_inkwell2", [<item:lightmanscurrency:coin_emerald> % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:lore_inscriber>, 5);
-
-// Heart of the Earth -> 2,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_earth_heart", [<item:lightmanscurrency:coin_emerald>*2 % 100], <item:enigmaticlegacy:earth_heart>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_earth_heart2", [<item:lightmanscurrency:coin_emerald>*2 % 100], <item:enigmaticlegacy:earth_heart>, 5);
-
-// Keystone of The Oblivion -> 5,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_keystone", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_keystone2", [<item:lightmanscurrency:coin_emerald>*5 % 100], <item:enigmaticlegacy:oblivion_stone>, 5);
-
-// Dormant Eye -> 7,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_dormant_eye", [<item:lightmanscurrency:coin_emerald>*7 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:architect_eye>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_dormant_eye2", [<item:lightmanscurrency:coin_emerald>*7 % 100, <item:lightmanscurrency:coin_gold>*5 % 100], <item:enigmaticlegacy:architect_eye>, 5);
-
-// Enigmatic Amulet -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_enigmatic_amulet", [<item:lightmanscurrency:coin_diamond> % 100], <item:enigmaticlegacy:enigmatic_amulet>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_enigmatic_amulet2", [<item:lightmanscurrency:coin_diamond> % 100], <item:enigmaticlegacy:enigmatic_amulet>, 5);
-
-// Spellstones -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond> % 100], <tag:items:curios:spellstone>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond> % 100], <tag:items:curios:spellstone>, 7);
-
-
-### Quark ###
-// Blank Runes -> 90 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_rune", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_blank_rune2", [<item:lightmanscurrency:coinpile_iron> % 100], <item:quark:blank_rune>, 5);
-
-// Soul bead -> 180 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_soul_bead", [<item:lightmanscurrency:coinpile_iron>*2 % 100], <item:quark:soul_bead>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_soul_bead2", [<item:lightmanscurrency:coinpile_iron>*2 % 100], <item:quark:soul_bead>, 5);
-
-// Heart of Diamond -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_diamond_heart", [<item:lightmanscurrency:coin_diamond> % 100], <item:quark:diamond_heart>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_diamond_heart2", [<item:lightmanscurrency:coin_diamond> % 100], <item:quark:diamond_heart>, 5);
 
 
 # Remove the Coin Minter since it's now useless

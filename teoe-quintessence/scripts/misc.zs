@@ -17,6 +17,10 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Travertine -> Cobblestone
+furnace.addRecipe("smelt_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 200);
+blastFurnace.addRecipe("blast_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 100);
+
 // Nature's Compass
 craftingTable.remove(<item:naturescompass:naturescompass>);
 craftingTable.addShaped("nature_compass", <item:naturescompass:naturescompass>,

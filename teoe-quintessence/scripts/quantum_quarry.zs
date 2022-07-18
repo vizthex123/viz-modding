@@ -26,12 +26,7 @@ mods.extendedcrafting.EnderCrafting.addShaped("enhanced_upgrade_base", <item:qua
 mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_filter_upgrade", <item:quantumquarryplus:filter_upgrade>, 5000, [<item:quantumquarryplus:upgrade_base>, <item:essentials:hopper_filter>, <item:thermal:item_filter_augment>, <item:squarry:upgrade_filter>, <item:rftoolsbase:filter_module>], 50);
 
 // Pump
-mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_pump_upgrade", <item:quantumquarryplus:pump_upgrade>, 5000, [<item:quantumquarryplus:upgrade_base>, <item:essentials:hopper_filter>, <item:thermal:item_filter_augment>, <item:squarry:upgrade_filter>, <item:rftoolsbase:filter_module>], 50);
-
-mods.extendedcrafting.EnderCrafting.addShaped("pump_upgrade", <item:quantumquarryplus:pump_upgrade>,
-	[[<item:minecraft:air>, <item:botania:pump>, <item:minecraft:air>],
-	[<item:thermal:device_water_gen>, <item:quantumquarryplus:upgrade_base>, <item:create:mechanical_pump>],
-	[<item:minecraft:air>, <item:rangedpumps:pump>, <item:minecraft:air>]], 30);
+mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_pump_upgrade", <item:quantumquarryplus:pump_upgrade>, 5000, [<item:thermal:device_water_gen>, <item:rangedpumps:pump>, <item:create:mechanical_pump>, <item:botania:pump>], 50);
 
 // Ender Obsidian
 craftingTable.remove(<item:quantumquarryplus:ender_obsidian>);

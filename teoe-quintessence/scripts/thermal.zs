@@ -101,20 +101,26 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
 
+// Pulverize Quartize Sand into Sand & Quartz
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 0, 4000);
+
 // Pulverize Galcite into Coal
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_galcite", [<item:minecraft:coal>*4 % 100], <item:geode:galcite>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_galcite", [<item:minecraft:coal>*4], <item:geode:galcite>, 0, 4000);
 
 // Pulverize Moss Carpets into Moss Paste
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 0, 500);
+
+// Melt down Fiery Blood/Tears into Molten Fiery
+<recipetype:thermal:crucible>.addRecipe("melt_fiery", <fluid:twilightforest:fiery_essence>*250, <item:twilightforest:fiery_blood>, 1000);
 
 // Process Bumblezone's items into honey(combs)
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_honey_crystal_shard", [<item:minecraft:sugar> % 50], <fluid:cofh_core:honey>*100, <item:the_bumblezone:honey_crystal_shards>, 4000);
 
 // Process Bumblezone's blocks into honey(combs)
-<recipetype:thermal:centrifuge>.addRecipe("centrifuge_porous_honeycomb", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*50, <item:the_bumblezone:porous_honeycomb_block>, 4000);
-<recipetype:thermal:centrifuge>.addRecipe("centrifuge_filled_porous_honeycomb", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*250, <item:the_bumblezone:filled_porous_honeycomb_block>, 4000);
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_porous_honeycomb", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*50, <item:the_bumblezone:porous_honeycomb_block>, 4000);
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_filled_porous_honeycomb", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*250, <item:the_bumblezone:filled_porous_honeycomb_block>, 4000);
 
-<recipetype:thermal:centrifuge>.addRecipe("centrifuge_brood_blocks", [<item:minecraft:honeycomb>*2 % 100, <item:minecraft:honeycomb>*2 % 50, <item:minecraft:bee_spawn_egg> % 25, <item:the_bumblezone:honey_slime_spawn_egg> % 25], <fluid:cofh_core:honey>*250, <item:the_bumblezone:empty_honeycomb_brood_block>|<item:the_bumblezone:honeycomb_brood_block>, 4000);
+<recipetype:thermal:centrifuge>.addRecipe("centrifuge_brood_blocks", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50, <item:minecraft:bee_spawn_egg> % 25, <item:the_bumblezone:honey_slime_spawn_egg> % 25], <fluid:cofh_core:honey>*250, <item:the_bumblezone:empty_honeycomb_brood_block>|<item:the_bumblezone:honeycomb_brood_block>, 4000);
 
 // Melt honey-type blocks into Honey
 <recipetype:thermal:crucible>.addRecipe("melt_honey_crystal", <fluid:cofh_core:honey>*250, <item:the_bumblezone:honey_crystal>, 2000);
@@ -131,65 +137,70 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
 // Induction Smelt Lime to make Steel
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:forge:limestone>, <item:kubejs:lime>], 0, 1600);
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4, <tag:items:forge:limestone>*8, <item:kubejs:lime>*8], 0, 6400);
+
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime_dust", [<item:thermal:steel_ingot> % 15], [<item:thermal:iron_dust>*4, <tag:items:forge:limestone>*8, <item:kubejs:lime>*8], 0, 6400);
 
 // Induction Smelt Ash into Charcoal
-<recipetype:thermal:smelter>.addRecipe("smelt_ash", [<item:minecraft:charcoal>], [<item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>*2], 0, 6400);
+<recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash>*4], 0, 6400);
 
-// Induction Smelt Travertine into Cobblestone
-<recipetype:thermal:smelter>.addRecipe("smelt_travertine", [<item:minecraft:stone>], [<item:byg:travertine>], 0, 1600);
+<recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 50], [<item:byg:subzero_ash_block>*4], 0, 6400);
 
-// Induction Smelt slime crystals into slimeballs
-<recipetype:thermal:smelter>.addRecipe("smelt_earthslime", [<item:minecraft:slime_ball>*2 % 100], [<item:tconstruct:earth_slime_crystal>], 1.0, 2400);
-<recipetype:thermal:smelter>.addRecipe("smelt_skyslime", [<item:tconstruct:sky_slime_ball>*2 % 100], [<item:tconstruct:sky_slime_crystal>], 2.0, 2400);
-<recipetype:thermal:smelter>.addRecipe("smelt_ichorslime", [<item:tconstruct:ichor_slime_ball>*2 % 100], [<item:tconstruct:ichor_slime_crystal>], 3.0, 2400);
-<recipetype:thermal:smelter>.addRecipe("smelt_enderslime", [<item:tconstruct:ender_slime_ball>*2 % 100], [<item:tconstruct:ender_slime_crystal>], 4.0, 2400);
+// Pulverize Raw Platinum
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium> % 20], <item:ob_core:platinum_raw>, 0, 6000);
 
-// Induction Smelt platinum
-<recipetype:thermal:smelter>.addRecipe("smelt_platinum", [<item:ob_core:platinum_ingot>], [<item:ob_core:platinum_raw>], 3.0, 4800);
+// Pulverize Raw Pendorite
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, <item:kubejs:iridium> % 35], <item:byg:raw_pendorite>, 0, 8000);
 
 // Pulverize Certus Quartz into Dust
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_certus_quartz", [<item:ae2:certus_quartz_dust> % 100], <tag:items:ae2:all_certus_quartz>, 0, 2000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_certus_quartz", [<item:ae2:certus_quartz_dust>], <tag:items:ae2:all_certus_quartz>, 0, 2000);
 
-// Crush Raw Quartz into Quartz
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_quartz", [<item:minecraft:quartz>, <item:minecraft:quartz> % 75, <item:minecraft:quartz>*2 % 50], <item:byg:raw_quartz_block>, 0, 4000);
+// Pulverize Raw Quartz into Quartz
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_quartz", [<item:minecraft:quartz>, <item:minecraft:quartz> % 50], <item:byg:raw_quartz_block>, 0, 4000);
 
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...
-<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 0, 500);
+<recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2], <tag:items:minecraft:planks>, 0, 500);
 
 // Pyrolyze BYG coals into coal coke
-<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke> % 100, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
-<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_lignite", [ <item:thermal:coal_coke> % 100, <item:thermal:tar> % 45], <fluid:thermal:light_oil>*100, <item:byg:lignite>, 3000);
+<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke>, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
+<recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_lignite", [ <item:thermal:coal_coke>, <item:thermal:tar> % 45], <fluid:thermal:light_oil>*100, <item:byg:lignite>, 3000);
 
+// Add tag support to the wool unpacking recipe
+<recipetype:thermal:press>.removeRecipe([<item:minecraft:string>], [<fluid:minecraft:empty>]);
+<recipetype:thermal:press>.addRecipe("unpack_wool", [<item:minecraft:string>], <fluid:minecraft:empty>, [<tag:items:minecraft:wool>, <item:thermal:press_unpacking_die>], 400);
+
+### Geode Block Recipes ###
+// Pulverize Subzero Blocks into Shards
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_subzero_block", [<item:byg:subzero_crystal_shard>*2],<item:byg:subzero_crystal_block>, 0, 4000);
 
 // Pulverize Wrappist Blocks into Shards
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_wrappist_block", [<item:geode:wrappist_shard>*2 % 100],<item:geode:wrappist_block>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_wrappist_block", [<item:geode:wrappist_shard>*2],<item:geode:wrappist_block>, 0, 4000);
 
 // Pulverize Slime Crystal blocks into their crystal
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_earthslime", [<item:tconstruct:earth_slime_crystal>*2 % 100], <item:tconstruct:earth_slime_crystal_block>, 0.5, 4000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_skyslime", [<item:tconstruct:sky_slime_crystal>*2 % 100], <item:tconstruct:sky_slime_crystal_block>, 1.0, 4000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_ichorslime", [<item:tconstruct:ichor_slime_crystal>*2 % 100], <item:tconstruct:ichor_slime_crystal_block>, 2.5, 4000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_enderslime", [<item:tconstruct:ender_slime_crystal>*2 % 100], <item:tconstruct:ender_slime_crystal_block>, 5.0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_earthslime", [<item:tconstruct:earth_slime_crystal>*2], <item:tconstruct:earth_slime_crystal_block>, 0.5, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_skyslime", [<item:tconstruct:sky_slime_crystal>*2], <item:tconstruct:sky_slime_crystal_block>, 1.0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_ichorslime", [<item:tconstruct:ichor_slime_crystal>*2], <item:tconstruct:ichor_slime_crystal_block>, 2.5, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_enderslime", [<item:tconstruct:ender_slime_crystal>*2], <item:tconstruct:ender_slime_crystal_block>, 5.0, 4000);
 
 # Pulverize Corundum blocks into crystals
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_red_corundum", [<item:quark:red_corundum_cluster>*2 % 100, <item:quark:red_corundum_cluster> % 50], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_red_corundum", [<item:quark:red_corundum_cluster>*2, <item:quark:red_corundum_cluster> % 50], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_orange_corundum", [<item:quark:orange_corundum_cluster>*2 % 100, <item:quark:orange_corundum_cluster> % 50], <item:quark:orange_corundum>|<item:quark:waxed_orange_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_orange_corundum", [<item:quark:orange_corundum_cluster>*2, <item:quark:orange_corundum_cluster> % 50], <item:quark:orange_corundum>|<item:quark:waxed_orange_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_yellow_corundum", [<item:quark:yellow_corundum_cluster>*2 % 100, <item:quark:yellow_corundum_cluster> % 50], <item:quark:yellow_corundum>|<item:quark:waxed_yellow_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_yellow_corundum", [<item:quark:yellow_corundum_cluster>*2, <item:quark:yellow_corundum_cluster> % 50], <item:quark:yellow_corundum>|<item:quark:waxed_yellow_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_green_corundum", [<item:quark:green_corundum_cluster>*2 % 100, <item:quark:green_corundum_cluster> % 50], <item:quark:green_corundum>|<item:quark:waxed_green_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_green_corundum", [<item:quark:green_corundum_cluster>*2, <item:quark:green_corundum_cluster> % 50], <item:quark:green_corundum>|<item:quark:waxed_green_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_blue_corundum", [<item:quark:blue_corundum_cluster>*2 % 100, <item:quark:blue_corundum_cluster> % 50], <item:quark:blue_corundum>|<item:quark:waxed_blue_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_blue_corundum", [<item:quark:blue_corundum_cluster>*2, <item:quark:blue_corundum_cluster> % 50], <item:quark:blue_corundum>|<item:quark:waxed_blue_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_indigo_corundum", [<item:quark:indigo_corundum_cluster>*2 % 100, <item:quark:indigo_corundum_cluster> % 50], <item:quark:indigo_corundum>|<item:quark:waxed_indigo_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_indigo_corundum", [<item:quark:indigo_corundum_cluster>*2, <item:quark:indigo_corundum_cluster> % 50], <item:quark:indigo_corundum>|<item:quark:waxed_indigo_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_violet_corundum", [<item:quark:violet_corundum_cluster>*2 % 100, <item:quark:violet_corundum_cluster> % 50], <item:quark:violet_corundum>|<item:quark:waxed_violet_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_violet_corundum", [<item:quark:violet_corundum_cluster>*2, <item:quark:violet_corundum_cluster> % 50], <item:quark:violet_corundum>|<item:quark:waxed_violet_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_white_corundum", [<item:quark:white_corundum_cluster>*2 % 100, <item:quark:white_corundum_cluster> % 50], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_white_corundum", [<item:quark:white_corundum_cluster>*2, <item:quark:white_corundum_cluster> % 50], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 0, 4000);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_black_corundum", [<item:quark:black_corundum_cluster>*2 % 100, <item:quark:black_corundum_cluster> % 50], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_black_corundum", [<item:quark:black_corundum_cluster>*2, <item:quark:black_corundum_cluster> % 50], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 0, 4000);
 
 
 

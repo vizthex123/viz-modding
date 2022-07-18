@@ -24,22 +24,25 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.removeFuel(<item:minecraft:amethyst_shard>);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("nether_quartz", <item:minecraft:quartz>, 50000);
-<recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz", <item:nourished_nether:soul_quartz>, 60000);
-
 <recipetype:thermal:lapidary_fuel>.addFuel("prismarine_shard_fuel", <item:minecraft:prismarine_shard>, 50000);
-<recipetype:thermal:lapidary_fuel>.addFuel("wrappist_fuel", <item:geode:wrappist_shard>, 100000);
 <recipetype:thermal:lapidary_fuel>.addFuel("amethyst_fuel", <item:minecraft:amethyst_shard>, 30000);
+
+<recipetype:thermal:lapidary_fuel>.addFuel("ametrine", <item:byg:ametrine_gems>, 500000);
 <recipetype:thermal:lapidary_fuel>.addFuel("subzero", <item:byg:subzero_crystal_shard>, 40000);
 <recipetype:thermal:lapidary_fuel>.addFuel("therium", <item:byg:therium_shard>, 150000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("dimshard", <item:rftoolsbase:dimensionalshard>, 250000);
 <recipetype:thermal:lapidary_fuel>.addFuel("apatite", <item:thermal:apatite>, 20000);
 <recipetype:thermal:lapidary_fuel>.addFuel("niter", <item:thermal:niter>, 40000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("fluix", <item:ae2:fluix_crystal>, 60000);
 <recipetype:thermal:lapidary_fuel>.addFuel("certus_quartz", <item:ae2:certus_quartz_crystal>, 30000);
+
 <recipetype:thermal:lapidary_fuel>.addFuel("carminite", <item:twilightforest:carminite>, 75000);
-<recipetype:thermal:lapidary_fuel>.addFuel("ametrine", <item:byg:ametrine_gems>, 500000);
+
+<recipetype:thermal:lapidary_fuel>.addFuel("wrappist_fuel", <item:geode:wrappist_shard>, 65000);
+<recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz", <item:nourished_nether:soul_quartz>, 60000);
+<recipetype:thermal:lapidary_fuel>.addFuel("dimshard", <item:rftoolsbase:dimensionalshard>, 250000);
+<recipetype:thermal:lapidary_fuel>.addFuel("soulstone", <item:malum:processed_soulstone>, 25000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 30000);
 
@@ -50,7 +53,7 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:magmatic_fuel>.addFuel("lava", <fluid:minecraft:lava>, 10000);
 <recipetype:thermal:magmatic_fuel>.addFuel("magma", <fluid:tconstruct:magma>, 35000);
 <recipetype:thermal:magmatic_fuel>.addFuel("blazing_blood", <fluid:tconstruct:blazing_blood>, 50000);
-<recipetype:thermal:magmatic_fuel>.addFuel("fiery_essence", <fluid:twilightforest:molten_fiery>, 85000);
+<recipetype:thermal:magmatic_fuel>.addFuel("fiery_essence", <fluid:twilightforest:fiery_essence>, 75000);
 <recipetype:thermal:magmatic_fuel>.addFuel("fiery", <fluid:twilightforest:molten_fiery>, 100000);
 
 <recipetype:thermal:compression_fuel>.addFuel("venom", <fluid:tconstruct:venom> , 65000);

@@ -2,14 +2,14 @@
 #Idle power drain = idlePowerDrain + portal size * sizePowerDrain
 #Interdimensional teleport power drain = travelPowerDrain + dimensionPowerDrain
 #Same dimension teleport power drain = travelPowerDrain + (target distance)^(1/2) * distancePowerDrain
-[Power Consumption]
+["Power Consumption"]
     # How much idle power does the portal drain per block of its size?
     # Allowed range: 0.0 ~ 1000000.0 - Default: 0.5
     sizePowerDrain = 1.0
 
     # How much power will a portal drain per tick when idle?
     # Allowed range: 0 ~ 1000000 - Default: 1
-    idlePowerDrain = 1.0
+    idlePowerDrain = 1
 
     # How much power will be drained when an entity is teleported?
     # Allowed range: 0 ~ 1000000 - Default: 100
@@ -27,7 +27,7 @@
     # Allowed range: 0 ~ 1000000 - Default: 400
     dimensionPowerDrain = 10000
 
-[Target Devices]
+["Target Devices"]
     # The maximum number of targets that can be stored in the advanced target definition device.
     # Allowed range: 1 ~ 10 - Default: 5
     advancedDeviceTargetCount = 5
@@ -43,13 +43,13 @@
 
     # How big can the area inside a portal be? Higher numbers can impact performance when activating a portal. Previously build portals won't be affected.
     # Allowed range: 1 ~ 2000 - Default: 400
-    maxPortalSize = 100
+    maxPortalSize = 500
 
     # If true, a portal will require frame blocks at its corners. Previously build portals won't be affected.
     # Allowed values: true, false - Default: false
     requireCorners = false
 
-[Target Cells]
+["Target Cells"]
     # The number of targets the advanced target cell can store.
     # Allowed range: 1 ~ 20 - Default: 8
     advancedTargetCellCapacity = 8
@@ -60,9 +60,9 @@
 
     # The number of targets the portal stabilizer can store.
     # Allowed range: 1 ~ 20 - Default: 1
-    stabilizerTargetCapacity = 1
+    stabilizerTargetCapacity = 2
 
-[Energy Cells]
+["Energy Cells"]
     # The amount of energy the portal stabilizer can store.
     # Allowed range: 1 ~ 1000000 - Default: 5000
     stabilizerEnergyCapacity = 25000
@@ -78,11 +78,11 @@
 [Generators]
     # How much energy does the coal generator generate per tick?
     # Allowed range: 1 ~ 1000000 - Default: 10
-    coalGeneratorPower = 20
+    coalGeneratorPower = 10
 
     # How much energy can the coal generator store?
     # Allowed range: 1 ~ 1000000 - Default: 5000
-    coalGeneratorCapacity = 20000
+    coalGeneratorCapacity = 5000
 
     # In what area (coalGeneratorRange^3) should the coal generator send energy?
     # Allowed range: 1 ~ 4 - Default: 2

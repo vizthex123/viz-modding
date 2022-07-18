@@ -1,0 +1,10 @@
+{
+  "name": "Processed Soulstone",
+  "colors": [
+    "CBC3E3",
+    "800080"
+  ],
+  "ingredient": {
+	"item": "malum:processed_soulstone"
+  }
+}

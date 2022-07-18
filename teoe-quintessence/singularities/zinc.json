@@ -1,0 +1,10 @@
+{
+  "name": "Zinc",
+  "colors": [
+    "f0f2f3",
+    "bac4c8"
+  ],
+  "ingredient": {
+    "item": "create:zinc_ingot"
+  }
+}

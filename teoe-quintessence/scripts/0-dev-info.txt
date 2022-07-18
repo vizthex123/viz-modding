@@ -23,6 +23,7 @@ Server Pack Exporting:
 Add properties & readme
 
 Remove the following mods & files:
+- Ding
 - Durability101
 - EffectsLeft (causes a server crash)
 - Equipment Compare
@@ -34,3 +35,5 @@ Remove the following mods & files:
 - Neko's Enchanted Books (causes a server crash)
 
 JEI world config (both versions)
+Cherished Worlds config
+Excess KubeJS files

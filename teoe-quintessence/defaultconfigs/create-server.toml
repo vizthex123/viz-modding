@@ -49,6 +49,9 @@
 	# 
 	#Allow the standard in-world Shadow Steel recipe.
 	enableShadowSteelRecipe = true
+	# 
+	#Display vanilla Log-stripping interactions in JEI.
+	displayLogStrippingRecipes = false
 
 # 
 #Parameters and abilities of Create's kinetic mechanisms
@@ -147,7 +150,7 @@
 		# 
 		#Game ticks required for a Fan-based processing recipe to take effect.
 		#Range: > 0
-		inWorldProcessingTime = 100
+		inWorldProcessingTime = 150
 
 	# 
 	#Moving Contraptions
@@ -245,19 +248,37 @@
 				belt = 0.0
 				brass_encased_cogwheel = 0.0
 				gearbox = 0.0
-				hose_pulley = 1.0
+				hose_pulley = 4.0
 				mechanical_crafter = 2.0
+				display_board = 0.0
 
 			#
 			#[in Stress Units]
 			#Configure how much stress a source can accommodate for.
 			[kinetics.stressValues.v2.capacity]
 				hand_crank = 8.0
-				encased_fan = 16.0
-				water_wheel = 20.0
-				windmill_bearing = 512.0
-				furnace_engine = 1024.0
 				creative_motor = 16384.0
+				water_wheel = 16.0
+				windmill_bearing = 512.0
+				blue_valve_handle = 8.0
+				copper_valve_handle = 8.0
+				pink_valve_handle = 8.0
+				black_valve_handle = 8.0
+				magenta_valve_handle = 8.0
+				white_valve_handle = 8.0
+				yellow_valve_handle = 8.0
+				brown_valve_handle = 8.0
+				cyan_valve_handle = 8.0
+				light_blue_valve_handle = 8.0
+				lime_valve_handle = 8.0
+				purple_valve_handle = 8.0
+				red_valve_handle = 8.0
+				steam_engine = 1024.0
+				gray_valve_handle = 8.0
+				orange_valve_handle = 8.0
+				light_gray_valve_handle = 8.0
+				green_valve_handle = 8.0
+
 		# 
 		#Configure speed/capacity levels for requirements and indicators.
 		[kinetics.stressValues.stats]
@@ -299,12 +320,12 @@
 	#[in Buckets]
 	#The amount of liquid a tank can hold per block.
 	#Range: > 1
-	fluidTankCapacity = 4
+	fluidTankCapacity = 8
 	# 
 	#[in Blocks]
 	#The maximum height a fluid tank can reach.
 	#Range: > 1
-	fluidTankMaxHeight = 8
+	fluidTankMaxHeight = 32
 	# 
 	#[in Blocks]
 	#The maximum distance a mechanical pump can push or pull liquids on either side.
@@ -358,7 +379,11 @@
 	# 
 	#The total amount of stacks a vault can hold per block in size.
 	#Range: > 1
-	vaultCapacity = 20
+	vaultCapacity = 4
+	# 
+	#Maximum possible distance in blocks between data gatherers and their target.
+	#Range: > 1
+	displayLinkRange = 64
 
 # 
 #Everything related to Schematic tools
@@ -395,7 +420,7 @@
 		# 
 		#% of Schematicannon's Fuel filled by 1 Gunpowder.
 		#Range: 0.0 ~ 100.0
-		schematicannonGunpowderWorth = 20.0
+		schematicannonGunpowderWorth = 10.0
 		# 
 		#% of Schematicannon's Fuel used for each fired block.
 		#Range: 0.0 ~ 100.0
@@ -432,4 +457,61 @@
 	#Amount of free Potato Cannon shots provided by one filled Copper Backtank. Set to 0 makes Potato Cannons unbreakable
 	#Range: > 0
 	maxPotatoCannonShots = 200
+
+# 
+#Create's builtin Railway systems
+[trains]
+	# 
+	#Whether moving Trains can hurt colliding mobs and players.
+	trainsCauseDamage = true
+	# 
+	#Maximum length of a Train Stations' assembly track.
+	#Range: > 5
+	maxAssemblyLength = 128
+	# 
+	#Maximum amount of bogeys assembled as a single Train.
+	#Range: > 1
+	maxBogeyCount = 20
+	# 
+	#Relative speed of a manually controlled Train compared to a Scheduled one.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	manualTrainSpeedModifier = 0.75
+
+	# 
+	#Standard Trains
+	[trains.trainStats]
+		# 
+		#[in Blocks/Second]
+		#The top speed of any assembled Train.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		trainTopSpeed = 28.0
+		# 
+		#[in Blocks/Second]
+		#The top speed of Trains during a turn.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		trainTurningTopSpeed = 14.0
+		# 
+		#[in Blocks/SecondÂ²]
+		#The acceleration of any assembled Train.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		trainAcceleration = 3.0
+
+	# 
+	#Powered Trains
+	[trains.poweredTrainStats]
+		# 
+		#[in Blocks/Second]
+		#The top speed of powered Trains.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		poweredTrainTopSpeed = 40.0
+		# 
+		#[in Blocks/Second]
+		#The top speed of powered Trains during a turn.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		poweredTrainTurningTopSpeed = 20.0
+		# 
+		#[in Blocks/SecondÂ²]
+		#The acceleration of powered Trains.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		poweredTrainAcceleration = 3.0
 

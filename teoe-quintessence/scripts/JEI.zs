@@ -16,11 +16,12 @@ mods.jei.JEI.hideRecipe("category", "recipeName");
 
 # Add JEI Info tabs for various items
 mods.jei.JEI.addDescription(<item:appbot:mana_p2p_tunnel>, ["Right-click a P2P tunnel with any Botania item to make it a Mana Tunnel"]);
-mods.jei.JEI.addDescription(<item:ae2:me_p2p_tunnel>, ["Right-click with an accepted item to change it to that type of P2P tunel" + "\nFilter JEI with $attunement to see the accepted list (since it uses item tags)"]);
+mods.jei.JEI.addDescription(<item:ae2:me_p2p_tunnel>, ["Right-click with an accepted item to change it to that type of P2P tunnel" + "\n\nFilter JEI with $attunement to see the accepted list (since it uses item tags)"]);
 mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins"]);
 mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla wood to make that variation of a ladder (e.g. Dark Oak makes Dark Oak Ladders)"]);
 mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
-mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins. Wraiths will spawn in Soul Sand Valleys."]);
+mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley"]);
+mods.jei.JEI.addDescription(<item:ob_core:magic_dust>, ["Find a Magic Crystal Cluster deep in the underground, which will grow Magic Dust over time." + "\n\nThey seem to be more common near lava"]);
 
 
 
@@ -69,6 +70,10 @@ mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
 mods.jei.JEI.hideIngredient(<item:wormhole:creative_energy_cell>);
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);
 mods.jei.JEI.hideIngredient(<item:quantumquarryplus:creative_cell>);
+mods.jei.JEI.hideIngredient(<item:ironjetpacks:cell>.withTag({Id: "ironjetpacks:creative" as string}));
+mods.jei.JEI.hideIngredient(<item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:creative" as string}));
+mods.jei.JEI.hideIngredient(<item:ironjetpacks:jetpack>.withTag({Id: "ironjetpacks:creative" as string}));
+
 
 
 # Hides disabled items
@@ -79,6 +84,7 @@ mods.jei.JEI.hideIngredient(<item:industrialforegoing:gold_gear>);
 mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
+mods.jei.JEI.hideIngredient(<item:wormhole:coal_generator>);
 
 
 
@@ -105,6 +111,10 @@ mods.jei.JEI.hideIngredient(<item:twilightforest:green_force_field>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:blue_force_field>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:violet_force_field>);
 
+mods.jei.JEI.hideIngredient(<item:titanium:block_test>);
+mods.jei.JEI.hideIngredient(<item:titanium:block_twenty_four_test>);
+mods.jei.JEI.hideIngredient(<item:titanium:block_asset_test>);
+mods.jei.JEI.hideIngredient(<item:titanium:machine_test>);
 
 # Hide Uncrafting
 mods.jei.JEI.hideIngredient(<item:twilightforest:uncrafting_table>);

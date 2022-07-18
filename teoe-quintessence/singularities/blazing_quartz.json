@@ -1,0 +1,11 @@
+{
+  "name": "Blazing Quartz",
+  "colors": [
+    "FFB52E",
+    "FFA500"
+  ],
+  "ingredient": {
+    "item": "malum:blazing_quartz",
+	"materialCount": "1500"
+  }
+}

@@ -44,19 +44,22 @@ do fluid:minecraft:empty for empty fluids
 default time for both is 2 - 3 seconds
 */
 
+// Crush Quartzite Sand into Sand & Quartz
+<recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 5);
+
 // Crush Galcite into Coal & Powdered Obsidian
-<recipetype:create:crushing>.addRecipe("crush_galcite", [<item:minecraft:coal>*4 % 100, <item:create:powdered_obsidian> % 20], <item:geode:galcite>);
+<recipetype:create:crushing>.addRecipe("crush_galcite", [<item:minecraft:coal>*4, <item:create:powdered_obsidian> % 20], <item:geode:galcite>, 5);
 
 // Crush Moss Carpets into Moss Paste
 <recipetype:create:crushing>.addRecipe("crush_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 1);
 
 // Crushing Wheel version of my Planks > Sawdust recipe, and TE's Log > Sawdust one
-<recipetype:create:crushing>.addRecipe("crush_planks", [<item:thermal:sawdust>*2 % 100], <tag:items:minecraft:planks>, 1);
-<recipetype:create:crushing>.addRecipe("crush_logs", [<item:thermal:sawdust>*8 % 100], <tag:items:minecraft:logs>, 3);
+<recipetype:create:crushing>.addRecipe("crush_planks", [<item:thermal:sawdust>*2], <tag:items:minecraft:planks>, 1);
+<recipetype:create:crushing>.addRecipe("crush_logs", [<item:thermal:sawdust>*8], <tag:items:minecraft:logs>, 3);
 
 // Moved AE2's Ender Dust to the Crushing Wheels
 blastFurnace.remove(<item:ae2:ender_dust>);
-<recipetype:create:crushing>.addRecipe("ender_dust", [<item:ae2:ender_dust> % 100], <item:minecraft:ender_pearl>, 3);
+<recipetype:create:crushing>.addRecipe("ender_dust", [<item:ae2:ender_dust>], <item:minecraft:ender_pearl>, 3);
 
 // Crying Obsidian > Powdered Obsidian
 <recipetype:create:crushing>.addRecipe("crying_obsidian_to_dust", [<item:create:powdered_obsidian>*2, <item:create:powdered_obsidian> % 50, <item:create:powdered_obsidian> % 25, <item:minecraft:obsidian> % 50], <item:minecraft:crying_obsidian>, 5);
@@ -68,30 +71,30 @@ blastFurnace.remove(<item:ae2:ender_dust>);
 <recipetype:create:crushing>.addRecipe("crush_gold_ring", [<item:create:crushed_gold_ore>*2 % 50, <item:minecraft:gold_nugget>*8 % 50], <item:additionaladditions:gold_ring>, 3);
 
 // Crush Sweet Berries into Red & Green Dye
-<recipetype:create:crushing>.addRecipe("crush_sweet_berries", [<item:minecraft:red_dye>*3 % 100, <item:minecraft:green_dye> % 15], <item:minecraft:sweet_berries>, 3);
+<recipetype:create:crushing>.addRecipe("crush_sweet_berries", [<item:minecraft:red_dye>*3, <item:minecraft:green_dye> % 15], <item:minecraft:sweet_berries>, 3);
 
 // Crush Certus Quartz into Dust
-<recipetype:create:crushing>.addRecipe("crush_certus_quartz", [<item:ae2:certus_quartz_dust> % 100], <tag:items:ae2:all_certus_quartz>, 2);
+<recipetype:create:crushing>.addRecipe("crush_certus_quartz", [<item:ae2:certus_quartz_dust>], <tag:items:ae2:all_certus_quartz>, 2);
 
 // Crush Raw Quartz into Quartz
-<recipetype:create:crushing>.addRecipe("crush_raw_quartz", [<item:minecraft:quartz>*2 % 100, <item:minecraft:quartz>*2 % 50], <item:byg:raw_quartz_block>, 5);
+<recipetype:create:crushing>.addRecipe("crush_raw_quartz", [<item:minecraft:quartz>*2, <item:minecraft:quartz>*2 % 50], <item:byg:raw_quartz_block>, 5);
 
 // Crush Slime Crystal Blocks into Slime Crystals
-<recipetype:create:crushing>.addRecipe("crush_earthslime", [<item:tconstruct:earth_slime_crystal>*3 % 100, <item:tconstruct:earth_slime_crystal> % 50, <item:create:experience_nugget> % 50], <item:tconstruct:earth_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_skyslime", [<item:tconstruct:sky_slime_crystal>*3 % 100, <item:tconstruct:sky_slime_crystal> % 50, <item:create:experience_nugget> % 65], <item:tconstruct:sky_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*3 % 100, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:experience_nugget> % 75], <item:tconstruct:ichor_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*3 % 100, <item:tconstruct:ender_slime_crystal> % 50, <item:create:experience_nugget> % 100], <item:tconstruct:ender_slime_crystal_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_earthslime", [<item:tconstruct:earth_slime_crystal>*3, <item:tconstruct:earth_slime_crystal> % 50, <item:create:experience_nugget> % 50], <item:tconstruct:earth_slime_crystal_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_skyslime", [<item:tconstruct:sky_slime_crystal>*3, <item:tconstruct:sky_slime_crystal> % 50, <item:create:experience_nugget> % 65], <item:tconstruct:sky_slime_crystal_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*3, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:experience_nugget> % 75], <item:tconstruct:ichor_slime_crystal_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*3, <item:tconstruct:ender_slime_crystal> % 50, <item:create:experience_nugget>], <item:tconstruct:ender_slime_crystal_block>, 10);
 
 # Ore Crushing Recipes
 // Cobalt
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:create:experience_nugget> % 100, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 10);
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:create:experience_nugget>*9 % 100, <item:create:experience_nugget> % 50], <item:tconstruct:raw_cobalt_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>, <item:kubejs:crushed_cobalt> % 75, <item:create:experience_nugget>*2 % 100, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 10);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 10);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:create:experience_nugget>*9 % 50, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>, <item:kubejs:crushed_cobalt> % 75, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 10);
 
 // Pendorite
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:create:experience_nugget>*2 % 100], <item:byg:raw_pendorite>, 30);
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:create:experience_nugget>*27 % 75], <item:byg:raw_pendorite_block>, 30);
-<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3 % 100], <item:byg:pendorite_ore>, 30);
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 30);
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:minecraft:netherite_scrap> % 25, <item:create:experience_nugget>*27 % 25], <item:byg:raw_pendorite_block>, 30);
+<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 50, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3], <item:byg:pendorite_ore>, 30);
 
 // Platinum
 <recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 15);
@@ -105,28 +108,38 @@ blastFurnace.remove(<item:ae2:ender_dust>);
 <recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 80, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 7);
 <recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 80, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 7);
 
-###########################################################################
+### Washing Recipes
+<recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
+<recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, <item:kubejs:iridium> % 50], <item:kubejs:crushed_pendorite>);
+<recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, <item:kubejs:iridium> % 25], <item:kubejs:crushed_platinum>);
+# Pendorite has no nugget, rip
 
-# Crush Wrappist Blocks into Shards
-<recipetype:create:crushing>.addRecipe("crush_wrappist_block", [<item:geode:wrappist_shard>*3 % 100, <item:geode:wrappist_shard> % 50, <item:create:experience_nugget> % 100, <item:create:experience_nugget> % 50], <item:geode:wrappist_block>, 5);
+###########################################################################
+### Geode Block Recipes
+
+// Crush Subzero Blocks into Shards
+<recipetype:create:crushing>.addRecipe("crush_subzero_block", [<item:byg:subzero_crystal_shard>*3, <item:byg:subzero_crystal_shard> % 50], <item:byg:subzero_crystal_block>, 5);
+
+// Crush Wrappist Blocks into Shards
+<recipetype:create:crushing>.addRecipe("crush_wrappist_block", [<item:geode:wrappist_shard>*3, <item:geode:wrappist_shard> % 50], <item:geode:wrappist_block>, 5);
 
 # Crush Corundum blocks into crystals
-<recipetype:create:crushing>.addRecipe("crush_red_corundum", [<item:quark:red_corundum_cluster>*3 % 100, <item:quark:red_corundum_cluster> % 75], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_red_corundum", [<item:quark:red_corundum_cluster>*3, <item:quark:red_corundum_cluster> % 75], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_orange_corundum", [<item:quark:orange_corundum_cluster>*3 % 100, <item:quark:orange_corundum_cluster> % 75], <item:quark:orange_corundum>|<item:quark:waxed_orange_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_orange_corundum", [<item:quark:orange_corundum_cluster>*3, <item:quark:orange_corundum_cluster> % 75], <item:quark:orange_corundum>|<item:quark:waxed_orange_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_yellow_corundum", [<item:quark:yellow_corundum_cluster>*3 % 100, <item:quark:yellow_corundum_cluster> % 75], <item:quark:yellow_corundum>|<item:quark:waxed_yellow_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_yellow_corundum", [<item:quark:yellow_corundum_cluster>*3, <item:quark:yellow_corundum_cluster> % 75], <item:quark:yellow_corundum>|<item:quark:waxed_yellow_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_green_corundum", [<item:quark:green_corundum_cluster>*3 % 100, <item:quark:green_corundum_cluster> % 75], <item:quark:green_corundum>|<item:quark:waxed_green_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_green_corundum", [<item:quark:green_corundum_cluster>*3, <item:quark:green_corundum_cluster> % 75], <item:quark:green_corundum>|<item:quark:waxed_green_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_blue_corundum", [<item:quark:blue_corundum_cluster>*3 % 100, <item:quark:blue_corundum_cluster> % 75], <item:quark:blue_corundum>|<item:quark:waxed_blue_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_blue_corundum", [<item:quark:blue_corundum_cluster>*3, <item:quark:blue_corundum_cluster> % 75], <item:quark:blue_corundum>|<item:quark:waxed_blue_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_indigo_corundum", [<item:quark:indigo_corundum_cluster>*3 % 100, <item:quark:indigo_corundum_cluster> % 75], <item:quark:indigo_corundum>|<item:quark:waxed_indigo_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_indigo_corundum", [<item:quark:indigo_corundum_cluster>*3, <item:quark:indigo_corundum_cluster> % 75], <item:quark:indigo_corundum>|<item:quark:waxed_indigo_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_violet_corundum", [<item:quark:violet_corundum_cluster>*3 % 100, <item:quark:violet_corundum_cluster> % 75], <item:quark:violet_corundum>|<item:quark:waxed_violet_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_violet_corundum", [<item:quark:violet_corundum_cluster>*3, <item:quark:violet_corundum_cluster> % 75], <item:quark:violet_corundum>|<item:quark:waxed_violet_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_white_corundum", [<item:quark:white_corundum_cluster>*3 % 100, <item:quark:white_corundum_cluster> % 75], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_white_corundum", [<item:quark:white_corundum_cluster>*3, <item:quark:white_corundum_cluster> % 75], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 10);
 
-<recipetype:create:crushing>.addRecipe("crush_black_corundum", [<item:quark:black_corundum_cluster>*3 % 100, <item:quark:black_corundum_cluster> % 75], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 10);
+<recipetype:create:crushing>.addRecipe("crush_black_corundum", [<item:quark:black_corundum_cluster>*3, <item:quark:black_corundum_cluster> % 75], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 10);
 
 print("create.zs loaded");

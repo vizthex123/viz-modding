@@ -53,7 +53,7 @@
 	"Ender Watcher" = true
 	"Dispensers Place Blocks" = false
 	Chute = true
-	"Chains Connect Blocks" = true
+	"Chains Connect Blocks" = false
 
 	[automation.pistons_move_tile_entities]
 		"Enable Chests Moving Together" = true
@@ -255,7 +255,7 @@
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
 		"Enable Shulker Box Interaction" = true
-		"Enable Lava Interaction" = true
+		"Enable Lava Interaction" = false
 
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
@@ -404,7 +404,7 @@
 	"Compasses Work Everywhere" = false
 	"Campfires Boost Elytra" = true
 	"Better Elytra Rocket" = true
-	"Automatic Recipe Unlock" = true
+	"Automatic Recipe Unlock" = false
 	"Armed Armor Stands" = true
 	"Skull Pikes" = true
 
@@ -1514,7 +1514,7 @@
 	"Spawner Replacer" = false
 	"Overlay Shader" = false
 	"Narrator Readout" = false
-	"Game Nerfs" = false
+	"Game Nerfs" = true
 	"Enchantments Begone" = false
 	"Adjustable Chat" = false
 
@@ -1532,15 +1532,15 @@
 	[experimental.game_nerfs]
 		#Makes Mending act like the Unmending mod
 		#https://www.curseforge.com/minecraft/mc-mods/unmending
-		"Nerf Mending" = true
+		"Nerf Mending" = false
 		#Resets all villager discounts when zombified to prevent reducing prices to ridiculous levels
 		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
-		"Disable Iron Farms" = true
+		"Disable Iron Farms" = false
 		#Makes Boats not glide on ice
 		"Disable Ice Roads" = true
 		#Makes Sheep not drop Wool when killed
-		"Disable Wool Drops" = true
+		"Disable Wool Drops" = false
 
 	[experimental.enchantments_begone]
 		"Enchantments To Begone" = []

@@ -19,13 +19,6 @@ mods.extendedcrafting.TableCrafting.addShaped("advanced_target_device", 1, <item
 	[<item:thermal:electrum_ingot>, <item:wormhole:target_device>, <item:minecraft:gold_ingot>], 
 	[<item:thermal:electrum_ingot>, <item:thermal:electrum_ingot>, <item:thermal:electrum_ingot>]]);
 
-// Coal Generator
-craftingTable.remove(<item:wormhole:coal_generator>);
-mods.extendedcrafting.TableCrafting.addShaped("coal_generator", 1, <item:wormhole:coal_generator>,
-	[[<item:minecraft:copper_ingot>, <item:minecraft:ender_pearl>, <item:minecraft:copper_ingot>], 
-	[<item:minecraft:copper_ingot>, <item:minecraft:furnace>, <item:minecraft:copper_ingot>], 
-	[<item:minecraft:copper_ingot>, <item:minecraft:redstone>, <item:minecraft:copper_ingot>]]);
-
 # Target Cells
 	// Basic
 craftingTable.remove(<item:wormhole:basic_target_cell>);

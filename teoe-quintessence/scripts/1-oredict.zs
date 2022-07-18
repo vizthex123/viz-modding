@@ -2,25 +2,34 @@
 
 import crafttweaker.api.tag.MCTag;
 
-print("1_oredict.zs loading...");
+print("1-oredict.zs loading...");
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
 
-# Sleepers (train track recipe)
-<tag:items:create:sleepers>.add(<item:minecraft:polished_andesite_slab>);
-<tag:items:create:sleepers>.add(<item:create:cut_andesite_slab>);
-<tag:items:create:sleepers>.add(<item:create:polished_cut_andesite_slab>);
-<tag:items:create:sleepers>.add(<item:nourished_nether:smooth_basalt_slab>);
-<tag:items:create:sleepers>.add(<item:create:cut_tuff_slab>);
-<tag:items:create:sleepers>.add(<item:quark:polished_tuff_slab>);
-<tag:items:create:sleepers>.add(<item:quark:tuff_slab>);
+
+# Tape Measures (quest)
+<tag:items:teoe:tape_measure>.add(<item:measurements:tape_measure>);
+<tag:items:teoe:tape_measure>.add(<item:quark:abacus>);
 
 
 # Magic Dust (recipes)
 <tag:items:teoe:magic_dust>.add(<item:enigmaticlegacy:astral_dust>);
 <tag:items:teoe:magic_dust>.add(<item:ob_core:magic_dust>);
+
+
+# Shards (recipes)
+<tag:items:teoe:shard>.add(<item:minecraft:amethyst_shard>);
+<tag:items:teoe:shard>.add(<item:byg:subzero_crystal_shard>);
+<tag:items:teoe:shard>.add(<item:geode:wrappist_shard>);
+<tag:items:teoe:shard>.add(<item:byg:therium_shard>);
+
+
+# Scrolls (quest)
+<tag:items:teoe:scrolls>.add(<item:waystones:warp_scroll>);
+<tag:items:teoe:scrolls>.add(<item:waystones:bound_scroll>);
+<tag:items:teoe:scrolls>.add(<item:waystones:return_scroll>);
 
 
 # RF Coils (quest)
@@ -85,6 +94,16 @@ print("1_oredict.zs loading...");
 <tag:items:minecraft:boats>.add(<item:quark:blossom_boat>);
 <tag:items:minecraft:boats>.add(<item:quark:azalea_boat>);
 
+
+
+# Sleepers (train track recipe)
+<tag:items:create:sleepers>.add(<item:minecraft:polished_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:create:cut_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:create:polished_cut_andesite_slab>);
+<tag:items:create:sleepers>.add(<item:nourished_nether:smooth_basalt_slab>);
+<tag:items:create:sleepers>.add(<item:create:cut_tuff_slab>);
+<tag:items:create:sleepers>.add(<item:quark:polished_tuff_slab>);
+<tag:items:create:sleepers>.add(<item:quark:tuff_slab>);
 
 
 # TEoE Planks
@@ -190,6 +209,7 @@ mods are blacklisted in the config
 <tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
 <tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
 <tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:magic_dust>);
 
 <tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
 <tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
@@ -333,10 +353,6 @@ mods are blacklisted in the config
 
 <tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
 
-<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
-
-<tag:items:minecraft:coals>.add(<item:malum:arcane_charcoal>);
-
 <tag:items:forge:end_stones>.add(<item:geode:smooth_endstone>);
 
 <tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
@@ -346,6 +362,8 @@ mods are blacklisted in the config
 <tag:items:forge:limestone>.add(<item:create:limestone>);
 
 <tag:items:create:crushed_ores>.add(<item:malum:crushed_soulstone>);
+
+<tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
 
 # Tag Removal
 <tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);
@@ -368,4 +386,4 @@ mods are blacklisted in the config
 
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
 
-print("1_oredict.zs loaded");
+print("1-oredict.zs loaded");

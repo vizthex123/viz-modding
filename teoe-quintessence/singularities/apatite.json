@@ -1,0 +1,10 @@
+{
+  "name": "Apatite",
+  "colors": [
+    "0052A2",
+    "7AD7F0"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/apatite"
+  }
+}

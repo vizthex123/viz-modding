@@ -56,14 +56,35 @@ val clf = "\u00A7r";
 <item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Lime in an Induction Furnace");
 
 
+
+# Quarries
+<item:squarry:fuel_quarry>.addTooltip(red + "Only mines the chunk it's placed in");
+<item:squarry:fuel_quarry>.addTooltip(red +"Doesn't accept upgrades");
+
+<item:squarry:powered_quarry>.addTooltip(red +"Only mines the chunk it's placed in");
+<item:squarry:powered_quarry>.addTooltip(aqua +"Accepts both RF and solid fuel");
+<item:squarry:powered_quarry>.addTooltip(green + "Can hold 5 upgrades");
+
+
+
 # Coinification tooltips
 <item:enigmaticlegacy:unholy_grail>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:enigmaticlegacy:architect_eye>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:enigmaticlegacy:lore_inscriber>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:enigmaticlegacy:earth_heart>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+
 <item:quark:diamond_heart>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 
-
+<item:twilightforest:maze_map_focus>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:twilight_scepter>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:lifedrain_scepter>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:zombie_scepter>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:fortification_scepter>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:charm_of_keeping_1>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:charm_of_keeping_2>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:charm_of_keeping_3>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:charm_of_life_1>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+<item:twilightforest:charm_of_life_2>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 
 <item:tesseract:tesseract>.removeTooltip("Items, fluids, and energy can be transferred between multiple tesseracts");
 

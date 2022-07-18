@@ -55,22 +55,21 @@ craftingTable.addShaped("sawdust_clump", <item:kubejs:sawdust_clump>,
     [[<item:thermal:sawdust>, <item:thermal:sawdust>],
     [<item:thermal:sawdust>, <item:thermal:sawdust>]]);
 
-<recipetype:thermal:press>.addRecipe("press_sawdust", [<item:kubejs:sawdust_clump> % 100], <fluid:minecraft:empty>, [<item:thermal:sawdust>*4, <item:thermal:press_packing_2x2_die>], 400);
+<recipetype:thermal:press>.addRecipe("press_sawdust", [<item:kubejs:sawdust_clump>], <fluid:minecraft:empty>, [<item:thermal:sawdust>*4, <item:thermal:press_packing_2x2_die>], 400);
 
 // Compressed
-furnace.addRecipe("smelt_sawdust", <item:minecraft:charcoal>, <item:kubejs:compressed_sawdust>, 0, 200);
+furnace.addRecipe("smelt_compressed_sawdust", <item:minecraft:charcoal>, <item:kubejs:compressed_sawdust>, 0, 200);
 
 craftingTable.addShaped("sawdust_sticks", <item:minecraft:stick>*8,
     [[<item:kubejs:compressed_sawdust>],
-    [<item:kubejs:compressed_sawdust>],
     [<item:kubejs:compressed_sawdust>]]);
 
-<recipetype:thermal:press>.addRecipe("uncraft_sawdust", [<item:kubejs:sawdust_clump> % 100], <fluid:minecraft:empty>, [<item:kubejs:compressed_sawdust>, <item:thermal:press_unpacking_die>], 400);
+<recipetype:thermal:press>.addRecipe("uncraft_sawdust", [<item:kubejs:sawdust_clump>], <fluid:minecraft:empty>, [<item:kubejs:compressed_sawdust>, <item:thermal:press_unpacking_die>], 400);
 
 // Compressed Clumps
-<recipetype:thermal:press>.addRecipe("multipress_sawdust_clump", [<item:kubejs:compressed_sawdust>*2 % 100], <fluid:minecraft:empty>, [<item:kubejs:sawdust_clump>, <item:kubejs:sawdust_clump>], 1000);
+<recipetype:thermal:press>.addRecipe("multipress_sawdust_clump", [<item:kubejs:compressed_sawdust>*2], <fluid:minecraft:empty>, [<item:kubejs:sawdust_clump>, <item:kubejs:sawdust_clump>], 1000);
 
-<recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust> % 100], <item:kubejs:sawdust_clump>, 1);
+<recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust>], <item:kubejs:sawdust_clump>, 1);
 
 
 
@@ -108,7 +107,7 @@ craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
 */
 
 # Portal Catalyst
-mods.extendedcrafting.TableCrafting.addShaped("portal_catalyst", 1, <item:kubejs:portal_catalyst>,
-	[[<item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>, <item:minecraft:diamond>, <item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("portal_catalyst", <item:kubejs:portal_catalyst>,
+[[<item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>, <item:minecraft:diamond>, <item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>]]);
 
 print("3-kubejs.zs loaded");

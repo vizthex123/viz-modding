@@ -45,5 +45,5 @@
 		Treasure = false
 		#This option adjusts the maximum allowable level for the Enchantment.
 		#Range: 1 ~ 10
-		"Max Level" = 4
+		"Max Level" = 3
 
