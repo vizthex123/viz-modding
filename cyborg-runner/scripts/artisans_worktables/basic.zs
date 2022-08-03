@@ -17,7 +17,7 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:logWood>, <ore:logWood>, <ore:logWood>],
-    [<ore:logWood>, <ore:chest>, <ore:logWood>],
+    [<ore:logWood>, <ore:chestWood>, <ore:logWood>],
     [<ore:logWood>, <ore:logWood>, <ore:logWood>]])
   .setSecondaryIngredients([<jjcoin:gold_coin>*2, <jjcoin:silver_coin>])
   .addTool(<ore:artisansHammer>, 4)

@@ -19,7 +19,7 @@ import loottweaker.vanilla.loot.LootPool;
 
 print("LootTweaker.zs loading...");
 
-// Progression
+# Progression
 // Stuff that drops Bones
 val pig = loottweaker.LootTweaker.getTable("minecraft:entities/pig");
 val cow = loottweaker.LootTweaker.getTable("minecraft:entities/cow");
@@ -27,13 +27,15 @@ val sheep = loottweaker.LootTweaker.getTable("minecraft:entities/sheep");
 val chicken = loottweaker.LootTweaker.getTable("minecraft:entities/chicken");
 val parrot = loottweaker.LootTweaker.getTable("minecraft:entities/parrot");
 val zombie1 = loottweaker.LootTweaker.getTable("minecraft:entities/zombie");
+val zombie2 = loottweaker.LootTweaker.getTable("minecraft:entities/zombie_villager");
 
 val pig_loot = pig.addPool("pig_bones", 1, 1, 0, 0);
 val cow_loot = cow.addPool("cow_bones", 1, 1, 0, 1);
 val sheep_loot = sheep.addPool("sheep_bones", 0, 1, 0, 0);
 val chicken_loot = chicken.addPool("chicken_bones", 0, 1, 0, 0);
-val parrot_loot = parrot.addPool("chicken_bones", 0, 1, 0, 0);
+val parrot_loot = parrot.addPool("parrot_bones", 0, 1, 0, 0);
 val zombie1_loot = zombie1.addPool("zombie_bones", 0, 1, 0, 1);
+val zombie2_loot = zombie1.addPool("zombie_villager_bones", 0, 1, 0, 1);
 
 pig_loot.addItemEntry(<minecraft:bone>, 1);
 cow_loot.addItemEntry(<minecraft:bone>, 1);
@@ -41,6 +43,7 @@ sheep_loot.addItemEntry(<minecraft:bone>, 1);
 chicken_loot.addItemEntry(<minecraft:bone>, 1);
 parrot_loot.addItemEntry(<minecraft:bone>, 1);
 zombie1_loot.addItemEntry(<minecraft:bone>, 2);
+zombie2_loot.addItemEntry(<minecraft:bone>, 2);
 
 
 

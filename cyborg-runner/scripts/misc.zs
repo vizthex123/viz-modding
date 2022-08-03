@@ -10,6 +10,18 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// New Akashic Tome recipes
+recipes.remove(<akashictome:tome>);
+recipes.addShapeless(<akashictome:tome>, [<ore:bookshelf>, <minecraft:book>]);
+recipes.addShapeless(<akashictome:tome>, [<minecraft:writable_book>, <minecraft:book>, <minecraft:book>]);
+
+// New Idea Table recipe
+// Removes Parchment & Feather requirements
+recipes.remove(<ftgumod:idea_table>);
+recipes.addShaped(<ftgumod:idea_table>, [[null, <ore:bone>, null],
+                                  			    [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+                               			    [null, <ore:craftingTableWood>, null]]);
+
 // Craft Cursed  & Enchanted Hearts
 recipes.addShaped(<scalinghealth:difficultychanger>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],
                                       [<scalinghealth:heartdust>, <minecraft:bread>|<xlfoodmod:cheesy_bread>|<byg:pumpkinbread>|<xlfoodmod:baguette>|<xlfoodmod:rice_bread>|<xlfoodmod:corn_bread>|<xlfoodmod:potato_bread>, <scalinghealth:heartdust>],
@@ -27,18 +39,6 @@ furnace.addRecipe(<minecraft:gold_nugget>*5, <pyramidplunder:urn>, 1.0);
 recipes.addShaped(<minecraft:hopper>, [[<minecraft:iron_ingot>, <wopper:wopper>, <minecraft:iron_ingot>],
                                       		                    [<minecraft:iron_ingot>, <ore:logWood>, <minecraft:iron_ingot>],
                                     		 	[null, <minecraft:iron_ingot>, null]]);
-
-// New Akashic Tome recipes
-recipes.remove(<akashictome:tome>);
-recipes.addShapeless(<akashictome:tome>, [<ore:bookshelf>, <minecraft:book>]);
-recipes.addShapeless(<akashictome:tome>, [<minecraft:writable_book>, <minecraft:book>, <minecraft:book>]);
-
-// New Idea Table recipe
-// Removes Parchment & Feather requirements
-recipes.remove(<ftgumod:idea_table>);
-recipes.addShaped(<ftgumod:idea_table>, [[null, <ore:bone>, null],
-                                  			    [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
-                               			    [<ore:planksWood>, <ore:craftingTableWood>, <ore:planksWood>]]);
 
 // Change Heart Dust recipes
 // On the fence about making it a basic table recipe that uses a Hammer
@@ -146,12 +146,11 @@ recipes.addShapeless(<multitools:universaltool_iron>, [<multitools:paxel_iron>, 
 recipes.addShapeless(<multitools:universaltool_gold>, [<multitools:paxel_gold>, <minecraft:golden_hoe>, <ore:stickStone>]);
 recipes.addShapeless(<multitools:universaltool_diamond>, [<multitools:paxel_diamond>, <minecraft:diamond_hoe>, <ore:stickStone>]);
 
-// Make BYG Flesh the final step
 // Fix how (Dried) Flesh conflicts with Cooked
 recipes.remove(<xlfoodmod:flesh>);
 recipes.remove(<byg:cookedflesh>);
 
-recipes.addShapeless(<xlfoodmod:flesh>, [<minecraft:rotten_flesh>, <ore:dustSalt>]);
+recipes.addShapeless(<xlfoodmod:flesh>, [<minecraft:rotten_flesh>, <xlfoodmod:salt>|<alchemistry:mineral_salt>]);
 furnace.addRecipe(<byg:cookedflesh>, <xlfoodmod:flesh>, 0.25);
 furnace.addRecipe(<xlfoodmod:flesh>, <minecraft:rotten_flesh>, 0.10);
 
@@ -180,7 +179,7 @@ recipes.addShapedMirrored(<dse:components:10>*2, [[null, <minecraft:redstone>, <
                                  				      [<minecraft:iron_ingot>, <minecraft:redstone>, null]]);
 
 recipes.addShapedMirrored(<dse:components:10>, [[null, <minecraft:redstone>, <minecraft:iron_ingot>],
-                                     				   [<ore:dustSalt>, <contenttweaker:faulty_circuit>, <ore:dustSalt>],
+                                     				   [<xlfoodmod:salt>|<alchemistry:mineral_salt>, <contenttweaker:faulty_circuit>, <xlfoodmod:salt>|<alchemistry:mineral_salt>],
                                  				   [<minecraft:iron_ingot>, <minecraft:redstone>, null]]);
 
 // Clathrate Uses

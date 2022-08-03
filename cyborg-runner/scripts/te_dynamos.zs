@@ -50,7 +50,7 @@ mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:dragon_egg>, 50000000)
 mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:totem_of_undying>, 25000000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:golden_apple:1>, 10000000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<scalinghealth:heartcontainer>, 250000);
-mods.thermalexpansion.EnervationDynamo.addFuel(<scalinghealth:heartdust>, 6000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<scalinghealth:heartdust>, 4000);
 
 
 print("te_dynamos.zs loaded");

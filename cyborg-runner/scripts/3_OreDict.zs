@@ -167,4 +167,51 @@ chestw.add(<glacidus:underground_chest>);
 
 
 
+// Artisan's Tool Removals
+<ore:artisansHammer>.remove(<artisanworktables:artisans_hammer_wood>);
+<ore:artisansHammer>.remove(<artisanworktables:artisans_hammer_flint>);
+
+<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_wood>);
+<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_stone>);
+<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_flint>);
+
+<ore:artisansCutters>.remove(<artisanworktables:artisans_cutters_wood>);
+<ore:artisansCutters>.remove(<artisanworktables:artisans_cutters_flint>);
+
+<ore:artisansChisel>.remove(<artisanworktables:artisans_chisel_wood>);
+<ore:artisansChisel>.remove(<artisanworktables:artisans_chisel_flint>);
+
+<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_wood>);
+<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_stone>);
+<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_flint>);
+<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_gold>);
+<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_bone>);
+
+<ore:artisanPan>.remove(<artisanworktables:artisans_pan_wood>);
+<ore:artisanPan>.remove(<artisanworktables:artisans_pan_stone>);
+<ore:artisanPan>.remove(<artisanworktables:artisans_pan_flint>);
+<ore:artisanPan>.remove(<artisanworktables:artisans_pan_gold>);
+<ore:artisanPan>.remove(<artisanworktables:artisans_pan_bone>);
+
+<ore:artisanKnife>.remove(<artisanworktables:artisans_knife_wood>);
+<ore:artisanKnife>.remove(<artisanworktables:artisans_knife_stone>);
+
+<ore:artisanFile>.remove(<artisanworktables:artisans_file_wood>);
+<ore:artisanFile>.remove(<artisanworktables:artisans_file_flint>);
+
+<ore:artisanBeaker>.remove(<artisanworktables:artisans_beaker_wood>);
+<ore:artisanBeaker>.remove(<artisanworktables:artisans_beaker_stone>);
+<ore:artisanBeaker>.remove(<artisanworktables:artisans_beaker_flint>);
+<ore:artisanBeaker>.remove(<artisanworktables:artisans_beaker_bone>);
+
+<ore:artisanBurner>.remove(<artisanworktables:artisans_burner_wood>);
+<ore:artisanBurner>.remove(<artisanworktables:artisans_burner_stone>);
+<ore:artisanBurner>.remove(<artisanworktables:artisans_burner_flint>);
+<ore:artisanBurner>.remove(<artisanworktables:artisans_burner_gold>);
+<ore:artisanBurner>.remove(<artisanworktables:artisans_burner_bone>);
+
+<ore:artisanSifter>.remove(<artisanworktables:artisans_sifter_wood>);
+<ore:artisanSifter>.remove(<artisanworktables:artisans_sifter_stone>);
+
+
 print("3_OreDict.zs loaded");

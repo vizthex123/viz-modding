@@ -67,19 +67,22 @@ mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:770>*2, <
 
 
 // Recycle Ceramics items
-// Gives 50% of the clay used to craft it
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>, <ceramics:unfired_clay:9>, 500);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>, <ceramics:clay_bucket>, 1000, <minecraft:clay>, 50);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>*2, <ceramics:clay_helmet>, 1000, <minecraft:clay>, 50);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>*4, <ceramics:clay_chestplate>, 1000);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>*3, <ceramics:clay_leggings>, 1000, <minecraft:clay>, 50);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay>*2, <ceramics:clay_boots>, 1000);
-
+// Gives ~50% of the clay used to craft it
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>, <ceramics:unfired_clay:9>, 1000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>, <ceramics:clay_bucket>, 1500, <minecraft:clay_ball>, 50);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>*2, <ceramics:clay_helmet>, 2000, <minecraft:clay_ball>, 50);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>*4, <ceramics:clay_chestplate>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>*3, <ceramics:clay_leggings>, 2000, <minecraft:clay_ball>, 50);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>*2, <ceramics:clay_boots>, 2000);
 
 /*
-// Process Better Slimes & other mobs into their drops
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:black_slime>, [<betterslimes:black_slime>%100, <betterslimes:black_slime>%50, <minecraft:slime_ball>%25], null, 4000);
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:null:blue_slime>, [<betterslimes:blue_slime>%100, <betterslimes:blue_slime>%50, <minecraft:slime_ball>%25], null, 4000);
+mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int energy, int xp);
+*/
+/*
+// Process modded mobs into their drops
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:heartscarspider>, [<natura:materials:7>*2 % 50, <minecraft:spider_eye> % 35], null, 4000, 3);
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:nitrocreeper>, [<minecraft:gunpowder>*3 % 50], null, 4000, 6);
+mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:imp>, [<natura:edibles> % 50, <natura:materials:6>*2 % 50], null, 4000, 1);
 */
 
 print("thermal_expansion.zs loaded");

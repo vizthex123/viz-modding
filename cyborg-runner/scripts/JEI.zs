@@ -28,6 +28,8 @@ mods.jei.JEI.addDescription(<artisanworktables:design_pattern>,"Can be used to s
 
 mods.jei.JEI.addDescription(<glacidus:merialces_hide>,"Occasionally drops from Merialces. They're known to inhabit rather cold places.");
 
+mods.jei.JEI.addDescription(<minecraft:glowstone>,"Can rarely be found in the Alien Jungle.");
+
 
 
 // Remove Ceramics' items
@@ -61,6 +63,9 @@ mods.jei.JEI.removeAndHide(<simplyarrows:arrow_love>);
 // The lower-tier wood/stone/etc. ones. At least for a few tool types.
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_stone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_bone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_flint>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_cutters_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_hammer_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_knife_wood>);
@@ -69,6 +74,8 @@ mods.jei.JEI.removeAndHide(<artisanworktables:artisans_spanner_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_spanner_stone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_stone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_bone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_stone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_chisel_wood>);
@@ -83,6 +90,8 @@ mods.jei.JEI.removeAndHide(<artisanworktables:artisans_burner_bone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_burner_flint>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_bone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_flint>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_sifter_wood>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_sifter_stone>);
 
 
 // Remove some Iron Chests content

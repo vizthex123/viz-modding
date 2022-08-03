@@ -7,9 +7,10 @@ recipes.addShapeless(<contenttweaker:wrapped_bone>, [<ore:string>, <minecraft:bo
 
 // Faulty (DIY Melon) Circuit
 // I don't even know...
-recipes.addShapedMirrored(<contenttweaker:faulty_circuit>, [[null, null, <ore:dustSalt>],
-                                     					 [<minecraft:glowstone_dust>, <minecraft:melon_block>, <minecraft:glowstone_dust>],
-                                 					     [<ore:dustSalt>, null, null]]);
+recipes.addShapedMirrored(<contenttweaker:faulty_circuit>, [[null, null, <xlfoodmod:salt>|<alchemistry:mineral_salt>],
+                                     					 [<minecraft:glowstone_dust>|<minecraft:redstone>|<projectred-core:resource_item:105>, <minecraft:melon_block>, <minecraft:glowstone_dust>|<minecraft:redstone>|<projectred-core:resource_item:105>],
+                                 					     [<xlfoodmod:salt>|<alchemistry:mineral_salt>, null, null]]);
+														 
 // Iron Ring recipe
 recipes.addShaped(<contenttweaker:ring>, [[null, <minecraft:iron_ingot>, null],
                                 		 	      [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],

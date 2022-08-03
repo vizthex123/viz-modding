@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Ship",
+  "items": [
+    {
+      "weight": 99.99998474121094,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "generation": {
+              "nbtType": "int",
+              "nbt": 3
+            },
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"Captain\\u0027s log, addendum.\\n\\nI\\u0027ve constructed a ship, but with only 4 buckets\\u0027 worth of fuel, I doubt I could make it out of the planet\\u0027s orbit.\\n\\nBut, it\\u0027s worth a shot. I\\u0027ll try to scrounge up some extra bits of fuel if I can, but I\\u0027m not sure how much I\\u0027ll be able to find.\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"I\\u0027ll leave this book in the ship on the off chance somebody else crashes here and finds it while I\\u0027m gone. Maybe they\\u0027ll leave me some extra supplies, eh?\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "Unknown"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "Log Addendum"
+            },
+            "resolved": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
