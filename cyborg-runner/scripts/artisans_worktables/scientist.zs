@@ -44,7 +44,7 @@ RecipeBuilder.get("chemist")
   .addTool(<ore:artisansChisel>, 10)
   .addOutput(<coalprocessing:compressed_coal>)
   .addRequirement(FTGU.allOf(["cyborg:technology/coal_compression"]))
-  .setName("compressed_coal_pyrotheum")
+  .setName("carbon_block_pyrotheum")
   .create();
 
 RecipeBuilder.get("chemist")
@@ -54,7 +54,7 @@ RecipeBuilder.get("chemist")
   .addTool(<ore:artisansChisel>, 20)
   .addOutput(<coalprocessing:compressed_coal>)
   .addRequirement(FTGU.allOf(["cyborg:technology/coal_compression"]))
-  .setName("compressed_coal_carbon_pyrotheum")
+  .setName("carbon_block_pyrotheum_charcoal")
   .create();
 
 // Wheat
@@ -70,7 +70,7 @@ RecipeBuilder.get("chemist")
 // Fluxed Electrum Blend
 recipes.remove(<redstonearsenal:material>);
 RecipeBuilder.get("chemist")
-  .setShapeless([<ore:ingotSilver>, <ore:ingotGold>])
+  .setShapeless([<ore:ingotSilver>, <minecraft:gold_ingot>])
   .setFluid(<liquid:redstone> * 1000)
   .addTool(<ore:artisansBeaker>, 5)
   .addTool(<ore:artisansBurner>, 15)

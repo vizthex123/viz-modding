@@ -1,0 +1,29 @@
+{
+  "name": "compactmachines3:generator_overclocked",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_overclock\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
+  "duration": 200,
+  
+  "input-types": {
+	"g": {"id": "minecraft:gold_block"},
+	"l": {"id": "minecraft:lapis_block"},
+	"r": {"id": "minecraft:redstone_wire"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["_", "_", "_"],
+      ["_", "g", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["r", "r", "r"],
+      ["r", "l", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

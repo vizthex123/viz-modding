@@ -1,0 +1,22 @@
+{
+  "name": "compactmachines3:generator_potion",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_potion\"}",
+  "target-count": 1,
+  "catalyst": "minecraft:brewing_stand",
+  "duration": 300,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_wire"},
+	"b": {"id": "additionalcompression:rodblaze_compressed"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["r", "r", "r"],
+      ["r", "b", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

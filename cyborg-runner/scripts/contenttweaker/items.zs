@@ -47,6 +47,13 @@ wrapped_bone.setMaxStackSize(64);
 wrapped_bone.register();
 
 
+// Wrapped Bone
+var mdf = VanillaFactory.createItem("mdf");
+mdf.setMaxStackSize(64);
+
+mdf.register();
+
+
 # Bottled Foods
 var bottled_tomato = VanillaFactory.createItem("bottled_tomato");
 bottled_tomato.setMaxStackSize(64);

@@ -68,8 +68,10 @@ mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_flint>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pan_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_cutters_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_hammer_wood>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_hammer_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_knife_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_knife_stone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_knife_flint>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_spanner_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_spanner_stone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_wood>);
@@ -78,8 +80,10 @@ mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_bone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_pliers_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_stone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_gold>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_chisel_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_file_wood>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_file_stone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_beaker_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_beaker_stone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_beaker_bone>);
@@ -92,6 +96,8 @@ mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_bone>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_solderer_flint>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_sifter_wood>);
 mods.jei.JEI.removeAndHide(<artisanworktables:artisans_sifter_stone>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_handsaw_wood>);
+mods.jei.JEI.removeAndHide(<artisanworktables:artisans_handsaw_flint>);
 
 
 // Remove some Iron Chests content

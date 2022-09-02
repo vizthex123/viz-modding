@@ -1,4 +1,4 @@
-# Adds recipes to the Basic Worktable(s)
+# Adds recipes to the Basic Worktables
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
@@ -27,15 +27,63 @@ RecipeBuilder.get("basic")
   .setName("bounty_board")
   .create();
 
+// Blank Kit
+recipes.remove(<furnaceoverhaul:blank_kit>);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:stone>, <ore:stone>, <ore:stone>],
+    [<ore:stone>, <minecraft:flint>, <ore:stone>],
+    [<ore:stone>, <ore:stone>, <ore:stone>]])
+  .addOutput(<furnaceoverhaul:blank_kit>)
+  .addTool(<ore:artisansCutters>, 30)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/basic"]))
+  .setName("blank_kit")
+  .create();
+
+// Iron Furnace
+recipes.remove(<furnaceoverhaul:iron_furnace>);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>],
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]])
+  .addOutput(<furnaceoverhaul:iron_furnace>)
+  .addTool(<ore:artisansHammer>, 25)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smelting"]))
+  .setName("iron_furnace")
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShapeless([<minecraft:furnace>, <furnaceoverhaul:iron_kit>])
+  .addTool(<ore:artisansChisel>, 15)
+  .addOutput(<furnaceoverhaul:iron_furnace>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smelting"]))
+  .setName("iron_furnace_upgrade")
+  .create();
+
+	// Kit
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<minecraft:bone>, <minecraft:iron_ingot>, <minecraft:bone>],
+    [<minecraft:iron_ingot>, <furnaceoverhaul:blank_kit>, <minecraft:iron_ingot>],
+    [<minecraft:bone>, <minecraft:iron_ingot>, <minecraft:bone>]])
+  .addOutput(<furnaceoverhaul:iron_kit>)
+  .addTool(<ore:artisansHammer>, 15)
+  .addTool(<ore:artisansCutters>, 10)
+  .addRequirement(FTGU.allOf(["cyborg:survival/better_smelting"]))
+  .setName("iron_kit")
+  .create();
+  
 // Compactor
 recipes.removeByRecipeName("compacter:recipe1");
 RecipeBuilder.get("basic")
   .setShapeless([<extrautils2:analogcrafter>, <ore:chest>, <minecraft:redstone>])
+  .addTool(<ore:artisansHandsaw>, 50)
   .addOutput(<compacter:compacter>)
   .setName("compactor")
   .create();
 
-// Fix unfired faucet conflict
+// Fix the unfired faucet conflict
 recipes.remove(<ceramics:unfired_clay:6>);
 RecipeBuilder.get("basic")
   .setShaped([

@@ -75,10 +75,9 @@ print("renames_tooltips.zs loading...");
 <openmodularturrets:disposable_item_turret>.addShiftTooltip("(Polished) Granite");
 <openmodularturrets:disposable_item_turret>.addShiftTooltip("(Polished) Diorite");
 <openmodularturrets:disposable_item_turret>.addShiftTooltip("(Polished) Andesite");
-<openmodularturrets:disposable_item_turret>.addShiftTooltip("Clay (Balls)");
+<openmodularturrets:disposable_item_turret>.addShiftTooltip("Clay");
 
 <minecraft:potato>.addTooltip(format.aqua("Works as ammo for the Potato Cannon"));
-<minecraft:potato>.addShiftTooltip(format.red("Obviously, lol"));
 
 
 // Character Quips
@@ -89,7 +88,7 @@ print("renames_tooltips.zs loading...");
 
 <cyberware:scanner>.addTooltip(format.white("This should get me a blueprint about half the time. Adding extra samples will increase the chances though."));
 <cyberware:engineering_table>.addTooltip(format.white("If I had better equipment, I could retrieve blueprints almost every time."));
-<cyberware:engineering_table>.addTooltip(format.white("But as it stands, it only works about 15% of the time. And I'll need some paper to write the blueprint to."));
+<cyberware:engineering_table>.addTooltip(format.white("But as it stands, it only works about 20% of the time. And I'll need some paper to write the blueprint to."));
 <openblocks:sprinkler>.addTooltip(format.white("I can put Bone Meal inside this to disperse it around the farm"));
 <minecraft:web>.addTooltip(format.white("I could probably extract some string from this"));
 <glacidus:crysium>.addTooltip(format.white("Cold to the touch, I could probably refine this..."));

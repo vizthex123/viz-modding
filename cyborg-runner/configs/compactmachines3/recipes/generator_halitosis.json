@@ -1,0 +1,28 @@
+{
+  "name": "compactmachines3:generator_halitosis",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_dragonsbreath\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator_overclock\"}",
+  "duration": 300,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_block"},
+	"p": {"id": "minecraft:purpur_block"},
+	"e": {
+		"id": "minecraft:end_rod",
+		"meta": 1,
+		"ignore-meta": true
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["e", "p", "e"],
+      ["p", "r", "p"],
+      ["e", "p", "e"]
+	]
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "cm:chaotic_coal_ore"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:iron_coal*3"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 20
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal*2"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 15
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal*5"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 5
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"cm:crimson_coal*2"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 17
+		  }
+		}
+	}
+]
+}]
+}

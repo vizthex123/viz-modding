@@ -10,6 +10,10 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Fix the Underground Bucket not being craftable
+recipes.addShaped(<glacidus:underground_bucket>, [[<glacidus:underground_planks>, null, <glacidus:underground_planks>],
+                                      [null, <glacidus:underground_planks>, null]]);
+
 // Make the Glider wing recipe craft 2 at once.
 recipes.remove(<openblocks:generic>);
 recipes.addShapedMirrored(<openblocks:generic>*2, [[null, <ore:stickWood>, <ore:leather>],
@@ -43,12 +47,14 @@ recipes.addShapeless(<thermalfoundation:material:128>*9, [<ore:blockCopper>]);
 // Also fixes the recipe Forge Microblocks' ones
 recipes.remove(<byg:stonestick>);
 recipes.remove(<microblockcbe:stone_rod>);
-recipes.addShapeless(<byg:stonestick>*4, [<ore:cobblestone>, <ore:cobblestone>]);
-recipes.addShapeless(<microblockcbe:stone_rod>*3, [<ore:stone>, <ore:stone>]);
+recipes.addShaped(<byg:stonestick>*4, [[<ore:cobblestone>, null],
+                                                                                      [<ore:cobblestone>, null]]);
+recipes.addShaped(<natura:materials:5>*3, [[<ore:stone>, null],
+                                                                                      [<ore:stone>, null]]);
 
 // Convert Natura & Glacidus sticks
 recipes.addShapeless(<minecraft:stick>, [<natura:sticks:*>]);
-recipes.addShapeless(<minecraft:stick>, [<glacidus:underground_stick>]);
+# recipes.addShapeless(<minecraft:stick>, [<glacidus:underground_stick>]);
 
 // Remove duplicate recipes for Sticky Pistons
 recipes.remove(<minecraft:sticky_piston>);

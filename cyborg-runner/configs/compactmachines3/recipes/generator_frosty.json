@@ -1,0 +1,23 @@
+{
+  "name": "compactmachines3:generator_frosty",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_ice\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:furnace\"}",
+  "duration": 200,
+  
+  "input-types": {
+	"i": {"id": "minecraft:ice"},
+	"p": {"id": "minecraft:packed_ice"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["i", "p", "i"],
+      ["p", "p", "p"],
+      ["i", "p", "i"]
+	]
+  ]
+}

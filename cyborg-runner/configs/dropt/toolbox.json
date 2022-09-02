@@ -1,0 +1,23 @@
+{
+  "priority": 1,
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "artisanworktables:toolbox"
+          ]
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items" : [
+              "artisanworktables:toolbox"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

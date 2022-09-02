@@ -1,4 +1,4 @@
-# Adds recipes to the Chef's Worktable(s)
+# Adds recipes to the Chef's Worktables
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
@@ -20,10 +20,9 @@ recipes.remove(<minecraft:mushroom_stew>);
 recipes.remove(<minecraft:pumpkin_pie>);
 recipes.remove(<minecraft:rabbit_stew>);
 
-// Poison Potato > Baked Potato
+// Poisonous Potato > Baked Potato
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:poisonous_potato>])
-  .setFluid(<liquid:lava> * 10)
   .addTool(<ore:artisansPan>, 3)
   .addOutput(<minecraft:baked_potato>)
   .addRequirement(GameStages.allOf(["cooking"]))
@@ -47,7 +46,7 @@ RecipeBuilder.get("chef")
 // Beetroot Soup
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:beetroot>, <minecraft:beetroot>, <minecraft:beetroot>, <minecraft:bowl>])
-  .addTool(<ore:artisansKnife>, 6)
+  .addTool(<ore:artisansBurner>, 3)
   .addOutput(<minecraft:beetroot_soup>)
   .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
@@ -57,7 +56,7 @@ RecipeBuilder.get("chef")
 // Mushroom Stew
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <minecraft:brown_mushroom>, <minecraft:red_mushroom>])
-  .addTool(<ore:artisansKnife>, 1)
+  .addTool(<ore:artisansBurner>, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<minecraft:mushroom_stew>)
   .addRequirement(GameStages.allOf(["cooking"]))
@@ -68,7 +67,7 @@ RecipeBuilder.get("chef")
 // Rabbit Stew
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:cooked_rabbit>, <minecraft:baked_potato>, <minecraft:bowl>, <minecraft:carrot>, <minecraft:brown_mushroom>|<minecraft:red_mushroom>])
-  .addTool(<ore:artisansKnife>, 3)
+  .addTool(<ore:artisansBurner>, 5)
   .setFluid(<liquid:lava> * 100)
   .addOutput(<minecraft:rabbit_stew>)
   .addRequirement(GameStages.allOf(["cooking"]))

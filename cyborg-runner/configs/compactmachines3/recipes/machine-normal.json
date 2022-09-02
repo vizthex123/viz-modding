@@ -1,0 +1,35 @@
+{
+  "name": "compactmachines3:machine-normal",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 2,
+  "target-count": 1,
+
+  "duration": 450,
+
+  "catalyst": "dse:components",
+  "catalyst-meta": 10,
+	
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" },
+    "g": { "id": "minecraft:gold_block"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","g","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ]
+  ]
+}

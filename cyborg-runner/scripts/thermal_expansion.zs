@@ -1,6 +1,8 @@
 # Adds recipes to machines from Thermal Expansion
 
+import mods.thermalexpansion.Coolant;
 import mods.thermalexpansion.Refinery;
+
 print("thermal_expansion.zs loading...");
 
 /*
@@ -32,12 +34,18 @@ mods.thermalexpansion.Compactor.addPressRecipe(<nibrockscoal:diamond_coal>, <nib
 // Turn Destabilized Redstone into Redstone
 mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*25, <minecraft:redstone> % 25, <liquid:redstone>*50, 4000);
 
+// Turn Spring Water into Water
+mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*1000, <byg:mudballs> % 25, <liquid:springwater>*1000, 4000);
+
 // Turn Crysium into Cryotheum
 mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*25, <glacidus:crysium>, 8000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*250, <glacidus:crystal_block>, 24000);
 
 // Turn XP Ore into XP
 mods.thermalexpansion.Crucible.addRecipe(<liquid:experience>*50, <xp_ore:xp_ore_drained>, 4000);
+
+// Add Spring Water as a coolant
+mods.thermalexpansion.Coolant.addCoolant(<liquid:springwater>, 325000, 35);
 
 // Should fix all the steel recipe duplicates
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:768>, <minecraft:iron_ingot>);
@@ -78,6 +86,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:clay_ball>*2, <ceramics:cl
 /*
 mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int energy, int xp);
 */
+
 /*
 // Process modded mobs into their drops
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:natura:heartscarspider>, [<natura:materials:7>*2 % 50, <minecraft:spider_eye> % 35], null, 4000, 3);

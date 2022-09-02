@@ -1,0 +1,20 @@
+{
+  "name": "baubles:ring",
+  "target-item": "baubles:ring",
+  "target-count": 1,
+  "catalyst": "contenttweaker:ring",
+  "duration": 60,
+	
+  "input-types": {
+	"r": { "id": "minecraft:redstone_wire" }
+  },
+  
+  "symmetrical": true,
+  "shape": [
+	[
+	  ["r", "r", "r"],
+      ["r", "_", "r"],
+      ["r", "r", "r"]
+    ]
+  ]
+}

@@ -7,6 +7,7 @@
 <contenttweaker:slime_green>.displayName = "Slime Green";
 <contenttweaker:faulty_circuit>.displayName = "DIY Melon Circuit";
 <contenttweaker:wrapped_bone>.displayName = "Wrapped Bone";
+<contenttweaker:mdf>.displayName = "MDF Board";
 <contenttweaker:ring>.displayName = "Iron Ring";
 
 <contenttweaker:bottled_tomato>.displayName = "Bottled Tomato";

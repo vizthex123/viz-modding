@@ -1,0 +1,29 @@
+{
+  "name": "minecraft:furnace",
+  "target-block": "minecraft:furnace",
+  "target-count": 1,
+  "catalyst": "minecraft:flint",
+
+  "input-types": {
+	"c": { "id": "minecraft:cobblestone" }
+  },
+
+  "symmetrical": false,
+  "shape": [
+    [
+      ["c", "c", "c"],
+      ["c", "c", "c"],
+      ["c", "c", "c"]
+	 ],
+	 [
+	  ["c", "c", "c"],
+      ["c", "_", "c"],
+      ["c", "c", "c"]
+     ],
+	 [
+	  ["c", "c", "c"],
+      ["c", "c", "c"],
+      ["c", "c", "c"]
+    ]
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "superores:super_coal"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:iron_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 65
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 40
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 25
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"cm:crimson_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 30
+		  }
+		}
+	}
+]
+}]
+}

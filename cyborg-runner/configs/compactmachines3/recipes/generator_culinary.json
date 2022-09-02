@@ -1,0 +1,36 @@
+{
+  "name": "compactmachines3:generator_culinary",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_culinary\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:furnace\"}",
+  "duration": 300,
+  
+  "input-types": {
+    "h": {
+		"id": "minecraft:hay_block",
+		"ignore-meta": true
+	  },
+	"d": {"id": "minecraft:dirt"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["d", "d", "d"],
+      ["d", "d", "d"],
+      ["d", "d", "d"]
+	],
+	[
+      ["d", "d", "d"],
+      ["d", "h", "d"],
+      ["d", "d", "d"]
+	],
+	[
+      ["d", "d", "d"],
+      ["d", "d", "d"],
+      ["d", "d", "d"]
+	]
+  ]
+}

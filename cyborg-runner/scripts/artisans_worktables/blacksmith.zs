@@ -1,4 +1,4 @@
-# Adds recipes to the Blacksmith's Worktable(s)
+# Adds recipes to the Blacksmith's Worktables
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
@@ -13,49 +13,145 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
 
-# New Furnace Overhaul upgrade recipes
-recipes.remove(<furnaceoverhaul:liquid_fuel_upgrade>);
-recipes.remove(<furnaceoverhaul:efficiency_upgrade>);
-recipes.remove(<furnaceoverhaul:speed_upgrade>);
 
-// Liquid Fuel Upgrade
+# New Furnace recipes
+# Iron Furnace is in basic.zs
+recipes.remove(<furnaceoverhaul:gold_furnace>);
+recipes.remove(<furnaceoverhaul:diamond_furnace>);
+recipes.remove(<furnaceoverhaul:emerald_furnace>);
+recipes.remove(<furnaceoverhaul:end_furnace>);
+
+// Gold Furnace
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:lava_bucket>|<ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}}), <ore:ingotGold>, <minecraft:lava_bucket>|<ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}})],
-    [<ore:ingotGold>, <furnaceoverhaul:blank_upgrade>, <ore:ingotGold>],
-    [<minecraft:lava_bucket>|<ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}}), <ore:ingotGold>, <minecraft:lava_bucket>|<ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}})]])
-  .addTool(<ore:artisansHammer>, 25)
-  .addOutput(<furnaceoverhaul:liquid_fuel_upgrade>)
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:crafting/basic_smelting_upgrades"]))
-  .setName("liquid_fuel_upgrade")
+    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
+    [<minecraft:gold_ingot>, <furnaceoverhaul:iron_furnace>, <minecraft:gold_ingot>],
+    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]])
+  .addOutput(<furnaceoverhaul:gold_furnace>)
+  .addTool(<ore:artisansHammer>, 35)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/better_smelting"]))
+  .setName("gold_furnace")
   .create();
 
-// Efficiency Upgrade
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<furnaceoverhaul:iron_furnace>, <furnaceoverhaul:gold_kit>])
+  .addTool(<ore:artisansChisel>, 15)
+  .addOutput(<furnaceoverhaul:gold_furnace>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/better_smelting"]))
+  .setName("gold_furnace_upgrade")
+  .create();
+
+	// Kit
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>],
-    [<ore:dustRedstone>, <furnaceoverhaul:blank_upgrade>, <ore:dustRedstone>],
-    [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]])
+    [<minecraft:flint>, <minecraft:gold_ingot>, <minecraft:flint>],
+    [<minecraft:gold_ingot>, <furnaceoverhaul:blank_kit>, <minecraft:gold_ingot>],
+    [<minecraft:flint>, <minecraft:gold_ingot>, <minecraft:flint>]])
+  .addOutput(<furnaceoverhaul:gold_kit>)
+  .addTool(<ore:artisansHammer>, 35)
+  .addTool(<ore:artisansCutters>, 20)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/better_smelting"]))
+  .setName("gold_kit")
+  .create();
+
+// Diamond Furnace
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>],
+    [<minecraft:diamond>, <furnaceoverhaul:gold_furnace>, <minecraft:diamond>],
+    [<minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>]])
+  .addOutput(<furnaceoverhaul:diamond_furnace>)
+  .addTool(<ore:artisansHammer>, 25)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("diamond_furnace")
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<furnaceoverhaul:gold_furnace>, <furnaceoverhaul:diamond_kit>])
+  .addTool(<ore:artisansChisel>, 15)
+  .addOutput(<furnaceoverhaul:diamond_furnace>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("diamond_furnace_upgrade")
+  .create();
+
+	// Kit
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<minecraft:prismarine_shard>, <minecraft:diamond>, <minecraft:prismarine_shard>],
+    [<minecraft:diamond>, <furnaceoverhaul:blank_kit>, <minecraft:diamond>],
+    [<minecraft:prismarine_shard>, <minecraft:diamond>, <minecraft:prismarine_shard>]])
+  .addOutput(<furnaceoverhaul:diamond_kit>)
   .addTool(<ore:artisansHammer>, 50)
   .addTool(<ore:artisansCutters>, 35)
-  .addOutput(<furnaceoverhaul:efficiency_upgrade>)
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:crafting/basic_smelting_upgrades"]))
-  .setName("efficiency_upgrade")
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("diamond_kit")
   .create();
 
-// Speed Upgrade
+// Emerald Furnace
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:dustBlaze>, <ore:dustGlowstone>, <ore:dustBlaze>],
-    [<ore:dustGlowstone>, <furnaceoverhaul:blank_upgrade>, <ore:dustGlowstone>],
-    [<ore:dustBlaze>, <ore:dustGlowstone>, <ore:dustBlaze>]])
-  .setSecondaryIngredients([<minecraft:sugar>])
-  .addTool(<ore:artisansCutters>, 30)
-  .addOutput(<furnaceoverhaul:speed_upgrade>)
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:crafting/basic_smelting_upgrades"]))
-  .setName("speed_upgrade")
+    [<minecraft:emerald>, <minecraft:emerald>, <minecraft:emerald>],
+    [<minecraft:emerald>, <furnaceoverhaul:diamond_furnace>, <minecraft:emerald>],
+    [<minecraft:emerald>, <minecraft:emerald>, <minecraft:emerald>]])
+  .addOutput(<furnaceoverhaul:emerald_furnace>)
+  .addTool(<ore:artisansHammer>, 25)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("emerald_furnace")
   .create();
 
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<furnaceoverhaul:diamond_furnace>, <furnaceoverhaul:emerald_kit>])
+  .addTool(<ore:artisansChisel>, 15)
+  .addOutput(<furnaceoverhaul:emerald_furnace>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("emerald_furnace_upgrade")
+  .create();
+
+	// Kit
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<minecraft:prismarine_shard>, <minecraft:emerald>, <minecraft:prismarine_shard>],
+    [<minecraft:emerald>, <furnaceoverhaul:blank_kit>, <minecraft:emerald>],
+    [<minecraft:prismarine_shard>, <minecraft:emerald>, <minecraft:prismarine_shard>]])
+  .addOutput(<furnaceoverhaul:emerald_kit>)
+  .addTool(<ore:artisansHammer>, 50)
+  .addTool(<ore:artisansCutters>, 35)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/improved_smelting"]))
+  .setName("emerald_kit")
+  .create();
+
+// End Furnace
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<alchemistry:ingot:90>|<alchemistry:ingot:101>, <ore:endstone>, <alchemistry:ingot:90>|<alchemistry:ingot:101>],
+    [<ore:endstone>, <furnaceoverhaul:diamond_furnace>, <ore:endstone>],
+    [<alchemistry:ingot:90>|<alchemistry:ingot:101>, <ore:endstone>, <alchemistry:ingot:90>|<alchemistry:ingot:101>]])
+  .addOutput(<furnaceoverhaul:end_furnace>)
+  .addTool(<ore:artisansHammer>, 100)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/ultimate_smelting"]))
+  .setName("end_furnace")
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<furnaceoverhaul:diamond_furnace>, <furnaceoverhaul:emerald_kit>])
+  .addTool(<ore:artisansChisel>, 25)
+  .addOutput(<furnaceoverhaul:emerald_furnace>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/ultimate_smelting"]))
+  .setName("end_furnace_upgrade")
+  .create();
+
+	// Kit
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<alchemistry:element:60>, <minecraft:emerald>, <alchemistry:element:60>],
+    [<minecraft:emerald>, <furnaceoverhaul:blank_kit>, <minecraft:emerald>],
+    [<alchemistry:element:60>, <minecraft:emerald>, <alchemistry:element:60>]])
+  .addOutput(<furnaceoverhaul:end_kit>)
+  .addTool(<ore:artisansHammer>, 100)
+  .addTool(<ore:artisansCutters>, 85)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/ultimate_smelting"]))
+  .setName("end_kit")
+  .create();
 
 // Alternate OB Tank recipe
 RecipeBuilder.get("blacksmith")
@@ -72,10 +168,10 @@ RecipeBuilder.get("blacksmith")
 // Miner's Ring
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>],
-    [<minecraft:redstone>, <contenttweaker:ring>, <minecraft:redstone>],
-    [<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>]])
-  .addTool(<ore:artisansFile>, 3)
+    [null, <projectred-core:resource_item:105>, null],
+    [<projectred-core:resource_item:105>, <contenttweaker:ring>, <projectred-core:resource_item:105>],
+    [null, <projectred-core:resource_item:105>, null]])
+  .addTool(<ore:artisansFile>, 10)
   .addOutput(<baubles:ring>)
   .addRequirement(Reskillable.add("reskillable:mining|3"))
   .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
@@ -288,7 +384,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 5)
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<pristeel:pristeel_ingot>*2)
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_ingot")
   .create();
 
@@ -301,7 +397,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 3)
   .addOutput(<pristeel:pristeel_pickaxe>)
   .addRequirement(Reskillable.addAll(["reskillable:mining|5", "reskillable:agility|5"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_pickaxe")
   .create();
 
@@ -314,7 +410,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 3)
   .addOutput(<pristeel:pristeel_axe>)
   .addRequirement(Reskillable.addAll(["reskillable:mining|5", "reskillable:agility|5"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setMirrored()
   .setName("pristeel_axe")
   .create();
@@ -328,7 +424,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 1)
   .addOutput(<pristeel:pristeel_shovel>)
   .addRequirement(Reskillable.addAll(["reskillable:mining|5", "reskillable:agility|5"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_shovel")
   .create();
 
@@ -341,7 +437,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 2)
   .addOutput(<pristeel:pristeel_hoe>)
   .addRequirement(Reskillable.addAll(["reskillable:farming|5", "reskillable:agility|5"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setMirrored()
   .setName("pristeel_hoe")
   .create();
@@ -355,7 +451,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 4)
   .addOutput(<pristeel:pristeel_sword>)
   .addRequirement(Reskillable.addAll(["reskillable:attack|5", "reskillable:agility|5"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_sword")
   .create();
 
@@ -369,7 +465,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 5)
   .addOutput(<pristeel:pristeel_helmet>)
   .addRequirement(Reskillable.addAll(["reskillable:defense|6", "reskillable:agility|4"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_helmet")
   .create();
 
@@ -383,7 +479,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 8)
   .addOutput(<pristeel:pristeel_chestplate>)
   .addRequirement(Reskillable.addAll(["reskillable:defense|6", "reskillable:agility|4"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_chestplate")
   .create();
 
@@ -397,7 +493,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 7)
   .addOutput(<pristeel:pristeel_legs>)
   .addRequirement(Reskillable.addAll(["reskillable:defense|6", "reskillable:agility|4"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_leggings")
   .create();
 
@@ -410,7 +506,7 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansCutters>, 4)
   .addOutput(<pristeel:pristeel_boots>)
   .addRequirement(Reskillable.addAll(["reskillable:defense|6", "reskillable:agility|4"]))
-  .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing", "cyborg:technology/pristeel"]))
   .setName("pristeel_boots")
   .create();
 

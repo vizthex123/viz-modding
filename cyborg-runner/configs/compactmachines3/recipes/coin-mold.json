@@ -1,0 +1,20 @@
+{
+  "name": "contenttweaker:coin_mold",
+  "target-item": "contenttweaker:coin_mold",
+  "target-count": 1,
+  "catalyst": "minecraft:iron_ingot",
+  "duration": 60,
+	
+  "input-types": {
+	"c": { "id": "ceramics:clay_soft" }
+  },
+  
+  "symmetrical": true,
+  "shape": [
+	[
+	  ["c", "c", "c"],
+      ["c", "_", "c"],
+      ["c", "c", "c"]
+    ]
+  ]
+}

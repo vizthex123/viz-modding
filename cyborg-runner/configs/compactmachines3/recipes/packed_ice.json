@@ -1,0 +1,29 @@
+{
+  "name": "compactmachines3:packed_ice",
+  "target-block": "minecraft:packed_ice",
+  "target-count": 5,
+  "catalyst": "minecraft:water_bucket",
+
+  "input-types": {
+    "i": { "id": "minecraft:ice" }
+  },
+  
+  "symmetrical": true,
+  "shape": [
+	[
+	  ["i", "i", "i"],
+      ["i", "i", "i"],
+      ["i", "i", "i"]
+    ],
+	[
+	  ["i", "i", "i"],
+      ["i", "i", "i"],
+      ["i", "i", "i"]
+    ],
+	[
+	  ["i", "i", "i"],
+      ["i", "i", "i"],
+      ["i", "i", "i"]
+    ]
+  ]
+}

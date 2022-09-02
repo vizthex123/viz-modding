@@ -548,7 +548,7 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<openmodularturrets:upgrade_meta:1>)
   .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
-  .setName("efficiency_upgrade")
+  .setName("om_efficiency_upgrade")
   .create();
 
 // Fire Rate

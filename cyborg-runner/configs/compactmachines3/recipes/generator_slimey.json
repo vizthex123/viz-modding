@@ -1,0 +1,26 @@
+{
+  "name": "compactmachines3:generator_slimey",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_slime\"}",
+  "target-count": 1,
+  "catalyst": "minecraft:milk_bucket",
+  "duration": 300,
+  
+  "input-types": {
+	"s": {"id": "minecraft:slime"},
+	"r": {"id": "minecraft:redstone_wire"},
+	"m": {
+		"id": "extrautils2:decorativesolidwood",
+		"meta": 1
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["r", "s", "r"],
+      ["s", "m", "s"],
+      ["r", "s", "r"]
+	]
+  ]
+}

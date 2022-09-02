@@ -1,0 +1,32 @@
+{
+  "name": "compactmachines3:generator_survival",
+  "target-block": "extrautils2:machine",
+  "target-count": 1,
+  "target-meta": 0,
+  "target-nbt": "{Type:\"extrautils2:generator_survival\"}",
+  "catalyst": "minecraft:redstone",
+  "duration": 100,
+ 
+  "input-types": {
+	"c": {"id": "minecraft:cobblestone"},
+	"t": {
+	"id": "minecraft:redstone_torch",
+	"meta": 5,
+	"ignore-meta": true
+	}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+	  ["_", "_", "_"],
+      ["_", "t", "_"],
+      ["_", "_", "_"]
+	],
+	[
+	  ["_", "c", "_"],
+      ["c", "c", "c"],
+      ["_", "c", "_"]
+	]
+  ]
+}

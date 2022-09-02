@@ -10,6 +10,10 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 <item>.maxStackSize=NEW;
 */
 
+// Iron Ring > Chain Plating
+// Gives a bit more than crafting the plating itself
+recipes.addShapeless(<byg:chainplating>*20, [<contenttweaker:ring>]);
+
 // New Akashic Tome recipes
 recipes.remove(<akashictome:tome>);
 recipes.addShapeless(<akashictome:tome>, [<ore:bookshelf>, <minecraft:book>]);
@@ -22,7 +26,7 @@ recipes.addShaped(<ftgumod:idea_table>, [[null, <ore:bone>, null],
                                   			    [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
                                			    [null, <ore:craftingTableWood>, null]]);
 
-// Craft Cursed  & Enchanted Hearts
+// Craft Cursed & Enchanted Hearts
 recipes.addShaped(<scalinghealth:difficultychanger>, [[<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>],
                                       [<scalinghealth:heartdust>, <minecraft:bread>|<xlfoodmod:cheesy_bread>|<byg:pumpkinbread>|<xlfoodmod:baguette>|<xlfoodmod:rice_bread>|<xlfoodmod:corn_bread>|<xlfoodmod:potato_bread>, <scalinghealth:heartdust>],
                                       [<scalinghealth:heartdust>, <scalinghealth:heartdust>, <scalinghealth:heartdust>]]);
@@ -82,7 +86,7 @@ recipes.addShapeless(<minicoal:minicoal>*12, [<cm:crimson_coal>]);
 // Make Translocators the first form of item/fluid transport
 recipes.remove(<translocators:translocator_part>);
 recipes.remove(<translocators:translocator_part:1>);
-recipes.addShapeless(<translocators:translocator_part>*2, [<ore:circuitBasic>, <minecraft:redstone>, <jjcoin:gold_coin>]);
+recipes.addShapeless(<translocators:translocator_part>*2, [<ore:circuitBasic>, <minecraft:redstone>|<projectred-core:resource_item:105>, <jjcoin:gold_coin>]);
 recipes.addShapeless(<translocators:translocator_part:1>*2, [<ore:circuitBasic>, <minecraft:dye:4>, <jjcoin:gold_coin>]);
 
 // Melon Blocks > Slices
@@ -166,21 +170,36 @@ recipes.addShapeless(<minecraft:flint>, [<minecraft:gravel>, <minecraft:gravel>,
 // Bone Torch tweak
 // To make them the early-game lighting method
 recipes.remove(<bonetorch:bonetorch>);
-recipes.addShapeless(<bonetorch:bonetorch>, [<minecraft:flint_and_steel:*>.transformDamage(1), <contenttweaker:wrapped_bone>]);
+recipes.addShapeless("wrapped_torch", <bonetorch:bonetorch>, [<minecraft:flint_and_steel:*>.transformDamage(1), <contenttweaker:wrapped_bone>]);
 
-recipes.addShapeless(<bonetorch:bonetorch>*4, [<minecraft:coal>|<minecraft:coal:1>, <ore:bone>]);
+recipes.addShaped(<bonetorch:bonetorch>*4, [[<minecraft:coal>|<minecraft:coal:1>, null],
+                                     			            [<ore:bone>, null]]);
+
+recipes.addShapedMirrored(<bonetorch:bonetorch>*6, [[<cm:crimson_coal>, null],
+                                  			    [<ore:bone>, null]]);
 
 // Basic Circuit re-work
 // Makes 2 per craft, and costs about the same
 // Also lets you upgrade a DIY Melon Circuit into a Basic one
 recipes.remove(<dse:components:10>);
-recipes.addShapedMirrored(<dse:components:10>*2, [[null, <minecraft:redstone>, <minecraft:iron_ingot>],
+recipes.addShapedMirrored(<dse:components:10>*2, [[null, <minecraft:redstone>|<projectred-core:resource_item:105>, <minecraft:iron_ingot>],
                                      				      [<minecraft:gold_ingot>, <ore:dyeGreen>, <minecraft:gold_ingot>],
-                                 				      [<minecraft:iron_ingot>, <minecraft:redstone>, null]]);
+                                 				      [<minecraft:iron_ingot>, <minecraft:redstone>|<projectred-core:resource_item:105>, null]]);
 
-recipes.addShapedMirrored(<dse:components:10>, [[null, <minecraft:redstone>, <minecraft:iron_ingot>],
+recipes.addShapedMirrored(<dse:components:10>, [[null, <minecraft:redstone>|<projectred-core:resource_item:105>, <minecraft:iron_ingot>],
                                      				   [<xlfoodmod:salt>|<alchemistry:mineral_salt>, <contenttweaker:faulty_circuit>, <xlfoodmod:salt>|<alchemistry:mineral_salt>],
-                                 				   [<minecraft:iron_ingot>, <minecraft:redstone>, null]]);
+                                 				   [<minecraft:iron_ingot>, <minecraft:redstone>|<projectred-core:resource_item:105>, null]]);
+
+// Allow the player to use Electrotine for Advanced and Elite circuits
+recipes.remove(<dse:components:11>);
+recipes.remove(<dse:components:12>);
+recipes.addShapedMirrored(<dse:components:11>, [[null, <minecraft:redstone>|<projectred-core:resource_item:105>, <minecraft:gold_ingot>],
+                                     				   [<dse:components:10>, <ore:dyeRed>, <dse:components:10>],
+                                 				   [<minecraft:gold_ingot>, <minecraft:redstone>|<projectred-core:resource_item:105>, null]]);
+
+recipes.addShapedMirrored(<dse:components:12>, [[null, <projectred-core:resource_item:105>, <minecraft:diamond>],
+                                     				   [<dse:components:11>, <ore:dyeBlue>, <dse:components:11>],
+                                 				   [<minecraft:diamond>, <projectred-core:resource_item:105>, null]]);
 
 // Clathrate Uses
 recipes.addShapeless(<minecraft:redstone>, [<thermalfoundation:material:893>, <thermalfoundation:material:893>]);

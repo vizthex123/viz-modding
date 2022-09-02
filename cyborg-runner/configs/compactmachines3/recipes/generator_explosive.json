@@ -1,0 +1,23 @@
+{
+  "name": "compactmachines3:generator_explosive",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_tnt\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
+  "duration": 300,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_wire"},
+	"t": {"id": "minecraft:tnt"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["r", "r", "r"],
+      ["r", "t", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "compactmachines3:enchanter",
+  "target-block": "extrautils2:machine",
+  "target-count": 1,
+  "target-meta": 0,
+  "target-nbt": "{Type:\"extrautils2:enchanter\"}",
+  "catalyst": "minecraft:diamond",
+  "duration": 500,
+  
+  "input-types": {
+	"e": {"id": "minecraft:enchanting_table"},
+	"i": {"id": "minecraft:iron_block"},
+	"m": {
+		"id": "extrautils2:decorativesolidwood",
+		"meta": 0
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["_", "_", "_"],
+      ["_", "e", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["m", "m", "m"],
+      ["m", "i", "m"],
+      ["m", "m", "m"]
+	]
+  ]
+}

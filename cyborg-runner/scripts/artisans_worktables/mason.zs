@@ -1,4 +1,4 @@
-# Adds recipes to the Mason's Worktable(s)
+# Adds recipes to the Mason's Worktables
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
@@ -17,9 +17,9 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 recipes.remove(<wetstone:wetstone>);
 RecipeBuilder.get("mason")
   .setShaped([
-    [<ore:bars>, <ore:bricksStone>, <ore:bars>],
-    [<ore:bricksStone>, <ore:bars>, <ore:bricksStone>],
-    [<ore:bars>, <ore:bricksStone>, <ore:bars>]])
+    [<ore:bars>, <minecraft:stonebrick>, <ore:bars>],
+    [<minecraft:stonebrick>, <ore:bars>, <minecraft:stonebrick>],
+    [<ore:bars>, <minecraft:stonebrick>, <ore:bars>]])
   .setFluid(<liquid:water> * 4000)
   .addTool(<ore:artisansChisel>, 16)
   .addOutput(<wetstone:wetstone> * 4)
@@ -93,7 +93,7 @@ RecipeBuilder.get("mason")
   .setShapeless([<minecraft:gravel>, <minecraft:gravel>])
   .setFluid(<liquid:water> * 500)
   .addTool(<ore:artisansSifter>, 10)
-  .addOutput(<minecraft:flint>*2)
+  .addOutput(<minecraft:flint> * 2)
   .setExtraOutputOne(<minecraft:flint>, 0.5)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("crush_gravel_flint")
@@ -334,14 +334,13 @@ RecipeBuilder.get("mason")
 
 
 
-# New recipe for Stone Bricks
+### New recipes for Bricks
 recipes.remove(<minecraft:stonebrick>);
 recipes.remove(<minecraft:stonebrick:1>);
 recipes.remove(<minecraft:stonebrick:3>);
-recipes.remove(<minecraft:brick_block>);
-recipes.remove(<minecraft:nether_brick>);
 
-// Stone
+# Stone
+// Bricks
 RecipeBuilder.get("mason")
   .setShaped([
     [<minecraft:stone>, <minecraft:stone>],
@@ -352,7 +351,56 @@ RecipeBuilder.get("mason")
   .setName("stone_bricks")
   .create();
 
-// Mossy
+// Stairs
+recipes.remove(<minecraft:stone_brick_stairs>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:bricksStone>, null, null],
+    [<ore:bricksStone>, <ore:bricksStone>, null],
+    [<ore:bricksStone>, <ore:bricksStone>, <ore:bricksStone>]])
+  .addTool(<ore:artisansChisel>, 6)
+  .addOutput(<minecraft:stone_brick_stairs>*4)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("stone_brick_stairs")
+  .setMirrored()
+  .create();
+
+// Slab
+recipes.remove(<minecraft:stone_slab:5>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:bricksStone>, <ore:bricksStone>, <ore:bricksStone>]])
+  .addTool(<ore:artisansChisel>, 12)
+  .addOutput(<minecraft:stone_slab:5>*6)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("stone_brick_slab")
+  .setMirrored()
+  .create();
+ 
+// Border Stone
+recipes.remove(<extrautils2:decorativesolid>);
+RecipeBuilder.get("mason")
+  .setShapeless([<ore:bricksStone>, <ore:bricksStone>, <ore:stone>, <ore:stone>])
+  .addTool(<ore:artisansFile>, 8)
+  .addTool(<ore:artisansChisel>, 4)
+  .addOutput(<extrautils2:decorativesolid>*4)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("border_stone")
+  .create();
+ 
+// Polished Stone
+recipes.remove(<extrautils2:decorativesolid:2>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:bricksStone>, <ore:bricksStone>],
+    [<ore:bricksStone>, <ore:bricksStone>]])
+  .addTool(<ore:artisansFile>, 8)
+  .addOutput(<extrautils2:decorativesolid:2>*4)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("polished_stone")
+  .create();
+
+# Mossy
 RecipeBuilder.get("mason")
   .setShapeless([<minecraft:stonebrick>, <minecraft:vine>])
   .setFluid(<liquid:water> * 500)
@@ -362,7 +410,7 @@ RecipeBuilder.get("mason")
   .setName("mossy_bricks")
   .create();
 
-// Chiseled
+# Chiseled
 RecipeBuilder.get("mason")
   .setShapeless([<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>])
   .addTool(<ore:artisansChisel>, 4)
@@ -371,7 +419,13 @@ RecipeBuilder.get("mason")
   .setName("chiseled_bricks")
   .create();
 
-// Regular (Clay)
+### Bricks
+recipes.remove(<minecraft:brick_block>);
+recipes.remove(<minecraft:brick_stairs>);
+recipes.remove(<minecraft:stone_slab:4>);
+
+# Regular (Clay)
+// Bricks
 RecipeBuilder.get("mason")
   .setShaped([
     [<minecraft:brick>, <minecraft:brick>],
@@ -382,7 +436,46 @@ RecipeBuilder.get("mason")
   .setName("bricks")
   .create();
 
-	// Nether Bricks
+// Stairs
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:brick_block>, null, null],
+    [<minecraft:brick_block>, <minecraft:brick_block>, null],
+    [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>]])
+  .addTool(<ore:artisansChisel>, 6)
+  .addOutput(<minecraft:brick_stairs>*4)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("brick_stairs")
+  .setMirrored()
+  .create();
+ 
+// Slab
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>]])
+  .addTool(<ore:artisansChisel>, 12)
+  .addOutput(<minecraft:stone_slab:4>*6)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("brick_slab")
+  .create();
+  
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:brick>, <minecraft:brick>]])
+  .addTool(<ore:artisansFile>, 3)
+  .addOutput(<minecraft:stone_slab:4>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("brick_slab_ingot")
+  .setMirrored()
+  .create();
+  
+# Nether Bricks
+recipes.remove(<minecraft:nether_brick>);
+recipes.remove(<minecraft:nether_brick_stairs>);
+recipes.remove(<minecraft:stone_slab:6>);
+recipes.remove(<minecraft:nether_brick_fence>);
+
+// Brick
 RecipeBuilder.get("mason")
   .setShaped([
     [<minecraft:netherbrick>, <minecraft:netherbrick>],
@@ -393,6 +486,51 @@ RecipeBuilder.get("mason")
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("nether_bricks")
   .create();
+ 
+// Stairs
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:nether_brick>, null, null],
+    [<minecraft:nether_brick>, <minecraft:nether_brick>, null],
+    [<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>]])
+  .addTool(<ore:artisansFile>, 6)
+  .addOutput(<minecraft:nether_brick_stairs>*4)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("nether_brick_stairs")
+  .setMirrored()
+  .create();
+
+// Slab
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>]])
+  .addTool(<ore:artisansChisel>, 12)
+  .addOutput(<minecraft:stone_slab:6>*6)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("nether_brick_slab")
+  .create();
+  
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:netherbrick>, <minecraft:netherbrick>]])
+  .addTool(<ore:artisansFile>, 3)
+  .addOutput(<minecraft:stone_slab:6>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("nether_brick_slab_ingot")
+  .setMirrored()
+  .create();
+
+// Fence
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>],
+    [<minecraft:nether_brick>, <minecraft:nether_brick>, <minecraft:nether_brick>]])
+  .addTool(<ore:artisansFile>, 6)
+  .addTool(<ore:artisansChisel>, 6)
+  .addOutput(<minecraft:nether_brick_fence>*6)
+  .setName("nether_brick_fence")
+  .create();
+
 
 # Lunarian Bricks (Village Names)
 // Iron
@@ -417,6 +555,7 @@ RecipeBuilder.get("mason")
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("gold_bricks")
   .create();
+
 
 // Sea Lantern
 recipes.remove(<minecraft:sea_lantern>);

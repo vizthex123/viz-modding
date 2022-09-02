@@ -1,0 +1,36 @@
+{
+  "name": "compactmachines3:furnace_eu",
+  "target-block": "extrautils2:machine",
+  "target-count": 1,
+  "target-meta": 0,
+  "target-nbt": "{Type:\"extrautils2:furnace\"}",
+  "catalyst": "extrautils2:machine",
+  "duration": 200,
+  
+  "input-types": {
+	"b": {
+	"id": "minecraft:stone_slab",
+	"meta": 4
+	},
+	"r": {
+	"id": "minecraft:redstone_torch",
+	"meta": 5,
+	"ignore-meta": true
+	},
+	"c": {"id": "extrautils2:compressedcobblestone"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+	  ["_", "_", "_"],
+      ["_", "r", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["b", "b", "b"],
+      ["b", "c", "b"],
+      ["b", "b", "b"]
+	]
+  ]
+}

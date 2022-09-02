@@ -1,0 +1,37 @@
+{
+  "name": "compactmachines3:generator_furnace",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "({Type: \"extrautils2:generator_survival\"})",
+  "duration": 200,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_wire"},
+	"f": {
+	"id": "minecraft:furnace",
+	"meta": 3,
+	"ignore-meta": true
+	},
+	"t": {
+	"id": "minecraft:redstone_torch",
+	"meta": 5,
+	"ignore-meta": true
+	}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+	  ["_", "_", "_"],
+      ["_", "t", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["r", "r", "r"],
+      ["r", "f", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

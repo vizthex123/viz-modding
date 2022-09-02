@@ -1,0 +1,52 @@
+{
+	"dependencies": "cm",
+	"priority": 5,
+	"populate": {
+		"crimson_coal": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "cm:crimson_coal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 8,
+			"min-height": 0,
+			"max-height": 192,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+					3,
+					84
+				]
+			}
+		},
+		"chaotic_coal": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "cm:chaotic_coal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 5,
+			"min-height": 4,
+			"max-height": 64,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+					3,
+					84
+				]
+			}
+		}
+	}
+}

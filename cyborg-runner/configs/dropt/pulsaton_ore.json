@@ -1,0 +1,64 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "glacidus:pulsaton_ore"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:iron_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 50
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 30
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 15
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"cm:crimson_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 25
+		  }
+		}
+	}
+]
+}]
+}

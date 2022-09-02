@@ -1,0 +1,32 @@
+{
+  "name": "compactmachines3:generator_death",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_death\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
+  "duration": 300,
+  
+  "input-types": {
+	"b": {
+		"id": "minecraft:bone_block",
+		"meta": 0,
+		"ignore-meta": true
+	  },
+	"r": {"id": "minecraft:redstone_wire"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["_", "_", "_"],
+      ["_", "b", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["r", "r", "r"],
+      ["r", "b", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

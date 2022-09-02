@@ -1,0 +1,29 @@
+{
+  "name": "compactmachines3:generator_pink",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_pink\"}",
+  "target-count": 1,
+  "catalyst": "minecraft:dye",
+  "catalyst-meta": 9,
+  "duration": 300,
+  
+  "input-types": {
+	"w": {
+		"id": "minecraft:wool",
+		"meta": 6
+	  },
+	"t": {
+		"id": "minecraft:stained_hardened_clay",
+		"meta": 6
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["t", "t", "t"],
+      ["t", "w", "t"],
+      ["t", "t", "t"]
+	]
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "compactmachines3:generator_redstone",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_redstone\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator_lava\"}",
+  "duration": 400,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_block"},
+	"w": {
+	"id":
+	"minecraft:redstone_wire",
+	"ignore-meta": true"
+	}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["w", "w", "w"],
+      ["w", "r", "w"],
+      ["w", "w", "w"]
+	]
+  ]
+}

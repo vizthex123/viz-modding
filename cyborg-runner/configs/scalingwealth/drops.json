@@ -1,0 +1,373 @@
+{
+  "entities": {
+    "minecraft:zombie": {
+      "[10, 25]": [
+        {
+          "chance": 1.0,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[1, 3]"
+        }
+      ],
+      "[25, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin"
+        }
+      ]
+    },
+    "minecraft:zombie_villager": {
+      "[10, 25]": [
+        {
+          "chance": 1.0,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[2, 4]"
+        }
+      ],
+      "[26, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 2]"
+        }
+      ]
+    },
+	"minecraft:skeleton": {
+	  "[10, 25]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[1, 5]"
+        }
+	  ],
+      "[26, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[0, 2]"
+        }
+      ]
+	},
+	"minecraft:creeper": {
+	  "[7, 25]": [
+	    {
+          "chance": 0.75,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[0, 6]"
+        }
+	  ],
+      "[26, 50]": [
+        {
+          "chance": 0.45,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 3]"
+        }
+      ]
+	},
+	"minecraft:husk": {
+	  "[3, 25]": [
+	    {
+          "chance": 0.75,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 3]"
+        }
+	  ],
+      "[26, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 2]"
+        }
+      ]
+	},
+	"minecraft:spider": {
+	  "[3, 15]": [
+	    {
+          "chance": 0.65,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	},
+	"minecraft:cave_spider": {
+	  "[0, 20]": [
+	    {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[0, 1]"
+        }
+	  ]
+	},
+	"minecraft:slime": {
+	  "[10, 20]": [
+	    {
+          "chance": 0.4,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[1, 5]"
+        }
+	  ]
+	},
+	"minecraft:silverfish": {
+	  "[0, 20]": [
+	    {
+          "chance": 0.1,
+          "item": "jjcoin:copper_coin"
+        }
+	  ]
+	},
+	"minecraft:guardian": {
+	  "[0, 50]": [
+	    {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin"
+        }
+	  ]
+	},
+	"minecraft:elder_guardian": {
+	  "[0, 25]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:gold_coin"
+        }
+	  ],
+	  "[26, 50]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:diamond_coin"
+        }
+	  ]
+	},
+	"minecraft:vindication_illager": {
+	  "[5, 20]": [
+	    {
+          "chance": 0.75,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[0, 2]"
+        }
+	  ]
+	},
+	"minecraft:evocation_illager": {
+	  "[5, 25]": [
+	    {
+          "chance": 0.75,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[0, 3]"
+        }
+	  ],
+      "[25, 50]": [
+        {
+          "chance": 0.35,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[1, 3]"
+        }
+      ]
+	},
+	"minecraft:zombie_pigman": {
+	  "[0, 20]": [
+	    {
+          "chance": 0.1,
+          "item": "jjcoin:copper_coin"
+        }
+	  ]
+	},
+	"minecraft:magma_cube": {
+	  "[0, 25]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	},
+	"minecraft:ghast": {
+	  "[0, 50]": [
+	    {
+          "chance": 0.45,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[2, 4]"
+        }
+	  ]
+	},
+	"minecraft:blaze": {
+	  "[0, 50]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	},
+	"natura:heatscarspider": {
+	  "[0, 50]": [
+	    {
+          "chance": 0.3,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[0, 2]"
+        }
+	  ]
+	},
+	"natura:nitrocreeper": {
+	  "[1, 50]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:silver_coin"
+        }
+	  ]
+	},
+	"minecraft:enderman": {
+	  "[5, 50]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 3]"
+        },
+	    {
+          "chance": 0.5,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[0, 2]"
+        }
+	  ]
+	},
+	"minecraft:endermite": {
+	  "[0, 20]": [
+	    {
+          "chance": 0.1,
+          "item": "jjcoin:copper_coin"
+        }
+	  ]
+	},
+	"minecraft:shulker": {
+	  "[0, 100]": [
+	    {
+          "chance": 0.25,
+          "item": "jjcoin:silver_coin"
+        }
+	  ]
+	},
+	"minecraft:ender_dragon": {
+	  "[0, 50]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[10, 10]"
+        }
+	  ],
+	  "[51, 100]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[15, 15]"
+        }
+	  ],
+	  "[101, 250]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[25, 25]"
+        }
+	  ],
+	  "[251, 500]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:diamond_coin",
+		  "amount": "[50, 50]"
+        }
+	  ]
+	},
+	"cyberware:cyberzombie": {
+	   "[10, 25]": [
+        {
+          "chance": 1.0,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[2, 4]"
+        }
+      ],
+      "[25, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:gold_coin"
+        }
+      ]
+    },
+	"rewired:cyberskeleton": {
+	  "[0, 50]": [
+	    {
+          "chance": 1.0,
+          "item": "jjcoin:silver_coin"
+        }
+	  ],
+	  "[10, 50]": [
+	    {
+          "chance": 0.5,
+          "item": "jjcoin:gold_coin"
+        }
+	  ]
+	},
+	"byg:fungalzombie": {
+	  "[10, 25]": [
+        {
+          "chance": 1.0,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[2, 4]"
+        }
+      ],
+      "[25, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 2]"
+        }
+      ]
+	},
+	"byg:petrifiedzombie": {
+	  "[10, 25]": [
+        {
+          "chance": 1.0,
+          "item": "jjcoin:copper_coin",
+		  "amount": "[2, 4]"
+        }
+      ],
+      "[26, 50]": [
+        {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin",
+		  "amount": "[1, 2]"
+        }
+      ]
+	},
+	"byg:petrifiedspider": {
+	  "[0, 25]": [
+	    {
+          "chance": 0.5,
+          "item": "jjcoin:silver_coin"
+        }
+	  ]
+	},
+	"thermalfoundation:basalz": {
+	 "[0, 65]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	},
+	"thermalfoundation:blizz": {
+	 "[0, 65]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	},
+	"thermalfoundation:blitz": {
+	 "[0, 65]": [
+	    {
+          "chance": 0.35,
+          "item": "jjcoin:gold_coin",
+		  "amount": "[1, 2]"
+        }
+	  ]
+	}
+  }
+}

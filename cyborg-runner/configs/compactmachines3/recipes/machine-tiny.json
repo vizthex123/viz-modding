@@ -1,0 +1,35 @@
+{
+  "name": "compactmachines3:machine-tiny",
+  "target-item": "compactmachines3:machine",
+  "target-meta": 0,
+  "target-count": 1,
+
+  "duration": 100,
+
+  "catalyst": "extrautils2:ingredients",
+  "catalyst-meta": 1,
+
+  "input-types": {
+    "w": { "id": "compactmachines3:wallbreakable" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","_","w"],
+      ["w","w","w"]
+    ],
+    [
+      ["w","w","w"],
+      ["w","w","w"],
+      ["w","w","w"]
+    ]
+  ]
+
+}

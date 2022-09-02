@@ -1,0 +1,51 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "ore:treeLeaves"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"minecraft:stick"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 50
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"minecraft:golden_apple:0"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 7
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"minecraft:golden_apple:1"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 2
+		  }
+		}
+	}]
+}]
+}

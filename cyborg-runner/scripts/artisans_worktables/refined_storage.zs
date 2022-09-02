@@ -23,7 +23,7 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 // Changes Quartz-Enriched Iron to use the Chemist's worktable
 recipes.remove(<refinedstorage:quartz_enriched_iron>);
 RecipeBuilder.get("chemist")
-  .setShapeless([<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:quartz>, <minecraft:quartz>])
+  .setShapeless([<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:quartz>])
   .setFluid(<liquid:lava> * 500)
   .addTool(<ore:artisansBurner>, 40)
   .addOutput(<refinedstorage:quartz_enriched_iron> * 4)

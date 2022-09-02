@@ -1,0 +1,26 @@
+{
+  "name": "compactmachines3:generator_netherstar",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_netherstar\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator_overclock\"}",
+  "duration": 300,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_wire"},
+	"n": {
+		"id": "extrautils2:compressednetherrack",
+		"meta": 2
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["r", "r", "r"],
+      ["r", "n", "r"],
+      ["r", "r", "r"]
+	]
+  ]
+}

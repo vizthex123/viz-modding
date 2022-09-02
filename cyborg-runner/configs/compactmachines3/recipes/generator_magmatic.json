@@ -1,0 +1,55 @@
+{
+  "name": "compactmachines3:generator_magmatic",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_lava\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
+  "duration": 400,
+  
+  "input-types": {
+	"r": {"id": "minecraft:redstone_block"},
+	"g": {"id": "minecraft:gold_block"},
+	"s": {"id": "minecraft:stone"},
+	"o": {"id": "minecraft:obsidian"}
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["s", "s", "s", "s", "s"],
+      ["s", "s", "s", "s", "s"],
+	  ["s", "s", "r", "s", "s"],
+	  ["s", "s", "s", "s", "s"],
+      ["s", "s", "s", "s", "s"]
+	],
+	[
+	  ["s", "s", "s", "s", "s"],
+	  ["s", "o", "o", "o", "s"],
+      ["s", "o", "o", "o", "s"],
+      ["s", "o", "o", "o", "s"],
+      ["s", "s", "s", "s", "s"]
+	],
+	[
+	  ["s", "s", "s", "s", "s"],
+      ["s", "o", "o", "o", "s"],
+      ["s", "o", "g", "o", "s"],
+      ["s", "o", "o", "o", "s"],
+	  ["s", "s", "s", "s", "s"]
+	],
+	[
+	  ["s", "s", "s", "s", "s"],
+      ["s", "o", "o", "o", "s"],
+      ["s", "o", "o", "o", "s"],
+      ["s", "o", "o", "o", "s"],
+	  ["s", "s", "s", "s", "s"]
+	],
+	[
+	  ["s", "s", "s", "s", "s"],
+	  ["s", "s", "s", "s", "s"],
+      ["s", "s", "s", "s", "s"],
+      ["s", "s", "s", "s", "s"],
+      ["s", "s", "s", "s", "s"]
+	]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "compactmachines3:generator_dischantment",
+  "target-block": "extrautils2:machine",
+  "target-nbt": "{Type:\"extrautils2:generator_enchant\"}",
+  "target-count": 1,
+  "catalyst": "extrautils2:machine",
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
+  "duration": 300,
+  
+  "input-types": {
+	"b": {"id": "minecraft:bookshelf"},
+	"e": {"id": "minecraft:enchanting_table"},
+	"m": {
+		"id": "extrautils2:decorativesolidwood",
+		"meta": 0
+	  }
+  },
+
+  "symmetrical": true,
+  "shape": [
+	[
+      ["_", "_", "_"],
+      ["_", "e", "_"],
+      ["_", "_", "_"]
+	],
+	[
+      ["m", "m", "m"],
+      ["m", "b", "m"],
+      ["m", "m", "m"]
+	]
+  ]
+}
