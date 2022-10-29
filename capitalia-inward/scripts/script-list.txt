@@ -1,0 +1,4 @@
+standard ones (JEI, ore dict, etc.)
+
+current recipe ideas:
+- reduce extended crafting costs

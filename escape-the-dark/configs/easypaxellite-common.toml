@@ -1,0 +1,16 @@
+
+["Paxel Settings"]
+	#Set Burn Time to allow Paxels to be used as a Fuel Source.  Set to 0 ( ZERO ) to Disable.
+	#Range: 0 ~ 999999
+	"Wooden Paxels Burn Time" = 400
+	#Range: 0 ~ 999999
+	"Stone Paxels Burn Time" = 0
+	#Range: 0 ~ 999999
+	"Iron Paxels Burn Time" = 0
+	#Range: 0 ~ 999999
+	"Golden Paxels Burn Time" = 0
+	#Range: 0 ~ 999999
+	"Diamond Paxels Burn Time" = 0
+	#Range: 0 ~ 999999
+	"Netherite Paxels Burn Time" = 0
+

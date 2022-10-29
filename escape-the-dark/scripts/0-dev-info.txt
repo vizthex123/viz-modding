@@ -1,0 +1,27 @@
+===Story Setup===
+
+You're a reacher sent to study this new "sculk" material, but a cave-in blocked your only exit.
+
+Now, you must find a way to unblock it and escape, before the sculk overtakes you.
+
+
+===Quest Shapes===
+
+Circle: Default
+Square: Technology
+Rounded Square: Exploration
+Hexagon: Challenges
+
+Gear: Information
+
+===Characters===
+
+/tellraw @p {"text":"MSG", "color":"green"}
+
+
+
+
+
+[White] Researcher: The player
+
+[Green] Dr. Scarus: Lead scientist in the Sculk Studying Section
