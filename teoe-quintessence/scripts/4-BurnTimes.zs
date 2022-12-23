@@ -6,7 +6,7 @@ print("4-BurnTimes.zs loading...");
 200 = 1 item smelted
 */
 
-<item:quark:stick_block>.burnTime = 1000;
+# <item:quark:stick_block>.burnTime = 1000;
 <item:thermal:bamboo_block>.burnTime = 500;
 <item:woodenhopper:wooden_hopper>.burnTime = 300;
 <item:minecraft:dried_kelp_block>.burnTime = 4000;

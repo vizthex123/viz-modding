@@ -6,5 +6,6 @@
   ],
   "ingredient": {
 	"item": "malum:processed_soulstone"
-  }
+  },
+	"materialCount": 500
 }

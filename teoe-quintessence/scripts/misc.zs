@@ -17,6 +17,24 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Crops -> Dye
+craftingTable.addShapeless("glow_berry_dye", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
+
+craftingTable.addShapeless("corn_dye", <item:minecraft:yellow_dye>, [<item:thermal:corn>]);
+craftingTable.addShapeless("onion_dye", <item:minecraft:brown_dye>, [<item:thermal:onion>]);
+craftingTable.addShapeless("pink_dye", <item:minecraft:pink_dye>, [<item:thermal:radish>]);
+craftingTable.addShapeless("sadiroot_dye", <item:minecraft:cyan_dye>, [<item:thermal:sadiroot>]);
+craftingTable.addShapeless("spinach_dye", <item:minecraft:green_dye>, [<item:thermal:spinach>]);
+craftingTable.addShapeless("pepper_dye", <item:minecraft:green_dye>, [<item:thermal:bell_pepper>]);
+craftingTable.addShapeless("eggplant_dye", <item:minecraft:purple_dye>, [<item:thermal:eggplant>]);
+craftingTable.addShapeless("green_bean_dye", <item:minecraft:green_dye>, [<item:thermal:green_bean>]);
+craftingTable.addShapeless("peanut_dye", <item:minecraft:brown_dye>, [<item:thermal:peanut>]);
+craftingTable.addShapeless("strawberry_dye", <item:minecraft:red_dye>, [<item:thermal:strawberry>]);
+craftingTable.addShapeless("tomato_dye", <item:minecraft:red_dye>, [<item:thermal:tomato>]);
+craftingTable.addShapeless("coffee_dye", <item:minecraft:red_dye>, [<item:thermal:coffee>, <item:thermal:coffee>]);
+craftingTable.addShapeless("hops_tea_dye", <item:minecraft:green_dye>, [<item:thermal:hops>|<item:thermal:tea>, <item:thermal:hops>|<item:thermal:tea>]);
+
+
 // Travertine -> Cobblestone
 furnace.addRecipe("smelt_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 200);
 blastFurnace.addRecipe("blast_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 100);

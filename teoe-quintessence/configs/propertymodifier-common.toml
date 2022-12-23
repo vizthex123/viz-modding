@@ -16,6 +16,10 @@
 	item_group = []
 	#Removes item groups that have no items, including empty ones created by this mod. Runs after the below stuff, clearing up any empty groups left from moving all items out of them.
 	remove_empty_item_groups = true
+	#Whether to sort all item groups or not.
+	sort = false
+	#A list of groups that should be removed under all circumstances. Cannot remove "hotbar", "search" and "inventory".
+	force_remove = []
 
 #Dumps all corresponding values with their changeable properties into the logs. Dumping tilling transitions or villager trades is impossible code-wise, hence they are missing in this list.
 [dump]
@@ -84,7 +88,7 @@
 	#The max durability an item has. Can only be set on damageable items. Default value: 0
 	max_damage = ["quark:forgotten_hat;72", "longfallboots:longfallboots;512", "easypaxellite:wood_paxel;78", "easypaxellite:stone_paxel;172", "easypaxellite:iron_paxel;325", "easypaxellite:golden_paxel;42", "easypaxellite:diamond_paxel;2030", "easypaxellite:netherite_paxel;2640", "ae2:fluix_sword;350", "ae2:fluix_pickaxe;350", "ae2:fluix_shovel;350", "ae2:fluix_axe;350", "ae2:fluix_hoe;350", "additionaladditions:gilded_netherite_sword;2200", "additionaladditions:gilded_netherite_pickaxe;2200", "additionaladditions:gilded_netherite_shovel;2200", "additionaladditions:gilded_netherite_hoe;2200", "additionaladditions:gilded_netherite_axe;2200", "additionaladditions:gilded_netherite_helmet;472", "additionaladditions:gilded_netherite_chestplate;657", "additionaladditions:gilded_netherite_leggings;620", "additionaladditions:gilded_netherite_boots;546", "additionaladditions:rose_gold_sword;275", "additionaladditions:rose_gold_pickaxe:275", "additionaladditions:rose_gold_shovel;275", "additionaladditions:rose_gold_hoe;275", "additionaladditions:rose_gold_axe;275", "additionaladditions:rose_gold_helmet;177", "additionaladditions:rose_gold_chestplate;225", "additionaladditions:rose_gold_leggings;249", "additionaladditions:rose_gold_boots;129"]
 	#The max stack size an item has. Can't be set on damageable items. Default value: 64 (1 for damageable items)
-	max_stack_size = []
+	max_stack_size = ["byg:white_puffball_stew;1"]
 	#The item group (= creative tab) of an item. Use "none" to remove the item from any item group. Default value: none
 	group = []
 	#Whether the item should have the fire and lava shielding properties of netherite or not. Default value: false

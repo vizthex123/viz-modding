@@ -8,6 +8,7 @@
 	debugLevel = 2
 
 	#Villager Related Settings.
+	#Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
 	[common.villagers]
 		#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
 		addCustomWanderingTrades = true
@@ -16,6 +17,21 @@
 		#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
 		addCashier = true
 
+		#Settings Related to other Villagers
+		[common.villagers.other_traders]
+			#Whether vanilla villagers should have the Emeralds from their trades replaced with coins.
+			changeVanillaTrades = false
+			#Whether villagers added by other mods should have the Emeralds from their trades replaced with coins.
+			changeModdedTrades = false
+			#Whether the wandering trader should have the emeralds from their trades replaced with the default trader coin.
+			changeWanderingTrades = false
+			#The default coin to replace a traders emeralds with.
+			defaultTraderCoin = "lightmanscurrency:coin_emerald"
+			#List of trader coin overrides.
+			#Each entry must be formatted as follows: "mod:some_trader_type-lightmanscurrency:some_coin"
+			#Every trader not on this list will use the default trader coin defined above.
+			traderOverrides = ["minecraft:butcher-lightmanscurrency:coin_iron", "minecraft:cartographer-lightmanscurrency:coin_iron", "minecraft:farmer-lightmanscurrency:coin_iron", "minecraft:fisherman-lightmanscurrency:coin_iron", "minecraft:fletcher-lightmanscurrency:coin_copper", "minecraft:leatherworker-lightmanscurrency:coin_iron", "minecraft:mason-lightmanscurrency:coin_iron", "minecraft:shepherd-lightmanscurrency:coin_iron"]
+
 	#Entity loot settings. Accepts entity ids (i.e. minecraft:zombie)
 	[common.entity_loot]
 		#Whether coins can be dropped by entities. Does not effect chest loot generation.
@@ -23,9 +39,9 @@
 		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
 		enableSpawnerEntityDrops = false
 		#Entities that will occasionally drop copper coins.
-		copper = ["minecraft:zombie", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
+		copper = ["minecraft:zombie", "minecraft:husk", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
 		#Entities that will occasionally drop copper -> iron coins.
-		iron = ["minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:zombie_villager", "minecraft:drowned", "minecraft:vindicator", "minecraft:pillager", "minecraft:endermite", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin", "minecraft:zombified_piglin", "minecraft:piglin_brute", "twilightforest:carminite_ghastguard", "twilightforest:carminite_golem", "twilightforest:king_spider", "twilightforest:lower_goblin_knight", "twilightforest:upper_goblin_knight", "twilightforest:stable_ice_core", "twilightforest:unstable_ice_core", "twilightforest:troll", "twilightforest:yeti", "thermal:blitz", "thermal:blizz", "thermal:basalz", "ob_core:ancient_paladin", "ob_aquamirae:anglerfish", "ob_aquamirae:tortured_soul", "whisperwoods:zotzpyre"]
+		iron = ["minecraft:skeleton", "minecraft:stray", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:zombie_villager", "minecraft:drowned", "minecraft:vindicator", "minecraft:pillager", "minecraft:endermite", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin", "minecraft:zombified_piglin", "minecraft:piglin_brute", "twilightforest:carminite_ghastguard", "twilightforest:carminite_golem", "twilightforest:king_spider", "twilightforest:lower_goblin_knight", "twilightforest:upper_goblin_knight", "twilightforest:stable_ice_core", "twilightforest:unstable_ice_core", "twilightforest:troll", "twilightforest:yeti", "thermal:blitz", "thermal:blizz", "thermal:basalz", "ob_core:ancient_paladin", "ob_aquamirae:anglerfish", "ob_aquamirae:tortured_soul", "whisperwoods:zotzpyre"]
 		#Entities that will occasionally drop copper -> gold coins.
 		gold = ["minecraft:guardian", "minecraft:elder_guardian", "minecraft:phantom", "minecraft:enderman", "twilightforest:blockchain_goblin", "twilightforest:giant_miner", "twilightforest:armored_giant", "whisperwoods:hidebehind"]
 		#Entities that will occasionally drop copper -> emerald coins.
@@ -46,8 +62,11 @@
 		boss_diamond = []
 		#Entities that will drop a large amount of copper -> netherite coins.
 		boss_netherite = []
+		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
+		#Set to false to help prevent coin farming.
+		allowFakePlayerTrigger = true
 
-	#Chest loot settings. Note that any changes to these options will require a datapack reload (/reload) to be applied.
+	#Chest loot settings.
 	[common.chest_loot]
 		#Whether coins can spawn in chests Does not effect entity loot drops.
 		enableChestLoot = true
@@ -63,4 +82,16 @@
 		diamond = ["minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure", "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure", "ae2:chests/meteorite"]
 		#Chests that will occasionally spawn copper -> netherite coins.
 		netherite = ["betterdeserttemples:chests/pharaoh_hidden"]
+
+	#Crafting Settings.
+	[common.crafting]
+		#Whether Network Traders can be crafted.
+		#Disabling will not remove any existing Network Traders from the world, nor prevent their use.
+		#Disabling does NOT disable the recipes of Network Upgrades or the Trading Terminals.
+		#/reload required for changes to take effect.
+		allowNetworkTraderCrafting = true
+		#Whether Trader Interface blocks can be crafted.
+		#Disabling will not remove any existing Trader Interfaces from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowTraderInterfaceCrafting = true
 

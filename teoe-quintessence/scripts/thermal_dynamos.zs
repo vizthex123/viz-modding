@@ -34,7 +34,7 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.addFuel("apatite", <item:thermal:apatite>, 20000);
 <recipetype:thermal:lapidary_fuel>.addFuel("niter", <item:thermal:niter>, 40000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("fluix", <item:ae2:fluix_crystal>, 60000);
+<recipetype:thermal:lapidary_fuel>.addFuel("fluix_power", <item:ae2:fluix_crystal>, 60000);
 <recipetype:thermal:lapidary_fuel>.addFuel("certus_quartz", <item:ae2:certus_quartz_crystal>, 30000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("carminite", <item:twilightforest:carminite>, 75000);

@@ -1,4 +1,4 @@
-# Adds recipes to Thermal "Series'" stuff
+# Adds recipes to Thermal "Series" stuff
 
 import crafttweaker.api.tag.MCTag;
 
@@ -12,7 +12,7 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
-// Restore the old Cresent Hammer recipe
+// Restore the old Crescent Hammer recipe
 mods.extendedcrafting.TableCrafting.addShaped("old_hammer", 1, <item:thermal:wrench>,
     [[<item:minecraft:iron_ingot>, <item:minecraft:air>, <item:minecraft:iron_ingot>],
     [<item:minecraft:air>, <item:thermal:tin_ingot>, <item:minecraft:air>],
@@ -137,10 +137,10 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
 // Induction Smelt Lime to make Steel
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4, <tag:items:forge:limestone>*8, <item:kubejs:lime>*8], 0, 6400);
-
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime_dust", [<item:thermal:steel_ingot> % 15], [<item:thermal:iron_dust>*4, <tag:items:forge:limestone>*8, <item:kubejs:lime>*8], 0, 6400);
-
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4|<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:lime>*16], 0, 6400);
+/*
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime_dust", [<item:thermal:steel_ingot> % 15], [<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:lime>*16], 0, 6400);
+*/
 // Induction Smelt Ash into Charcoal
 <recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash>*4], 0, 6400);
 
@@ -169,6 +169,28 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Add tag support to the wool unpacking recipe
 <recipetype:thermal:press>.removeRecipe([<item:minecraft:string>], [<fluid:minecraft:empty>]);
 <recipetype:thermal:press>.addRecipe("unpack_wool", [<item:minecraft:string>], <fluid:minecraft:empty>, [<tag:items:minecraft:wool>, <item:thermal:press_unpacking_die>], 400);
+
+# Add more recipes for Latex (from TE)
+// Flower tags
+<recipetype:thermal:press>.removeRecipe([<item:minecraft:dandelion>], [<fluid:thermal:latex>*50]);
+<recipetype:thermal:press>.addRecipe("small_latex", [<item:minecraft:air>], <fluid:thermal:latex>*50, [<tag:items:minecraft:small_flowers>, <item:minecraft:air>], 400);
+<recipetype:thermal:press>.addRecipe("tall_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<tag:items:minecraft:tall_flowers>, <item:minecraft:air>], 400);
+
+// Glow Berries
+<recipetype:thermal:press>.addRecipe("glow_berry_latex", [<item:minecraft:air>], <fluid:thermal:latex>*75, [<item:minecraft:glow_berries>, <item:minecraft:air>], 400);
+
+// Strawberries
+<recipetype:thermal:press>.addRecipe("strawberry_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<item:thermal:strawberry>, <item:minecraft:air>], 400);
+
+// Tomatoes
+<recipetype:thermal:press>.addRecipe("tomato_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<item:thermal:tomato>, <item:minecraft:air>], 400);
+
+/*
+# Add recipes to the Arboreal Extractor
+<recipetype:thermal:tree_extractor>.addMapping("crimson_stem", <block:minecraft:crimson_stem>, <block:minecraft:nether_wart_block>, <fluid:tconstruct:blood>);
+<recipetype:thermal:tree_extractor>.addMapping("warped_stem", <block:minecraft:warped_stem>, <block:minecraft:warped_wart_block>, <fluid:tconstruct:venom>);
+*/
+
 
 ### Geode Block Recipes ###
 // Pulverize Subzero Blocks into Shards
@@ -223,22 +245,25 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.35, 0.3);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
 
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("wrappist", <item:geode:wrappist_shard>, 2.0, 1.5, 0.9, 0.5, 0.7);
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("wrappist", <item:geode:wrappist_shard>, 2.0, 1.5, 0.7, 0.5, 0.7);
 
 // Idk the min chance for Cinnabar, so let's hope this is close enough
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.8);
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.7);
 
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <tag:items:teoe:corundum>, 1.25, 1.0, 0.9, 0.5, 0.65);
+/*
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 1.25, 1.0, 0.85, 0.5, 0.65);
-
+*/
 
 # Induction Smelter
-<recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.75);
-<recipetype:thermal:smelter_catalyst>.addCatalyst("magic_dust", <tag:items:teoe:magic_dust>, 3.0, 1.5, 2.25, 0.8, 0.75);
+<recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.5);
+<recipetype:thermal:smelter_catalyst>.addCatalyst("magic_dust", <tag:items:teoe:magic_dust>, 3.0, 1.5, 2.25, 0.8, 0.25);
 
 
 
 # Phytogenic Insolator
-<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.0, 0.35, 0.75, 0.55);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.15, 0.35, 0.75, 0.55);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("hex_ash", <item:malum:hex_ash>, 1.25, 1.0, 0.35, 0.75, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.75);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);

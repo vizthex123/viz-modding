@@ -2,15 +2,6 @@
 #Client configuration settings
 [client]
 
-	#Quality Settings
-	[client.settings]
-		#How many items the traders should render as stock. Useful to avoid lag in trader-rich areas.
-		#FULL: Renders all items based on stock as intended.
-		#PARTIAL: Renders only 1 item per trade slot regardless of stock.
-		#NONE: Traders do not render items.
-		#Allowed Values: FULL, PARTIAL, NONE
-		traderRenderType = "FULL"
-
 	#Wallet Slot Settings
 	[client.wallet_slot]
 		#The x position that the wallet slot will be placed at in the players inventory.
@@ -56,4 +47,17 @@
 	[client.sounds]
 		#Whether Money Mending should make a noise when triggered.
 		moneyMendingClink = true
+
+	#Quality Settings
+	[client.quality]
+		#Maximum number of items each Item Trader can render (per-trade) as stock. Lower to decrease client-lag in trader-rich areas.
+		#Setting to 0 will disable item rendering entirely, so use with caution.
+		#Range: > 0
+		itemTraderRenderLimit = 2147483647
+
+	#Time Formatting Settings
+	[client.time]
+		#How Notification Timestamps are displayed.
+		#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+		timeFormatting = "MM/dd/yy hh:mmaa"
 

@@ -125,25 +125,54 @@ val sawdust = <item:thermal:sawdust>;
 <recipetype:thermal:sawmill>.addRecipe("saw_livingwood", [<item:botania:livingwood_planks>*6, <item:thermal:sawdust> % 25], <tag:items:botania:livingwood_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_dreamwood", [<item:botania:dreamwood_planks>*6, <item:thermal:sawdust> % 25], <tag:items:botania:dreamwood_logs>, 1000);
 
+
+
 <recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_baobab", [<item:byg:baobab_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:baobab_logs>, 1000);
-
 <recipetype:thermal:sawmill>.addRecipe("saw_blue_enchanted", [<item:byg:blue_enchanted_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:blue_enchanted_logs>, 1000);
-/* eh, i'l finish it later
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:aspen_logs>, 1000);
-*/
+<recipetype:thermal:sawmill>.addRecipe("saw_bulbis", [<item:byg:bulbis_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:bulbis_stems>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_cherry", [<item:byg:cherry_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:cherry_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_cika", [<item:byg:cika_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:cika_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_cypress", [<item:byg:cypress_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:cypress_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_ebony", [<item:byg:ebony_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:ebony_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_ether", [<item:byg:ether_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:ether_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_fir", [<item:byg:fir_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:fir_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_green_enchanted", [<item:byg:green_enchanted_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:green_enchanted_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_holly", [<item:byg:holly_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:holly_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_imparius", [<item:byg:imparius_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:imparius_stems>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_jacaranda", [<item:byg:jacaranda_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:jacaranda_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_lament", [<item:byg:lament_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:lament_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_mahogany", [<item:byg:mahogany_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:mahogany_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_mangrove", [<item:byg:mangrove_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:mangrove_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_maple", [<item:byg:maple_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:maple_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_nightshade", [<item:byg:nightshade_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:nightshade_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_palm", [<item:byg:palm_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:palm_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_palo_verde", [<item:minecraft:birch_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:palo_verde_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_pine", [<item:byg:pine_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:pine_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_rainbow_eucalyptus", [<item:byg:rainbow_eucalyptus_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:rainbow_eucalyptus_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_redwood", [<item:byg:redwood_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:redwood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_skyris", [<item:byg:skyris_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:skyris_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_willow", [<item:byg:willow_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:willow_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_witch_hazel", [<item:byg:witch_hazel_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:witch_hazel_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_zelkova", [<item:byg:zelkova_planks>*6, <item:thermal:sawdust> % 25], <tag:items:byg:zelkova_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_withering_oak", [<item:minecraft:oak_planks>*3 % 75, <item:thermal:sawdust>*2 % 50], <tag:items:byg:withering_oak_logs>, 1000);
+
+
+
+<recipetype:thermal:sawmill>.addRecipe("saw_twilight_oak", [<item:twilightforest:twilight_oak_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:twilight_oak_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_canopy_wood", [<item:twilightforest:canopy_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:canopy_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_mangrove_tf", [<item:twilightforest:mangrove_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:mangrove_logs>, 1000);
+
+
+<recipetype:thermal:sawmill>.addRecipe("saw_darkwood", [<item:twilightforest:dark_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:darkwood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_timewood", [<item:twilightforest:time_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:timewood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_transwood", [<item:twilightforest:transformation_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:transwood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_minewood", [<item:twilightforest:mining_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:mining_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_sortingwood", [<item:twilightforest:sorting_planks>*6, <item:thermal:sawdust> % 25], <tag:items:twilightforest:sortwood_logs>, 1000);
+
+
+
+<recipetype:thermal:sawmill>.addRecipe("saw_runewood", [<item:malum:runewood_planks>*6, <item:thermal:sawdust> % 25], <tag:items:malum:runewood_logs>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_soulwood", [<item:malum:soulwood_planks>*6, <item:thermal:sawdust> % 25], <tag:items:malum:soulwood_logs>, 1000);
 
 print("thermal_sawmill.zs loaded");

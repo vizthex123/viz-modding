@@ -5,7 +5,7 @@
     "FFA500"
   ],
   "ingredient": {
-    "item": "malum:blazing_quartz",
-	"materialCount": "1500"
-  }
+    "item": "malum:blazing_quartz"
+  },
+	"materialCount": 1500
 }
