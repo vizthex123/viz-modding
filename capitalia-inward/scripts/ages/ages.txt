@@ -1,0 +1,26 @@
+Lists what age items & mods should be gated behind
+
+Hope Item Stages updates soon.
+
+
+Stone:
+- Stone Tools
+- Furnace
+
+
+
+Brass:
+- Blue Power
+
+
+Iron:
+- Flux Crafter (used to sell items)
+- Create
+
+
+
+
+
+Industrial:
+- Integrated Dynamics
+- Wafers
