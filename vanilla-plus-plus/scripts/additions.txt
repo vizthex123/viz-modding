@@ -1,0 +1,52 @@
+Recipes & whatnot that i can hopefully add soon
+
+standard QoL recipes:
+logs -> sticks
+tiny coal -> coal
+
+
+
+
+recipes:
+
+bundle recipe
+glow ink sacs -> normal + glow berries
+crying obsidian -> obsidian plates & dust
+
+
+
+recycle stuff (industrial blast furnace, worse versions in the furnace)
+- tripwire hook
+- minecarts
+- saddles
+- name tags
+- metal pressure plates
+- music discs
+- blast furnace
+- smoker
+- armour
+- cauldrons
+- beds
+
+
+
+
+
+maybes:
+
+saplings -> sticks?
+
+
+
+misc:
+
+fire charge burn time
+use for echo shards
+use for amethyst
+compost poison potato
+
+
+
+non-script stuff:
+
+balance out axes if i can find a mod to do so
