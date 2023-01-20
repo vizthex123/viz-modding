@@ -7,25 +7,25 @@
 		# Allows admins to toggle flying status using a command, without having to use Creative Mode
 		fly: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to toggle invincibility using a command, without having to use Creative Mode
 		god: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to heal themselves using a command
 		heal: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to view other users' inventories using a command
 		invsee: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to restrict players from chatting by using a command to mute (or unmute) them
@@ -70,7 +70,7 @@
 		# Enables usage of a trash can inventory, which can be used to void unneeded items
 		trashcan: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 	}
 	
@@ -122,22 +122,22 @@
 			cooldown: 600
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# /rtp max distance from spawn point
 			# Default: 100000
 			# Range: 0 ~ 30000000
-			max_distance: 10000
+			max_distance: 100000
 			
 			# Number of tries before /rtp gives up
 			# Default: 100
 			# Range: 1 ~ 1000
-			max_tries: 10
+			max_tries: 100
 			
 			# /rtp min distance from spawn point
 			# Default: 1000
 			# Range: 0 ~ 30000000
-			min_distance: 100
+			min_distance: 1000
 		}
 		spawn: {
 			# Cooldown between /spawn commands (in seconds)

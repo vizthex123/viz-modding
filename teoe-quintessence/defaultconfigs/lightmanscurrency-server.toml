@@ -50,11 +50,11 @@
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Must be less than or equal to 'pickupLevel'.
 		#Range: 0 ~ 5
-		convertLevel = 3
+		convertLevel = 2
 		#The lowest level wallet capable of automatically collecting coins while equipped.
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Range: 0 ~ 5
-		pickupLevel = 4
+		pickupLevel = 3
 		#The lowest level wallet capable of allowing transfers to/from your bank account.
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Range: 0 ~ 5

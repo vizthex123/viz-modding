@@ -8,9 +8,9 @@ onEvent('item.registry', event => {
 		event.create('crushed_pendorite')
 		event.create('iridium').rarity('rare')
 		event.create('compressed_sawdust')
-		event.create('mdf').displayName('MDF Board').burnTime(200) // cardboard box lol
+		event.create('mdf').displayName('MDF Board').burnTime(200) // haha, cardboard box
 		event.create('dragon_egg').displayName('Artificial Dragon Egg')
 		event.create('quintessence').rarity('epic').maxStackSize(1).glow(true)
-		event.create('iridium_cell').rarity('rare').displayName('Iridium Fuel Cell').burnTime(6400)
+		event.create('iridium_cell').rarity('rare').displayName('Iridium Fuel Cell').burnTime(12800)
 		event.create('portal_catalyst').displayName('Twilight Portal Catalyst').rarity('uncommon').maxStackSize(1).glow(true)
 })
