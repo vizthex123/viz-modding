@@ -1,52 +1,66 @@
 Recipes & whatnot that i can hopefully add soon
 
-standard QoL recipes:
-logs -> sticks
-tiny coal -> coal
-
-
 
 
 recipes:
 
-bundle recipe
++ bundle recipe (done by Charm)
 glow ink sacs -> normal + glow berries
 crying obsidian -> obsidian plates & dust
++ cheaper chains
++ mushroom tags for stew
+
+
 
 
 
 recycle stuff (industrial blast furnace, worse versions in the furnace)
-- tripwire hook
-- minecarts
-- saddles
-- name tags
-- metal pressure plates
 - music discs
-- blast furnace
-- smoker
-- armour
-- cauldrons
 - beds
 
 
-
+recycling recipes added:
+- tripwire hook
+- minecarts
+- name tags
+- metal pressure plates
+- blast furnace
+- cauldrons
+- buff armour
+- buff tools
+- saddles (done by farmer's delight)
 
 
 maybes:
 
-saplings -> sticks?
++ saplings -> sticks?
 
 
 
 misc:
 
-fire charge burn time
-use for echo shards
++ use for echo shards (might redo later)
 use for amethyst
-compost poison potato
++ fire charge burn time
++ compost poison potato
+
+
+
+mod changes:
++ add tag support to Farmer's Delight recipes
+
+
+
+custom items:
+
+Biomass - made with meat stuff, can be composted (100% chance)
+Scrap - converted into nuggets, gained by smelting gear of that type (might remove later)
+
 
 
 
 non-script stuff:
 
 balance out axes if i can find a mod to do so
+tweak duration of advancement plaques to make them more gooder
+add modded seeds to mage hand's config

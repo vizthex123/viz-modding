@@ -1,0 +1,50 @@
+[
+  {
+    "field_13353": "skylorelib",
+    "field_13355": "golden_seeds_item"
+  },
+  {
+    "field_13353": "minecraft",
+    "field_13355": "wheat_seeds"
+  },
+  {
+    "field_13353": "minecraft",
+    "field_13355": "beetroot_seeds"
+  },
+  {
+    "field_13353": "minecraft",
+    "field_13355": "carrot"
+  },
+  {
+    "field_13353": "minecraft",
+    "field_13355": "potato"
+  },
+  {
+    "field_13353": "nears",
+    "field_13355": "near_seeds"
+  },
+  {
+    "field_13353": "nears",
+    "field_13355": "faar_seeds"
+  },
+  {
+    "field_13353": "nears",
+    "field_13355": "soul_seeds"
+  },
+  {
+    "field_13353": "culturaldelights",
+    "field_13355": "cucumber_seeds"
+  },
+  {
+    "field_13353": "culturaldelights",
+    "field_13355": "eggplant_seeds"
+  },
+  {
+    "field_13353": "farmersdelights",
+    "field_13355": "cabbage_seeds"
+  },
+  {
+    "field_13353": "farmersdelights",
+    "field_13355": "tomato_seeds"
+  }
+]

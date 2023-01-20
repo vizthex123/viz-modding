@@ -21,7 +21,7 @@
 		enable-quick-craft: true
 		// Whether item types should check nbt data.
 		// This is for example used by scrolling and drop-clicking.
-		// NONE disables this, ALL checks for exactly the same nbt and SOME allows for differences in damage and enchantments.
+		// NONE disables this, ALL checks for exactly the same nbt and SOME allows for differences in damage and echantments.
 		// default: SOME
 		item-kinds-nbt-match-mode: SOME
 		// Lets you define how the hotbar will be treated when scrolling multiple items from the inventory.
@@ -55,11 +55,11 @@
 		// default: true
 		scroll-creative-menu-tabs: true
 	}
-	// Change sort modes. Existing sort modes are: alphabet, creative, raw_id and quantity
+	// Change sort modes. Existing sort modes are ALPHABET, RAW_ID and QUANTITY
 	sort: {
 		// Sets the sort mode for normal sorting.
-		// default: creative
-		primary-sort: creative
+		// default: raw_id
+		primary-sort: raw_id
 		// Sets the sort mode for sorting whilst pressing shift.
 		// default: quantity
 		shift-sort: quantity
@@ -82,16 +82,16 @@
 		restore-selected-slot: false
 		// Refill when eating items
 		// default: true
-		eat: true
+		eat: false
 		// Refill when dropping items
 		// default: true
-		drop: true
+		drop: false
 		// Refill when using up items
 		// default: true
 		use: false
 		// Refill on other occasions
 		// default: true
-		other: true
+		other: false
 		// Enable/Disable specific rules for how to refill items
 		rules: {
 			// Tries to find any block items
