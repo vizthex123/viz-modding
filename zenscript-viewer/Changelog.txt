@@ -1,5 +1,0 @@
-v2.0 Changelog:
-
-Added Thermal Expansion support
-Tweaked JEI colour
-Fixed furnace support, should highlight all furnace operations now
