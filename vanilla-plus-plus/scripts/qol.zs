@@ -1,4 +1,4 @@
-# Adds Quality of Life recipes because I am an addict
+# Adds Quality of Life recipes because I am a hopeless addict
 import crafttweaker.api.tag.MCTag;
 
 print("qol.zs loading...");
@@ -18,6 +18,28 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
+
+// Crying Obsidian -> Obsidian
+craftingTable.addShapeless("obsidian", <item:minecraft:obsidian>, [<item:minecraft:diamond_pickaxe>.anyDamage().transformDamage(5), <item:minecraft:crying_obsidian>]);
+
+// Uses for Glow Ink Sacs
+craftingTable.addShapeless("glow_sac_to_cyan_dye", <item:minecraft:cyan_dye>, [<item:minecraft:glow_ink_sac>]);
+craftingTable.addShapeless("glow_sac_to_ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
+
+// Slimeballs from Shards
+craftingTable.addShapeless("shards_to_slimeballs", <item:minecraft:slime_ball>*8, [<item:kubejs:biomass>|<item:kubejs:meaty_clump>, <item:minecraft:echo_shard>, <item:minecraft:amethyst_shard>]);
+
+// Upgrade the Baby Backpack to a Frayed one
+craftingTable.addShaped("baby_backpack_upgrade", <item:inmis:frayed_backpack>, 
+    [[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>],
+    [<item:minecraft:leather>, <item:inmis:baby_backpack>, <item:minecraft:leather>],
+    [<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
+
+// Upgrade the Blazing Backpack to a Withered one
+craftingTable.addShaped("blazing_backpack_upgrade", <item:inmis:withered_backpack>, 
+    [[<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>],
+    [<tag:items:minecraft:soul_fire_base_blocks>, <item:inmis:blazing_backpack>, <tag:items:minecraft:soul_fire_base_blocks>],
+    [<item:minecraft:air>, <tag:items:minecraft:soul_fire_base_blocks>, <item:minecraft:air>]]);
 
 // Logs -> Sticks
 craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16, 
@@ -52,17 +74,6 @@ craftingTable.addShaped("gold_chain", <item:charm:gold_chain>,
     [<item:minecraft:gold_nugget>],
     [<item:minecraft:gold_nugget>]]);
 
-// Upgrade the Baby Backpack to a Frayed one
-craftingTable.addShaped("baby_backpack_upgrade", <item:inmis:frayed_backpack>, 
-    [[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>],
-    [<item:minecraft:leather>, <item:inmis:baby_backpack>, <item:minecraft:leather>],
-    [<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
-
-// Upgrade the Blazing Backpack to a Withered one
-craftingTable.addShaped("blazing_backpack_upgrade", <item:inmis:withered_backpack>, 
-    [[<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>],
-    [<tag:items:minecraft:soul_fire_base_blocks>, <item:inmis:blazing_backpack>, <tag:items:minecraft:soul_fire_base_blocks>],
-    [<item:minecraft:air>, <tag:items:minecraft:soul_fire_base_blocks>, <item:minecraft:air>]]);
 
 
 ### Recipe Fixes ###
@@ -75,6 +86,7 @@ craftingTable.remove(<item:minecraft:beetroot_soup>);
 
 var bowl = <tag:items:vanilla:bowl>;
 var mushroom = <tag:items:vanilla:mushroom>;
+var mushroom2 = <tag:items:vanilla:mushroom_stew_fungus>;
 
 // Soul Sundae
 craftingTable.addShapeless("soul_sundae", <item:nears:soul_sundae>, [<tag:items:nears:sundae_soils>, <item:nears:faar>, <item:nears:soul_juice>, bowl]);
@@ -86,7 +98,7 @@ craftingTable.addShapeless("glowy_snack", <item:nears:glowy_snack>, [<item:minec
 craftingTable.addShapeless("rabbit_stew", <item:minecraft:rabbit_stew>, [<item:minecraft:baked_potato>, <item:minecraft:cooked_rabbit>, bowl, <item:minecraft:carrot>, mushroom]);
 
 // Mushroom Stew
-craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [bowl, mushroom, mushroom]);
+craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [bowl, mushroom2, mushroom2]);
 
 // Beetroot Soup
 craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [bowl, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>]);

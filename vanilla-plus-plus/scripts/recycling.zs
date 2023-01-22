@@ -15,6 +15,12 @@ default cook time is 200
 .1 XP for scrap items, .3 for gold, .5 for diamond, 1 for netherite
 */
 
+# Craft things into other things using Shears
+craftingTable.addShapeless("recycle_bow", <item:minecraft:string>*2, [<item:minecraft:shears>.anyDamage().transformDamage(3), <item:minecraft:bow>]);
+craftingTable.addShapeless("recycle_fishing_rod", <item:minecraft:string>, [<item:minecraft:shears>.anyDamage().transformDamage(2), <item:minecraft:fishing_rod>]);
+craftingTable.addShapeless("recycle_lead", <item:minecraft:string>*2, [<item:minecraft:shears>.anyDamage().transformDamage(1), <item:minecraft:lead>]);
+
+
 # Smelt items into Scrap
 furnace.removeByName("minecraft:iron_nugget_from_smelting");
 furnace.removeByName("minecraft:gold_nugget_from_smelting");
@@ -38,12 +44,17 @@ blastFurnace.addRecipe("blast_recycle_gold_item", <item:kubejs:small_gold_scrap>
 blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:vanilla:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 200);
 blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:vanilla:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 200);
 
+// Recycle Music Discs
+blastFurnace.addRecipe("recycle_music_disc", <item:kubejs:disc_residue>, <tag:items:minecraft:music_discs>, 1.0, 100);
 
+### Untagged Recipes
+// Recycle Blast Furnaces
+furnace.addRecipe("recycle_blast_furnace", <item:kubejs:small_scrap>*5, <item:minecraft:blast_furnace>|<item:nethersdelight:blackstone_blast_furnace>, 0.3, 200);
+blastFurnace.addRecipe("blast_recycle_blast_furnace", <item:kubejs:small_scrap>*5, <item:minecraft:blast_furnace>|<item:nethersdelight:blackstone_blast_furnace>, 0.3, 100);
 
-# Buffed Recipes
-// Recycle Golden Apples
-furnace.addRecipe("smelt_golden_apple", <item:kubejs:gold_scrap>*8, <item:minecraft:golden_apple>, 0.3, 200);
-blastFurnace.addRecipe("blast_golden_apple", <item:kubejs:gold_scrap>*8, <item:minecraft:golden_apple>, 0.3, 100);
+// Blast Golden Apples into Gold Scrap
+furnace.addRecipe("smelt_golden_apple", <item:kubejs:gold_scrap>*8, <item:minecraft:golden_apple>, 1.5, 200);
+blastFurnace.addRecipe("blast_golden_apple", <item:kubejs:gold_scrap>*8, <item:minecraft:golden_apple>, 1.5, 100);
 
 // Blast Enchanted Golden Apples into Gold Scrap
 blastFurnace.addRecipe("blast_enchanted_golden_apple", <item:kubejs:gold_scrap>*64, <item:minecraft:enchanted_golden_apple>, 3.0, 200);
@@ -55,7 +66,7 @@ blastFurnace.addRecipe("blast_recycle_totem", <item:kubejs:gold_scrap>*64, <item
 blastFurnace.addRecipe("blast_echo_shard", <item:kubejs:diamond_scrap>, <item:minecraft:echo_shard>, 5.0, 400);
 
 // Blast Heart of the Sea into Diamond Scrap
-blastFurnace.addRecipe("blast_heart", <item:kubejs:diamond_scrap>*3, <item:minecraft:heart_of_the_sea>, 10.0, 400);
+blastFurnace.addRecipe("blast_heart", <item:kubejs:diamond_scrap>*3, <item:minecraft:heart_of_the_sea>, 10.0, 600);
 
 
 

@@ -1,7 +1,5 @@
 # Adds tags to various items
 
-import crafttweaker.api.tag.MCTag;
-
 print("0-tags.zs loading...");
 /*
 <tag>.add(<item>);
@@ -14,6 +12,7 @@ print("0-tags.zs loading...");
 <tag:items:vanilla:bowl>.add(<item:ecologics:coconut_husk>);
 
 
+
 # Mushrooms
 <tag:items:vanilla:mushroom>.add(<item:minecraft:brown_mushroom>);
 <tag:items:vanilla:mushroom>.add(<item:minecraft:red_mushroom>);
@@ -21,136 +20,137 @@ print("0-tags.zs loading...");
 <tag:items:vanilla:mushroom>.add(<item:minecraft:warped_fungus>);
 <tag:items:vanilla:mushroom>.add(<item:cinderscapes:umbral_fungus>);
 
-
-### Scrap Items ###
-# Copper
-<tag:items:vanilla:meltable_copper>.add(<item:minecraft:lightning_rod>);
-<tag:items:vanilla:meltable_copper>.add(<item:minecraft:spyglass>);
-
-<tag:items:vanilla:meltable_copper>.add(<item:archeology:copper_brush>);
-<tag:items:vanilla:meltable_copper>.add(<item:archeology:exposed_copper_brush>);
-<tag:items:vanilla:meltable_copper>.add(<item:archeology:weathered_copper_brush>);
-<tag:items:vanilla:meltable_copper>.add(<item:archeology:oxidized_copper_brush>);
-<tag:items:vanilla:meltable_copper>.add(<item:charm:copper_bars>);
-<tag:items:vanilla:meltable_copper>.add(<item:copperhopper:copper_hopper>);
-<tag:items:vanilla:meltable_copper>.add(<item:magehand:copper_spawner_item>);
-<tag:items:vanilla:meltable_copper>.add(<item:nyfsquiver:copper_quiver>);
+<tag:items:vanilla:mushroom_stew_fungus>.add(<item:minecraft:brown_mushroom>);
+<tag:items:vanilla:mushroom_stew_fungus>.add(<item:minecraft:red_mushroom>);
+<tag:items:vanilla:mushroom_stew_fungus>.add(<item:cinderscapes:umbral_fungus>);
 
 
 
-# Iron
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_helmet>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_chestplate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_leggings>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_boots>);
-<tag:items:vanilla:meltable_metal>.add(<item:leatheredboots:chainmail_leathered_boots>);
+# Crops
+<tag:items:c:crops>.add(<item:minecraft:beetroot>);
+<tag:items:c:crops>.add(<item:minecraft:melon>);
+<tag:items:c:crops>.add(<item:minecraft:melon_slice>);
+<tag:items:c:crops>.add(<item:minecraft:pumpkin>);
+<tag:items:c:crops>.add(<item:minecraft:wheat>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_helmet>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_chestplate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_leggings>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_boots>);
-<tag:items:vanilla:meltable_metal>.add(<item:leatheredboots:iron_leathered_boots>);
+<tag:items:c:crops/beetroot>.add(<item:minecraft:beetroot>);
+<tag:items:c:crops/melon>.add(<item:minecraft:melon>);
+<tag:items:c:crops/melon>.add(<item:minecraft:melon_slice>);
+<tag:items:c:crops/pumpkin>.add(<item:minecraft:pumpkin>);
+<tag:items:c:crops/wheat>.add(<item:minecraft:wheat>);
+<tag:items:c:crops/wheat>.add(<item:skylorlib:golden_wheat_item>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_sword>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_pickaxe>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_axe>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_shovel>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_hoe>);
+<tag:items:c:crops>.add(<item:farmersdelight:pumpkin_slice>);
+<tag:items:c:crops/pumpkin>.add(<item:farmersdelight:pumpkin_slice>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_horse_armor>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:crossbow>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:shears>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:shield>);
-
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:iron_knife>);
-<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:iron_machete>);
-<tag:items:vanilla:meltable_metal>.add(<item:magehand:iron_spawner_item>);
-<tag:items:vanilla:meltable_metal>.add(<item:nyfsquiver:iron_quiver>);
-
-
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:blast_furnace>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:bucket>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:cauldron>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:heavy_weighted_pressure_plate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_door>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:minecart>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:tripwire_hook>);
-
-<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:blackstone_blast_furnace>);
-<tag:items:vanilla:meltable_metal>.add(<item:vanillatweaks:slime_bucket>);
+<tag:items:c:crops>.add(<item:nethersdelight:propelpearl>);
+<tag:items:c:crops/propelpearl>.add(<item:nethersdelight:propelpearl>);
 
 
 
-# Gold
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_helmet>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_chestplate>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_leggings>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_boots>);
-<tag:items:vanilla:meltable_gold>.add(<item:leatheredboots:golden_leathered_boots>);
+# Seeds
+<tag:items:c:seeds>.add(<item:minecraft:beetroot_seeds>);
+<tag:items:c:seeds>.add(<item:minecraft:melon_seeds>);
+<tag:items:c:seeds>.add(<item:minecraft:pumpkin_seeds>);
+<tag:items:c:seeds>.add(<item:minecraft:wheat_seeds>);
 
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_sword>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_pickaxe>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_axe>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_shovel>);
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_hoe>);
+<tag:items:c:seeds/beetroot>.add(<item:minecraft:beetroot_seeds>);
+<tag:items:c:seeds/melon>.add(<item:minecraft:melon_seeds>);
+<tag:items:c:seeds/pumpkin>.add(<item:minecraft:pumpkin_seeds>);
+<tag:items:c:seeds/wheat>.add(<item:minecraft:wheat_seeds>);
 
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_horse_armor>);
+<tag:items:c:seeds>.add(<item:nears:faar_seeds>);
+<tag:items:c:seeds>.add(<item:nears:near_seeds>);
+<tag:items:c:seeds>.add(<item:nears:soul_seeds>);
+<tag:items:c:seeds/faar>.add(<item:nears:faar_seeds>);
+<tag:items:c:seeds/near>.add(<item:nears:near_seeds>);
+<tag:items:c:seeds/soul_berries>.add(<item:nears:soul_seeds>);
 
-<tag:items:vanilla:meltable_gold>.add(<item:farmersdelight:golden_knife>);
-<tag:items:vanilla:meltable_gold>.add(<item:nethersdelight:golden_machete>);
-<tag:items:vanilla:meltable_gold>.add(<item:magehand:gold_spawner_item>);
-<tag:items:vanilla:meltable_gold>.add(<item:nyfsquiver:gold_quiver>);
-
-
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:light_weighted_pressure_plate>);
-
-
-
-# Diamond
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_helmet>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_chestplate>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_leggings>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_boots>);
-<tag:items:vanilla:meltable_diamond>.add(<item:leatheredboots:diamond_leathered_boots>);
-
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_sword>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_pickaxe>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_axe>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_shovel>);
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_hoe>);
-
-<tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_horse_armor>);
-
-<tag:items:vanilla:meltable_diamond>.add(<item:farmersdelight:diamond_knife>);
-<tag:items:vanilla:meltable_diamond>.add(<item:nethersdelight:diamond_machete>);
-<tag:items:vanilla:meltable_diamond>.add(<item:magehand:diamond_spawner_item>);
-<tag:items:vanilla:meltable_diamond>.add(<item:nyfsquiver:diamond_quiver>);
+<tag:items:c:seeds>.add(<item:skylorlib:golden_seeds_item>);
+<tag:items:c:seeds/wheat>.add(<item:skylorlib:golden_seeds_item>);
+<tag:items:c:seeds/golden_wheat>.add(<item:skylorlib:golden_seeds_item>);
 
 
 
-# Netherite
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_helmet>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_chestplate>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_leggings>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_boots>);
-<tag:items:vanilla:meltable_netherite>.add(<item:leatheredboots:netherite_leathered_boots>);
+# Biomass Materials
+<tag:items:vanilla:biomass_materials>.add(<tag:items:c:crops>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:c:dyes>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:c:seeds>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:flowers>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:saplings>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:vanilla:mushrooms>);
 
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_sword>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_pickaxe>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_axe>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_shovel>);
-<tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_hoe>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:bamboo>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sugar_cane>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sweet_berries>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:glow_berries>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:honeycomb>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:honey_bottle>);
 
-<tag:items:vanilla:meltable_netherite>.add(<item:farmersdelight:netherite_knife>);
-<tag:items:vanilla:meltable_netherite>.add(<item:nethersdelight:netherite_machete>);
-<tag:items:vanilla:meltable_netherite>.add(<item:nyfsquiver:netherite_quiver>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:kelp>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:seagrass>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sea_pickle>);
+
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:vine>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:twisting_vines>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:weeping_vines>);
+
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:chorus_fruit>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:poisonous_potato>);
+
+<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:straw>);
+<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:tree_bark>);
 
 
-/* these would be added if MC wasn't dumb
-### Can be smelted or blasted into 1 Scrap
-### Items gain this tag if they are a piece of equipment (defined as "having durability" and/or "being equippable")
-### Mage Hands also go here cuz I'm lazy
-### Looted items have their own recipes
-*/
+
+# Raw Meats
+<tag:items:minecraft:raw_fish>.add(<item:minecraft:cod>);
+<tag:items:minecraft:raw_fish>.add(<item:minecraft:pufferfish>);
+<tag:items:minecraft:raw_fish>.add(<item:minecraft:salmon>);
+<tag:items:minecraft:raw_fish>.add(<item:minecraft:tropical_fish>);
+<tag:items:minecraft:raw_fish>.add(<item:culturaldelights:glow_squid>);
+<tag:items:minecraft:raw_fish>.add(<item:culturaldelights:squid>);
+<tag:items:minecraft:raw_fish>.add(<item:ecologics:crab_meat>);
+
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:cod>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:pufferfish>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:salmon>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:tropical_fish>);
+<tag:items:minecraft:raw_meat>.add(<item:culturaldelights:glow_squid>);
+<tag:items:minecraft:raw_meat>.add(<item:culturaldelights:squid>);
+<tag:items:minecraft:raw_meat>.add(<item:ecologics:crab_meat>);
+
+
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:beef>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:chicken>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:mutton>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:porkchop>);
+<tag:items:minecraft:raw_meat>.add(<item:minecraft:rabbit>);
+<tag:items:minecraft:raw_meat>.add(<item:farmersdelight:ham>);
+<tag:items:minecraft:raw_meat>.add(<item:nethersdelight:hoglin_loin>);
+
+<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:bacon>);
+<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:chicken_cuts>);
+<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:mutton_chops>);
+<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:cod_slice>);
+<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:salmon_slice>);
+
+
+
+# Meaty Clump Materials
+<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:minecraft:raw_meat>);
+# <tag:items:vanilla:meaty_clump_materials>.add(<tag:items:minecraft:raw_meat_cuts>);
+
+<tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rabbit_foot>);
+<tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rotten_flesh>);
+<tag:items:vanilla:meaty_clump_materials>.add(<item:magehand:flesh_hand_item>);
+
+
+
+# Misc
+<tag:items:c:grain>.add(<item:skylorlib:golden_wheat_item>);
+<tag:items:c:grain/wheat>.add(<item:skylorlib:golden_wheat_item>);
+<tag:items:c:bread>.add(<item:skylorlib:golden_bread_item>);
+
 
 print("0-tags.zs loaded");

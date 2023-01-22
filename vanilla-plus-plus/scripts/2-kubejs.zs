@@ -18,13 +18,14 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-# Craft Biomass
-craftingTable.addShapeless("biomass_flesh", <item:kubejs:biomass>, [<item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>, <item:minecraft:rotten_flesh>]);
-craftingTable.addShapeless("biomass_raw", <item:kubejs:biomass>, [<tag:items:c:raw_meat>, <tag:items:c:raw_meat>, <tag:items:c:raw_meat>]);
-craftingTable.addShapeless("biomass_cooked", <item:kubejs:biomass>, [<tag:items:c:cooked_meat>, <tag:items:c:cooked_meat>, <tag:items:c:cooked_meat>, <tag:items:c:cooked_meat>]);
+# Craft Disc Residue into Coal
+craftingTable.addShapeless("disc_residue_to_coal", <item:minecraft:coal>*8, [<item:kubejs:disc_residue>]);
 
-# Compost Biomass
-composter.setValue(<item:kubejs:biomass>, 0.6);
+# Craft Biomass & Meaty Clumps
+val organic = <tag:items:vanilla:biomass_materials>;
+val meat = <tag:items:vanilla:meaty_clump_materials>;
+craftingTable.addShapeless("biomass", <item:kubejs:biomass>, [organic, organic, organic, organic, organic, organic, organic, organic]);
+craftingTable.addShapeless("meaty_clump", <item:kubejs:meaty_clump>, [meat, meat, meat, meat, meat, meat, meat, meat]);
 
 # Craft Small Scrap into Scrap
 craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);

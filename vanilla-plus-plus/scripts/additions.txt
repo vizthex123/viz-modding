@@ -1,22 +1,31 @@
-Recipes & whatnot that i can hopefully add soon
+Recipes & whatnot that i'll add later
 
 
 
 recipes:
 
++ glow ink sacs -> normal + glow berries
++ crying obsidian -> obsidian plates & dust
+
 + bundle recipe (done by Charm)
-glow ink sacs -> normal + glow berries
-crying obsidian -> obsidian plates & dust
 + cheaper chains
 + mushroom tags for stew
 
++ amethyst + more (sky stone dust?) -> slime balls
 
 
 
 
-recycle stuff (industrial blast furnace, worse versions in the furnace)
-- music discs
+recycle stuff (furnaces)
+
+
+
+recycle stuff (other way)
+- wood stuff (chests & such)
+- furnace
+- smoker
 - beds
+- tnt
 
 
 recycling recipes added:
@@ -24,6 +33,7 @@ recycling recipes added:
 - minecarts
 - name tags
 - metal pressure plates
+- music discs
 - blast furnace
 - cauldrons
 - buff armour
@@ -40,7 +50,7 @@ maybes:
 misc:
 
 + use for echo shards (might redo later)
-use for amethyst
++ use for amethyst
 + fire charge burn time
 + compost poison potato
 
@@ -53,7 +63,8 @@ mod changes:
 
 custom items:
 
-Biomass - made with meat stuff, can be composted (100% chance)
+Biomass - made with organic stuff, can be composted (100% chance)
+Meaty Clump - made with meat, can be composted (95% chance)
 Scrap - converted into nuggets, gained by smelting gear of that type (might remove later)
 
 
@@ -62,5 +73,5 @@ Scrap - converted into nuggets, gained by smelting gear of that type (might remo
 non-script stuff:
 
 balance out axes if i can find a mod to do so
-tweak duration of advancement plaques to make them more gooder
-add modded seeds to mage hand's config
++ tweak duration of advancement plaques to make them more gooder
++ add modded seeds to mage hand's config

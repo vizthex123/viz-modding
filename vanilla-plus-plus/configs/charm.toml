@@ -164,9 +164,9 @@
 #Allows enchanted books to stack.
 "StackableEnchantedBooks Enabled" = false
 #Allows potions to stack.
-"StackablePotions Enabled" = false
+"StackablePotions Enabled" = true
 #Allows stews to stack.
-"StackableStews Enabled" = false
+"StackableStews Enabled" = true
 #A stray has a chance to drop blue ice when killed.
 "StraysDropBlueIce Enabled" = true
 #Strays spawn anywhere within their biome rather than just the surface.
@@ -379,11 +379,11 @@
 
 [StackablePotions]
 	#Maximum potion stack size.
-	"Stack size" = 1
+	"Stack size" = 2
 
 [StackableStews]
 	#Maximum stew stack size.
-	"Stack size" = 1
+	"Stack size" = 4
 	#Also apply to suspicious stew.
 	"Enable suspicious stew" = false
 
