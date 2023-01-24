@@ -72,7 +72,7 @@
 #Goats have a chance to drop mutton when killed.
 "GoatsDropMutton Enabled" = true
 #Armor returns a single ingot, leather or diamond when used on the grindstone.
-"GrindableArmor Enabled" = true
+"GrindableArmor Enabled" = false
 #Scroll the mouse while hovering over a bundle or shulker box to change the order of its contents.
 "HoverSorting Enabled" = true
 #A husk has a chance to drop sand when killed.

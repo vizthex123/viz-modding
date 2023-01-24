@@ -14,9 +14,9 @@ recipes:
 + amethyst + more (sky stone dust?) -> slime balls
 
 
-
-
-recycle stuff (furnaces)
++ recycle stuff (furnaces)
++ check on what else could be recycled
++ add small meltable tag to modded chains
 
 
 

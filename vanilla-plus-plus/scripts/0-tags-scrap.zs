@@ -1,5 +1,5 @@
 # Adds meltable tags to various items
-# Used in the crapping recipes I made
+# Used in the scrapping recipes I made
 
 import crafttweaker.api.tag.MCTag;
 
@@ -50,19 +50,66 @@ print("0-tags-scrap.zs loading...");
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:shears>);
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:shield>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:iron_knife>);
-<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:iron_machete>);
-<tag:items:vanilla:meltable_metal>.add(<item:magehand:iron_spawner_item>);
-<tag:items:vanilla:meltable_metal>.add(<item:nyfsquiver:iron_quiver>);
-
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:anvil>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chipped_anvil>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:damaged_anvil>);
+<tag:items:vanilla:meltable_metal>.add(<item:vanillatweaks:slime_bucket>);
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:bucket>);
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:cauldron>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:heavy_weighted_pressure_plate>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:compass>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:flint_and_steel>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:hopper>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_bars>);
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_door>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:minecart>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_trapdoor>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:heavy_weighted_pressure_plate>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:lantern>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:soul_lantern>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:name_tag>);
 <tag:items:vanilla:meltable_metal>.add(<item:minecraft:tripwire_hook>);
+<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:blackstone_blast_furnace>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:blast_furnace>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:stonecutter>);
+<tag:items:vanilla:meltable_metal>.add(<item:charm:woodcutter>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:piston>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:sticky_piston>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chest_minecart>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:furnace_minecart>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:tnt_minecart>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:hopper_minecart>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:activator_rail>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:detector_rail>);
+<tag:items:vanilla:meltable_metal>.add(<item:minecraft:rail>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:vanillatweaks:slime_bucket>);
+<tag:items:vanilla:meltable_metal>.add(<item:charm:redstone_lantern>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:oven>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:fridge>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:toaster>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:heating_unit>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:ice_unit>);
+<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:preservation_chamber>);
+
+<tag:items:vanilla:meltable_metal>.add(<item:ductwork:collector>);
+<tag:items:vanilla:meltable_metal>.add(<item:ductwork:damper>);
+<tag:items:vanilla:meltable_metal>.add(<item:ductwork:duct>);
+<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:stove>);
+<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:cooking_pot>);
+<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:skillet>);
+<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:iron_knife>);
+<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:iron_machete>);
+<tag:items:vanilla:meltable_metal>.add(<item:inmis:plated_backpack>);
+<tag:items:vanilla:meltable_metal>.add(<item:magehand:iron_spawner_item>);
+<tag:items:vanilla:meltable_metal>.add(<item:nyfsquiver:iron_quiver>);
+<tag:items:vanilla:meltable_metal>.add(<item:pfm:working_table>);
+
+
+// Gives nuggets instead due to balancing issues
+// Must be worth < 3 nuggets to gain this tag
+<tag:items:vanilla:meltable_metal_small>.add(<item:cookingforblockheads:tool_rack>);
+<tag:items:vanilla:meltable_metal_small>.add(<item:minecraft:chain>);
+<tag:items:vanilla:meltable_metal_small>.add(<item:pfm:iron_chain>);
+
+
 
 
 
@@ -81,13 +128,28 @@ print("0-tags-scrap.zs loading...");
 
 <tag:items:vanilla:meltable_gold>.add(<item:minecraft:golden_horse_armor>);
 
+<tag:items:vanilla:meltable_gold>.add(<item:minecraft:gilded_blackstone>);
+
+<tag:items:vanilla:meltable_gold>.add(<item:minecraft:clock>);
+<tag:items:vanilla:meltable_gold>.add(<item:minecraft:powered_rail>);
+<tag:items:vanilla:meltable_gold>.add(<item:minecraft:light_weighted_pressure_plate>);
+
+<tag:items:vanilla:meltable_gold>.add(<item:doomangelring:angelring>);
+<tag:items:vanilla:meltable_gold>.add(<item:charm:gold_bars>);
+<tag:items:vanilla:meltable_gold>.add(<item:charm:gold_lantern>);
+<tag:items:vanilla:meltable_gold>.add(<item:charm:gold_soul_lantern>);
+
 <tag:items:vanilla:meltable_gold>.add(<item:farmersdelight:golden_knife>);
 <tag:items:vanilla:meltable_gold>.add(<item:nethersdelight:golden_machete>);
+<tag:items:vanilla:meltable_gold>.add(<item:inmis:gilded_backpack>);
 <tag:items:vanilla:meltable_gold>.add(<item:magehand:gold_spawner_item>);
 <tag:items:vanilla:meltable_gold>.add(<item:nyfsquiver:gold_quiver>);
 
 
-<tag:items:vanilla:meltable_gold>.add(<item:minecraft:light_weighted_pressure_plate>);
+// Gives nuggets instead due to balancing issues
+// Must be worth < 3 nuggets to gain this tag
+<tag:items:vanilla:meltable_gold_small>.add(<item:nethersdelight:hoglin_mount>);
+<tag:items:vanilla:meltable_gold_small>.add(<item:charm:gold_chain>);
 
 
 
@@ -106,8 +168,10 @@ print("0-tags-scrap.zs loading...");
 
 <tag:items:vanilla:meltable_diamond>.add(<item:minecraft:diamond_horse_armor>);
 
+<tag:items:vanilla:meltable_diamond>.add(<item:cookingforblockheads:crafting_book>);
 <tag:items:vanilla:meltable_diamond>.add(<item:farmersdelight:diamond_knife>);
 <tag:items:vanilla:meltable_diamond>.add(<item:nethersdelight:diamond_machete>);
+<tag:items:vanilla:meltable_diamond>.add(<item:inmis:bejeweled_backpack>);
 <tag:items:vanilla:meltable_diamond>.add(<item:magehand:diamond_spawner_item>);
 <tag:items:vanilla:meltable_diamond>.add(<item:nyfsquiver:diamond_quiver>);
 
@@ -126,8 +190,10 @@ print("0-tags-scrap.zs loading...");
 <tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_shovel>);
 <tag:items:vanilla:meltable_netherite>.add(<item:minecraft:netherite_hoe>);
 
+<tag:items:vanilla:meltable_netherite>.add(<item:charm:netherite_bars>);
 <tag:items:vanilla:meltable_netherite>.add(<item:farmersdelight:netherite_knife>);
 <tag:items:vanilla:meltable_netherite>.add(<item:nethersdelight:netherite_machete>);
+<tag:items:vanilla:meltable_netherite>.add(<item:inmis:blazing_backpack>);
 <tag:items:vanilla:meltable_netherite>.add(<item:nyfsquiver:netherite_quiver>);
 
 

@@ -12,4 +12,7 @@ print("3-BurnTimes.zs loading...");
 
 <item:ecologics:coconut_husk>.burnTime = 150;
 
+<item:kubejs:biomass>.burnTime = 600;
+
+
 print("3-BurnTimes.zs loaded");

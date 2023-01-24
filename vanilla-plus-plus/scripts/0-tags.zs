@@ -46,6 +46,13 @@ print("0-tags.zs loading...");
 <tag:items:c:crops>.add(<item:nethersdelight:propelpearl>);
 <tag:items:c:crops/propelpearl>.add(<item:nethersdelight:propelpearl>);
 
+<tag:items:c:crops>.add(<item:nears:near>);
+<tag:items:c:crops>.add(<item:nears:faar>);
+<tag:items:c:crops>.add(<item:nears:soul_berries>);
+
+<tag:items:c:crops/near>.add(<item:nears:near>);
+<tag:items:c:crops/faar>.add(<item:nears:faar>);
+<tag:items:c:crops/soul_berry>.add(<item:nears:soul_berries>);
 
 
 # Seeds
@@ -78,7 +85,7 @@ print("0-tags.zs loading...");
 <tag:items:vanilla:biomass_materials>.add(<tag:items:c:seeds>);
 <tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:flowers>);
 <tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:saplings>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:vanilla:mushrooms>);
+<tag:items:vanilla:biomass_materials>.add(<tag:items:vanilla:mushroom>);
 
 <tag:items:vanilla:biomass_materials>.add(<item:minecraft:bamboo>);
 <tag:items:vanilla:biomass_materials>.add(<item:minecraft:sugar_cane>);
@@ -150,7 +157,11 @@ print("0-tags.zs loading...");
 # Misc
 <tag:items:c:grain>.add(<item:skylorlib:golden_wheat_item>);
 <tag:items:c:grain/wheat>.add(<item:skylorlib:golden_wheat_item>);
+<tag:items:c:grain/golden_wheat>.add(<item:skylorlib:golden_wheat_item>);
+
 <tag:items:c:bread>.add(<item:skylorlib:golden_bread_item>);
+<tag:items:c:bread/wheat>.add(<item:skylorlib:golden_bread_item>);
+<tag:items:c:bread/golden_wheat>.add(<item:skylorlib:golden_bread_item>);
 
 
 print("0-tags.zs loaded");

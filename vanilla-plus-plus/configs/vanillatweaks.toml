@@ -2,7 +2,7 @@
 enableCraftingPad = true
 enableDynamite = true
 enableSlimeBucket = true
-enableFriedEgg = true
+enableFriedEgg = false
 enableStorageBlocks = true
 enablePedestal = true
 dynamiteCooldown = 20
@@ -11,7 +11,7 @@ dynamiteExplosionPower = 3
 enableBlazing = true
 enableHops = true
 enableNimble = true
-enableSiphon = true
+enableSiphon = false
 enableVeteran = true
 enableVigor = true
 enableHoming = true
@@ -23,7 +23,7 @@ veteranTreasureOnly = false
 vigorTreasureOnly = false
 homingTreasureOnly = false
 [loot]
-batLeatherDropChance = 1.0
+batLeatherDropChance = 0.5
 namedMobsDropNameTag = true
 [tweaks]
 enableArmorStandSwapping = true
@@ -32,13 +32,13 @@ babyZombieBurnInDaylight = true
 creeperBurnInDaylight = true
 shearOffNameTag = true
 hoeActsAsSickle = true
-enableSignEditing = true
+enableSignEditing = false
 tntIgnition = true
 enableSilkSpawner = true
 [world]
 realisticRelationship = true
 disableLavaPockets = true
-selfPlanting = true
+selfPlanting = false
 [recipe]
 betterChestRecipe = true
 betterRepeater = true

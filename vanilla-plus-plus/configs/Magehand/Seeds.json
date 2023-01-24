@@ -33,6 +33,10 @@
   },
   {
     "field_13353": "culturaldelights",
+    "field_13355": "corn_kernals"
+  },
+  {
+    "field_13353": "culturaldelights",
     "field_13355": "cucumber_seeds"
   },
   {
@@ -46,5 +50,9 @@
   {
     "field_13353": "farmersdelights",
     "field_13355": "tomato_seeds"
+  },
+  {
+    "field_13353": "farmersdelights",
+    "field_13355": "rice"
   }
 ]
