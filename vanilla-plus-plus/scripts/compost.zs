@@ -8,8 +8,8 @@ composter.setValue(<item>, amount);
 */
 
 # Biomass & Clump
-composter.setValue(<item:kubejs:biomass>, 1.0);
-composter.setValue(<item:kubejs:meaty_clump>, 0.95);
+composter.setValue(<item:kubejs:biomass>, 0.7);
+composter.setValue(<item:kubejs:meaty_clump>, 0.65);
 
 
 # Crops
@@ -40,6 +40,9 @@ composter.setValue(<item:minecraft:salmon>, 0.45);
 composter.setValue(<item:minecraft:tropical_fish>, 0.45);
 composter.setValue(<item:culturaldelights:glow_squid>, 0.45);
 composter.setValue(<item:culturaldelights:squid>, 0.45);
+composter.setValue(<item:ecologics:crab_meat>, 0.45);
+composter.setValue(<item:farmersdelight:ham>, 0.45);
+composter.setValue(<item:nethersdelight:hoglin_loin>, 0.45);
 
 	// Regular
 composter.setValue(<item:minecraft:beef>, 0.35);
@@ -64,6 +67,6 @@ composter.setValue(<item:minecraft:phantom_membrane>, 0.15);
 composter.setValue(<item:minecraft:rotten_flesh>, 0.25);
 composter.setValue(<item:minecraft:rabbit_foot>, 0.2);
 composter.setValue(<item:minecraft:shulker_shell>, 0.4);
-
+composter.setValue(<item:ecologics:walnut>, 0.30);
 
 print("compost.zs loaded");

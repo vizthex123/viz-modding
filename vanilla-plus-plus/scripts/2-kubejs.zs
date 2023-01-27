@@ -45,7 +45,6 @@ furnace.addRecipe("smelt_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:
 blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 100);
 blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:scrap>, 0, 100);
 blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 200);
-
+blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 100);
 
 print("2-kubejs.zs loaded");

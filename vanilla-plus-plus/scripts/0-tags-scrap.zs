@@ -133,6 +133,7 @@ print("0-tags-scrap.zs loading...");
 <tag:items:vanilla:meltable_gold>.add(<item:minecraft:clock>);
 <tag:items:vanilla:meltable_gold>.add(<item:minecraft:powered_rail>);
 <tag:items:vanilla:meltable_gold>.add(<item:minecraft:light_weighted_pressure_plate>);
+<tag:items:vanilla:meltable_gold>.add(<item:minecraft:glistering_melon_slice>);
 
 <tag:items:vanilla:meltable_gold>.add(<item:doomangelring:angelring>);
 <tag:items:vanilla:meltable_gold>.add(<item:charm:gold_bars>);
@@ -203,6 +204,5 @@ print("0-tags-scrap.zs loading...");
 ### Mage Hands also go here cuz I'm lazy
 ### Looted items have their own recipes
 */
-
 
 print("0-tags-scrap.zs loaded");

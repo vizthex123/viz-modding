@@ -28,15 +28,21 @@ print("0-tags.zs loading...");
 
 # Crops
 <tag:items:c:crops>.add(<item:minecraft:beetroot>);
+<tag:items:c:crops>.add(<item:minecraft:carrot>);
 <tag:items:c:crops>.add(<item:minecraft:melon>);
 <tag:items:c:crops>.add(<item:minecraft:melon_slice>);
 <tag:items:c:crops>.add(<item:minecraft:pumpkin>);
+<tag:items:c:crops>.add(<item:minecraft:potato>);
 <tag:items:c:crops>.add(<item:minecraft:wheat>);
 
+
 <tag:items:c:crops/beetroot>.add(<item:minecraft:beetroot>);
+<tag:items:c:crops/carrot>.add(<item:minecraft:carrot>);
 <tag:items:c:crops/melon>.add(<item:minecraft:melon>);
 <tag:items:c:crops/melon>.add(<item:minecraft:melon_slice>);
 <tag:items:c:crops/pumpkin>.add(<item:minecraft:pumpkin>);
+<tag:items:c:crops/pumpkin>.add(<item:minecraft:carved_pumpkin>);
+<tag:items:c:crops/potato>.add(<item:minecraft:potato>);
 <tag:items:c:crops/wheat>.add(<item:minecraft:wheat>);
 <tag:items:c:crops/wheat>.add(<item:skylorlib:golden_wheat_item>);
 
@@ -103,38 +109,35 @@ print("0-tags.zs loading...");
 <tag:items:vanilla:biomass_materials>.add(<item:minecraft:weeping_vines>);
 
 <tag:items:vanilla:biomass_materials>.add(<item:minecraft:chorus_fruit>);
+<tag:items:vanilla:biomass_materials>.add(<item:minecraft:carved_pumpkin>);
 <tag:items:vanilla:biomass_materials>.add(<item:minecraft:poisonous_potato>);
+
+<tag:items:vanilla:biomass_materials>.add(<item:ecologics:walnut>);
 
 <tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:straw>);
 <tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:tree_bark>);
+<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:rotten_tomato>);
 
 
 
 # Raw Meats
-<tag:items:minecraft:raw_fish>.add(<item:minecraft:cod>);
-<tag:items:minecraft:raw_fish>.add(<item:minecraft:pufferfish>);
-<tag:items:minecraft:raw_fish>.add(<item:minecraft:salmon>);
-<tag:items:minecraft:raw_fish>.add(<item:minecraft:tropical_fish>);
-<tag:items:minecraft:raw_fish>.add(<item:culturaldelights:glow_squid>);
-<tag:items:minecraft:raw_fish>.add(<item:culturaldelights:squid>);
-<tag:items:minecraft:raw_fish>.add(<item:ecologics:crab_meat>);
+<tag:items:c:raw_fishes/pufferfish>.add(<item:minecraft:pufferfish>);
 
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:cod>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:pufferfish>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:salmon>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:tropical_fish>);
-<tag:items:minecraft:raw_meat>.add(<item:culturaldelights:glow_squid>);
-<tag:items:minecraft:raw_meat>.add(<item:culturaldelights:squid>);
-<tag:items:minecraft:raw_meat>.add(<item:ecologics:crab_meat>);
+<tag:items:c:raw_fishes>.add(<item:culturaldelights:glow_squid>);
+<tag:items:c:raw_fishes>.add(<item:culturaldelights:squid>);
+<tag:items:c:raw_fishes/squid>.add(<item:culturaldelights:glow_squid>);
+<tag:items:c:raw_fishes/squid>.add(<item:culturaldelights:squid>);
+<tag:items:c:raw_fishes>.add(<item:ecologics:crab_meat>);
+<tag:items:c:raw_fishes/crab>.add(<item:ecologics:crab_meat>);
 
+<tag:items:c:raw_meat>.add(<tag:items:c:raw_fishes>);
+<tag:items:c:raw_meat>.add(<item:minecraft:pufferfish>);
 
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:beef>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:chicken>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:mutton>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:porkchop>);
-<tag:items:minecraft:raw_meat>.add(<item:minecraft:rabbit>);
-<tag:items:minecraft:raw_meat>.add(<item:farmersdelight:ham>);
-<tag:items:minecraft:raw_meat>.add(<item:nethersdelight:hoglin_loin>);
+<tag:items:c:raw_meat>.add(<item:farmersdelight:ham>);
+<tag:items:c:raw_meat>.add(<item:culturaldelights:glow_squid>);
+<tag:items:c:raw_meat>.add(<item:culturaldelights:squid>);
+<tag:items:c:raw_meat>.add(<item:nethersdelight:hoglin_loin>);
+<tag:items:c:raw_meat>.add(<item:ecologics:crab_meat>);
 
 <tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:bacon>);
 <tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:chicken_cuts>);
@@ -145,8 +148,8 @@ print("0-tags.zs loading...");
 
 
 # Meaty Clump Materials
-<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:minecraft:raw_meat>);
-# <tag:items:vanilla:meaty_clump_materials>.add(<tag:items:minecraft:raw_meat_cuts>);
+<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:c:raw_meat>);
+#	<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:c:raw_fishes>);
 
 <tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rabbit_foot>);
 <tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rotten_flesh>);
@@ -160,8 +163,6 @@ print("0-tags.zs loading...");
 <tag:items:c:grain/golden_wheat>.add(<item:skylorlib:golden_wheat_item>);
 
 <tag:items:c:bread>.add(<item:skylorlib:golden_bread_item>);
-<tag:items:c:bread/wheat>.add(<item:skylorlib:golden_bread_item>);
-<tag:items:c:bread/golden_wheat>.add(<item:skylorlib:golden_bread_item>);
-
+<tag:items:c:bread/golden>.add(<item:skylorlib:golden_bread_item>);
 
 print("0-tags.zs loaded");

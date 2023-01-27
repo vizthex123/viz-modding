@@ -383,7 +383,7 @@
 
 [StackableStews]
 	#Maximum stew stack size.
-	"Stack size" = 4
+	"Stack size" = 8
 	#Also apply to suspicious stew.
 	"Enable suspicious stew" = false
 

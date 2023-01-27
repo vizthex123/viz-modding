@@ -37,8 +37,6 @@ prioritizeChunkUpdates:0
 biomeBlendRadius:7
 renderClouds:"true"
 resourcePacks:["vanilla","Fabric Mods","file/STONEBORN-+SBMC+-V2.4-Modded-Compatibility.zip","file/STONEBORN - 1.19 - V3.2.1.zip","file/EmbellishedStone-1.19-1.0.0.zip","file/Enhanced Boss Bars 1.1.zip","file/EnderEyes_1.19_v2.zip","file/Vertical Nuggets 1.19.zip"]
-incompatibleResourcePacks:["file/STONEBORN - 1.19.3 - V3.2.zip","file/Vertical Nuggets 1.19.zip"]
-lang:en_us
 chatVisibility:0
 chatOpacity:1.0
 chatLineSpacing:0.0

@@ -104,5 +104,4 @@ craftingTable.addShaped("exotic_roll_medley", <item:culturaldelights:exotic_roll
 craftingTable.removeByName("nethersdelight:warped_moldy_meat");
 craftingTable.addShapeless("warped_moldy_meat", <item:nethersdelight:warped_moldy_meat>, [<item:nethersdelight:hoglin_sirloin>, <item:minecraft:warped_roots>, <item:minecraft:warped_roots>, bowl]);
 
-
 print("tag_fixes.zs loaded");

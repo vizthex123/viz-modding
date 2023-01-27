@@ -14,5 +14,4 @@ print("3-BurnTimes.zs loading...");
 
 <item:kubejs:biomass>.burnTime = 600;
 
-
 print("3-BurnTimes.zs loaded");

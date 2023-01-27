@@ -15,10 +15,11 @@ default cook time is 200
 .1 XP for scrap items, .3 for gold, .5 for diamond, 1 for netherite
 */
 
-# Craft things into other things using Shears
-craftingTable.addShapeless("recycle_bow", <item:minecraft:string>*2, [<item:minecraft:shears>.anyDamage().transformDamage(3), <item:minecraft:bow>]);
-craftingTable.addShapeless("recycle_fishing_rod", <item:minecraft:string>, [<item:minecraft:shears>.anyDamage().transformDamage(2), <item:minecraft:fishing_rod>]);
-craftingTable.addShapeless("recycle_lead", <item:minecraft:string>*2, [<item:minecraft:shears>.anyDamage().transformDamage(1), <item:minecraft:lead>]);
+# Use Shears to recycle things
+craftingTable.addShapeless("recycle_banners", <item:minecraft:string>*12, [<tag:items:bookshelf:shears>.asIIngredient().anyDamage().transformDamage(5), <tag:items:minecraft:banners>]);
+craftingTable.addShapeless("recycle_bow", <item:minecraft:string>*2, [<tag:items:bookshelf:shears>.asIIngredient().anyDamage().transformDamage(3), <item:minecraft:bow>.anyDamage()]);
+craftingTable.addShapeless("recycle_fishing_rod", <item:minecraft:string>, [<tag:items:bookshelf:shears>.asIIngredient().anyDamage().transformDamage(2), <item:minecraft:fishing_rod>.anyDamage()]);
+craftingTable.addShapeless("recycle_lead", <item:minecraft:string>*2, [<tag:items:bookshelf:shears>.asIIngredient().anyDamage().transformDamage(1), <item:minecraft:lead>]);
 
 
 # Smelt items into Scrap
@@ -61,6 +62,8 @@ blastFurnace.addRecipe("recycle_music_disc", <item:kubejs:disc_residue>, <tag:it
 // Recycle Candles
 furnace.addRecipe("recycle_candles", <item:minecraft:honeycomb>, <tag:items:minecraft:candles>, 0.5, 200);
 
+
+
 ### Untagged Recipes
 // Blast Golden Apples into Gold Scrap
 furnace.addRecipe("smelt_golden_apple", <item:kubejs:gold_scrap>*8, <item:minecraft:golden_apple>, 1.5, 200);
@@ -76,7 +79,7 @@ blastFurnace.addRecipe("blast_recycle_totem", <item:kubejs:gold_scrap>*64, <item
 blastFurnace.addRecipe("blast_echo_shard", <item:kubejs:diamond_scrap>, <item:minecraft:echo_shard>, 5.0, 400);
 
 // Blast Heart of the Sea into Diamond Scrap
-blastFurnace.addRecipe("blast_heart", <item:kubejs:diamond_scrap>*3, <item:minecraft:heart_of_the_sea>, 10.0, 600);
+blastFurnace.addRecipe("blast_heart", <item:kubejs:diamond_scrap>*4, <item:minecraft:heart_of_the_sea>, 10.0, 600);
 
 
 

@@ -2,23 +2,6 @@ Recipes & whatnot that i'll add later
 
 
 
-recipes:
-
-+ glow ink sacs -> normal + glow berries
-+ crying obsidian -> obsidian plates & dust
-
-+ bundle recipe (done by Charm)
-+ cheaper chains
-+ mushroom tags for stew
-
-+ amethyst + more (sky stone dust?) -> slime balls
-
-
-+ recycle stuff (furnaces)
-+ check on what else could be recycled
-+ add small meltable tag to modded chains
-
-
 
 recycle stuff (other way)
 - wood stuff (chests & such)
@@ -28,50 +11,6 @@ recycle stuff (other way)
 - tnt
 
 
-recycling recipes added:
-- tripwire hook
-- minecarts
-- name tags
-- metal pressure plates
-- music discs
-- blast furnace
-- cauldrons
-- buff armour
-- buff tools
-- saddles (done by farmer's delight)
-
-
-maybes:
-
-+ saplings -> sticks?
-
-
-
-misc:
-
-+ use for echo shards (might redo later)
-+ use for amethyst
-+ fire charge burn time
-+ compost poison potato
-
-
-
-mod changes:
-+ add tag support to Farmer's Delight recipes
-
-
-
-custom items:
-
-Biomass - made with organic stuff, can be composted (100% chance)
-Meaty Clump - made with meat, can be composted (95% chance)
-Scrap - converted into nuggets, gained by smelting gear of that type (might remove later)
-
-
-
-
 non-script stuff:
 
 balance out axes if i can find a mod to do so
-+ tweak duration of advancement plaques to make them more gooder
-+ add modded seeds to mage hand's config

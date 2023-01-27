@@ -22,6 +22,12 @@ var gold = <item:minecraft:gold_ingot>;
 var lapis = <item:minecraft:lapis_lazuli>;
 var redstone = <item:minecraft:redstone>;
 
+var wool = <tag:items:minecraft:wool>;
+
+// Echo Shards from Sculk Catalysts
+// Let's hope nobody exploits it or some shit
+craftingTable.addShapeless("echo_shard", <item:minecraft:echo_shard>*4, [<item:minecraft:sculk_catalyst>, <tag:items:c:tools/pickaxes>.asIIngredient().transformDamage(100)]);
+
 // Balance the Ring of Attraction's recipe a tad
 craftingTable.remove(<item:ring_of_attraction:ring_of_attraction>);
 craftingTable.addShaped("echo_ring", <item:ring_of_attraction:ring_of_attraction>, 
@@ -42,8 +48,8 @@ craftingTable.addShaped("angel_ring", <item:doomangelring:angelring>,
     [gold, gold, gold]]);
 
 craftingTable.addShaped("angel_ring_echo", <item:doomangelring:angelring>, 
-    [[<item:minecraft:feather>, gold, <item:minecraft:feather>],
-    [echo, <item:minecraft:elytra>, echo],
+    [[<item:minecraft:feather>, echo, <item:minecraft:feather>],
+    [gold, <item:minecraft:elytra>, gold],
     [gold, gold, gold]]);
 
 print("misc.zs loaded");
