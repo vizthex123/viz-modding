@@ -3,6 +3,12 @@ KingWealthyturtle - For making the Twilight Forest Portal Catalyst mod, the text
 https://www.curseforge.com/minecraft/mc-mods/twilight-forest-portal-catalyst
 
 
+Google images for the discord logos used on the menu
+
+
+Textcraft.net to make the modpack title on the main menu
+
 
 CubixThree - Helped test the modpack
 mangogamr - Helped test the modpack
+XDFlame - Made the item textures (excluding from the Portal Catalyst)

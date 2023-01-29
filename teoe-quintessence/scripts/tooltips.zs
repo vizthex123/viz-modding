@@ -68,6 +68,8 @@ val clf = "\u00A7r";
 
 
 # Coinification tooltips
+<item:minecraft:totem_of_undying>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
+
 <item:enigmaticlegacy:unholy_grail>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:enigmaticlegacy:architect_eye>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:enigmaticlegacy:lore_inscriber>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
@@ -86,7 +88,9 @@ val clf = "\u00A7r";
 <item:twilightforest:charm_of_life_1>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:twilightforest:charm_of_life_2>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 
-<item:tesseract:tesseract>.removeTooltip("Items, fluids, and energy can be transferred between multiple tesseracts");
 
+
+# Tooltip Removal
+<item:tesseract:tesseract>.removeTooltip("Items, fluids, and energy can be transferred between multiple tesseracts");
 
 print("tooltips.zs loaded");

@@ -40,16 +40,16 @@ mods.jei.JEI.hideIngredient(<item:minecraft:infested_stone_bricks>);
 #	mods.jei.JEI.hideIngredient(<item:ae2:creative_energy_cell>);
 #	mods.jei.JEI.hideIngredient(<item:ae2:creative_item_cell>);
 #	mods.jei.JEI.hideIngredient(<item:ae2:creative_fluid_cell>);
-mods.jei.JEI.hideIngredient(<item:botania:creative_pool>);
+#	mods.jei.JEI.hideIngredient(<item:botania:creative_pool>);
 mods.jei.JEI.hideIngredient(<item:botania:infrangible_platform>);
 mods.jei.JEI.hideIngredient(<item:botania:lens_storm>);
 #	mods.jei.JEI.hideIngredient(<item:botania:mana_tablet>.withTag({creative: 1 as byte, mana: 500000 as int}));
 mods.jei.JEI.hideIngredient(<item:botania:corporea_spark_creative>);
 #	mods.jei.JEI.hideIngredient(<item:create:creative_motor>);
 #	mods.jei.JEI.hideIngredient(<item:create:creative_crate>);
-mods.jei.JEI.hideIngredient(<item:create:creative_fluid_tank>);
+#	mods.jei.JEI.hideIngredient(<item:create:creative_fluid_tank>);
 #	mods.jei.JEI.hideIngredient(<item:create:creative_blaze_cake>);
-mods.jei.JEI.hideIngredient(<item:create:handheld_worldshaper>);
+#	mods.jei.JEI.hideIngredient(<item:create:handheld_worldshaper>);
 mods.jei.JEI.hideIngredient(<item:createaddition:creative_energy>);
 mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_storage_upgrade>);
 mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_vending_upgrade>);
@@ -68,6 +68,7 @@ mods.jei.JEI.hideIngredient(<item:ironjetpacks:jetpack>.withTag({Id: "ironjetpac
 mods.jei.JEI.hideIngredient(<item:ironjetpacks:cell>.withTag({Id: "ironjetpacks:creative" as string}));
 
 
+
 # Hides disabled items
 mods.jei.JEI.hideIngredient(<item:ae2:vibration_chamber>);
 mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
@@ -80,13 +81,23 @@ mods.jei.JEI.hideIngredient(<item:wormhole:coal_generator>);
 
 
 
-# Hides technical items
-mods.jei.JEI.hideIngredient(<item:ae2:identity_annihilation_plane>);
+# Hides normally obtainable that aren't obtainable in the pack
+mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);
+mods.jei.JEI.hideIngredient(<item:malum:uranium_node>);
+mods.jei.JEI.hideIngredient(<item:malum:osmium_node>);
 
+
+
+# Hides technical items
 mods.jei.JEI.hideIngredient(<item:minecraft:bedrock>);
 mods.jei.JEI.hideIngredient(<item:minecraft:end_portal_frame>);
 
+mods.jei.JEI.hideIngredient(<item:ae2:identity_annihilation_plane>);
+
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:soul_crystal>);
+
+mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm>);
+mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm_fragment>);
 
 mods.jei.JEI.hideIngredient(<item:twilightforest:ore_meter>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:twilight_portal_miniature_structure>);

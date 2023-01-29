@@ -14,25 +14,46 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 15
+}
+
+customization {
+  identifier = %id=376310%
+  orientation = top-left
+  x = 310
+  action = movebutton
+  y = 177
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=3763941%
   orientation = mid-centered
-  x = -147
+  x = -75
   action = movebutton
-  y = 73
+  y = 39
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = top-left
-  x = 116
+  x = 336
   action = movebutton
-  y = 215
+  y = 177
 }
 
 customization {
   orientation = top-left
-  hidden = false
-  x = 106
+  hidden = true
+  x = 122
   width = 268
   action = deep_customization_element:title_screen_forge_top
   actionid = 382b9ab7-bfbb-4cc1-af35-8a59e15780151656819380912
@@ -47,29 +68,29 @@ customization {
   width = 108
   action = deep_customization_element:title_screen_branding
   actionid = 29f2e7a6-8a6f-4189-83c2-466bd003a6811656819380912
-  y = 243
+  y = 234
   height = 40
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 251
+  x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 285c3a7f-3588-41cf-abaf-7f60588bce5f1656819380912
-  y = 265
+  y = 256
   height = 9
 }
 
 customization {
   orientation = top-left
-  hidden = false
-  x = 343
+  hidden = true
+  x = 359
   width = 13
   action = deep_customization_element:title_screen_realms_notification
   actionid = 91910817-cbcc-4181-b6a0-e421c7279ff81656819380912
-  y = 171
+  y = 169
   height = 13
 }
 
@@ -88,7 +109,7 @@ customization {
   orientation = top-left
   splash_color = #ffff00
   hidden = false
-  x = 410
+  x = 450
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
@@ -98,16 +119,16 @@ customization {
 }
 
 customization {
-  orientation = top-left
+  orientation = mid-centered
   delayappearanceseconds = 1.0
   path = config/fancymenu/customization/teoe_menu.png
   fadein = true
   fadeinspeed = 1.0
-  x = 0
-  width = 480
+  x = -251
+  width = 500
   action = addtexture
   actionid = 6f48ccbd-09ef-4b7d-9acf-baf073793b911656819422070
-  y = 20
+  y = -122
   delayappearance = true
   delayappearanceeverytime = false
   height = 80
@@ -117,17 +138,38 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = config\fancymenu\customization\discord.png
+  backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   hoverlabel = Discord
-  x = 116
+  x = 156
   width = 20
   actionid = c8bd8fe8-3a9f-4414-836d-4c8bcdb96acc1656820279671
   action = addbutton
-  y = 178
-  backgroundnormal = config\fancymenu\customization\discord.png
+  y = 177
+  backgroundnormal = config/fancymenu/customization/discord_logo.png
   value = https://discord.gg/NtwzA6X
-  height = 24
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = -51
+  width = 100
+  actionid = 272cd99e-e2d2-44cb-9894-6a2e88733e121674449046206
+  action = addbutton
+  y = 39
+  label = Wiki
+  value = https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = 
 }
 

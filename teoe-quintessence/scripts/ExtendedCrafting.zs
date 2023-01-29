@@ -14,6 +14,9 @@ use recipe maker for table & ender crafting recipes
 craftingTable.remove(<item:extendedcrafting:black_iron_slate>);
 craftingTable.addShapeless("black_iron_slate", <item:extendedcrafting:black_iron_slate>, [<item:extendedcrafting:black_iron_ingot>, <item:extendedcrafting:black_iron_ingot>]);
 
+# Make Luminessence accessible earlier
+craftingTable.addShapeless("luminessence", <item:extendedcrafting:luminessence>, [<item:aquamirae:esca>, <item:aquamirae:esca>, <item:minecraft:redstone>, <item:minecraft:gunpowder>]);
+
 # Reduce the cost of tables
 craftingTable.remove(<item:extendedcrafting:basic_table>);
 craftingTable.remove(<item:extendedcrafting:advanced_table>);
@@ -93,14 +96,14 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots
 
 # Artifical Dragon Egg
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:dragon_egg>,
-	[[<tag:items:teoe:dragon_scale>, <item:enigmaticlegacy:astral_dust>, <tag:items:teoe:dragon_scale>],
-	[<item:enigmaticlegacy:astral_dust>, <item:minecraft:turtle_egg>|<item:minecraft:egg>|<item:food_enhancements:boiled_egg>, <item:enigmaticlegacy:astral_dust>],
-	[<tag:items:teoe:dragon_scale>, <item:enigmaticlegacy:astral_dust>, <tag:items:teoe:dragon_scale>]], 120);
+	[[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>],
+	[<tag:items:teoe:magic_dust>, <item:minecraft:turtle_egg>|<item:minecraft:egg>|<item:food_enhancements:boiled_egg>, <tag:items:teoe:magic_dust>],
+	[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>]]);
 	
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <item:kubejs:dragon_egg>,
 	[[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>],
 	[<item:botania:dragonstone>, <item:minecraft:turtle_egg>|<item:minecraft:egg>|<item:food_enhancements:boiled_egg>, <item:botania:dragonstone>],
-	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]]);
+	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]], 300);
 
 
 
@@ -132,7 +135,7 @@ mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:qu
 	[<item:minecraft:air>, <item:packingtape:tape>.anyDamage(), <item:minecraft:air>, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:rangedpumps:pump>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:ftbquests:book>, <item:quantumquarryplus:filter_upgrade>|<item:quantumquarryplus:pump_upgrade>, <item:apotheosis:ender_library>, <item:tconstruct:plate_chestplate>.anyDamage(), <tag:items:elevatorid:elevators>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:soul_quartz_block>, <item:lightmanscurrency:coin_netherite>, <item:minecraft:air>],
-	[<item:create:blaze_cake>, <item:naturesaura:end_city_finder>, <item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:the_ultimate_ingot>, <item:thermal:upgrade_augment_3>, <item:ob_aquamirae:three_bolt_helmet>.anyDamage(), <item:chickenchunks:spot_loader>],
+	[<item:create:blaze_cake>, <item:naturesaura:end_city_finder>, <item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:the_ultimate_ingot>, <item:thermal:upgrade_augment_3>, <item:aquamirae:three_bolt_helmet>.anyDamage(), <item:chickenchunks:spot_loader>],
 	[<item:minecraft:air>, <item:reliquary:infernal_chalice>, <item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:wormhole:portal_stabilizer>, <item:storagedrawers:drawer_key>|<item:storagedrawers:quantify_key>|<item:storagedrawers:shroud_key>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:ironchest:obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:easypaxellite:netherite_paxel>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:squarry:powered_quarry>, <item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_compass>, <item:minecraft:air>],

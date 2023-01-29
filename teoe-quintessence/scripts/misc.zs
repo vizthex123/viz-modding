@@ -17,6 +17,9 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Stonecut Limestone
+stoneCutter.addRecipe("stonecut_limestone", <item:create:cut_limestone>, <item:quark:limestone>);
+
 // Crops -> Dye
 craftingTable.addShapeless("glow_berry_dye", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
 
@@ -34,10 +37,6 @@ craftingTable.addShapeless("tomato_dye", <item:minecraft:red_dye>, [<item:therma
 craftingTable.addShapeless("coffee_dye", <item:minecraft:red_dye>, [<item:thermal:coffee>, <item:thermal:coffee>]);
 craftingTable.addShapeless("hops_tea_dye", <item:minecraft:green_dye>, [<item:thermal:hops>|<item:thermal:tea>, <item:thermal:hops>|<item:thermal:tea>]);
 
-
-// Travertine -> Cobblestone
-furnace.addRecipe("smelt_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 200);
-blastFurnace.addRecipe("blast_travertine", <item:minecraft:cobblestone>, <item:byg:travertine>, 0.25, 100);
 
 // Nature's Compass
 craftingTable.remove(<item:naturescompass:naturescompass>);

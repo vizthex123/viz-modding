@@ -22,7 +22,7 @@ mods.extendedcrafting.TableCrafting.addShaped("old_hammer", 1, <item:thermal:wre
 // Lets you upgrade a Furnace and Smoker since I hate having duplicates
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
-    [<item:minecraft:smoker>, <item:thermal:machine_frame>|<item:rftoolsbase:machine_frame>, <tag:items:teoe:furnace>],
+    [<item:minecraft:smoker>, <item:thermal:machine_frame>, <tag:items:teoe:furnace>],
     [<tag:items:forge:gears/copper>, <item:thermal:rf_coil>, <tag:items:forge:gears/copper>]]);
 
 // Make the Gearworking Die from any gears
@@ -101,6 +101,7 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
 
+
 // Pulverize Quartize Sand into Sand & Quartz
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 0, 4000);
 
@@ -110,8 +111,8 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Pulverize Moss Carpets into Moss Paste
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 0, 500);
 
-// Melt down Fiery Blood/Tears into Molten Fiery
-<recipetype:thermal:crucible>.addRecipe("melt_fiery", <fluid:twilightforest:fiery_essence>*250, <item:twilightforest:fiery_blood>, 1000);
+// Melt down Fiery Blood/Tears into Fiery Essence
+<recipetype:thermal:crucible>.addRecipe("melt_fiery", <fluid:twilightforest:fiery_essence>*250, <tag:items:twilightforest:fiery_vial>, 1000);
 
 // Process Bumblezone's items into honey(combs)
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_honey_crystal_shard", [<item:minecraft:sugar> % 50], <fluid:cofh_core:honey>*100, <item:the_bumblezone:honey_crystal_shards>, 4000);
@@ -136,11 +137,9 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Fractionate Sugar Water into Water
 <recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
 
-// Induction Smelt Lime to make Steel
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4|<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:lime>*16], 0, 6400);
-/*
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_lime_dust", [<item:thermal:steel_ingot> % 15], [<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:lime>*16], 0, 6400);
-*/
+// Induction Smelt Quicklime to make Steel
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4|<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:quicklime>*16], 0, 6400);
+
 // Induction Smelt Ash into Charcoal
 <recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash>*4], 0, 6400);
 
@@ -185,11 +184,6 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Tomatoes
 <recipetype:thermal:press>.addRecipe("tomato_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<item:thermal:tomato>, <item:minecraft:air>], 400);
 
-/*
-# Add recipes to the Arboreal Extractor
-<recipetype:thermal:tree_extractor>.addMapping("crimson_stem", <block:minecraft:crimson_stem>, <block:minecraft:nether_wart_block>, <fluid:tconstruct:blood>);
-<recipetype:thermal:tree_extractor>.addMapping("warped_stem", <block:minecraft:warped_stem>, <block:minecraft:warped_wart_block>, <fluid:tconstruct:venom>);
-*/
 
 
 ### Geode Block Recipes ###
@@ -265,7 +259,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.15, 0.35, 0.75, 0.55);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("hex_ash", <item:malum:hex_ash>, 1.25, 1.0, 0.35, 0.75, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.75);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.7);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
 
 print("thermal.zs loaded");

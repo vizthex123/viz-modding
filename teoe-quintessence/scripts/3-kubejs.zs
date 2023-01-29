@@ -26,6 +26,7 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 <tag:items:twilightforest:portal/activator>.add(<item:kubejs:portal_catalyst>);
 
 
+
 # Crushed Ores
 # Recipes to make them are in create.zs
 blastFurnace.addRecipe("blast_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 200);
@@ -33,12 +34,41 @@ blastFurnace.addRecipe("blast_crushed_pendorite", <item:byg:pendorite_scraps>, <
 blastFurnace.addRecipe("blast_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 1.5, 400);
 
 
-# Lime
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_limestone", [<item:kubejs:lime> % 50], <tag:items:forge:limestone>, 0.0, 4000);
-<recipetype:create:crushing>.addRecipe("crush_limestone", [<item:kubejs:lime> % 50], <tag:items:forge:limestone>, 5);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_travertine", [<item:kubejs:lime>], <item:byg:travertine>, 0.0, 4000);
-<recipetype:create:crushing>.addRecipe("crush_travertine", [<item:kubejs:lime>], <item:byg:travertine>, 5);
+# Craft Small Scrap into Scrap
+craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);
+
+craftingTable.addShapeless("scrap", <item:kubejs:scrap>, [<item:kubejs:small_scrap>, <item:kubejs:small_scrap>, <item:kubejs:small_scrap>]);
+
+craftingTable.addShapeless("gold_scrap", <item:kubejs:gold_scrap>, [<item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>]);
+
+craftingTable.addShapeless("diamond_scrap", <item:kubejs:diamond_scrap>, [<item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>]);
+
+craftingTable.addShapeless("fiery_scrap", <item:kubejs:fiery_scrap>, [<item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>]);
+
+craftingTable.addShapeless("ironwood_scrap", <item:kubejs:ironwood_scrap>, [<item:kubejs:small_ironwood_scrap>, <item:kubejs:small_ironwood_scrap>, <item:kubejs:small_ironwood_scrap>]);
+
+craftingTable.addShapeless("knightmetal_scrap", <item:kubejs:knightmetal_scrap>, [<item:kubejs:small_knightmetal_scrap>, <item:kubejs:small_knightmetal_scrap>, <item:kubejs:small_knightmetal_scrap>]);
+
+
+# Smelt Scrap into Ingots
+furnace.addRecipe("smelt_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 200);
+furnace.addRecipe("smelt_scrap", <item:minecraft:iron_ingot>, <item:kubejs:scrap>, 0, 200);
+furnace.addRecipe("smelt_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 200);
+
+blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:scrap>, 0, 100);
+blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 200);
+
+
+
+# Quicklime
+furnace.addRecipe("smelt_limestone", <item:kubejs:quicklime>, <tag:items:forge:limestone>, 0, 200);
+blastFurnace.addRecipe("blast_limestone", <item:kubejs:quicklime>, <tag:items:forge:limestone>, 0, 100);
+
+furnace.addRecipe("smelt_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 200);
+blastFurnace.addRecipe("blast_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 100);
 
 
 # Glue
@@ -48,6 +78,8 @@ craftingTable.addShapeless("glue_honeycomb", <item:kubejs:glue>, [<item:minecraf
 
 // Super Glue (Create)
 craftingTable.addShapeless("super_glue", <item:create:super_glue>, [<item:kubejs:glue>, <item:kubejs:glue>, <tag:items:forge:plates/iron>]);
+
+
 
 # Sawdust
 // Clump
@@ -72,7 +104,6 @@ craftingTable.addShaped("sawdust_sticks", <item:minecraft:stick>*8,
 <recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust>], <item:kubejs:sawdust_clump>, 1);
 
 
-
 # MDF Board
 craftingTable.addShaped("mdf_board", <item:kubejs:mdf>,
     [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>],
@@ -82,6 +113,7 @@ craftingTable.addShaped("mdf_board", <item:kubejs:mdf>,
 craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
     [[<item:kubejs:compressed_sawdust>, <item:kubejs:glue>, <item:kubejs:compressed_sawdust>],
     [<item:kubejs:compressed_sawdust>, <item:kubejs:glue>, <item:kubejs:compressed_sawdust>]]);
+
 
 
 # Iridium Fuel Cell

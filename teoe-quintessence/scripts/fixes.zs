@@ -14,12 +14,15 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+// Add tag support to Mushroom Stew
+craftingTable.remove(<item:minecraft:mushroom_stew>);
+craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [<item:minecraft:bowl>, <tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>]);
+
 // Make Nether Grout work with modded soul sands
 craftingTable.remove(<item:tconstruct:nether_grout>);
-craftingTable.addShapeless("nether_grout", <item:tconstruct:nether_grout>*2, [<item:minecraft:soul_sand>|<item:minecraft:soul_soil>|<item:byg:warped_soul_sand>|<item:byg:warped_soul_soil>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>]);
+craftingTable.addShapeless("nether_grout", <item:tconstruct:nether_grout>*2, [<tag:items:teoe:soul_sand>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>]);
 
 craftingTable.addShapeless("nether_grout_sludge", <item:tconstruct:nether_grout>, [<item:nourished_nether:soul_sludge>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>|<item:minecraft:blaze_powder>]);
-
 
 // Fix the Netherite Nuggets > Ingot recipe
 craftingTable.removeByName("nourished_nether:netherite_nuggets_to_ingot");
@@ -34,24 +37,14 @@ craftingTable.addShaped("netherite_ingot", <item:minecraft:netherite_ingot>,
 craftingTable.removeByName("essentials:multi_piston_sticky");
 craftingTable.addShapeless("sticky_multi_piston", <item:essentials:multi_piston_sticky>, [<item:essentials:multi_piston>, <tag:items:forge:slimeballs>]);
 
-// Fix the repeater recipes not using tags
-craftingTable.remove(<item:minecraft:repeater>);
-craftingTable.addShaped("repeater", <item:minecraft:repeater>,
-    [[<item:minecraft:redstone_torch>, <item:minecraft:redstone>, <item:minecraft:redstone_torch>],
-    [<tag:items:forge:stone>, <tag:items:forge:stone>, <tag:items:forge:stone>]]);
-
-craftingTable.addShaped("repeater_quark", <item:minecraft:repeater>,
-    [[<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:redstone>],
-    [<tag:items:balm:wooden_rods>, <item:minecraft:redstone>, <tag:items:balm:wooden_rods>],
-    [<tag:items:forge:stone>, <tag:items:forge:stone>, <tag:items:forge:stone>]]);
-
-// Fix the duplicate packing tape recipe
+// Make packing tape use tags
 craftingTable.remove(<item:packingtape:tape>);
 craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<tag:items:forge:slimeballs>, <item:minecraft:string>, <item:minecraft:paper>]);
 
-// Duplicate Fire Charge recipe
+// Duplicate Fire Charge recipes
+// Also adds tag support
 craftingTable.remove(<item:minecraft:fire_charge>);
-craftingTable.addShapeless("fire_charge", <item:minecraft:fire_charge>*3, [<item:minecraft:gunpowder>, <item:minecraft:blaze_powder>, <tag:items:minecraft:coals>]);
+craftingTable.addShapeless("fire_charge", <item:minecraft:fire_charge>*3, [<tag:items:minecraft:coals>, <item:minecraft:blaze_powder>, <item:minecraft:gunpowder>]);
 
 // Fixes chests not being craftable with modded planks
 craftingTable.addShaped("chest", <item:minecraft:chest>,

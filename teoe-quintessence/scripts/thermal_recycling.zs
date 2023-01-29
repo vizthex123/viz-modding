@@ -132,7 +132,7 @@ print("thermal_recycling.zs loading...");
 
 
 # Recycle Spent Filters
-<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, <item:kubejs:lime>], 0, 8000);
+<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, <item:kubejs:quicklime>], 0, 8000);
 
 
 ### Trading Stations ###

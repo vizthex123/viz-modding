@@ -12,24 +12,28 @@ print("coinification.zs loading...");
 <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, 5);
 */
 
-// Elytra -> 2,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:minecraft:elytra>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:minecraft:elytra>, 5);
-
 // Music Discs -> 100 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [<item:lightmanscurrency:coin_gold>], <tag:items:minecraft:music_discs>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_music_discs2", [<item:lightmanscurrency:coin_gold>], <tag:items:minecraft:music_discs>, 5);
 
+// Elytra -> 2,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_elytra", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:minecraft:elytra>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_elytra2", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:minecraft:elytra>, 5);
+
+// Totem of Undying -> 10,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinfy_totem", [<item:lightmanscurrency:coin_diamond>], <item:minecraft:totem_of_undying>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinfy_totem2", [<item:lightmanscurrency:coin_diamond>], <item:minecraft:totem_of_undying>, 5);
+
 // Heart of the Sea -> 50,000 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinfy_heart", [<item:lightmanscurrency:coin_diamond>*5], <item:minecraft:heart_of_the_sea>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinfy_heart2", [<item:lightmanscurrency:coin_diamond>*5], <item:minecraft:heart_of_the_sea>, 7);
+<recipetype:create:crushing>.addRecipe("coinfy_heart2", [<item:lightmanscurrency:coin_diamond>*5], <item:minecraft:heart_of_the_sea>, 5);
 
 
 
 ### AE2 ###
-// AE2 Presses -> 2,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_presses2", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:ae2:calculation_processor_press>|<item:ae2:engineering_processor_press>|<item:ae2:logic_processor_press>|<item:ae2:silicon_press>, 5);
+// AE2 Presses -> 1,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <tag:items:teoe:ae2_press>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_presses2", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <tag:items:teoe:ae2_press>, 5);
 
 
 
@@ -70,8 +74,12 @@ print("coinification.zs loading...");
 <recipetype:create:crushing>.addRecipe("coinify_enigmatic_amulet2", [<item:lightmanscurrency:coin_diamond>], <item:enigmaticlegacy:enigmatic_amulet>, 5);
 
 // Spellstones -> 20,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:curios:spellstone>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:curios:spellstone>, 7);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 5);
+
+// Non-Euclidean Cube -> 100,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_cube", [<item:lightmanscurrency:coin_netherite>], <item:enigmaticlegacy:the_cube>, 0, 8000);
+<recipetype:create:crushing>.addRecipe("coinify_cube2", [<item:lightmanscurrency:coin_netherite>],<item:enigmaticlegacy:the_cube>, 10);
 
 
 
@@ -91,24 +99,41 @@ print("coinification.zs loading...");
 
 
 ### Twilight Forest ###
-# Scepters -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_twilight_scepter", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:twilight_scepter>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_twilight_scepter2", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:twilight_scepter>, 5);
+// Naga Scale -> 1,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_naga_scale", [<item:lightmanscurrency:coin_emerald>], <item:twilightforest:naga_scale>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_naga_scale2", [<item:lightmanscurrency:coin_emerald>], <item:twilightforest:naga_scale>, 5);
 
-<recipetype:thermal:pulverizer>.addRecipe("coinify_lifedrain_scepter", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:lifedrain_scepter>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_lifedrain_scepter2", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:lifedrain_scepter>, 5);
+// Scepters -> 1,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_scepter", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:twilight_scepter>|<item:twilightforest:lifedrain_scepter>|<item:twilightforest:zombie_scepter>|<item:twilightforest:fortification_scepter>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_scepter2", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:twilight_scepter>|<item:twilightforest:lifedrain_scepter>|<item:twilightforest:zombie_scepter>|<item:twilightforest:fortification_scepter>, 5);
 
-<recipetype:thermal:pulverizer>.addRecipe("coinify_zombie_scepter", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:zombie_scepter>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_zombie_scepter2", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:zombie_scepter>, 5);
+// Maze Map Focus -> 1,750 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_maze_focus", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*7, <item:lightmanscurrency:coin_iron>*5], <item:twilightforest:maze_map_focus>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_maze_focus2", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*7, <item:lightmanscurrency:coin_iron>*5], <item:twilightforest:maze_map_focus>, 5);
 
-<recipetype:thermal:pulverizer>.addRecipe("coinify_fortification_scepter", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:fortification_scepter>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_fortification_scepter2", [<item:lightmanscurrency:coin_diamond>], <item:twilightforest:fortification_scepter>, 5);
+// Fiery Blood & Tears -> 2,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_fiery_blood", [<item:lightmanscurrency:coin_emerald>*2], <tag:items:twilightforest:fiery_vial>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_fiery_blood2", [<item:lightmanscurrency:coin_emerald>*2], <tag:items:twilightforest:fiery_vial>, 5);
 
-// Maze Map Focus -> 1,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_maze_focus", [<item:lightmanscurrency:coin_diamond>, <item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:maze_map_focus>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_maze_focus2", [<item:lightmanscurrency:coin_diamond>, <item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:maze_map_focus>, 5);
+// Alpha Yeti Fur -> 5,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_yeti_fur", [<item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:alpha_yeti_fur>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_yeti_fur2", [<item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:alpha_yeti_fur>, 5);
 
-# Charms of Keeping -> Various Essenarium
+	// Arctic Fur -> 2,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_arctic_fur", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:arctic_fur>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_arctic_fur2", [<item:lightmanscurrency:coin_emerald>*2, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:arctic_fur>, 5);
+
+	// Ice Bomb -> 1,500 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_ice_bomb", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:ice_bomb>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_ice_bomb2", [<item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_gold>*5], <item:twilightforest:ice_bomb>, 5);
+
+// Snow Queen Loot -> 5,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_snow_queen_loot", [<item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:triple_bow>|<item:twilightforest:seeker_bow>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_snow_queen_loot2", [<item:lightmanscurrency:coin_emerald>*5], <item:twilightforest:arctic_fur>, 5);
+
+
+
+# Charms of Keeping -> Varying Amounts
 # 500 for Tier 1, 4x each tier
 <recipetype:thermal:pulverizer>.addRecipe("coinify_keeping_charm", [<item:lightmanscurrency:coin_gold>*5], <item:twilightforest:charm_of_keeping_1>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_keeping_charm2", [<item:lightmanscurrency:coin_gold>*5], <item:twilightforest:charm_of_keeping_1>, 5);

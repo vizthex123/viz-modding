@@ -15,7 +15,7 @@ wallet slot is at 100, 59 | open button is at 20, 5 (x, y)
 
 1,000 RF = 1 Second for Create
 
-
+toggle FancyMenu with control + alt + c
 
 
 Server Pack Exporting:

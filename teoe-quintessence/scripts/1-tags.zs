@@ -8,9 +8,30 @@ print("1-tags.zs loading...");
 <tag>.remove(<item>);
 */
 
+# Soul Sand (recipe)
+<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_sand>);
+<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_soil>);
+<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_sand>);
+<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_soil>);
+
+
 # Dragon Scales (recipe)
 <tag:items:teoe:dragon_scale>.add(<item:tconstruct:dragon_scale>);
 <tag:items:teoe:dragon_scale>.add(<item:quark:dragon_scale>);
+
+
+# Presses (recipe)
+<tag:items:teoe:ae2_press>.add(<item:ae2:silicon_press>);
+<tag:items:teoe:ae2_press>.add(<item:ae2:logic_processor_press>);
+<tag:items:teoe:ae2_press>.add(<item:ae2:calculation_processor_press>);
+<tag:items:teoe:ae2_press>.add(<item:ae2:engineering_processor_press>);
+
+
+# Basic Pipe (quest)
+<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_item_pipe>);
+<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_fluid_pipe>);
+<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_energy_pipe>);
+<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_extractor_attachment>);
 
 
 # Belts (quest)
@@ -27,18 +48,20 @@ print("1-tags.zs loading...");
 
 
 # Magic Dust (recipes)
+<tag:items:teoe:magic_dust>.add(<item:apotheosis:gem_dust>);
 <tag:items:teoe:magic_dust>.add(<item:enigmaticlegacy:astral_dust>);
 <tag:items:teoe:magic_dust>.add(<item:obscure_api:astral_dust>);
-<tag:items:teoe:magic_dust>.add(<item:apotheosis:gem_dust>);
 <tag:items:teoe:magic_dust>.add(<item:ob_core:magic_dust>);
 
 
 
 # Shards (recipes)
 <tag:items:teoe:shard>.add(<item:minecraft:amethyst_shard>);
+<tag:items:teoe:shard>.add(<item:apotheosis:rare_material>);
 <tag:items:teoe:shard>.add(<item:byg:subzero_crystal_shard>);
-<tag:items:teoe:shard>.add(<item:geode:wrappist_shard>);
 <tag:items:teoe:shard>.add(<item:byg:therium_shard>);
+<tag:items:teoe:shard>.add(<item:geode:wrappist_shard>);
+
 
 
 # Scrolls (quest)
@@ -47,10 +70,12 @@ print("1-tags.zs loading...");
 <tag:items:teoe:scrolls>.add(<item:waystones:return_scroll>);
 
 
+
 # RF Coils (quest)
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_augment>);
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_storage_augment>);
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_xfer_augment>);
+
 
 
 # Cooking for Blockheads' items (quests)
@@ -121,69 +146,8 @@ print("1-tags.zs loading...");
 <tag:items:create:sleepers>.add(<item:quark:tuff_slab>);
 
 
-# TEoE Planks
-# Used in my custom Chest recipe
-<tag:items:teoe:planks>.add(<item:botania:livingwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:mossy_livingwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:framed_livingwood>);
-<tag:items:teoe:planks>.add(<item:botania:pattern_framed_livingwood>);
-<tag:items:teoe:planks>.add(<item:botania:livingwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:dreamwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:mossy_dreamwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:framed_dreamwood>);
-<tag:items:teoe:planks>.add(<item:botania:pattern_framed_dreamwood>);
-<tag:items:teoe:planks>.add(<item:botania:dreamwood_planks>);
-<tag:items:teoe:planks>.add(<item:botania:shimmerwood_planks>);
 
-<tag:items:teoe:planks>.add(<item:byg:aspen_planks>);
-<tag:items:teoe:planks>.add(<item:byg:baobab_planks>);
-<tag:items:teoe:planks>.add(<item:byg:blue_enchanted_planks>);
-<tag:items:teoe:planks>.add(<item:byg:bulbis_planks>);
-<tag:items:teoe:planks>.add(<item:byg:cherry_planks>);
-<tag:items:teoe:planks>.add(<item:byg:cika_planks>);
-<tag:items:teoe:planks>.add(<item:byg:cypress_planks>);
-<tag:items:teoe:planks>.add(<item:byg:ebony_planks>);
-<tag:items:teoe:planks>.add(<item:byg:fir_planks>);
-<tag:items:teoe:planks>.add(<item:byg:green_enchanted_planks>);
-<tag:items:teoe:planks>.add(<item:byg:holly_planks>);
-<tag:items:teoe:planks>.add(<item:byg:imparius_planks>);
-<tag:items:teoe:planks>.add(<item:byg:jacaranda_planks>);
-<tag:items:teoe:planks>.add(<item:byg:lament_planks>);
-<tag:items:teoe:planks>.add(<item:byg:mahogany_planks>);
-<tag:items:teoe:planks>.add(<item:byg:mangrove_planks>);
-<tag:items:teoe:planks>.add(<item:byg:maple_planks>);
-<tag:items:teoe:planks>.add(<item:byg:nightshade_planks>);
-<tag:items:teoe:planks>.add(<item:byg:palm_planks>);
-<tag:items:teoe:planks>.add(<item:byg:pine_planks>);
-<tag:items:teoe:planks>.add(<item:byg:rainbow_eucalyptus_planks>);
-<tag:items:teoe:planks>.add(<item:byg:redwood_planks>);
-<tag:items:teoe:planks>.add(<item:byg:skyris_planks>);
-<tag:items:teoe:planks>.add(<item:byg:willow_planks>);
-<tag:items:teoe:planks>.add(<item:byg:witch_hazel_planks>);
-<tag:items:teoe:planks>.add(<item:byg:zelkova_planks>);
-<tag:items:teoe:planks>.add(<item:byg:sythian_planks>);
-<tag:items:teoe:planks>.add(<item:byg:embur_planks>);
-
-<tag:items:teoe:planks>.add(<item:twilightforest:towerwood>);
-<tag:items:teoe:planks>.add(<item:twilightforest:twilight_oak_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:canopy_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:mangrove_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:dark_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:time_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:transformation_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:mining_planks>);
-<tag:items:teoe:planks>.add(<item:twilightforest:sorting_planks>);
-
-<tag:items:teoe:planks>.add(<item:tconstruct:nahuatl>);
-<tag:items:teoe:planks>.add(<item:tconstruct:greenheart_planks>);
-<tag:items:teoe:planks>.add(<item:tconstruct:skyroot_planks>);
-<tag:items:teoe:planks>.add(<item:tconstruct:bloodshroom_planks>);
-
-<tag:items:teoe:planks>.add(<item:naturesaura:ancient_planks>);
-
-
-
-# Vines
+# Vines (recipe)
 <tag:items:teoe:vines>.add(<item:minecraft:vine>);
 <tag:items:teoe:vines>.add(<item:minecraft:weeping_vines>);
 <tag:items:teoe:vines>.add(<item:minecraft:twisting_vines>);
@@ -199,45 +163,12 @@ print("1-tags.zs loading...");
 
 
 
-
-# Music Discs
-<tag:items:minecraft:music_discs>.add(<item:ob_aquamirae:musicdischorizon>);
+# Music Discs (recipe)
+<tag:items:minecraft:music_discs>.add(<item:aquamirae:music_disc_horizon>);
+<tag:items:minecraft:music_discs>.add(<item:aquamirae:music_disc_forsaken_drownage>);
 <tag:items:minecraft:music_discs>.add(<item:conjurer_illager:music_disc_delve_deeper>);
 <tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_honey_bee_rat_faced_boy>);
 <tag:items:minecraft:music_discs>.add(<item:the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov>);
-
-/*
-<tag:items:randomium:whitelist>.add(<item>);
-mods are blacklisted in the config
-*/
-
-# Whitelisted Randomium drops
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
-<tag:items:randomium:whitelist>.add(<item:create:raw_zinc>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_tin>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_lead>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_silver>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
-<tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
-<tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
-<tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
-<tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
-<tag:items:randomium:whitelist>.add(<item:ob_core:magic_dust>);
-
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_nether>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_end>);
-
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinblock_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_iron>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
 
 /*
 # Portal Modules (quest)
@@ -247,7 +178,7 @@ mods are blacklisted in the config
 <tag:items:teoe:portal_modules>.add(<item:portality:module_interdimensional>);
 */
 
-# Corundum (quest)
+# Corundum (quest & catalyst)
 <tag:items:teoe:corundum>.add(<item:quark:red_corundum_cluster>);
 <tag:items:teoe:corundum>.add(<item:quark:orange_corundum_cluster>);
 <tag:items:teoe:corundum>.add(<item:quark:yellow_corundum_cluster>);
@@ -274,14 +205,18 @@ mods are blacklisted in the config
 
 
 # Diving Gear (quest)
-<tag:items:teoe:diving_helmet>.add(<item:ob_aquamirae:three_bolt_helmet>);
+<tag:items:teoe:diving_helmet>.add(<item:aquamirae:three_bolt_helmet>);
 <tag:items:teoe:diving_helmet>.add(<item:thermal:diving_helmet>);
 <tag:items:teoe:diving_helmet>.add(<item:create:diving_helmet>);
 
-<tag:items:teoe:diving_chestplate>.add(<item:ob_aquamirae:three_bolt_chestplate>);
+<tag:items:teoe:diving_chestplate>.add(<item:aquamirae:three_bolt_suit>);
 <tag:items:teoe:diving_chestplate>.add(<item:thermal:diving_chestplate>);
 <tag:items:teoe:diving_chestplate>.add(<item:create:copper_backtank>);
 
+<tag:items:teoe:diving_leggings>.add(<item:aquamirae:three_bolt_leggings>);
+<tag:items:teoe:diving_leggings>.add(<item:thermal:diving_leggings>);
+
+<tag:items:teoe:diving_boots>.add(<item:aquamirae:three_bolt_boots>);
 <tag:items:teoe:diving_boots>.add(<item:thermal:diving_boots>);
 <tag:items:teoe:diving_boots>.add(<item:create:diving_boots>);
 
@@ -349,9 +284,114 @@ mods are blacklisted in the config
 <tag:items:minecraft:signs>.add(<item:malum:soulwood_sign>);
 
 
+
 # Apothecaries (quest)
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_mossy>);
 <tag:items:teoe:apothecary>.add(<item:botania:apothecary_default>);
+
+
+# Spellstones (recipe)
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:enigmatic_item>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:golem_heart>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:angel_blessing>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:ocean_stone>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:magma_heart>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:eye_of_nebula>);
+<tag:items:teoe:spellstone>.add(<item:enigmaticlegacy:void_pearl>);
+
+
+# TEoE Planks
+# Used in my custom Chest recipe
+<tag:items:teoe:planks>.add(<item:botania:livingwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:mossy_livingwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:framed_livingwood>);
+<tag:items:teoe:planks>.add(<item:botania:pattern_framed_livingwood>);
+<tag:items:teoe:planks>.add(<item:botania:livingwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:dreamwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:mossy_dreamwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:framed_dreamwood>);
+<tag:items:teoe:planks>.add(<item:botania:pattern_framed_dreamwood>);
+<tag:items:teoe:planks>.add(<item:botania:dreamwood_planks>);
+<tag:items:teoe:planks>.add(<item:botania:shimmerwood_planks>);
+
+<tag:items:teoe:planks>.add(<item:byg:aspen_planks>);
+<tag:items:teoe:planks>.add(<item:byg:baobab_planks>);
+<tag:items:teoe:planks>.add(<item:byg:blue_enchanted_planks>);
+<tag:items:teoe:planks>.add(<item:byg:bulbis_planks>);
+<tag:items:teoe:planks>.add(<item:byg:cherry_planks>);
+<tag:items:teoe:planks>.add(<item:byg:cika_planks>);
+<tag:items:teoe:planks>.add(<item:byg:cypress_planks>);
+<tag:items:teoe:planks>.add(<item:byg:ebony_planks>);
+<tag:items:teoe:planks>.add(<item:byg:fir_planks>);
+<tag:items:teoe:planks>.add(<item:byg:green_enchanted_planks>);
+<tag:items:teoe:planks>.add(<item:byg:holly_planks>);
+<tag:items:teoe:planks>.add(<item:byg:imparius_planks>);
+<tag:items:teoe:planks>.add(<item:byg:jacaranda_planks>);
+<tag:items:teoe:planks>.add(<item:byg:lament_planks>);
+<tag:items:teoe:planks>.add(<item:byg:mahogany_planks>);
+<tag:items:teoe:planks>.add(<item:byg:mangrove_planks>);
+<tag:items:teoe:planks>.add(<item:byg:maple_planks>);
+<tag:items:teoe:planks>.add(<item:byg:nightshade_planks>);
+<tag:items:teoe:planks>.add(<item:byg:palm_planks>);
+<tag:items:teoe:planks>.add(<item:byg:pine_planks>);
+<tag:items:teoe:planks>.add(<item:byg:rainbow_eucalyptus_planks>);
+<tag:items:teoe:planks>.add(<item:byg:redwood_planks>);
+<tag:items:teoe:planks>.add(<item:byg:skyris_planks>);
+<tag:items:teoe:planks>.add(<item:byg:willow_planks>);
+<tag:items:teoe:planks>.add(<item:byg:witch_hazel_planks>);
+<tag:items:teoe:planks>.add(<item:byg:zelkova_planks>);
+<tag:items:teoe:planks>.add(<item:byg:sythian_planks>);
+<tag:items:teoe:planks>.add(<item:byg:embur_planks>);
+
+<tag:items:teoe:planks>.add(<item:twilightforest:towerwood>);
+<tag:items:teoe:planks>.add(<item:twilightforest:twilight_oak_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:canopy_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:mangrove_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:dark_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:time_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:transformation_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:mining_planks>);
+<tag:items:teoe:planks>.add(<item:twilightforest:sorting_planks>);
+
+<tag:items:teoe:planks>.add(<item:tconstruct:nahuatl>);
+<tag:items:teoe:planks>.add(<item:tconstruct:greenheart_planks>);
+<tag:items:teoe:planks>.add(<item:tconstruct:skyroot_planks>);
+<tag:items:teoe:planks>.add(<item:tconstruct:bloodshroom_planks>);
+
+<tag:items:teoe:planks>.add(<item:naturesaura:ancient_planks>);
+
+/*
+<tag:items:randomium:whitelist>.add(<item>);
+mods are blacklisted in the config
+*/
+
+# Whitelisted Randomium drops
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
+<tag:items:randomium:whitelist>.add(<item:create:raw_zinc>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_tin>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_lead>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_silver>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
+<tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
+<tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
+<tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:magic_dust>);
+
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_nether>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_end>);
+
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinblock_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
 
 
 
@@ -384,6 +424,9 @@ mods are blacklisted in the config
 <tag:items:byg:pink_dye>.remove(<item:byg:firecracker_flower_bush>);
 <tag:items:byg:orange_dye>.add(<item:byg:firecracker_flower_bush>);
 <tag:items:byg:green_dye>.add(<item:byg:shrub>);
+
+<tag:items:forge:mushrooms>.add(<item:minecraft:crimson_fungus>);
+<tag:items:forge:mushrooms>.add(<item:minecraft:warped_fungus>);
 
 
 # Tag Removal
