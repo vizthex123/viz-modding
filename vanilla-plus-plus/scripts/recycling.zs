@@ -53,7 +53,7 @@ blastFurnace.addRecipe("blast_recycle_gold_item", <item:kubejs:small_gold_scrap>
 furnace.addRecipe("recycle_small_gold_item", <item:minecraft:gold_nugget>, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 200);
 blastFurnace.addRecipe("blast_recycle_small_gold_item", <item:minecraft:gold_nugget>, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 100);
 
-blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:vanilla:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 200);
+blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:vanilla:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 150);
 blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:vanilla:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 200);
 
 // Recycle Music Discs

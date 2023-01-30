@@ -61,12 +61,13 @@ composter.setValue(<item:farmersdelight:chicken_cuts>, 0.3);
 composter.setValue(<item:farmersdelight:mutton_chops>, 0.3);
 
 
-
 # Misc
 composter.setValue(<item:minecraft:phantom_membrane>, 0.15);
 composter.setValue(<item:minecraft:rotten_flesh>, 0.25);
-composter.setValue(<item:minecraft:rabbit_foot>, 0.2);
+composter.setValue(<item:minecraft:spider_eye>, 0.2);
+composter.setValue(<item:minecraft:rabbit_foot>, 0.25);
 composter.setValue(<item:minecraft:shulker_shell>, 0.4);
+composter.setValue(<item:ecologics:seashell>, 0.35);
 composter.setValue(<item:ecologics:walnut>, 0.30);
 
 print("compost.zs loaded");

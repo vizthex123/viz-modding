@@ -100,6 +100,7 @@ print("0-tags-scrap.zs loading...");
 <tag:items:vanilla:meltable_metal>.add(<item:inmis:plated_backpack>);
 <tag:items:vanilla:meltable_metal>.add(<item:magehand:iron_spawner_item>);
 <tag:items:vanilla:meltable_metal>.add(<item:nyfsquiver:iron_quiver>);
+<tag:items:vanilla:meltable_metal>.add(<item:pfm:furniture_book>);
 <tag:items:vanilla:meltable_metal>.add(<item:pfm:working_table>);
 
 
