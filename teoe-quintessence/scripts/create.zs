@@ -45,10 +45,10 @@ default time for both is 2 - 3 seconds
 */
 
 // Crush Quartzite Sand into Sand & Quartz
-<recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 5);
+<recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 40], <item:byg:quartzite_sand>, 5);
 
 // Crush Galcite into Coal & Powdered Obsidian
-<recipetype:create:crushing>.addRecipe("crush_galcite", [<item:minecraft:coal>*4, <item:create:powdered_obsidian> % 20], <item:geode:galcite>, 5);
+<recipetype:create:crushing>.addRecipe("crush_galcite", [<item:minecraft:coal>*4, <item:create:powdered_obsidian> % 25], <item:geode:galcite>, 5);
 
 // Crush Moss Carpets into Moss Paste
 <recipetype:create:crushing>.addRecipe("crush_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 1);
@@ -86,33 +86,37 @@ blastFurnace.remove(<item:ae2:ender_dust>);
 <recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*3, <item:tconstruct:ender_slime_crystal> % 50, <item:create:experience_nugget>], <item:tconstruct:ender_slime_crystal_block>, 10);
 
 # Ore Crushing Recipes
+# Chances are a bit higher than the Pulverizer
 // Cobalt
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 10);
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:create:experience_nugget>*9 % 50, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>, <item:kubejs:crushed_cobalt> % 75, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 10);
-
-// Pendorite
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 30);
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:minecraft:netherite_scrap> % 25, <item:create:experience_nugget>*27 % 25], <item:byg:raw_pendorite_block>, 30);
-<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 50, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3], <item:byg:pendorite_ore>, 30);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:kubejs:iridium_chunks> % 20, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 10);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25, <item:create:experience_nugget>*9 % 75, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 10);
 
 // Platinum
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 15);
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:create:experience_nugget>*9 % 90], <item:ob_core:raw_platinum_block>, 15);
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>, <item:kubejs:crushed_platinum> % 75, <item:create:experience_nugget>*2 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 15);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium_chunks> % 30, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 15);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 35, <item:create:experience_nugget>*9 % 90], <item:ob_core:raw_platinum_block>, 15);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:iridium_chunks>*2 % 40, <item:kubejs:crushed_platinum> % 75, <item:create:experience_nugget>*2 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 15);
+
+// Pendorite
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:kubejs:iridium_chunks> % 35, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 30);
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:kubejs:iridium_chunks>*2 % 40, <item:minecraft:netherite_scrap> % 25, <item:create:experience_nugget>*27 % 75], <item:byg:raw_pendorite_block>, 30);
+<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:kubejs:iridium_chunks>*2 % 45, <item:minecraft:netherite_scrap> % 50, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3], <item:byg:pendorite_ore>, 30);
 
 // Soulstone
-<recipetype:create:crushing>.remove(<item:malum:raw_soulstone>);
+<recipetype:create:crushing>.removeByName("malum:create/crushing/crush_raw_soulstone");
+<recipetype:create:crushing>.removeByName("malum:create/crushing/crush_soulstone");
+<recipetype:create:crushing>.removeByName("malum:create/crushing/crush_deepslate_soulstone");
 
+<recipetype:create:crushing>.addRecipe("crush_raw_soulstone", [<item:malum:crushed_soulstone>, <item:create:experience_nugget> % 85], <item:malum:raw_soulstone>, 7);
 <recipetype:create:crushing>.addRecipe("crush_raw_soulstone_block", [<item:malum:crushed_soulstone>*9, <item:create:experience_nugget>*9 % 85], <item:malum:block_of_raw_soulstone>, 7);
-<recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 80, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 7);
-<recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 80, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 7);
+<recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 85, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 7);
+<recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 85, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 7);
 
 ### Washing Recipes
-<recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
-<recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, <item:kubejs:iridium> % 50], <item:kubejs:crushed_pendorite>);
-<recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, <item:kubejs:iridium> % 25], <item:kubejs:crushed_platinum>);
 # Pendorite has no nugget, rip
+<recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
+<recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, <item:kubejs:iridium_chunks> % 50], <item:kubejs:crushed_pendorite>);
+<recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, <item:kubejs:iridium_chunks> % 25], <item:kubejs:crushed_platinum>);
 
 ###########################################################################
 ### Geode Block Recipes

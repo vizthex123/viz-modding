@@ -2,7 +2,6 @@
 
 print("creative_items.zs loading...");
 
-
 # Creative Energy Cell
 mods.extendedcrafting.TableCrafting.addShaped("creative_energy_cell", 4, <item:ae2:creative_energy_cell>,
 	[[<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:redstone>], 
@@ -56,7 +55,7 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_mana_tablet", 4, <item:b
 
 
 # Creative Mana Pool
-mods.extendedcrafting.TableCrafting.addShaped("creative_mana_pool", 4, <item:botania:mana_tablet>.withTag({creative: 1 as byte, mana: 500000 as int}),
+mods.extendedcrafting.TableCrafting.addShaped("creative_mana_pool", 4, <item:botania:creative_pool>,
 	[[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:malum:soul_stained_steel_ingot>, <item:malum:soul_stained_steel_ingot>, <item:rftoolsbase:infused_diamond>, <tag:items:teoe:magic_dust>, <tag:items:teoe:magic_dust>, <item:minecraft:air>, <item:minecraft:air>], 

@@ -17,22 +17,22 @@ var nugget = <item:minecraft:iron_nugget>;
 furnace.addRecipe("recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 200);
 blastFurnace.addRecipe("blast_recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 100);
 
-furnace.addRecipe("recycle_metal_item", <item:kubejs:small_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_metal_item", <item:kubejs:small_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 100);
+furnace.addRecipe("recycle_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 100);
 
 furnace.addRecipe("recycle_small_metal_item", nugget, <tag:items:teoe:meltable_metal_small>.asIIngredient(), 0.1, 200);
 blastFurnace.addRecipe("blast_recycle_small_metal_item", nugget, <tag:items:teoe:meltable_metal_small>.asIIngredient(), 0.1, 100);
 
-furnace.addRecipe("recycle_big_metal_item", <item:kubejs:scrap>, <tag:items:teoe:meltable_metal_big>.asIIngredient().anyDamage(), 0.2, 200);
-blastFurnace.addRecipe("blast_recycle_big_metal_item", <item:kubejs:scrap>, <tag:items:teoe:meltable_metal_big>.asIIngredient().anyDamage(), 0.2, 100);
+furnace.addRecipe("recycle_big_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal_big>.asIIngredient().anyDamage(), 0.2, 200);
+blastFurnace.addRecipe("blast_recycle_big_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal_big>.asIIngredient().anyDamage(), 0.2, 100);
 
 furnace.addRecipe("recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:teoe:meltable_gold>.asIIngredient().anyDamage(), 0.3, 200);
 blastFurnace.addRecipe("blast_recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:teoe:meltable_gold>.asIIngredient().anyDamage(), 0.3, 100);
 
-blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 200);
+blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 150);
 blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 200);
 
-blastFurnace.addRecipe("blast_recycle_lumium_item", <item:thermal:lumium_nugget>*3, <tag:items:teoe:meltable_lumium>.asIIngredient(), 2.0, 400);
+blastFurnace.addRecipe("blast_recycle_lumium_item", <item:kubejs:small_lumium_scrap>, <tag:items:teoe:meltable_lumium>.asIIngredient(), 2.0, 400);
 
 
 # Recycle Twilight Forest item

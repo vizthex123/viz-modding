@@ -51,7 +51,7 @@ val stick = <item:minecraft:stick>;
 
 // Banners
 <recipetype:thermal:sawmill>.addRecipe("saw_banners", [mcstring*12, mcstring*6 % 50, sawdust % 50], <tag:items:minecraft:banners>, 1000);
-<recipetype:create:cutting>.addRecipe("mech_saw_stand", mcstring*12, <tag:items:minecraft:banners>, 2);
+<recipetype:create:cutting>.addRecipe("mech_saw_banners", mcstring*12, <tag:items:minecraft:banners>, 2);
 
 // Lore Fragments
 <recipetype:thermal:sawmill>.addRecipe("saw_fragment", [paper*2 % 50, stick], <item:enigmaticlegacy:lore_fragment>, 1000);

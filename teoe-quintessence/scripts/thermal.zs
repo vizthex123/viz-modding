@@ -92,6 +92,8 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 
+// <recipetype:thermal:furnace>.addRecipe(String name, IItemStack output, IIngredient ingredient, float experience, int energy);
+
 <recipetype:thermal:chiller>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack inputFluid, int energy);
 
 <recipetype:thermal:refinery>.addRecipe(String name, MCWeightedItemStack itemOutput, IFluidStack[] fluidsOutput, IFluidStack inputFluid, int energy);
@@ -101,12 +103,14 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
 
+// Redstone Furnace Sythian Stalks into Gold Nuggets
+<recipetype:thermal:furnace>.addRecipe("smelt_stalk", <item:minecraft:gold_nugget>, <item:byg:sythian_stalk_block>, 1.0, 2000);
 
 // Pulverize Quartize Sand into Sand & Quartz
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 0, 4000);
 
-// Pulverize Galcite into Coal
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_galcite", [<item:minecraft:coal>*4], <item:geode:galcite>, 0, 4000);
+// Pulverize Galcite into Coal & Powdered Obsidian
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_galcite", [<item:minecraft:coal>*4, <item:create:powdered_obsidian> % 20], <item:geode:galcite>, 0, 4000);
 
 // Pulverize Moss Carpets into Moss Paste
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 0, 500);
@@ -114,16 +118,14 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Melt down Fiery Blood/Tears into Fiery Essence
 <recipetype:thermal:crucible>.addRecipe("melt_fiery", <fluid:twilightforest:fiery_essence>*250, <tag:items:twilightforest:fiery_vial>, 1000);
 
-// Process Bumblezone's items into honey(combs)
+# Process Bumblezone's blocks & items into honey(combs)
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_honey_crystal_shard", [<item:minecraft:sugar> % 50], <fluid:cofh_core:honey>*100, <item:the_bumblezone:honey_crystal_shards>, 4000);
 
-// Process Bumblezone's blocks into honey(combs)
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_porous_honeycomb", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*50, <item:the_bumblezone:porous_honeycomb_block>, 4000);
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_filled_porous_honeycomb", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50], <fluid:cofh_core:honey>*250, <item:the_bumblezone:filled_porous_honeycomb_block>, 4000);
 
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_brood_blocks", [<item:minecraft:honeycomb>*2, <item:minecraft:honeycomb>*2 % 50, <item:minecraft:bee_spawn_egg> % 25, <item:the_bumblezone:honey_slime_spawn_egg> % 25], <fluid:cofh_core:honey>*250, <item:the_bumblezone:empty_honeycomb_brood_block>|<item:the_bumblezone:honeycomb_brood_block>, 4000);
 
-// Melt honey-type blocks into Honey
 <recipetype:thermal:crucible>.addRecipe("melt_honey_crystal", <fluid:cofh_core:honey>*250, <item:the_bumblezone:honey_crystal>, 2000);
 <recipetype:thermal:crucible>.addRecipe("melt_honey_cocoon", <fluid:cofh_core:honey>*500, <item:the_bumblezone:honey_cocoon>, 2000);
 <recipetype:thermal:crucible>.addRecipe("melt_sticky_honey_residue", <fluid:cofh_core:honey>*25, <item:the_bumblezone:sticky_honey_residue>, 1000);
@@ -135,21 +137,34 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:furnace>.addRecipe("leather_illager", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>*2, 0, 4000);
 
 // Fractionate Sugar Water into Water
-<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>, 2000);
+<recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>*1000, 2000);
 
 // Induction Smelt Quicklime to make Steel
-<recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>*4|<item:thermal:iron_dust>*4, <tag:items:forge:limestone>, <item:kubejs:quicklime>*16], 0, 6400);
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:forge:limestone>, <item:kubejs:quicklime>*8], 0, 6400);
 
 // Induction Smelt Ash into Charcoal
 <recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash>*4], 0, 6400);
+<recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 40], [<item:byg:subzero_ash_block>*4], 0, 6400);
 
-<recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 50], [<item:byg:subzero_ash_block>*4], 0, 6400);
+// Pulverize Cobalt
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:kubejs:iridium_chunks> % 15], <item:tconstruct:raw_cobalt>, 0, 4000);
+# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25], <item:tconstruct:raw_cobalt_block>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 20, <item:minecraft:gravel> % 15], <item:tconstruct:cobalt_ore>, 0, 4000);
 
-// Pulverize Raw Platinum
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium> % 20], <item:ob_core:platinum_raw>, 0, 6000);
+// Pulverize Platinum
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium_chunks> % 20], <item:ob_core:platinum_raw>, 0, 6000);
+# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 30], <item:ob_core:raw_platinum_block>, 0, 6000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:minecraft:gravel> % 20], <item:ob_core:deepslate_platinum_ore>, 0, 6000);
 
-// Pulverize Raw Pendorite
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, <item:kubejs:iridium> % 35], <item:byg:raw_pendorite>, 0, 8000);
+// Pulverize Pendorite
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, <item:kubejs:iridium_chunks> % 35], <item:byg:raw_pendorite>, 0, 8000);
+# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:minecraft:netherite_scrap>*2 % 30, <item:kubejs:iridium_chunks> % 40], <item:byg:raw_pendorite_block>, 0, 8000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:minecraft:netherite_scrap> % 30, <item:kubejs:iridium_chunks> % 40, <item:minecraft:gravel> % 20], <item:byg:pendorite_ore>, 0, 8000);
+
+// Pulverize Soulstone
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 50], <item:malum:raw_soulstone>, 0, 3000);
+# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone_block", [<item:malum:crushed_soulstone>*9, <item:malum:crushed_soulstone>*2 % 30], <item:malum:block_of_raw_soulstone>, 0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_soulstone_ore", [<item:malum:crushed_soulstone>*2, <item:malum:crushed_soulstone> % 75, <item:minecraft:gravel> % 20], <item:malum:soulstone_ore>|<item:malum:deepslate_soulstone_ore>, 0, 3000);
 
 // Pulverize Certus Quartz into Dust
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_certus_quartz", [<item:ae2:certus_quartz_dust>], <tag:items:ae2:all_certus_quartz>, 0, 2000);

@@ -38,11 +38,13 @@ blastFurnace.addRecipe("blast_crushed_platinum", <item:ob_core:platinum_ingot>, 
 # Craft Small Scrap into Scrap
 craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);
 
-craftingTable.addShapeless("scrap", <item:kubejs:scrap>, [<item:kubejs:small_scrap>, <item:kubejs:small_scrap>, <item:kubejs:small_scrap>]);
+craftingTable.addShapeless("scrap", <item:kubejs:iron_scrap>, [<item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>]);
 
 craftingTable.addShapeless("gold_scrap", <item:kubejs:gold_scrap>, [<item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>]);
 
 craftingTable.addShapeless("diamond_scrap", <item:kubejs:diamond_scrap>, [<item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>]);
+
+craftingTable.addShapeless("lumium_scrap", <item:kubejs:lumium_scrap>, [<item:kubejs:small_lumium_scrap>, <item:kubejs:small_lumium_scrap>, <item:kubejs:small_lumium_scrap>]);
 
 craftingTable.addShapeless("fiery_scrap", <item:kubejs:fiery_scrap>, [<item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>]);
 
@@ -53,14 +55,19 @@ craftingTable.addShapeless("knightmetal_scrap", <item:kubejs:knightmetal_scrap>,
 
 # Smelt Scrap into Ingots
 furnace.addRecipe("smelt_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 200);
-furnace.addRecipe("smelt_scrap", <item:minecraft:iron_ingot>, <item:kubejs:scrap>, 0, 200);
+furnace.addRecipe("smelt_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0, 200);
 furnace.addRecipe("smelt_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 200);
+furnace.addRecipe("smelt_ironwood_scrap", <item:twilightforest:ironwood_ingot>, <item:kubejs:ironwood_scrap>, 0, 200);
 
 blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:scrap>, 0, 100);
+blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0, 100);
 blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 200);
+blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 100);
 
+blastFurnace.addRecipe("blast_lumium_scrap", <item:thermal:lumium_ingot>, <item:kubejs:lumium_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_fiery_scrap", <item:twilightforest:fiery_ingot>, <item:kubejs:fiery_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_ironwood_scrap", <item:twilightforest:ironwood_ingot>, <item:kubejs:ironwood_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_knightmetal_scrap", <item:twilightforest:knightmetal_ingot>, <item:kubejs:knightmetal_scrap>, 0, 100);
 
 
 # Quicklime
@@ -77,7 +84,7 @@ craftingTable.addShapeless("glue_sus", <item:kubejs:glue>, [<item:food_enhanceme
 craftingTable.addShapeless("glue_honeycomb", <item:kubejs:glue>, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:paper>]);
 
 // Super Glue (Create)
-craftingTable.addShapeless("super_glue", <item:create:super_glue>, [<item:kubejs:glue>, <item:kubejs:glue>, <tag:items:forge:plates/iron>]);
+craftingTable.addShapeless("super_glue", <item:create:super_glue>, [<item:kubejs:glue>, <tag:items:forge:plates/iron>]);
 
 
 
@@ -119,7 +126,7 @@ craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
 # Iridium Fuel Cell
 <recipetype:create:mechanical_crafting>.addRecipe("iridium_fuel_cell", <item:kubejs:iridium_cell>,
 [[<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>],
-[<tag:items:forge:plates/lead>, <item:kubejs:iridium>, <tag:items:forge:plates/lead>],
+[<tag:items:forge:plates/lead>, <item:kubejs:iridium_chunks>, <tag:items:forge:plates/lead>],
 [<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>]]);
 
 // Sequenced Version
@@ -131,7 +138,7 @@ craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
 /*
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("iridium_cell_sequence")
                                                       .transitionTo(<item:kubejs:iridium_cell>)
-                                                      .require(<item:kubejs:iridium>)
+                                                      .require(<item:kubejs:iridium_chunks>)
                                                       .addOutput(<item:kubejs:iridium_cell>, 100)
                                                       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<tag:items:forge:plates/lead>))
                                                       .addStep<mods.createtweaker.PressRecipe>(((rb) => rb.require(<tag:items:forge:plates/lead>))
