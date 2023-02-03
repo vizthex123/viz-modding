@@ -4,9 +4,6 @@ print("create_saw.zs loading...");
 <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration);
 */
 
-# Craft Cut Limestone with Quark's limestone
-<recipetype:create:cutting>.addRecipe("cut_limestone", <item:create:cut_limestone>, <item:quark:limestone>);
-
 # Saw Hollow Logs into Planks
 <recipetype:create:cutting>.addRecipe("saw_hollow_oak_log", <item:minecraft:oak_planks>*4, <item:twilightforest:hollow_oak_log>);
 <recipetype:create:cutting>.addRecipe("saw_hollow_spruce_log", <item:minecraft:spruce_planks>*4, <item:twilightforest:hollow_spruce_log>);

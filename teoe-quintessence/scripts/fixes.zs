@@ -35,13 +35,15 @@ craftingTable.addShaped("netherite_ingot", <item:minecraft:netherite_ingot>,
 
 // Fix the Sticky Multi-Piston not using tags
 craftingTable.removeByName("essentials:multi_piston_sticky");
-craftingTable.addShapeless("sticky_multi_piston", <item:essentials:multi_piston_sticky>, [<item:essentials:multi_piston>, <tag:items:forge:slimeballs>]);
+craftingTable.addShaped("sticky_multi_piston", <item:essentials:multi_piston_sticky>,
+    [[<tag:items:forge:slimeballs>],
+    [<item:essentials:multi_piston>]]);
 
 // Make packing tape use tags
 craftingTable.remove(<item:packingtape:tape>);
 craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<tag:items:forge:slimeballs>, <item:minecraft:string>, <item:minecraft:paper>]);
 
-// Duplicate Fire Charge recipes
+// Removes duplicate Fire Charge recipes
 // Also adds tag support
 craftingTable.remove(<item:minecraft:fire_charge>);
 craftingTable.addShapeless("fire_charge", <item:minecraft:fire_charge>*3, [<tag:items:minecraft:coals>, <item:minecraft:blaze_powder>, <item:minecraft:gunpowder>]);

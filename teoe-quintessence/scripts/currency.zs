@@ -12,12 +12,14 @@ craftingTable.addShaped("name", <item:output>,
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 
+<recipetype:create:compacting>.addRecipe(name as string, heat as HeatCondition, outputs as IFluidStack[], itemInputs as IIngredientWithAmount[], fluidInputs as FluidIngredient[], duration as int) as void
+
 For Extended Crafting, use the recipe maker
 */
 
 
 # Ticket recipe info
-mods.jei.JEI.addDescription(<item:minecraft:paper>, ["Can be used to make tickets in a Ticket Machine"]);
+mods.jei.JEI.addDescription(<item:minecraft:paper>, ["Can be used to make tickets in a Ticket Station"]);
 
 
 # New Trading Core recipe
@@ -29,7 +31,7 @@ craftingTable.addShaped("trading_core", <item:lightmanscurrency:trading_core>,
 
 
 # New wallet recipes
-craftingTable.remove(<item:lightmanscurrency:wallet_copper>);
+#	craftingTable.remove(<item:lightmanscurrency:wallet_copper>);
 craftingTable.remove(<item:lightmanscurrency:wallet_iron>);
 craftingTable.remove(<item:lightmanscurrency:wallet_gold>);
 craftingTable.remove(<item:lightmanscurrency:wallet_emerald>);
@@ -43,22 +45,20 @@ craftingTable.addShaped("copper_wallet", <item:lightmanscurrency:wallet_copper>,
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
 // Iron
-mods.extendedcrafting.TableCrafting.addShaped("iron_wallet", 1, <item:lightmanscurrency:wallet_iron>,
+craftingTable.addShaped("iron_wallet", <item:lightmanscurrency:wallet_iron>,
 	[[<item:minecraft:air>, <tag:items:forge:nuggets>, <item:minecraft:air>], 
 	[<item:minecraft:leather>, <item:minecraft:iron_ingot>, <item:minecraft:leather>], 
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
-mods.extendedcrafting.TableCrafting.addShapeless("iron_wallet_upgrade", 1, <item:lightmanscurrency:wallet_iron>,
-	[<item:lightmanscurrency:wallet_copper>, <item:minecraft:iron_ingot>, <item:lightmanscurrency:coin_iron>]);
+craftingTable.addShapeless("iron_wallet_upgrade", <item:lightmanscurrency:wallet_iron>, [<item:lightmanscurrency:wallet_copper>, <item:minecraft:iron_ingot>, <item:lightmanscurrency:coin_iron>]);
 
 // Gold
-mods.extendedcrafting.TableCrafting.addShaped("gold_wallet", 1, <item:lightmanscurrency:wallet_gold>,
+craftingTable.addShaped("gold_wallet", <item:lightmanscurrency:wallet_gold>,
 	[[<item:minecraft:air>, <tag:items:forge:nuggets>, <item:minecraft:air>], 
 	[<item:minecraft:leather>, <item:minecraft:gold_ingot>, <item:minecraft:leather>], 
 	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
 
-mods.extendedcrafting.TableCrafting.addShapeless("gold_wallet_upgrade", 1, <item:lightmanscurrency:wallet_gold>,
-	[<item:lightmanscurrency:wallet_iron>, <item:minecraft:gold_ingot>, <item:lightmanscurrency:coin_gold>]);
+craftingTable.addShapeless("gold_wallet_upgrade", <item:lightmanscurrency:wallet_gold>, [<item:lightmanscurrency:wallet_iron>, <item:minecraft:gold_ingot>, <item:lightmanscurrency:coin_gold>]);
 
 // Emerald
 mods.extendedcrafting.TableCrafting.addShaped("emerald_wallet", 1, <item:lightmanscurrency:wallet_emerald>,
@@ -89,37 +89,55 @@ mods.extendedcrafting.TableCrafting.addShapeless("netherite_wallet_upgrade", 1, 
 
 
 
-# New Coin Pile & Block recipes
-# 2k RF for Piles, 4k for Blocks
-craftingTable.removeByName("lightmanscurrency:coinpile_copper1");
-craftingTable.removeByName("lightmanscurrency:coinpile_iron1");
-craftingTable.removeByName("lightmanscurrency:coinpile_gold1");
-craftingTable.removeByName("lightmanscurrency:coinpile_emerald1");
-craftingTable.removeByName("lightmanscurrency:coinpile_diamond1");
-craftingTable.removeByName("lightmanscurrency:coinpile_netherite1");
+# Multiservo press Coin Pile & Block recipes
+# 1000 RF for Piles, 2000 for Blocks
+# 2 seconds for piles, 4 for blocks
 
-<recipetype:thermal:press>.addRecipe("press_copper_pile", [<item:lightmanscurrency:coinpile_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_copper>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_iron_pile", [<item:lightmanscurrency:coinpile_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_iron>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_gold_pile", [<item:lightmanscurrency:coinpile_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_gold>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_emerald_pile", [<item:lightmanscurrency:coinpile_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_emerald>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_diamond_pile", [<item:lightmanscurrency:coinpile_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_diamond>*9, <item:thermal:press_packing_3x3_die>], 2000);
-<recipetype:thermal:press>.addRecipe("press_netherite_pile", [<item:lightmanscurrency:coinpile_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_netherite>*9, <item:thermal:press_packing_3x3_die>], 2000);
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_copper1");
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_iron1");
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_gold1");
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_emerald1");
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_diamond1");
+craftingTable.removeByName("lightmanscurrency:coins/coinpile_netherite1");
 
 
-craftingTable.removeByName("lightmanscurrency:coinblock_copper");
-craftingTable.removeByName("lightmanscurrency:coinblock_iron");
-craftingTable.removeByName("lightmanscurrency:coinblock_gold");
-craftingTable.removeByName("lightmanscurrency:coinblock_emerald");
-craftingTable.removeByName("lightmanscurrency:coinblock_diamond");
-craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
+<recipetype:create:compacting>.addRecipe("compact_copper_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_copper>], [<item:lightmanscurrency:coin_copper>*9], [], 2);
+<recipetype:create:compacting>.addRecipe("compact_iron_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_iron>], [<item:lightmanscurrency:coin_iron>*9], [], 2);
+<recipetype:create:compacting>.addRecipe("compact_gold_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_gold>], [<item:lightmanscurrency:coin_gold>*9], [], 2);
+<recipetype:create:compacting>.addRecipe("compact_emerald_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_emerald>], [<item:lightmanscurrency:coin_emerald>*9], [], 2);
+<recipetype:create:compacting>.addRecipe("compact_diamond_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_diamond>], [<item:lightmanscurrency:coin_diamond>*9], [], 2);
+<recipetype:create:compacting>.addRecipe("compact_netherite_pile", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinpile_netherite>], [<item:lightmanscurrency:coin_netherite>*9], [], 2);
 
-<recipetype:thermal:press>.addRecipe("press_copper_coin_block", [<item:lightmanscurrency:coinblock_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_copper>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_iron_coin_block", [<item:lightmanscurrency:coinblock_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_iron>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_gold_coin_block", [<item:lightmanscurrency:coinblock_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_gold>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_emerald_coin_block", [<item:lightmanscurrency:coinblock_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_emerald>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_diamond_coin_block", [<item:lightmanscurrency:coinblock_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_diamond>*4, <item:thermal:press_packing_2x2_die>], 4000);
-<recipetype:thermal:press>.addRecipe("press_netherite_coin_block", [<item:lightmanscurrency:coinblock_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_netherite>*4, <item:thermal:press_packing_2x2_die>], 4000);
 
+<recipetype:thermal:press>.addRecipe("press_copper_pile", [<item:lightmanscurrency:coinpile_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_copper>*9, <item:thermal:press_packing_3x3_die>], 1000);
+<recipetype:thermal:press>.addRecipe("press_iron_pile", [<item:lightmanscurrency:coinpile_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_iron>*9, <item:thermal:press_packing_3x3_die>], 1000);
+<recipetype:thermal:press>.addRecipe("press_gold_pile", [<item:lightmanscurrency:coinpile_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_gold>*9, <item:thermal:press_packing_3x3_die>], 1000);
+<recipetype:thermal:press>.addRecipe("press_emerald_pile", [<item:lightmanscurrency:coinpile_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_emerald>*9, <item:thermal:press_packing_3x3_die>], 1000);
+<recipetype:thermal:press>.addRecipe("press_diamond_pile", [<item:lightmanscurrency:coinpile_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_diamond>*9, <item:thermal:press_packing_3x3_die>], 1000);
+<recipetype:thermal:press>.addRecipe("press_netherite_pile", [<item:lightmanscurrency:coinpile_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coin_netherite>*9, <item:thermal:press_packing_3x3_die>], 1000);
+
+
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_copper");
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_iron");
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_gold");
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_emerald");
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_diamond");
+craftingTable.removeByName("lightmanscurrency:coins/coinblock_netherite");
+
+<recipetype:create:compacting>.addRecipe("compact_copper_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_copper>], [<item:lightmanscurrency:coinpile_copper>*4], [], 4);
+<recipetype:create:compacting>.addRecipe("compact_iron_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_iron>], [<item:lightmanscurrency:coinpile_iron>*4], [], 4);
+<recipetype:create:compacting>.addRecipe("compact_gold_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_gold>], [<item:lightmanscurrency:coinpile_gold>*4], [], 4);
+<recipetype:create:compacting>.addRecipe("compact_emerald_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_emerald>], [<item:lightmanscurrency:coinpile_emerald>*4], [], 4);
+<recipetype:create:compacting>.addRecipe("compact_diamond_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_diamond>], [<item:lightmanscurrency:coinpile_diamond>*4], [], 4);
+<recipetype:create:compacting>.addRecipe("compact_netherite_coin_block", <constant:create:heat_condition:none>, [<item:lightmanscurrency:coinblock_netherite>], [<item:lightmanscurrency:coinpile_netherite>*4], [], 4);
+
+
+<recipetype:thermal:press>.addRecipe("press_copper_coin_block", [<item:lightmanscurrency:coinblock_copper>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_copper>*4, <item:thermal:press_packing_2x2_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_iron_coin_block", [<item:lightmanscurrency:coinblock_iron>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_iron>*4, <item:thermal:press_packing_2x2_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_gold_coin_block", [<item:lightmanscurrency:coinblock_gold>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_gold>*4, <item:thermal:press_packing_2x2_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_emerald_coin_block", [<item:lightmanscurrency:coinblock_emerald>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_emerald>*4, <item:thermal:press_packing_2x2_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_diamond_coin_block", [<item:lightmanscurrency:coinblock_diamond>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_diamond>*4, <item:thermal:press_packing_2x2_die>], 2000);
+<recipetype:thermal:press>.addRecipe("press_netherite_coin_block", [<item:lightmanscurrency:coinblock_netherite>], <fluid:minecraft:empty>, [<item:lightmanscurrency:coinpile_netherite>*4, <item:thermal:press_packing_2x2_die>], 2000);
 
 
 # Use Coins in a Numismatic Dynamo
@@ -128,24 +146,25 @@ craftingTable.removeByName("lightmanscurrency:coinblock_netherite");
 <recipetype:thermal:numismatic_fuel>.addFuel("iron_coin_fuel", <item:lightmanscurrency:coin_iron>, 4000);
 <recipetype:thermal:numismatic_fuel>.addFuel("gold_coin_fuel", <item:lightmanscurrency:coin_gold>, 8000);
 <recipetype:thermal:numismatic_fuel>.addFuel("emerald_coin_fuel", <item:lightmanscurrency:coin_emerald>, 12000);
-<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_fuel", <item:lightmanscurrency:coin_diamond>, 16000);
-<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_fuel", <item:lightmanscurrency:coin_netherite>, 20000);
+<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_fuel", <item:lightmanscurrency:coin_diamond>, 48000);
+<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_fuel", <item:lightmanscurrency:coin_netherite>, 128000);
 
 // 10x the Coin value
 <recipetype:thermal:numismatic_fuel>.addFuel("copper_pile_fuel", <item:lightmanscurrency:coinpile_copper>, 10000);
 <recipetype:thermal:numismatic_fuel>.addFuel("iron_coin_pile_fuel", <item:lightmanscurrency:coinpile_iron>, 40000);
 <recipetype:thermal:numismatic_fuel>.addFuel("gold_coin_pile_fuel", <item:lightmanscurrency:coinpile_gold>, 80000);
 <recipetype:thermal:numismatic_fuel>.addFuel("emerald_coin_pile_fuel", <item:lightmanscurrency:coinpile_emerald>, 120000);
-<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_pile_fuel", <item:lightmanscurrency:coinpile_diamond>, 64000);
-<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_pile_fuel", <item:lightmanscurrency:coinpile_netherite>, 200000);
+<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_pile_fuel", <item:lightmanscurrency:coinpile_diamond>, 250000);
+<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_pile_fuel", <item:lightmanscurrency:coinpile_netherite>, 750000);
 
 // 5x the Pile value
+// Diamond and Netherite give more since they're worth way more
 <recipetype:thermal:numismatic_fuel>.addFuel("copper_coin_block_fuel", <item:lightmanscurrency:coinblock_copper>, 50000);
 <recipetype:thermal:numismatic_fuel>.addFuel("iron_coin_block_fuel", <item:lightmanscurrency:coinblock_iron>, 200000);
 <recipetype:thermal:numismatic_fuel>.addFuel("gold_coin_block_fuel", <item:lightmanscurrency:coinblock_gold>, 400000);
 <recipetype:thermal:numismatic_fuel>.addFuel("emerald_coin_block_fuel", <item:lightmanscurrency:coinblock_emerald>, 600000);
-<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_block_fuel", <item:lightmanscurrency:coinblock_diamond>, 320000);
-<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_block_fuel", <item:lightmanscurrency:coinblock_netherite>, 1000000);
+<recipetype:thermal:numismatic_fuel>.addFuel("diamond_coin_block_fuel", <item:lightmanscurrency:coinblock_diamond>, 1000000);
+<recipetype:thermal:numismatic_fuel>.addFuel("netherite_coin_block_fuel", <item:lightmanscurrency:coinblock_netherite>, 10000000);
 
 
 # Upgrade trading blocks into network traders

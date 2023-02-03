@@ -110,7 +110,7 @@ mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <i
 # New Enchanted Golden Apple recipe
 # Replaces the one from Apotheosis
 craftingTable.remove(<item:minecraft:enchanted_golden_apple>);
-mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item:minecraft:enchanted_golden_apple>*8,
+mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item:minecraft:enchanted_golden_apple>*16,
 	[[<item:lightmanscurrency:coin_gold>, <tag:items:teoe:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:teoe:shard>, <item:lightmanscurrency:coin_gold>],
 	[<tag:items:teoe:shard>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <tag:items:teoe:shard>],
 	[<item:tconstruct:rose_gold_ingot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_apple>, <item:createaddition:honey_cake>, <item:minecraft:golden_apple>, <item:minecraft:golden_carrot>, <item:tconstruct:rose_gold_ingot>],

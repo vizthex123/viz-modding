@@ -1,10 +1,12 @@
-# Adds extra recycling recipes
-
+# Adds recipes to recycle various things
 print("recycling.zs loading...");
 /*
 furnace.removeByName("name");
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
+
+// Recycle Candles
+furnace.addRecipe("recycle_candles", <item:minecraft:honeycomb>, <tag:items:minecraft:candles>, 0.5, 200);
 
 # Smelt items into Scrap
 furnace.removeByName("minecraft:iron_nugget_from_smelting");
@@ -17,8 +19,8 @@ var nugget = <item:minecraft:iron_nugget>;
 furnace.addRecipe("recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 200);
 blastFurnace.addRecipe("blast_recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 100);
 
-furnace.addRecipe("recycle_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_metal_item", <item:kubejs:iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 100);
+furnace.addRecipe("recycle_metal_item", <item:kubejs:small_iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_metal_item", <item:kubejs:small_iron_scrap>, <tag:items:teoe:meltable_metal>.asIIngredient().anyDamage(), 0.1, 100);
 
 furnace.addRecipe("recycle_small_metal_item", nugget, <tag:items:teoe:meltable_metal_small>.asIIngredient(), 0.1, 200);
 blastFurnace.addRecipe("blast_recycle_small_metal_item", nugget, <tag:items:teoe:meltable_metal_small>.asIIngredient(), 0.1, 100);
@@ -44,7 +46,6 @@ blastFurnace.addRecipe("blast_recycle_fiery_item", <item:kubejs:small_fiery_scra
 
 furnace.addRecipe("recycle_knightmetal_item", <item:kubejs:small_knightmetal_scrap>, <tag:items:teoe:meltable_knightmetal>.asIIngredient().anyDamage(), 3.0, 200);
 blastFurnace.addRecipe("blast_recycle_knightmetal_item", <item:kubejs:small_knightmetal_scrap>, <tag:items:teoe:meltable_knightmetal>.asIIngredient().anyDamage(), 3.0, 100);
-
 
 // Pulverize Naga Scale armour into Scales
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_naga_scale_armour", [<item:twilightforest:naga_scale>*2, <item:twilightforest:naga_scale> % 50], <item:twilightforest:naga_chestplate>|<item:twilightforest:naga_leggings>, 0, 4000);

@@ -360,38 +360,12 @@ print("1-tags.zs loading...");
 
 <tag:items:teoe:planks>.add(<item:naturesaura:ancient_planks>);
 
-/*
-<tag:items:randomium:whitelist>.add(<item>);
-mods are blacklisted in the config
-*/
 
-# Whitelisted Randomium drops
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
-<tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
-<tag:items:randomium:whitelist>.add(<item:create:raw_zinc>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_tin>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_lead>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_silver>);
-<tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
-<tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
-<tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
-<tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
-<tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
-<tag:items:randomium:whitelist>.add(<item:ob_core:magic_dust>);
+# Flowers
+<tag:items:minecraft:tall_flowers>.add(<item:byg:delphinium>);
+<tag:items:minecraft:tall_flowers>.add(<item:byg:tall_allium>);
+<tag:items:minecraft:tall_flowers>.add(<item:byg:tall_pink_allium>);
 
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_nether>);
-<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_end>);
-
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinblock_copper>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_iron>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
-<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
 
 
 
@@ -428,6 +402,45 @@ mods are blacklisted in the config
 <tag:items:forge:mushrooms>.add(<item:minecraft:crimson_fungus>);
 <tag:items:forge:mushrooms>.add(<item:minecraft:warped_fungus>);
 
+<tag:items:malum:gross_foods>.add(<item:minecraft:spider_eye>);
+<tag:items:malum:gross_foods>.add(<item:minecraft:poisonous_potato>);
+<tag:items:malum:gross_foods>.add(<item:food_enhancements:illager_flesh>);
+
+
+/*
+<tag:items:randomium:whitelist>.add(<item>);
+mods are blacklisted in the config
+*/
+
+# Whitelisted Randomium drops
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_copper>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_iron>);
+<tag:items:randomium:whitelist>.add(<item:minecraft:raw_gold>);
+<tag:items:randomium:whitelist>.add(<item:create:raw_zinc>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_tin>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_lead>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_silver>);
+<tag:items:randomium:whitelist>.add(<item:thermal:raw_nickel>);
+<tag:items:randomium:whitelist>.add(<item:byg:raw_pendorite>);
+<tag:items:randomium:whitelist>.add(<item:tconstruct:raw_cobalt>);
+<tag:items:randomium:whitelist>.add(<item:malum:raw_soulstone>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:platinum_raw>);
+<tag:items:randomium:whitelist>.add(<item:ob_core:magic_dust>);
+
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_stone>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_deepslate>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_nether>);
+<tag:items:randomium:whitelist>.add(<item:deepresonance:resonating_ore_end>);
+
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinblock_copper>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coinpile_iron>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_gold>);
+<tag:items:randomium:whitelist>.add(<item:lightmanscurrency:coin_emerald>);
+
+
 
 # Tag Removal
 <tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);
@@ -449,5 +462,7 @@ mods are blacklisted in the config
 <tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
 
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
+
+<tag:items:minecraft:tall_flowers>.remove(<tag:items:minecraft:small_flowers>);
 
 print("1-tags.zs loaded");

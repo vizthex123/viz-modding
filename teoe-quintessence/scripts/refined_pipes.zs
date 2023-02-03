@@ -37,7 +37,7 @@ craftingTable.addShaped("basic_energy_zinc", <item:refinedpipes:basic_energy_pip
 
 // Extractor
 craftingTable.addShaped("basic_extractor_zinc", <item:refinedpipes:basic_extractor_attachment>,
-    [[<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
+    [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
     [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>],
     [<item:create:zinc_ingot>, <item:minecraft:piston>, <item:create:zinc_ingot>]]);
 

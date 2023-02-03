@@ -94,4 +94,8 @@
 		#Disabling will not remove any existing Trader Interfaces from the world, nor prevent their use.
 		#/reload required for changes to take effect.
 		allowTraderInterfaceCrafting = true
+		#Whether Auction Stand blocks can be crafted.
+		#Disabling will not remove any existing Auction Stands from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowAuctionStandCrafting = true
 

@@ -41,6 +41,26 @@ val sawdust = <item:thermal:sawdust>;
 <recipetype:thermal:sawmill>.addRecipe("saw_jukebox", [sawdust*8, <item:minecraft:diamond> % 50], <item:minecraft:jukebox>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_jukebox", sawdust*12, <item:minecraft:jukebox>, 5);
 
+// Lectern
+<recipetype:thermal:sawmill>.addRecipe("saw_lectern", [sawdust*8], <item:minecraft:lectern>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_lectern", sawdust*12, <item:minecraft:lectern>, 5);
+
+// Loom
+<recipetype:thermal:sawmill>.addRecipe("saw_loom", [sawdust*2, <item:minecraft:string> % 50], <item:minecraft:loom>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_loom", sawdust*3, <item:minecraft:loom>, 5);
+
+// Cartography Table
+<recipetype:thermal:sawmill>.addRecipe("saw_cartography_table", [sawdust*4, <item:minecraft:paper> % 50], <item:minecraft:cartography_table>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_cartography_table", sawdust*6, <item:minecraft:cartography_table>, 5);
+
+// Fletching Table
+<recipetype:thermal:sawmill>.addRecipe("saw_fletching_table", [sawdust*4], <item:minecraft:fletching_table>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_fletching_table", sawdust*6, <item:minecraft:fletching_table>, 5);
+
+// Smithing Table
+<recipetype:thermal:sawmill>.addRecipe("saw_smithing_table", [sawdust*4, <item:kubejs:small_iron_scrap>*2 % 50], <item:minecraft:smithing_table>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_smithing_table", sawdust*6, <item:minecraft:smithing_table>, 5);
+
 // Stairs
 <recipetype:thermal:sawmill>.addRecipe("saw_stairs", [sawdust, sawdust % 50], <tag:items:minecraft:wooden_stairs>, 1500);
 <recipetype:create:cutting>.addRecipe("mech_saw_stairs", sawdust, <tag:items:minecraft:wooden_stairs>, 3);

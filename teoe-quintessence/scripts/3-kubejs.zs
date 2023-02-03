@@ -77,6 +77,8 @@ blastFurnace.addRecipe("blast_limestone", <item:kubejs:quicklime>, <tag:items:fo
 furnace.addRecipe("smelt_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 200);
 blastFurnace.addRecipe("blast_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 100);
 
+<recipetype:create:mechanical_crafting>.addRecipe("paper_quicklime", <item:minecraft:paper>, [[<item:kubejs:quicklime>, <item:kubejs:quicklime>, <item:kubejs:quicklime>]]);
+
 
 # Glue
 craftingTable.addShapeless("glue", <item:kubejs:glue>, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <item:minecraft:paper>]);
@@ -105,10 +107,17 @@ craftingTable.addShaped("sawdust_sticks", <item:minecraft:stick>*8,
 
 <recipetype:thermal:press>.addRecipe("uncraft_sawdust", [<item:kubejs:sawdust_clump>], <fluid:minecraft:empty>, [<item:kubejs:compressed_sawdust>, <item:thermal:press_unpacking_die>], 400);
 
-// Compressed Clumps
+// Compress Clumps
 <recipetype:thermal:press>.addRecipe("multipress_sawdust_clump", [<item:kubejs:compressed_sawdust>*2], <fluid:minecraft:empty>, [<item:kubejs:sawdust_clump>, <item:kubejs:sawdust_clump>], 1000);
 
-<recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust>], <item:kubejs:sawdust_clump>, 1);
+<recipetype:create:pressing>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust>], <item:kubejs:sawdust_clump>, 3);
+
+// Paper from Compressed Sawdust
+craftingTable.addShaped("paper_sawdust_clumps", <item:minecraft:paper>*3, 
+    [[<item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>]]);
+
+// Compost Compressed Sawdust
+composter.setValue(<item:kubejs:compressed_sawdust>, 0.5);
 
 
 # MDF Board

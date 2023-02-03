@@ -27,14 +27,11 @@ do fluid:minecraft:empty for empty fluids
 // Extract Sugar Water from fluid holders
 <recipetype:create:emptying>.addRecipe("empty_sugar_water_bucket", <item:minecraft:bucket>, <fluid:the_bumblezone:sugar_water_still>*1000, <item:the_bumblezone:sugar_water_bucket>);
 <recipetype:create:emptying>.addRecipe("empty_sugar_water_bottle", <item:minecraft:glass_bottle>, <fluid:the_bumblezone:sugar_water_still>*250, <item:the_bumblezone:sugar_water_bottle>);
-
-// Convert debris scrap nuggets into scrap
-<recipetype:create:mechanical_crafting>.addRecipe("nuggets_to_scrap", <item:minecraft:netherite_scrap>,
-[[<tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>],
-[<tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>],
-[<tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>, <tag:items:forge:nuggets/netherite_scrap>]]);
-
-
+/*
+// Press Leather out of Fleshes
+<recipetype:create:pressing>.addRecipe("press_leather", [<item:minecraft:leather> % 25], <item:minecraft:rotten_flesh>, 5);
+<recipetype:create:pressing>.addRecipe("press_illager_leather", [<item:minecraft:leather> % 50], <item:food_enhancements:illager_flesh>, 5);
+*/
 ### Crushing Wheels ###
 /*
 <recipetype:create:milling>.addRecipe("recipeName", [<outputs> % chance], <input>);
@@ -43,6 +40,23 @@ do fluid:minecraft:empty for empty fluids
 
 default time for both is 2 - 3 seconds
 */
+
+
+// Crush Shale
+<recipetype:create:crushing>.addRecipe("crush_shale", [<item:malum:natural_quartz> % 55, <item:create:crushed_iron_ore> % 15, <item:minecraft:clay_ball> % 30], <item:quark:shale>, 5);
+
+// Crush Jasper
+<recipetype:create:crushing>.addRecipe("crush_jasper", [<item:minecraft:calcite> % 25, <item:ae2:silicon> % 55, <item:minecraft:clay_ball> % 20], <item:quark:jasper>, 5);
+
+// Crush Myalite
+<recipetype:create:crushing>.addRecipe("crush_myalite", [<item:minecraft:popped_chorus_fruit> % 75], <item:quark:myalite>, 5);
+<recipetype:create:crushing>.addRecipe("crush_dusky_myalite", [<item:minecraft:popped_chorus_fruit> % 50], <item:quark:dusky_myalite>, 5);
+
+// Crush Scoria
+<recipetype:create:crushing>.addRecipe("crush_scoria", [<item:minecraft:andesite> % 20, <item:minecraft:calcite> % 10, <item:ae2:silicon> % 50, <item:nourished_nether:basalt_ash_pile>*2 % 20], <item:create:scoria>, 5);
+
+// Crush Scorchia
+<recipetype:create:crushing>.addRecipe("crush_scorchia", [<item:minecraft:andesite>, <item:nourished_nether:basalt_ash_pile>*4 % 75], <item:create:scorchia>, 5);
 
 // Crush Quartzite Sand into Sand & Quartz
 <recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 40], <item:byg:quartzite_sand>, 5);
@@ -56,10 +70,6 @@ default time for both is 2 - 3 seconds
 // Crushing Wheel version of my Planks > Sawdust recipe, and TE's Log > Sawdust one
 <recipetype:create:crushing>.addRecipe("crush_planks", [<item:thermal:sawdust>*2], <tag:items:minecraft:planks>, 1);
 <recipetype:create:crushing>.addRecipe("crush_logs", [<item:thermal:sawdust>*8], <tag:items:minecraft:logs>, 3);
-
-// Moved AE2's Ender Dust to the Crushing Wheels
-blastFurnace.remove(<item:ae2:ender_dust>);
-<recipetype:create:crushing>.addRecipe("ender_dust", [<item:ae2:ender_dust>], <item:minecraft:ender_pearl>, 3);
 
 // Crying Obsidian > Powdered Obsidian
 <recipetype:create:crushing>.addRecipe("crying_obsidian_to_dust", [<item:create:powdered_obsidian>*2, <item:create:powdered_obsidian> % 50, <item:create:powdered_obsidian> % 25, <item:minecraft:obsidian> % 50], <item:minecraft:crying_obsidian>, 5);
@@ -84,6 +94,56 @@ blastFurnace.remove(<item:ae2:ender_dust>);
 <recipetype:create:crushing>.addRecipe("crush_skyslime", [<item:tconstruct:sky_slime_crystal>*3, <item:tconstruct:sky_slime_crystal> % 50, <item:create:experience_nugget> % 65], <item:tconstruct:sky_slime_crystal_block>, 10);
 <recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*3, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:experience_nugget> % 75], <item:tconstruct:ichor_slime_crystal_block>, 10);
 <recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*3, <item:tconstruct:ender_slime_crystal> % 50, <item:create:experience_nugget>], <item:tconstruct:ender_slime_crystal_block>, 10);
+
+# Crush Quark mores
+// Crush Shale Coal Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_coal_ore", [<item:minecraft:coal>, <item:minecraft:coal> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_coal_ore>, 5);
+
+// Crush Shale Copper Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_copper_ore>, 5);
+
+// Crush Shale Iron Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_iron_ore", [<item:create:crushed_iron_ore>, <item:create:crushed_iron_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_iron_ore>, 5);
+
+// Crush Shale Gold Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_gold_ore", [<item:create:crushed_gold_ore>, <item:create:crushed_gold_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_gold_ore>, 5);
+
+// Crush Shale Lapis Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_lapis_ore", [<item:minecraft:lapis_lazuli>*10, <item:minecraft:lapis_lazuli> % 50, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_lapis_ore>, 5);
+
+// Crush Shale Emerald Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_emerald_ore", [<item:minecraft:emerald>, <item:minecraft:emerald> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_emerald_ore>, 5);
+
+// Crush Shale Diamond Ore
+<recipetype:create:crushing>.addRecipe("crush_shale_diamond_ore", [<item:minecraft:diamond>, <item:minecraft:diamond> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_diamond_ore>, 5);
+
+
+
+// Crush Jasper Coal Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_coal_ore", [<item:minecraft:coal>, <item:minecraft:coal> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_coal_ore>, 5);
+
+// Crush Jasper Copper Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_copper_ore>, 5);
+
+// Crush Jasper Iron Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_iron_ore", [<item:create:crushed_iron_ore>, <item:create:crushed_iron_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_iron_ore>, 5);
+
+// Crush Jasper Gold Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_gold_ore", [<item:create:crushed_gold_ore>, <item:create:crushed_gold_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_gold_ore>, 5);
+
+// Crush Jasper Lapis Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_lapis_ore", [<item:minecraft:lapis_lazuli>*10, <item:minecraft:lapis_lazuli> % 50, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_lapis_ore>, 5);
+
+// Crush Jasper Emerald Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_emerald_ore", [<item:minecraft:emerald>, <item:minecraft:emerald> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_emerald_ore>, 5);
+
+// Crush Jasper Diamond Ore
+<recipetype:create:crushing>.addRecipe("crush_jasper_diamond_ore", [<item:minecraft:diamond>, <item:minecraft:diamond> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_diamond_ore>, 5);
+
+
+// Crush Nether Iron Ore
+<recipetype:create:crushing>.addRecipe("crush_nether_iron_ore", [<item:minecraft:iron_nugget>*18, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:nourished_nether:nether_iron_ore>, 5);
+
 
 # Ore Crushing Recipes
 # Chances are a bit higher than the Pulverizer

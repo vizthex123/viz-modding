@@ -19,7 +19,16 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 
 // Stonecut Limestone
 stoneCutter.addRecipe("stonecut_limestone", <item:create:cut_limestone>, <item:quark:limestone>);
+// Modded Crafting Table -> Normal One
+craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
 
+// Craft Debris Scrap into Netherite Scrap
+var scrap_nugget = <tag:items:forge:nuggets/netherite_scrap>;
+craftingTable.addShaped("netherite_scrap", <item:minecraft:netherite_scrap>,
+    [[scrap_nugget, scrap_nugget, scrap_nugget],
+    [scrap_nugget, scrap_nugget, scrap_nugget],
+    [scrap_nugget, scrap_nugget, scrap_nugget]]);
+	
 // Crops -> Dye
 craftingTable.addShapeless("glow_berry_dye", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
 

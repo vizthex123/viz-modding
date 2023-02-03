@@ -20,11 +20,11 @@ val mcstring = <item:minecraft:string>;
 val stick = <item:minecraft:stick>;
 
 // (Cross)Bows
-<recipetype:thermal:sawmill>.addRecipe("saw_bow", [mcstring*2, stick*2 % 75], <item:minecraft:bow>, 500);
-<recipetype:thermal:sawmill>.addRecipe("saw_crossbow", [mcstring*2, stick*2 % 75, <item:minecraft:iron_ingot> % 25], <item:minecraft:crossbow>|<item:additionaladditions:crossbow_with_spyglass>, 750);
+<recipetype:thermal:sawmill>.addRecipe("saw_bow", [mcstring*2, stick*2 % 75], <item:minecraft:bow>.anyDamage(), 500);
+<recipetype:thermal:sawmill>.addRecipe("saw_crossbow", [mcstring*2, stick*2 % 75, <item:minecraft:iron_ingot> % 25], <item:minecraft:crossbow>.anyDamage()|<item:additionaladditions:crossbow_with_spyglass>.anyDamage(), 750);
 
-<recipetype:create:cutting>.addRecipe("mech_saw_bow", sawdust, <item:minecraft:bow>, 1);
-<recipetype:create:cutting>.addRecipe("mech_saw_crossbow", sawdust*2, <item:minecraft:crossbow>|<item:additionaladditions:crossbow_with_spyglass>, 1);
+<recipetype:create:cutting>.addRecipe("mech_saw_bow", sawdust, <item:minecraft:bow>.anyDamage(), 1);
+<recipetype:create:cutting>.addRecipe("mech_saw_crossbow", sawdust*2, <item:minecraft:crossbow>.anyDamage()|<item:additionaladditions:crossbow_with_spyglass>.anyDamage(), 1);
 
 // Leads
 <recipetype:thermal:sawmill>.addRecipe("saw_lead", [<item:minecraft:slime_ball> % 50, mcstring*2], <item:minecraft:lead>, 500);
@@ -39,7 +39,7 @@ val stick = <item:minecraft:stick>;
 
 // Saddles
 <recipetype:thermal:sawmill>.addRecipe("saw_saddle", [leather*4 % 75], <item:minecraft:saddle>, 1000);
-<recipetype:create:cutting>.addRecipe("mech_saw_saddle", paper*3,<item:minecraft:saddle>, 2);
+# <recipetype:create:cutting>.addRecipe("mech_saw_saddle", leather*3,<item:minecraft:saddle>, 2);
 
 // Name Tags
 <recipetype:thermal:sawmill>.addRecipe("saw_name_tag", [paper*3 % 75, mcstring*2 % 50], <item:minecraft:name_tag>, 1000);
@@ -90,37 +90,37 @@ val stick = <item:minecraft:stick>;
 <recipetype:create:cutting>.addRecipe("mech_saw_horse_armour", leather*5, <item:minecraft:leather_horse_armor>, 3);
 
 // Helmet
-<recipetype:thermal:sawmill>.addRecipe("saw_leather_helmet", [leather*2, leather % 50], <item:minecraft:leather_helmet>, 3000);
-<recipetype:create:cutting>.addRecipe("mech_saw_leather_helmet", leather*3, <item:minecraft:leather_helmet>, 3);
+<recipetype:thermal:sawmill>.addRecipe("saw_leather_helmet", [leather*2, leather % 50], <item:minecraft:leather_helmet>.anyDamage(), 3000);
+<recipetype:create:cutting>.addRecipe("mech_saw_leather_helmet", leather*3, <item:minecraft:leather_helmet>.anyDamage(), 3);
 
 // Chestplate
-<recipetype:thermal:sawmill>.addRecipe("saw_leather_chestplate", [leather*4], <item:minecraft:leather_chestplate>, 3000);
-<recipetype:create:cutting>.addRecipe("mech_saw_leather_chestplate", leather*5, <item:minecraft:leather_chestplate>, 3);
+<recipetype:thermal:sawmill>.addRecipe("saw_leather_chestplate", [leather*4], <item:minecraft:leather_chestplate>.anyDamage(), 3000);
+<recipetype:create:cutting>.addRecipe("mech_saw_leather_chestplate", leather*5, <item:minecraft:leather_chestplate>.anyDamage(), 3);
 
 // Leggings
-<recipetype:thermal:sawmill>.addRecipe("saw_leather_leggings", [leather*3, leather % 50], <item:minecraft:leather_leggings>, 3000);
-<recipetype:create:cutting>.addRecipe("mech_saw_leather_leggings", leather*4, <item:minecraft:leather_leggings>, 3);
+<recipetype:thermal:sawmill>.addRecipe("saw_leather_leggings", [leather*3, leather % 50], <item:minecraft:leather_leggings>.anyDamage(), 3000);
+<recipetype:create:cutting>.addRecipe("mech_saw_leather_leggings", leather*4, <item:minecraft:leather_leggings>.anyDamage(), 3);
 
 // Boots
-<recipetype:thermal:sawmill>.addRecipe("saw_leather_boots", [leather*2], <item:minecraft:leather_boots>, 3000);
-<recipetype:create:cutting>.addRecipe("mech_saw_leather_boots", leather*2, <item:minecraft:leather_boots>, 3);
+<recipetype:thermal:sawmill>.addRecipe("saw_leather_boots", [leather*2], <item:minecraft:leather_boots>.anyDamage(), 3000);
+<recipetype:create:cutting>.addRecipe("mech_saw_leather_boots", leather*2, <item:minecraft:leather_boots>.anyDamage(), 3);
 
 
 # Hats
 // Conjurer
-<recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [leather*2, leather % 50], <item:conjurer_illager:conjurer_hat>, 1000);
-<recipetype:create:cutting>.addRecipe("mech_saw_conjurer_hat", leather*2, <item:conjurer_illager:conjurer_hat>, 2);
+<recipetype:thermal:sawmill>.addRecipe("saw_conjurer_hat", [leather*2, leather % 50], <item:conjurer_illager:conjurer_hat>.anyDamage(), 1000);
+<recipetype:create:cutting>.addRecipe("mech_saw_conjurer_hat", leather*2, <item:conjurer_illager:conjurer_hat>.anyDamage(), 2);
 
 // Forgotten
-<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [leather*5, mcstring*3 % 50], <item:quark:forgotten_hat>, 1000);
-<recipetype:create:cutting>.addRecipe("mech_saw_forgotten_hat", leather*5, <item:quark:forgotten_hat>, 2);
+<recipetype:thermal:sawmill>.addRecipe("saw_forgotten_hat", [leather*5, mcstring*3 % 50], <item:quark:forgotten_hat>.anyDamage(), 1000);
+<recipetype:create:cutting>.addRecipe("mech_saw_forgotten_hat", leather*5, <item:quark:forgotten_hat>.anyDamage(), 2);
 
 
-# Saw carpets into mcstring
+# Saw carpets into String
 <recipetype:thermal:sawmill>.addRecipe("saw_carpets", [mcstring*2, mcstring*2 % 50], <tag:items:minecraft:carpets>, 500);
 <recipetype:create:cutting>.addRecipe("mech_saw_carpets", mcstring*2, <tag:items:minecraft:carpets>, 1);
 
-# Saw beds into sawdust and mcstring
+# Saw beds into Sawdust and String
 <recipetype:thermal:sawmill>.addRecipe("saw_beds", [sawdust*3, mcstring*4, mcstring*4 % 50, mcstring*2 % 25], <tag:items:minecraft:beds>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_beds", sawdust*3, <tag:items:minecraft:beds>, 4);
 
@@ -129,7 +129,6 @@ val stick = <item:minecraft:stick>;
 # Saw modded woods
 <recipetype:thermal:sawmill>.addRecipe("saw_livingwood", [<item:botania:livingwood_planks>*6, sawdust % 25], <tag:items:botania:livingwood_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_dreamwood", [<item:botania:dreamwood_planks>*6, sawdust % 25], <tag:items:botania:dreamwood_logs>, 1000);
-
 
 
 <recipetype:thermal:sawmill>.addRecipe("saw_aspen", [<item:byg:aspen_planks>*6, sawdust % 25], <tag:items:byg:aspen_logs>, 1000);
@@ -163,7 +162,6 @@ val stick = <item:minecraft:stick>;
 <recipetype:thermal:sawmill>.addRecipe("saw_withering_oak", [<item:minecraft:oak_planks>*3 % 75, sawdust*2 % 50], <tag:items:byg:withering_oak_logs>, 1000);
 
 
-
 <recipetype:thermal:sawmill>.addRecipe("saw_twilight_oak", [<item:twilightforest:twilight_oak_planks>*6, sawdust % 25], <tag:items:twilightforest:twilight_oak_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_canopy_wood", [<item:twilightforest:canopy_planks>*6, sawdust % 25], <tag:items:twilightforest:canopy_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_mangrove_tf", [<item:twilightforest:mangrove_planks>*6, sawdust % 25], <tag:items:twilightforest:mangrove_logs>, 1000);
@@ -174,7 +172,6 @@ val stick = <item:minecraft:stick>;
 <recipetype:thermal:sawmill>.addRecipe("saw_transwood", [<item:twilightforest:transformation_planks>*6, sawdust % 25], <tag:items:twilightforest:transwood_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_minewood", [<item:twilightforest:mining_planks>*6, sawdust % 25], <tag:items:twilightforest:mining_logs>, 1000);
 <recipetype:thermal:sawmill>.addRecipe("saw_sortingwood", [<item:twilightforest:sorting_planks>*6, sawdust % 25], <tag:items:twilightforest:sortwood_logs>, 1000);
-
 
 
 <recipetype:thermal:sawmill>.addRecipe("saw_runewood", [<item:malum:runewood_planks>*6, sawdust % 25], <tag:items:malum:runewood_logs>, 1000);

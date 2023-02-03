@@ -77,24 +77,24 @@ print("coinification.zs loading...");
 <recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 0, 4000);
 <recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 5);
 
-// Non-Euclidean Cube -> 100,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_cube", [<item:lightmanscurrency:coin_netherite>], <item:enigmaticlegacy:the_cube>, 0, 8000);
-<recipetype:create:crushing>.addRecipe("coinify_cube2", [<item:lightmanscurrency:coin_netherite>],<item:enigmaticlegacy:the_cube>, 10);
+// Non-Euclidean Cube -> 250,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_cube", [<item:lightmanscurrency:coin_netherite>*2, <item:lightmanscurrency:coin_diamond>*5], <item:enigmaticlegacy:the_cube>, 0, 8000);
+<recipetype:create:crushing>.addRecipe("coinify_cube2", [<item:lightmanscurrency:coin_netherite>*2, <item:lightmanscurrency:coin_diamond>*5],<item:enigmaticlegacy:the_cube>, 10);
 
 
 
 ### Quark ###
 // Blank Rune -> 90 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_rune", [<item:lightmanscurrency:coinpile_iron>], <item:quark:blank_rune>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_blank_rune2", [<item:lightmanscurrency:coinpile_iron>], <item:quark:blank_rune>, 5);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_blank_rune", [<item:lightmanscurrency:coin_iron>*9], <item:quark:blank_rune>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_blank_rune2", [<item:lightmanscurrency:coin_iron>*9], <item:quark:blank_rune>, 5);
 
 // Soul Bead -> 180 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_soul_bead", [<item:lightmanscurrency:coinpile_iron>*2], <item:quark:soul_bead>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_soul_bead2", [<item:lightmanscurrency:coinpile_iron>*2], <item:quark:soul_bead>, 5);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_soul_bead", [<item:lightmanscurrency:coin_gold>, <item:lightmanscurrency:coin_iron>*8], <item:quark:soul_bead>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_soul_bead2", [<item:lightmanscurrency:coin_gold>, <item:lightmanscurrency:coin_iron>*8], <item:quark:soul_bead>, 5);
 
-// Heart of Diamond -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_diamond_heart", [<item:lightmanscurrency:coin_diamond>], <item:quark:diamond_heart>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_diamond_heart2", [<item:lightmanscurrency:coin_diamond>], <item:quark:diamond_heart>, 5);
+// Heart of Diamond -> 25,000 Essenarium
+<recipetype:thermal:pulverizer>.addRecipe("coinify_diamond_heart", [<item:lightmanscurrency:coin_diamond>*2, <item:lightmanscurrency:coin_emerald>*5], <item:quark:diamond_heart>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_diamond_heart2", [<item:lightmanscurrency:coin_diamond>*2, <item:lightmanscurrency:coin_emerald>*5], <item:quark:diamond_heart>, 5);
 
 
 

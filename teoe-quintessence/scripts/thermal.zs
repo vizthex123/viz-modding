@@ -33,10 +33,6 @@ craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>,
     [<item:thermal:invar_plate>, <tag:items:forge:gears>, <item:thermal:invar_plate>],
     [<item:minecraft:air>, <item:thermal:invar_plate>, <item:minecraft:air>]]);
 
-// Sawdust > Paper
-craftingTable.addShaped("paper_sawdust", <item:minecraft:paper>, 
-    [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
-
 // Add tag support to Tesseracts, and make them use the basic table
 craftingTable.remove(<item:tesseract:tesseract>);
 mods.extendedcrafting.TableCrafting.addShaped("tesseract", 1, <item:tesseract:tesseract>,
@@ -186,7 +182,8 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 # Add more recipes for Latex (from TE)
 // Flower tags
-<recipetype:thermal:press>.removeRecipe([<item:minecraft:dandelion>], [<fluid:thermal:latex>*50]);
+#<recipetype:thermal:press>.removeByRecipeName("thermal:machines/press/press_dandelion_to_latex");
+<recipetype:thermal:press>.removeRecipe([<item:minecraft:dandelion>], [<fluid:thermal:latex>]);
 <recipetype:thermal:press>.addRecipe("small_latex", [<item:minecraft:air>], <fluid:thermal:latex>*50, [<tag:items:minecraft:small_flowers>, <item:minecraft:air>], 400);
 <recipetype:thermal:press>.addRecipe("tall_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<tag:items:minecraft:tall_flowers>, <item:minecraft:air>], 400);
 
@@ -194,10 +191,10 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:press>.addRecipe("glow_berry_latex", [<item:minecraft:air>], <fluid:thermal:latex>*75, [<item:minecraft:glow_berries>, <item:minecraft:air>], 400);
 
 // Strawberries
-<recipetype:thermal:press>.addRecipe("strawberry_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<item:thermal:strawberry>, <item:minecraft:air>], 400);
+<recipetype:thermal:press>.addRecipe("strawberry_latex", [<item:minecraft:air>], <fluid:thermal:latex>*25, [<item:thermal:strawberry>, <item:minecraft:air>], 400);
 
 // Tomatoes
-<recipetype:thermal:press>.addRecipe("tomato_latex", [<item:minecraft:air>], <fluid:thermal:latex>*100, [<item:thermal:tomato>, <item:minecraft:air>], 400);
+<recipetype:thermal:press>.addRecipe("tomato_latex", [<item:minecraft:air>], <fluid:thermal:latex>*25, [<item:thermal:tomato>, <item:minecraft:air>], 400);
 
 
 
@@ -249,7 +246,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 # Pulverizer
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_shard", <item:minecraft:prismarine_shard>, 1.45, 1.65, 1.3, 0.4, 0.4);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_crystal", <item:minecraft:prismarine_crystals>, 1.35, 2.0, 1.5, 0.5, 0.25);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("amethyst_catalyst", <item:minecraft:amethyst_shard>, 1.0, 1.0, 0.25, 0.75, 0.85);
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("amethyst_catalyst", <item:minecraft:amethyst_shard>, 1.0, 1.0, 0.25, 0.85, 0.75);
 
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.35, 0.3);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
@@ -274,7 +271,8 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 <recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.15, 0.35, 0.75, 0.55);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("hex_ash", <item:malum:hex_ash>, 1.25, 1.0, 0.35, 0.75, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.7);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust_clump_catalyst", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.7);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("compressed_sawdust_catalyst", <item:kubejs:compressed_sawdust>, 1.15, 1.25, 0.75, 0.45, 0.6);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
 
 print("thermal.zs loaded");
