@@ -31,7 +31,7 @@ craftingTable.addShaped("trading_core", <item:lightmanscurrency:trading_core>,
 
 
 # New wallet recipes
-#	craftingTable.remove(<item:lightmanscurrency:wallet_copper>);
+craftingTable.remove(<item:lightmanscurrency:wallet_copper>);
 craftingTable.remove(<item:lightmanscurrency:wallet_iron>);
 craftingTable.remove(<item:lightmanscurrency:wallet_gold>);
 craftingTable.remove(<item:lightmanscurrency:wallet_emerald>);

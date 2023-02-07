@@ -3,6 +3,7 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
+  smallerthanheight = 1080
   renderorder = foreground
   randommode = false
   randomonlyfirsttime = false
@@ -32,6 +33,22 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   action = hidebutton
+}
+
+customization {
+  identifier = %id=3763941%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 44
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-centered
+  x = 54
+  action = movebutton
+  y = 44
 }
 
 customization {
@@ -105,9 +122,7 @@ customization {
 customization {
   path = config/fancymenu/customization/teoe_menu.png
   orientation = top-left
-  fadein = true
-  fadeinspeed = 1.0
-  x = 5
+  x = 3
   width = 475
   action = addtexture
   actionid = ca59d3fe-d742-4ca5-8f80-b08108e6bffd1675446271889
@@ -146,21 +161,5 @@ customization {
   backgroundnormal = config/fancymenu/customization/discord_logo.png
   value = 
   height = 20
-}
-
-customization {
-  identifier = %id=3763941%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = 44
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
-  orientation = mid-centered
-  x = 54
-  action = movebutton
-  y = 44
 }
 

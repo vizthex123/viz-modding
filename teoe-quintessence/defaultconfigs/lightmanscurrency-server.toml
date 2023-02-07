@@ -16,7 +16,7 @@
 	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
 	#If disabled, illegally broken traders will throw their items on the ground, and can thus be griefed by modded machines.
 	ejectIllegalBreaks = true
-	
+
 	#Specific Coin Minting Settings.
 	[server.coin_minting]
 		#Whether copper coins can be minted.
@@ -111,8 +111,9 @@
 
 	#Auction House Settings
 	[server.auction_house]
-		#Whether the Auction House will appear on the trader list.
+		#Whether the Auction House will be automatically generated and accessible.
 		#If disabled after players have interacted with it, items & money in the auction house cannot be accessed until re-enabled.
+		#If disabled, it is highly recommended that you also disable the 'crafting.allowAuctionStandCrafting' option in the common config.
 		enabled = true
 		#The maximum number of days an auction can be carried out.
 		#Range: > 1
@@ -120,6 +121,9 @@
 		#The minimum number of days an auction can be carried out.
 		#Range: > 0
 		minDuration = 0
+		#Whether the Auction House will appear in the trading terminal.
+		#If false, you will only be able to access the Auction House from an Auction Stand.
+		visibleOnTerminal = true
 
 	#Discord bot settings. Requires lightmansdiscord v0.0.3.0+ to use.
 	[server.discord]
@@ -127,4 +131,21 @@
 		channel = "000000000000000000"
 		#Prefix for currency commands.
 		prefix = "!"
+		#Whether the !search command should limit its search results to only Network Traders, or if it should list all traders.
+		limitSearchToNetwork = true
+
+		#Bot notification options.
+		[server.discord.notifications]
+			#Whether a notification will appear in the currency bot channel when a Network Trader is created.
+			#Notification will have a 60 second delay to allow them time to customize the traders name, etc.
+			networkTraderBuilt = true
+			#Whether a notification will appear in the currency bot channel when an Auction is created in the Auction House.
+			auctionHouseCreated = true
+			#Whether a notification will appear in the currency bot channel when a Persistent Auction is created automatically.
+			#Requires that auction house creation notifications also be enabled.
+			auctionHousePersistentCreations = true
+			#Whether a notification will appear in the currency bot channel when an Auction is cancelled in the Auction House.
+			auctionHouseCancelled = false
+			#Whether a notification will appear in the currency bot channel when an Auction is completed and had a bidder.
+			auctionHouseWon = true
 

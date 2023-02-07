@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"all": "kubejs:item/dragon_egg"
+		"all": "kubejs:item/artificial_dragon_egg"
 	},
 	"elements": [
 		{

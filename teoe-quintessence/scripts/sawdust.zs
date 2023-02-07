@@ -10,6 +10,7 @@ print("sawdust.zs loading...");
 */
 
 val sawdust = <item:thermal:sawdust>;
+val spider_string = <item:minecraft:string>;
 
 # Saw wooden stuff into Sawdust
 # Sawdust value is equal to panks used (slabs & sticks count as 0.5 and 0.25 respectively)
@@ -46,7 +47,7 @@ val sawdust = <item:thermal:sawdust>;
 <recipetype:create:cutting>.addRecipe("mech_saw_lectern", sawdust*12, <item:minecraft:lectern>, 5);
 
 // Loom
-<recipetype:thermal:sawmill>.addRecipe("saw_loom", [sawdust*2, <item:minecraft:string> % 50], <item:minecraft:loom>, 2000);
+<recipetype:thermal:sawmill>.addRecipe("saw_loom", [sawdust*2, spider_string % 50], <item:minecraft:loom>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_loom", sawdust*3, <item:minecraft:loom>, 5);
 
 // Cartography Table
@@ -102,8 +103,8 @@ val sawdust = <item:thermal:sawdust>;
 <recipetype:create:cutting>.addRecipe("mech_saw_buttons", sawdust, <tag:items:minecraft:wooden_buttons>, 1);
 
 // Wooden Tools
-<recipetype:thermal:sawmill>.addRecipe("saw_wood_tools", [sawdust*2, sawdust % 50], <item:minecraft:wooden_sword>|<item:minecraft:wooden_pickaxe>|<item:minecraft:wooden_axe>|<item:minecraft:wooden_shovel>|<item:minecraft:wooden_hoe>, 500);
-<recipetype:create:cutting>.addRecipe("mech_saw_wood_tools", sawdust*3, <item:minecraft:wooden_sword>|<item:minecraft:wooden_pickaxe>|<item:minecraft:wooden_axe>|<item:minecraft:wooden_shovel>|<item:minecraft:wooden_hoe>, 1);
+<recipetype:thermal:sawmill>.addRecipe("saw_wood_tools", [sawdust*2, sawdust % 50], <tag:items:teoe:wooden_tool>.asIIngredient().anyDamage(), 500);
+<recipetype:create:cutting>.addRecipe("mech_saw_wood_tools", sawdust*3, <tag:items:teoe:wooden_tool>.asIIngredient().anyDamage(), 1);
 
 
 ### Modded Stuff ###

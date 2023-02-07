@@ -14,9 +14,28 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
-// Add tag support to Mushroom Stew
+// Remove furnace recipes for BYG's Sand -> Glass
+// Adds them to the Blast Furnace
+// (And Induction Smelter after I can disable catalysts)
+furnace.removeByName("byg:black_glass_from_sand");
+furnace.removeByName("byg:white_glass_from_sand");
+furnace.removeByName("byg:blue_glass_from_sand");
+furnace.removeByName("byg:purple_glass_from_sand");
+furnace.removeByName("byg:pink_glass_from_sand");
+
+blastFurnace.addRecipe("red_glass", <item:minecraft:red_stained_glass>, <item:minecraft:red_sand>, 0.1, 200);
+blastFurnace.addRecipe("black_glass", <item:minecraft:black_stained_glass>, <item:byg:black_sand>, 0.1, 200);
+blastFurnace.addRecipe("white_glass", <item:minecraft:white_stained_glass>, <item:byg:white_sand>, 0.1, 200);
+blastFurnace.addRecipe("blue_glass", <item:minecraft:blue_stained_glass>, <item:byg:blue_sand>, 0.1, 200);
+blastFurnace.addRecipe("purple_glass", <item:minecraft:purple_stained_glass>, <item:byg:purple_sand>, 0.1, 200);
+blastFurnace.addRecipe("pink_glass", <item:minecraft:pink_stained_glass>, <item:byg:pink_sand>, 0.1, 200);
+
+// Add tag support to Mushroom & Rabbit Stew
 craftingTable.remove(<item:minecraft:mushroom_stew>);
+craftingTable.remove(<item:minecraft:rabbit_stew>);
 craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [<item:minecraft:bowl>, <tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>]);
+
+craftingTable.addShapeless("rabbit_stew", <item:minecraft:rabbit_stew>, [<item:minecraft:baked_potato>, <item:minecraft:cooked_rabbit>, <item:minecraft:bowl>, <item:minecraft:carrot>, <tag:items:forge:mushrooms>]);
 
 // Make Nether Grout work with modded soul sands
 craftingTable.remove(<item:tconstruct:nether_grout>);

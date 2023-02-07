@@ -19,6 +19,7 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 
 // Stonecut Limestone
 stoneCutter.addRecipe("stonecut_limestone", <item:create:cut_limestone>, <item:quark:limestone>);
+
 // Modded Crafting Table -> Normal One
 craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
 

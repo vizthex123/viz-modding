@@ -1,5 +1,4 @@
 # Hides things from JEI, or adds info about them
-
 import mods.jei.JEI;
 
 print("JEI.zs loading...");
@@ -70,6 +69,11 @@ mods.jei.JEI.hideIngredient(<item:ironjetpacks:cell>.withTag({Id: "ironjetpacks:
 
 
 # Hides disabled items
+mods.jei.JEI.hideIngredient(<item:additionaladditions:depth_meter>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:fried_egg>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:wrench>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:pocket_jukebox>);
+
 mods.jei.JEI.hideIngredient(<item:ae2:vibration_chamber>);
 mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
 mods.jei.JEI.hideIngredient(<item:industrialforegoing:iron_gear>);
@@ -78,8 +82,6 @@ mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
 mods.jei.JEI.hideIngredient(<item:wormhole:coal_generator>);
-
-
 
 # Hides normally obtainable that aren't obtainable in the pack
 mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);
@@ -121,6 +123,15 @@ mods.jei.JEI.hideIngredient(<item:titanium:block_test>);
 mods.jei.JEI.hideIngredient(<item:titanium:block_twenty_four_test>);
 mods.jei.JEI.hideIngredient(<item:titanium:block_asset_test>);
 mods.jei.JEI.hideIngredient(<item:titanium:machine_test>);
+
+mods.jei.JEI.hideIngredient(<item:structure_gel:red_gel>);
+mods.jei.JEI.hideIngredient(<item:structure_gel:blue_gel>);
+mods.jei.JEI.hideIngredient(<item:structure_gel:green_gel>);
+mods.jei.JEI.hideIngredient(<item:structure_gel:cyan_gel>);
+mods.jei.JEI.hideIngredient(<item:structure_gel:orange_gel>);
+mods.jei.JEI.hideIngredient(<item:structure_gel:yellow_gel>);
+
+
 # Hide Uncrafting
 mods.jei.JEI.hideIngredient(<item:twilightforest:uncrafting_table>);
 JEI.hideCategory("twilightforest:uncrafting");

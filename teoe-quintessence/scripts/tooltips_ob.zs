@@ -48,6 +48,14 @@ energy - RF value
 <tag:items:forge:tooltips/durability>.add(<item:easypaxellite:netherite_paxel>);
 
 
+# Farmer's Delight
+<tag:items:forge:tooltips/durability>.add(<item:farmersdelight:flint_knife>);
+<tag:items:forge:tooltips/durability>.add(<item:farmersdelight:iron_knife>);
+<tag:items:forge:tooltips/durability>.add(<item:farmersdelight:golden_knife>);
+<tag:items:forge:tooltips/durability>.add(<item:farmersdelight:diamond_knife>);
+<tag:items:forge:tooltips/durability>.add(<item:farmersdelight:netherite_knife>);
+<tag:items:forge:tooltips/durability>.add(<item:malum:soul_stained_steel_knife>);
+
 
  # Thermal Series
 <tag:items:forge:tooltips/custom>.add(<item:thermal:flux_drill>);

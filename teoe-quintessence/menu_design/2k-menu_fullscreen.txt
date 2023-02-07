@@ -3,10 +3,10 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  smallerthanheight = 1423
   renderorder = background
   randommode = false
   randomonlyfirsttime = false
+  biggerthanheight = 1425
 }
 
 customization {
@@ -19,15 +19,15 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 15
+  y = 24
 }
 
 customization {
   identifier = %id=376310%
   orientation = top-left
-  x = 336
+  x = 293
   action = movebutton
-  y = 177
+  y = 168
 }
 
 customization {
@@ -40,15 +40,15 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 39
+  y = 48
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = top-left
-  x = 310
+  x = 267
   action = movebutton
-  y = 177
+  y = 168
 }
 
 customization {
@@ -69,7 +69,7 @@ customization {
   width = 108
   action = deep_customization_element:title_screen_branding
   actionid = 29f2e7a6-8a6f-4189-83c2-466bd003a6811656819380912
-  y = 234
+  y = 243
   height = 40
 }
 
@@ -80,7 +80,7 @@ customization {
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 285c3a7f-3588-41cf-abaf-7f60588bce5f1656819380912
-  y = 256
+  y = 265
   height = 9
 }
 
@@ -110,12 +110,12 @@ customization {
   orientation = top-left
   splash_color = #ffff00
   hidden = false
-  x = 430
+  x = 362
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
   actionid = 6fd33c18-382f-4fd9-964d-69d2fbaa818d1656819380912
-  y = 75
+  y = 144
   height = 30
 }
 
@@ -125,14 +125,14 @@ customization {
   path = config/fancymenu/customization/teoe_menu.png
   fadein = true
   fadeinspeed = 1.0
-  x = -250
-  width = 500
+  x = -211
+  width = 425
   action = addtexture
   actionid = 6f48ccbd-09ef-4b7d-9acf-baf073793b911656819422070
-  y = -124
+  y = -98
   delayappearance = true
   delayappearanceeverytime = false
-  height = 80
+  height = 70
 }
 
 customization {
@@ -142,11 +142,11 @@ customization {
   backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
-  x = 181
+  x = 138
   width = 20
   actionid = c8bd8fe8-3a9f-4414-836d-4c8bcdb96acc1656820279671
   action = addbutton
-  y = 177
+  y = 168
   backgroundnormal = config/fancymenu/customization/discord_logo.png
   value = https://discord.gg/NtwzA6X
   height = 20
@@ -157,11 +157,11 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = openlink
-  x = -51
+  x = -50
   width = 100
   actionid = 272cd99e-e2d2-44cb-9894-6a2e88733e121674449046206
   action = addbutton
-  y = 39
+  y = 48
   label = Wiki
   value = https://www.youtube.com/watch?v=dQw4w9WgXcQ
   height = 20

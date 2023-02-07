@@ -51,9 +51,7 @@ val clf = "\u00A7r";
 
 
 # Recycling tooltips
-<item:additionaladditions:depth_meter>.addTooltip(aqua + "Can be recycled in an Induction Furnace");
-<item:additionaladditions:depth_meter>.addShiftTooltip(red + "I should probably disable these, but free redstone...");
-<item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Lime in an Induction Furnace");
+<item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Quicklime in an Induction Smelter");
 
 
 

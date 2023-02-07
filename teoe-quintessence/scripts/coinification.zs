@@ -68,11 +68,11 @@ print("coinification.zs loading...");
 // Dormant Eye -> 7,500 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_dormant_eye", [<item:lightmanscurrency:coin_emerald>*7, <item:lightmanscurrency:coin_gold>*5], <item:enigmaticlegacy:architect_eye>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_dormant_eye2", [<item:lightmanscurrency:coin_emerald>*7, <item:lightmanscurrency:coin_gold>*5], <item:enigmaticlegacy:architect_eye>, 5);
-
+/*
 // Enigmatic Amulet -> 10,000 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_enigmatic_amulet", [<item:lightmanscurrency:coin_diamond>], <item:enigmaticlegacy:enigmatic_amulet>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_enigmatic_amulet2", [<item:lightmanscurrency:coin_diamond>], <item:enigmaticlegacy:enigmatic_amulet>, 5);
-
+*/
 // Spellstones -> 20,000 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 0, 4000);
 <recipetype:create:crushing>.addRecipe("coinify_spellstone2", [<item:lightmanscurrency:coin_diamond>*2], <tag:items:teoe:spellstone>, 5);

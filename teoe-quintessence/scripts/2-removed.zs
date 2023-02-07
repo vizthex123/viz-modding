@@ -17,11 +17,14 @@ craftingTable.remove(<item:industrialforegoing:diamond_gear>);
 
 # Remove duplicate recipes
 craftingTable.removeByName("minecraft:lead");
+craftingTable.removeByName("minecraft:beacon");
 craftingTable.removeByName("minecraft:end_crystal");
 craftingTable.removeByName("minecraft:comparator");
 craftingTable.removeByName("minecraft:glass_bottle");
 craftingTable.removeByName("minecraft:sticky_piston");
 craftingTable.removeByName("minecraft:magma_cream");
+
+craftingTable.removeByName("ae2:misc/vanilla_comparator");
 
 craftingTable.removeByName("create:crafting/materials/copper_ingot");
 craftingTable.removeByName("create:crafting/materials/copper_nugget");
@@ -35,6 +38,7 @@ craftingTable.removeByName("malum:sticky_piston_from_sapballs");
 craftingTable.removeByName("malum:magma_cream_from_sapballs");
 
 craftingTable.removeByName("nourished_nether:netherite_nugget");
+furnace.removeByName("nourished_nether:smelt_netherite_gear");
 
 craftingTable.removeByName("tconstruct:common/materials/copper_nugget_from_ingot");
 craftingTable.removeByName("tconstruct:common/materials/copper_ingot_from_nuggets");

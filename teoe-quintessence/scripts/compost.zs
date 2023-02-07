@@ -1,16 +1,21 @@
 # Adds items to the Compostor
 print("compost.zs loading...");
-
 /*
-composter.setValue(<item>, amount);
+composter.setValue(<item>, chance);
 
-"amount" being how much it fills up the compostor
+"chance" being the chance for it to fill a layer
 */
 
 # Crops
 composter.setValue(<item:minecraft:bamboo>, 0.35);
 composter.setValue(<item:minecraft:chorus_fruit>, 0.5);
 composter.setValue(<item:minecraft:poisonous_potato>, 0.5);
+
+
+# Foliage
+composter.setValue(<item:byg:pink_cherry_foliage>, 0.15);
+composter.setValue(<item:byg:white_cherry_foliage>, 0.15);
+composter.setValue(<item:byg:ether_foliage>, 0.15);
 
 
 # Crates

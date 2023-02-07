@@ -22,6 +22,14 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Glow Sac -> Ink Sac (and dye)
+craftingTable.addShapeless("cyan_dye", <item:minecraft:cyan_dye>, [<item:minecraft:glow_ink_sac>]);
+craftingTable.addShapeless("ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
+
+// Make Beetroot Soup cheaper
+craftingTable.remove(<item:minecraft:beetroot_soup>);
+craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [<item:minecraft:bowl>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>]);
+
 // Normal leather bundle
 craftingTable.addShaped("leather_bundle", <item:minecraft:bundle>, 
     [[<item:minecraft:string>, <item:minecraft:leather>, <item:minecraft:string>],
@@ -43,24 +51,6 @@ craftingTable.addShaped("white_wool", <item:minecraft:white_wool>*8,
 // Make Suspicious Stew use tags
 craftingTable.remove(<item:minecraft:suspicious_stew>);
 craftingTable.addShapeless("suspicious_stew", <item:minecraft:suspicious_stew>, [<tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>, <item:minecraft:bowl>, <tag:items:minecraft:flowers>]);
-
-# Smelt modded bones into Gelatin
-# Campfires takes 2x the time
-campfire.addRecipe("campfire_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 1200);
-campfire.addRecipe("campfire_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 800);
-campfire.addRecipe("campfire_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:aquamirae:sharp_bones>|<item:food_enhancements:fish_bones>, 0.25, 600);
-
-furnace.addRecipe("smelt_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 600);
-furnace.addRecipe("smelt_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 400);
-furnace.addRecipe("smelt_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:aquamirae:sharp_bones>|<item:food_enhancements:fish_bones>, 0.25, 300);
-
-smoker.addRecipe("smoke_gelatin_ribs", <item:food_enhancements:gelatin>*5, <item:reliquary:rib_bone>, 0.5, 300);
-smoker.addRecipe("smoke_gelatin_necrotic", <item:food_enhancements:gelatin>*3, <item:tconstruct:necrotic_bone>, 0.35, 200);
-smoker.addRecipe("smoke_gelatin_fish_bones", <item:food_enhancements:gelatin>, <item:aquamirae:sharp_bones>|<item:food_enhancements:fish_bones>, 0.25, 150);
-
-// Use Sharp Bones from Aquamirae to make Bowls of Fish Bones
-# TODO: Make this use the bowls
-craftingTable.addShapeless("fish_bones_bowl", <item:food_enhancements:bowl_of_fish_bones>, [<item:food_enhancements:bowl_of_water>, <item:aquamirae:sharp_bones>]);
 
 # Change torch recipes
 craftingTable.removeByName("minecraft:torch");

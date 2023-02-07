@@ -23,17 +23,19 @@ onEvent('item.registry', event => {
 		event.create('small_ironwood_scrap')
 		event.create('knightmetal_scrap')
 		event.create('small_knightmetal_scrap')
+		event.create('platinum_scrap')
+		event.create('small_platinum_scrap')
 		
 		// Ores
 		event.create('crushed_cobalt')
 		event.create('crushed_platinum')
 		event.create('crushed_pendorite')
-		event.create('iridium').rarity('rare').displayName('Iridium Chunks') 
+		event.create('iridium_chunks').rarity('rare')
 		
 		// Misc
 		event.create('quicklime')
 		event.create('quintessence').rarity('epic').maxStackSize(1).glow(true)
-		event.create('iridium_cell').rarity('rare').burnTime(12800).maxStackSize(4).displayName('Iridium Fuel Cell')
-		event.create('dragon_egg').texture('kubejs:item/dragon_egg').rarity('rare').maxStackSize(1).displayName('Artificial Dragon Egg')
+		event.create('iridium_fuel_cell').rarity('rare').burnTime(12800).maxStackSize(4)
+		event.create('artificial_dragon_egg').texture('kubejs:item/artificial_dragon_egg').rarity('rare').maxStackSize(1)
 		event.create('portal_catalyst').displayName('Twilight Portal Catalyst').rarity('uncommon').maxStackSize(1).glow(true)
 })

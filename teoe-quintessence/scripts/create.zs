@@ -30,7 +30,6 @@ do fluid:minecraft:empty for empty fluids
 /*
 // Press Leather out of Fleshes
 <recipetype:create:pressing>.addRecipe("press_leather", [<item:minecraft:leather> % 25], <item:minecraft:rotten_flesh>, 5);
-<recipetype:create:pressing>.addRecipe("press_illager_leather", [<item:minecraft:leather> % 50], <item:food_enhancements:illager_flesh>, 5);
 */
 ### Crushing Wheels ###
 /*
@@ -41,6 +40,9 @@ do fluid:minecraft:empty for empty fluids
 default time for both is 2 - 3 seconds
 */
 
+// Mill all Terracotta types into Clay
+<recipetype:create:milling>.remove(<item:minecraft:red_sand>);
+<recipetype:create:milling>.addRecipe("mill_terracotta", [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>*2 % 75], <tag:items:minecraft:terracotta>);
 
 // Crush Shale
 <recipetype:create:crushing>.addRecipe("crush_shale", [<item:malum:natural_quartz> % 55, <item:create:crushed_iron_ore> % 15, <item:minecraft:clay_ball> % 30], <item:quark:shale>, 5);
@@ -147,14 +149,15 @@ default time for both is 2 - 3 seconds
 
 # Ore Crushing Recipes
 # Chances are a bit higher than the Pulverizer
+
 // Cobalt
 <recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:kubejs:iridium_chunks> % 20, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 10);
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25, <item:create:experience_nugget>*9 % 75, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt_block>, 10);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25, <item:create:experience_nugget>*18 % 75], <item:tconstruct:raw_cobalt_block>, 10);
 <recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 10);
 
 // Platinum
 <recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium_chunks> % 30, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 15);
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 35, <item:create:experience_nugget>*9 % 90], <item:ob_core:raw_platinum_block>, 15);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 35, <item:create:experience_nugget>*9 % 90, <item:create:experience_nugget>*4 % 75, <item:create:experience_nugget> % 50], <item:ob_core:raw_platinum_block>, 15);
 <recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:iridium_chunks>*2 % 40, <item:kubejs:crushed_platinum> % 75, <item:create:experience_nugget>*2 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 15);
 
 // Pendorite

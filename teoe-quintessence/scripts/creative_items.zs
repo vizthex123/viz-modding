@@ -107,13 +107,13 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_fluid_tank", 4, <item:cr
 # Creative Blaze Cake
 mods.extendedcrafting.TableCrafting.addShaped("creative_blaze_cake", 4, <item:create:creative_blaze_cake>,
 	[[<item:twilightforest:experiment_115>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:twilightforest:experiment_115>],
-	[<item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:reliquary:glowing_bread>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:reliquary:glowing_bread>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:teoe:magic_dust>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:kubejs:quintessence>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:teoe:magic_dust>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:the_bumblezone:honey_crystal_shards>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:food_enhancements:creamy_honey_toast>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:reliquary:glowing_bread>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:reliquary:glowing_bread>, <item:minecraft:air>],
 	[<item:twilightforest:experiment_115>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:twilightforest:experiment_115>]]);
 
 # Creative Worldshaper

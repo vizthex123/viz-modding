@@ -7,12 +7,50 @@ print("1-tags.zs loading...");
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
+# The Basic Pipes tag is in refined_pipes.zs!
 
-# Soul Sand (recipe)
-<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_sand>);
-<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_soil>);
-<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_sand>);
-<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_soil>);
+# Dynamics duct (quest)
+<tag:items:teoe:duct>.add(<item:thermal:energy_duct>);
+<tag:items:teoe:duct>.add(<item:thermal:fluid_duct>);
+<tag:items:teoe:duct>.add(<item:thermal:fluid_duct_windowed>);
+
+
+# Torches (recipes)
+<tag:items:teoe:torch>.add(<item:minecraft:torch>);
+<tag:items:teoe:torch>.add(<item:minecraft:soul_torch>);
+<tag:items:teoe:torch>.add(<item:aquatictorches:aquatic_torch>);
+<tag:items:teoe:torch>.add(<item:botania:animated_torch>);
+<tag:items:teoe:torch>.add(<item:malum:blazing_torch>);
+<tag:items:teoe:torch>.add(<item:malum:ether_torch>);
+<tag:items:teoe:torch>.add(<item:malum:iridescent_ether_torch>);
+<tag:items:teoe:torch>.add(<item:nethersdelight:propelplant_torch>);
+
+
+# Wooden tools (recipe)
+<tag:items:teoe:wooden_tool>.add(<item:minecraft:wooden_sword>);
+<tag:items:teoe:wooden_tool>.add(<item:minecraft:wooden_pickaxe>);
+<tag:items:teoe:wooden_tool>.add(<item:minecraft:wooden_shovel>);
+<tag:items:teoe:wooden_tool>.add(<item:minecraft:wooden_hoe>);
+<tag:items:teoe:wooden_tool>.add(<item:minecraft:wooden_axe>);
+
+
+# Leather armour (recipe)
+<tag:items:teoe:leather_armour>.add(<item:minecraft:leather_horse_armor>);
+<tag:items:teoe:leather_armour>.add(<item:minecraft:leather_helmet>);
+<tag:items:teoe:leather_armour>.add(<item:minecraft:leather_chestplate>);
+<tag:items:teoe:leather_armour>.add(<item:minecraft:leather_leggings>);
+<tag:items:teoe:leather_armour>.add(<item:minecraft:leather_boots>);
+
+
+# Egg (recipe)
+<tag:items:teoe:egg>.add(<item:minecraft:egg>);
+<tag:items:teoe:egg>.add(<item:minecraft:turtle_egg>);
+<tag:items:teoe:egg>.add(<item:farmersdelight:fried_egg>);
+<tag:items:teoe:egg>.add(<item:quark:egg_parrot_red_blue>);
+<tag:items:teoe:egg>.add(<item:quark:egg_parrot_blue>);
+<tag:items:teoe:egg>.add(<item:quark:egg_parrot_green>);
+<tag:items:teoe:egg>.add(<item:quark:egg_parrot_yellow_blue>);
+<tag:items:teoe:egg>.add(<item:quark:egg_parrot_grey>);
 
 
 # Dragon Scales (recipe)
@@ -26,12 +64,6 @@ print("1-tags.zs loading...");
 <tag:items:teoe:ae2_press>.add(<item:ae2:calculation_processor_press>);
 <tag:items:teoe:ae2_press>.add(<item:ae2:engineering_processor_press>);
 
-
-# Basic Pipe (quest)
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_item_pipe>);
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_fluid_pipe>);
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_energy_pipe>);
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_extractor_attachment>);
 
 
 # Belts (quest)
@@ -76,6 +108,12 @@ print("1-tags.zs loading...");
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_storage_augment>);
 <tag:items:teoe:coil>.add(<item:thermal:rf_coil_xfer_augment>);
 
+
+# Soul Sand (recipe)
+<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_sand>);
+<tag:items:teoe:soul_sand>.add(<item:minecraft:soul_soil>);
+<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_sand>);
+<tag:items:teoe:soul_sand>.add(<item:byg:warped_soul_soil>);
 
 
 # Cooking for Blockheads' items (quests)
@@ -260,8 +298,8 @@ print("1-tags.zs loading...");
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:iron_chest>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_copper_chest_upgrade>);
+<tag:items:teoe:better_chest>.add(<item:ironchest:wood_to_iron_chest_upgrade>);
 <tag:items:teoe:better_chest>.add(<item:ironchest:copper_to_iron_chest_upgrade>);
-
 
 
 # Beacon Base
@@ -381,16 +419,24 @@ print("1-tags.zs loading...");
 <tag:items:forge:nuggets>.add(<item:nourished_nether:netherite_nugget>);
 <tag:items:forge:nuggets/netherite>.add(<item:nourished_nether:netherite_nugget>);
 
-<tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
+<tag:items:forge:dusts>.add(<item:thermal:ender_pearl_dust>);
 
 <tag:items:forge:end_stones>.add(<item:geode:smooth_endstone>);
 
 <tag:items:forge:chests>.add(<item:ae2:sky_stone_chest>);
 <tag:items:forge:chests>.add(<item:ae2:smooth_sky_stone_chest>);
 
+<tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
+
+<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:malum:blazing_torch>);
+<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:nethersdelight:propelplant_torch>);
+
+<tag:items:ae2:p2p_attunements/redstone_p2p_tunnel>.add(<item:botania:animated_torch>);
+
 <tag:items:forge:limestone>.add(<item:quark:limestone>);
 <tag:items:forge:limestone>.add(<item:create:limestone>);
 
+<tag:items:create:crushed_ores>.add(<item:malum:crushed_brilliance>);
 <tag:items:create:crushed_ores>.add(<item:malum:crushed_soulstone>);
 
 <tag:items:forge:dyes/green>.add(<item:quark:moss_paste>);
@@ -399,12 +445,17 @@ print("1-tags.zs loading...");
 <tag:items:byg:orange_dye>.add(<item:byg:firecracker_flower_bush>);
 <tag:items:byg:green_dye>.add(<item:byg:shrub>);
 
+<tag:items:forge:slimeballs>.add(<item:byg:embur_gel_ball>);
+
 <tag:items:forge:mushrooms>.add(<item:minecraft:crimson_fungus>);
 <tag:items:forge:mushrooms>.add(<item:minecraft:warped_fungus>);
+<tag:items:forge:mushrooms>.add(<item:naturesaura:aura_mushroom>);
+<tag:items:forge:mushrooms>.add(<item:naturesaura:crimson_aura_mushroom>);
+<tag:items:forge:mushrooms>.add(<item:naturesaura:warped_aura_mushroom>);
 
 <tag:items:malum:gross_foods>.add(<item:minecraft:spider_eye>);
 <tag:items:malum:gross_foods>.add(<item:minecraft:poisonous_potato>);
-<tag:items:malum:gross_foods>.add(<item:food_enhancements:illager_flesh>);
+<tag:items:malum:gross_foods>.add(<item:farmersdelight:rotten_tomato>);
 
 
 /*
@@ -464,5 +515,7 @@ mods are blacklisted in the config
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
 
 <tag:items:minecraft:tall_flowers>.remove(<tag:items:minecraft:small_flowers>);
+
+<tag:items:forge:mushrooms>.remove(<item:byg:white_puffball_cap>);
 
 print("1-tags.zs loaded");

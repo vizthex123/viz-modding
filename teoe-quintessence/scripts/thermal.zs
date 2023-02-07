@@ -88,7 +88,7 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
 
-// <recipetype:thermal:furnace>.addRecipe(String name, IItemStack output, IIngredient ingredient, float experience, int energy);
+<recipetype:thermal:furnace>.addRecipe(String name, IItemStack output, IIngredient ingredient, float experience, int energy);
 
 <recipetype:thermal:chiller>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack inputFluid, int energy);
 
@@ -129,9 +129,6 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Process Frost Magma into Water & Magma Cream
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_frost_magma", [<item:minecraft:magma_cream> % 50, <item:minecraft:magma_cream> % 25], <fluid:minecraft:water>*1000, <item:byg:frost_magma>, 4000);
 
-// Smelt Illager Flesh into Leather
-<recipetype:thermal:furnace>.addRecipe("leather_illager", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>*2, 0, 4000);
-
 // Fractionate Sugar Water into Water
 <recipetype:thermal:refinery>.addRecipe("sugar_water_refining", <item:minecraft:sugar> % 50, [<fluid:minecraft:water>*1000], <fluid:the_bumblezone:sugar_water_still>*1000, 2000);
 
@@ -139,27 +136,27 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:forge:limestone>, <item:kubejs:quicklime>*8], 0, 6400);
 
 // Induction Smelt Ash into Charcoal
-<recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash>*4], 0, 6400);
-<recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 40], [<item:byg:subzero_ash_block>*4], 0, 6400);
+<recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 40, <item:malum:arcane_charcoal> % 5], [<item:byg:subzero_ash_block>*4], 0, 6400);
+<recipetype:thermal:smelter>.addRecipe("smelt_basalt_ash", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:basalt_ash_pile>*4], 0, 6400);
+
+// Pulverize Zinc
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_zinc", [<item:create:crushed_zinc_ore>, <item:thermal:iron_dust> % 5], <item:create:raw_zinc>, 0, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_zinc_ore", [<item:create:crushed_zinc_ore>*2, <item:thermal:iron_dust> % 10, <item:minecraft:gravel> % 20], <tag:items:forge:ores/zinc>, 0, 4000);
 
 // Pulverize Cobalt
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:kubejs:iridium_chunks> % 15], <item:tconstruct:raw_cobalt>, 0, 4000);
-# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25], <item:tconstruct:raw_cobalt_block>, 0, 4000);
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 20, <item:minecraft:gravel> % 15], <item:tconstruct:cobalt_ore>, 0, 4000);
 
 // Pulverize Platinum
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium_chunks> % 20], <item:ob_core:platinum_raw>, 0, 6000);
-# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 30], <item:ob_core:raw_platinum_block>, 0, 6000);
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:minecraft:gravel> % 20], <item:ob_core:deepslate_platinum_ore>, 0, 6000);
 
 // Pulverize Pendorite
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, <item:kubejs:iridium_chunks> % 35], <item:byg:raw_pendorite>, 0, 8000);
-# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:minecraft:netherite_scrap>*2 % 30, <item:kubejs:iridium_chunks> % 40], <item:byg:raw_pendorite_block>, 0, 8000);
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:minecraft:netherite_scrap> % 30, <item:kubejs:iridium_chunks> % 40, <item:minecraft:gravel> % 20], <item:byg:pendorite_ore>, 0, 8000);
 
 // Pulverize Soulstone
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 50], <item:malum:raw_soulstone>, 0, 3000);
-# <recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone_block", [<item:malum:crushed_soulstone>*9, <item:malum:crushed_soulstone>*2 % 30], <item:malum:block_of_raw_soulstone>, 0, 3000);
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_soulstone_ore", [<item:malum:crushed_soulstone>*2, <item:malum:crushed_soulstone> % 75, <item:minecraft:gravel> % 20], <item:malum:soulstone_ore>|<item:malum:deepslate_soulstone_ore>, 0, 3000);
 
 // Pulverize Certus Quartz into Dust
@@ -171,6 +168,9 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...
 <recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2], <tag:items:minecraft:planks>, 0, 500);
+
+// Pyrolyze Compressed Sawdust into Charcoal
+<recipetype:thermal:pyrolyzer>.addRecipe("charcoal_compressed_sawdust", [<item:minecraft:charcoal>], <fluid:thermal:creosote>*25, <item:kubejs:compressed_sawdust>, 1000);
 
 // Pyrolyze BYG coals into coal coke
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke>, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
@@ -229,50 +229,5 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_white_corundum", [<item:quark:white_corundum_cluster>*2, <item:quark:white_corundum_cluster> % 50], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 0, 4000);
 
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_black_corundum", [<item:quark:black_corundum_cluster>*2, <item:quark:black_corundum_cluster> % 50], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 0, 4000);
-
-
-
-### Add Catalysts to various machines
-/*
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
-
-<recipetype:thermal:smelter_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
-
-<recipetype:thermal:insolator_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
-
-Min chance is the minium chance to trigger the catalyst (I guess?)
-*/
-
-# Pulverizer
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_shard", <item:minecraft:prismarine_shard>, 1.45, 1.65, 1.3, 0.4, 0.4);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("prismarine_crystal", <item:minecraft:prismarine_crystals>, 1.35, 2.0, 1.5, 0.5, 0.25);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("amethyst_catalyst", <item:minecraft:amethyst_shard>, 1.0, 1.0, 0.25, 0.85, 0.75);
-
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("quartz_dust", <item:thermal:quartz_dust>, 1.5, 1.75, 1.35, 0.35, 0.3);
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("certus_quartz_dust", <item:ae2:certus_quartz_dust>, 1.35, 1.5, 1.25, 0.5, 0.3);
-
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("wrappist", <item:geode:wrappist_shard>, 2.0, 1.5, 0.7, 0.5, 0.7);
-
-// Idk the min chance for Cinnabar, so let's hope this is close enough
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.7);
-
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <tag:items:teoe:corundum>, 1.25, 1.0, 0.9, 0.5, 0.65);
-/*
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <item:quark:red_corundum_cluster>|<item:quark:orange_corundum_cluster>|<item:quark:yellow_corundum_cluster>|<item:quark:green_corundum_cluster>|<item:quark:blue_corundum_cluster>|<item:quark:indigo_corundum_cluster>|<item:quark:violet_corundum_cluster>|<item:quark:white_corundum_cluster>|<item:quark:black_corundum_cluster>, 1.25, 1.0, 0.85, 0.5, 0.65);
-*/
-
-# Induction Smelter
-<recipetype:thermal:smelter_catalyst>.addCatalyst("sky_stone_dust", <item:ae2:sky_dust>, 1.35, 0.9, 0.75, 1.0, 0.5);
-<recipetype:thermal:smelter_catalyst>.addCatalyst("magic_dust", <tag:items:teoe:magic_dust>, 3.0, 1.5, 2.25, 0.8, 0.25);
-
-
-
-# Phytogenic Insolator
-<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.15, 0.35, 0.75, 0.55);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("hex_ash", <item:malum:hex_ash>, 1.25, 1.0, 0.35, 0.75, 0.5);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust_clump_catalyst", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.7);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("compressed_sawdust_catalyst", <item:kubejs:compressed_sawdust>, 1.15, 1.25, 0.75, 0.45, 0.6);
-<recipetype:thermal:insolator_catalyst>.addCatalyst("pollen", <item:byg:pollen_dust>|<item:the_bumblezone:pollen_puff>, 1.5, 1.25, 0.65, 0.75, 0.6);
 
 print("thermal.zs loaded");

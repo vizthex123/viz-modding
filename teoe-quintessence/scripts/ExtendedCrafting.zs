@@ -95,14 +95,14 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("repair_long_fall_boots", <i
 mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots", <item:longfallboots:longfallboots>, 3500, [<item:longfallboots:longfallboots>.anyDamage(), <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>], 35);
 
 # Artifical Dragon Egg
-mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:dragon_egg>,
+mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:artificial_dragon_egg>,
 	[[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>],
-	[<tag:items:teoe:magic_dust>, <item:minecraft:turtle_egg>|<item:minecraft:egg>|<item:food_enhancements:boiled_egg>, <tag:items:teoe:magic_dust>],
+	[<tag:items:teoe:magic_dust>, <tag:items:teoe:egg>, <tag:items:teoe:magic_dust>],
 	[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>]]);
 	
-mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <item:kubejs:dragon_egg>,
+mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <item:kubejs:artificial_dragon_egg>,
 	[[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>],
-	[<item:botania:dragonstone>, <item:minecraft:turtle_egg>|<item:minecraft:egg>|<item:food_enhancements:boiled_egg>, <item:botania:dragonstone>],
+	[<item:botania:dragonstone>, <tag:items:teoe:egg>],
 	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]], 300);
 
 
@@ -131,7 +131,7 @@ mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extende
 
 # Quintessence
 mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:quintessence>,
-	[[<tag:items:teoe:tape_measure>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:dragon_egg>|<item:kubejs:dragon_egg>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:packagedauto:me_package_component>],
+	[[<tag:items:teoe:tape_measure>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:packagedauto:me_package_component>],
 	[<item:minecraft:air>, <item:packingtape:tape>.anyDamage(), <item:minecraft:air>, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:rangedpumps:pump>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:ftbquests:book>, <item:quantumquarryplus:filter_upgrade>|<item:quantumquarryplus:pump_upgrade>, <item:apotheosis:ender_library>, <item:tconstruct:plate_chestplate>.anyDamage(), <tag:items:elevatorid:elevators>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:soul_quartz_block>, <item:lightmanscurrency:coin_netherite>, <item:minecraft:air>],

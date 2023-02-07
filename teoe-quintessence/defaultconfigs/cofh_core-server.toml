@@ -42,7 +42,7 @@
 		#If TRUE, the Holding Enchantment is available for various Storage Items and Blocks.
 		Enable = true
 		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
-		Treasure = false
+		Treasure = true
 		#This option adjusts the maximum allowable level for the Enchantment.
 		#Range: 1 ~ 10
 		"Max Level" = 3
