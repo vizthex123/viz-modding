@@ -36,27 +36,15 @@ mods.jei.JEI.hideIngredient(<item:minecraft:infested_stone_bricks>);
 
 
 # Hides creative-only items
-#	mods.jei.JEI.hideIngredient(<item:ae2:creative_energy_cell>);
-#	mods.jei.JEI.hideIngredient(<item:ae2:creative_item_cell>);
-#	mods.jei.JEI.hideIngredient(<item:ae2:creative_fluid_cell>);
-#	mods.jei.JEI.hideIngredient(<item:botania:creative_pool>);
 mods.jei.JEI.hideIngredient(<item:botania:infrangible_platform>);
 mods.jei.JEI.hideIngredient(<item:botania:lens_storm>);
-#	mods.jei.JEI.hideIngredient(<item:botania:mana_tablet>.withTag({creative: 1 as byte, mana: 500000 as int}));
 mods.jei.JEI.hideIngredient(<item:botania:corporea_spark_creative>);
-#	mods.jei.JEI.hideIngredient(<item:create:creative_motor>);
-#	mods.jei.JEI.hideIngredient(<item:create:creative_crate>);
-#	mods.jei.JEI.hideIngredient(<item:create:creative_fluid_tank>);
-#	mods.jei.JEI.hideIngredient(<item:create:creative_blaze_cake>);
-#	mods.jei.JEI.hideIngredient(<item:create:handheld_worldshaper>);
 mods.jei.JEI.hideIngredient(<item:createaddition:creative_energy>);
 mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_storage_upgrade>);
 mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_vending_upgrade>);
-#	mods.jei.JEI.hideIngredient(<item:thermal:rf_coil_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:fluid_tank_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_efficiency_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_catalyst_creative_augment>);
-#	mods.jei.JEI.hideIngredient(<item:tconstruct:creative_slot>);
 mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
 mods.jei.JEI.hideIngredient(<item:wormhole:creative_energy_cell>);
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);

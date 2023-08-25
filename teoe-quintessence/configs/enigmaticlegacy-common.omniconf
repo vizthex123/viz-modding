@@ -760,7 +760,7 @@
     B:CursedRingUltraHardcore=false
 
     # Set to true to prevent curse of insomnia from actually doing anything. [default: false, synchronized: yes]
-    B:CursedRingdisableInsomnia=false
+    B:CursedRingdisableInsomnia=true
 }
 
 

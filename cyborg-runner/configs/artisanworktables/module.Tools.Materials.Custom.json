@@ -1,6 +1,32 @@
 {
   "list": [
     {
+      "name": "flint",
+      "harvestLevel": 0,
+      "maxUses": 75,
+      "efficiency": 3.8,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "2d2d2e",
+      "shiny": true,
+      "ingredient": "minecraft:flint",
+      "langKey": "material.athenaeum.flint",
+      "oreDictKey": "artisansToolFlint"
+    },
+    {
+      "name": "bone",
+      "harvestLevel": 1,
+      "maxUses": 150,
+      "efficiency": 3.8,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "fff6c8",
+      "shiny": false,
+      "ingredient": "ore:bone",
+      "langKey": "material.athenaeum.bone",
+      "oreDictKey": "artisansToolBone"
+    },
+    {
       "name": "wood",
       "harvestLevel": 0,
       "maxUses": 60,
@@ -64,32 +90,6 @@
       "ingredient": "ore:gemDiamond",
       "langKey": "material.athenaeum.diamond",
       "oreDictKey": "artisansToolDiamond"
-    },
-    {
-      "name": "flint",
-      "harvestLevel": 0,
-      "maxUses": 75,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "2d2d2e",
-      "shiny": true,
-      "ingredient": "minecraft:flint",
-      "langKey": "material.athenaeum.flint",
-      "oreDictKey": "artisansToolFlint"
-    },
-    {
-      "name": "bone",
-      "harvestLevel": 1,
-      "maxUses": 150,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "fff6c8",
-      "shiny": false,
-      "ingredient": "ore:bone",
-      "langKey": "material.athenaeum.bone",
-      "oreDictKey": "artisansToolBone"
     },
     {
       "name": "lead",

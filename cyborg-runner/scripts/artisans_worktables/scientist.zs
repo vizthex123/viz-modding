@@ -84,7 +84,7 @@ recipes.remove(<redstonearsenal:material:160>);
 RecipeBuilder.get("chemist")
   .setShapeless([<minecraft:diamond>|<minecraft:emerald>|<byg:tamrelitegem>|<byg:pendoritegem>|<byg:lathariumgem>, <minecraft:diamond>|<minecraft:emerald>|<byg:tamrelitegem>|<byg:pendoritegem>|<byg:lathariumgem>])
   .setFluid(<liquid:redstone> * 1000)
-  .addTool(<ore:artisansBeaker>, 7)
+  .addTool(<ore:artisansBeaker>, 5)
   .addTool(<ore:artisansBurner>, 20)
   .addOutput(<redstonearsenal:material:160> * 2)
   .addRequirement(FTGU.allOf(["cyborg:technology/thermal_technology"]))

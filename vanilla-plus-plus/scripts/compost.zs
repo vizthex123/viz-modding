@@ -1,4 +1,4 @@
-# Adds recipes to the Compostor
+# Adds items to the Compostor
 print("compost.zs loading...");
 
 /*

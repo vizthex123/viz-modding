@@ -1,5 +1,5 @@
 {
-	"name": "compactmachines3:wallbreakable",
+	"name": "compactmachines3:wall",
 	"target-block": "compactmachines3:wallbreakable",
 	"target-count": 8,
 	"catalyst": "minecraft:clay",

@@ -12,14 +12,24 @@ print("sawmills.zs loading...");
 Average RF use is 1 - 2k
 */
 
-val sawdust = <item:thermal:sawdust>;
+val feather = <item:minecraft:feather>;
 val leather = <item:minecraft:leather>;
 val paper = <item:minecraft:paper>;
+val sawdust = <item:thermal:sawdust>;
 val spider_string = <item:minecraft:string>;
 val stick = <item:minecraft:stick>;
 
-// Torches
-<recipetype:thermal:sawmill>.addRecipe("saw_torch", [sawdust % 5], <tag:items:teoe:torch>, 750);
+## Arrows
+# Apotheosis ones are in machine_recycling.zs
+	// Regular
+<recipetype:thermal:sawmill>.addRecipe("saw_arrow", [feather % 5, sawdust % 5], <item:minecraft:arrow>, 500);
+
+	// Tipped
+<recipetype:thermal:sawmill>.addRecipe("saw_tipped_arrow", [feather % 5, sawdust % 5], <item:minecraft:tipped_arrow>.anyDamage(), 500);
+<recipetype:thermal:sawmill>.addRecipe("saw_reliquary_tipped_arrow", [feather % 5, sawdust % 5], <item:reliquary:tipped_arrow>.anyDamage(), 500);
+
+	// Spectral
+<recipetype:thermal:sawmill>.addRecipe("saw_spectral_arrow", [<item:minecraft:glowstone_dust>*2 % 50, feather % 5, sawdust % 10], <item:minecraft:spectral_arrow>, 500);
 
 // (Cross)Bows
 <recipetype:thermal:sawmill>.addRecipe("saw_bow", [spider_string*2, stick*2 % 75], <item:minecraft:bow>.anyDamage(), 500);

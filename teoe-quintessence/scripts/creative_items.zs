@@ -6,11 +6,11 @@ print("creative_items.zs loading...");
 mods.extendedcrafting.TableCrafting.addShaped("creative_energy_cell", 4, <item:ae2:creative_energy_cell>,
 	[[<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:redstone>], 
 	[<item:minecraft:air>, <item:minecraft:redstone>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:redstone>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:thermal:steel_ingot>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:kubejs:iridium_fuel_cell>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:ae2:dense_energy_cell>, <item:ae2:dense_energy_cell>, <item:ae2:dense_energy_cell>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:steel_ingot>, <item:ae2:dense_energy_cell>, <item:kubejs:quintessence>, <item:ae2:dense_energy_cell>, <item:thermal:steel_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:kubejs:iridium_fuel_cell>, <item:ae2:dense_energy_cell>, <item:kubejs:quintessence>, <item:ae2:dense_energy_cell>, <item:kubejs:iridium_fuel_cell>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:ae2:dense_energy_cell>, <item:ae2:dense_energy_cell>, <item:ae2:dense_energy_cell>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:thermal:steel_ingot>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:rftoolsbase:dimensionalshard>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:kubejs:iridium_fuel_cell>, <item:thermal:signalum_ingot>, <item:thermal:signalum_ingot>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:minecraft:redstone>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:rftoolsbase:dimensionalshard>, <item:minecraft:redstone>, <item:minecraft:air>], 
 	[<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:redstone>]]);
 
@@ -94,15 +94,15 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_crate", 4, <item:create:
 
 # Creative Fluid Tank
 mods.extendedcrafting.TableCrafting.addShaped("creative_fluid_tank", 4, <item:create:creative_fluid_tank>*4,
-	[[<item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>], 
-	[<item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>], 
+	[[<tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>], 
+	[<item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:forge:dusts/diamond>, <item:create:fluid_tank>, <item:create:fluid_tank>, <item:create:fluid_tank>, <tag:items:forge:dusts/diamond>, <item:minecraft:air>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:refinedpipes:ultimate_extractor_attachment>, <item:extendedcrafting:enhanced_ender_ingot>, <item:thermal:fluid_cell>.withTag({BlockEntityTag: {TankInv: [{Amount: 0 as int, FluidName: "minecraft:empty", Capacity: 32000 as int, Tank: 0 as byte}]}}), <item:kubejs:quintessence>, <item:thermal:fluid_cell>.withTag({BlockEntityTag: {TankInv: [{Amount: 0 as int, FluidName: "minecraft:empty", Capacity: 32000 as int, Tank: 0 as byte}]}}), <item:extendedcrafting:enhanced_ender_ingot>, <item:refinedpipes:ultimate_extractor_attachment>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:forge:dusts/diamond>, <item:create:fluid_tank>, <item:create:fluid_tank>, <item:create:fluid_tank>, <tag:items:forge:dusts/diamond>, <item:minecraft:air>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>], 
-	[<item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:advanced_fluid_pipe>]]);
+	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>], 
+	[<item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>, <item:minecraft:air>], 
+	[<tag:items:teoe:fluiduct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <tag:items:teoe:fluiduct>]]);
 
 # Creative Blaze Cake
 mods.extendedcrafting.TableCrafting.addShaped("creative_blaze_cake", 4, <item:create:creative_blaze_cake>,
@@ -189,16 +189,16 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_soul", 4, <item:tconstru
 	[<item:minecraft:soul_lantern>, <item:malum:processed_soulstone>, <item:malum:processed_soulstone>, <item:malum:processed_soulstone>, <item:create:experience_nugget>, <item:malum:processed_soulstone>, <item:malum:processed_soulstone>, <item:malum:processed_soulstone>, <item:minecraft:soul_lantern>]]);
 
 
-# Creative Flux Coil
+# Creative RF Coil
 mods.extendedcrafting.TableCrafting.addShaped("creative_flux_coil", 4, <item:thermal:rf_coil_creative_augment>*4,
-	[[<item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>],
-	[<item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>],
+	[[<item:thermal:energy_duct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:thermal:energy_duct>],
+	[<item:minecraft:air>, <item:thermal:energy_duct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:thermal:energy_duct>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:machine_efficiency_augment>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:machine_speed_augment>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:extendedcrafting:enhanced_ender_ingot>, <item:thermal:upgrade_augment_3>, <item:thermal:rf_coil_augment>, <item:thermal:upgrade_augment_3>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:kubejs:iridium_fuel_cell>, <item:thermal:upgrade_augment_3>, <item:thermal:rf_coil_augment>, <item:thermal:upgrade_augment_3>, <item:kubejs:iridium_fuel_cell>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:rf_coil_storage_augment>, <item:thermal:energy_cell>, <item:kubejs:quintessence>, <item:thermal:energy_cell>, <item:thermal:rf_coil_xfer_augment>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:extendedcrafting:enhanced_ender_ingot>, <item:thermal:upgrade_augment_3>, <item:thermal:rf_coil_augment>, <item:thermal:upgrade_augment_3>, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:kubejs:iridium_fuel_cell>, <item:thermal:upgrade_augment_3>, <item:thermal:rf_coil_augment>, <item:thermal:upgrade_augment_3>, <item:kubejs:iridium_fuel_cell>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:thermal:machine_speed_augment>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:enderium_ingot>, <item:thermal:machine_efficiency_augment>, <item:minecraft:air>, <item:minecraft:air>], 
-	[<item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>],
-	[<item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:refinedpipes:ultimate_energy_pipe>]]);
+	[<item:minecraft:air>, <item:thermal:energy_duct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:thermal:energy_duct>, <item:minecraft:air>],
+	[<item:thermal:energy_duct>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:thermal:energy_duct>]]);
 
 print("creative_items.zs loaded");

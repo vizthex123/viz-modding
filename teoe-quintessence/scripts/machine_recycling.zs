@@ -21,20 +21,53 @@ val clay = <item:minecraft:clay_ball>;
 val cobblestone = <item:minecraft:cobblestone>;
 val dye = <item:minecraft:black_dye>;
 val ender = <item:ae2:ender_dust>;
+val feather = <item:minecraft:feather>;
 val glowstone = <item:minecraft:glowstone_dust>;
 val pearl = <item:thermal:ender_pearl_dust>;
 val quartz = <item:malum:natural_quartz>;
 val redstone = <item:minecraft:redstone>;
 val sawdust = <item:thermal:sawdust>;
+val scrap = <item:kubejs:small_iron_scrap>;
+
+## Arrows
+# Regular ones are in sawmills.zs
+# Normal recycling rules don't apply due to their recipes making 4 or 6 at once
+	// Obsidian
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_obsidian_arrow", [<item:create:powdered_obsidian>*2 % 5, feather % 5, sawdust % 5], <item:apotheosis:obsidian_arrow>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_obsidian_arrow", [<item:create:powdered_obsidian>*2 % 5, feather % 5, sawdust % 5], <item:apotheosis:obsidian_arrow>, 60);
+
+	// Broadhead
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_broadhead_arrow", [scrap % 5, feather % 5, sawdust % 5], <item:apotheosis:broadhead_arrow>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_broadhead_arrow", [scrap % 5, feather % 5, sawdust % 5], <item:apotheosis:broadhead_arrow>, 60);
+
+	// Explosive
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_explosive_arrow", [<item:minecraft:gunpowder> % 10, feather % 5, sawdust % 5], <item:apotheosis:explosive_arrow>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_explosive_arrow", [<item:minecraft:gunpowder> % 10, feather % 5, sawdust % 5], <item:apotheosis:explosive_arrow>, 60);
+
+	// Iron
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_iron_arrow", [scrap % 5, feather % 5, sawdust % 10], <item:apotheosis:iron_mining_arrow>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_iron_arrow", [scrap % 5, feather % 5, sawdust % 10], <item:apotheosis:iron_mining_arrow>, 60);
+
+	// Diamond
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_diamond_arrow", [<item:kubejs:small_diamond_scrap> % 5, feather % 5, sawdust % 10], <item:apotheosis:diamond_mining_arrow>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_diamond_arrow", [<item:kubejs:small_diamond_scrap> % 5, feather % 5, sawdust % 10], <item:apotheosis:diamond_mining_arrow>, 60);
 
 
-# Flower Pot
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_flower_pot", [clay, clay % 65], <item:minecraft:flower_pot>, 0, 2000);
-<recipetype:create:crushing>.addRecipe("crush_flower_pot", [clay*2, clay % 40], <item:minecraft:flower_pot>, 100);
 
 # Lever
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_lever", [cobblestone % 25, sawdust % 25], <item:minecraft:lever>, 0, 2000);
-<recipetype:create:crushing>.addRecipe("crush_lever", [cobblestone % 35, sawdust % 15], <item:minecraft:lever>, 100);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_lever", [cobblestone % 25, sawdust % 25], <item:minecraft:lever>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_lever", [cobblestone % 35, sawdust % 15], <item:minecraft:lever>, 60);
+
+# Flower Pot
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_flower_pot", [clay, clay % 65], <item:minecraft:flower_pot>, 0, 500);
+<recipetype:create:crushing>.addRecipe("crush_flower_pot", [clay*2, clay % 40], <item:minecraft:flower_pot>, 60);
+
+# Pistons
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_piston", [scrap, cobblestone*2 % 65, redstone % 65, sawdust*5], <item:minecraft:piston>, 0, 2000);
+<recipetype:create:crushing>.addRecipe("crush_piston", [scrap, scrap % 50, cobblestone*2 % 50, redstone % 50, sawdust*3], <item:minecraft:piston>, 100);
+
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_sticky_piston", [scrap, cobblestone*2 % 65, <item:kubejs:glue> % 25, redstone % 65, sawdust*5], <item:minecraft:sticky_piston>, 0, 2000);
+<recipetype:create:crushing>.addRecipe("crush_sticky_piston", [scrap, scrap % 50, cobblestone*2 % 50, <item:kubejs:glue> % 15, redstone % 50, sawdust*3], <item:minecraft:sticky_piston>, 100);
 
 # Furnaces
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_furnace", [cobblestone*2, cobblestone*4 % 50], <item:minecraft:furnace>, 0, 2000);
@@ -80,11 +113,11 @@ val sawdust = <item:thermal:sawdust>;
 # Boosted Scrap recipes
 # Gives ingots & nuggets instead (but scrap if there is no nugget)
 # XP amount is doubled
-recipes.removeByName("thermal:machines/smelter/smelter_iron_tools");
-recipes.removeByName("thermal:machines/smelter/smelter_gold_tools");
+recipes.removeByName("thermal:smelter_iron_tools");
+recipes.removeByName("thermal:smelter_gold_tools");
 
-recipes.removeByName("thermal:machines/smelter/smelter_iron_armor");
-recipes.removeByName("thermal:machines/smelter/smelter_gold_armor");
+recipes.removeByName("thermal:smelter_iron_armor");
+recipes.removeByName("thermal:smelter_gold_armor");
 
 // Copper
 <recipetype:thermal:smelter>.addRecipe("smelt_copper_item", [<item:minecraft:copper_ingot>, <item:thermal:copper_nugget>*4 % 50], [<tag:items:teoe:meltable_copper>.asIIngredient().anyDamage()], 0.1, 2000);
@@ -186,15 +219,13 @@ recipes.removeByName("thermal:machines/smelter/smelter_gold_armor");
 TE gives more secondary (10%), but Create has higher primary output (25 - 50%)
 */
 ################################################################################
-### Trading Stations ###
-# Shelves & Displays are in the sawdust script
+### Lightman's Currency Trading Stations ###
 # Create gives more primary output (listed below)
 # 1 Scrap per Ingot
 # 1 Sawdust per Plank
 # 2 Dirty Shards per Glass
 # Scrap & Shards are 100% chance, Sawdust is 75, all others are arbitrary (but usually 50)
 
-val scrap = <item:kubejs:small_iron_scrap>;
 val shard = <item:quark:dirty_shard>;
 val spider_string = <item:minecraft:string>;
 
@@ -202,14 +233,24 @@ val spider_string = <item:minecraft:string>;
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_display_case", [shard*2, spider_string*2 % 60], <item:lightmanscurrency:display_case>, 0, 2000);
 <recipetype:create:crushing>.addRecipe("crush_display_case", [shard*3, spider_string*2 % 50], <item:lightmanscurrency:display_case>, 100);
 
+// Auction Stands
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_auction_stand", [shard*2, sawdust*2 % 60], <tag:items:lightmanscurrency:auction_stand>, 0, 2000);
+<recipetype:create:crushing>.addRecipe("crush_auction_stand", [shard*3, sawdust*2 % 50], <tag:items:lightmanscurrency:auction_stand>, 100);
+
+// Shelves
+<recipetype:thermal:sawmill>.addRecipe("saw_shelf", [sawdust % 50], <tag:items:lightmanscurrency:shelf>, 1000);
+<recipetype:create:cutting>.addRecipe("mech_saw_shelf", sawdust, <tag:items:lightmanscurrency:shelf>, 2);
+
+ // Card Displays
+<recipetype:thermal:sawmill>.addRecipe("saw_card_display", [sawdust*20, spider_string*2 % 50], <tag:items:lightmanscurrency:card_display>, 1000);
+<recipetype:create:cutting>.addRecipe("mech_saw_card_display", sawdust*30, <tag:items:lightmanscurrency:card_display>, 2);
+
 // Vending Machines
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_vending_machine", [scrap*4, shard*4, sawdust*16 % 75], <tag:items:lightmanscurrency:vending_machine>, 0, 2000);
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_large_vending_machine", [scrap*8, shard*8, sawdust*32 % 75], <tag:items:lightmanscurrency:large_vending_machine>, 0, 3000);
 
 <recipetype:create:crushing>.addRecipe("crush_vending_machine", [scrap*6, shard*6, sawdust*16 % 85], <tag:items:lightmanscurrency:vending_machine>, 100);
 <recipetype:create:crushing>.addRecipe("crush_large_vending_machine", [scrap*12, shard*12, sawdust*32 % 85], <tag:items:lightmanscurrency:large_vending_machine>, 7);
-
-# Shelves & Cases are turned into Sawdust
 
 // Freezer
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_freezer", [<item:minecraft:sand>*4 % 50, shard*4, sawdust*16 % 75], <item:lightmanscurrency:freezer>, 0, 2000);
@@ -245,8 +286,8 @@ val spider_string = <item:minecraft:string>;
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_network_traders", [scrap*6, sawdust*8 % 85, sawdust*4 % 50, pearl % 60], <tag:items:lightmanscurrency:trader_network>, 0, 2000);
 <recipetype:create:crushing>.addRecipe("crush_network_traders", [scrap*8, sawdust*8 % 75, sawdust*4 % 40, ender % 50], <tag:items:lightmanscurrency:trader_network>, 100);
 
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_network_interface", [scrap*6, sawdust*16 % 85], <item:lightmanscurrency:item_trader_interface>, 0, 2000);
-<recipetype:create:crushing>.addRecipe("crush_network_interface", [scrap*8, sawdust*16 % 75], <item:lightmanscurrency:item_trader_interface>, 100);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_network_interface", [scrap*6, sawdust*16 % 85, pearl % 60], <item:lightmanscurrency:item_trader_interface>, 0, 2000);
+<recipetype:create:crushing>.addRecipe("crush_network_interface", [scrap*8, sawdust*16 % 75, ender % 50], <item:lightmanscurrency:item_trader_interface>, 100);
 
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_trading_terminal", [cobblestone*2 % 40, scrap*2, shard*4, pearl % 60], <item:lightmanscurrency:terminal>, 0, 2000);
 <recipetype:create:crushing>.addRecipe("crush_trading_terminal", [cobblestone*2 % 50, scrap*3, shard*6, ender % 50], <item:lightmanscurrency:terminal>, 100);

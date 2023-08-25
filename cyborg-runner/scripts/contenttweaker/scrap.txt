@@ -1,0 +1,10 @@
+# Adds recipes for Scrap
+
+print("scrap.zs loading...");
+
+# Iron
+furnace.addRecipe(<output>, <input>, XP[F]);
+
+
+
+print("scrap.zs loaded");

@@ -38,20 +38,26 @@ blastFurnace.removeByName("nethersdelight:iron_nugget_from_blasting_machete");
 blastFurnace.removeByName("farmersdelight:gold_nugget_from_blasting_knife");
 blastFurnace.removeByName("nethersdelight:gold_nugget_from_blasting_machete");
 
+var nugget = <item:minecraft:iron_nugget>;
+var gnugget = <item:minecraft:gold_nugget>;
+
 furnace.addRecipe("recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:vanilla:meltable_copper>.asIIngredient().anyDamage(), 0, 200);
 blastFurnace.addRecipe("blast_recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:vanilla:meltable_copper>.asIIngredient().anyDamage(), 0, 100);
 
-furnace.addRecipe("recycle_metal_item", <item:kubejs:small_scrap>, <tag:items:vanilla:meltable_metal>.asIIngredient().anyDamage(), 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_metal_item", <item:kubejs:small_scrap>, <tag:items:vanilla:meltable_metal>.asIIngredient().anyDamage(), 0.1, 100);
+furnace.addRecipe("recycle_iron_item", <item:kubejs:small_iron_scrap>, <tag:items:vanilla:meltable_iron>.asIIngredient().anyDamage(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_iron_item", <item:kubejs:small_iron_scrap>, <tag:items:vanilla:meltable_iron>.asIIngredient().anyDamage(), 0.1, 100);
 
-furnace.addRecipe("recycle_small_metal_item", <item:minecraft:iron_nugget>, <tag:items:vanilla:meltable_metal_small>.asIIngredient(), 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_small_metal_item", <item:minecraft:iron_nugget>, <tag:items:vanilla:meltable_metal_small>.asIIngredient(), 0.1, 100);
+furnace.addRecipe("recycle_small_iron_item", nugget, <tag:items:vanilla:meltable_iron_small>.asIIngredient(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_small_iron_item",nugget, <tag:items:vanilla:meltable_iron_small>.asIIngredient(), 0.1, 100);
+
+furnace.addRecipe("recycle_big_iron_item", <item:kubejs:iron_scrap>, <tag:items:vanilla:meltable_iron_big>.asIIngredient(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_big_iron_item", <item:kubejs:iron_scrap>, <tag:items:vanilla:meltable_iron_big>.asIIngredient(), 0.1, 100);
 
 furnace.addRecipe("recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:vanilla:meltable_gold>.asIIngredient().anyDamage(), 0.3, 200);
 blastFurnace.addRecipe("blast_recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:vanilla:meltable_gold>.asIIngredient().anyDamage(), 0.3, 100);
 
-furnace.addRecipe("recycle_small_gold_item", <item:minecraft:gold_nugget>, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_small_gold_item", <item:minecraft:gold_nugget>, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 100);
+furnace.addRecipe("recycle_small_gold_item", gnugget, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 200);
+blastFurnace.addRecipe("blast_recycle_small_gold_item", gnugget, <tag:items:vanilla:meltable_gold_small>.asIIngredient(), 0.1, 100);
 
 blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:vanilla:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 150);
 blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:vanilla:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 200);

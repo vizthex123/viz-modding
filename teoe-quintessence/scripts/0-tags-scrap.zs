@@ -1,5 +1,6 @@
 # Adds meltable tags to various items
 # Used in the scrapping recipes I made
+#priority 10
 
 import crafttweaker.api.tag.MCTag;
 
@@ -111,8 +112,6 @@ print("0-tags-scrap.zs loading...");
 
 <tag:items:teoe:meltable_iron>.add(<item:essentials:item_chute>);
 
-<tag:items:teoe:meltable_iron>.add(<item:farmersdelight:iron_knife>);
-
 <tag:items:teoe:meltable_iron>.add(<item:fuel_canister:fuel_canister>);
 
 <tag:items:teoe:meltable_iron>.add(<item:quark:iron_button>);
@@ -174,8 +173,6 @@ print("0-tags-scrap.zs loading...");
 
 <tag:items:teoe:meltable_gold>.add(<item:create:controller_rail>);
 
-<tag:items:teoe:meltable_gold>.add(<item:farmersdelight:golden_knife>);
-
 <tag:items:teoe:meltable_gold>.add(<item:ironchest:gold_chest>);
 <tag:items:teoe:meltable_gold>.add(<item:ironchest:trapped_gold_chest>);
 <tag:items:teoe:meltable_gold>.add(<item:ironchest:iron_to_gold_chest_upgrade>);
@@ -204,8 +201,6 @@ print("0-tags-scrap.zs loading...");
 <tag:items:teoe:meltable_diamond>.add(<item:aquamirae:fin_cutter>);
 <tag:items:teoe:meltable_diamond>.add(<item:aquamirae:maze_rose>);
 <tag:items:teoe:meltable_diamond>.add(<item:aquamirae:poisoned_chakra>);
-
-<tag:items:teoe:meltable_diamond>.add(<item:farmersdelight:diamond_knife>);
 
 <tag:items:teoe:meltable_diamond>.add(<item:ironchest:diamond_chest>);
 <tag:items:teoe:meltable_diamond>.add(<item:ironchest:trapped_diamond_chest>);
@@ -240,7 +235,6 @@ print("0-tags-scrap.zs loading...");
 <tag:items:teoe:meltable_netherite>.add(<item:aquamirae:divider>);
 <tag:items:teoe:meltable_netherite>.add(<item:aquamirae:whisper_of_the_abyss>);
 
-<tag:items:teoe:meltable_netherite>.add(<item:farmersdelight:netherite_knife>);
 
 
 # Platinum

@@ -12,7 +12,55 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
+/*
+# Adds recipes to use the Toilary Mold to craft Coins
+// Use for the Toilary Mold
+mods.extendedcrafting.TableCrafting.addShapeless(0, <jjcoin:copper_coin>*3, [<contenttweaker:coin_mold>, <minecraft:lava_bucket>, <ore:ingotCopper>, <ore:ingotCopper>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <jjcoin:silver_coin>*3, [<contenttweaker:coin_mold>, <minecraft:lava_bucket>, <ore:ingotSilver>, <ore:ingotSilver>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <jjcoin:gold_coin>*2, [<contenttweaker:coin_mold>, <minecraft:lava_bucket>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]);
+mods.extendedcrafting.TableCrafting.addShapeless(0, <jjcoin:diamond_coin>*5, [<contenttweaker:coin_mold>, <minecraft:lava_bucket>, <ore:ingotPlatinum>]);
 
+
+// Copper Coin
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotCopper>, <ore:ingotCopper>])
+  .setFluid(<liquid:lava> * 500)
+  .addOutput(<jjcoin:copper_coin>*3)
+  .addTool(<ore:artisansBeaker>, 15)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
+  .setName("copper_coin")
+  .create();
+
+// Silver Coin
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotSilver>, <ore:ingotSilver>])
+  .setFluid(<liquid:lava> * 500)
+  .addOutput(<jjcoin:silver_coin>*3)
+  .addTool(<ore:artisansBeaker>, 25)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
+  .setName("iron_coin")
+  .create();
+
+// Gold Coin
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotGold>, <ore:ingotGold>])
+  .setFluid(<liquid:lava> * 500)
+  .addOutput(<jjcoin:gold_coin>*3)
+  .addTool(<ore:artisansBeaker>, 35)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
+  .setName("gold_coin")
+  .create();
+
+// Platinum Coin
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotPlatinum>])
+  .setFluid(<liquid:lava> * 1000)
+  .addOutput(<jjcoin:diamond_coin>*3)
+  .addTool(<ore:artisansBeaker>, 50)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
+  .setName("platinum_coin")
+  .create();
+*/
 
 # New Furnace recipes
 # Iron Furnace is in basic.zs
@@ -313,53 +361,6 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<thermalfoundation:material:100> * 2)
   .addRequirement(FTGU.anyOf(["cyborg:crafting/smithing", "cyborg:technology/thermal_technology"]))
   .setName("constantan")
-  .create();
-
-
-
-# Toilary Recipes
-// Copper
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotCopper>, <ore:ingotCopper>])
-  .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansHammer>, 3)
-  .addTool(<ore:artisansFile>, 5)
-  .addOutput(<jjcoin:copper_coin> * 3)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
-  .setName("copper_toilary")
-  .create();
-
-// Silver
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotSilver>, <ore:ingotSilver>])
-  .setFluid(<liquid:lava> * 750)
-  .addTool(<ore:artisansHammer>, 5)
-  .addTool(<ore:artisansFile>, 7)
-  .addOutput(<jjcoin:silver_coin> * 3)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
-  .setName("silver_toilary")
-  .create();
-
-// Gold
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<contenttweaker:coin_mold>, <minecraft:gold_ingot>, <minecraft:gold_ingot>])
-  .setFluid(<liquid:lava> * 500)
-  .addTool(<ore:artisansHammer>, 7)
-  .addTool(<ore:artisansFile>, 10)
-  .addOutput(<jjcoin:gold_coin> * 3)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
-  .setName("gold_toilary")
-  .create();
-
-// Platinum
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<contenttweaker:coin_mold>, <ore:ingotPlatinum>, <ore:ingotPlatinum>])
-  .setFluid(<liquid:lava> * 2000)
-  .addTool(<ore:artisansHammer>, 10)
-  .addTool(<ore:artisansFile>, 15)
-  .addOutput(<jjcoin:diamond_coin> * 3)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
-  .setName("platinum_toilary")
   .create();
 
 

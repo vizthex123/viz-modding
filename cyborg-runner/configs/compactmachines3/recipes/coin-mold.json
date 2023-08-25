@@ -4,6 +4,7 @@
   "target-count": 1,
   "catalyst": "minecraft:iron_ingot",
   "duration": 60,
+  "disabled": true,
 	
   "input-types": {
 	"c": { "id": "ceramics:clay_soft" }

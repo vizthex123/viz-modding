@@ -12,13 +12,15 @@ mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, 
 mods.thermalexpansion.Refinery.addRecipe(<fluid_output>, <item_output> % *, <fluid_input>, RF);
 * % chance from 1 - 100 (item outputs are optional)
 
+mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
+
+
 https://docs.blamejared.com/1.12/en/Mods/Modtweaker/ThermalExpansion/Redstone_Furnace
 */
 
-// Process Ancient Urns into Gold
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gold_ingot>, <pyramidplunder:urn>, 6000, <minecraft:gold_ingot>, 50);
-
-mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>*2, <pyramidplunder:urn>, 6000);
+// Induction Smelt obsidian ingots
+furnace.remove(<byg:obsidianingot>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<byg:obsidianingot>, <minecraft:obsidian>, <thermalfoundation:material:131>, 8000);
 
 // Alternate Compress Carbon Block recipe
 // Main one is in artisan_worktables.zs
@@ -37,9 +39,29 @@ mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*25, <minecraft:redstone>
 // Turn Spring Water into Water
 mods.thermalexpansion.Refinery.addRecipe(<liquid:water>*1000, <byg:mudballs> % 25, <liquid:springwater>*1000, 4000);
 
-// Turn Crysium into Cryotheum
-mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*25, <glacidus:crysium>, 8000);
-mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*250, <glacidus:crystal_block>, 24000);
+
+
+# Turn Glacidus items into various fluids (mainly Cryotheum)
+# Blocks gives 10x the amount, ores give 50% extra (rounded up to the nearest 5)
+
+// Crysium
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*25, <glacidus:crysium>, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*35, <glacidus:crysium_ore>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*250, <glacidus:crystal_block>, 16000);
+
+// Opesium
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*100, <glacidus:opesium>, 6000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*150, <glacidus:opesium_ore>, 9000);
+
+// Glacidite
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*50, <glacidus:glacidite_fragment>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:cryotheum>*75, <glacidus:glacidite_ore>, 12000);
+
+ // Convert Eukeite into Sapphires and Lapis
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:4>*2, <glacidus:eukeite>, 2000, <projectred-core:resource_item:201> , 50);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:4>*6, <glacidus:eukeite_ore>, 4000, <projectred-core:resource_item:201> , 75);
+
+
 
 // Turn XP Ore into XP
 mods.thermalexpansion.Crucible.addRecipe(<liquid:experience>*50, <xp_ore:xp_ore_drained>, 4000);

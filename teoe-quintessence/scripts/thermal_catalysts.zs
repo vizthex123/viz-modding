@@ -35,7 +35,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 
 
 # Phytogenic Insolator
-<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:basalt_ash>, 1.0, 1.15, 0.35, 0.75, 0.55);
+<recipetype:thermal:insolator_catalyst>.addCatalyst("ash", <item:byg:subzero_ash_block>|<item:nourished_nether:ash_lump>, 1.0, 1.15, 0.35, 0.75, 0.55);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("hex_ash", <item:malum:hex_ash>, 1.25, 1.0, 0.35, 0.75, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sky_dust", <item:ae2:sky_dust>, 0.9, 1.0, 0.25, 1.0, 0.85);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("sawdust_clump_catalyst", <item:kubejs:sawdust_clump>, 1.1, 1.15, 0.85, 0.5, 0.7);

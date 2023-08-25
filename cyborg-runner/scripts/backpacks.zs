@@ -1,4 +1,4 @@
-# Fixes backpack progression
+# Changes backpack progression
 print("backpacks.zs loading...");
 /*
 recipes.remove(<>);
@@ -8,7 +8,7 @@ recipes.addShaped(<output>, [[<null>, <null>, <null>],
 
 <item>.addTooltip("Tooltip");
 */
-
+/*
 // Make the regular one use the OreDict & change ingredients
 recipes.remove(<packedup:basicbackpack>);
 recipes.addShaped(<packedup:basicbackpack>, [[<ore:stickWood>, <ore:string>, <ore:stickWood>],
@@ -45,5 +45,5 @@ recipes.remove(<packedup:obsidianbackpack>);
 recipes.addShaped(<packedup:obsidianbackpack>, [[<minecraft:obsidian>, <minecraft:leather>, <minecraft:obsidian>],
                                 			                     [<minecraft:obsidian>, <packedup:diamondbackpack>, <minecraft:obsidian>],
                                  			                     [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
-
+*/
 print("backpacks.zs loaded");

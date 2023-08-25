@@ -335,25 +335,6 @@ RecipeBuilder.get("chef")
 recipes.remove(<xlfoodmod:top_bun>);
 recipes.remove(<xlfoodmod:bottom_bun>);
 
-// Top
-RecipeBuilder.get("chef")
-  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>])
-  .setFluid(<liquid:water> * 125)
-  .addOutput(<xlfoodmod:top_bun>)
-  .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
-  .setName("top_bun")
-  .create();
-
-// Bottom
-RecipeBuilder.get("chef")
-  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>])
-  .setFluid(<liquid:water> * 125)
-  .addTool(<ore:artisansPan>, 1)
-  .addOutput(<xlfoodmod:bottom_bun>)
-  .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
-  .setName("bottom_bun")
-  .create();
-
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bread>])
   .addTool(<ore:artisansCuttingBoard>, 5)
@@ -361,6 +342,26 @@ RecipeBuilder.get("chef")
   .setExtraOutputOne(<xlfoodmod:bottom_bun>, 1.0)
   .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
   .setName("buns")
+  .create();
+
+	// Top
+RecipeBuilder.get("chef")
+  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>])
+  .setFluid(<liquid:water> * 125)
+  .addTool(<ore:artisansPan>, 1)
+  .addOutput(<xlfoodmod:top_bun>)
+  .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
+  .setName("top_bun")
+  .create();
+
+	// Bottom
+RecipeBuilder.get("chef")
+  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>])
+  .setFluid(<liquid:water> * 125)
+  .addTool(<ore:artisansPan>, 2)
+  .addOutput(<xlfoodmod:bottom_bun>*2)
+  .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
+  .setName("bottom_bun")
   .create();
 
 # Burgers
@@ -384,7 +385,7 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShaped([
     [null, <xlfoodmod:top_bun>, null],
-    [<xlfoodmod:cheese>, <xlfoodmod:ground_beef>, <xlfoodmod:cucumber>],
+    [<xlfoodmod:cheese>, <xlfoodmod:ground_beef>, <xlfoodmod:lettuce>|<xlfoodmod:cucumber>],
     [null, <xlfoodmod:bottom_bun>, null]])
   .addTool(<ore:artisansKnife>, 4)
   .addOutput(<xlfoodmod:cheeseburger>)
@@ -393,7 +394,7 @@ RecipeBuilder.get("chef")
   .create();
 
 RecipeBuilder.get("chef")
-  .setShapeless([<xlfoodmod:cheeseburger>, <xlfoodmod:cheese>])
+  .setShapeless([<xlfoodmod:hamburger>, <xlfoodmod:cheese>])
   .addTool(<ore:artisansKnife>, 2)
   .addOutput(<xlfoodmod:cheeseburger>)
   .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
@@ -404,7 +405,7 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShaped([
     [null, <xlfoodmod:top_bun>, null],
-    [<xlfoodmod:lettuce>, <minecraft:cooked_chicken>, <xlfoodmod:hot_sauce>],
+    [<xlfoodmod:lettuce>|<xlfoodmod:cucumber>, <minecraft:cooked_chicken>, <xlfoodmod:hot_sauce>],
     [null, <xlfoodmod:bottom_bun>, null]])
   .addTool(<ore:artisansKnife>, 6)
   .addOutput(<xlfoodmod:chickenburger>)
@@ -889,7 +890,7 @@ RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <xlfoodmod:cucumber>, <xlfoodmod:cucumber>])
   .setFluid(<liquid:water> * 100)
   .addOutput(<xlfoodmod:cucumber_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("cucumber_soup")
   .create();
@@ -899,7 +900,7 @@ RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <xlfoodmod:tomato>, <xlfoodmod:tomato>, <ore:dustSalt>])
   .setFluid(<liquid:milk> * 50)
   .addOutput(<xlfoodmod:tomato_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("tomato_soup_milk")
   .create();
@@ -908,7 +909,7 @@ RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <xlfoodmod:tomato>, <xlfoodmod:tomato>, <ore:dustSalt>])
   .setFluid(<liquid:water> * 500)
   .addOutput(<xlfoodmod:tomato_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("tomato_soup_water")
   .create();
@@ -918,7 +919,7 @@ RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <xlfoodmod:cucumber>, <xlfoodmod:onion>, <minecraft:carrot>, <minecraft:potato>, <xlfoodmod:tomato>, <xlfoodmod:pepper>])
   .setFluid(<liquid:milk> * 50)
   .addOutput(<xlfoodmod:vegetable_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("vegetable_soup_milk")
   .create();
@@ -927,7 +928,7 @@ RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <xlfoodmod:cucumber>, <xlfoodmod:onion>, <minecraft:carrot>, <minecraft:potato>, <xlfoodmod:tomato>, <xlfoodmod:pepper>])
   .setFluid(<liquid:water> * 500)
   .addOutput(<xlfoodmod:vegetable_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("vegetable_soup_water")
   .create();
@@ -936,7 +937,7 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:bowl>, <minecraft:cooked_chicken>, <minecraft:carrot>])
   .addOutput(<xlfoodmod:chicken_soup>)
-  .addTool(<ore:artisansBurner>, 3)
+  .addTool(<ore:artisansPan>, 3)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("chicken_soup")
   .create();
@@ -945,7 +946,7 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <minecraft:cooked_beef>, <xlfoodmod:onion>, <minecraft:carrot>])
   .addOutput(<xlfoodmod:beef_stew>)
-  .addTool(<ore:artisansBurner>, 5)
+  .addTool(<ore:artisansPan>, 5)
   .addRequirement(FTGU.anyOf(["cyborg:survival/advanced_cooking", "cyborg:crafting/chef"]))
   .setName("beef_stew")
   .create();
@@ -954,7 +955,7 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:pumpkin>, <minecraft:carrot>, <xlfoodmod:ground_beef>, <minecraft:potato>, <xlfoodmod:pepper>])
   .addOutput(<xlfoodmod:pumpkin_stew>)
-  .addTool(<ore:artisansBurner>, 5)
+  .addTool(<ore:artisansPan>, 5)
   .addRequirement(FTGU.anyOf(["cyborg:survival/basic_cooking", "cyborg:crafting/chef"]))
   .setName("pumpkin_stew")
   .create();

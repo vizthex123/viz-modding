@@ -1,0 +1,136 @@
+MODPACK NAME: The Cyborg Runner
+MADE BY: vizthex
+
+worldborder is set at 64!
+
+Dimension Ores:
+
+Alien Jungle - Coal (excluding Crimson, blacklist nibrock drops), Iron, Tin, Ruby, Electrotine (rare), XP Ore. No large ore deposists.
+Glacidus - Only its ores
+
+
+Cyberware UI:
+- Battery: 40, 256
+- Armour thing: 335, -20
+- Eye thing stays at the default position
+- Make it all purple
+
+
+Resources for base:
+- Lots of iron & diamonds
+- 2 Stacks of cobble & gravel, 1 of sand (uses oredict)
+- 2 stacks of obsidian
+- 1 of each turret used (rail, machine gun, grenade, rocket)
+- 4 T5 bases
+- 20 redstone fluxducts
+- 2x any Extra Utils generator (detect not submit)
+- 4 glowstone blocks
+- 1 mechanical toolbox, & 2 of each tool needed
+
+
+
+dark oak & jungle wood in alien forest
+9 also amaranth wood
+- also prismarine, glowstone, orange glazed terracotta, concrete
+
+Personal Log Locations:
+#2 - Kill 1 pig
+#3 - Kill 1 sheep
+
+
+
+Advise to bring add-ons/upgrades - final battle
+
+/tp @a 3421 73 -695 - Starting area anti-cheat
+
+
+Non-pilot lore is written from the Runner's perspective.
+
+
+How to use tellraw:
+Make sure it's a team reward
+
+/tellraw @p {"text":"MSG", "color":"white"}
+
+
+
+
+
+Colours:
+White - Your player
+Green - Dr. Wessex
+Gray - Black Market Dealer
+Red - IPC Guards
+Dark Red - Defamont
+
+
+
+OVERVEW:
+You're an escaped cyborg convict in hiding from the people who arrested you.
+A few researchers help you out, as well as some black market dealers and double-agents.
+
+Trello board: https://trello.com/b/IBMvD0r8/the-cyborg-runner
+
+{cyberwareQuality:"cyberware.quality.scavenged"}
+
+
+Chemist Fluid Default Colour: 476147
+
+Starting Cyberware: (all salvaged)
+
+HUDLens
+Left Cyberarm
+Cortical Stack
+Marrow Battery
+Damaged Solarskin (custom item that needs to be crafted into the regular one)
+
+
+
+CHARACTERS:
+
+[M] Dr. Marlow Wessex - Cyborg researcher, gives you quests. English.
+[M] Fredrick Defamont - Head of TCDC. Is a cyborg himself, because hypocrisy rules!.
+
+[F] Dr. Tanaka - First name unknown. Works for Future Vision.
+[F] Dr. Jones - First name George. Works for Future Vision. Newest member of the team.
+
+[Company] Future Vision - Researches Cyberware items, and cybernetics in general
+[Company] VaniTech - Makes vanity items and augments. Doesn't care who distributes, as long as they profit
+[Company] CyberNOW - Competitor to Future Vision
+
+[Organization] The Cyborg Defamation Cause (TCDC) - Endevours to rid the world of cyborgs. Very elitist. (Pretty much villians)
+[Secret Organization] Black Market - Store you can buy things from.
+
+
+BALANCING:
+
+Translocators - early-game item movement
+- Tier List:
+Translocators
+Hopper Pipes
+Thermal Dynamics
+
+AE2 - Super late-game storage (will need to change recipes. Maybe make it use some Cyberware items?)
+
+
+
+RECURRENT COMPLEX STRUCTURES:
+
+Abandoned Building With Big Dungeon Tree - https://complex.ivorius.de/submissions/79
+Thermal Expansion Workshop - https://complex.ivorius.de/submissions/101
+
+
+MISCELLANEOUS:
+
+Dimension IDs: (Default ID)
+
+-11325 - Deep Dark
+-9999 - Quarry Dimension 
+-1 - Nether
+0 - Overworld
+1 - End
+2 - Spatial Dimension
+3 - Alien Jungle
+
+84 - Glacidius
+144 - Compact Machine Interior

@@ -47,39 +47,36 @@ chat_entitydeath={minecraft}
 #Message shown in minecraft when hovering over a discord users name from 'chat_minecraft' and 'chat_minecraft_bot' messages.
 chat_mention_hover=Mention
 
-#Message sent when the console bot is ready for commands.
-consolebot_ready=Console Bot is ready!
-
 #Message sent when the server starts booting, and the bot is loaded.
-chat_server_boot=Server is booting!
+chat_server_boot=
 
 #Message sent when the server is done booting.
-chat_server_ready=Server is ready for players!
+chat_server_ready=
 
 #Message sent when the server is done booting.
-chat_server_stop=Server has stopped.
+chat_server_stop=
 
 #Format of the server chats topic.
 #{playerCount} for online player count.
 #{playerLimit} for player limit.
-topic_text=There are {playerCount} players online.
+topic_text={playerCount} Quintessal Quality Questers online.
 
 #Topic text while the server is booting.
-topic_booting=Server is booting.
+topic_booting=Server loading...
 
 #Topic text when the server is stopped. May not always trigger before the bot is stopped.
-topic_offline=Server is offline.
+topic_offline=Server loaded.
 
 #Format of the bots activity text.
 #{playerCount} for online player count.
 #{playerLimit} for player limit.
-activity_text={playerCount} players online
+activity_text={playerCount} Quintessal Quality Questers online.
 
 #Activity text while the server is booting.
-activity_booting=Server is booting.
+activity_booting=Server loading...
 
 #Activity text when the server is stopped. May not always trigger before the bot is stopped.
-activity_offline=Server is offline.
+activity_offline=Server loaded
 
 #Error message sent when a player attempts to run a command they don't have permission for.
 error_permissions=You do not have permission to run that command.

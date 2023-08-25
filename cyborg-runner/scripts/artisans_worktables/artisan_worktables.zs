@@ -52,7 +52,7 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansHammer>, 30)
   .addTool(<ore:artisansHandsaw>, 30)
   .addOutput(<artisanworktables:mechanical_toolbox>)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/better_toolbox"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/toolbox_auto"]))
   .setName("mechanical_toolbox")
   .create();
 
@@ -64,7 +64,7 @@ RecipeBuilder.get("basic")
   .addTool(<ore:artisansHammer>, 25)
   .addTool(<ore:artisansHandsaw>, 25)
   .addOutput(<artisanworktables:mechanical_toolbox>)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/better_toolbox"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/toolbox_auto"]))
   .setName("mechanical_toolbox_electrotine")
   .create();
 
@@ -92,7 +92,6 @@ RecipeBuilder.get("basic")
     [<ore:plankWood>, <ore:logWood>, <ore:plankWood>],
     [<ore:fenceWood>, <ore:craftingTableWood>, <ore:fenceWood>],
     [<ore:fenceWood>, null, <ore:fenceWood>]])
-  .setFluid(<liquid:water> * 500)
   .addTool(<ore:artisansHandsaw>, 15)
   .addOutput(<artisanworktables:worktable:1>)
   .addRequirement(FTGU.allOf(["cyborg:crafting/carpentry"]))
@@ -103,9 +102,9 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("basic")
   .setShaped([
     [null, <minecraft:stone_slab>|<minecraft:stone_slab:5>, null],
-    [<ore:stone>, <artisanworktables:worktable:5>, <ore:stone>],
-    [<ore:logWood>, null, <ore:logWood>]])
-  .setFluid(<liquid:water> * 500)
+    [<ore:logWood>, <artisanworktables:worktable:5>, <ore:logWood>],
+    [<ore:stone>, null, <ore:stone>]])
+  .setFluid(<liquid:water> * 1000)
   .addTool(<ore:artisansHammer>, 20)
   .addOutput(<artisanworktables:worktable:2>)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
@@ -120,6 +119,7 @@ RecipeBuilder.get("basic")
     [<ore:bricksStone>, null, <ore:bricksStone>]])
   .setFluid(<liquid:water> * 2000)
   .addTool(<ore:artisansHammer>, 25)
+  .addTool(<ore:artisansChisel>, 10)
   .addOutput(<artisanworktables:workstation:2>)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("mason_workstation")
@@ -281,25 +281,12 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:ingotSteel>, <ore:blockSteel>, <ore:ingotSteel>],
     [<minecraft:nether_brick>, <artisanworktables:worktable:9>, <minecraft:nether_brick>],
-    [<minecraft:nether_brick_fence>, <openblocks:tank>, <minecraft:nether_brick_fence>]])
+    [<minecraft:nether_brick_fence>, null, <minecraft:nether_brick_fence>]])
   .addTool(<ore:artisansHammer>, 35)
   .addTool(<ore:artisansSpanner>, 25)
   .addOutput(<artisanworktables:workstation:9>)
   .addRequirement(FTGU.allOf(["cyborg:crafting/science"]))
   .setName("science_workstation")
-  .create();
-
-RecipeBuilder.get("engineer")
-  .setShaped([
-    [<ore:ingotSteel>, <ore:blockSteel>, <ore:ingotSteel>],
-    [<minecraft:nether_brick>, <artisanworktables:worktable:9>, <minecraft:nether_brick>],
-    [<minecraft:nether_brick_fence>, <thermalexpansion:tank>, <minecraft:nether_brick_fence>]])
-  .addTool(<ore:artisansHammer>, 30)
-  .addTool(<ore:artisansSpanner>, 20)
-  .setSecondaryIngredients([<thermalexpansion:tank>])
-  .addOutput(<artisanworktables:workstation:9>)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/science"]))
-  .setName("science_workstation_te")
   .create();
 
 

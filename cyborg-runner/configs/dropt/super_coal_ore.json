@@ -14,19 +14,7 @@
 	{
 		"item": {
 			"items": [
-			"nibrockscoal:iron_coal"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 65
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:gold_coal"
+			"nibrockscoal:gold_coal*2"
 			]
 		},
 		"selector": {
@@ -44,18 +32,6 @@
 		"selector": {
 		 "weight": {
 		  "value": 25
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"cm:crimson_coal"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 30
 		  }
 		}
 	}

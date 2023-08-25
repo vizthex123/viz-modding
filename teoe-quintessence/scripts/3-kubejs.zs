@@ -29,10 +29,13 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 
 # Crushed Ores
 # Recipes to make them are in create.zs
-blastFurnace.addRecipe("blast_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 200);
-blastFurnace.addRecipe("blast_crushed_pendorite", <item:byg:pendorite_scraps>, <item:kubejs:crushed_pendorite>, 0.45, 140);
-blastFurnace.addRecipe("blast_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 1.5, 400);
+blastFurnace.addRecipe("blast_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 100);
+blastFurnace.addRecipe("blast_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 2.0, 100);
+blastFurnace.addRecipe("blast_crushed_pendorite", <item:byg:pendorite_scraps>, <item:kubejs:crushed_pendorite>, 0.45, 100);
 
+<recipetype:thermal:furnace>.addRecipe("redstone_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 2000);
+<recipetype:thermal:furnace>.addRecipe("redstone_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 2.0, 2000);
+<recipetype:thermal:furnace>.addRecipe("redstone_crushed_pendorite", <item:byg:pendorite_scraps>, <item:kubejs:crushed_pendorite>, 0.45, 2000);
 
 
 # Craft Small Scrap into Scrap
@@ -85,6 +88,10 @@ blastFurnace.addRecipe("blast_travertine", <item:kubejs:quicklime>, <item:byg:tr
 
 # Glue
 craftingTable.addShapeless("glue", <item:kubejs:glue>, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_bone", <item:kubejs:glue>, [<item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_necrotic_bone", <item:kubejs:glue>, [<item:tconstruct:necrotic_bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_rib_bone", <item:kubejs:glue>*2, [<item:reliquary:rib_bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_sharp_bone", <item:kubejs:glue>, [<item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:minecraft:paper>]);
 craftingTable.addShapeless("glue_honeycomb", <item:kubejs:glue>, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:paper>]);
 
 // Super Glue (Create)

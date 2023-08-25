@@ -98,14 +98,19 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:artificial_dragon_egg>,
 	[[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>],
 	[<tag:items:teoe:magic_dust>, <tag:items:teoe:egg>, <tag:items:teoe:magic_dust>],
-	[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>]]);
-	
+	[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>]], 120);
+
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <item:kubejs:artificial_dragon_egg>,
 	[[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>],
-	[<item:botania:dragonstone>, <tag:items:teoe:egg>],
+	[<item:botania:dragonstone>, <tag:items:teoe:egg>, <item:botania:dragonstone>],
 	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]], 300);
 
-
+# Double Enhanced Ender output
+mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:enhanced_ender_ingot>);
+mods.extendedcrafting.EnderCrafting.addShaped("enhanced_ender", <item:extendedcrafting:enhanced_ender_ingot>*8,
+	[[<item:minecraft:air>, <item:extendedcrafting:ender_ingot>, <item:minecraft:air>], 
+	[<item:extendedcrafting:ender_ingot>, <item:extendedcrafting:ender_star>, <item:extendedcrafting:ender_ingot>], 
+	[<item:minecraft:air>, <item:extendedcrafting:ender_ingot>, <item:minecraft:air>]]);
 
 # New Enchanted Golden Apple recipe
 # Replaces the one from Apotheosis
@@ -120,24 +125,38 @@ mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item
 	[<item:lightmanscurrency:coin_gold>, <tag:items:teoe:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:teoe:shard>, <item:lightmanscurrency:coin_gold>]]);
 
 
-# Ultimate Ingot recipe
+# Ultimate Ingot recipes
 mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*4,
 	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>],
-	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>|<item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>|<item:byg:pendorite_ingot>, <item:botania:gaia_ingot>], 
+	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>], 
 	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:twilightforest:carminite>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>],
-	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>|<item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>|<item:byg:pendorite_ingot>, <item:botania:gaia_ingot>],
-	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:black_iron_ingot>|<item:extendedcrafting:redstone_ingot>|<item:extendedcrafting:ender_ingot>|<item:extendedcrafting:enhanced_ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
+	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>],
+	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
+
+mods.extendedcrafting.TableCrafting.addShaped("enhanced_ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*8,
+	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>],
+	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>], 
+	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:extendedcrafting:enhanced_ender_ingot>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>],
+	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>],
+	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
+
+mods.extendedcrafting.TableCrafting.addShaped("evil_ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*64,
+	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>],
+	[<item:botania:gaia_ingot>, <item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:byg:pendorite_ingot>, <item:botania:gaia_ingot>], 
+	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:evil_ingot>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>],
+	[<item:botania:gaia_ingot>, <item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:byg:pendorite_ingot>, <item:botania:gaia_ingot>],
+	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
 
 
 # Quintessence
 mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:quintessence>,
-	[[<tag:items:teoe:tape_measure>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:packagedauto:me_package_component>],
-	[<item:minecraft:air>, <item:packingtape:tape>.anyDamage(), <item:minecraft:air>, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:ultimate_energy_pipe>, <item:minecraft:air>, <item:rangedpumps:pump>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:ftbquests:book>, <item:quantumquarryplus:filter_upgrade>|<item:quantumquarryplus:pump_upgrade>, <item:apotheosis:ender_library>, <item:tconstruct:plate_chestplate>.anyDamage(), <tag:items:elevatorid:elevators>, <item:minecraft:air>, <item:minecraft:air>],
+	[[<tag:items:teoe:tape_measure>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:packingtape:tape>.anyDamage(), <item:minecraft:air>, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:advanced_item_pipe>|<item:refinedpipes:advanced_extractor_attachment>, <item:minecraft:air>, <item:rangedpumps:pump>, <tag:items:elevatorid:elevators>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:ftbquests:book>, <item:quantumquarryplus:filter_upgrade>|<item:quantumquarryplus:pump_upgrade>, <item:apotheosis:ender_library>, <item:tconstruct:plate_chestplate>.anyDamage(), <item:tesseract:tesseract>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:soul_quartz_block>, <item:lightmanscurrency:coin_netherite>, <item:minecraft:air>],
 	[<item:create:blaze_cake>, <item:naturesaura:end_city_finder>, <item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:the_ultimate_ingot>, <item:thermal:upgrade_augment_3>, <item:aquamirae:three_bolt_helmet>.anyDamage(), <item:chickenchunks:spot_loader>],
-	[<item:minecraft:air>, <item:reliquary:infernal_chalice>, <item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:wormhole:portal_stabilizer>, <item:storagedrawers:drawer_key>|<item:storagedrawers:quantify_key>|<item:storagedrawers:shroud_key>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:ironchest:obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:reliquary:infernal_chalice>, <item:minecraft:netherite_block>|<item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:wormhole:portal_stabilizer>, <item:storagedrawers:drawer_key>|<item:storagedrawers:quantify_key>|<item:storagedrawers:shroud_key>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:ironchest:obsidian_chest>|<item:ironchest:trapped_obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:easypaxellite:netherite_paxel>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:squarry:powered_quarry>, <item:minecraft:air>, <item:minecraft:air>, <item:the_bumblezone:honey_compass>, <item:minecraft:air>],
 	[<item:quark:flamerang>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:deepresonance:generator_controller>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:ae2:quantum_ring>]]);
 

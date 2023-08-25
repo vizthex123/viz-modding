@@ -48,9 +48,9 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.addFuel("carminite_fuel", <item:twilightforest:carminite>, 75000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("wrappist_fuel", <item:geode:wrappist_shard>, 65000);
+<recipetype:thermal:lapidary_fuel>.addFuel("soulstone_fuel", <item:malum:processed_soulstone>, 25000);
 <recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz_fuel", <item:nourished_nether:soul_quartz>, 60000);
 <recipetype:thermal:lapidary_fuel>.addFuel("dimshard_fuel", <item:rftoolsbase:dimensionalshard>, 250000);
-<recipetype:thermal:lapidary_fuel>.addFuel("soulstone_fuel", <item:malum:processed_soulstone>, 25000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <tag:items:teoe:corundum>.asIIngredient(), 30000);
 

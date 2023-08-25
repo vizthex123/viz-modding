@@ -14,6 +14,18 @@
 	{
 		"item": {
 			"items": [
+			"minecraft:coal*4"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 10
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
 			"nibrockscoal:iron_coal*3"
 			]
 		},

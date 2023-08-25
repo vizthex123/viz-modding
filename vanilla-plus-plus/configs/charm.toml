@@ -133,7 +133,7 @@
 #Player-only pressure plates crafted using gilded blackstone.
 "PlayerPressurePlates Enabled" = true
 #Allows crafting from inventory if the player has a crafting table in their inventory.
-"PortableCrafting Enabled" = true
+"PortableCrafting Enabled" = false
 #Right-click with a hoe to quickly harvest and replant a fully-grown crop.
 "QuickReplant Enabled" = true
 #Raid horns are sometimes dropped from raid leaders and can be used to call off or start raids.
@@ -166,7 +166,7 @@
 #Allows potions to stack.
 "StackablePotions Enabled" = true
 #Allows stews to stack.
-"StackableStews Enabled" = true
+"StackableStews Enabled" = false
 #A stray has a chance to drop blue ice when killed.
 "StraysDropBlueIce Enabled" = true
 #Strays spawn anywhere within their biome rather than just the surface.

@@ -8,14 +8,14 @@
 	#The maximum number of notifications each player can have before old entries are deleted.
 	#Lower if you encounter packet size problems.
 	#Range: > 0
-	notificationLimit = 250
+	notificationLimit = 500
+	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
+	#If disabled, illegally broken traders will throw their items on the ground, and can thus be griefed by modded machines.
+	ejectIllegalBreaks = true
 	#Determines whether or not coins should be craftable via the Coin Minting Machine.
 	canMintCoins = false
 	#Determines whether or not coins can be melted back into their source material in the Coin Minting Machine.
 	canMeltCoins = false
-	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
-	#If disabled, illegally broken traders will throw their items on the ground, and can thus be griefed by modded machines.
-	ejectIllegalBreaks = true
 
 	#Specific Coin Minting Settings.
 	[server.coin_minting]
@@ -115,15 +115,15 @@
 		#If disabled after players have interacted with it, items & money in the auction house cannot be accessed until re-enabled.
 		#If disabled, it is highly recommended that you also disable the 'crafting.allowAuctionStandCrafting' option in the common config.
 		enabled = true
-		#The maximum number of days an auction can be carried out.
-		#Range: > 1
-		maxDuration = 30
-		#The minimum number of days an auction can be carried out.
-		#Range: > 0
-		minDuration = 0
 		#Whether the Auction House will appear in the trading terminal.
 		#If false, you will only be able to access the Auction House from an Auction Stand.
 		visibleOnTerminal = true
+		#The minimum number of days an auction can be carried out.
+		#Range: > 0
+		minDuration = 0
+		#The maximum number of days an auction can be carried out.
+		#Range: > 1
+		maxDuration = 30
 
 	#Discord bot settings. Requires lightmansdiscord v0.0.3.0+ to use.
 	[server.discord]
@@ -145,7 +145,7 @@
 			#Requires that auction house creation notifications also be enabled.
 			auctionHousePersistentCreations = true
 			#Whether a notification will appear in the currency bot channel when an Auction is cancelled in the Auction House.
-			auctionHouseCancelled = false
+			auctionHouseCancelled = true
 			#Whether a notification will appear in the currency bot channel when an Auction is completed and had a bidder.
 			auctionHouseWon = true
 

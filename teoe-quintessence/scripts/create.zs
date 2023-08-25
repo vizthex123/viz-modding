@@ -55,10 +55,10 @@ default time for both is 2 - 3 seconds
 <recipetype:create:crushing>.addRecipe("crush_dusky_myalite", [<item:minecraft:popped_chorus_fruit> % 50], <item:quark:dusky_myalite>, 5);
 
 // Crush Scoria
-<recipetype:create:crushing>.addRecipe("crush_scoria", [<item:minecraft:andesite> % 20, <item:minecraft:calcite> % 10, <item:ae2:silicon> % 50, <item:nourished_nether:basalt_ash_pile>*2 % 20], <item:create:scoria>, 5);
+<recipetype:create:crushing>.addRecipe("crush_scoria", [<item:minecraft:andesite> % 20, <item:minecraft:calcite> % 10, <item:ae2:silicon> % 50, <item:nourished_nether:ash_lump>*2 % 20], <item:create:scoria>, 5);
 
 // Crush Scorchia
-<recipetype:create:crushing>.addRecipe("crush_scorchia", [<item:minecraft:andesite>, <item:nourished_nether:basalt_ash_pile>*4 % 75], <item:create:scorchia>, 5);
+<recipetype:create:crushing>.addRecipe("crush_scorchia", [<item:minecraft:andesite>, <item:nourished_nether:ash_lump>*4 % 75], <item:create:scorchia>, 5);
 
 // Crush Quartzite Sand into Sand & Quartz
 <recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 40], <item:byg:quartzite_sand>, 5);
@@ -142,9 +142,6 @@ default time for both is 2 - 3 seconds
 // Crush Jasper Diamond Ore
 <recipetype:create:crushing>.addRecipe("crush_jasper_diamond_ore", [<item:minecraft:diamond>, <item:minecraft:diamond> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_diamond_ore>, 5);
 
-
-// Crush Nether Iron Ore
-<recipetype:create:crushing>.addRecipe("crush_nether_iron_ore", [<item:minecraft:iron_nugget>*18, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:nourished_nether:nether_iron_ore>, 5);
 
 
 # Ore Crushing Recipes

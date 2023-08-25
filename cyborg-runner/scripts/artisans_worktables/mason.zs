@@ -13,6 +13,19 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
 
+// Wooden Storage Upgrade (Stone)
+recipes.remove(<improvedbackpacks:upgrade:1>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>],
+    [<ore:cobblestone>, <improvedbackpacks:blank_upgrade>, <ore:cobblestone>],
+    [null, <ore:cobblestone>, null]])
+  .addTool(<ore:artisansChisel>, 36)
+  .addOutput(<improvedbackpacks:upgrade:1>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry", "cyborg:survival/backpacks"]))
+  .setName("stone_upgrade")
+  .create();
+
 // Change the recipe for the Wetstone
 recipes.remove(<wetstone:wetstone>);
 RecipeBuilder.get("mason")
@@ -581,82 +594,5 @@ RecipeBuilder.get("mason")
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("smash_prismarine")
   .create();
-
-
-# Recycle Compact Machines
-// Tiny
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine>])
-  .addTool(<ore:artisansFile>, 3)
-  .addTool(<ore:artisansCutters>, 5)
-  .addOutput(<compactmachines3:wallbreakable> * 26)
-  .setExtraOutputOne(<extrautils2:ingredients:1>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_tiny")
-  .create();
-
-// Small
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine:1>])
-  .addTool(<ore:artisansFile>, 6)
-  .addTool(<ore:artisansCutters>, 10)
-  .addOutput(<compactmachines3:wallbreakable> * 26)
-  .setExtraOutputOne(<minecraft:iron_block>, 0.75)
-  .setExtraOutputTwo(<contenttweaker:faulty_circuit>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_small")
-  .create();
-
-// Normal
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine:2>])
-  .addTool(<ore:artisansFile>, 9)
-  .addTool(<ore:artisansCutters>, 15)
-  .addOutput(<compactmachines3:wallbreakable> * 26)
-  .setExtraOutputOne(<minecraft:gold_block>, 0.75)
-  .setExtraOutputTwo(<dse:components:10>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_normal")
-  .create();
-
-// Large
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine:3>])
-  .addTool(<ore:artisansFile>, 12)
-  .addTool(<ore:artisansCutters>, 20)
-  .addOutput(<compactmachines3:wallbreakable> * 64)
-  .setExtraOutputOne(<compactmachines3:wallbreakable> * 34, 1.0)
-  .setExtraOutputTwo(<dse:components:11>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_large")
-  .create();
-
-// Giant
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine:4>])
-  .addTool(<ore:artisansFile>, 15)
-  .addTool(<ore:artisansCutters>, 25)
-  .addOutput(<compactmachines3:wallbreakable> * 64)
-  .setExtraOutputOne(<compactmachines3:wallbreakable> * 34, 1.0)
-  .setExtraOutputTwo(<minecraft:diamond_block>, 0.75)
-  .setExtraOutputThree(<dse:components:12>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_giant")
-  .create();
-
-// Maximum
-RecipeBuilder.get("mason")
-  .setShapeless([<compactmachines3:machine:5>])
-  .addTool(<ore:artisansFile>, 18)
-  .addTool(<ore:artisansCutters>, 30)
-  .addOutput(<compactmachines3:wallbreakable> * 64)
-  .setExtraOutputOne(<compactmachines3:wallbreakable> * 34, 1.0)
-  .setExtraOutputTwo(<minecraft:emerald_block>, 0.75)
-  .setExtraOutputThree(<cyberware:component:3>, 0.5)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
-  .setName("recycle_machine_maximum")
-  .create();
-
-
 
 print("mason.zs loaded");

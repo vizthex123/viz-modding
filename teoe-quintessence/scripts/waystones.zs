@@ -43,7 +43,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("warp_plate", <item:waystone
 
 # New Warp Stone recipe
 craftingTable.remove(<item:waystones:warp_stone>);
-mods.extendedcrafting.CombinationCrafting.addRecipe("warp_stone", <item:waystones:warp_stone>, 1000, [<item:twilightforest:carminite>|<item:ob_core:witchstone_shard>, <tag:items:forge:dusts/ender_pearl>, <tag:items:forge:dusts/ender_pearl>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>], 10);
+mods.extendedcrafting.CombinationCrafting.addRecipe("warp_stone", <item:waystones:warp_stone>, 1000, [<item:botania:dragonstone>|<item:ob_core:witchstone_shard>|<item:twilightforest:carminite>, <tag:items:forge:dusts/ender_pearl>, <tag:items:forge:dusts/ender_pearl>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>, <item:waystones:warp_dust>], 10);
 
 # New Warp Dust recipes
 # Adds tag support, lets it use ender pearl dust, and has alternate recipes

@@ -1,5 +1,5 @@
 # Removes item recipes, but leaves them in JEI
-print("4_removed.zs loading...");
+print("2-removed.zs loading...");
 /*
 recipes.remove(<>);
 recipes.removeByRecipeName("");
@@ -68,4 +68,4 @@ recipes.remove(<chisel:block_charcoal2:1>);
 recipes.remove(<thermalfoundation:material:160>);
 recipes.removeByRecipeName("thermalexpansion:morb_2");
 
-print("4_removed.zs loaded");
+print("2-removed.zs loaded");

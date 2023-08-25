@@ -1,5 +1,7 @@
 # Adds OreDict entries to various items
-print("3_OreDict.zs loading...");
+#priority 100;
+
+print("1-OreDict.zs loading...");
 /*
 val NAME = <OreDict Entry>;
 ENTRYNAME.add(<item>);
@@ -7,6 +9,73 @@ ENTRYNAME.remove(<item>);
 <OREDICT ENTRY>.add(<ITEMNAME>);
 <OREDICT ENTRY>.remove(<ITEMNAME>);
 */
+
+<ore:carpet>.add(<minecraft:carpet>);
+
+# Ores
+val xp = <ore:oreXP>;
+
+xp.add(<xp_ore:xp_ore_drained>);
+xp.add(<xp_ore:xp_ore_tier_1>);
+xp.add(<xp_ore:xp_ore_tier_2>);
+xp.add(<xp_ore:xp_ore_tier_3>);
+xp.add(<xp_ore:xp_ore_tier_4>);
+xp.add(<xp_ore:xp_ore_tier_5>);
+
+<ore:oreCrimsonCoal>.add(<cm:crimson_coal_ore>);
+<ore:oreChaoticCoal>.add(<cm:chaotic_coal_ore>);
+
+<ore:orePrismarine>.add(<pristeel:prismarine_ore>);
+
+<ore:oreHeartCrystal>.add(<scalinghealth:crystalore>);
+
+<ore:oreGlacidite>.add(<glacidus:glacidite_ore>);
+<ore:oreEukeite>.add(<glacidus:eukeite_ore>);
+<ore:oreCrysium>.add(<glacidus:crysium_ore>);
+<ore:oreOpesium>.add(<glacidus:opesium_ore>);
+<ore:orePulsaton>.add(<glacidus:pulsaton_ore>);
+
+
+	// Dense
+<ore:oreDenseIron>.add(<densemetals:dense_iron_ore>);
+<ore:oreDenseCoal>.add(<densemetals:dense_coal_ore>);
+<ore:oreDenseGold>.add(<densemetals:dense_gold_ore>);
+<ore:oreDenseDiamond>.add(<densemetals:dense_diamond_ore>);
+<ore:oreDenseEmerald>.add(<densemetals:dense_emerald_ore>);
+<ore:oreDenseLapis>.add(<densemetals:dense_lapis_ore>);
+<ore:oreDenseRedstone>.add(<densemetals:dense_redstone_ore>);
+<ore:oreDenseQuartz>.add(<densemetals:dense_quartz_ore>);
+
+<ore:oreDenseAluminum>.add(<densemetals:dense_aluminum_ore>);
+<ore:oreDenseCopper>.add(<densemetals:dense_copper_ore>);
+<ore:oreDenseTin>.add(<densemetals:dense_tin_ore>);
+<ore:oreDenseLead>.add(<densemetals:dense_lead_ore>);
+<ore:oreDenseSilver>.add(<densemetals:dense_silver_ore>);
+<ore:oreDenseNickel>.add(<densemetals:dense_nickel_ore>);
+<ore:oreDenseMithril>.add(<densemetals:dense_mithril_ore>);
+<ore:oreDenseIridium>.add(<densemetals:dense_iridium_ore>);
+<ore:oreDensePlatinum>.add(<densemetals:dense_platinum_ore>);
+
+// Super
+<ore:oreSuperIron>.add(<superores:super_iron>);
+<ore:oreSuperCoal>.add(<superores:super_coal>);
+<ore:oreSuperGold>.add(<superores:super_gold>);
+<ore:oreSuperDiamond>.add(<superores:super_diamond>);
+<ore:oreSuperEmerald>.add(<superores:super_emerald>);
+<ore:oreSuperLapis>.add(<superores:super_lapis>);
+<ore:oreSuperRedstone>.add(<superores:super_redstone>);
+<ore:oreSuperQuartz>.add(<superores:super_quartz>);
+
+<ore:oreSuperAluminum>.add(<superores:super_aluminum>);
+<ore:oreSuperCopper>.add(<superores:super_copper>);
+<ore:oreSuperTin>.add(<superores:super_tin>);
+<ore:oreSuperLead>.add(<superores:super_lead>);
+<ore:oreSuperSilver>.add(<superores:super_silver>);
+<ore:oreSuperNickel>.add(<superores:super_nickel>);
+<ore:oreSuperIridium>.add(<superores:super_iridium>);
+<ore:oreSuperPlatinum>.add(<superores:super_platinum>);
+
+
 
 // Arrows
 val arrow = <ore:arrow>;
@@ -16,7 +85,6 @@ arrow.add(<simplyarrows:arrow_bone>);
 arrow.add(<simplyarrows:arrow_iron>);
 arrow.add(<simplyarrows:arrow_flame>);
 arrow.add(<simplyarrows:arrow_tnt>);
-
 
 // Seeds
 val seed = <ore:listAllseed>;
@@ -32,6 +100,19 @@ seed.add(<xlfoodmod:cucumber_seeds>);
 seed.add(<xlfoodmod:lettuce_seeds>);
 seed.add(<xlfoodmod:tomato_seeds>);
 seed.add(<xlfoodmod:strawberry_seeds>);
+
+
+// Mushrooms
+val glowshroom = <ore:glowshroom>;
+val mushroom = <ore:mushroom>;
+
+glowshroom.add(<natura:nether_glowshroom>);
+glowshroom.add(<natura:nether_glowshroom:1>);
+glowshroom.add(<natura:nether_glowshroom:2>);
+
+mushroom.add(<minecraft:brown_mushroom>);
+mushroom.add(<minecraft:red_mushroom>);
+// mushroom.add(<ore:glowshroom>);
 
 
 // Fruits
@@ -351,10 +432,74 @@ fence.add(<glacidus:underground_fence>);
 <ore:stickWood>.add(<glacidus:underground_stick>);
 
 
+
 // Stone Bricks
 <ore:bricksStone>.add(<minecraft:stonebrick:1>);
 <ore:bricksStone>.add(<minecraft:stonebrick:2>);
 <ore:bricksStone>.add(<minecraft:stonebrick:3>);
+
+
+
+// Gears
+val gears = <ore:gears>;
+
+gears.add(<extrautils2:ingredients:1>);
+gears.add(<redstonearsenal:material:96>);
+gears.add(<thermalfoundation:material:24>);
+gears.add(<thermalfoundation:material:25>);
+gears.add(<thermalfoundation:material:26>);
+gears.add(<thermalfoundation:material:27>);
+gears.add(<thermalfoundation:material:256>);
+gears.add(<thermalfoundation:material:257>);
+gears.add(<thermalfoundation:material:258>);
+gears.add(<thermalfoundation:material:259>);
+gears.add(<thermalfoundation:material:260>);
+gears.add(<thermalfoundation:material:261>);
+gears.add(<thermalfoundation:material:262>);
+gears.add(<thermalfoundation:material:263>);
+gears.add(<thermalfoundation:material:264>);
+gears.add(<thermalfoundation:material:288>);
+gears.add(<thermalfoundation:material:289>);
+gears.add(<thermalfoundation:material:290>);
+gears.add(<thermalfoundation:material:291>);
+gears.add(<thermalfoundation:material:292>);
+gears.add(<thermalfoundation:material:293>);
+gears.add(<thermalfoundation:material:294>);
+gears.add(<thermalfoundation:material:295>);
+
+
+
+// Plates
+val plates = <ore:plates>;
+
+plates.add(<dse:components:3>);
+plates.add(<dse:components:4>);
+plates.add(<dse:components:5>);
+plates.add(<dse:components:6>);
+plates.add(<dse:components:7>);
+plates.add(<dse:components:8>);
+
+plates.add(<redstonearsenal:material:128>);
+
+plates.add(<thermalfoundation:material:32>);
+plates.add(<thermalfoundation:material:33>);
+plates.add(<thermalfoundation:material:320>);
+plates.add(<thermalfoundation:material:321>);
+plates.add(<thermalfoundation:material:322>);
+plates.add(<thermalfoundation:material:323>);
+plates.add(<thermalfoundation:material:324>);
+plates.add(<thermalfoundation:material:325>);
+plates.add(<thermalfoundation:material:326>);
+plates.add(<thermalfoundation:material:327>);
+plates.add(<thermalfoundation:material:328>);
+plates.add(<thermalfoundation:material:352>);
+plates.add(<thermalfoundation:material:353>);
+plates.add(<thermalfoundation:material:354>);
+plates.add(<thermalfoundation:material:355>);
+plates.add(<thermalfoundation:material:356>);
+plates.add(<thermalfoundation:material:357>);
+plates.add(<thermalfoundation:material:358>);
+plates.add(<thermalfoundation:material:359>);
 
 
 
@@ -427,4 +572,4 @@ fence.add(<glacidus:underground_fence>);
 <ore:artisanHandsaw>.remove(<artisanworktables:artisans_handsaw_flint>);
 
 
-print("3_OreDict.zs loaded");
+print("1-OreDict.zs loaded");

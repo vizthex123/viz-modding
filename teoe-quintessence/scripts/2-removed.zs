@@ -24,8 +24,6 @@ craftingTable.removeByName("minecraft:glass_bottle");
 craftingTable.removeByName("minecraft:sticky_piston");
 craftingTable.removeByName("minecraft:magma_cream");
 
-craftingTable.removeByName("ae2:misc/vanilla_comparator");
-
 craftingTable.removeByName("create:crafting/materials/copper_ingot");
 craftingTable.removeByName("create:crafting/materials/copper_nugget");
 

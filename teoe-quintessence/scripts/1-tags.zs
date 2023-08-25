@@ -1,4 +1,5 @@
 # Adds tags to items
+#priority 9
 
 import crafttweaker.api.tag.MCTag;
 
@@ -7,23 +8,37 @@ print("1-tags.zs loading...");
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
-# The Basic Pipes tag is in refined_pipes.zs!
+
+val auction = <tag:items:lightmanscurrency:auction_stand>;
+
+# Auction Stands (recipe)
+auction.add(<item:lightmanscurrency:auction_stand_oak>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_spruce>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_birch>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_jungle>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_acacia>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_dark_oak>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_crimson>);
+<tag:items:lightmanscurrency:auction_stand>.add(<item:lightmanscurrency:auction_stand_warped>);
+
 
 # Dynamics duct (quest)
 <tag:items:teoe:duct>.add(<item:thermal:energy_duct>);
 <tag:items:teoe:duct>.add(<item:thermal:fluid_duct>);
 <tag:items:teoe:duct>.add(<item:thermal:fluid_duct_windowed>);
+<tag:items:teoe:fluiduct>.add(<item:thermal:fluid_duct>);
+<tag:items:teoe:fluiduct>.add(<item:thermal:fluid_duct_windowed>);
 
 
 # Torches (recipes)
 <tag:items:teoe:torch>.add(<item:minecraft:torch>);
 <tag:items:teoe:torch>.add(<item:minecraft:soul_torch>);
+<tag:items:teoe:torch>.add(<item:minecraft:redstone_torch>);
 <tag:items:teoe:torch>.add(<item:aquatictorches:aquatic_torch>);
 <tag:items:teoe:torch>.add(<item:botania:animated_torch>);
 <tag:items:teoe:torch>.add(<item:malum:blazing_torch>);
 <tag:items:teoe:torch>.add(<item:malum:ether_torch>);
 <tag:items:teoe:torch>.add(<item:malum:iridescent_ether_torch>);
-<tag:items:teoe:torch>.add(<item:nethersdelight:propelplant_torch>);
 
 
 # Wooden tools (recipe)
@@ -45,7 +60,7 @@ print("1-tags.zs loading...");
 # Egg (recipe)
 <tag:items:teoe:egg>.add(<item:minecraft:egg>);
 <tag:items:teoe:egg>.add(<item:minecraft:turtle_egg>);
-<tag:items:teoe:egg>.add(<item:farmersdelight:fried_egg>);
+<tag:items:teoe:egg>.add(<item:additionaladditions:fried_egg>);
 <tag:items:teoe:egg>.add(<item:quark:egg_parrot_red_blue>);
 <tag:items:teoe:egg>.add(<item:quark:egg_parrot_blue>);
 <tag:items:teoe:egg>.add(<item:quark:egg_parrot_green>);
@@ -429,7 +444,6 @@ print("1-tags.zs loading...");
 <tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
 
 <tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:malum:blazing_torch>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:nethersdelight:propelplant_torch>);
 
 <tag:items:ae2:p2p_attunements/redstone_p2p_tunnel>.add(<item:botania:animated_torch>);
 
@@ -455,7 +469,6 @@ print("1-tags.zs loading...");
 
 <tag:items:malum:gross_foods>.add(<item:minecraft:spider_eye>);
 <tag:items:malum:gross_foods>.add(<item:minecraft:poisonous_potato>);
-<tag:items:malum:gross_foods>.add(<item:farmersdelight:rotten_tomato>);
 
 
 /*

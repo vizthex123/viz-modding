@@ -27,90 +27,91 @@ print("0-tags-scrap.zs loading...");
 
 
 # Iron
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_helmet>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_chestplate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_leggings>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chainmail_boots>);
-<tag:items:vanilla:meltable_metal>.add(<item:leatheredboots:chainmail_leathered_boots>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:chainmail_helmet>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:chainmail_chestplate>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:chainmail_leggings>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:chainmail_boots>);
+<tag:items:vanilla:meltable_iron>.add(<item:leatheredboots:chainmail_leathered_boots>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_helmet>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_chestplate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_leggings>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_boots>);
-<tag:items:vanilla:meltable_metal>.add(<item:leatheredboots:iron_leathered_boots>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_helmet>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_chestplate>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_leggings>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_boots>);
+<tag:items:vanilla:meltable_iron>.add(<item:leatheredboots:iron_leathered_boots>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_sword>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_pickaxe>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_axe>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_shovel>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_hoe>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_sword>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_pickaxe>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_axe>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_shovel>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_hoe>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_horse_armor>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:crossbow>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:shears>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:shield>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_horse_armor>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:crossbow>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:shears>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:shield>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:anvil>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chipped_anvil>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:damaged_anvil>);
-<tag:items:vanilla:meltable_metal>.add(<item:vanillatweaks:slime_bucket>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:bucket>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:cauldron>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:compass>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:flint_and_steel>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:hopper>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_bars>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_door>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:iron_trapdoor>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:heavy_weighted_pressure_plate>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:lantern>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:soul_lantern>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:name_tag>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:tripwire_hook>);
-<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:blackstone_blast_furnace>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:blast_furnace>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:stonecutter>);
-<tag:items:vanilla:meltable_metal>.add(<item:charm:woodcutter>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:piston>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:sticky_piston>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:chest_minecart>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:furnace_minecart>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:tnt_minecart>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:hopper_minecart>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:activator_rail>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:detector_rail>);
-<tag:items:vanilla:meltable_metal>.add(<item:minecraft:rail>);
+<tag:items:vanilla:meltable_iron>.add(<item:vanillatweaks:slime_bucket>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:bucket>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:cauldron>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:compass>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:flint_and_steel>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:hopper>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_bars>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_door>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:iron_trapdoor>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:heavy_weighted_pressure_plate>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:lantern>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:soul_lantern>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:name_tag>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:tripwire_hook>);
+<tag:items:vanilla:meltable_iron>.add(<item:nethersdelight:blackstone_blast_furnace>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:blast_furnace>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:stonecutter>);
+<tag:items:vanilla:meltable_iron>.add(<item:charm:woodcutter>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:piston>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:sticky_piston>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:chest_minecart>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:furnace_minecart>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:tnt_minecart>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:hopper_minecart>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:activator_rail>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:detector_rail>);
+<tag:items:vanilla:meltable_iron>.add(<item:minecraft:rail>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:charm:redstone_lantern>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:oven>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:fridge>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:toaster>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:heating_unit>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:ice_unit>);
-<tag:items:vanilla:meltable_metal>.add(<item:cookingforblockheads:preservation_chamber>);
+<tag:items:vanilla:meltable_iron>.add(<item:charm:redstone_lantern>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:oven>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:fridge>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:toaster>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:heating_unit>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:ice_unit>);
+<tag:items:vanilla:meltable_iron>.add(<item:cookingforblockheads:preservation_chamber>);
 
-<tag:items:vanilla:meltable_metal>.add(<item:ductwork:collector>);
-<tag:items:vanilla:meltable_metal>.add(<item:ductwork:damper>);
-<tag:items:vanilla:meltable_metal>.add(<item:ductwork:duct>);
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:stove>);
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:cooking_pot>);
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:skillet>);
-<tag:items:vanilla:meltable_metal>.add(<item:farmersdelight:iron_knife>);
-<tag:items:vanilla:meltable_metal>.add(<item:nethersdelight:iron_machete>);
-<tag:items:vanilla:meltable_metal>.add(<item:inmis:plated_backpack>);
-<tag:items:vanilla:meltable_metal>.add(<item:magehand:iron_spawner_item>);
-<tag:items:vanilla:meltable_metal>.add(<item:nyfsquiver:iron_quiver>);
-<tag:items:vanilla:meltable_metal>.add(<item:pfm:furniture_book>);
-<tag:items:vanilla:meltable_metal>.add(<item:pfm:working_table>);
+<tag:items:vanilla:meltable_iron>.add(<item:ductwork:collector>);
+<tag:items:vanilla:meltable_iron>.add(<item:ductwork:damper>);
+<tag:items:vanilla:meltable_iron>.add(<item:ductwork:duct>);
+<tag:items:vanilla:meltable_iron>.add(<item:farmersdelight:stove>);
+<tag:items:vanilla:meltable_iron>.add(<item:farmersdelight:cooking_pot>);
+<tag:items:vanilla:meltable_iron>.add(<item:farmersdelight:skillet>);
+<tag:items:vanilla:meltable_iron>.add(<item:farmersdelight:iron_knife>);
+<tag:items:vanilla:meltable_iron>.add(<item:nethersdelight:iron_machete>);
+<tag:items:vanilla:meltable_iron>.add(<item:inmis:plated_backpack>);
+<tag:items:vanilla:meltable_iron>.add(<item:magehand:iron_spawner_item>);
+<tag:items:vanilla:meltable_iron>.add(<item:nyfsquiver:iron_quiver>);
+<tag:items:vanilla:meltable_iron>.add(<item:pfm:furniture_book>);
+<tag:items:vanilla:meltable_iron>.add(<item:pfm:working_table>);
 
 
 // Gives nuggets instead due to balancing issues
 // Must be worth < 3 nuggets to gain this tag
-<tag:items:vanilla:meltable_metal_small>.add(<item:cookingforblockheads:tool_rack>);
-<tag:items:vanilla:meltable_metal_small>.add(<item:minecraft:chain>);
-<tag:items:vanilla:meltable_metal_small>.add(<item:pfm:iron_chain>);
+<tag:items:vanilla:meltable_iron_small>.add(<item:cookingforblockheads:tool_rack>);
+<tag:items:vanilla:meltable_iron_small>.add(<item:minecraft:chain>);
+<tag:items:vanilla:meltable_iron_small>.add(<item:pfm:iron_chain>);
 
 
+// Gives regular Iron Scrap (since it uses 9+ ingots)
+<tag:items:vanilla:meltable_iron_big>.add(<item:minecraft:anvil>);
+<tag:items:vanilla:meltable_iron_big>.add(<item:minecraft:chipped_anvil>);
+<tag:items:vanilla:meltable_iron_big>.add(<item:minecraft:damaged_anvil>);
 
 
 

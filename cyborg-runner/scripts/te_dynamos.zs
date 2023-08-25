@@ -23,21 +23,28 @@ mods.thermalexpansion.EnervationDynamo.addFuel(<item>, RF);
 */
 
 
-# Numismatic
+# Numismatic Dynamo
+mods.thermalexpansion.NumisticDynamo.addFuel(<contenttweaker:chip50>, 5000);
+mods.thermalexpansion.NumisticDynamo.addFuel(<contenttweaker:chip100>, 10000);
+
 // Lapidary Calibration
 mods.thermalexpansion.NumisticDynamo.removeGemFuel(<redstonearsenal:material:160>);
+
 
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:light_blue_crystals>, 50000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:white_crystals>, 50000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:purple_crystals>, 55000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:red_crystals>, 60000);
-
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:small_crystal>, 100000);
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:glacidite_fragment>, 2000000);
-
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:tamrelitegem>, 75000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:pendoritegem>, 120000);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<byg:lathariumgem>, 95000);
+
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:small_crystal>, 100000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:glacidite_fragment>, 40000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:opesium>, 75000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<glacidus:eukeite>, 25000);
+mods.thermalexpansion.NumisticDynamo.addGemFuel(<contenttweaker:pulsaton_sliver>, 30000);
+
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<mystcraft:blockcrystal>, 100000);
 
 
@@ -51,6 +58,7 @@ mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:totem_of_undying>, 250
 mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:golden_apple:1>, 10000000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<scalinghealth:heartcontainer>, 250000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<scalinghealth:heartdust>, 4000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<glacidus:residuum>, 10000);
 
 
 print("te_dynamos.zs loaded");

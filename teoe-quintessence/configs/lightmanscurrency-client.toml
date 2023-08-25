@@ -4,23 +4,20 @@
 
 	#Wallet Slot Settings
 	[client.wallet_slot]
-		#The x position that the wallet slot will be placed at in the players inventory.
-		#Range: -255 ~ 255
+		#The position that the wallet slot will be placed at in the players inventory.
+		#Range: -1000 ~ 1000
 		slotX = 100
-		#The y position that the wallet slot will be placed at in the players inventory.
-		#Range: -255 ~ 255
+		#Range: -1000 ~ 1000
 		slotY = 59
-		#The x position that the wallet slot will be placed at in the players creative inventory.
-		#Range: -255 ~ 255
+		#The position that the wallet slot will be placed at in the players creative inventory.
+		#Range: -1000 ~ 1000
 		creativeSlotX = 126
-		#The y position that the wallet slot will be placed at in the players creative inventory.
-		#Range: -255 ~ 255
+		#Range: -1000 ~ 1000
 		creativeSlotY = 19
-		#The x offset that the wallet button should be placed at relative to the wallet slot position.
-		#Range: -255 ~ 255
+		#The offset that the wallet button should be placed at relative to the wallet slot position.
+		#Range: -1000 ~ 1000
 		buttonX = 20
-		#The y offset that the wallet button should be placed at relative to the wallet slot position.
-		#Range: -255 ~ 255
+		#Range: -1000 ~ 1000
 		buttonY = 5
 
 	#Inventory Button Settings
@@ -60,4 +57,39 @@
 		#How Notification Timestamps are displayed.
 		#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
 		timeFormatting = "MM/dd/yy hh:mmaa"
+
+	#Wallet Overlay Settings
+	[client.wallet_hud]
+		#Whether an overlay should be drawn on your HUD displaying your wallets current money amount.
+		enabled = false
+		#The corner of the screen that the overlay should be drawn on.
+		#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		displayCorner = "BOTTOM_LEFT"
+		#The position offset from the defined corner.
+		#Range: -1000 ~ 1000
+		displayOffsetX = 5
+		#Range: -1000 ~ 1000
+		displayOffsetY = -5
+		#Whether the wallets contents should be displayed as a coin item, or as value text.
+		#Allowed Values: ITEMS_WIDE, ITEMS_NARROW, TEXT
+		displayType = "ITEMS_WIDE"
+
+	#Chest Button Settings
+	[client.chest_buttons]
+		#Whether the 'Move Coins into Wallet' button will appear in the top-right corner of the Chest Screen if there are coins in the chest that can be collected.
+		enabled = true
+		#Whether the 'Move Coins into Wallet' button should collect coins flagged as 'hidde'
+		#By default these would be the coin pile and coin block variants of the coins.
+		allowHiddenCollection = false
+
+	#Slot Machine Animation Settings
+	[client.slot_machine]
+		#The number of Minecraft ticks the slot machine animation will last.
+		#Note: 20 ticks = 1 second
+		#Must be at least 20 ticks (1s) for coding reasons.
+		#Range: 20 ~ 1200
+		animationDuration = 100
+		#The number of Minecraft ticks the slot machine will pause before repeating the animation.
+		#Range: 0 ~ 1200
+		animationRestDuration = 20
 

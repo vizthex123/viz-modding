@@ -6,7 +6,7 @@
 
   "duration": 300,
 
-  "catalyst": "contenttweaker:faulty_circuit",
+  "catalyst": "contenttweaker:melon_circuit",
 
   "input-types": {
     "w": { "id": "compactmachines3:wallbreakable" },

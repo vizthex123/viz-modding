@@ -17,13 +17,8 @@ furnace.removeByName("minecraft:gold_nugget_from_smelting");
 blastFurnace.removeByName("minecraft:iron_nugget_from_blasting");
 blastFurnace.removeByName("minecraft:gold_nugget_from_blasting");
 
-furnace.removeByName("farmersdelight:iron_nugget_from_smelting_knife");
-furnace.removeByName("farmersdelight:gold_nugget_from_smelting_knife");
-blastFurnace.removeByName("farmersdelight:iron_nugget_from_blasting_knife");
-blastFurnace.removeByName("farmersdelight:gold_nugget_from_blasting_knife");
-
-val nugget = <item:minecraft:iron_nugget>;
 val scrap = <item:kubejs:iron_scrap>;
+val nugget = <item:minecraft:iron_nugget>;
 
 furnace.addRecipe("recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 200);
 blastFurnace.addRecipe("blast_recycle_copper_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_copper>.asIIngredient().anyDamage(), 0, 100);
@@ -40,16 +35,16 @@ blastFurnace.addRecipe("blast_recycle_big_iron_item", scrap, <tag:items:teoe:mel
 furnace.addRecipe("recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:teoe:meltable_gold>.asIIngredient().anyDamage(), 0.3, 200);
 blastFurnace.addRecipe("blast_recycle_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:teoe:meltable_gold>.asIIngredient().anyDamage(), 0.3, 100);
 
-blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 150);
+blastFurnace.addRecipe("blast_recycle_diamond_item", <item:kubejs:small_diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 100);
 
-blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 200);
+blastFurnace.addRecipe("blast_recycle_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 100);
 
 
 # Modded items
 furnace.addRecipe("recycle_rose_gold_item", <item:kubejs:small_copper_scrap>, <tag:items:teoe:meltable_rose_gold>.asIIngredient().anyDamage(), 0.75, 200);
 blastFurnace.addRecipe("blast_recycle_rose_gold_item", <item:kubejs:small_gold_scrap>, <tag:items:teoe:meltable_rose_gold>.asIIngredient().anyDamage(), 0.75, 100);
 
-blastFurnace.addRecipe("blast_recycle_platinum_item", <item:kubejs:small_platinum_scrap>, <tag:items:teoe:meltable_platinum>.asIIngredient().anyDamage(), 1.0, 150);
+blastFurnace.addRecipe("blast_recycle_platinum_item", <item:kubejs:small_platinum_scrap>, <tag:items:teoe:meltable_platinum>.asIIngredient().anyDamage(), 1.0, 100);
 
 blastFurnace.addRecipe("blast_recycle_lumium_item", <item:kubejs:small_lumium_scrap>, <tag:items:teoe:meltable_lumium>.asIIngredient(), 2.0, 100);
 
@@ -66,10 +61,10 @@ blastFurnace.addRecipe("blast_recycle_knightmetal_item", <item:kubejs:small_knig
 
 
 # Smelt all Scrap & meltable items in a Redstone Furnace
-<recipetype:thermal:furnace>.addRecipe("redstone_diamond_item", <item:kubejs:diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 3000);
-<recipetype:thermal:furnace>.addRecipe("redstone_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 4000);
+<recipetype:thermal:furnace>.addRecipe("redstone_diamond_item", <item:kubejs:diamond_scrap>, <tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 2000);
+<recipetype:thermal:furnace>.addRecipe("redstone_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 2000);
 
-<recipetype:thermal:furnace>.addRecipe("redstone_platinum_item", <item:kubejs:diamond_scrap>, <tag:items:teoe:meltable_platinum>.asIIngredient().anyDamage(), 1.0, 3000);
+<recipetype:thermal:furnace>.addRecipe("redstone_platinum_item", <item:kubejs:diamond_scrap>, <tag:items:teoe:meltable_platinum>.asIIngredient().anyDamage(), 1.0, 2000);
 
 <recipetype:thermal:furnace>.addRecipe("redstone_lumium_item", <item:kubejs:diamond_scrap>, <tag:items:teoe:meltable_lumium>.asIIngredient(), 2.0, 2000);
 

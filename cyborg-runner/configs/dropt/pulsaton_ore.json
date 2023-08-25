@@ -8,54 +8,29 @@
           ]
         }
       },
-	"replaceStrategy": "ADD",
+	"replaceStrategy": "REPLACE_ITEMS",
 	"dropStrategy": "REPEAT",
-	"drops": [
+	"drops": [{
+		"item": {
+			"items": [
+			"contenttweaker:pulsaton_sliver"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 100
+		  }
+		}
+	},
 	{
 		"item": {
 			"items": [
-			"nibrockscoal:iron_coal"
+			"contenttweaker:pulsaton_sliver"
 			]
 		},
 		"selector": {
 		 "weight": {
 		  "value": 50
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:gold_coal"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 30
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:diamond_coal"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 15
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"cm:crimson_coal"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 25
 		  }
 		}
 	}

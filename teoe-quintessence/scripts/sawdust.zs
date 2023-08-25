@@ -22,13 +22,20 @@ val spider_string = <item:minecraft:string>;
 <recipetype:thermal:sawmill>.addRecipe("saw_bowl", [sawdust], <item:minecraft:bowl>, 500);
 <recipetype:create:cutting>.addRecipe("mech_saw_bowl", sawdust, <item:minecraft:bowl>, 1);
 
-// Barrels
-<recipetype:thermal:sawmill>.addRecipe("saw_barrels", [sawdust*7, sawdust % 50], <item:minecraft:barrel>, 2000);
-<recipetype:create:cutting>.addRecipe("mech_saw_barrels", sawdust*10, <item:minecraft:barrel>, 5);
+// Torches
+<recipetype:thermal:sawmill>.addRecipe("saw_torch", [sawdust % 5], <tag:items:teoe:torch>, 750);
 
 // Chests
 <recipetype:thermal:sawmill>.addRecipe("saw_chests", [sawdust*8], <tag:items:forge:chests/wooden>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_chests", sawdust*12, <tag:items:forge:chests/wooden>, 5);
+
+// Barrels
+<recipetype:thermal:sawmill>.addRecipe("saw_barrels", [sawdust*7, sawdust % 50], <item:minecraft:barrel>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_barrels", sawdust*10, <item:minecraft:barrel>, 5);
+
+// Composter
+<recipetype:thermal:sawmill>.addRecipe("saw_composter", [sawdust*3, sawdust % 50], <item:minecraft:composter>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_composter", sawdust*5, <item:minecraft:composter>, 5);
 
 // Crafting Tables
 <recipetype:thermal:sawmill>.addRecipe("saw_workbench", [sawdust*4], <tag:items:forge:workbenches>, 2000);
@@ -119,11 +126,5 @@ val spider_string = <item:minecraft:string>;
 // Wooden Hopper
 <recipetype:thermal:sawmill>.addRecipe("saw_wooden_hopper", [sawdust*5], <item:woodenhopper:wooden_hopper>, 1000);
 <recipetype:create:cutting>.addRecipe("mech_saw_wooden_hopper", sawdust*7, <item:woodenhopper:wooden_hopper>, 2);
-
-# Shelves & Card Displays
-<recipetype:thermal:sawmill>.addRecipe("saw_shelf", [sawdust % 50], <tag:items:lightmanscurrency:shelf>, 1000);
-<recipetype:thermal:sawmill>.addRecipe("saw_card_display", [sawdust*20], <tag:items:lightmanscurrency:card_display>, 1000);
-<recipetype:create:cutting>.addRecipe("mech_saw_shelf", sawdust, <tag:items:lightmanscurrency:shelf>, 2);
-<recipetype:create:cutting>.addRecipe("mech_saw_card_display", sawdust*30, <tag:items:lightmanscurrency:card_display>, 2);
 
 print("sawdust.zs loaded");

@@ -133,11 +133,9 @@ print("durability.zs loading...");
 
 
 // Misc
-<minecraft:wooden_axe>.maxDamage = 20;
+<chesttransporter:chesttransporter>.maxDamage = 3;
 <natura:flint_and_blaze>.maxDamage = 256;
 <vulcanite:flint_and_vulcanite>.maxDamage = 512;
 <longfallboots:longfallboots>.maxDamage = 500;
-<chesttransporter:chesttransporter>.maxDamage = 3;
-<refinedstorage:cutting_tool>.maxDamage = 30;
 
 print("durability.zs loaded");

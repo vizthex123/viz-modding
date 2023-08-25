@@ -11,6 +11,32 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
 
+// Blank Upgrade (Backpacks)
+recipes.remove(<improvedbackpacks:blank_upgrade>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<byg:stonestick>, <minecraft:leather>, <byg:stonestick>],
+    [<improvedbackpacks:bound_leather>, <ore:logWood>, <improvedbackpacks:bound_leather>],
+    [<byg:stonestick>, <minecraft:leather>, <byg:stonestick>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<improvedbackpacks:blank_upgrade>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/carpentry", "cyborg:survival/backpacks"]))
+  .setName("blank_upgrade")
+  .create();
+
+// Wooden Storage Upgrade (Backpacks)
+recipes.remove(<improvedbackpacks:upgrade>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<improvedbackpacks:tanned_leather>, <improvedbackpacks:bound_leather>, <improvedbackpacks:tanned_leather>],
+    [<ore:logWood>, <improvedbackpacks:blank_upgrade>, <ore:logWood>],
+    [null, <ore:logWood>, null]])
+  .addTool(<ore:artisansHandsaw>, 18)
+  .addOutput(<improvedbackpacks:upgrade>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/carpentry", "cyborg:survival/backpacks"]))
+  .setName("wooden_upgrade")
+  .create();
+
 ### Sawdust recipes
 # 3 durability per tool, 4 for blocks, 5 for logs
 
@@ -128,7 +154,6 @@ RecipeBuilder.get("carpenter")
   .addRequirement(FTGU.allOf(["cyborg:crafting/carpentry"]))
   .setName("saw_workstation")
   .create();
-
 
 // Doors
 RecipeBuilder.get("carpenter")

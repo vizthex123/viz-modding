@@ -1,0 +1,2 @@
+Staggering - Add 1 to the level cost each time
+Point Interval - Levels per point (so like at interval 2, every other level gives you 1 point)

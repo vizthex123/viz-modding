@@ -1,0 +1,339 @@
+[
+  {
+    "content": "minecraft:dirt",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 5,
+    "weight": 100
+  },
+   {
+    "content": "minecraft:sand",
+    "amount": {
+      "min": 1,
+      "max": 32
+    },
+    "unitWorth": 7,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:stone",
+    "amount": {
+      "min": 8,
+      "max": 32
+    },
+    "unitWorth": 10,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:cobblestone",
+    "amount": {
+      "min": 8,
+      "max": 128
+    },
+    "unitWorth": 10,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:fish",
+    "amount": {
+      "min": 4,
+      "max": 20
+    },
+    "unitWorth": 80,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:apple",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 30,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:book",
+    "amount": {
+      "min": 1,
+      "max": 3
+    },
+    "unitWorth": 125,
+    "weight": 25
+  },
+  {
+    "content": "minecraft:dispenser",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 300,
+    "weight": 10
+  },
+  {
+    "content": "minecraft:iron_ingot",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 200,
+    "weight": 50
+  },
+  {
+    "content": "xlfoodmod:flesh",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 55,
+    "weight": 50
+  },
+  {
+    "content": "byg:cookedflesh",
+	"stages": ["cooking"],
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 60,
+    "weight": 50
+  },
+  {
+    "content": "minecraft:sign",
+    "amount": {
+      "min": 1,
+      "max": 6
+    },
+    "unitWorth": 65,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:slime_ball",
+    "amount": {
+      "min": 1,
+      "max": 32
+    },
+    "unitWorth": 50,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:spider_eye",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 5,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:string",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 25,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:sugar",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 65,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:tripwire_hook",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 75,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:wheat",
+    "amount": {
+      "min": 6,
+      "max": 16
+    },
+    "unitWorth": 20,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:leather",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 50,
+    "weight": 100
+  },
+  {
+    "content": "minecraft:potion",
+    "amount": {
+      "min": 1,
+      "max": 3
+    },
+    "unitWorth": 300,
+    "weight": 100,
+    "nbt_data": "{Potion: \"minecraft:healing\"}"
+  },
+  {
+    "content": "minecraft:potion",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 200,
+    "weight": 75,
+    "nbt_data": "{Potion: \"minecraft:weakness\"}"
+  },
+  {
+    "content": "minecraft:golden_apple",
+	"stages": ["special_cooking"],
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 2000,
+    "weight": 75
+  },
+  {
+    "content": "cyberware:scanner",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 30,
+    "weight": 20
+  },
+  {
+    "content": "openmodularturrets:turret_base",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 50,
+    "weight": 20
+  },
+  {
+    "content": "openmodularturrets:turret_base:1",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 250,
+    "weight": 20
+  },
+  {
+    "content": "openmodularturrets:disposable_item_turret",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 40,
+    "weight": 20
+  },
+  {
+    "content": "openmodularturrets:machine_gun_turret",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 150,
+    "weight": 20
+  },
+  {
+    "content": "openmodularturrets:ammo_meta:1",
+    "amount": {
+      "min": 32,
+      "max": 128
+    },
+    "unitWorth": 5,
+    "weight": 20
+  },
+  {
+    "content": "scannable:module_blank",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 50,
+    "weight": 20
+  },
+  {
+    "content": "scannable:module_animal",
+    "amount": {
+      "min": 1,
+      "max": 3
+    },
+    "unitWorth": 55,
+    "weight": 30
+  },
+  {
+    "content": "scannable:module_monster",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 65,
+    "weight": 23
+  },
+  {
+    "content": "scannable:module_ore_common",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 55,
+    "weight": 15
+  },
+  {
+    "content": "scannable:module_ore_rare",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 75,
+    "weight": 10
+  },
+  {
+    "content": "entity:minecraft:zombie",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 135,
+    "weight": 160
+  },
+  {
+    "content": "entity:minecraft:skeleton",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 200,
+    "weight": 125
+  },
+  {
+    "content": "entity:cyberware:cyberzombie",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 350,
+    "weight": 25
+  },
+  {
+    "content": "entity:rewired:cyberskeleton",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 625,
+    "weight": 10
+  }
+]
