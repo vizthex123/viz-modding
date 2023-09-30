@@ -7,7 +7,7 @@
 	#Range: 0 ~ 3
 	debugLevel = 0
 
-	#Crafting Settings.
+	#Crafting Settings
 	[common.crafting]
 		#Whether Network Traders can be crafted.
 		#Disabling will not remove any existing Network Traders from the world, nor prevent their use.
@@ -22,8 +22,32 @@
 		#Disabling will not remove any existing Auction Stands from the world, nor prevent their use.
 		#/reload required for changes to take effect.
 		allowAuctionStandCrafting = true
+		#Whether Tax Blocks can be crafted.
+		#Disabling will not remove any existing Tax Blocks from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowTaxBlockCrafting = true
 
-	#Villager Related Settings.
+		#Coin Chest Related Crafting Settings
+		[common.crafting.coin_chest]
+			#Whether the Coin Chest can be crafted.
+			#Disabling will not remove any existing Coin Chests from the world, nor prevent their use.
+			#Disabling does NOT disable the recipes of Coin Chest Upgrades.
+			#/reload required for changes to take effect.
+			allowChestCrafting = true
+			#Whether the Coin Chest Exchange Upgrade can be crafted.
+			#Disabling will not remove any existing Coin Chest Exchange Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowExchangeUpgradeCrafting = true
+			#Whether the Coin Chest Magnet Upgrades can be crafted.
+			#Disabling will not remove any existing Coin Chest Magnet Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowMagnetUpgradeCrafting = true
+			#Whether the Coin Chest Security Upgrades can be crafted.
+			#Disabling will not remove any existing Coin Chest Security Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowSecurityUpgradeCrafting = true
+
+	#Villager Related Settings
 	#Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
 	[common.villagers]
 		#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
@@ -49,6 +73,7 @@
 			traderOverrides = ["minecraft:butcher-lightmanscurrency:coin_iron", "minecraft:cartographer-lightmanscurrency:coin_iron", "minecraft:farmer-lightmanscurrency:coin_iron", "minecraft:fisherman-lightmanscurrency:coin_iron", "minecraft:fletcher-lightmanscurrency:coin_copper", "minecraft:leatherworker-lightmanscurrency:coin_iron", "minecraft:mason-lightmanscurrency:coin_iron", "minecraft:shepherd-lightmanscurrency:coin_iron"]
 
 	#Loot item customization. Accepts item ids (i.e. lightmanscurrency:coin_copper).
+	#Leave blank (lootItemT? = "") to not spawn loot of that tier (so that you can use higher-tier spawn rates without the presence of lower-tier loot).
 	[common.loot_customization]
 		#T1 loot item. Used for T1-T6 entity & chest loot drops.
 		lootItemT1 = "lightmanscurrency:coin_copper"
@@ -71,7 +96,7 @@
 		enableSpawnerEntityDrops = false
 		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
 		#Set to false to help prevent coin farming.
-		allowFakePlayerTrigger = true
+		allowFakePlayerTrigger = false
 		#Entities that will occasionally drop T1 loot.
 		entityListT1 = ["minecraft:zombie", "minecraft:husk", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
 		#Entities that will occasionally drop T1 -> T2 loot.
@@ -101,16 +126,16 @@
 	[common.chest_loot]
 		#Whether coins can spawn in chests Does not effect entity loot drops.
 		enableChestLoot = true
-		#Chests that will occasionally spawn copper coins.
-		copper = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_toolsmith", "minecraft:chests/village/village_weaponsmith", "repurposed_structures:chests/ruined_portals/end/small_portal", "twilightforest:structures/hill_1"]
-		#Chests that will occasionally spawn copper -> iron coins.
-		iron = ["minecraft:chests/abandoned_mineshaft", "minecraft:chests/woodland_mansion", "minecraft:chests/nether_bridge", "betterdeserttemples:chests/pot", "betterdungeons:skeleton_dungeon/chests/middle", "betterdungeons:zombie_dungeon/chests/special", "byg:chests/village/village_red_rock_market", "dungeons_arise:chests/illager_corsair/illager_corsair_treasure", "dungeons_arise:chests/illager_windmill/illager_windmill_treasure", "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_treasure", "dungeons_arise:chests/mining_system/mining_system_treasure", "dungeons_arise:chests/mushroom_house/mushroom_house_treasure", "rare-ice:blocks/rare_ice", "repurposed_structures:chests/ruined_portals/end/large_portal", "repurposed_structures:chests/villages/crimson_weaponsmith", "repurposed_structures:chests/shipwrecks/nether_bricks/treasure", "repurposed_structures:chests/villages/warped_weaponsmith", "twilightforest:structures/hill_2"]
-		#Chests that will occasionally spawn copper -> gold coins.
-		gold = ["minecraft:chests/shipwreck_treasure", "minecraft:chests/jungle_temple", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "betterdeserttemples:chests/tomb", "betterstrongholds:chests/treasure", "dungeons_arise:chests/bandit_towers/bandit_towers_treasure", "dungeons_arise:chests/ceryneian_hind/ceryneian_hind_treasure", "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure", "dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure", "dungeons_arise:chests/infested_temple/infested_temple_top_treasure", "dungeons_arise:chests/mushroom_mines/mushroom_mines_treasure", "dungeons_arise:chests/scorched_mines/scorched_mines_treasure", "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure", "rare-ice:chests/rare_ice", "repurposed_structures:chests/bastions/underground/treasure", "repurposed_structures:chests/shipwrecks/crimson/treasure", "repurposed_structures:chests/shipwrecks/warped/treasure", "terralith:village/desert/treasure", "twilightforest:structures/hill_3"]
-		#Chests that will occasionally spawn copper -> emerald coins.
-		emerald = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/buried_treasure", "betterdeserttemples:chests/tomb_pharoh", "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure", "dungeons_arise:chests/plague_asylum/plague_asylum_treasure", "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure", "repurposed_structures:chests/shipwrecks/end/treasure", "twilightforest:structures/labyrinth_vault"]
-		#Chests that will occasionally spawn copper -> diamond coins.
-		diamond = ["minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure", "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure", "ae2:chests/meteorite"]
-		#Chests that will occasionally spawn copper -> netherite coins.
-		netherite = ["betterdeserttemples:chests/pharaoh_hidden"]
+		#Chests that will occasionally spawn T1 loot.
+		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big"]
+		#Chests that will occasionally spawn T1 -> T2 loot.
+		chestListT2 = []
+		#Chests that will occasionally spawn T1 -> T3 loot.
+		chestListT3 = ["minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal"]
+		#Chests that will occasionally spawn T1 -> T4 loot.
+		chestListT4 = ["minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/ancient_city"]
+		#Chests that will occasionally spawn T1 -> T5 loot.
+		chestListT5 = ["minecraft:chests/buried_treasure", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure"]
+		#Chests that will occasionally spawn T1 -> T6 loot.
+		chestListT6 = []
 

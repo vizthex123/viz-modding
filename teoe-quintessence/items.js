@@ -35,7 +35,7 @@ onEvent('item.registry', event => {
 		// Misc
 		event.create('quicklime')
 		event.create('quintessence').rarity('epic').maxStackSize(1).glow(true)
-		event.create('iridium_fuel_cell').rarity('rare').burnTime(12800).maxStackSize(4)
-		event.create('artificial_dragon_egg').texture('kubejs:item/artificial_dragon_egg').rarity('rare').maxStackSize(1)
+		event.create('iridium_fuel_cell').rarity('rare').burnTime(51200).maxStackSize(4)
+		event.create('artificial_dragon_egg').texture('kubejs:item/artificial_dragon_egg').rarity('epic').maxStackSize(1)
 		event.create('portal_catalyst').displayName('Twilight Portal Catalyst').rarity('uncommon').maxStackSize(1).glow(true)
 })

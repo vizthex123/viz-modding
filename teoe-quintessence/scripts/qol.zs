@@ -22,19 +22,21 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Upgrade Bundles into Satchels
+craftingTable.addShaped("bundle_upgrade", <item:thermal:satchel>, 
+    [[<item:minecraft:air>, <tag:items:thermal:rockwool>, <item:minecraft:air>],
+    [<tag:items:thermal:rockwool>, <item:minecraft:bundle>, <tag:items:thermal:rockwool>],
+    [<item:minecraft:air>, <tag:items:thermal:rockwool>, <item:minecraft:air>]]);
+
 // Glow Sac -> Ink Sac (and dye)
-craftingTable.addShapeless("cyan_dye", <item:minecraft:cyan_dye>, [<item:minecraft:glow_ink_sac>]);
-craftingTable.addShapeless("ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
+val glow_sac = <item:minecraft:glow_ink_sac>;
+craftingTable.addShapeless("cyan_dye", <item:minecraft:cyan_dye>, [glow_sac]);
+craftingTable.addShapeless("ink_sac", <item:minecraft:ink_sac>*2, [glow_sac, glow_sac]);
+<recipetype:create:milling>.addRecipe("mill_glow_sac", [<item:minecraft:ink_sac>, <item:minecraft:cyan_dye> % 50], glow_sac);
 
 // Make Beetroot Soup cheaper
 craftingTable.remove(<item:minecraft:beetroot_soup>);
 craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [<item:minecraft:bowl>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>]);
-
-// Normal leather bundle
-craftingTable.addShaped("leather_bundle", <item:minecraft:bundle>, 
-    [[<item:minecraft:string>, <item:minecraft:leather>, <item:minecraft:string>],
-    [<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:leather>],
-    [<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]]);
 
 // Fuel Canister with Zinc
 craftingTable.addShaped("fuel_canister_zinc", <item:fuel_canister:fuel_canister>, 

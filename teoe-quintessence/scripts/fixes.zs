@@ -14,6 +14,15 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+// Rose Gold decraft
+craftingTable.addShapeless("rose_gold_fix", <item:tconstruct:rose_gold_ingot>*9, [<item:thermal:rose_gold_block>]);
+
+// Myalite recipes
+craftingTable.addShapeless("myalite", <item:quark:myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:bulbis_shell>]);
+craftingTable.addShapeless("dusky_myalite", <item:quark:dusky_myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:purple_bulbis_shell>]);
+craftingTable.addShapeless("myalite_crystal", <item:quark:myalite_crystal>, [<item:byg:purple_bulbis_shell>, <item:minecraft:chorus_fruit>]);
+
+
 // Remove furnace recipes for BYG's Sand -> Glass
 // Adds them to the Blast Furnace
 // (And Induction Smelter after I can disable catalysts)
@@ -67,11 +76,16 @@ craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<tag:items:
 craftingTable.remove(<item:minecraft:fire_charge>);
 craftingTable.addShapeless("fire_charge", <item:minecraft:fire_charge>*3, [<tag:items:minecraft:coals>, <item:minecraft:blaze_powder>, <item:minecraft:gunpowder>]);
 
-// Fixes chests not being craftable with modded planks
+// Fixes chests not being craftable with modded planks & logs
 craftingTable.addShaped("chest", <item:minecraft:chest>,
     [[<tag:items:teoe:planks>, <tag:items:teoe:planks>, <tag:items:teoe:planks>],
     [<tag:items:teoe:planks>, <item:minecraft:air>, <tag:items:teoe:planks>],
     [<tag:items:teoe:planks>, <tag:items:teoe:planks>, <tag:items:teoe:planks>]]);
+
+craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4,
+    [[<tag:items:teoe:logs>, <tag:items:teoe:logs>, <tag:items:teoe:logs>],
+    [<tag:items:teoe:logs>, <item:minecraft:air>, <tag:items:teoe:logs>],
+    [<tag:items:teoe:logs>, <tag:items:teoe:logs>, <tag:items:teoe:logs>]]);
 
 // Fix the Blast Furnace having 4 recipes (quark moment)
 craftingTable.remove(<item:minecraft:blast_furnace>);

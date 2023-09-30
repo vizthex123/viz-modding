@@ -24,51 +24,59 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("soul_fluix", <item:ae2:flui
 # Combination Craft all the presses
 # Each one is 2k Essenarium, a platinum ingot, sky stone block, and 2 of its used material combination crafted into an Iron Block
 # RF cost is based on how advanced each processor is
-mods.extendedcrafting.CombinationCrafting.addRecipe("silicon_press", <item:ae2:silicon_press>, 8000, [<item:minecraft:iron_block>, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, <item:ob_core:platinum_ingot>, <tag:items:forge:silicon>, <tag:items:forge:silicon>, <item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_emerald>], 80);
+val iron_block = <item:minecraft:iron_block>;
+val emerald_coin = <item:lightmanscurrency:coin_emerald>;
+val platinum = <item:ob_core:platinum_ingot>;
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("logic_press", <item:ae2:logic_processor_press>, 16000, [<item:minecraft:iron_block>, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, <item:ob_core:platinum_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_emerald>], 160);
+mods.extendedcrafting.CombinationCrafting.addRecipe("silicon_press", <item:ae2:silicon_press>, 8000, [iron_block, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, platinum, <tag:items:forge:silicon>, <tag:items:forge:silicon>, emerald_coin, emerald_coin], 80);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("calculation_press", <item:ae2:calculation_processor_press>, 24000, [<item:minecraft:iron_block>, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, <item:ob_core:platinum_ingot>, <item:ae2:certus_quartz_crystal>, <item:ae2:certus_quartz_crystal>, <item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_emerald>], 240);
+mods.extendedcrafting.CombinationCrafting.addRecipe("logic_press", <item:ae2:logic_processor_press>, 16000, [iron_block, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, platinum, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, emerald_coin, emerald_coin], 160);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("engineering_press", <item:ae2:engineering_processor_press>, 32000, [<item:minecraft:iron_block>, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, <item:ob_core:platinum_ingot>, <item:minecraft:diamond>, <item:minecraft:diamond>, <item:lightmanscurrency:coin_emerald>, <item:lightmanscurrency:coin_emerald>], 320);
+mods.extendedcrafting.CombinationCrafting.addRecipe("calculation_press", <item:ae2:calculation_processor_press>, 24000, [iron_block, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, platinum, <item:ae2:certus_quartz_crystal>, <item:ae2:certus_quartz_crystal>, emerald_coin, emerald_coin], 240);
+
+mods.extendedcrafting.CombinationCrafting.addRecipe("engineering_press", <item:ae2:engineering_processor_press>, 32000, [iron_block, <item:ae2:sky_stone_block>|<item:ae2:smooth_sky_stone_block>, platinum, <item:minecraft:diamond>, <item:minecraft:diamond>, emerald_coin, emerald_coin], 320);
 
 
 # Expands the list of accepted P2P tunnel items
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:basic_item_pipe>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:improved_item_pipe>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:advanced_item_pipe>);
+<tag:items:ae2:p2pattunements/energy>.clear();
+<tag:items:ae2:p2pattunements/fluid>.clear();
 
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:basic_extractor_attachment>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:improved_extractor_attachment>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:advanced_extractor_attachment>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:elite_extractor_attachment>);
-<tag:items:ae2:p2p_attunements/item_p2p_tunnel>.add(<item:refinedpipes:ultimate_extractor_attachment>);
+val p2p_energy = <tag:items:ae2:p2p_attunements/fe_p2p_tunnel>;
+val p2p_item = <tag:items:ae2:p2p_attunements/item_p2p_tunnel>;
+val p2p_fluid = <tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>;
+val p2p_redstone = <tag:items:ae2:p2p_attunements/redstone_p2p_tunnel>;
+val p2p_light = <tag:items:ae2:p2p_attunements/light_p2p_tunnel>;
 
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:basic_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:improved_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:advanced_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:elite_fluid_pipe>);
-<tag:items:ae2:p2p_attunements/fluid_p2p_tunnel>.add(<item:refinedpipes:ultimate_fluid_pipe>);
+p2p_energy.add(<item:thermal:energy_cell>);
+p2p_energy.add(<item:thermal:energy_duct>);
 
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:basic_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:improved_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:advanced_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:elite_energy_pipe>);
-<tag:items:ae2:p2p_attunements/fe_p2p_tunnel>.add(<item:refinedpipes:ultimate_energy_pipe>);
+p2p_item.add(<item:refinedpipes:basic_item_pipe>);
+p2p_item.add(<item:refinedpipes:improved_item_pipe>);
+p2p_item.add(<item:refinedpipes:advanced_item_pipe>);
 
-<tag:items:ae2:p2p_attunements/redstone_p2p_tunnel>.add(<item:quark:redstone_randomizer>);
+p2p_item.add(<item:refinedpipes:basic_extractor_attachment>);
+p2p_item.add(<item:refinedpipes:improved_extractor_attachment>);
+p2p_item.add(<item:refinedpipes:advanced_extractor_attachment>);
+p2p_item.add(<item:refinedpipes:elite_extractor_attachment>);
+p2p_item.add(<item:refinedpipes:ultimate_extractor_attachment>);
 
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:minecraft:soul_torch>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:minecraft:lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:minecraft:soul_lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:aquatictorches:aquatic_torch>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:byg:boric_lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:byg:glowstone_lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:byg:therium_lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:byg:cryptic_lantern>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:twilightforest:torchberries>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:malum:ether_torch>);
-<tag:items:ae2:p2p_attunements/light_p2p_tunnel>.add(<item:malum:iridescent_ether_torch>);
+p2p_fluid.add(<item:thermal:fluid_duct>);
+p2p_fluid.add(<item:thermal:fluid_duct_windowed>);
+
+p2p_redstone.add(<item:botania:animated_torch>);
+p2p_redstone.add(<item:quark:redstone_randomizer>);
+
+p2p_light.add(<item:minecraft:soul_torch>);
+p2p_light.add(<item:minecraft:lantern>);
+p2p_light.add(<item:minecraft:soul_lantern>);
+p2p_light.add(<item:aquatictorches:aquatic_torch>);
+p2p_light.add(<item:byg:boric_lantern>);
+p2p_light.add(<item:byg:glowstone_lantern>);
+p2p_light.add(<item:byg:therium_lantern>);
+p2p_light.add(<item:byg:cryptic_lantern>);
+p2p_light.add(<item:twilightforest:torchberries>);
+p2p_light.add(<item:malum:ether_torch>);
+p2p_light.add(<item:malum:iridescent_ether_torch>);
 
 
 print("ae2.zs loaded");

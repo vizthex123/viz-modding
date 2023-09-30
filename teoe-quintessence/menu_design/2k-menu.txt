@@ -138,17 +138,16 @@ customization {
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://discord.gg/NtwzA6X%btnaction_splitter_fm%
   backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   x = 181
   width = 20
-  actionid = c8bd8fe8-3a9f-4414-836d-4c8bcdb96acc1656820279671
   action = addbutton
+  actionid = c8bd8fe8-3a9f-4414-836d-4c8bcdb96acc1656820279671
   y = 177
   backgroundnormal = config/fancymenu/customization/discord_logo.png
-  value = https://discord.gg/NtwzA6X
   height = 20
 }
 
@@ -156,14 +155,13 @@ customization {
   orientation = mid-centered
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://radiance-projects.fandom.com/wiki/Radiance_Modding_Wiki%btnaction_splitter_fm%
   x = -51
   width = 100
-  actionid = 272cd99e-e2d2-44cb-9894-6a2e88733e121674449046206
   action = addbutton
+  actionid = 272cd99e-e2d2-44cb-9894-6a2e88733e121674449046206
   y = 39
   label = Wiki
-  value = https://www.youtube.com/watch?v=dQw4w9WgXcQ
   height = 20
 }
 

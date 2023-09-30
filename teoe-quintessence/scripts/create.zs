@@ -24,13 +24,6 @@ do item:minecraft:air for empty spaces
 do fluid:minecraft:empty for empty fluids
 */
 
-// Extract Sugar Water from fluid holders
-<recipetype:create:emptying>.addRecipe("empty_sugar_water_bucket", <item:minecraft:bucket>, <fluid:the_bumblezone:sugar_water_still>*1000, <item:the_bumblezone:sugar_water_bucket>);
-<recipetype:create:emptying>.addRecipe("empty_sugar_water_bottle", <item:minecraft:glass_bottle>, <fluid:the_bumblezone:sugar_water_still>*250, <item:the_bumblezone:sugar_water_bottle>);
-/*
-// Press Leather out of Fleshes
-<recipetype:create:pressing>.addRecipe("press_leather", [<item:minecraft:leather> % 25], <item:minecraft:rotten_flesh>, 5);
-*/
 ### Crushing Wheels ###
 /*
 <recipetype:create:milling>.addRecipe("recipeName", [<outputs> % chance], <input>);
@@ -40,31 +33,33 @@ do fluid:minecraft:empty for empty fluids
 default time for both is 2 - 3 seconds
 */
 
+val crushed_copper = <item:create:crushed_raw_copper>;
+val crushed_iron = <item:create:crushed_raw_iron>;
+val crushed_gold = <item:create:crushed_raw_gold>;
+
+
 // Mill all Terracotta types into Clay
 <recipetype:create:milling>.remove(<item:minecraft:red_sand>);
 <recipetype:create:milling>.addRecipe("mill_terracotta", [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>*2 % 75], <tag:items:minecraft:terracotta>);
 
 // Crush Shale
-<recipetype:create:crushing>.addRecipe("crush_shale", [<item:malum:natural_quartz> % 55, <item:create:crushed_iron_ore> % 15, <item:minecraft:clay_ball> % 30], <item:quark:shale>, 5);
+<recipetype:create:crushing>.addRecipe("crush_shale", [<item:malum:natural_quartz> % 55, crushed_iron % 15, <item:minecraft:clay_ball> % 30], <item:quark:shale>, 5);
 
 // Crush Jasper
-<recipetype:create:crushing>.addRecipe("crush_jasper", [<item:minecraft:calcite> % 25, <item:ae2:silicon> % 55, <item:minecraft:clay_ball> % 20], <item:quark:jasper>, 5);
+<recipetype:create:crushing>.addRecipe("crush_jasper", [<item:minecraft:calcite> % 25, <item:minecraft:clay_ball> % 20, <item:ae2:silicon> % 55], <item:quark:jasper>, 5);
 
 // Crush Myalite
 <recipetype:create:crushing>.addRecipe("crush_myalite", [<item:minecraft:popped_chorus_fruit> % 75], <item:quark:myalite>, 5);
 <recipetype:create:crushing>.addRecipe("crush_dusky_myalite", [<item:minecraft:popped_chorus_fruit> % 50], <item:quark:dusky_myalite>, 5);
 
 // Crush Scoria
-<recipetype:create:crushing>.addRecipe("crush_scoria", [<item:minecraft:andesite> % 20, <item:minecraft:calcite> % 10, <item:ae2:silicon> % 50, <item:nourished_nether:ash_lump>*2 % 20], <item:create:scoria>, 5);
+<recipetype:create:crushing>.addRecipe("crush_scoria", [<item:minecraft:andesite> % 50, <item:minecraft:calcite> % 15, <item:nourished_nether:ash_lump>*2 % 20, <item:ae2:silicon> % 55], <item:create:scoria>, 5);
 
 // Crush Scorchia
 <recipetype:create:crushing>.addRecipe("crush_scorchia", [<item:minecraft:andesite>, <item:nourished_nether:ash_lump>*4 % 75], <item:create:scorchia>, 5);
 
 // Crush Quartzite Sand into Sand & Quartz
 <recipetype:create:crushing>.addRecipe("crush_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 40], <item:byg:quartzite_sand>, 5);
-
-// Crush Galcite into Coal & Powdered Obsidian
-<recipetype:create:crushing>.addRecipe("crush_galcite", [<item:minecraft:coal>*4, <item:create:powdered_obsidian> % 25], <item:geode:galcite>, 5);
 
 // Crush Moss Carpets into Moss Paste
 <recipetype:create:crushing>.addRecipe("crush_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 1);
@@ -77,10 +72,10 @@ default time for both is 2 - 3 seconds
 <recipetype:create:crushing>.addRecipe("crying_obsidian_to_dust", [<item:create:powdered_obsidian>*2, <item:create:powdered_obsidian> % 50, <item:create:powdered_obsidian> % 25, <item:minecraft:obsidian> % 50], <item:minecraft:crying_obsidian>, 5);
 
 // Crush Gilded Blackstone into Gold
-<recipetype:create:crushing>.addRecipe("gilded_blackstone_crushing", [<item:create:crushed_gold_ore>, <item:minecraft:gold_nugget>*6 % 25, <item:minecraft:blackstone> % 85], <item:minecraft:gilded_blackstone>, 7);
+<recipetype:create:crushing>.addRecipe("gilded_blackstone_crushing", [crushed_gold, <item:minecraft:gold_nugget>*6 % 25, <item:minecraft:blackstone> % 85], <item:minecraft:gilded_blackstone>, 7);
 
 // Crushing recipe for Gold Rings
-<recipetype:create:crushing>.addRecipe("crush_gold_ring", [<item:create:crushed_gold_ore>*2 % 50, <item:minecraft:gold_nugget>*8 % 50], <item:additionaladditions:gold_ring>, 3);
+<recipetype:create:crushing>.addRecipe("crush_gold_ring", [crushed_gold*2 % 50, <item:minecraft:gold_nugget>*8 % 50], <item:additionaladditions:gold_ring>, 3);
 
 // Crush Sweet Berries into Red & Green Dye
 <recipetype:create:crushing>.addRecipe("crush_sweet_berries", [<item:minecraft:red_dye>*3, <item:minecraft:green_dye> % 15], <item:minecraft:sweet_berries>, 3);
@@ -91,24 +86,18 @@ default time for both is 2 - 3 seconds
 // Crush Raw Quartz into Quartz
 <recipetype:create:crushing>.addRecipe("crush_raw_quartz", [<item:minecraft:quartz>*2, <item:minecraft:quartz>*2 % 50], <item:byg:raw_quartz_block>, 5);
 
-// Crush Slime Crystal Blocks into Slime Crystals
-<recipetype:create:crushing>.addRecipe("crush_earthslime", [<item:tconstruct:earth_slime_crystal>*3, <item:tconstruct:earth_slime_crystal> % 50, <item:create:experience_nugget> % 50], <item:tconstruct:earth_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_skyslime", [<item:tconstruct:sky_slime_crystal>*3, <item:tconstruct:sky_slime_crystal> % 50, <item:create:experience_nugget> % 65], <item:tconstruct:sky_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*3, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:experience_nugget> % 75], <item:tconstruct:ichor_slime_crystal_block>, 10);
-<recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*3, <item:tconstruct:ender_slime_crystal> % 50, <item:create:experience_nugget>], <item:tconstruct:ender_slime_crystal_block>, 10);
-
 # Crush Quark mores
 // Crush Shale Coal Ore
 <recipetype:create:crushing>.addRecipe("crush_shale_coal_ore", [<item:minecraft:coal>, <item:minecraft:coal> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_coal_ore>, 5);
 
 // Crush Shale Copper Ore
-<recipetype:create:crushing>.addRecipe("crush_shale_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_copper_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_shale_copper_ore", [crushed_copper, crushed_copper % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_copper_ore>, 5);
 
 // Crush Shale Iron Ore
-<recipetype:create:crushing>.addRecipe("crush_shale_iron_ore", [<item:create:crushed_iron_ore>, <item:create:crushed_iron_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_iron_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_shale_iron_ore", [crushed_iron, crushed_iron % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_iron_ore>, 5);
 
 // Crush Shale Gold Ore
-<recipetype:create:crushing>.addRecipe("crush_shale_gold_ore", [<item:create:crushed_gold_ore>, <item:create:crushed_gold_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_gold_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_shale_gold_ore", [crushed_gold, crushed_gold % 75, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_gold_ore>, 5);
 
 // Crush Shale Lapis Ore
 <recipetype:create:crushing>.addRecipe("crush_shale_lapis_ore", [<item:minecraft:lapis_lazuli>*10, <item:minecraft:lapis_lazuli> % 50, <item:create:experience_nugget> % 75, <item:quark:shale> % 12], <item:mores:shale_lapis_ore>, 5);
@@ -125,13 +114,13 @@ default time for both is 2 - 3 seconds
 <recipetype:create:crushing>.addRecipe("crush_jasper_coal_ore", [<item:minecraft:coal>, <item:minecraft:coal> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_coal_ore>, 5);
 
 // Crush Jasper Copper Ore
-<recipetype:create:crushing>.addRecipe("crush_jasper_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_copper_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_jasper_copper_ore", [crushed_copper, crushed_copper % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_copper_ore>, 5);
 
 // Crush Jasper Iron Ore
-<recipetype:create:crushing>.addRecipe("crush_jasper_iron_ore", [<item:create:crushed_iron_ore>, <item:create:crushed_iron_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_iron_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_jasper_iron_ore", [crushed_iron, crushed_iron % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_iron_ore>, 5);
 
 // Crush Jasper Gold Ore
-<recipetype:create:crushing>.addRecipe("crush_jasper_gold_ore", [<item:create:crushed_gold_ore>, <item:create:crushed_gold_ore> % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_gold_ore>, 5);
+<recipetype:create:crushing>.addRecipe("crush_jasper_gold_ore", [crushed_gold, crushed_gold % 75, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_gold_ore>, 5);
 
 // Crush Jasper Lapis Ore
 <recipetype:create:crushing>.addRecipe("crush_jasper_lapis_ore", [<item:minecraft:lapis_lazuli>*10, <item:minecraft:lapis_lazuli> % 50, <item:create:experience_nugget> % 75, <item:quark:jasper> % 12], <item:mores:jasper_lapis_ore>, 5);
@@ -173,19 +162,24 @@ default time for both is 2 - 3 seconds
 <recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 85, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 7);
 
 ### Washing Recipes
-# Pendorite has no nugget, rip
+# Pendorite has no nugget and I see no reason to add one
 <recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
 <recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, <item:kubejs:iridium_chunks> % 50], <item:kubejs:crushed_pendorite>);
 <recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, <item:kubejs:iridium_chunks> % 25], <item:kubejs:crushed_platinum>);
 
-###########################################################################
-### Geode Block Recipes
 
+### Geode Block Recipes ###
 // Crush Subzero Blocks into Shards
 <recipetype:create:crushing>.addRecipe("crush_subzero_block", [<item:byg:subzero_crystal_shard>*3, <item:byg:subzero_crystal_shard> % 50], <item:byg:subzero_crystal_block>, 5);
 
-// Crush Wrappist Blocks into Shards
-<recipetype:create:crushing>.addRecipe("crush_wrappist_block", [<item:geode:wrappist_shard>*3, <item:geode:wrappist_shard> % 50], <item:geode:wrappist_block>, 5);
+// Crush Slime Crystal Blocks into Shards
+<recipetype:create:crushing>.addRecipe("crush_earthslime", [<item:tconstruct:earth_slime_crystal>*2, <item:tconstruct:earth_slime_crystal> % 50, <item:malum:natural_quartz> % 65], <item:tconstruct:earth_slime_crystal_block>, 5);
+
+<recipetype:create:crushing>.addRecipe("crush_skyslime", [<item:tconstruct:sky_slime_crystal>*2, <item:tconstruct:sky_slime_crystal> % 50, <item:ae2:sky_dust> % 65], <item:tconstruct:sky_slime_crystal_block>, 5);
+
+<recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*2, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:cinder_flour> % 65], <item:tconstruct:ichor_slime_crystal_block>, 5);
+
+<recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*2, <item:tconstruct:ender_slime_crystal> % 50, <item:ae2:ender_dust> % 65], <item:tconstruct:ender_slime_crystal_block>, 5);
 
 # Crush Corundum blocks into crystals
 <recipetype:create:crushing>.addRecipe("crush_red_corundum", [<item:quark:red_corundum_cluster>*3, <item:quark:red_corundum_cluster> % 75], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 10);

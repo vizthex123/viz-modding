@@ -270,7 +270,7 @@
 	"Endermosh Music Disc" = true
 	"Color Runes" = true
 	Camera = true
-	"Bundle Recipe" = true
+	"Bundle Recipe" = false
 	"Bottled Cloud" = true
 	"Beacon Redirection" = true
 	"Ancient Tomes" = true
@@ -720,10 +720,10 @@
 				#Allowed values: [-64,320]
 				"Max Height" = 60
 				#Allowed values: [0,)
-				"Cluster Size" = 64
+				"Cluster Size" = 32
 				#Can be a positive integer or a fractional value betweeen 0 and 1. If integer, it spawns that many clusters. If fractional, it has that chance to spawn a single cluster. Set exactly zero to not spawn at all.
 				#Allowed values: [0,)
-				"Cluster Count" = 2.0
+				"Cluster Count" = 0.25
 
 			[world.new_stone_types.myalite.oregen_upper]
 				#Allowed values: [-64,320]
@@ -731,18 +731,18 @@
 				#Allowed values: [-64,320]
 				"Max Height" = 128
 				#Allowed values: [0,)
-				"Cluster Size" = 64
+				"Cluster Size" = 48
 				#Can be a positive integer or a fractional value betweeen 0 and 1. If integer, it spawns that many clusters. If fractional, it has that chance to spawn a single cluster. Set exactly zero to not spawn at all.
 				#Allowed values: [0,)
-				"Cluster Count" = 0.1666666
+				"Cluster Count" = 0.15
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
-		"Chance Per Chunk" = 0.1
+		"Chance Per Chunk" = 0.003
 		#The chance for a spike to be big (1 is 100%, 0 is 0%)
-		"Big Spike Chance" = 0.03
+		"Big Spike Chance" = 0.005
 		#Should a chunk have spikes, how many would the generator try to place
-		"Tries Per Chunk" = 4
+		"Tries Per Chunk" = 1
 		"Big Spike Spawners" = true
 
 		[world.nether_obsidian_spikes.dimensions]
@@ -1142,11 +1142,11 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end, underground]
-					"Biome Types" = []
-					"Is Blacklist" = true
+					"Biome Types" = ["end"]
+					"Is Blacklist" = false
 
 				[world.big_stone_clusters.myalite.biomes.biomes]
-					Biomes = ["minecraft:end_highlands"]
+					Biomes = ["minecraft:end_barrens", "minecraft:end_highlands", "byg:cryptic_wastes"]
 					"Is Blacklist" = false
 
 	[world.big_dungeon]
@@ -1552,10 +1552,10 @@
 [oddities]
 	"Totem Of Holding" = false
 	"Tiny Potato" = true
-	Pipes = true
+	Pipes = false
 	"Matrix Enchanting" = true
-	Magnets = true
-	Crate = true
+	Magnets = false
+	Crate = false
 	Backpack = true
 
 	[oddities.totem_of_holding]
@@ -1590,7 +1590,7 @@
 		#The maximum enchanting power the matrix enchanter can accept
 		"Max Bookshelves" = 15
 		#Should this be X, the price of a piece increase by 1 every X pieces you generate
-		"Piece Price Scale" = 9
+		"Piece Price Scale" = 7
 		#The higher this is, the better enchantments you'll get on books
 		"Book Enchantability" = 12
 		#How many pieces you can generate without any bookshelves
@@ -1602,11 +1602,11 @@
 		#How many pieces a single Lapis can generate
 		"Charge Per Lapis" = 4
 		#How much the min level requirement for adding a new piece should increase for each piece added (up until the value of Min Level Cutoff)
-		"Min Level Scale Factor" = 1.2
+		"Min Level Scale Factor" = 1.25
 		#How much the min level requirement for adding a new piece to a book should increase per each bookshelf being used
 		"Min Level Scale Factor Book" = 2.0
 		#How much to multiply the frequency of pieces where at least one of the same type has been generated
-		"Dupe Multiplier" = 1.4
+		"Dupe Multiplier" = 1.3
 		#How much to multiply the frequency of pieces where incompatible pieces have been generated
 		"Incompatible Multiplier" = 0.0
 		#Set to false to disable the ability to create Enchanted Books
@@ -1616,11 +1616,11 @@
 		#Set to false to disable the tooltip for items with pending enchantments
 		"Show Tooltip" = true
 		#By default, enchantment rarities are fuzzed a bit to feel better with the new system. Set this to false to override this behaviour.
-		"Normalize Rarity" = true
+		"Normalize Rarity" = false
 		#Matrix Enchanting can be done with water instead of air around the enchanting table. Set this to false to disable this behaviour.
 		"Allow Underwater Enchanting" = true
 		#A list of enchantment IDs you don't want the enchantment table to be able to create
-		"Disallowed Enchantments" = []
+		"Disallowed Enchantments" = ["apotheosis:capturing", "enigmaticlegacy:ceaseless", "enigmaticlegacy:slayer", "enigmaticlegacy:sharpshooter"]
 		#An array of influences each candle should apply. This list must be 16 elements long, and is in order of wool colors.
 		#A minus sign before an enchantment will make the influence decrease the probability of that enchantment.
 		"Influences List" = ["minecraft:unbreaking", "minecraft:fire_protection", "minecraft:knockback,minecraft:punch", "minecraft:feather_falling", "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea", "minecraft:blast_protection", "minecraft:silk_touch,minecraft:channeling", "minecraft:bane_of_arthropods", "minecraft:protection", "minecraft:respiration,minecraft:loyalty,minecraft:infinity", "minecraft:sweeping,minecraft:multishot", "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge", "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide", "minecraft:thorns,minecraft:piercing", "minecraft:fire_aspect,minecraft:flame", "minecraft:smite,minecraft:projectile_protection"]
@@ -1634,15 +1634,15 @@
 		#How much each candle influences an enchantment. This works as a multiplier to its weight
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
-		"Automatically Convert" = true
+		"Automatically Convert" = false
 		#Candles with soul sand below them or below the bookshelves dampen enchantments instead of influence them.
 		"Soul Candles Invert" = true
 
 	[oddities.magnets]
 		#Any items you place in this list will be derived so that any block made of it will become magnetizable
-		"Magnetic Derivation List" = ["minecraft:iron_ingot", "minecraft:copper_ingot", "minecraft:exposed_copper", "minecraft:weathered_copper", "minecraft:oxidized_copper", "minecraft:raw_iron", "minecraft:raw_copper", "minecraft:iron_ore", "minecraft:deepslate_iron_ore", "minecraft:copper_ore", "minecraft:deepslate_copper_ore"]
+		"Magnetic Derivation List" = ["minecraft:iron_ingot", "minecraft:copper_ingot", "minecraft:exposed_copper", "minecraft:weathered_copper", "minecraft:oxidized_copper", "minecraft:raw_iron", "minecraft:raw_copper", "minecraft:iron_ore", "minecraft:deepslate_iron_ore", "minecraft:copper_ore", "minecraft:deepslate_copper_ore", "tconstruct:cobalt_ingot", "tconstruct:raw_cobalt_block", "tconstruct:cobalt_ore"]
 		"Magnetic Whitelist" = ["minecraft:chipped_anvil", "minecraft:damaged_anvil"]
-		"Magnetic Blacklist" = ["minecraft:tripwire_hook"]
+		"Magnetic Blacklist" = ["minecraft:tripwire_hook", "tconstruct:seared_duct", "tconstruct:scorched_duct"]
 
 	[oddities.crate]
 		"Max Items" = 640

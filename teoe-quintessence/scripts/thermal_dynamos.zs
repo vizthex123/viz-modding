@@ -6,6 +6,7 @@ print("thermal_dynamos.zs loading...");
 # Coals give 50% more, as per TE's system
 
 # Had to redo these since CraftTweaker's burn time changes aren't registered by TE, rip
+	// Non-coal items
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:minecraft:dried_kelp_block>);
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:thermal:sawdust_block>);
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:quark:stick_block>);
@@ -15,7 +16,7 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:stirling_fuel>.addFuel("sawdust_block_fuel", <item:thermal:sawdust_block>, 12000);
 <recipetype:thermal:stirling_fuel>.addFuel("kelp_block_fuel", <item:minecraft:dried_kelp_block>, 40000);
 
-
+	// BYG coals
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:byg:anthracite>);
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:byg:anthracite_block>);
 <recipetype:thermal:stirling_fuel>.removeFuel(<item:byg:lignite>);
@@ -27,6 +28,10 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:stirling_fuel>.addFuel("lignite_fuel", <item:byg:lignite>, 21000);
 <recipetype:thermal:stirling_fuel>.addFuel("lignite_block_fuel", <item:byg:lignite_block>, 210000);
 
+	// Misc items
+<recipetype:thermal:stirling_fuel>.removeFuel(<item:kubejs:iridium_fuel_cell>);
+
+<recipetype:thermal:stirling_fuel>.addFuel("iridium_cell", <item:kubejs:iridium_fuel_cell>, 1280000);
 
 
 # Lapidary
@@ -47,7 +52,6 @@ print("thermal_dynamos.zs loading...");
 
 <recipetype:thermal:lapidary_fuel>.addFuel("carminite_fuel", <item:twilightforest:carminite>, 75000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("wrappist_fuel", <item:geode:wrappist_shard>, 65000);
 <recipetype:thermal:lapidary_fuel>.addFuel("soulstone_fuel", <item:malum:processed_soulstone>, 25000);
 <recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz_fuel", <item:nourished_nether:soul_quartz>, 60000);
 <recipetype:thermal:lapidary_fuel>.addFuel("dimshard_fuel", <item:rftoolsbase:dimensionalshard>, 250000);

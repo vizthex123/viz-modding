@@ -12,15 +12,14 @@ latex makes rubber
 
 */
 
-var xp = <fluid:cofh_core:experience>;
-var latex = <fluid:thermal:latex>;
-var resin = <fluid:thermal:resin>;
-var sap = <fluid:thermal:sap>;
-
+val xp = <fluid:cofh_core:experience>;
+val latex = <fluid:thermal:latex>;
+val resin = <fluid:thermal:resin>;
+val sap = <fluid:thermal:sap>;
+/*
 # Oh The Biomes You'll Go
-# <recipetype:thermal:tree_extractor>.addMapping("_extraction", <block:malum:runewood_log>, <block:malum:runewood_leaves>, <fluid:cofh_core:experience>);
-
-
+<recipetype:thermal:tree_extractor>.addMapping("_extraction", <block:malum:runewood_log>, <block:malum:runewood_leaves>, <fluid:cofh_core:experience>);
+*/
 
 # Malum
 <recipetype:thermal:tree_extractor>.addMapping("runewood_extraction", <block:malum:runewood_log>, <block:malum:runewood_leaves>, xp*25);

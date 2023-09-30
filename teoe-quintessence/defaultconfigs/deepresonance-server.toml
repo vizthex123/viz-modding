@@ -4,32 +4,32 @@ maxHorizontalCrystalDistance = 10
 #Maximum vertical distance to look for crystals
 #Range: 1 ~ 16
 maxVerticalCrystalDistance = 1
-#No comment
+#Startup time before the generator is active
 #Range: 20 ~ 2000
-startupTime = 70
-#No comment
+startupTime = 80
+#Shutdown time
 #Range: 20 ~ 2000
-shutdownTime = 70
-#No comment
+shutdownTime = 20
+#Maximum amount of power per generator block
 #Range: 1000 ~ 100000
 powerStoragePerBlock = 50000
-#No comment
+#Output power per tick
 #Range: 10 ~ 100000
 powerPerTickOut = 20000
-#No comment
+#Maximum number of crystals supported per block
 #Range: 1 ~ 8
 maxCrystalsPerBlock = 2
-#No comment
+#Maximum power input per block
 #Range: 100 ~ 50000
 maxPowerInputPerBlock = 10000
 
 [crystals]
 	#The maximum kilo-RF (per 1000, so 1000 = 1milion RF) that a crystal with 100% power can hold
 	#Range: 1 ~ 2000000000
-	maximumStoredPower = 2500
+	maximumStoredPower = 100
 	#The maximum RF/tick that a crystal with 100% efficiency can give
 	#Range: 1 ~ 20000
-	maximumPowerTick = 4800
+	maximumPowerTick = 64
 
 [plate]
 	#Strength of radiation that a plate block gives when it has a redstone signal. 0 to disable
@@ -84,6 +84,9 @@ maxPowerInputPerBlock = 10000
 	#The amount of crystal liquid we consume per catalyst item
 	#Range: > 1
 	crystalLiquidPerCatalyst = 25
+	#The amount of crystal liquid we consume per catalyst item
+	#Range: > 1
+	rclPerCatalyst = 500
 
 [purifier]
 	#Amount of ticks needed to purify one unit of RCL
@@ -125,7 +128,7 @@ maxPowerInputPerBlock = 10000
 	ticksPerOperation = 5
 	#The amount of RCL to transfer in one operation
 	#Range: 100 ~ 10000
-	rclPerOperation = 1
+	rclPerOperation = 100
 
 [explosion]
 	#This factor increases the radius of radiation on explosion and decreases the strength

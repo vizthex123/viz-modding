@@ -6,10 +6,9 @@ print("JEI.zs loading...");
 /*
 mods.jei.JEI.hideIngredient(<item>);
 mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
-
-mods.jei.JEI.addInfo(<item>, ["line1", "line2"]);
-
 mods.jei.JEI.hideRecipe("category", "recipeName");
+
+mods.jei.JEI.addDescription(<item>, ["line1", "line2"]);
 */
 
 
@@ -20,7 +19,8 @@ mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla w
 mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
 mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley"]);
 mods.jei.JEI.addDescription(<item:ob_core:magic_dust>, ["Find a Magic Crystal Cluster deep in the underground, which will grow Magic Dust over time." + "\n\nThey seem to be more common near lava"]);
-
+mods.jei.JEI.addDescription(<item:nourished_nether:soul_quartz>, ["Stand on Soul Sludge in the Nether until it damages you, then harvest it with a Hoe"]);
+mods.jei.JEI.addDescription(<item:nourished_nether:necronium_ingot>, ["Crafted by processing Gold Ingots in a Soul Forge"]);
 
 
 # Hides infested blocks
@@ -46,7 +46,6 @@ mods.jei.JEI.hideIngredient(<item:thermal:fluid_tank_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_efficiency_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_catalyst_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
-mods.jei.JEI.hideIngredient(<item:wormhole:creative_energy_cell>);
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);
 mods.jei.JEI.hideIngredient(<item:quantumquarryplus:creative_cell>);
 mods.jei.JEI.hideIngredient(<item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:creative" as string}));
@@ -69,7 +68,10 @@ mods.jei.JEI.hideIngredient(<item:industrialforegoing:gold_gear>);
 mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
-mods.jei.JEI.hideIngredient(<item:wormhole:coal_generator>);
+
+mods.jei.JEI.hideIngredient(<item:nourished_nether:netherite_nugget>);
+mods.jei.JEI.hideIngredient(<item:tconstruct:netherite_nugget>);
+
 
 # Hides normally obtainable that aren't obtainable in the pack
 mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);

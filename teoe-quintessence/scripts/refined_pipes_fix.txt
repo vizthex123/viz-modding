@@ -1,0 +1,22 @@
+# Lets you recycle fluid and energy pipes, which were replaced with Thermal Dynamics ducts in v6.3
+# Renamed the .txt portion of this file to .zs if you want to re-enable it
+
+print("refined_pipes_fix.zs loading...");
+
+# Recycle non-item Pipes
+<recipetype:thermal:smelter>.addRecipe("induction_recycle_basic_pipes", [<item:minecraft:iron_ingot> % 75, <item:minecraft:redstone>*2 % 25, <item:quark:dirty_shard>*2 % 85, <item:quark:dirty_shard>*2 % 60], [<item:refinedpipes:basic_energy_pipe>|<item:refinedpipes:basic_fluid_pipe>], 0.5, 2000);
+<recipetype:create:crushing>.addRecipe("recycle_basic_pipes", [<item:minecraft:iron_ingot> % 85, <item:minecraft:redstone>*2 % 35, <item:quark:dirty_shard>*2 % 75, <item:quark:dirty_shard>*2 % 50], <item:refinedpipes:basic_energy_pipe>|<item:refinedpipes:basic_fluid_pipe>, 100);
+
+<recipetype:thermal:smelter>.addRecipe("induction_recycle_improved_pipes", [<item:minecraft:gold_ingot> % 75, <item:minecraft:redstone>*2 % 25, <item:quark:dirty_shard>*2 % 85, <item:quark:dirty_shard>*2 % 60], [<item:refinedpipes:improved_energy_pipe>|<item:refinedpipes:improved_fluid_pipe>], 0.5, 2000);
+<recipetype:create:crushing>.addRecipe("recycle_improved_pipes", [<item:minecraft:gold_ingot> % 85, <item:minecraft:redstone>*2 % 35, <item:quark:dirty_shard>*2 % 75, <item:quark:dirty_shard>*2 % 50], <item:refinedpipes:improved_energy_pipe>|<item:refinedpipes:improved_fluid_pipe>, 100);
+
+<recipetype:thermal:smelter>.addRecipe("induction_recycle_advanced_pipes", [<item:minecraft:diamond> % 75, <item:minecraft:quartz> % 25, <item:quark:dirty_shard>*2 % 85, <item:quark:dirty_shard>*2 % 60], [<item:refinedpipes:advanced_energy_pipe>|<item:refinedpipes:advanced_fluid_pipe>], 0.5, 2000);
+<recipetype:create:crushing>.addRecipe("recycle_advanced_pipes", [<item:minecraft:diamond> % 85, <item:minecraft:quartz> % 35, <item:quark:dirty_shard>*2 % 75, <item:quark:dirty_shard>*2 % 50], <item:refinedpipes:advanced_energy_pipe>|<item:refinedpipes:advanced_fluid_pipe>, 100);
+
+<recipetype:thermal:smelter>.addRecipe("induction_recycle_elite_pipes", [<item:minecraft:emerald> % 75, <item:minecraft:blaze_rod> % 25, <item:quark:dirty_shard>*2 % 85, <item:quark:dirty_shard>*2 % 60], [<item:refinedpipes:elite_energy_pipe>|<item:refinedpipes:elite_fluid_pipe>], 0.5, 2000);
+<recipetype:create:crushing>.addRecipe("recycle_elite_pipes", [<item:minecraft:emerald> % 85, <item:minecraft:blaze_powder>*5 % 40, <item:quark:dirty_shard>*2 % 75, <item:quark:dirty_shard>*2 % 50], <item:refinedpipes:elite_energy_pipe>|<item:refinedpipes:elite_fluid_pipe>, 100);
+
+<recipetype:thermal:smelter>.addRecipe("induction_recycle_ultimate_pipes", [<item:minecraft:prismarine_shard> % 75, <item:minecraft:popped_chorus_fruit> % 35, <item:quark:dirty_shard>*2 % 85, <item:quark:dirty_shard>*2 % 60], [<item:refinedpipes:ultimate_energy_pipe>|<item:refinedpipes:ultimate_fluid_pipe>], 2.0, 2000);
+<recipetype:create:crushing>.addRecipe("recycle_ultimate_pipes", [<item:minecraft:prismarine_shard> % 85, <item:minecraft:popped_chorus_fruit> % 25, <item:quark:dirty_shard>*2 % 75, <item:quark:dirty_shard>*2 % 50], <item:refinedpipes:ultimate_energy_pipe>|<item:refinedpipes:ultimate_fluid_pipe>, 100);
+
+print("refined_pipes_fix.zs loaded");

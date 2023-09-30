@@ -19,10 +19,12 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 */
 
 # Tags
+val crushed_ore = <tag:items:create:crushed_ores>;
+
+crushed_ore.add(<item:kubejs:crushed_cobalt>);
+crushed_ore.add(<item:kubejs:crushed_pendorite>);
+crushed_ore.add(<item:kubejs:crushed_platinum>);
 <tag:items:minecraft:planks>.add(<item:kubejs:mdf>);
-<tag:items:create:crushed_ores>.add(<item:kubejs:crushed_cobalt>);
-<tag:items:create:crushed_ores>.add(<item:kubejs:crushed_pendorite>);
-<tag:items:create:crushed_ores>.add(<item:kubejs:crushed_platinum>);
 <tag:items:twilightforest:portal/activator>.add(<item:kubejs:portal_catalyst>);
 
 
@@ -37,113 +39,156 @@ blastFurnace.addRecipe("blast_crushed_pendorite", <item:byg:pendorite_scraps>, <
 <recipetype:thermal:furnace>.addRecipe("redstone_crushed_platinum", <item:ob_core:platinum_ingot>, <item:kubejs:crushed_platinum>, 2.0, 2000);
 <recipetype:thermal:furnace>.addRecipe("redstone_crushed_pendorite", <item:byg:pendorite_scraps>, <item:kubejs:crushed_pendorite>, 0.45, 2000);
 
+### Scrap Recipes ###
+val copper = <item:kubejs:copper_scrap>;
+val iron = <item:kubejs:iron_scrap>;
+val gold = <item:kubejs:gold_scrap>;
+val diamond = <item:kubejs:diamond_scrap>;
+
+val small_copper = <item:kubejs:small_copper_scrap>;
+val small_iron = <item:kubejs:small_iron_scrap>;
+val small_gold = <item:kubejs:small_gold_scrap>;
+val small_diamond = <item:kubejs:small_diamond_scrap>;
+
+
+val platinum = <item:kubejs:platinum_scrap>;
+val lumium = <item:kubejs:lumium_scrap>;
+
+val small_platinum = <item:kubejs:small_platinum_scrap>;
+val small_lumium = <item:kubejs:small_lumium_scrap>;
+
+
+val fiery = <item:kubejs:fiery_scrap>;
+val ironwood = <item:kubejs:ironwood_scrap>;
+val knightmetal = <item:kubejs:knightmetal_scrap>;
+
+val small_fiery = <item:kubejs:small_fiery_scrap>;
+val small_ironwood = <item:kubejs:small_ironwood_scrap>;
+val small_knightmetal = <item:kubejs:small_knightmetal_scrap>;
 
 # Craft Small Scrap into Scrap
-craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);
+craftingTable.addShapeless("copper_scrap", copper, [small_copper, small_copper, small_copper]);
 
-craftingTable.addShapeless("iron_scrap", <item:kubejs:iron_scrap>, [<item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>]);
+craftingTable.addShapeless("iron_scrap", iron, [small_iron, small_iron, small_iron]);
 
-craftingTable.addShapeless("gold_scrap", <item:kubejs:gold_scrap>, [<item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>]);
+craftingTable.addShapeless("gold_scrap", gold, [small_gold, small_gold, small_gold]);
 
-craftingTable.addShapeless("diamond_scrap", <item:kubejs:diamond_scrap>, [<item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>, <item:kubejs:small_diamond_scrap>]);
+craftingTable.addShapeless("diamond_scrap", diamond, [small_diamond, small_diamond, small_diamond]);
 
-craftingTable.addShapeless("platinum_scrap", <item:kubejs:platinum_scrap>, [<item:kubejs:small_platinum_scrap>, <item:kubejs:small_platinum_scrap>, <item:kubejs:small_platinum_scrap>]);
+craftingTable.addShapeless("platinum_scrap", platinum, [small_platinum, small_platinum, small_platinum]);
 
-craftingTable.addShapeless("lumium_scrap", <item:kubejs:lumium_scrap>, [<item:kubejs:small_lumium_scrap>, <item:kubejs:small_lumium_scrap>, <item:kubejs:small_lumium_scrap>]);
+craftingTable.addShapeless("lumium_scrap", lumium, [small_lumium, small_lumium, small_lumium]);
 
-craftingTable.addShapeless("fiery_scrap", <item:kubejs:fiery_scrap>, [<item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>, <item:kubejs:small_fiery_scrap>]);
+craftingTable.addShapeless("fiery_scrap", fiery, [small_fiery, small_fiery, small_fiery]);
 
-craftingTable.addShapeless("ironwood_scrap", <item:kubejs:ironwood_scrap>, [<item:kubejs:small_ironwood_scrap>, <item:kubejs:small_ironwood_scrap>, <item:kubejs:small_ironwood_scrap>]);
+craftingTable.addShapeless("ironwood_scrap", ironwood, [small_ironwood, small_ironwood, small_ironwood]);
 
-craftingTable.addShapeless("knightmetal_scrap", <item:kubejs:knightmetal_scrap>, [<item:kubejs:small_knightmetal_scrap>, <item:kubejs:small_knightmetal_scrap>, <item:kubejs:small_knightmetal_scrap>]);
+craftingTable.addShapeless("knightmetal_scrap", knightmetal, [small_knightmetal, small_knightmetal, small_knightmetal]);
 
 
 # Smelt Scrap into Ingots
-furnace.addRecipe("smelt_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 200);
-furnace.addRecipe("smelt_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0, 200);
-furnace.addRecipe("smelt_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 200);
-furnace.addRecipe("smelt_ironwood_scrap", <item:twilightforest:ironwood_ingot>, <item:kubejs:ironwood_scrap>, 0, 200);
+furnace.addRecipe("smelt_copper_scrap", <item:minecraft:copper_ingot>, copper, 0, 200);
+furnace.addRecipe("smelt_scrap", <item:minecraft:iron_ingot>, iron, 0, 200);
+furnace.addRecipe("smelt_gold_scrap", <item:minecraft:gold_ingot>, gold, 0, 200);
+furnace.addRecipe("smelt_ironwood_scrap", <item:twilightforest:ironwood_ingot>, ironwood, 0, 200);
 
-blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, copper, 0, 100);
+blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, iron, 0, 100);
+blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, gold, 0, 100);
+blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, diamond, 0, 100);
 
-blastFurnace.addRecipe("blast_platinum_scrap", <item:ob_core:platinum_ingot>, <item:kubejs:platinum_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_lumium_scrap", <item:thermal:lumium_ingot>, <item:kubejs:lumium_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_fiery_scrap", <item:twilightforest:fiery_ingot>, <item:kubejs:fiery_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_ironwood_scrap", <item:twilightforest:ironwood_ingot>, <item:kubejs:ironwood_scrap>, 0, 100);
-blastFurnace.addRecipe("blast_knightmetal_scrap", <item:twilightforest:knightmetal_ingot>, <item:kubejs:knightmetal_scrap>, 0, 100);
+blastFurnace.addRecipe("blast_platinum_scrap", <item:ob_core:platinum_ingot>, platinum, 0, 100);
+blastFurnace.addRecipe("blast_lumium_scrap", <item:thermal:lumium_ingot>, lumium, 0, 100);
+blastFurnace.addRecipe("blast_fiery_scrap", <item:twilightforest:fiery_ingot>, fiery, 0, 100);
+blastFurnace.addRecipe("blast_ironwood_scrap", <item:twilightforest:ironwood_ingot>, ironwood, 0, 100);
+blastFurnace.addRecipe("blast_knightmetal_scrap", <item:twilightforest:knightmetal_ingot>, knightmetal, 0, 100);
 
 
 # Quicklime
-furnace.addRecipe("smelt_limestone", <item:kubejs:quicklime>, <tag:items:forge:limestone>, 0, 200);
-blastFurnace.addRecipe("blast_limestone", <item:kubejs:quicklime>, <tag:items:forge:limestone>, 0, 100);
+val quicklime = <item:kubejs:quicklime>;
 
-furnace.addRecipe("smelt_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 200);
-blastFurnace.addRecipe("blast_travertine", <item:kubejs:quicklime>, <item:byg:travertine>, 0, 100);
+blastFurnace.addRecipe("blast_limestone", quicklime, <tag:items:create:stone_types/limestone>, 0, 100);
+blastFurnace.addRecipe("blast_travertine", quicklime, <item:byg:travertine>, 0, 100);
 
-<recipetype:create:mechanical_crafting>.addRecipe("paper_quicklime", <item:minecraft:paper>, [[<item:kubejs:quicklime>, <item:kubejs:quicklime>, <item:kubejs:quicklime>]]);
+<recipetype:create:mechanical_crafting>.addRecipe("paper_quicklime", <item:minecraft:paper>, [[quicklime, quicklime, quicklime]]);
+
+// Recycle Spent Filters
+<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, quicklime], 0, 6000);
+
+// Induction Smelt Quicklime to make Steel
+<recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:create:stone_types/limestone>, quicklime*8], 0, 6400);
 
 
 # Glue
-craftingTable.addShapeless("glue", <item:kubejs:glue>, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <item:minecraft:paper>]);
-craftingTable.addShapeless("glue_bone", <item:kubejs:glue>, [<item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:paper>]);
-craftingTable.addShapeless("glue_necrotic_bone", <item:kubejs:glue>, [<item:tconstruct:necrotic_bone>, <item:minecraft:paper>]);
-craftingTable.addShapeless("glue_rib_bone", <item:kubejs:glue>*2, [<item:reliquary:rib_bone>, <item:minecraft:paper>]);
-craftingTable.addShapeless("glue_sharp_bone", <item:kubejs:glue>, [<item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:minecraft:paper>]);
-craftingTable.addShapeless("glue_honeycomb", <item:kubejs:glue>, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:paper>]);
+val glue = <item:kubejs:glue>;
 
-// Super Glue (Create)
-craftingTable.addShapeless("super_glue", <item:create:super_glue>, [<item:kubejs:glue>, <tag:items:forge:plates/iron>]);
+craftingTable.remove(<item:create:super_glue>);
+
+craftingTable.addShapeless("glue", glue, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_bone", glue, [<item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_necrotic_bone", glue, [<item:tconstruct:necrotic_bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_rib_bone", glue*2, [<item:reliquary:rib_bone>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_sharp_bone", glue, [<item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:aquamirae:sharp_bones>, <item:minecraft:paper>]);
+craftingTable.addShapeless("glue_honeycomb", glue, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:paper>]);
+
+// Super Glue
+craftingTable.addShapeless("super_glue", <item:create:super_glue>, [glue, glue, <tag:items:forge:plates/iron>]);
 
 
 
 # Sawdust
-// Clump
-craftingTable.addShaped("sawdust_clump", <item:kubejs:sawdust_clump>,
-    [[<item:thermal:sawdust>, <item:thermal:sawdust>],
-    [<item:thermal:sawdust>, <item:thermal:sawdust>]]);
+val sawdust = <item:thermal:sawdust>;
+val sawdust_clump = <item:kubejs:sawdust_clump>;
+val compressed_sawdust = <item:kubejs:compressed_sawdust>;
 
-<recipetype:thermal:press>.addRecipe("press_sawdust", [<item:kubejs:sawdust_clump>], <fluid:minecraft:empty>, [<item:thermal:sawdust>*4, <item:thermal:press_packing_2x2_die>], 400);
+// Clump
+craftingTable.addShaped("sawdust_clump", sawdust_clump,
+    [[sawdust, sawdust],
+    [sawdust, sawdust]]);
+
+<recipetype:thermal:press>.addRecipe("press_sawdust", [sawdust_clump], <fluid:minecraft:empty>, [sawdust*4, <item:thermal:press_packing_2x2_die>], 400);
 
 // Compressed
-<item:kubejs:compressed_sawdust>.burnTime = 400;
-composter.setValue(<item:kubejs:compressed_sawdust>, 0.5);
+compressed_sawdust.burnTime = 400;
+composter.setValue(compressed_sawdust, 0.5);
 
-furnace.addRecipe("smelt_compressed_sawdust", <item:minecraft:charcoal>, <item:kubejs:compressed_sawdust>, 0, 200);
+furnace.addRecipe("smelt_compressed_sawdust", <item:minecraft:charcoal>, compressed_sawdust, 0, 200);
 
 craftingTable.addShaped("sawdust_sticks", <item:minecraft:stick>*8,
-    [[<item:kubejs:compressed_sawdust>],
-    [<item:kubejs:compressed_sawdust>]]);
+    [[compressed_sawdust],
+    [compressed_sawdust]]);
 
-<recipetype:thermal:press>.addRecipe("uncraft_sawdust", [<item:kubejs:sawdust_clump>], <fluid:minecraft:empty>, [<item:kubejs:compressed_sawdust>, <item:thermal:press_unpacking_die>], 400);
+<recipetype:thermal:press>.addRecipe("uncraft_sawdust", [sawdust_clump], <fluid:minecraft:empty>, [compressed_sawdust, <item:thermal:press_unpacking_die>], 400);
 
 // Paper from Compressed Sawdust
 craftingTable.addShaped("paper_compressed_sawdust", <item:minecraft:paper>*3, 
-    [[<item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>]]);
+    [[compressed_sawdust, compressed_sawdust, compressed_sawdust]]);
 
 // Blocks of Sawdust from Compressed Sawdust
 craftingTable.addShaped("sawdust_block", <item:thermal:sawdust_block>*2,
-    [[<item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>],
-    [<item:kubejs:compressed_sawdust>, <item:kubejs:compressed_sawdust>]]);
+    [[compressed_sawdust, compressed_sawdust],
+    [compressed_sawdust, compressed_sawdust]]);
 
 // Compress Clumps
-<recipetype:thermal:press>.addRecipe("press_sawdust_clump", [<item:kubejs:compressed_sawdust>*2], <fluid:minecraft:empty>, [<item:kubejs:sawdust_clump>, <item:kubejs:sawdust_clump>], 1000);
+<recipetype:thermal:press>.addRecipe("press_sawdust_clump", [compressed_sawdust*2], <fluid:minecraft:empty>, [sawdust_clump, sawdust_clump], 1000);
 
-<recipetype:create:pressing>.addRecipe("mech_press_sawdust_clump", [<item:kubejs:compressed_sawdust>], <item:kubejs:sawdust_clump>, 3);
+<recipetype:create:pressing>.addRecipe("mech_press_sawdust_clump", [compressed_sawdust], sawdust_clump, 3);
 
 
 # MDF Board
 craftingTable.addShaped("mdf", <item:kubejs:mdf>,
-    [[<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>],
-    [<item:thermal:sawdust>, <item:kubejs:glue>, <item:thermal:sawdust>],
-    [<item:thermal:sawdust>, <item:thermal:sawdust>, <item:thermal:sawdust>]]);
+    [[sawdust, sawdust, sawdust],
+    [sawdust, glue, sawdust],
+    [sawdust, sawdust, sawdust]]);
 
 craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
-    [[<item:kubejs:compressed_sawdust>, <item:kubejs:glue>, <item:kubejs:compressed_sawdust>],
-    [<item:kubejs:compressed_sawdust>, <item:kubejs:glue>, <item:kubejs:compressed_sawdust>]]);
+    [[compressed_sawdust, glue, compressed_sawdust],
+    [compressed_sawdust, glue, compressed_sawdust]]);
 
+
+# Portal Catalyst
+craftingTable.addShaped("portal_catalyst", <item:kubejs:portal_catalyst>,
+    [[<item:minecraft:gold_ingot>, <item:minecraft:diamond>, <item:minecraft:gold_ingot>]]);
 
 
 # Iridium Fuel Cell
@@ -151,25 +196,5 @@ craftingTable.addShaped("compressed_mdf_board", <item:kubejs:mdf>*4,
 [[<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>],
 [<tag:items:forge:plates/lead>, <item:kubejs:iridium_chunks>, <tag:items:forge:plates/lead>],
 [<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>]]);
-
-// Sequenced Version
-/* Sequence:
-1) Deploy Lead Plate
-2) Press Lead Plate
-3) Press the entire thing
-*/
-/*
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("iridium_fuel_cell_sequence")
-                                                      .transitionTo(<item:kubejs:iridium_fuel_cell>)
-                                                      .require(<item:kubejs:iridium_chunks>)
-                                                      .addOutput(<item:kubejs:iridium_fuel_cell>, 100)
-                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<tag:items:forge:plates/lead>))
-                                                      .addStep<mods.createtweaker.PressRecipe>(((rb) => rb.require(<tag:items:forge:plates/lead>))
-                                                      .addStep<mods.createtweaker.PressRecipe>());
-*/
-
-# Portal Catalyst
-<recipetype:create:mechanical_crafting>.addRecipe("portal_catalyst", <item:kubejs:portal_catalyst>,
-[[<item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>, <item:minecraft:diamond>, <item:thermal:steel_ingot>|<item:tconstruct:hepatizon_ingot>]]);
 
 print("3-kubejs.zs loaded");

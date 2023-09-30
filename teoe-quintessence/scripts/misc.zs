@@ -17,10 +17,8 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-// Stonecut Limestone
-stoneCutter.addRecipe("stonecut_limestone", <item:create:cut_limestone>, <item:quark:limestone>);
-
 // Modded Crafting Table -> Normal One
+// Nobody uses tags in their recipes AUGHUHUAGUAH
 craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
 
 // Craft Debris Scrap into Netherite Scrap
@@ -29,23 +27,34 @@ craftingTable.addShaped("netherite_scrap", <item:minecraft:netherite_scrap>,
     [[scrap_nugget, scrap_nugget, scrap_nugget],
     [scrap_nugget, scrap_nugget, scrap_nugget],
     [scrap_nugget, scrap_nugget, scrap_nugget]]);
-	
+
+// Add tag support to Tesseracts
+craftingTable.remove(<item:tesseract:tesseract>);
+craftingTable.addShaped("tesseract", <item:tesseract:tesseract>,
+    [[<item:thermal:enderium_ingot>, <tag:items:thermal:glass/hardened>, <item:thermal:enderium_ingot>],
+    [<tag:items:thermal:glass/hardened>, <item:thermal:machine_frame>, <tag:items:thermal:glass/hardened>],
+    [<item:thermal:enderium_ingot>, <tag:items:thermal:glass/hardened>, <item:thermal:enderium_ingot>]]);
+
 // Crops -> Dye
+val brown_dye = <item:minecraft:brown_dye>;
+val green_dye = <item:minecraft:green_dye>;
+val red_dye = <item:minecraft:red_dye>;
+
 craftingTable.addShapeless("glow_berry_dye", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
 
 craftingTable.addShapeless("corn_dye", <item:minecraft:yellow_dye>, [<item:thermal:corn>]);
-craftingTable.addShapeless("onion_dye", <item:minecraft:brown_dye>, [<item:thermal:onion>]);
+craftingTable.addShapeless("onion_dye", brown_dye, [<item:thermal:onion>]);
+craftingTable.addShapeless("peanut_dye", brown_dye, [<item:thermal:peanut>]);
 craftingTable.addShapeless("pink_dye", <item:minecraft:pink_dye>, [<item:thermal:radish>]);
 craftingTable.addShapeless("sadiroot_dye", <item:minecraft:cyan_dye>, [<item:thermal:sadiroot>]);
-craftingTable.addShapeless("spinach_dye", <item:minecraft:green_dye>, [<item:thermal:spinach>]);
-craftingTable.addShapeless("pepper_dye", <item:minecraft:green_dye>, [<item:thermal:bell_pepper>]);
+craftingTable.addShapeless("spinach_dye", green_dye, [<item:thermal:spinach>]);
+craftingTable.addShapeless("pepper_dye", green_dye, [<item:thermal:bell_pepper>]);
+craftingTable.addShapeless("green_bean_dye", green_dye, [<item:thermal:green_bean>]);
+craftingTable.addShapeless("hops_tea_dye", green_dye, [<item:thermal:hops>|<item:thermal:tea>, <item:thermal:hops>|<item:thermal:tea>]);
 craftingTable.addShapeless("eggplant_dye", <item:minecraft:purple_dye>, [<item:thermal:eggplant>]);
-craftingTable.addShapeless("green_bean_dye", <item:minecraft:green_dye>, [<item:thermal:green_bean>]);
-craftingTable.addShapeless("peanut_dye", <item:minecraft:brown_dye>, [<item:thermal:peanut>]);
-craftingTable.addShapeless("strawberry_dye", <item:minecraft:red_dye>, [<item:thermal:strawberry>]);
-craftingTable.addShapeless("tomato_dye", <item:minecraft:red_dye>, [<item:thermal:tomato>]);
-craftingTable.addShapeless("coffee_dye", <item:minecraft:red_dye>, [<item:thermal:coffee>, <item:thermal:coffee>]);
-craftingTable.addShapeless("hops_tea_dye", <item:minecraft:green_dye>, [<item:thermal:hops>|<item:thermal:tea>, <item:thermal:hops>|<item:thermal:tea>]);
+craftingTable.addShapeless("strawberry_dye", red_dye, [<item:thermal:strawberry>]);
+craftingTable.addShapeless("tomato_dye", red_dye, [<item:thermal:tomato>]);
+craftingTable.addShapeless("coffee_dye", red_dye, [<item:thermal:coffee>, <item:thermal:coffee>]);
 
 
 // Nature's Compass

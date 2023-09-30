@@ -123,11 +123,9 @@ energy - RF value
 
 # Misc
 <tag:items:forge:tooltips/custom>.add(<item:reliquary:shears_of_winter>);
-<tag:items:forge:tooltips/custom>.add(<item:the_bumblezone:stinger_spear>);
 <tag:items:forge:tooltips/custom>.add(<item:additionaladditions:crossbow_with_spyglass>);
 
 <tag:items:forge:tooltips/durability>.add(<item:reliquary:shears_of_winter>);
-<tag:items:forge:tooltips/durability>.add(<item:the_bumblezone:stinger_spear>);
 <tag:items:forge:tooltips/durability>.add(<item:additionaladditions:crossbow_with_spyglass>);
 
 

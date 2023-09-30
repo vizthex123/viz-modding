@@ -1,5 +1,5 @@
 # Adds recipes to Tinker's Construct
-print("tinker.zs loading...");
+print("tinkers.zs loading...");
 /*
 craftingTable.addShapeless("name", <item:output>, [<item>]);
 craftingTable.addShaped("name", <item:output>,
@@ -26,4 +26,4 @@ craftingTable.addShapeless("glue_book", <item:minecraft:book>, [<item:minecraft:
 <recipetype:tconstruct:melting>.addMeltingRecipe("melt_crying_obsidian", <item:minecraft:obsidian>, <fluid:tconstruct:obsidian>*1000, 1200, 35);
 */
 
-print("tinker.zs loaded");
+print("tinkers.zs loaded");

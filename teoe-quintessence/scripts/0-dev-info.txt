@@ -10,12 +10,26 @@ Octagon - magic
 Hexagon - exploration
 
 
+Rarities:
+
+Quintessal (Level 0)
+Stellar (Level 1)
+Radiant (Level 2)
+Shadow (Level 7)
+Legendary (Level 3)
+[MC] Epic (Level 4)
+[MC] Rare (Level 5)
+[MC] Uncommon (Level 6)
+
 wallet slot is at 100, 59 | open button is at 20, 5 (x, y)
 
 
 1,000 RF = 1 Second for Create
 
 toggle FancyMenu with control + alt + c
+
+
+rose gold is set to have +100 durability, armour has same defense as gold but gives +2 toughness
 
 
 Server Pack Exporting:

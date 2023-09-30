@@ -84,10 +84,6 @@ val stick = <item:minecraft:stick>;
 <recipetype:thermal:sawmill>.addRecipe("saw_tnt", [<item:minecraft:sand>*2, <item:minecraft:gunpowder>*3 % 50], <item:minecraft:tnt>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_tnt", <item:minecraft:gunpowder>*2, <item:minecraft:tnt>, 3);
 
-// Saw Beehive Beeswax
-<recipetype:thermal:sawmill>.addRecipe("saw_beeswax", [<item:minecraft:honeycomb>*4 % 75, <item:minecraft:honey_bottle> % 50, sawdust*2], <item:the_bumblezone:beehive_beeswax>, 2000);
-<recipetype:create:cutting>.addRecipe("mech_saw_beeswax", sawdust*2, <item:the_bumblezone:beehive_beeswax>, 3);
-
 // Glowsticks
 <recipetype:thermal:sawmill>.addRecipe("saw_glowstick", [sawdust % 50, <item:minecraft:glow_ink_sac> % 50], <item:additionaladditions:glow_stick>, 1000);
 

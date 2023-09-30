@@ -13,8 +13,7 @@ print("machine_recycling.zs loading...");
 TE gives more secondary (10%), but Create has higher primary output (25 - 50%)
 */
 
-# All recipes take 2k RF or 5 seconds
-### Pulverizer Recycling
+# All recipes take 2k RF or 5 seconds unless denoted in a comment
 
 val amethyst = <item:minecraft:amethyst_shard>;
 val clay = <item:minecraft:clay_ball>;
@@ -207,10 +206,6 @@ recipes.removeByName("thermal:smelter_gold_armor");
 <recipetype:thermal:smelter>.addRecipe("recycle_eye", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>, <item:minecraft:gold_nugget> % 50], [<item:enigmaticlegacy:extradimensional_eye>], 0, 2000);
 
 
-# Recycle Spent Filters
-<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, <item:kubejs:quicklime>], 0, 6000);
-
-
 /*
 <recipetype:thermal:pulverizer>.addRecipe("recipeName", [<outputs> % chance], <item>, XP, RFCost);
 
@@ -236,6 +231,10 @@ val spider_string = <item:minecraft:string>;
 // Auction Stands
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_auction_stand", [shard*2, sawdust*2 % 60], <tag:items:lightmanscurrency:auction_stand>, 0, 2000);
 <recipetype:create:crushing>.addRecipe("crush_auction_stand", [shard*3, sawdust*2 % 50], <tag:items:lightmanscurrency:auction_stand>, 100);
+
+// Bookshelves
+<recipetype:thermal:sawmill>.addRecipe("saw_bookshelf", [sawdust % 50], <tag:items:lightmanscurrency:bookshelf>, 1000);
+<recipetype:create:cutting>.addRecipe("mech_saw_bookshelf", sawdust, <tag:items:lightmanscurrency:bookshelf>, 2);
 
 // Shelves
 <recipetype:thermal:sawmill>.addRecipe("saw_shelf", [sawdust % 50], <tag:items:lightmanscurrency:shelf>, 1000);

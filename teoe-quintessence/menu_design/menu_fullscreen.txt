@@ -69,18 +69,18 @@ customization {
   width = 108
   action = deep_customization_element:title_screen_branding
   actionid = 551f378f-64bc-4901-858b-4fcd9979f6d51675446246157
-  y = 228
+  y = 234
   height = 40
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 251
+  x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 96111ab6-0bb4-4c48-8337-a1d904d26aa41675446246157
-  y = 250
+  y = 256
   height = 9
 }
 
@@ -134,32 +134,30 @@ customization {
   orientation = top-left
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://radiance-projects.fandom.com/wiki/Radiance_Modding_Wiki%btnaction_splitter_fm%
   x = 188
   width = 100
-  actionid = 10b8beea-05a8-42d3-b931-e1209ddd64f31675446496936
   action = addbutton
+  actionid = 10b8beea-05a8-42d3-b931-e1209ddd64f31675446496936
   y = 175
   label = Wiki
-  value = https://www.youtube.com/watch?v=dQw4w9WgXcQ
   height = 20
 }
 
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;%btnaction_splitter_fm%
   backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   hoverlabel = Discord
   x = 165
   width = 20
-  actionid = e297372a-7195-4501-8445-e0260c213b991675446589509
   action = addbutton
+  actionid = e297372a-7195-4501-8445-e0260c213b991675446589509
   y = 175
   backgroundnormal = config/fancymenu/customization/discord_logo.png
-  value = 
   height = 20
 }
 
