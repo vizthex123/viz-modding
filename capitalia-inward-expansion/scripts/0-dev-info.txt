@@ -1,0 +1,33 @@
+Super secret dev info!
+
+
+Quest shapes:
+Circle - Default
+Diamond - Stone Age
+Rounded Square - Iron Age
+Square - Industrial Age
+
+Hexagon (the bestagon) - Challenges & Prestige
+
+Octagon - Information/Atomic Age & End-game stuff
+
+
+
+Trade permit tiers:
+
+Hazardous Materials - 1
+Special Items - 2
+
+Prestige - 4
+Worldbreaker Drill Sale - 5
+
+
+
+Rarites:
+
+Capital (Level 0) - Blue with purple highlights
+Mythical (Level 1) - Purple
+Legendary (Level 2) - O R A N G E!
+[MC] Epic (Level 3) - Pink/magenta
+[MC] Rare (Level 4) - Blue
+[MC] Uncommon (Level 5) - Light green (#17DA61)
