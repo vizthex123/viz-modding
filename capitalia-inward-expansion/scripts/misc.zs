@@ -33,22 +33,48 @@ val leather = <tag:items:cie:binding>;
 // Compost Ash
 composter.setValue(<item:nourished_nether:ash_lump>, 0.5);
 
+// Compost Illager Flesh
+composter.setValue(<item:food_enhancements:illager_flesh>, 0.35);
+
 // Adds tag support to the Bedroll
 craftingTable.remove(<item:upgrade_aquatic:bedroll>);
 craftingTable.addShaped("bedroll", <item:upgrade_aquatic:bedroll>, 
     [[leather, leather, <tag:items:minecraft:wool>],
     [leather, leather, leather]]);
 
+// Change the recipe for Blank Scanner Modules
+craftingTable.remove(<item:scannable:blank_module>);
+craftingTable.addShaped("blank_module", <item:scannable:blank_module>, 
+    [[<item:quark:green_corundum_cluster>|<item:bluepower:green_sapphire_gem>, <item:quark:green_corundum_cluster>|<item:bluepower:green_sapphire_gem>, <item:quark:green_corundum_cluster>|<item:bluepower:green_sapphire_gem>],
+    [iron, <item:bluepower:teslatite_dust>,iron],
+    [iron, <item:minecraft:gold_nugget>, iron]]);
+
+<<<<<<< Updated upstream
+craftingTable.addShaped("blank_module_rune", <item:scannable:blank_module>*4, 
+=======
+craftingTable.addShaped("blank_module_rune", <item:scannable:blank_module>*8, 
+>>>>>>> Stashed changes
+    [[empty, <item:quark:green_rune>, empty],
+    [iron, <item:bluepower:infused_teslatite_dust>,iron],
+    [iron, <item:minecraft:gold_nugget>, iron]]);
+
 // Makes the Tape Measure an upgrade to the Abacus
 craftingTable.remove(<item:measurements:tape_measure>);
 craftingTable.addShaped("tape_measure", <item:measurements:tape_measure>, 
-    [[<item:extendedcrafting:black_iron_ingot>, <item:minecraft:black_dye>, empty],
-    [<item:minecraft:black_dye>, <item:quark:abacus>, <item:minecraft:yellow_dye>],
-    [empty, empty, <item:minecraft:yellow_dye>]]);
+    [[empty, <item:minecraft:black_dye>, empty],
+    [<item:extendedcrafting:black_iron_ingot>, <item:quark:abacus>, <item:minecraft:yellow_dye>],
+    [empty, <item:minecraft:black_dye>, <item:minecraft:yellow_dye>]]);
+
+// Cheaper Abacus
+craftingTable.remove(<item:quark:abacus>);
+craftingTable.addShaped("abacus", <item:quark:abacus>, 
+    [[planks, stick, planks],
+    [planks, <item:create:zinc_nugget>|<item:minecraft:iron_nugget>|<item:kubejs:tiny_iron_scrap>, planks],
+    [planks, stick, planks]]);
 
 // Make Packing Tape use Glue
 craftingTable.remove(<item:packingtape:tape>);
-craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<item:kubejs:glue>, <tag:items:forge:string>, <tag:items:cie:binding>]);
+craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<item:kubejs:glue>, <tag:items:forge:string>, <tag:items:cie:paper>]);
 
  // Wooden Hopper cheaper and upgrade
 craftingTable.remove(<item:woodenhopper:wooden_hopper>);
@@ -61,13 +87,6 @@ craftingTable.addShaped("wooden_hopper_upgrade", <item:minecraft:hopper>,
     [[iron, empty, iron],
     [iron, <item:woodenhopper:wooden_hopper>, iron],
     [empty, iron, empty]]);
-
-// Makes Iron Nuggets -> Ingots use tags
-craftingTable.removeByName("minecraft:iron_ingot_from_nuggets");
-craftingTable.addShaped("iron_nuggets_to_ingot", iron, 
-    [[nugget, nugget, nugget],
-    [nugget, nugget, nugget],
-    [nugget, nugget, nugget]]);
 
 // Make Books use my custom tags
 craftingTable.remove(<item:minecraft:book>);
@@ -83,13 +102,6 @@ craftingTable.remove(<item:minecraft:mushroom_stew>);
 
 craftingTable.addShapeless("rabbit_stew", <item:minecraft:rabbit_stew>, [<item:minecraft:cooked_rabbit>, <item:minecraft:baked_potato>, <item:minecraft:carrot>, <item:minecraft:bowl>, <tag:items:forge:mushrooms>]);
 craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [<item:minecraft:bowl>, <tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>]);
-
-// Cheaper Abacus
-craftingTable.remove(<item:quark:abacus>);
-craftingTable.addShaped("abacus", <item:quark:abacus>, 
-    [[planks, stick, planks],
-    [planks, <tag:items:forge:nuggets/zinc>, planks],
-    [planks, stick, planks]]);
 
 // Make Additional Additions' recipe for the Trident use Prismarine Rods
 // Also integrates a Thraser Tooth from Upgrade Aquatic's recipe

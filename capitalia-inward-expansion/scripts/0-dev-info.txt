@@ -23,6 +23,15 @@ Worldbreaker Drill Sale - 5
 
 
 
+
+Lore:
+
+Central Plutocracy - Manages Credits and stuff related to them
+
+
+
+
+
 Rarites:
 
 Capital (Level 0) - Blue with purple highlights
@@ -31,3 +40,10 @@ Legendary (Level 2) - O R A N G E!
 [MC] Epic (Level 3) - Pink/magenta
 [MC] Rare (Level 4) - Blue
 [MC] Uncommon (Level 5) - Light green (#17DA61)
+
+
+Menu text options (textcraft):
+- Blocked font option (subtitle: square)
+- Extra large #2C262E (subtitle: medium #261E4E)
+- 4 pixel border (subtitle: 2)
+- Text is green

@@ -14,7 +14,13 @@ ItemStages.createModRestriction("mod", "iron_age");
 */
 
 ItemStages.restrict(<item:kubejs:science_industrial>, "iron_age");
+
+ItemStages.createModRestriction("scannable", "iron_age");
+
+# Blocks
 ItemStages.restrict(<item:adminshop:shop>, "iron_age");
+ItemStages.restrict(<item:minecraft:blast_furnace>, "brass_age");
+
 
 # Aquamirae
 ItemStages.restrict(<item:aquamirae:three_bolt_suit>, "iron_age");

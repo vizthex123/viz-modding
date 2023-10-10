@@ -9,6 +9,15 @@ print("0-tags.zs loading...");
 <tag>.remove(<item>);
 */
 
+# Ectoplasm
+# Used to make Ectoplasm Blocks and Polterpork
+# Also adds the Slimeballs OreDict entry to them
+<tag:items:cie:ectoplasm>.add(<item:biomemakeover:ectoplasm>);
+<tag:items:cie:ectoplasm>.add(<item:nourished_nether:ectoplasm>);
+
+<tag:items:forge:slimeballs>.add(<item:biomemakeover:ectoplasm>);
+<tag:items:forge:slimeballs>.add(<item:nourished_nether:ectoplasm>);
+
 
 # Hazmat Suit
 # Protects you from New Age reactors
@@ -60,6 +69,7 @@ mushroom.add(<item:deep_dark_regrowth:large_infected_mushroom>);
 mushroom.add(<item:food_enhancements:cooked_mushroom>);
 mushroom.add(<item:quark:glow_shroom>);
 mushroom.add(<item:quark:glow_shroom_ring>);
+mushroom.add(<item:silverbirch:shelf_fungus>);
 
 
 # Fermentable
@@ -69,7 +79,28 @@ val ethanol = <tag:items:forge:fermentable>;
 ethanol.add(<tag:items:forge:crops>);
 ethanol.add(<item:minecraft:glow_berries>);
 ethanol.add(<item:minecraft:sweet_berries>);
+ethanol.add(<item:minecraft:chorus_fruit>);
+ethanol.add(<item:minecraft:crimson_roots>);
+ethanol.add(<item:minecraft:warped_roots>);
+ethanol.add(<item:minecraft:crimson_fungus>);
+ethanol.add(<item:minecraft:warped_fungus>);
+ethanol.add(<item:minecraft:weeping_vines>);
+ethanol.add(<item:minecraft:twisting_vines>);
+ethanol.add(<item:minecraft:shroomlight>);
+ethanol.add(<item:biomemakeover:bulbus_root>);
+ethanol.add(<item:biomemakeover:mycelium_roots>);
 ethanol.add(<item:food_enhancements:green_apple>);
+ethanol.add(<item:enlightened_end:indigo_roots>);
+ethanol.add(<item:enlightened_end:closed_odd_roots>);
+ethanol.add(<item:enlightened_end:open_odd_roots>);
+ethanol.add(<item:enlightened_end:cerulean_vine>);
+ethanol.add(<item:nourished_nether:ash_lump>);
+ethanol.add(<item:nourished_nether:soul_weeds>);
+ethanol.add(<item:quark:chorus_weeds>);
+ethanol.add(<item:quark:chorus_twist>);
+ethanol.add(<item:upgrade_aquatic:blue_pickerelweed>);
+ethanol.add(<item:upgrade_aquatic:purple_pickerelweed>);
+
 
 
 # Binding & paper (recipes)
@@ -78,6 +109,7 @@ val paper = <tag:items:cie:paper>;
 
 binding.add(<item:minecraft:rabbit_hide>);
 binding.add(<item:minecraft:leather>);
+binding.add(<item:minecraft:phantom_membrane>);
 binding.add(<item:nourished_nether:hoglin_hide>);
 binding.add(<item:quark:ravager_hide>);
 binding.add(<item:kubejs:sheepskin>);
@@ -225,12 +257,50 @@ sleeper.add(<item:quark:polished_tuff_slab>);
 sleeper.add(<item:quark:tuff_slab>);
 
 
+# Fences and Gates (sawdust recipe)
+val fence = <tag:items:forge:fences/wooden>;
+val gate = <tag:items:forge:fence_gates/wooden>;
+
+fence.add(<item:enlightened_end:indigo_fence>);
+fence.add(<item:enlightened_end:cerulean_fence>);
+
+gate.add(<item:biomemakeover:blighted_balsa_fence_gate>);
+gate.add(<item:biomemakeover:willow_fence_gate>);
+gate.add(<item:biomemakeover:swamp_cypress_fence_gate>);
+gate.add(<item:biomemakeover:ancient_oak_fence_gate>);
+
+gate.add(<item:enlightened_end:indigo_fence_gate>);
+gate.add(<item:enlightened_end:cerulean_fence_gate>);
+
+gate.add(<item:silverbirch:silver_birch_fence_gate>);
+
+
+
 # Misc
+<<<<<<< Updated upstream
+<tag:items:forge:seeds>.add(<item:biomemakeover:rootling_seeds>);
+
+<tag:items:forge:plates/zinc>.add(<item:bluepower:zincplate>);
+<tag:items:forge:ender_pearls>.add(<item:bygonenether:warped_ender_pearl>);
+
+<tag:items:forge:workbenches>.add(<item:minecraft:crafting_table>);
+<tag:items:forge:workbenches>.add(<item:bluepower:project_table>);
+
+=======
+<tag:items:forge:workbenches>.add(<item:minecraft:crafting_table>);
+<tag:items:forge:workbenches>.add(<item:bluepower:project_table>);
+
+<tag:items:quark:hollow_logs>.add(<item:silverbirch:hollow_log>);
+
+>>>>>>> Stashed changes
 <tag:items:create:stone_types/limestone>.add(<item:quark:limestone>);
 <tag:items:forge:limestone>.add(<item:create:limestone>);
 <tag:items:forge:limestone>.add(<item:quark:limestone>);
 
-<tag:items:forge:ender_pearls>.add(<item:bygonenether:warped_ender_pearl>);
+<<<<<<< Updated upstream
+=======
 <tag:items:forge:plates/zinc>.add(<item:bluepower:zincplate>);
+<tag:items:forge:ender_pearls>.add(<item:bygonenether:warped_ender_pearl>);
 
+>>>>>>> Stashed changes
 print("0-tags.zs loaded");

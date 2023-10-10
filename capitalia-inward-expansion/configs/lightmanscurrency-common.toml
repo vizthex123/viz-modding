@@ -103,15 +103,21 @@
 		#Whether coins can spawn in chests Does not effect entity loot drops.
 		enableChestLoot = true
 		#Chests that will occasionally spawn T1 loot.
-		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big"]
+		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big", "betterfortresses:chests/beacon", "betterfortresses:chests/keep", "biomemakeover:mansion/dungeon", "biomemakeover:mansion/standard", "ctov:chests/village/village_beach_house", "ctov:chests/village/village_smith", "hopo:chests/copper"]
 		#Chests that will occasionally spawn T1 -> T2 loot.
-		chestListT2 = []
+		chestListT2 = ["betterfortresses:chests/quarters", "betterfortresses:chests/worship", "betterstrongholds:chests/crypt", "biomemakeover:mansion/dungeon_good", "repurposed_structures:chests/cities/overworld"]
 		#Chests that will occasionally spawn T1 -> T3 loot.
-		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "betterwitchhuts:chests/hut_0"]
+<<<<<<< Updated upstream
+		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "aquamirae:chests/frozen_chest", "bygonenether:chests/catacomb/treasure_rib", "bygonenether:chests/citadel", "betterdeserttemples:chests/tomb_pharaoh", "betterfortresses:chests/puzzle", "repurposed_structures:chests/lucky_pool"]
 		#Chests that will occasionally spawn T1 -> T4 loot.
-		chestListT4 = ["minecraft:chests/ancient_city", "minecraft:chests/bastion_treasure", "minecraft:chests/buried_treasure", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion"]
+		chestListT4 = ["minecraft:chests/ancient_city", "minecraft:chests/bastion_treasure", "minecraft:chests/buried_treasure", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion", "betterdeserttemples:chests/pharaoh_hidden", "betterwitchhuts:chests/hut_0", "betterjungletemples:chests/treasure", "betterstrongholds:chests/trap", "repurposed_structures:chests/ancient_cities/ocean", "repurposed_structures:chests/ancient_cities/nether"]
+=======
+		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "bygonenether:chests/catacomb/treasure_rib", "bygonenether:chests/citadel"]
+		#Chests that will occasionally spawn T1 -> T4 loot.
+		chestListT4 = ["minecraft:chests/ancient_city", "minecraft:chests/bastion_treasure", "minecraft:chests/buried_treasure", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion", "betterwitchhuts:chests/hut_0"]
+>>>>>>> Stashed changes
 		#Chests that will occasionally spawn T1 -> T5 loot.
-		chestListT5 = ["minecraft:chests/end_city_treasure"]
+		chestListT5 = ["minecraft:chests/end_city_treasure", "betterstrongholds:chests/cmd_yung", "betterstrongholds:chests/treasure"]
 		#Chests that will occasionally spawn T1 -> T6 loot.
-		chestListT6 = []
+		chestListT6 = ["repurposed_structures:chests/ancient_cities/end"]
 

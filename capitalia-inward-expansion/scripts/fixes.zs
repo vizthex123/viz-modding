@@ -14,12 +14,45 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+val empty = <item:minecraft:air>;
+
+val gold = <item:minecraft:gold_ingot>;
+val iron = <item:minecraft:iron_ingot>; 
+
+<<<<<<< Updated upstream
+// Silver Nuggets -> Ingot
+craftingTable.addShaped("silver_ingot", <item:bluepower:silver_ingot>,
+    [[<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
+    [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
+    [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>]]);
+
+=======
+>>>>>>> Stashed changes
+// Fixes the removal of Ectos yet remains of Ectoplasm
+val ectoplasm = <tag:items:cie:ectoplasm>;
+
+craftingTable.remove(<item:nourished_nether:polterpork>);
+craftingTable.addShapeless("polterpork", <item:nourished_nether:polterpork>, [<item:nourished_nether:soul_weeds>, <item:nourished_nether:soul_weeds>, <item:nourished_nether:soul_weeds>, <item:nourished_nether:cooked_hoglin>, ectoplasm]);
+
+craftingTable.remove(<item:nourished_nether:ectoplasm_block>);
+craftingTable.addShaped("ectoplasm_block", <item:nourished_nether:ectoplasm_block>,
+    [[ectoplasm, ectoplasm, ectoplasm],
+    [ectoplasm, ectoplasm, ectoplasm],
+    [ectoplasm, ectoplasm, ectoplasm]]);
+	
+// Fix the Blast Furnace having 4 recipes (quark moment)
+craftingTable.remove(<item:minecraft:blast_furnace>);
+craftingTable.addShaped("blast_furnace", <item:minecraft:blast_furnace>,
+    [[iron, iron, iron],
+    [iron, <tag:items:cie:furnace>, iron],
+    [<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]]);
+
 // Fix the Smoker having 3 recipes (quark moment)
 craftingTable.remove(<item:minecraft:smoker>);
 craftingTable.addShaped("smoker", <item:minecraft:smoker>,
-    [[<item:minecraft:air>, <tag:items:minecraft:logs>, <item:minecraft:air>],
+    [[empty, <tag:items:minecraft:logs>, empty],
     [<tag:items:minecraft:logs>, <tag:items:cie:furnace>, <tag:items:minecraft:logs>],
-    [<item:minecraft:air>, <tag:items:minecraft:logs>, <item:minecraft:air>]]);
+    [empty, <tag:items:minecraft:logs>, empty]]);
 
 // Gilded Netherite conversion
 // BYN Gilded Netherite stats match AA's ones
@@ -28,9 +61,9 @@ smithing.removeByName("bygonenether:smithing/gilded_netherite_chestplate_smithin
 smithing.removeByName("bygonenether:smithing/gilded_netherite_leggings_smithing");
 smithing.removeByName("bygonenether:smithing/gilded_netherite_boots_smithing");
 
-smithing.addRecipe("gilded_netherite_helmet_conversion", <item:bygonenether:gilded_netherite_helmet>, <item:additionaladditions:gilded_netherite_helmet>, <item:minecraft:gold_ingot>);
-smithing.addRecipe("gilded_netherite_chestplate_conversion", <item:bygonenether:gilded_netherite_chestplate>, <item:additionaladditions:gilded_netherite_chestplate>, <item:minecraft:gold_ingot>);
-smithing.addRecipe("gilded_netherite_leggings_conversion", <item:bygonenether:gilded_netherite_leggings>, <item:additionaladditions:gilded_netherite_leggings>, <item:minecraft:gold_ingot>);
-smithing.addRecipe("gilded_netherite_boots_conversion", <item:bygonenether:gilded_netherite_boots>, <item:additionaladditions:gilded_netherite_boots>, <item:minecraft:gold_ingot>);
+smithing.addRecipe("gilded_netherite_helmet_conversion", <item:bygonenether:gilded_netherite_helmet>, <item:additionaladditions:gilded_netherite_helmet>, gold);
+smithing.addRecipe("gilded_netherite_chestplate_conversion", <item:bygonenether:gilded_netherite_chestplate>, <item:additionaladditions:gilded_netherite_chestplate>, gold);
+smithing.addRecipe("gilded_netherite_leggings_conversion", <item:bygonenether:gilded_netherite_leggings>, <item:additionaladditions:gilded_netherite_leggings>, gold);
+smithing.addRecipe("gilded_netherite_boots_conversion", <item:bygonenether:gilded_netherite_boots>, <item:additionaladditions:gilded_netherite_boots>, gold);
 
 print("fixes.zs loaded");

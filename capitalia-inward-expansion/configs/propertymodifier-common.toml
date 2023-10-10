@@ -202,11 +202,14 @@
 		#"minecraft:golden_chestplate" = 10
 		[items.armor.defense]
 			"additionaladditions:rose_gold_chestplate" = 6
+			"additionaladditions:rose_gold_leggings" = 5
 
 		#Set the toughness value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_boots" = 1
 		[items.armor.toughness]
 			"additionaladditions:rose_gold_helmet" = 0
+			"additionaladditions:rose_gold_chestplate" = 0
+			"additionaladditions:rose_gold_leggings" = 0
 			"additionaladditions:rose_gold_boots" = 0
 			"additionaladditions:gilded_netherite_helmet" = 3
 			"additionaladditions:gilded_netherite_chestplate" = 3

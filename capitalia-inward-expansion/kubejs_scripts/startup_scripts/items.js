@@ -19,6 +19,11 @@ Atomic
 		event.create('science_information').displayName('Scientific Data Pad: Information').rarity('rare')
 		event.create('science_atomic').displayName('Scientific Hologram: Atomic').rarity('epic')
 
+// Scrap
+		event.create('iron_scrap')
+		event.create('tiny_iron_scrap')
+		event.create('gold_scrap')
+		event.create('tiny_gold_scrap')
 
 // Sawdust
 		event.create('glue')
@@ -37,18 +42,16 @@ Rarities:
 // Project Expansion
 		event.create('shaft_segment').rarity('uncommon')
 		event.create('shaft').rarity('uncommon')
-		event.create('bits').rarity('rare')
-		event.create('head').rarity('rare')
+		event.create('bits').displayName('Drill Bits').rarity('uncommon')
+		event.create('head').displayName('Drill Head').rarity('rare')
 		event.create('support_scaffold').rarity('rare')
 		event.create('supports').rarity('epic')
-		event.create('base').rarity('epic')
+		event.create('base').displayName('Foundation').rarity('epic')
 		event.create('worldbreaker_drill').rarity('epic').maxStackSize(1)
 
 
 // Misc
 		event.create('fibers')
-		event.create('scrap')
-		event.create('tiny_scrap')
 		event.create('pig_hide')
 		event.create('sheepskin')
 		event.create('shredded_hide')

@@ -46,6 +46,7 @@ val slate = <item:extendedcrafting:black_iron_slate>;
 val black_iron = <item:extendedcrafting:black_iron_ingot>;
 val crystaltine = <item:extendedcrafting:crystaltine_ingot>;
 
+val steel = <item:spirit:soul_steel_ingot>;
 val tungsten = <item:bluepower:tungsten_carbide>;
 val purple = <item:bluepower:purple_alloy_ingot>;
 val blue = <item:bluepower:blue_alloy_ingot>;
@@ -73,23 +74,23 @@ mods.extendedcrafting.FluxCrafting.addShaped("shaft", <item:kubejs:shaft>,
 mods.extendedcrafting.FluxCrafting.addShaped("bits", bits,
 	[[tungsten], 
 	[tungsten], 
-	[<item:createoreexcavation:diamond_drill>]], 10000, 10);
+	[<item:createoreexcavation:drill>]], 10000, 10);
 
 // Drill Head
 mods.extendedcrafting.TableCrafting.addShaped("head", 2, <item:kubejs:head>,
 	[[zinc, obsidian_plate, red, obsidian_plate, zinc], 
 	[zinc, obsidian_plate, red, obsidian_plate, zinc], 
-	[empty, tungsten, <item:bluepower:motor>, tungsten, empty], 
-	[empty, bits, tungsten, bits, empty], 
+	[empty, steel, <item:bluepower:motor>, steel, empty], 
+	[empty, bits, steel, bits, empty], 
 	[empty, empty, bits, empty, empty]]);
 
 // Drill Support Scaffold
-mods.extendedcrafting.CompressionCrafting.addRecipe("support_scaffold", obsidian_plate, scaffold, 50, netherite, 25000, 250);
+mods.extendedcrafting.CompressionCrafting.addRecipe("support_scaffold", <item:create:powdered_obsidian>, scaffold, 50, steel, 25000, 250);
 
 // Drill Supports
 mods.extendedcrafting.TableCrafting.addShaped("supports", 3, <item:kubejs:supports>,
 	[[empty, empty, empty, empty, empty, empty, empty], 
-	[empty, empty, <item:createdeco:netherite_sheet>, tungsten, <item:createdeco:netherite_sheet>, empty, empty], 
+	[empty, empty, <item:createdeco:netherite_sheet>, steel, <item:createdeco:netherite_sheet>, empty, empty], 
 	[empty, <item:createdeco:netherite_sheet>, tungsten, crystaltine, tungsten, <item:createdeco:netherite_sheet>, empty], 
 	[empty, <item:createdeco:netherite_support>, crystaltine, <tag:items:forge:storage_blocks/iron>, crystaltine, <item:createdeco:netherite_support>, empty], 
 	[empty, scaffold, tungsten, crystaltine, tungsten, scaffold, empty], 

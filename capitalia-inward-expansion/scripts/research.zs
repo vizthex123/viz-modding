@@ -23,7 +23,7 @@ val paper = <tag:items:cie:paper>;
 craftingTable.addShaped("unwritten_dossier", base*2, 
     [[binding],
     [paper],
-    [binding]]);
+    [paper]]);
 
 craftingTable.addShapeless("stone_dossier", <item:kubejs:science_stone>, [<item:quark:sturdy_stone>, <tag:items:forge:cobblestone>]);
 craftingTable.addShapeless("brass_dossier", <item:kubejs:science_brass>, [base, <item:minecraft:copper_ingot>, <item:minecraft:copper_ingot>, <tag:items:forge:ingots/zinc>]);
@@ -37,9 +37,9 @@ mods.extendedcrafting.TableCrafting.addShapeless("industrial_dossier", 1, <item:
 
 mods.extendedcrafting.TableCrafting.addShaped("information_dossier", 2, <item:kubejs:science_information>,
 	[[<item:ae2:certus_quartz_dust>, empty, empty, empty, <item:ae2:certus_quartz_dust>], 
-	[empty, <item:ae2:ender_dust>, <item:ae2:fluix_pearl>, <item:ae2:ender_dust>, empty], 
-	[empty, <item:ae2:fluix_pearl>, <item:kubejs:science_industrial>, <item:ae2:fluix_pearl>, empty], 
-	[empty, <item:ae2:ender_dust>, <item:ae2:fluix_pearl>, <item:ae2:ender_dust>, empty], 
+	[empty, <item:ae2:ender_dust>, <item:createdieselgenerators:biodiesel_bucket>, <item:ae2:ender_dust>, empty], 
+	[empty, <item:createdieselgenerators:biodiesel_bucket>, <item:kubejs:science_industrial>, <item:createdieselgenerators:biodiesel_bucket>, empty], 
+	[empty, <item:ae2:ender_dust>, <item:createdieselgenerators:biodiesel_bucket>, <item:ae2:ender_dust>, empty], 
 	[<item:ae2:certus_quartz_dust>, empty, empty, empty, <item:ae2:certus_quartz_dust>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("atomic_dossier", 3, <item:kubejs:science_atomic>,

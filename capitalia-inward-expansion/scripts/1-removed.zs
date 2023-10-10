@@ -20,6 +20,9 @@ furnace.removeByName("bluepower:furnace/tungsten_ingot_from_raw_tungsten");
 # Dimensional Shards recipe
 craftingTable.remove(<item:rftoolsbase:dimensionalshard>);
 
+# Remove the missing tag recipe from Enlightened
+craftingTable.removeByName("enlightened_end:cerulean_planks");
+
 # Bluepower's Nuggets
 <tag:items:forge:nuggets/zinc>.remove(<item:bluepower:zinc_nugget>);
 <tag:items:forge:nuggets/brass>.remove(<item:bluepower:brass_nugget>);
@@ -42,6 +45,5 @@ craftingTable.remove(<item:wstweaks:blaze_blade>);
 # Coin Minter
 craftingTable.remove(<item:lightmanscurrency:coinmint>);
 Jei.hideIngredient(<item:lightmanscurrency:coinmint>);
-#Jei.hideCategory(<resource:lightmanscurrency:coinmint>);
 
 print("1-removed.zs loaded");

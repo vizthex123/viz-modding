@@ -42,9 +42,6 @@ val vibrant = <item:ae2:quartz_vibrant_glass>;
 craftingTable.remove(<item:ae2:vibration_chamber>);
 Jei.hideIngredient(<item:ae2:vibration_chamber>);
 
-// Craft Fluix
-mods.extendedcrafting.CombinationCrafting.addRecipe("fluix", fluix*2, 40000, [<item:ae2:charged_certus_quartz_crystal>, <item:minecraft:quartz>, tesla, <item:lightmanscurrency:coin_emerald>], 400);
-
 // Cheaper Security Terminal
 craftingTable.remove(<item:ae2:security_station>);
 craftingTable.addShaped("security_station", <item:ae2:security_station>,
@@ -73,7 +70,7 @@ mods.extendedcrafting.FluxCrafting.addShaped("acceptor_upgrade", <item:ae2:contr
 craftingTable.remove(<item:ae2:molecular_assembler>);
 mods.extendedcrafting.FluxCrafting.addShaped("molecular_assembler", <item:ae2:molecular_assembler>,
 	[[blue, glass|vibrant, blue], 
-	[<item:ae2:annihilation_core>, <item:minecraft:crafting_table>, <item:ae2:formation_core>], 
+	[<item:ae2:annihilation_core>, <tag:items:forge:workbenches>, <item:ae2:formation_core>], 
 	[blue, glass|vibrant, blue]], 12000, 120);
 
 // Crystal Growth Accelerator

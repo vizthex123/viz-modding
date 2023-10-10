@@ -26,6 +26,5 @@ ItemStages.createModRestriction("mechanicalmachinery", "brass_age");
 ItemStages.restrict(<item:adminshop:seller>, "brass_age");
 
 # Blocks
-ItemStages.restrict(<item:minecraft:blast_furnace>, "brass_age");
 
 print("2-brass_age.zs loaded");
