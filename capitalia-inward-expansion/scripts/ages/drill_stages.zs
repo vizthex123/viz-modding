@@ -5,36 +5,19 @@ print("drill_stages.zs loading...");
 import mods.itemstages.ItemStages;
 
 /*
-ItemStages.remove(<item>);
-
 ItemStages.restrict(<item>, "stage");
 
 ItemStages.createModRestriction("mod", "stage");
 */
 
-/*
-build order:
+ItemStages.restrict(<item:kubejs:shaft_segment>, "iron_age");
+ItemStages.restrict(<item:kubejs:shaft>, "iron_age");
 
-base
-supports
-shaft
-head
+ItemStages.restrict(<item:kubejs:bits>, "industrial_age");
+ItemStages.restrict(<item:kubejs:head>, "industrial_age");
 
-*/
-
-/*
-Progression order:
-
-Shaft
-- Segments first
-Head
-- Bits first
-Supports/Base
-
-The Drill™
-*/
-
-// ItemStages.restrict(<item:kubejs:drill_support_scaffold>, "industrial_age");
+ItemStages.restrict(<item:kubejs:foundation>, "information_age");
+ItemStages.restrict(<item:kubejs:supports>, "information_age");
 
 ItemStages.restrict(<item:kubejs:worldbreaker_drill>, "atomic_age");
 

@@ -19,15 +19,20 @@ val empty = <item:minecraft:air>;
 val gold = <item:minecraft:gold_ingot>;
 val iron = <item:minecraft:iron_ingot>; 
 
-<<<<<<< Updated upstream
+// Make Nether Fungus Stew use either one
+craftingTable.remove(<item:nourished_nether:nether_fungus_stew>);
+craftingTable.addShapeless("nether_fungus_stew", <item:nourished_nether:nether_fungus_stew>, [<item:minecraft:crimson_fungus>|<item:minecraft:warped_fungus>, <item:minecraft:crimson_fungus>|<item:minecraft:warped_fungus>, <item:minecraft:bowl>]);
+
+// Make Suspicious Stew use tags
+craftingTable.remove(<item:minecraft:suspicious_stew>);
+craftingTable.addShapeless("suspicious_stew", <item:minecraft:suspicious_stew>, [<tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>, <item:minecraft:bowl>, <tag:items:minecraft:flowers>]);
+
 // Silver Nuggets -> Ingot
 craftingTable.addShaped("silver_ingot", <item:bluepower:silver_ingot>,
     [[<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
     [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>],
     [<tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>, <tag:items:forge:nuggets/silver>]]);
 
-=======
->>>>>>> Stashed changes
 // Fixes the removal of Ectos yet remains of Ectoplasm
 val ectoplasm = <tag:items:cie:ectoplasm>;
 

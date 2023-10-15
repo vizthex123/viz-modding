@@ -17,18 +17,25 @@ Trade permit tiers:
 
 Hazardous Materials - 1
 Special Items - 2
-
+High-Tech Materials - 3
 Prestige - 4
-Worldbreaker Drill Sale - 5
+Worldbreaker Drill - 5
 
 
 
 
 Lore:
 
+The Company™ - Sent you to work on Project Expansion. Needs a proper name.
 Central Plutocracy - Manages Credits and stuff related to them
 
 
+
+Tellraw colours:
+
+Green - Supportive dude in the counterfit quest
+Dark Purple - Official messages from the company
+Blue - Central Plutocracy
 
 
 

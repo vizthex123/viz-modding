@@ -9,6 +9,112 @@ print("0-tags.zs loading...");
 <tag>.remove(<item>);
 */
 
+# Change the mining levels of various ores
+<tag:blocks:minecraft:needs_iron_tool>.remove(<block:create:zinc_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.remove(<block:create:deepslate_zinc_ore>);
+
+<tag:blocks:minecraft:needs_stone_tool>.add(<block:create:zinc_ore>);
+<tag:blocks:minecraft:needs_stone_tool>.add(<block:create:deepslate_zinc_ore>);
+
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:silver_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:silver_deepslate>);
+
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:tungsten_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:tungsten_deepslate>);
+
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:ruby_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:sapphire_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:green_sapphire_ore>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:amethyst_ore>);
+
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:ruby_deepslate>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:sapphire_deepslate>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:green_sapphire_deepslate>);
+<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:amethyst_deepslate>);
+
+<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:bismuth_ore>);
+<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:irradium_ore>);
+<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:malachite_ore>);
+
+# <tag:blocks:minecraft:needs_netherite_tool>.add(<block:deep_dark_regrowth:enlightened_deepslate>);
+
+
+# Swords (quest)
+<tag:items:cie:sword>.add(<item:minecraft:wooden_sword>);
+<tag:items:cie:sword>.add(<item:minecraft:stone_sword>);
+<tag:items:cie:sword>.add(<item:minecraft:iron_sword>);
+
+
+# Drawers (quest)
+val drawer = <tag:items:functionalstorage:drawer>;
+
+drawer.add(<item:functionalstorage:quark_ancient_1>);
+drawer.add(<item:functionalstorage:quark_ancient_2>);
+drawer.add(<item:functionalstorage:quark_ancient_4>);
+drawer.add(<item:functionalstorage:quark_azalea_1>);
+drawer.add(<item:functionalstorage:quark_azalea_2>);
+drawer.add(<item:functionalstorage:quark_azalea_4>);
+drawer.add(<item:functionalstorage:quark_blossom_1>);
+drawer.add(<item:functionalstorage:quark_blossom_2>);
+drawer.add(<item:functionalstorage:quark_blossom_4>);
+
+drawer.add(<item:functionalstorage:biomemakeover_ancient_oak_1>);
+drawer.add(<item:functionalstorage:biomemakeover_ancient_oak_2>);
+drawer.add(<item:functionalstorage:biomemakeover_ancient_oak_4>);
+drawer.add(<item:functionalstorage:biomemakeover_blighted_balsa_1>);
+drawer.add(<item:functionalstorage:biomemakeover_blighted_balsa_2>);
+drawer.add(<item:functionalstorage:biomemakeover_blighted_balsa_4>);
+drawer.add(<item:functionalstorage:biomemakeover_swamp_cypress_1>);
+drawer.add(<item:functionalstorage:biomemakeover_swamp_cypress_2>);
+drawer.add(<item:functionalstorage:biomemakeover_swamp_cypress_4>);
+drawer.add(<item:functionalstorage:biomemakeover_willow_1>);
+drawer.add(<item:functionalstorage:biomemakeover_willow_2>);
+drawer.add(<item:functionalstorage:biomemakeover_willow_4>);
+
+
+# Concrete (recipe)
+val concrete = <tag:items:minecraft:concrete>;
+
+concrete.add(<item:minecraft:white_concrete>);
+concrete.add(<item:minecraft:orange_concrete>);
+concrete.add(<item:minecraft:magenta_concrete>);
+concrete.add(<item:minecraft:light_blue_concrete>);
+concrete.add(<item:minecraft:yellow_concrete>);
+concrete.add(<item:minecraft:lime_concrete>);
+concrete.add(<item:minecraft:pink_concrete>);
+concrete.add(<item:minecraft:gray_concrete>);
+concrete.add(<item:minecraft:light_gray_concrete>);
+concrete.add(<item:minecraft:cyan_concrete>);
+concrete.add(<item:minecraft:purple_concrete>);
+concrete.add(<item:minecraft:blue_concrete>);
+concrete.add(<item:minecraft:brown_concrete>);
+concrete.add(<item:minecraft:green_concrete>);
+concrete.add(<item:minecraft:red_concrete>);
+concrete.add(<item:minecraft:black_concrete>);
+
+
+# Glazed Terracotta (recipe)
+val terracotta = <tag:items:minecraft:glazed_terracotta>;
+
+terracotta.add(<item:minecraft:white_glazed_terracotta>);
+terracotta.add(<item:minecraft:orange_glazed_terracotta>);
+terracotta.add(<item:minecraft:magenta_glazed_terracotta>);
+terracotta.add(<item:minecraft:light_blue_glazed_terracotta>);
+terracotta.add(<item:minecraft:yellow_glazed_terracotta>);
+terracotta.add(<item:minecraft:lime_glazed_terracotta>);
+terracotta.add(<item:minecraft:pink_glazed_terracotta>);
+terracotta.add(<item:minecraft:gray_glazed_terracotta>);
+terracotta.add(<item:minecraft:light_gray_glazed_terracotta>);
+terracotta.add(<item:minecraft:cyan_glazed_terracotta>);
+terracotta.add(<item:minecraft:purple_glazed_terracotta>);
+terracotta.add(<item:minecraft:blue_glazed_terracotta>);
+terracotta.add(<item:minecraft:brown_glazed_terracotta>);
+terracotta.add(<item:minecraft:green_glazed_terracotta>);
+terracotta.add(<item:minecraft:red_glazed_terracotta>);
+terracotta.add(<item:minecraft:black_glazed_terracotta>);
+
+
+
 # Ectoplasm
 # Used to make Ectoplasm Blocks and Polterpork
 # Also adds the Slimeballs OreDict entry to them
@@ -19,9 +125,27 @@ print("0-tags.zs loading...");
 <tag:items:forge:slimeballs>.add(<item:nourished_nether:ectoplasm>);
 
 
+
+# Freeze-Immune Wearables
+# Protects you from Powdered Snow
+val freeze = <tag:items:minecraft:freeze_immune_wearables>;
+
+freeze.add(<item:aquamirae:abyssal_boots>);
+freeze.add(<item:aquamirae:three_bolt_boots>);
+freeze.add(<item:biomemakeover:cladded_boots>);
+freeze.add(<item:create:copper_diving_boots>);
+
+
+
 # Hazmat Suit
 # Protects you from New Age reactors
 val suit = <tag:items:create_new_age:nuclear/hazmat_suit>;
+
+suit.add(<item:aquamirae:abyssal_tiara>);
+suit.add(<item:aquamirae:abyssal_heaume>);
+suit.add(<item:aquamirae:abyssal_brigantine>);
+suit.add(<item:aquamirae:abyssal_leggings>);
+suit.add(<item:aquamirae:abyssal_boots>);
 
 suit.add(<item:biomemakeover:cladded_helmet>);
 suit.add(<item:biomemakeover:cladded_chestplate>);
@@ -46,30 +170,42 @@ suit.remove(<item:minecraft:leather_boots>);
 suit.remove(<item:create:goggles>);
 
 
-# Fibrous Foiliage (recipe)
+# Fish Fillet tag
+val fillet = <tag:items:food_enhancements:raw_fish>;
+
+fillet.add(<item:minecraft:tropical_fish>);
+fillet.add(<item:aquamirae:spinefish>);
+
+
+# Tall Flowers
+// Used to make Ethanol
+val tall = <tag:items:cie:tall_flowers>;
+
+tall.add(<item:minecraft:lilac>);
+tall.add(<item:minecraft:rose_bush>);
+tall.add(<item:minecraft:peony>);
+tall.add(<item:biomemakeover:swamp_azalea>);
+tall.add(<item:biomemakeover:marigold>);
+tall.add(<item:upgrade_aquatic:flowering_rush>);
+
+
+# Fibrous Foiliage
+// Used to make Fibers
 val fiber = <tag:items:cie:fibrous_foiliage>;
 
+fiber.add(<item:minecraft:apple>);
 fiber.add(<item:minecraft:beetroot>);
 fiber.add(<item:minecraft:chorus_fruit>);
 fiber.add(<item:minecraft:glow_berries>);
+fiber.add(<item:minecraft:potato>);
+fiber.add(<item:minecraft:poisonous_potato>);
 fiber.add(<item:minecraft:sugar_cane>);
+fiber.add(<item:minecraft:sweet_berries>);
+fiber.add(<item:food_enhancements:green_apple>);
 fiber.add(<item:food_enhancements:pumpkin_slice>);
-
-
-
-# Mushrooms
-val mushroom = <tag:items:forge:mushrooms>;
-
-mushroom.add(<item:biomemakeover:purple_glowshroom>);
-mushroom.add(<item:biomemakeover:green_glowshroom>);
-mushroom.add(<item:biomemakeover:orange_glowshroom>);
-mushroom.add(<item:deep_dark_regrowth:short_infected_mushroom>);
-mushroom.add(<item:deep_dark_regrowth:infected_mushroom>);
-mushroom.add(<item:deep_dark_regrowth:large_infected_mushroom>);
-mushroom.add(<item:food_enhancements:cooked_mushroom>);
-mushroom.add(<item:quark:glow_shroom>);
-mushroom.add(<item:quark:glow_shroom_ring>);
-mushroom.add(<item:silverbirch:shelf_fungus>);
+fiber.add(<item:enlightened_end:elevibloom>);
+fiber.add(<item:enlightened_end:frost_fruit>);
+fiber.add(<item:enlightened_end:glow_gourd_slice>);
 
 
 # Fermentable
@@ -94,6 +230,9 @@ ethanol.add(<item:enlightened_end:indigo_roots>);
 ethanol.add(<item:enlightened_end:closed_odd_roots>);
 ethanol.add(<item:enlightened_end:open_odd_roots>);
 ethanol.add(<item:enlightened_end:cerulean_vine>);
+ethanol.add(<item:enlightened_end:elevibloom>);
+ethanol.add(<item:enlightened_end:frost_fruit>);
+ethanol.add(<item:enlightened_end:glow_gourd_slice>);
 ethanol.add(<item:nourished_nether:ash_lump>);
 ethanol.add(<item:nourished_nether:soul_weeds>);
 ethanol.add(<item:quark:chorus_weeds>);
@@ -101,6 +240,20 @@ ethanol.add(<item:quark:chorus_twist>);
 ethanol.add(<item:upgrade_aquatic:blue_pickerelweed>);
 ethanol.add(<item:upgrade_aquatic:purple_pickerelweed>);
 
+
+# Mushrooms
+val mushroom = <tag:items:forge:mushrooms>;
+
+mushroom.add(<item:biomemakeover:purple_glowshroom>);
+mushroom.add(<item:biomemakeover:green_glowshroom>);
+mushroom.add(<item:biomemakeover:orange_glowshroom>);
+mushroom.add(<item:deep_dark_regrowth:short_infected_mushroom>);
+mushroom.add(<item:deep_dark_regrowth:infected_mushroom>);
+mushroom.add(<item:deep_dark_regrowth:large_infected_mushroom>);
+mushroom.add(<item:food_enhancements:cooked_mushroom>);
+mushroom.add(<item:quark:glow_shroom>);
+mushroom.add(<item:quark:glow_shroom_ring>);
+mushroom.add(<item:silverbirch:shelf_fungus>);
 
 
 # Binding & paper (recipes)
@@ -158,8 +311,8 @@ corundum.add(<item:quark:black_corundum_cluster>);
 <tag:items:quark:stone_tool_materials>.add(<item:bluepower:basalt_cobble>);
 
 
-# Create Deco coins (recipes)
-val coin = <tag:items:cie:coin>;
+# Create Deco Coinstacks (recipes)
+val coin = <tag:items:cie:coin_stack>;
 
 coin.add(<item:createdeco:copper_coinstack>);
 coin.add(<item:createdeco:zinc_coinstack>);
@@ -185,11 +338,6 @@ coin.add(<item:createdeco:cast_iron_coinstack>);
 <tag:items:cie:obsidian>.add(<item:minecraft:obsidian>);
 <tag:items:cie:obsidian>.add(<item:minecraft:crying_obsidian>);
 <tag:items:cie:obsidian>.add( <item:create:powdered_obsidian>);
-
-
-# Netherite Scrap (recipes)
-<tag:items:cie:netherite_scrap>.add(<item:minecraft:netherite_scrap>);
-<tag:items:cie:netherite_scrap>.add(<item:bygonenether:netherite_scrap_ingot>);
 
 
 # Ropes (recipes)
@@ -277,7 +425,8 @@ gate.add(<item:silverbirch:silver_birch_fence_gate>);
 
 
 # Misc
-<<<<<<< Updated upstream
+<tag:items:minecraft:saplings>.add(<item:silverbirch:silver_birch_sapling>);
+
 <tag:items:forge:seeds>.add(<item:biomemakeover:rootling_seeds>);
 
 <tag:items:forge:plates/zinc>.add(<item:bluepower:zincplate>);
@@ -286,21 +435,8 @@ gate.add(<item:silverbirch:silver_birch_fence_gate>);
 <tag:items:forge:workbenches>.add(<item:minecraft:crafting_table>);
 <tag:items:forge:workbenches>.add(<item:bluepower:project_table>);
 
-=======
-<tag:items:forge:workbenches>.add(<item:minecraft:crafting_table>);
-<tag:items:forge:workbenches>.add(<item:bluepower:project_table>);
-
-<tag:items:quark:hollow_logs>.add(<item:silverbirch:hollow_log>);
-
->>>>>>> Stashed changes
 <tag:items:create:stone_types/limestone>.add(<item:quark:limestone>);
 <tag:items:forge:limestone>.add(<item:create:limestone>);
 <tag:items:forge:limestone>.add(<item:quark:limestone>);
 
-<<<<<<< Updated upstream
-=======
-<tag:items:forge:plates/zinc>.add(<item:bluepower:zincplate>);
-<tag:items:forge:ender_pearls>.add(<item:bygonenether:warped_ender_pearl>);
-
->>>>>>> Stashed changes
 print("0-tags.zs loaded");

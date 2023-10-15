@@ -48,10 +48,10 @@
 	#    Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
 	#    Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&Enchantments", "minecraft:stick+~!common+&Damage=0"
 	[client.definitions]
-		level0_entries = ["kubejs:worldbreaker_drill"]
-		level1_entries = ["kubejs:drill_supports", "kubejs:drill_base", "kubejs:science_atomic"]
-		level2_entries = ["kubejs:science_information"]
-		level3_entries = ["!epic"]
+		level0_entries = ["kubejs:worldbreaker_drill", "deep_dark_regrowth:unbreakability_seal"]
+		level1_entries = ["kubejs:science_atomic", "kubejs:supports", "kubejs:foundation", "deep_dark_regrowth:life_fruit", "deep_dark_regrowth:plasmatic_sculk"]
+		level2_entries = ["kubejs:science_information", "kubejs:prestige_scrip", "deep_dark_regrowth:plasma"]
+		level3_entries = ["!epic", "kubejs:prestige_chit", "deep_dark_regrowth:plasma_chunk"]
 		level4_entries = ["!rare"]
 		level5_entries = ["!uncommon"]
 		level6_entries = []

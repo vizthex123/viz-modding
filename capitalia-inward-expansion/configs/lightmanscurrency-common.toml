@@ -42,7 +42,7 @@
 			#Whether the wandering trader should have the emeralds from their trades replaced with the default trader coin.
 			changeWanderingTrades = true
 			#The default coin to replace a traders emeralds with.
-			defaultTraderCoin = "lightmanscurrency:coin_gold"
+			defaultTraderCoin = "lightmanscurrency:coin_emerald"
 			#List of trader coin overrides.
 			#Each entry must be formatted as follows: "mod:some_trader_type-lightmanscurrency:some_coin"
 			#Every trader not on this list will use the default trader coin defined above.
@@ -74,11 +74,11 @@
 		#Set to false to help prevent coin farming.
 		allowFakePlayerTrigger = true
 		#Entities that will occasionally drop T1 loot.
-		entityListT1 = ["minecraft:witch", "minecraft:shulker", "bygonenether:corpor", "bygonenether:piglin_hunter", "bygonenether:wither_skeleton_knight", "bygonenether:warped_enderman"]
+		entityListT1 = ["minecraft:witch", "minecraft:shulker", "bygonenether:corpor", "bygonenether:piglin_hunter", "bygonenether:wither_skeleton_knight", "bygonenether:warped_enderman", "deep_dark_regrowth:corrupted_skeleton"]
 		#Entities that will occasionally drop T1 -> T2 loot.
 		entityListT2 = ["minecraft:ravager", "minecraft:zoglin", "quark:forgotten"]
 		#Entities that will occasionally drop T1 -> T3 loot.
-		entityListT3 = ["minecraft:guardian", "minecraft:evoker", "deep_dark_regrowth:vault_chest"]
+		entityListT3 = ["minecraft:guardian", "minecraft:evoker"]
 		#Entities that will occasionally drop T1 -> T4 loot.
 		entityListT4 = ["minecraft:elder_guardian"]
 		#Entities that will occasionally drop T1 -> T5 loot.
@@ -90,32 +90,26 @@
 		#Entities that will drop a large amount of T1 -> T2 loot.
 		bossEntityListT2 = ["aquamirae:eel"]
 		#Entities that will drop a large amount of T1 -> T3 loot.
-		bossEntityListT3 = ["aquamirae:maze_mother", "deep_dark_regrowth:spreader"]
+		bossEntityListT3 = ["aquamirae:maze_mother", "deep_dark_regrowth:vault_chest", "deep_dark_regrowth:spreader"]
 		#Entities that will drop a large amount of T1 -> T4 loot.
-		bossEntityListT4 = ["minecraft:warden"]
+		bossEntityListT4 = ["minecraft:warden", "deep_dark_regrowth:observer"]
 		#Entities that will drop a large amount of T1 -> T5 loot.
-		bossEntityListT5 = ["minecraft:ender_dragon", "aquamirae:captain_cornelia"]
+		bossEntityListT5 = ["minecraft:ender_dragon", "aquamirae:captain_cornelia", "deep_dark_regrowth:abomination", "deep_dark_regrowth:stalker"]
 		#Entities that will drop a large amount of T1 -> T6 loot.
-		bossEntityListT6 = ["minecraft:wither", "deep_dark_regrowth:stalker"]
+		bossEntityListT6 = ["minecraft:wither", "deep_dark_regrowth:annihilator"]
 
 	#Chest loot settings.
 	[common.chest_loot]
 		#Whether coins can spawn in chests Does not effect entity loot drops.
 		enableChestLoot = true
 		#Chests that will occasionally spawn T1 loot.
-		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big", "betterfortresses:chests/beacon", "betterfortresses:chests/keep", "biomemakeover:mansion/dungeon", "biomemakeover:mansion/standard", "ctov:chests/village/village_beach_house", "ctov:chests/village/village_smith", "hopo:chests/copper"]
+		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big", "minecraft:chests/simple_dungeon", "betterfortresses:chests/beacon", "betterfortresses:chests/keep", "biomemakeover:mansion/dungeon", "biomemakeover:mansion/standard", "ctov:chests/village/village_beach_house", "ctov:chests/village/village_smith", "hopo:chests/copper"]
 		#Chests that will occasionally spawn T1 -> T2 loot.
 		chestListT2 = ["betterfortresses:chests/quarters", "betterfortresses:chests/worship", "betterstrongholds:chests/crypt", "biomemakeover:mansion/dungeon_good", "repurposed_structures:chests/cities/overworld"]
 		#Chests that will occasionally spawn T1 -> T3 loot.
-<<<<<<< Updated upstream
-		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "aquamirae:chests/frozen_chest", "bygonenether:chests/catacomb/treasure_rib", "bygonenether:chests/citadel", "betterdeserttemples:chests/tomb_pharaoh", "betterfortresses:chests/puzzle", "repurposed_structures:chests/lucky_pool"]
+		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/ruined_portal", "aquamirae:chests/frozen_chest", "bygonenether:chests/catacomb/treasure_rib", "bygonenether:chests/citadel", "betterdeserttemples:chests/tomb_pharaoh", "betterfortresses:chests/puzzle", "repurposed_structures:chests/lucky_pool"]
 		#Chests that will occasionally spawn T1 -> T4 loot.
 		chestListT4 = ["minecraft:chests/ancient_city", "minecraft:chests/bastion_treasure", "minecraft:chests/buried_treasure", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion", "betterdeserttemples:chests/pharaoh_hidden", "betterwitchhuts:chests/hut_0", "betterjungletemples:chests/treasure", "betterstrongholds:chests/trap", "repurposed_structures:chests/ancient_cities/ocean", "repurposed_structures:chests/ancient_cities/nether"]
-=======
-		chestListT3 = ["minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal", "bygonenether:chests/catacomb/treasure_rib", "bygonenether:chests/citadel"]
-		#Chests that will occasionally spawn T1 -> T4 loot.
-		chestListT4 = ["minecraft:chests/ancient_city", "minecraft:chests/bastion_treasure", "minecraft:chests/buried_treasure", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion", "betterwitchhuts:chests/hut_0"]
->>>>>>> Stashed changes
 		#Chests that will occasionally spawn T1 -> T5 loot.
 		chestListT5 = ["minecraft:chests/end_city_treasure", "betterstrongholds:chests/cmd_yung", "betterstrongholds:chests/treasure"]
 		#Chests that will occasionally spawn T1 -> T6 loot.

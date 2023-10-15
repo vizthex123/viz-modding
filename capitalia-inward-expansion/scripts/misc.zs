@@ -7,8 +7,8 @@ furnace.addRecipe("recipeName", <output>, <input>, xp, cooktime-10s default);
 
 craftingTable.addShapeless("recipeName", <output>, [<inputs>]);
 
-craftingTable.addShaped("recipeName", <output>, 
-    [[<input>, <input>, <input>],
+craftingTable.addShaped("recipeName", <output>,
+	[[<input>, <input>, <input>],
     [<input>, <input>, <input>],
     [<input>, <input>, <input>]]);
 
@@ -28,7 +28,60 @@ val planks = <tag:items:minecraft:planks>;
 val iron = <item:minecraft:iron_ingot>;
 val nugget = <tag:items:forge:nuggets/iron>;
 
-val leather = <tag:items:cie:binding>;
+val leather = <tag:items:forge:leather>;
+
+val glue = <item:kubejs:glue>;
+
+// Make Mirrors use Brass instead of Iron
+craftingTable.remove(<item:solarflux:mirror>);
+craftingTable.addShaped("mirror", <item:solarflux:mirror>*3,
+	[[<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
+    [empty, <tag:items:forge:ingots/brass>, empty]]);
+
+// Make Blank Upgrades not use Mirrors
+craftingTable.remove(<item:solarflux:blank_upgrade>);
+craftingTable.addShaped("blank_upgrade", <item:solarflux:blank_upgrade>,
+	[[empty, <tag:items:forge:cobblestone>, empty],
+    [<tag:items:forge:cobblestone>, <item:kubejs:science_stone>, <tag:items:forge:cobblestone>],
+    [empty, <tag:items:forge:cobblestone>, empty]]);
+
+// Add more Fish to the Fillet recipe
+// The rest are handled by the tag
+val fillet = <item:food_enhancements:fish_fillet>;
+
+craftingTable.addShapeless("triple_fillet", fillet*3, [<item:biomemakeover:glowfish>|<item:upgrade_aquatic:pike>]);
+craftingTable.addShapeless("lionfish_to_fillet", fillet*5, [<item:upgrade_aquatic:lionfish>]);
+craftingTable.addShapeless("perch_to_fillet", fillet*2, [<item:upgrade_aquatic:perch>]);
+
+// Make Nature's Compass craftable in the Stone Age
+craftingTable.remove(<item:naturescompass:naturescompass>);
+craftingTable.addShaped("nature_compass", <item:naturescompass:naturescompass>,
+	[[empty, <tag:items:minecraft:logs>, empty],
+    [<tag:items:minecraft:logs>, <item:kubejs:science_stone>, <tag:items:minecraft:logs>],
+    [empty, <tag:items:minecraft:logs>, empty]]);
+
+// Make Sticky Pistons with Glue
+craftingTable.addShaped("sticky_piston_glue", <item:minecraft:sticky_piston>,
+	[[glue],
+    [<item:minecraft:piston>]]);
+
+craftingTable.addShaped("mechanical_sticky_piston_glue", <item:create:sticky_mechanical_piston>,
+	[[glue],
+    [<item:create:mechanical_piston>]]);
+
+// Make Packing Tape use Glue
+craftingTable.remove(<item:packingtape:tape>);
+craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [glue, <tag:items:forge:string>, <tag:items:cie:paper>]);
+
+// Change the Akashic Tome to use Glue
+craftingTable.remove(<item:akashictome:tome>);
+craftingTable.addShapeless("akashic_tome", <item:akashictome:tome>, [<item:minecraft:book>, glue]);
+
+// Move Tungsten processing to the Blast Furnace
+furnace.removeByName("bluepower:furnace/tungsten_ingot");
+furnace.removeByName("bluepower:furnace/tungsten_ingot_from_tungsten_dust");
+furnace.removeByName("bluepower:furnace/tungsten_ingot_from_raw_tungsten");
+blastFurnace.addRecipe("blast_tungsten_dust", <item:bluepower:tungsten_ingot>, <item:bluepower:tungsten_dust>, 1.0, 100);
 
 // Compost Ash
 composter.setValue(<item:nourished_nether:ash_lump>, 0.5);
@@ -49,11 +102,7 @@ craftingTable.addShaped("blank_module", <item:scannable:blank_module>,
     [iron, <item:bluepower:teslatite_dust>,iron],
     [iron, <item:minecraft:gold_nugget>, iron]]);
 
-<<<<<<< Updated upstream
 craftingTable.addShaped("blank_module_rune", <item:scannable:blank_module>*4, 
-=======
-craftingTable.addShaped("blank_module_rune", <item:scannable:blank_module>*8, 
->>>>>>> Stashed changes
     [[empty, <item:quark:green_rune>, empty],
     [iron, <item:bluepower:infused_teslatite_dust>,iron],
     [iron, <item:minecraft:gold_nugget>, iron]]);
@@ -62,8 +111,8 @@ craftingTable.addShaped("blank_module_rune", <item:scannable:blank_module>*8,
 craftingTable.remove(<item:measurements:tape_measure>);
 craftingTable.addShaped("tape_measure", <item:measurements:tape_measure>, 
     [[empty, <item:minecraft:black_dye>, empty],
-    [<item:extendedcrafting:black_iron_ingot>, <item:quark:abacus>, <item:minecraft:yellow_dye>],
-    [empty, <item:minecraft:black_dye>, <item:minecraft:yellow_dye>]]);
+    [<item:minecraft:black_dye>, <item:quark:abacus>, <item:minecraft:yellow_dye>],
+    [empty, <item:extendedcrafting:black_iron_ingot>, <item:minecraft:yellow_dye>]]);
 
 // Cheaper Abacus
 craftingTable.remove(<item:quark:abacus>);
@@ -71,10 +120,6 @@ craftingTable.addShaped("abacus", <item:quark:abacus>,
     [[planks, stick, planks],
     [planks, <item:create:zinc_nugget>|<item:minecraft:iron_nugget>|<item:kubejs:tiny_iron_scrap>, planks],
     [planks, stick, planks]]);
-
-// Make Packing Tape use Glue
-craftingTable.remove(<item:packingtape:tape>);
-craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [<item:kubejs:glue>, <tag:items:forge:string>, <tag:items:cie:paper>]);
 
  // Wooden Hopper cheaper and upgrade
 craftingTable.remove(<item:woodenhopper:wooden_hopper>);

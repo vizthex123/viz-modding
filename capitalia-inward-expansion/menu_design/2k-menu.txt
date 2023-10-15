@@ -3,8 +3,8 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  smallerthanheight = 1380
   renderorder = foreground
+  [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][req_id:a01394db-7fa9-42ac-8a52-385d28824a4e1697054393135] = 1377
   randommode = false
   randomonlyfirsttime = false
 }
@@ -86,7 +86,7 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 122
+  x = 106
   width = 268
   action = deep_customization_element:title_screen_forge_top
   actionid = 1f400ab5-5ad3-4907-a205-309b80fa5fd51696044590076
@@ -101,18 +101,18 @@ customization {
   width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 97915ba0-7347-426c-9a61-325bfebe4dfd1696044590081
-  y = 224
+  y = 203
   height = 50
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 283
+  x = 251
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 117ed096-a207-4ef3-b22b-87542e71ba9c1696044590081
-  y = 256
+  y = 235
   height = 9
 }
 

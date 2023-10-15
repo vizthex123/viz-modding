@@ -23,9 +23,6 @@ print("3-BurnTimes.zs loading...");
 <item:enlightened_end:cerulean_fence>.burnTime = 300;
 <item:enlightened_end:cerulean_fence_gate>.burnTime = 300;
 
-<<<<<<< Updated upstream
 <item:nourished_nether:hoglin_hide>.burnTime = 0;
 
-=======
->>>>>>> Stashed changes
 print("3-BurnTimes.zs loaded");

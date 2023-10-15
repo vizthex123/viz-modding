@@ -5,17 +5,35 @@ print("1-removed.zs loading...");
 
 /*
 furnace.remove(<item>);
-furnace.removeByName(<item>);
+furnace.removeByName("name");
 
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+# Smelt gear into nuggets
+furnace.removeByName("quark:tools/smelting/trowel_to_iron_nugget");
+furnace.removeByName("minecraft:iron_nugget_from_smelting");
+furnace.removeByName("minecraft:gold_nugget_from_smelting");
+
+# Duplicate comparator recipe
+craftingTable.removeByName("ae2:misc/vanilla_comparator");
+
+# Remove leftover recipes for Solar Flux's panels
+craftingTable.removeByName("solarflux:sp_1");
+craftingTable.removeByName("solarflux:sp_2");
+craftingTable.removeByName("solarflux:sp_3");
+craftingTable.removeByName("solarflux:sp_4");
+craftingTable.removeByName("solarflux:sp_5");
+craftingTable.removeByName("solarflux:sp_6");
+craftingTable.removeByName("solarflux:sp_7");
+craftingTable.removeByName("solarflux:sp_8");
+
+# Slimeballs from Suspicious Substance
+craftingTable.removeByName("food_enhancements:slime_balls");
+
 # Smelting Irradium
 furnace.removeByName("enlightened_end:smelt_raw_irradium");
-
-# Smelting Tungsten
-furnace.removeByName("bluepower:furnace/tungsten_ingot_from_raw_tungsten");
 
 # Dimensional Shards recipe
 craftingTable.remove(<item:rftoolsbase:dimensionalshard>);

@@ -100,6 +100,7 @@ mods.extendedcrafting.FluxCrafting.addShaped("dense_energy_cell", <item:ae2:dens
 # Combinations take half the time rounded down
 val housing = <item:ae2things:disk_housing>;
 
+craftingTable.remove(<item:ae2things:disk_housing>);
 craftingTable.remove(<item:ae2things:disk_drive_1k>);
 craftingTable.remove(<item:ae2things:disk_drive_4k>);
 craftingTable.remove(<item:ae2things:disk_drive_16k>);

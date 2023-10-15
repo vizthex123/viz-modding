@@ -33,14 +33,14 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 # New Trading Core recipes
 craftingTable.remove(<item:lightmanscurrency:trading_core>);
 craftingTable.addShaped("trading_core", <item:lightmanscurrency:trading_core>, 
-    [[empty, <item:createdeco:iron_coinstack>, empty],
-    [<item:createdeco:iron_coinstack>, gold, <item:createdeco:iron_coinstack>],
-    [empty, <item:createdeco:iron_coinstack>, empty]]);
+    [[empty, <item:createdeco:iron_coin>, empty],
+    [<item:createdeco:iron_coin>, gold, <item:createdeco:iron_coin>],
+    [empty, <item:createdeco:iron_coin>, empty]]);
 	
 craftingTable.addShaped("trading_core_alt", <item:lightmanscurrency:trading_core>, 
-    [[empty, <item:createdeco:gold_coinstack>, empty],
-    [<item:createdeco:gold_coinstack>, copper, <item:createdeco:gold_coinstack>],
-    [empty, <item:createdeco:gold_coinstack>, empty]]);
+    [[empty, <item:createdeco:gold_coin>, empty],
+    [<item:createdeco:gold_coin>, iron, <item:createdeco:gold_coin>],
+    [empty, <item:createdeco:gold_coin>, empty]]);
 
 
 # Change Wallet recipes
@@ -54,7 +54,7 @@ craftingTable.remove(<item:lightmanscurrency:wallet_netherite>);
 val binding = <tag:items:cie:binding>;
 
 craftingTable.addShaped("copper_wallet", <item:lightmanscurrency:wallet_copper>, 
-    [[empty, <item:createdeco:copper_coin>, empty],
+    [[empty, <item:create:copper_nugget>, empty],
     [binding, copper, binding],
     [empty, binding, empty]]);
 
@@ -88,9 +88,9 @@ mods.extendedcrafting.TableCrafting.addShapeless("diamond_wallet_upgrade", 1, <i
 
 mods.extendedcrafting.TableCrafting.addShaped("netherite_wallet", 1, <item:lightmanscurrency:wallet_netherite>,
 	[[empty, <item:createdeco:cast_iron_coin>, empty], 
-	[binding, <tag:items:cie:netherite_scrap>, binding], 
+	[binding, <item:minecraft:netherite_scrap>, binding], 
 	[empty, binding, empty]]);
 
-mods.extendedcrafting.TableCrafting.addShapeless("netherite_wallet_upgrade", 1, <item:lightmanscurrency:wallet_netherite>, [<item:lightmanscurrency:wallet_diamond>, <tag:items:cie:netherite_scrap>, <item:createdeco:cast_iron_coin>]);
+mods.extendedcrafting.TableCrafting.addShapeless("netherite_wallet_upgrade", 1, <item:lightmanscurrency:wallet_netherite>, [<item:lightmanscurrency:wallet_diamond>, <item:minecraft:netherite_scrap>, <item:createdeco:cast_iron_coin>]);
 
 print("currency.zs loaded");

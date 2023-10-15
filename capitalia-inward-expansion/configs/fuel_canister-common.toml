@@ -11,5 +11,5 @@
 	#For a simple item without metadata, just the item-id in the form mod_id:item_id is enough
 	autoFuels = ["coal", "{item: \"charcoal\"}", "{item: \"coal_block\"}", "{item: \"quark:charcoal_block\"}", "{item: \"minicoal:mini_charcoal\"}", "{item: \"minicoal:mini_coal\"}"]
 	#If a player should be able to use any Item with a fuel value when using a crafting table to fill the FuelCanister, or only those defined by autoFuels
-	craftAnyFuel = true
+	craftAnyFuel = false
 

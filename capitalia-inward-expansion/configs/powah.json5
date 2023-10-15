@@ -14,9 +14,9 @@
 		"player_aerial_pearl": true,
 		// Enable this to get Dimensional Binding card by right clicking an Enderman or Endermite with a Binding card.
 		"dimensional_binding_card": true,
-		// Enable this to get Lens of Ender by right clicking an Enderman or Endermite with a Photoelectric Pane.
+		// Enable this to get Lens Of Ender by right clicking an Enderman or Endermite with a Photoelectric Pane.
 		"lens_of_ender": true,
-		// List of fluids used in the Magmator (RF per 100 mB)
+		// List of fluids used in the Magmator.
 		"magmatic_fluids": {
 			"minecraft:lava": 100,
 			"enlightened_end:ooze_fluid": 250
@@ -29,12 +29,14 @@
 		},
 		// List of heat source blocks used under Thermo Generator.
 		"heat_blocks": {
-			"minecraft:lava": 1000,
 			"minecraft:magma_block": 800,
-			"enlightened_end:irradium_ore": 800,
-			"enlightened_end:raw_irradium_block": 1000,
-			"enlightened_end:irradium_block": 1200,
-			"powah:blazing_crystal_block": 2800
+			"powah:blazing_crystal_block": 2800,
+			"minecraft:lava": 1000,
+			"enlightened_end:ooze_fluid": 500,
+			"enlightened_end:irradium_block": 1000,
+			"enlightened_end:irradium_ore": 1200,
+			"enlightened_end:raw_irradium_block": 1600,
+			"quark:blaze_lantern": 2000
 		},
 		// Energy produced per fuel tick in the Furnator.
 		"energy_per_fuel_tick": 30,
@@ -305,7 +307,7 @@
 				"nitro": 64000
 			}
 		},
-		"energizing_rods": 
+		"energizing_rods": {
 			"capacities": {
 				"starter": 200000,
 				"basic": 400000,

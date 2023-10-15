@@ -25,6 +25,7 @@ val sawdust = <item:kubejs:sawdust>;
 val quicklime = <item:kubejs:quicklime>;
 val parchment = <item:kubejs:parchment>;
 
+# val copper_nugget = <item:kubejs:tiny_copper_scrap>;
 val nugget = <item:kubejs:tiny_iron_scrap>;
 val gold_nugget = <item:kubejs:tiny_gold_scrap>;
 
@@ -32,7 +33,7 @@ val gold_nugget = <item:kubejs:tiny_gold_scrap>;
 # Will be removed when AdminShop gets tag support
 # Recipes are in adminshop.zs
 craftingTable.addShapeless("sales_token", <item:kubejs:seller>, [<item:lightmanscurrency:coin_copper>, <item:lightmanscurrency:coin_copper>, <item:lightmanscurrency:coin_copper>, <item:lightmanscurrency:coin_copper>]);
-craftingTable.addShapeless("sales_token_deco", <item:kubejs:seller>, [<item:createdeco:copper_coinstack>, <item:createdeco:copper_coinstack>]);
+craftingTable.addShapeless("sales_token_deco", <item:kubejs:seller>, [<item:createdeco:copper_coin>, <item:createdeco:copper_coin>]);
 
 val aqua = "\u00A7b";
 
@@ -46,6 +47,7 @@ val aqua = "\u00A7b";
 <tag:items:minecraft:planks>.add(<item:kubejs:mdf>);
 <tag:items:forge:leather>.add(<item:kubejs:sheepskin>);
 <tag:items:forge:leather>.add(<item:kubejs:pig_hide>);
+# <tag:items:forge:nuggets/copper>.add(<item:kubejs:tiny_copper_scrap>);
 <tag:items:forge:nuggets/iron>.add(<item:kubejs:tiny_iron_scrap>);
 <tag:items:forge:nuggets/gold>.add(<item:kubejs:tiny_gold_scrap>);
 <tag:items:lightmanscurrency:ticket_material>.add(parchment);
@@ -74,39 +76,49 @@ craftingTable.addShaped("fibers_to_wool", <item:minecraft:white_wool>,
 
 # Parchment
 // Acts as paper
-craftingTable.addShaped("parchment", parchment, 
+craftingTable.addShaped("parchment", parchment*3, 
     [[empty, glue, empty],
 	[sawdust, sawdust, sawdust]]);
 
 // Parchment from Quicklime
-<<<<<<< Updated upstream
-craftingTable.addShaped("parchment_quicklime", parchment*2, 
-=======
-craftingTable.addShaped("parchment_quicklime", parchment, 
->>>>>>> Stashed changes
-    [[fiber, quicklime, fiber],
-	[quicklime, quicklime, quicklime]]);
+craftingTable.addShaped("parchment_quicklime", parchment*6, 
+    [[empty, glue, empty],
+	[quicklime, quicklime, quicklime],
+	[fiber, fiber, fiber]]);
 
 // Make Parchment from Fibers
-craftingTable.addShaped("fiber_parchment", parchment, 
+craftingTable.addShaped("parchment_fiber", parchment, 
     [[fiber, fiber, fiber],
     [fiber, fiber, fiber]]);
 
-
 # Scrap
-blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0.25, 200);
-blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0.5, 200);
+blastFurnace.addRecipe("blast_copper_scrap", <item:minecraft:copper_ingot>, <item:kubejs:copper_scrap>, 0.12, 100);
+blastFurnace.addRecipe("blast_scrap", <item:minecraft:iron_ingot>, <item:kubejs:iron_scrap>, 0.25, 100);
+blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:kubejs:gold_scrap>, 0.5, 100);
 
 # Combine Tiny Scrap into Scrap
+/*
+craftingTable.addShaped("copper_scrap", <item:kubejs:copper_scrap>, 
+    [[copper_nugget, copper_nugget, copper_nugget],
+    [copper_nugget, copper_nugget, copper_nugget],
+    [copper_nugget, copper_nugget, copper_nugget]]);
+*/
 craftingTable.addShaped("scrap", <item:kubejs:iron_scrap>, 
     [[nugget, nugget, nugget],
     [nugget, nugget, nugget],
     [nugget, nugget, nugget]]);
 
-craftingTable.addShaped("gold_scrap", <item:kubejs:gold_scrap>, 
+craftingTable.addShaped("combine_tiny_gold_scrap", <item:kubejs:gold_scrap>, 
     [[gold_nugget, gold_nugget, gold_nugget],
     [gold_nugget, gold_nugget, gold_nugget],
     [gold_nugget, gold_nugget, gold_nugget]]);
+
+# Craft Small Scrap into Scrap
+craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);
+
+craftingTable.addShapeless("iron_scrap", <item:kubejs:iron_scrap>, [<item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>, <item:kubejs:small_iron_scrap>]);
+
+craftingTable.addShapeless("gold_scrap", <item:kubejs:gold_scrap>, [<item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>, <item:kubejs:small_gold_scrap>]);
 
 
 
@@ -114,11 +126,12 @@ craftingTable.addShaped("gold_scrap", <item:kubejs:gold_scrap>,
 
 # Glue
 craftingTable.addShapeless("glue", glue, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <tag:items:cie:paper>]);
-craftingTable.addShapeless("glue_sus", glue, [<item:food_enhancements:suspicious_substance>, <tag:items:cie:paper>]);
+craftingTable.addShapeless("glue_sus", glue, [<item:food_enhancements:suspicious_substance>]);
+craftingTable.addShapeless("glue_latex", glue, [<item:myrtrees:latex>, <item:myrtrees:latex>]);
+craftingTable.addShapeless("glue_flour", glue, [<item:create:wheat_flour>|<item:create:cinder_flour>, <item:create:wheat_flour>|<item:create:cinder_flour>, <item:create:wheat_flour>|<item:create:cinder_flour>, <item:create:wheat_flour>|<item:create:cinder_flour>, <tag:items:cie:paper>]);
 craftingTable.addShapeless("glue_honeycomb", glue, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <tag:items:cie:paper>]);
 
 // Super Glue (Create)
-// Super Glue
 craftingTable.remove(<item:create:super_glue>);
 craftingTable.addShapeless("super_glue", <item:create:super_glue>, [glue, glue, <tag:items:forge:plates/iron>]);
 

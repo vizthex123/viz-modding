@@ -3,7 +3,7 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  smallerthanheight = 1020
+  [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][req_id:fa53c402-247a-4c36-8409-f1e5f64838ff1697054555831] = 1017
   renderorder = foreground
   randommode = false
   randomonlyfirsttime = false
@@ -15,35 +15,11 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = 6
-}
-
-customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
   x = -100
   action = movebutton
   y = 29
-}
-
-customization {
-  identifier = %id=376310%
-  orientation = bottom-left
-  x = 116
-  action = movebutton
-  y = -99
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = -17
 }
 
 customization {
@@ -68,19 +44,43 @@ customization {
 }
 
 customization {
-  identifier = %id=3763941%
-  orientation = mid-centered
-  x = -124
-  action = movebutton
-  y = 52
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = mid-left
   x = 116
   action = movebutton
   y = 80
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 6
+}
+
+customization {
+  identifier = %id=376310%
+  orientation = bottom-left
+  x = 116
+  action = movebutton
+  y = -99
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -17
+}
+
+customization {
+  identifier = %id=3763941%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 52
 }
 
 customization {
@@ -154,11 +154,11 @@ customization {
 customization {
   path = config/fancymenu/customization/capitalia2_title.png
   orientation = top-left
-  x = 87
+  x = 71
   width = 338
   action = addtexture
   actionid = 2244b215-fb54-4e9e-a2e0-d8aede3a100d1696530649269
-  y = 30
+  y = 25
   height = 80
 }
 

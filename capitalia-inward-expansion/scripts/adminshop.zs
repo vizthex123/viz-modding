@@ -26,50 +26,28 @@ val empty = <item:minecraft:air>;
 val iron = <item:minecraft:iron_ingot>;
 val tungsten = <item:bluepower:tungsten_carbide>;
 
-val coin = <item:lightmanscurrency:coin_gold>;
 val core = <item:lightmanscurrency:trading_core>;
+val gold_coin = <item:lightmanscurrency:coin_gold>;
 
+# New Fluid Seller recipe
+ craftingTable.remove(<item:adminshop:fluid_buyer>);
+ # craftingTable.remove(<item:adminshop:fluid_seller>);
+ mods.extendedcrafting.TableCrafting.addShaped("fluid_seller", 1, <item:adminshop:fluid_seller>,
+	[[empty, gold_coin, empty], 
+	[iron, core, iron], 
+	[empty, <item:minecraft:bucket>, empty]]);
 
-# Seller recipes until tag & NBT support gets added to AdminShop
-
-val seller = <item:kubejs:seller>;
-
-val copper = <item:lightmanscurrency:coin_copper>;
-val iron_coin = <item:lightmanscurrency:coin_iron>;
-val gold = <item:lightmanscurrency:coin_gold>;
-val emerald = <item:lightmanscurrency:coin_emerald>;
-val diamond = <item:lightmanscurrency:coin_diamond>;
-val netherite = <item:lightmanscurrency:coin_netherite>;
-<<<<<<< Updated upstream
-/*
-// Music Discs
-mods.extendedcrafting.TableCrafting.addShapeless("sell_music_discs", 1, gold*5, [seller, <tag:items:minecraft:music_discs>]);
-*/
-// Goat Horn from Pillager Outposts
-mods.extendedcrafting.TableCrafting.addShapeless("sell_goat_horn", 1, gold*4, [seller, <item:minecraft:goat_horn>.withTag({instrument: "minecraft:ponder_goat_horn"})]);
-
-
-
-=======
-
-// Music Discs
-mods.extendedcrafting.TableCrafting.addShapeless("sell_music_discs", 1, gold*5, [seller, <tag:items:minecraft:music_discs>]);
-
-// Goat Horn from Pillager Outposts
-mods.extendedcrafting.TableCrafting.addShapeless("sell_goat_horn", 1, gold*4, [seller, <item:minecraft:goat_horn>.withTag({instrument: "minecraft:ponder_goat_horn"})]);
-
->>>>>>> Stashed changes
 # New Shop recipe
 craftingTable.remove(<item:adminshop:shop>);
 mods.extendedcrafting.TableCrafting.addShaped("shop", 1, <item:adminshop:shop>,
-	[[empty, coin, empty], 
+	[[empty, gold_coin, empty], 
 	[iron, core, iron], 
 	[empty, iron, empty]]);
 
 # New Seller recipe
 craftingTable.remove(<item:adminshop:seller>);
 craftingTable.addShaped("seller", <item:adminshop:seller>,
-    [[empty, coin, empty],
+    [[empty, gold_coin, empty],
     [<tag:items:forge:ingots/brass>, core, <tag:items:forge:ingots/brass>],
     [<tag:items:forge:ingots/brass>, <tag:items:forge:ingots/brass>, <tag:items:forge:ingots/brass>]]);
 
@@ -79,19 +57,19 @@ craftingTable.remove(<item:adminshop:buyer_2>);
 craftingTable.remove(<item:adminshop:buyer_3>);
 
 mods.extendedcrafting.TableCrafting.addShaped("buyer_t1", 1, <item:adminshop:buyer_1>,
-    [[empty, coin, empty],
+    [[empty, gold_coin, empty],
     [<tag:items:forge:ingots/brass>, core, <tag:items:forge:ingots/brass>],
     [empty, <tag:items:forge:ingots/brass>, empty]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("buyer_t2", 1, <item:adminshop:buyer_2>,
-    [[empty, coin, empty],
+    [[empty, gold_coin, empty],
     [iron, <item:adminshop:buyer_1>, iron],
     [empty, iron, empty]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("buyer_t3", 1, <item:adminshop:buyer_3>,
-    [[coin, tungsten, coin],
+    [[gold_coin, tungsten, gold_coin],
     [tungsten, <item:adminshop:buyer_2>, tungsten],
-    [coin, tungsten, coin]]);
+    [gold_coin, tungsten, gold_coin]]);
 
 
 
@@ -99,14 +77,14 @@ mods.extendedcrafting.TableCrafting.addShaped("buyer_t3", 1, <item:adminshop:buy
 /*
 Hazardous Materials - 1
 Special Items - 2
-
+High-Tech Materials - 3
 Prestige - 4
-Worldbreaker Drill Sale - 5
+Worldbreaker Drill - 5
 */
 
 // Tooltips
 val aqua = "\u00A7b";
-val blue = "\u00A79";
+val red = "\u00A7c";
 val green = "\u00A7a";
 val dark_green = "\u00A72";
 val purple = "\u00A7d";
@@ -118,7 +96,7 @@ val prestige_permit = <item:adminshop:permit>.withTag({key: 4 as int});
 val drill_permit = <item:adminshop:permit>.withTag({key: 5 as int});
  
 hazard_permit.addTooltip(green + "Sell: Hazardous Materials");
-special_permit.addTooltip(blue + "Sell: Special Materials");
+special_permit.addTooltip(red + "Sell: Special Materials");
 tech_permit.addTooltip(aqua + "Sell: High-Tech Materials");
 prestige_permit.addTooltip(dark_green + "Sell: Prestige");
 drill_permit.addTooltip(purple + "Sell: Worldbreaker Drill");
@@ -144,6 +122,7 @@ hazard.add(<item:create_new_age:solid_corium>);
 hazard.add(<item:powah:uraninite>);
 hazard.add(<item:enlightened_end:irradium_bar>);
 hazard.add(<item:enlightened_end:depleted_irradium_bar>);
+
 hazard.add(<item:enlightened_end:raw_irradium_block>);
 hazard.add(<item:enlightened_end:irradium_block>);
 
@@ -161,9 +140,9 @@ special.add(<item:minecraft:end_crystal>);
 special.add(<item:minecraft:phantom_membrane>);
 special.add(<item:deep_dark_regrowth:etherium_gem>);
 special.add(<item:deep_dark_regrowth:ethereum_coin>);
-
 special.add(<item:enlightened_end:ooze_fluid_bucket>);
 special.add(<item:experienceobelisk:cognitium_bucket>);
+special.add(<item:quark:diamond_heart>);
 
 
 // High-Tech Materials (Tier 3)
@@ -171,6 +150,16 @@ special.add(<item:experienceobelisk:cognitium_bucket>);
 val tech = <tag:items:shop:high_tech_materials>;
 
 tech.add(<item:powah:steel_energized>);
+tech.add(<item:enlightened_end:adamantite_ingot>);
+tech.add(<item:enlightened_end:starsteel_ingot>);
 tech.add(<item:extendedcrafting:crystaltine_ingot>);
+
+
+# Seller recipes (until proper NBT support gets added to AdminShop)
+
+val seller = <item:kubejs:seller>;
+
+// Goat Horn from Pillager Outposts
+mods.extendedcrafting.TableCrafting.addShapeless("sell_goat_horn", 1, gold_coin*4, [seller, <item:minecraft:goat_horn>.withTag({instrument: "minecraft:ponder_goat_horn"})]);
 
 print("admin_shop.zs loaded");

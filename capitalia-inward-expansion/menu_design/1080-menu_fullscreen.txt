@@ -3,11 +3,11 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  smallerthanheight = 1020
   renderorder = foreground
   randommode = false
+  [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][req_id:5763fee0-81c5-4436-8c1d-b7e3a552de871697054509652] = 1080
+  [loading_requirement:fancymenu_loading_requirement_is_fullscreen][requirement_mode:if][req_id:768e6cb8-05ec-4dfe-8754-6bdf8228af941697054525615] = 
   randomonlyfirsttime = false
-  biggerthanheight = 1030
 }
 
 customization {
@@ -16,35 +16,11 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = 6
-}
-
-customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
   x = -100
   action = movebutton
   y = 29
-}
-
-customization {
-  identifier = %id=376310%
-  orientation = bottom-left
-  x = 116
-  action = movebutton
-  y = -106
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-centered
-  x = -100
-  action = movebutton
-  y = -17
 }
 
 customization {
@@ -69,19 +45,43 @@ customization {
 }
 
 customization {
-  identifier = %id=3763941%
-  orientation = mid-centered
-  x = -124
-  action = movebutton
-  y = 52
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = mid-left
   x = 116
   action = movebutton
   y = 76
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 6
+}
+
+customization {
+  identifier = %id=376310%
+  orientation = bottom-left
+  x = 116
+  action = movebutton
+  y = -106
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -17
+}
+
+customization {
+  identifier = %id=3763941%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 52
 }
 
 customization {
@@ -102,7 +102,7 @@ customization {
   width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 97915ba0-7347-426c-9a61-325bfebe4dfd1696044590081
-  y = 218
+  y = 203
   height = 50
 }
 
@@ -113,7 +113,7 @@ customization {
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 117ed096-a207-4ef3-b22b-87542e71ba9c1696044590081
-  y = 250
+  y = 235
   height = 9
 }
 
@@ -155,7 +155,7 @@ customization {
 customization {
   path = config/fancymenu/customization/capitalia2_title.png
   orientation = top-left
-  x = 87
+  x = 71
   width = 338
   action = addtexture
   actionid = 2244b215-fb54-4e9e-a2e0-d8aede3a100d1696530649269

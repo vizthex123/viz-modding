@@ -1,0 +1,14 @@
+
+["Ore settings"]
+	#List of blocks to which ores are allowed to spawn next to. This does not override existing spawn restrictions of the ores, as those are restrictions on the block they can spawn instead of.  e.g. format :  ["minecraft:air", "minecraft:cave_air"]
+	caveblocks = ["minecraft:air", "minecraft:cave_air", "minecraft:water", "minecraft:lava"]
+	#List of excluded ores beeing affected, these are mod-specific. : e.g. format :  ["mod:orename", "minecraft:iron_ore"]
+	excludedOres = ["minecraft:iron_ore", "minecraft:gold_ore", "minecraft:redstone_ore", "minecraft:lapis_ore", "minecraft:emerald_ore", "minecraft:diamond_ore", "minecraft:deepslate_iron_ore", "minecraft:deepslate_gold_ore", "minecraft:deepslate_redstone_ore", "minecraft:deepslate_lapis_ore", "minecraft:deepslate_emerald_ore", "minecraft:deepslate_diamond_ore"]
+	#Invert the exluded list to an included only list, of which ores are affected. Default = false
+	inverted = true
+	#Chance for an ore vein to appear, reduced below 100% to reduce spawn rates.
+	#Range: 1 ~ 100
+	spawnchance = 100
+	#Alters chance of ores to not get spawned on air, increase to have more ores spawning on air.
+	#Range: 0.10000000149011612 ~ 100.0
+	airChance = 15.0

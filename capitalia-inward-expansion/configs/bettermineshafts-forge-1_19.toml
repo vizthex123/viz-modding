@@ -56,11 +56,11 @@
 		# The spawn rate for lanterns in the main shaft.
 		# Default: .0067
 		#Range: 0.0 ~ 1.0
-		"Lantern Spawn Rate" = 0.0067
+		"Lantern Spawn Rate" = 0.0075
 		# The spawn rate for torches in small shafts.
 		# Default: .02
 		#Range: 0.0 ~ 1.0
-		"Torch Spawn Rate" = 0.02
+		"Torch Spawn Rate" = 0.05
 		# The spawn rate for workstation side rooms along the main shaft.
 		# Default: .025
 		#Range: 0.0 ~ 1.0
@@ -76,7 +76,7 @@
 		# The spawn rate for cobwebs.
 		# Default: .15
 		#Range: 0.0 ~ 1.0
-		"Cobweb Spawn Rate" = 0.15
+		"Cobweb Spawn Rate" = 0.17
 		# The spawn rate for minecarts holding chests in small shafts.
 		# Default: .00125
 		#Range: 0.0 ~ 1.0
@@ -84,7 +84,7 @@
 		# The spawn rate for minecarts holding TNT in small shafts.
 		# Default: .0025
 		#Range: 0.0 ~ 1.0
-		"Small Shaft TNT Minecart Spawn Rate" = 0.0025
+		"Small Shaft TNT Minecart Spawn Rate" = 0.005
 		# The spawn rate for minecarts holding chests in the main shaft.
 		# Default: .01
 		#Range: 0.0 ~ 1.0
@@ -96,11 +96,11 @@
 		# Percent chance of an Abandoned Miners' Outpost to spawn at the end of a small mineshaft tunnel.
 		# Default: 2
 		#Range: 0 ~ 100
-		"Abandoned Miners' Outpost Spawn Chance" = 2
+		"Abandoned Miners' Outpost Spawn Chance" = 3
 		# The number of "pieces" (e.g. straight, turn, ladder, intersection, etc.) in a single small shaft.
 		# This determines the overall length of small shafts.
 		# Default: 9
 		#
 		#Range: 0 ~ 1000
-		"Small Shaft Piece Chain Length" = 9
+		"Small Shaft Piece Chain Length" = 10
 

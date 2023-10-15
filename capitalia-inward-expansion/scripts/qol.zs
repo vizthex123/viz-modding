@@ -26,8 +26,11 @@ val chain = <item:minecraft:chain>;
 val iron = <tag:items:forge:ingots/iron>;
 val nugget = <tag:items:forge:nuggets/iron>;
 
+// Mangrove Roots -> Sticks
+craftingTable.addShapeless("roots_to_sticks", <item:minecraft:stick>*4, [<item:minecraft:mangrove_roots>|<item:minecraft:muddy_mangrove_roots>]);
+
 // Tungsten Carbide anvil recipe
-craftingTable.addShaped("tungsten_anvil", <item:minecraft:anvil>, 
+craftingTable.addShaped("tungsten_anvil", <item:minecraft:anvil>*2, 
     [[empty, <item:bluepower:tungsten_block>, empty],
     [empty, <item:bluepower:tungsten_carbide>, empty],
     [<item:bluepower:tungsten_carbide>, <item:bluepower:tungsten_carbide>, <item:bluepower:tungsten_carbide>]]);
@@ -96,17 +99,14 @@ smoker.addRecipe("smelt_illager_flesh", <item:minecraft:leather>, <item:food_enh
 // Smoke Poisonous Potatoes into Baked Potatoes
 smoker.addRecipe("smelt_poisonous_potato", <item:minecraft:baked_potato>, <item:minecraft:poisonous_potato>, 0.5, 200);
 
-// Make Suspicious Stew use tags
-craftingTable.remove(<item:minecraft:suspicious_stew>);
-craftingTable.addShapeless("suspicious_stew", <item:minecraft:suspicious_stew>, [<tag:items:forge:mushrooms>, <tag:items:forge:mushrooms>, <item:minecraft:bowl>, <tag:items:minecraft:flowers>]);
-
 # Rope Changes
+/*
 // Buffs the rope recipe to give 2 instead of 1 per craft
 craftingTable.remove(<item:additionaladditions:rope>);
 craftingTable.addShaped("rope", <item:additionaladditions:rope>*2,
     [[<tag:items:forge:string>],
     [<tag:items:forge:string>]]);
-
+*/
 // Convert Ropes into Rope Coils (and vice versa)
 craftingTable.addShaped("rope_coiling", <item:quark:rope>,
     [[<item:additionaladditions:rope>, <item:additionaladditions:rope>],

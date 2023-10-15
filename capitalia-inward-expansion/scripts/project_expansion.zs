@@ -25,14 +25,14 @@ Bits
 Head
 Shaft
 Supports
-Base
+Foundation
 
 Completion Order:
 Shaft
 - Segments first
 Head
 - Bits first
-Supports/Base
+Supports/Foundation
 
 The Drill™
 */
@@ -56,63 +56,65 @@ val zinc = <tag:items:forge:plates/zinc>;
 val iron = <tag:items:forge:plates/iron>;
 val cast_iron = <tag:items:forge:plates/cast_iron>;
 val obsidian_plate = <tag:items:forge:plates/obsidian>;
+val netherite_plate = <tag:items:forge:plates/netherite>;
 
-val scaffold = <item:kubejs:support_scaffold>;
-val segment = <item:kubejs:shaft_segment>;
+val latex = <item:myrtrees:latex>;
+
 val bits = <item:kubejs:bits>;
+val scaffold = <item:kubejs:scaffold>;
+val segment = <item:kubejs:shaft_segment>;
+val foundation = <item:kubejs:foundation>;
 
-// Drill Shaft Segment
+// Shaft Segment
 mods.extendedcrafting.CombinationCrafting.addRecipe("shaft_segment", segment, 1000, [obsidian, tungsten, tungsten, tungsten, tungsten], 1);
 
-// Drill Shaft
+// Shaft
 mods.extendedcrafting.FluxCrafting.addShaped("shaft", <item:kubejs:shaft>,
-	[[empty, segment, empty], 
+	[[latex, segment, latex], 
 	[segment, tungsten, segment], 
-	[empty, segment, empty]], 10000, 10);
+	[latex, segment, latex]], 10000, 10);
 
 // Drill Bits
-mods.extendedcrafting.FluxCrafting.addShaped("bits", bits,
+mods.extendedcrafting.FluxCrafting.addShaped("drill_bits", bits,
 	[[tungsten], 
 	[tungsten], 
-	[<item:createoreexcavation:drill>]], 10000, 10);
+	[<item:createoreexcavation:drill>]], 8000, 8);
 
 // Drill Head
-mods.extendedcrafting.TableCrafting.addShaped("head", 2, <item:kubejs:head>,
+mods.extendedcrafting.TableCrafting.addShaped("drill_head", 2, <item:kubejs:head>,
 	[[zinc, obsidian_plate, red, obsidian_plate, zinc], 
-	[zinc, obsidian_plate, red, obsidian_plate, zinc], 
+	[latex, obsidian_plate, red, obsidian_plate, latex], 
 	[empty, steel, <item:bluepower:motor>, steel, empty], 
 	[empty, bits, steel, bits, empty], 
 	[empty, empty, bits, empty, empty]]);
 
-// Drill Support Scaffold
-mods.extendedcrafting.CompressionCrafting.addRecipe("support_scaffold", <item:create:powdered_obsidian>, scaffold, 50, steel, 25000, 250);
+// Scaffold
+mods.extendedcrafting.CompressionCrafting.addRecipe("scaffold", <item:create:powdered_obsidian>, scaffold, 10, steel, 25000, 250);
 
-// Drill Supports
+// Supports
 mods.extendedcrafting.TableCrafting.addShaped("supports", 3, <item:kubejs:supports>,
 	[[empty, empty, empty, empty, empty, empty, empty], 
-	[empty, empty, <item:createdeco:netherite_sheet>, steel, <item:createdeco:netherite_sheet>, empty, empty], 
-	[empty, <item:createdeco:netherite_sheet>, tungsten, crystaltine, tungsten, <item:createdeco:netherite_sheet>, empty], 
-	[empty, <item:createdeco:netherite_support>, crystaltine, <tag:items:forge:storage_blocks/iron>, crystaltine, <item:createdeco:netherite_support>, empty], 
+	[empty, empty, netherite_plate, steel, netherite_plate, empty, empty], 
+	[empty, netherite_plate, tungsten, crystaltine, tungsten, netherite_plate, empty], 
+	[empty, obsidian_plate, crystaltine, <tag:items:forge:storage_blocks/iron>, crystaltine, obsidian_plate, empty], 
 	[empty, scaffold, tungsten, crystaltine, tungsten, scaffold, empty], 
-	[scaffold, empty, <item:createdeco:netherite_sheet>, empty, <item:createdeco:netherite_sheet>, empty, scaffold], 
+	[scaffold, empty, netherite_plate, empty, netherite_plate, empty, scaffold], 
 	[scaffold, empty, empty, empty, empty, empty, scaffold]]);
 
-// Drill Base
-mods.extendedcrafting.TableCrafting.addShaped("base", 4, <item:kubejs:base>,
-	[[empty, empty, empty, empty, empty, empty, empty, empty, empty], 
-	[empty, empty, empty, empty, empty, empty, empty, empty, empty], 
-	[empty, empty, empty, empty, empty, empty, empty, empty, empty], 
-	[empty, empty, empty, empty, empty, empty, empty, empty, empty], 
-	[tungsten, empty, purple, empty, empty, empty, purple, empty, tungsten], 
-	[tungsten, empty, purple, empty, empty, empty, purple, empty, tungsten], 
-	[tungsten, empty, purple, empty, empty, empty, purple, empty, tungsten], 
-	[<item:spirit:soul_steel_ingot>, tungsten, crystaltine, netherite, <item:spirit:soul_steel_ingot>, netherite, crystaltine, tungsten, <item:spirit:soul_steel_ingot>], 
-	[tungsten, crystaltine, tungsten, <item:spirit:soul_steel_ingot>, netherite, <item:spirit:soul_steel_ingot>, tungsten, crystaltine, tungsten]]);
+// Foundation
+mods.extendedcrafting.TableCrafting.addShaped("foundation", 3, foundation,
+	[[empty, empty, empty, empty, empty, empty, empty], 
+	[empty, empty, empty, empty, empty, empty, empty], 
+	[empty, empty, purple, empty, purple, empty, empty], 
+	[netherite, empty, purple, empty, purple, empty, netherite], 
+	[netherite, empty, purple, empty, purple, empty, netherite], 
+	[tungsten, crystaltine, tungsten, steel, tungsten, crystaltine, tungsten], 
+	[crystaltine, tungsten, steel, tungsten, steel, tungsten, crystaltine]]);
 
 // Worldbreaker Drill
 mods.extendedcrafting.FluxCrafting.addShaped("worldbreaker_drill", <item:kubejs:worldbreaker_drill>,
 	[[empty, <item:kubejs:head>, empty], 
 	[<item:kubejs:shaft>, <item:kubejs:supports>, <item:kubejs:shaft>], 
-	[empty, <item:kubejs:base>, empty]], 5000000, 50);
+	[empty, foundation, empty]], 5000000, 50);
 
 print("project_expansion.zs loaded");
