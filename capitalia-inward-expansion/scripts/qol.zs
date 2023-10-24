@@ -29,6 +29,12 @@ val nugget = <tag:items:forge:nuggets/iron>;
 // Mangrove Roots -> Sticks
 craftingTable.addShapeless("roots_to_sticks", <item:minecraft:stick>*4, [<item:minecraft:mangrove_roots>|<item:minecraft:muddy_mangrove_roots>]);
 
+// Alloy Furnace -> Bluletric Alloy Furnace
+craftingTable.addShaped("alloy_furnace_upgrade", <item:bluepower:blulectric_alloyfurnace>, 
+    [[empty, <item:minecraft:bricks>, empty],
+    [<item:minecraft:bricks>, <item:bluepower:alloyfurnace>, <item:minecraft:bricks>],
+    [iron, <item:bluepower:blue_alloy_ingot>, iron]]);
+	
 // Tungsten Carbide anvil recipe
 craftingTable.addShaped("tungsten_anvil", <item:minecraft:anvil>*2, 
     [[empty, <item:bluepower:tungsten_block>, empty],

@@ -1,13 +1,8 @@
-# Recycling recipes for Create's Mechanical Saw
+# Adds recipes to Create's Mechanical Saw
 print("crate_sawing.zs loading...");
 /*
 <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration);
 */
-
-val fiber = <item:kubejs:fibers>;
-val hide = <item:kubejs:shredded_hide>;
-
-val sawdust = <item:kubejs:sawdust>;
 
 # Log Sawing
 <recipetype:create:cutting>.addRecipe("cut_blighted_balsa", <item:biomemakeover:stripped_blighted_balsa_log>, <item:biomemakeover:blighted_balsa_log>);
@@ -71,6 +66,5 @@ val sawdust = <item:kubejs:sawdust>;
 <recipetype:create:cutting>.addRecipe("cut_hollow_blossom", <item:quark:blossom_planks>*4, <item:quark:hollow_blossom_log>);
 
 <recipetype:create:cutting>.addRecipe("cut_hollow_silver", <item:silverbirch:silver_birch_planks>*4, <item:silverbirch:hollow_log>);
-
 
 print("create_sawing.zs loaded");
