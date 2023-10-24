@@ -74,11 +74,11 @@
 		#Set to false to help prevent coin farming.
 		allowFakePlayerTrigger = true
 		#Entities that will occasionally drop T1 loot.
-		entityListT1 = ["minecraft:witch", "minecraft:shulker", "bygonenether:corpor", "bygonenether:piglin_hunter", "bygonenether:wither_skeleton_knight", "bygonenether:warped_enderman", "deep_dark_regrowth:corrupted_skeleton"]
+		entityListT1 = ["minecraft:shulker", "bygonenether:corpor", "bygonenether:piglin_hunter", "bygonenether:wither_skeleton_knight", "bygonenether:warped_enderman", "deep_dark_regrowth:corrupted_skeleton"]
 		#Entities that will occasionally drop T1 -> T2 loot.
-		entityListT2 = ["minecraft:ravager", "minecraft:zoglin", "quark:forgotten"]
+		entityListT2 = ["minecraft:witch", "minecraft:zoglin", "quark:forgotten"]
 		#Entities that will occasionally drop T1 -> T3 loot.
-		entityListT3 = ["minecraft:guardian", "minecraft:evoker"]
+		entityListT3 = ["minecraft:guardian", "minecraft:evoker", "minecraft:ravager"]
 		#Entities that will occasionally drop T1 -> T4 loot.
 		entityListT4 = ["minecraft:elder_guardian"]
 		#Entities that will occasionally drop T1 -> T5 loot.

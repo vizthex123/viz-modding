@@ -19,6 +19,9 @@ val empty = <item:minecraft:air>;
 val gold = <item:minecraft:gold_ingot>;
 val iron = <item:minecraft:iron_ingot>; 
 
+// Decraft Soul Steel Blocks
+craftingTable.addShapeless("decraft_soul_steel_block", <item:spirit:soul_steel_ingot>*9, [<item:spirit:soul_steel_block>]);
+
 // Make Nether Fungus Stew use either one
 craftingTable.remove(<item:nourished_nether:nether_fungus_stew>);
 craftingTable.addShapeless("nether_fungus_stew", <item:nourished_nether:nether_fungus_stew>, [<item:minecraft:crimson_fungus>|<item:minecraft:warped_fungus>, <item:minecraft:crimson_fungus>|<item:minecraft:warped_fungus>, <item:minecraft:bowl>]);

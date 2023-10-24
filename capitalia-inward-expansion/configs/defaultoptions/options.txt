@@ -1,0 +1,16 @@
+resourcePacks:["vanilla","mod_resources","defaultresources","dynamic_asset_generator:assets","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","file/STONEBORN - 1.19 - V3.2.1.zip","file/FutureHUD-1.19-1.0.0.zip","file/[1.3] Enhanced Boss Bars.zip","file/Vertical Nuggets 1.19.zip","quark:emote_resources","Solar Flux Generated Resources","file/Name-fixer-inator.zip"]
+advancedItemTooltips:false
+chatHeightUnfocused:0.45
+skipMultiplayerWarning:true
+skipRealms32bitWarning:true
+attackIndicator:0
+key_key.deep_dark_regrowth.special_ability:key.keyboard.unknown
+key_key.deep_dark_regrowth.laser_mask:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_1:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_2:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_3:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_4:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_5:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_6:key.keyboard.unknown
+key_key.deep_dark_regrowth.konami_code_7:key.keyboard.unknown
+key_key.endermagnet.toggleMagnet:key.keyboard.m

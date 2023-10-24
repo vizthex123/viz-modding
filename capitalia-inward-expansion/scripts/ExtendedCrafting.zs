@@ -38,6 +38,7 @@ val pane = <tag:items:forge:glass_panes>;
 val clay = <item:minecraft:clay_ball>;
 val pearl = <tag:items:forge:ender_pearls>;
 
+val tesla = <item:bluepower:teslatite_dust>;
 val redstone = <item:minecraft:redstone>;
 val glowstone = <item:minecraft:glowstone_dust>;
 
@@ -75,6 +76,7 @@ mods.extendedcrafting.TableCrafting.addShaped("deep_learner", 1, <item:hostilene
 	[obsidian, redstone_ingot, obsidian]]);
 
 
+
 # Change Ender Magnets to require a Basic Table (and Ender Crafter)
 craftingTable.remove(<item:endermagnet:ender_torch>);
 craftingTable.remove(<item:endermagnet:ender_magnet_tier1>);
@@ -100,19 +102,21 @@ mods.extendedcrafting.EnderCrafting.addShaped("t3_ender_magnet", <item:endermagn
 	[<item:minecraft:diamond>, <item:endermagnet:ender_magnet_tier2>, <item:minecraft:diamond>], 
 	[empty, <item:minecraft:diamond>, empty]], 20);
 
-// Quarry
+
+
+# Quarry
 craftingTable.remove(<item:quarry:quarry_block>);
 mods.extendedcrafting.TableCrafting.addShaped("quarry", 1, <item:quarry:quarry_block>,
 	[[glowstone, purple, glowstone], 
 	[purple, frame, purple], 
 	[glowstone, purple, glowstone]]);
 
-// Area Card
+	// Area Card
 craftingTable.remove(<item:quarry:area_card>);
 mods.extendedcrafting.TableCrafting.addShaped("area_card", 1, <item:quarry:area_card>,
 	[[empty, empty, pane], 
 	[empty, red, red], 
-	[<item:bluepower:teslatite_dust>, glowstone, <item:bluepower:teslatite_dust>]]);
+	[tesla, glowstone, tesla]]);
 
 // Change the Experience Obelisk to require a Basic Table
 craftingTable.remove(<item:experienceobelisk:experience_obelisk>);
@@ -226,6 +230,13 @@ mods.extendedcrafting.TableCrafting.addShaped("pedestal", 1, <item:extendedcraft
 	[empty, black_iron, empty], 
 	[black_iron, <item:extendedcrafting:black_iron_block>, black_iron]]);
 
+# Buff Netherite Magnet output
+craftingTable.remove(<item:create_new_age:netherite_magnet>);
+mods.extendedcrafting.TableCrafting.addShaped("netherite_magnet", 1, <item:create_new_age:netherite_magnet>,
+	[[<item:minecraft:netherite_scrap>, <item:create_new_age:overcharged_diamond>, <item:minecraft:netherite_scrap>], 
+	[<item:create_new_age:overcharged_diamond>, <item:create_new_age:overcharged_diamond>, <item:create_new_age:overcharged_diamond>], 
+	[<item:minecraft:netherite_scrap>, <item:create_new_age:overcharged_diamond>, <item:minecraft:netherite_scrap>]]);
+
 # Better Crystaltine recipe
 mods.extendedcrafting.TableCrafting.remove(<item:extendedcrafting:crystaltine_ingot>);
 mods.extendedcrafting.TableCrafting.addShaped("crystaltine", 3, <item:extendedcrafting:crystaltine_ingot>*8,
@@ -238,6 +249,21 @@ mods.extendedcrafting.TableCrafting.addShaped("crystaltine", 3, <item:extendedcr
 	[empty, empty, empty, empty, empty, empty, empty]]);
 
 // Craft Infused Teslatite
-mods.extendedcrafting.CombinationCrafting.addRecipe("infused_testlatite", <item:bluepower:infused_teslatite_dust>*2, 25000, [<item:ae2:ender_dust>, glowstone, <item:bluepower:teslatite_dust>, <item:bluepower:teslatite_dust>, <item:bluepower:teslatite_dust>], 60);
+mods.extendedcrafting.CombinationCrafting.addRecipe("infused_testlatite", <item:bluepower:infused_teslatite_dust>*4, 25000, [<item:ae2:ender_dust>, glowstone, tesla, tesla, tesla], 50);
+
+// Craft Ender Pearls with Ender Dust
+mods.extendedcrafting.CombinationCrafting.addRecipe("ender_pearl", <item:minecraft:ender_pearl>, 100000, [<tag:items:forge:slimeballs>, <item:ae2:ender_dust>, <item:ae2:ender_dust>], 40);
+
+// Craft Netherite Scrap with various nether items
+mods.extendedcrafting.CombinationCrafting.addRecipe("netherite_scrap", <item:minecraft:netherite_scrap>*2, 200000, [<item:hostilenetworks:nether_prediction>, <item:lightmanscurrency:coinpile_gold>, <item:kubejs:gold_scrap>, <item:additionaladditions:rose_gold_alloy>, <item:create:golden_sheet>], 80);
+
+# Removed unused materials
+craftingTable.removeByName("extendedcrafting:nether_star_block_uncraft");
+
+mods.extendedcrafting.FluxCrafting.remove(<item:extendedcrafting:flux_star>);
+mods.extendedcrafting.FluxCrafting.remove(<item:extendedcrafting:enhanced_redstone_ingot>);
+
+mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:ender_star>);
+mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:enhanced_ender_ingot>);
 
 print("ExtendedCrafting.zs loaded");

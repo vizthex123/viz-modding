@@ -43,18 +43,18 @@ mods.extendedcrafting.TableCrafting.addShapeless("industrial_dossier", 1, <item:
 
 mods.extendedcrafting.TableCrafting.addShaped("information_pad", 2, <item:kubejs:science_information>,
 	[[<item:ae2:certus_quartz_dust>, empty, empty, empty, <item:ae2:certus_quartz_dust>], 
-	[empty, advanced_tesla, <item:createdieselgenerators:biodiesel_bucket>, advanced_tesla, empty], 
-	[empty, <item:createdieselgenerators:biodiesel_bucket>, <item:kubejs:science_industrial>, <item:createdieselgenerators:biodiesel_bucket>, empty], 
-	[empty, advanced_tesla, <item:createdieselgenerators:biodiesel_bucket>, advanced_tesla, empty], 
+	[empty, advanced_tesla, <item:bluepower:battery>, advanced_tesla, empty], 
+	[empty, <item:bluepower:battery>, <item:kubejs:science_industrial>, <item:bluepower:battery>, empty], 
+	[empty, advanced_tesla, <item:bluepower:battery>, advanced_tesla, empty], 
 	[<item:ae2:certus_quartz_dust>, empty, empty, empty, <item:ae2:certus_quartz_dust>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("atomic_hologram", 3, <item:kubejs:science_atomic>,
 	[[<item:powah:uraninite>, empty, empty, empty, empty, empty, <item:powah:uraninite>], 
-	[empty, <item:powah:uraninite>, empty, <item:create_new_age:radioactive_thorium>, empty, <item:powah:uraninite>, empty], 
+	[empty, <item:powah:uraninite>, empty, <item:create_new_age:nuclear_fuel>, empty, <item:powah:uraninite>, empty], 
 	[empty, empty, <item:enlightened_end:irradium_bar>, <item:extendedcrafting:crystaltine_ingot>, <item:enlightened_end:irradium_bar>, empty, empty], 
-	[empty, <item:create_new_age:radioactive_thorium>, <item:extendedcrafting:crystaltine_ingot>, <item:kubejs:science_information>, <item:extendedcrafting:crystaltine_ingot>, <item:create_new_age:radioactive_thorium>, empty], 
+	[empty, <item:create_new_age:nuclear_fuel>, <item:extendedcrafting:crystaltine_ingot>, <item:kubejs:science_information>, <item:extendedcrafting:crystaltine_ingot>, <item:create_new_age:nuclear_fuel>, empty], 
 	[empty, empty, <item:enlightened_end:irradium_bar>, <item:extendedcrafting:crystaltine_ingot>, <item:enlightened_end:irradium_bar>, empty, empty], 
-	[empty, <item:powah:uraninite>, empty, <item:create_new_age:radioactive_thorium>, empty, <item:powah:uraninite>, empty], 
+	[empty, <item:powah:uraninite>, empty, <item:create_new_age:nuclear_fuel>, empty, <item:powah:uraninite>, empty], 
 	[<item:powah:uraninite>, empty, empty, empty, empty, empty, <item:powah:uraninite>]]);
 
 print("research.zs loaded");

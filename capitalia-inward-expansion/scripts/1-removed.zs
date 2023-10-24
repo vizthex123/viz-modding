@@ -11,10 +11,18 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+# Hoglin Hide - > Leather
+craftingTable.removeByName("nourished_nether:hoglin_hide_to_leather");
+
+# Mirrored recipe for Electrical Connectors
+craftingTable.removeByName("create_new_age:shaped/connector_mirrored");
+
 # Smelt gear into nuggets
 furnace.removeByName("quark:tools/smelting/trowel_to_iron_nugget");
 furnace.removeByName("minecraft:iron_nugget_from_smelting");
 furnace.removeByName("minecraft:gold_nugget_from_smelting");
+blastFurnace.removeByName("minecraft:iron_nugget_from_blasting");
+blastFurnace.removeByName("minecraft:gold_nugget_from_blasting");
 
 # Duplicate comparator recipe
 craftingTable.removeByName("ae2:misc/vanilla_comparator");

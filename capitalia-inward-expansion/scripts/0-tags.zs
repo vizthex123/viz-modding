@@ -9,34 +9,24 @@ print("0-tags.zs loading...");
 <tag>.remove(<item>);
 */
 
-# Change the mining levels of various ores
-<tag:blocks:minecraft:needs_iron_tool>.remove(<block:create:zinc_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.remove(<block:create:deepslate_zinc_ore>);
 
-<tag:blocks:minecraft:needs_stone_tool>.add(<block:create:zinc_ore>);
-<tag:blocks:minecraft:needs_stone_tool>.add(<block:create:deepslate_zinc_ore>);
+# Wet blocks (sifting recipe)
+# Added to soil-type blocks that generate underwater
+val wet = <tag:items:cie:wet_block>;
 
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:silver_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:silver_deepslate>);
+wet.add(<item:minecraft:dirt>);
+wet.add(<item:minecraft:mud>);
+wet.add(<item:minecraft:clay>);
+wet.add(<item:minecraft:sand>);
+wet.add(<item:minecraft:gravel>);
 
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:tungsten_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:tungsten_deepslate>);
 
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:ruby_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:sapphire_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:green_sapphire_ore>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:amethyst_ore>);
+# Myalite (quest)
+val myalite = <tag:items:cie:myalite>;
 
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:ruby_deepslate>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:sapphire_deepslate>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:green_sapphire_deepslate>);
-<tag:blocks:minecraft:needs_iron_tool>.add(<block:bluepower:amethyst_deepslate>);
-
-<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:bismuth_ore>);
-<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:irradium_ore>);
-<tag:blocks:minecraft:needs_diamond_tool>.add(<block:enlightened_end:malachite_ore>);
-
-# <tag:blocks:minecraft:needs_netherite_tool>.add(<block:deep_dark_regrowth:enlightened_deepslate>);
+myalite.add(<item:quark:myalite>);
+myalite.add(<item:quark:dusky_myalite>);
+myalite.add(<item:quark:myalite_crystal>);
 
 
 # Swords (quest)
@@ -208,11 +198,13 @@ fiber.add(<item:enlightened_end:frost_fruit>);
 fiber.add(<item:enlightened_end:glow_gourd_slice>);
 
 
+
 # Fermentable
 // Used to make Ethanol
 val ethanol = <tag:items:forge:fermentable>;
 
 ethanol.add(<tag:items:forge:crops>);
+ethanol.add(<tag:items:forge:mushrooms>);
 ethanol.add(<item:minecraft:glow_berries>);
 ethanol.add(<item:minecraft:sweet_berries>);
 ethanol.add(<item:minecraft:chorus_fruit>);
@@ -257,8 +249,13 @@ mushroom.add(<item:silverbirch:shelf_fungus>);
 
 
 # Binding & paper (recipes)
+val leather = <tag:items:forge:leather>;
+
 val binding = <tag:items:cie:binding>;
 val paper = <tag:items:cie:paper>;
+
+leather.add(<item:nourished_nether:hoglin_hide>);
+leather.add(<item:quark:ravager_hide>);
 
 binding.add(<item:minecraft:rabbit_hide>);
 binding.add(<item:minecraft:leather>);
@@ -421,6 +418,12 @@ gate.add(<item:enlightened_end:indigo_fence_gate>);
 gate.add(<item:enlightened_end:cerulean_fence_gate>);
 
 gate.add(<item:silverbirch:silver_birch_fence_gate>);
+
+
+
+# Removal
+<tag:items:createsifter:meshes>.remove(<item:createsifter:custom_mesh>);
+<tag:items:createsifter:meshes>.remove(<item:createsifter:advanced_custom_mesh>);
 
 
 

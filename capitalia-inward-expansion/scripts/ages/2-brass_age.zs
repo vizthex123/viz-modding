@@ -22,13 +22,12 @@ ItemStages.createModRestriction("create_enchantment_industry", "brass_age");
 ItemStages.createModRestriction("createdeco", "brass_age");
 ItemStages.createModRestriction("mechanicalmachinery", "brass_age");
 
+
 # Blocks
 ItemStages.restrict(<item:adminshop:seller>, "brass_age");
-ItemStages.restrict(<item:bluepower:alloyfurnace>, "brass_age");
+
 
 # Items
-ItemStages.restrict(<item:bluepower:tungsten_carbide>, "brass_age");
-
 ItemStages.restrict(<item:minecraft:chainmail_helmet>.anyDamage(), "brass_age");
 ItemStages.restrict(<item:minecraft:chainmail_chestplate>.anyDamage(), "brass_age");
 ItemStages.restrict(<item:minecraft:chainmail_leggings>.anyDamage(), "brass_age");

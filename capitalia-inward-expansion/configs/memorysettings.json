@@ -1,0 +1,47 @@
+{
+  "minimumClient": {
+    "desc:": "Set the clients minimum memory warning threshold in MB. Choose the lowest value possible which keeps the pack playable. default:2500, min 2500, max 25000",
+    "minimumClient": 2048
+  },
+  "maximumClient": {
+    "desc:": "Set the clients maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required, e.g.recommended memory for the pack is 6000mb then set this to ~8000mb",
+    "maximumClient": 6144
+  },
+  "minimumServer": {
+    "desc:": "Set the servers minimum memory warning threshold in MB. Choose the lowest value possible which keeps the pack playable. default:2500, min 2500, max 25000",
+    "minimumServer": 4096
+  },
+  "maximumServer": {
+    "desc:": "Set the servers maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required, e.g.recommended is 6000mb then set this to ~8000mb",
+    "maximumServer": 8192
+  },
+  "disableWarnings": {
+    "desc:": "Disable the memory warnings, default: false",
+    "disableWarnings": false
+  },
+  "howtolink": {
+    "desc:": "Set the link used to guide players to a website with instructions to change memory allocation",
+    "howtolink": "https://minecraft.curseforge.com/forums/general-minecraft/general-discussion/265392-how-to-allocate-more-ram-to-minecraft"
+  },
+  "warningTolerance": {
+    "desc:": "Set how many percent the memory is allowed to deviate from the recommended for the system before warning about it, default: 30, max 100",
+    "warningTolerance": 30
+  },
+  "recommendedMemory": {
+    "desc:": "Set the recommended memory values based off system memory in MB. [\"system memory:recommended\"]",
+    "memory values": [
+      "4000:2048",
+      "5000:3072",
+      "6000:4096",
+      "7000:5120",
+      "8000:6144",
+      "10000:6144",
+      "12000:6144",
+      "16000:6144",
+      "20000:8192",
+      "24000:8192",
+      "32000:8192",
+      "64000:8192"
+    ]
+  }
+}

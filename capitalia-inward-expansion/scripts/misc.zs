@@ -32,10 +32,17 @@ val leather = <tag:items:forge:leather>;
 
 val glue = <item:kubejs:glue>;
 
+// Cheaper Diamond Drawplate
+craftingTable.remove(<item:bluepower:diamond_drawplate>);
+craftingTable.addShaped("diamond_drawplate", <item:bluepower:diamond_drawplate>,
+	[[iron, empty, iron],
+    [iron, <item:minecraft:diamond>, iron],
+    [iron, empty, iron]]);
+
 // Make Mirrors use Brass instead of Iron
 craftingTable.remove(<item:solarflux:mirror>);
 craftingTable.addShaped("mirror", <item:solarflux:mirror>*3,
-	[[<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
+	[[<tag:items:forge:glass_panes>, <tag:items:forge:glass_panes>, <tag:items:forge:glass_panes>],
     [empty, <tag:items:forge:ingots/brass>, empty]]);
 
 // Make Blank Upgrades not use Mirrors
@@ -75,7 +82,8 @@ craftingTable.addShapeless("packing_tape", <item:packingtape:tape>, [glue, <tag:
 
 // Change the Akashic Tome to use Glue
 craftingTable.remove(<item:akashictome:tome>);
-craftingTable.addShapeless("akashic_tome", <item:akashictome:tome>, [<item:minecraft:book>, glue]);
+craftingTable.addShaped("akashic_tome", <item:akashictome:tome>,
+	[[<item:minecraft:book>, glue, <item:minecraft:book>]]);
 
 // Move Tungsten processing to the Blast Furnace
 furnace.removeByName("bluepower:furnace/tungsten_ingot");

@@ -26,6 +26,8 @@ StartupEvents.registry('item', event => {
 		event.create('gold_scrap')
 		event.create('small_gold_scrap')
 		event.create('tiny_gold_scrap')
+		event.create('diamond_scrap')
+		event.create('small_diamond_scrap')
 
 // Project Expansion
 		event.create('shaft_segment').rarity('uncommon')

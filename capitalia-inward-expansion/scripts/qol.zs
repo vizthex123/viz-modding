@@ -61,21 +61,7 @@ craftingTable.addShaped("chainmail_boots", <item:minecraft:chainmail_boots>,
     [[chain, empty, chain],
     [chain, empty, chain]]);
 
-// Upgrade Chainmail Armour into Iron
-/*
-helmet - 15
-chest - 24
-leg - 21
-boots - 12
-*/
-/*
-iron amounts:
-helmet - 45 (+30)
-chest - 72 (+48)
-leg - 63 (+42)
-boots - 36 (+24)
-*/
-
+# Upgrade Chainmail Armour into Iron
 craftingTable.addShapeless("chainmail_helmet_upgrade", <item:minecraft:iron_helmet>, [<item:minecraft:chainmail_helmet>.anyDamage(), iron, iron, nugget]);
 
 craftingTable.addShapeless("chainmail_chestplate_upgrade", <item:minecraft:iron_chestplate>, [<item:minecraft:chainmail_chestplate>.anyDamage(), iron, iron, nugget]);
@@ -93,20 +79,9 @@ craftingTable.addShaped("mini_torch", <item:minecraft:torch>,
 craftingTable.addShapeless("orange_dye_from_glow_berries", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
 
 // Smoke Flesh into Leather
-smoker.addRecipe("smelt_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 0.25, 200);
-smoker.addRecipe("smelt_illager_flesh", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>, 0.5, 100);
+smoker.addRecipe("smoke_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, 0.25, 200);
+smoker.addRecipe("smoke_illager_flesh", <item:minecraft:leather>, <item:food_enhancements:illager_flesh>, 0.5, 200);
 
-// Smoke Poisonous Potatoes into Baked Potatoes
-smoker.addRecipe("smelt_poisonous_potato", <item:minecraft:baked_potato>, <item:minecraft:poisonous_potato>, 0.5, 200);
-
-# Rope Changes
-/*
-// Buffs the rope recipe to give 2 instead of 1 per craft
-craftingTable.remove(<item:additionaladditions:rope>);
-craftingTable.addShaped("rope", <item:additionaladditions:rope>*2,
-    [[<tag:items:forge:string>],
-    [<tag:items:forge:string>]]);
-*/
 // Convert Ropes into Rope Coils (and vice versa)
 craftingTable.addShaped("rope_coiling", <item:quark:rope>,
     [[<item:additionaladditions:rope>, <item:additionaladditions:rope>],

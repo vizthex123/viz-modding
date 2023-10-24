@@ -31,6 +31,7 @@ val c300 = <tag:items:credits:300>;
 val c350 = <tag:items:credits:350>;
 val c400 = <tag:items:credits:400>;
 val c500 = <tag:items:credits:500>;
+val c550 = <tag:items:credits:550>;
 val c750 = <tag:items:credits:750>;
 val c1000 = <tag:items:credits:1000>;
 val c2000 = <tag:items:credits:2000>;
@@ -46,10 +47,10 @@ val c20k = <tag:items:credits:20000>;
 # Buckets
 # Mainly used for the permit unlock quests
 # Organized by value
-c100.add(<item:experienceobelisk:cognitium_bucket>);
 c1000.add(<item:createdieselgenerators:ethanol_bucket>);
-c1000.add(<item:enlightened_end:ooze_fluid_bucket>);
 c2000.add(<item:createdieselgenerators:biodiesel_bucket>);
+c5000.add(<item:enlightened_end:ooze_fluid_bucket>);
+c100.add(<item:experienceobelisk:cognitium_bucket>);
 c2500.add(<item:sculkybits:sculk_bucket>);
 
 
@@ -71,7 +72,10 @@ c25.add(<item:bluepower:red_alloy_ingot>);
 c30.add(<item:minecraft:rabbit_foot>);
 c30.add(<item:bluepower:iron_wire>);
 
+
 c35.add(<tag:items:forge:ingots/brass>);
+c35.add(<item:minecraft:glowstone_dust>);
+c35.add(<item:ae2:sky_dust>);
 c35.add(<item:bluepower:teslatite_dust>);
 
 
@@ -82,6 +86,7 @@ c50.add(<item:bluepower:red_doped_wafer>);
 c50.add(<item:enlightened_end:depleted_irradium_bar>);
 
 
+c75.add(<item:biomemakeover:illunite_shard>);
 c75.add(<item:bluepower:blue_doped_wafer>);
 c75.add(<item:rftoolsbase:dimensionalshard>);
 
@@ -106,7 +111,12 @@ c150.add(<item:bluepower:green_sapphire_gem>);
 c150.add(<item:bluepower:ruby_gem>);
 
 
-c200.add(<item:minecraft:end_crystal>);
+c200.add(<item:ae2:name_press>);
+c200.add(<item:ae2:silicon_press>);
+c200.add(<item:ae2:logic_processor_press>);
+c200.add(<item:ae2:calculation_processor_press>);
+c200.add(<item:ae2:engineering_processor_press>);
+
 
 c250.add(<item:minecraft:sponge>);
 c250.add(<item:minecraft:echo_shard>);
@@ -117,6 +127,7 @@ c250.add(<item:enlightened_end:xenon_jar>);
 c250.add(<item:cave_enhancements:goop>);
 c250.add(<item:powah:uraninite>);
 
+c300.add(<item:minecraft:end_crystal>);
 c300.add(<item:create:polished_rose_quartz>);
 
 c350.add(<item:ae2:fluix_dust>);
@@ -138,8 +149,9 @@ c500.add(<item:enlightened_end:irradium_bar>);
 c500.add(<item:enlightened_end:malachite>);
 c500.add(<item:spirit:soul_steel_ingot>);
 
+c550.add(<item:create_new_age:nuclear_fuel>);
+
 c750.add(<item:enlightened_end:glacium>);
-c750.add(<item:create_new_age:nuclear_fuel>);
 
 c1000.add(<item:minecraft:golden_apple>);
 c1000.add(<item:minecraft:emerald>);
@@ -215,6 +227,7 @@ c300.asIIngredient().addTooltip(value + "Worth 300 Credits");
 c350.asIIngredient().addTooltip(value + "Worth 350 Credits");
 c400.asIIngredient().addTooltip(value + "Worth 400 Credits");
 c500.asIIngredient().addTooltip(value + "Worth 500 Credits");
+c550.asIIngredient().addTooltip(value + "Worth 550 Credits");
 c750.asIIngredient().addTooltip(value + "Worth 750 Credits");
 c1000.asIIngredient().addTooltip(value + "Worth 1,000 Credits");
 c2000.asIIngredient().addTooltip(value + "Worth 2,000 Credits");

@@ -28,10 +28,10 @@ val tungsten = <item:bluepower:tungsten_carbide>;
 
 val core = <item:lightmanscurrency:trading_core>;
 val gold_coin = <item:lightmanscurrency:coin_gold>;
-
+ 
 # New Fluid Seller recipe
- craftingTable.remove(<item:adminshop:fluid_buyer>);
- # craftingTable.remove(<item:adminshop:fluid_seller>);
+craftingTable.remove(<item:adminshop:fluid_seller>);
+craftingTable.remove(<item:adminshop:fluid_buyer>);
  mods.extendedcrafting.TableCrafting.addShaped("fluid_seller", 1, <item:adminshop:fluid_seller>,
 	[[empty, gold_coin, empty], 
 	[iron, core, iron], 

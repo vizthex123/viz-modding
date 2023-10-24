@@ -15,11 +15,13 @@ ItemStages.createModRestriction("mod", s => (<exemption> | <exemption2>), "infor
 
 ItemStages.restrict(<item:kubejs:science_atomic>, "information_age");
 
-ItemStages.createModRestriction("ae2", s => (<item:ae2:sky_stone_block> | <item:ae2:silicon_press> | <item:ae2:logic_processor_press> | <item:ae2:calculation_processor_press> | <item:ae2:engineering_processor_press> | <item:ae2:certus_quartz_crystal> | <item:ae2:certus_quartz_dust> | <item:ae2:ender_dust>).matches(s), "information_age");
+ItemStages.createModRestriction("ae2", s => (<item:ae2:sky_stone_block> | <item:ae2:silicon_press> | <item:ae2:logic_processor_press> | <item:ae2:calculation_processor_press> | <item:ae2:engineering_processor_press> | <item:ae2:ender_dust> | <item:ae2:certus_quartz_dust> | <item:ae2:certus_quartz_crystal> | <item:ae2:quartz_block>).matches(s), "information_age");
 ItemStages.createModRestriction("ae2wtlib", "information_age");
 ItemStages.createModRestriction("ae2things", "information_age");
 
 ItemStages.createModRestriction("create_new_age", s => (<item:create_new_age:thorium> | <item:create_new_age:magnetite_block>).matches(s), "information_age");
+
+# ItemStages.createModRestriction("industrialforegoing", "information_age");
 
 # Upgrades
 ItemStages.restrict(<item:solarflux:blank_upgrade>, "information_age");
