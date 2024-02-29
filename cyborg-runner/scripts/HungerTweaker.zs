@@ -6,6 +6,8 @@ print("HungerTweaker.zs loading...");
 
 <>.foodValues.saturationModifier = 0.5;
 - Is a multiplier (1.0 = 2x base value)
+
+Saturation is hunger * saturationModifier
 */
 
 // Make XL Food items more betterer
@@ -32,13 +34,14 @@ print("HungerTweaker.zs loading...");
 <xlfoodmod:ground_beef>.foodValues.saturationModifier = 0.25;
 <xlfoodmod:ham>.foodValues.hunger = 5;
 
-
+// Nerf Pizza Slices since they're kinda OP
+// Still slighty better than the entire pizza though
+<xlfoodmod:slice_of_pizza>.foodValues.hunger = 3;
+<xlfoodmod:slice_of_pizza>.foodValues.saturationModifier = 0.4;
 
 // Misc
 <minecraft:rotten_flesh>.foodValues.hunger = 2;
-<byg:spidereyesoup>.foodValues.hunger = 7;
-<byg:cookedflesh>.foodValues.hunger = 5;
-
-
+<byg:spidereyesoup>.foodValues.hunger = 8;
+<byg:cookedflesh>.foodValues.hunger = 4;
 
 print("HungerTweaker.zs loaded");

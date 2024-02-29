@@ -19,7 +19,7 @@
 		},
 		"selector": {
 		 "weight": {
-		  "value": 40
+		  "value": 10
 		  }
 		}
 	},
@@ -31,7 +31,7 @@
 		},
 		"selector": {
 		 "weight": {
-		  "value": 25
+		  "value": 5
 		  }
 		}
 	}

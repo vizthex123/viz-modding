@@ -19,43 +19,7 @@
 		},
 		"selector": {
 		 "weight": {
-		  "value": 10
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:iron_coal*3"
-			]
-		},
-		"selector": {
-		 "weight": {
 		  "value": 20
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:gold_coal*2"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 15
-		  }
-		}
-	},
-	{
-		"item": {
-			"items": [
-			"nibrockscoal:diamond_coal*5"
-			]
-		},
-		"selector": {
-		 "weight": {
-		  "value": 5
 		  }
 		}
 	},
@@ -68,6 +32,42 @@
 		"selector": {
 		 "weight": {
 		  "value": 17
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:iron_coal*3"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 13
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal*2"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 7
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal*5"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 1
 		  }
 		}
 	}

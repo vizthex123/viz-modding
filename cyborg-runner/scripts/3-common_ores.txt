@@ -1,0 +1,35 @@
+List of ores that Scannable considers "Common"
+
+Anything absent from this list is a Rare Ore.
+
+
+
+Glowstone
+Coal
+Iron
+Redstone
+Nether Quartz
+Aluminum
+Crimson Coal
+Clathrate Oil Sand
+Clathrate Oil Shale
+Copper
+Silver
+Lead
+Tin
+
+
+
+Dense Coal
+Dense Iron
+Dense Redstone
+Dense Nether Quartz
+Dense Aluminum
+Dense Copper
+Dense Silver
+Dense Lead
+Dense Tin
+Crysium
+Eukeite
+Salt
+XP

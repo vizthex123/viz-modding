@@ -1,0 +1,13 @@
+{
+	"name": "caloric",
+	"potion": "minecraft:strength",
+	"amplifier": 0,
+	"minimum": 65,
+	"maximum": 100,
+	"cumulative_modifier": 1,
+	"detect": "average",
+	"nutrients": [
+        "calories"
+    ],
+	"enabled": true
+}

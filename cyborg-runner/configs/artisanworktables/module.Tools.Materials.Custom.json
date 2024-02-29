@@ -1,32 +1,6 @@
 {
   "list": [
     {
-      "name": "flint",
-      "harvestLevel": 0,
-      "maxUses": 75,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "2d2d2e",
-      "shiny": true,
-      "ingredient": "minecraft:flint",
-      "langKey": "material.athenaeum.flint",
-      "oreDictKey": "artisansToolFlint"
-    },
-    {
-      "name": "bone",
-      "harvestLevel": 1,
-      "maxUses": 150,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "fff6c8",
-      "shiny": false,
-      "ingredient": "ore:bone",
-      "langKey": "material.athenaeum.bone",
-      "oreDictKey": "artisansToolBone"
-    },
-    {
       "name": "wood",
       "harvestLevel": 0,
       "maxUses": 60,
@@ -53,6 +27,19 @@
       "oreDictKey": "artisansToolStone"
     },
     {
+      "name": "bone",
+      "harvestLevel": 1,
+      "maxUses": 175,
+      "efficiency": 3.8,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "fff6c8",
+      "shiny": false,
+      "ingredient": "ore:bone",
+      "langKey": "material.athenaeum.bone",
+      "oreDictKey": "artisansToolBone"
+    },
+    {
       "name": "iron",
       "harvestLevel": 2,
       "maxUses": 250,
@@ -73,7 +60,7 @@
       "damage": 0.0,
       "enchantability": 22,
       "color": "ffe947",
-      "shiny": false,
+      "shiny": true,
       "ingredient": "ore:ingotGold",
       "langKey": "material.athenaeum.gold",
       "oreDictKey": "artisansToolGold"
@@ -86,38 +73,64 @@
       "damage": 3.0,
       "enchantability": 10,
       "color": "33ebcb",
-      "shiny": false,
+      "shiny": true,
       "ingredient": "ore:gemDiamond",
       "langKey": "material.athenaeum.diamond",
       "oreDictKey": "artisansToolDiamond"
     },
     {
-      "name": "lead",
+      "name": "pristeel",
       "harvestLevel": 2,
-      "maxUses": 300,
-      "efficiency": 3.0,
-      "damage": 2.0,
-      "enchantability": 7,
-      "color": "8a93b1",
+      "maxUses": 350,
+      "efficiency": 8.0,
+      "damage": 3.0,
+      "enchantability": 16,
+      "color": "cef1e4",
       "shiny": true,
-      "ingredient": "ore:ingotLead",
-      "langKey": "material.athenaeum.lead",
-      "oreDictKey": "artisansToolLead"
+      "ingredient": "pristeel:pristeel_ingot",
+      "langKey": "material.athenaeum.pristeel",
+      "oreDictKey": "artisansToolPristeel"
     },
     {
-      "name": "steel",
+      "name": "ruby",
       "harvestLevel": 2,
-      "maxUses": 500,
-      "efficiency": 6.5,
-      "damage": 2.5,
-      "enchantability": 10,
-      "color": "858585",
+      "maxUses": 512,
+      "efficiency": 7.0,
+      "damage": 2.0,
+      "enchantability": 12,
+      "color": "a52121",
       "shiny": true,
-      "ingredient": "ore:ingotSteel",
-      "langKey": "material.athenaeum.steel",
-      "oreDictKey": "artisansToolSteel"
+      "ingredient": "ore:gemRuby",
+      "langKey": "material.athenaeum.ruby",
+      "oreDictKey": "artisansToolRuby"
     },
-	  {
+    {
+      "name": "peridot",
+      "harvestLevel": 2,
+      "maxUses": 512,
+      "efficiency": 7.0,
+      "damage": 2.0,
+      "enchantability": 12,
+      "color": "378e09",
+      "shiny": true,
+      "ingredient": "ore:gemPeridot",
+      "langKey": "material.athenaeum.peridot",
+      "oreDictKey": "artisansToolPeridot"
+    },
+    {
+      "name": "sapphire",
+      "harvestLevel": 2,
+      "maxUses": 512,
+      "efficiency": 7.0,
+      "damage": 2.0,
+      "enchantability": 12,
+      "color": "2c299d",
+      "shiny": true,
+      "ingredient": "ore:gemSapphire",
+      "langKey": "material.athenaeum.sapphire",
+      "oreDictKey": "artisansToolSapphire"
+	},
+	{
       "name": "bronze",
       "harvestLevel": 2,
       "maxUses": 350,
@@ -156,6 +169,19 @@
       "langKey": "material.athenaeum.invar",
       "oreDictKey": "artisansToolInvar"
     },
+    {
+      "name": "steel",
+      "harvestLevel": 2,
+      "maxUses": 500,
+      "efficiency": 6.5,
+      "damage": 2.5,
+      "enchantability": 10,
+      "color": "858585",
+      "shiny": true,
+      "ingredient": "ore:ingotSteel",
+      "langKey": "material.athenaeum.steel",
+      "oreDictKey": "artisansToolSteel"
+    },
 	{
       "name": "platinum",
       "harvestLevel": 4,
@@ -181,6 +207,71 @@
       "ingredient": "ore:ingotIridium",
       "langKey": "material.athenaeum.iridium",
       "oreDictKey": "artisansToolIridium"
+    },
+	{
+      "name": "underground",
+      "harvestLevel": 0,
+      "maxUses": 75,
+      "efficiency": 4.0,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "455341",
+      "shiny": false,
+      "ingredient": "glacidus:underground_planks",
+      "langKey": "material.athenaeum.underground",
+      "oreDictKey": "artisansToolUnderground"
+    },
+	{
+      "name": "antinatric",
+      "harvestLevel": 1,
+      "maxUses": 150,
+      "efficiency": 6.0,
+      "damage": 2.0,
+      "enchantability": 5,
+      "color": "161D33",
+      "shiny": false,
+      "ingredient": "glacidus:frozen_antinatric_stone",
+      "langKey": "material.athenaeum.antinatric",
+      "oreDictKey": "artisansToolAntinatric"
+    },
+	{
+      "name": "eukeite",
+      "harvestLevel": 2,
+      "maxUses": 275,
+      "efficiency": 8.0,
+      "damage": 3.0,
+      "enchantability": 12,
+      "color": "1B4796",
+      "shiny": false,
+      "ingredient": "glacidus:eukeite",
+      "langKey": "material.athenaeum.eukeite",
+      "oreDictKey": "artisansToolEukeite"
+    },
+	{
+      "name": "glacidite",
+      "harvestLevel": 3,
+      "maxUses": 2000,
+      "efficiency": 10.0,
+      "damage": 5.0,
+      "enchantability": 15,
+      "color": "5CADC6",
+      "shiny": true,
+      "ingredient": "glacidus:glacidite_fragment",
+      "langKey": "material.athenaeum.glacidite",
+      "oreDictKey": "artisansToolGlacidite"
+    },
+	{
+      "name": "vulcanite",
+      "harvestLevel": 3,
+      "maxUses": 1850,
+      "efficiency": 12.0,
+      "damage": 6.0,
+      "enchantability": 20,
+      "color": "FF3300",
+      "shiny": true,
+      "ingredient": "ore:ingotVulcanite",
+      "langKey": "material.athenaeum.vulcanite",
+      "oreDictKey": "artisansToolVulcanite"
     }
   ]
 }

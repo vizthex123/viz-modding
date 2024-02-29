@@ -1,0 +1,13 @@
+{
+	"name": "energetic",
+	"potion": "minecraft:speed",
+	"amplifier": 0,
+	"minimum": 25,
+	"maximum": 100,
+	"cumulative_modifier": 1,
+	"detect": "average",
+	"nutrients": [
+        "energy"
+    ],
+	"enabled": true
+}

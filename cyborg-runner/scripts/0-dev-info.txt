@@ -1,7 +1,49 @@
 MODPACK NAME: The Cyborg Runner
 MADE BY: vizthex
 
+
+
+Non-pilot lore is written from the Runner's perspective.
+
+How to use tellraw (make sure it's a team reward!):
+
+/tellraw @p {"text":"MSG", "color":"white"}
+
+
+
+
+
+
+Colours:
+White - Runner (you)
+Green - Dr. Wessex
+Gray - Black Market Dealer
+Red - IPC Guards
+Dark Red - Defamont
+
+
+
+
+
 worldborder is set at 64!
+
+Template Defaults:
+- Difficulty: Normal (Locked)
+- Time: 8000
+- Not raining
+
+
+Nutrition info:
+- All foods has calories (drains at 5x the normal rate)
+- "Energy" is high-calorie & thematic foods (drains at 0.75 the normal rate)
+- Vitamins & Minerals go off of real-life contents (drains at 1.25 the normal rate)
+- Effects use themed bars
+- Malnutrition is 20% or less
+-- Low energy is 15% or less (due to it being harder to find)
+-- Vitamins & Minerals is 15 due to them being used more efficiently by cybernetics
+
+
+
 
 Dimension Ores:
 
@@ -44,25 +86,6 @@ Advise to bring add-ons/upgrades - final battle
 /tp @a 3421 73 -695 - Starting area anti-cheat
 
 
-Non-pilot lore is written from the Runner's perspective.
-
-
-How to use tellraw:
-Make sure it's a team reward
-
-/tellraw @p {"text":"MSG", "color":"white"}
-
-
-
-
-
-Colours:
-White - Your player
-Green - Dr. Wessex
-Gray - Black Market Dealer
-Red - IPC Guards
-Dark Red - Defamont
-
 
 
 OVERVEW:
@@ -98,6 +121,7 @@ CHARACTERS:
 [Company] VaniTech - Makes vanity items and augments. Doesn't care who distributes, as long as they profit
 [Company] CyberNOW - Competitor to Future Vision
 
+[Organization] Sol System Currency Council - Manages Standard Sol Credits and later Standard Galactic Credits
 [Organization] The Cyborg Defamation Cause (TCDC) - Endevours to rid the world of cyborgs. Very elitist. (Pretty much villians)
 [Secret Organization] Black Market - Store you can buy things from.
 

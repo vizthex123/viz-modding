@@ -83,7 +83,7 @@ customization {
 }
 
 customization {
-  path = resources/menu/title.png
+  path = config/fancymenu/customization/title.png
   orientation = top-left
   x = 26
   width = 460
@@ -97,7 +97,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://discord.gg/NtwzA6X%btnaction_splitter_fm%
-  backgroundhovered = resources/menu/discord_logo.png
+  backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   hoverlabel = Discord
@@ -106,7 +106,7 @@ customization {
   action = addbutton
   actionid = fb597d68-862a-4788-8c0b-77d0ebaa46291687975734625
   y = 201
-  backgroundnormal = resources/menu/discord_logo.png
+  backgroundnormal = config/fancymenu/customization/discord_logo.png
   height = 20
 }
 

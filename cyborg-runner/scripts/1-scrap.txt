@@ -1,0 +1,138 @@
+# Adds OreDict entries to items that can be scrapped
+# Also adds recipes
+#priority 50;
+
+print("1-scrap.zs loading...");
+/*
+val NAME = <OreDict Entry>;
+ENTRYNAME.add(<item>);
+ENTRYNAME.remove(<item>);
+<OREDICT ENTRY>.add(<ITEMNAME>);
+<OREDICT ENTRY>.remove(<ITEMNAME>);
+*/
+
+/*
+## Scrap OreDict entries
+val iron = <ore:meltable_iron>;
+val gold = <ore:meltable_gold>;
+val diamond = <ore:metable_diamond>;
+
+	# Iron
+iron.add(<minecraft:iron_trapdoor>);
+iron.add(<minecraft:iron_door>);
+iron.add(<minecraft:iron_sword>);
+iron.add(<minecraft:iron_pickaxe>);
+iron.add(<minecraft:iron_shovel>);
+iron.add(<minecraft:iron_hoe>);
+iron.add(<minecraft:iron_axe>);
+iron.add(<minecraft:iron_helmet>);
+iron.add(<minecraft:iron_chestplate>);
+iron.add(<minecraft:iron_leggings>);
+iron.add(<minecraft:iron_boots>);
+iron.add(<minecraft:iron_horse_armor>);
+iron.add(<minecraft:shield:*>);
+iron.add(<artisanworktables:artisans_cutters_iron>);
+iron.add(<artisanworktables:artisans_hammer_iron>);
+iron.add(<artisanworktables:artisans_handsaw_iron>);
+iron.add(<artisanworktables:artisans_cutting_board_iron>);
+iron.add(<artisanworktables:artisans_pan_iron>);
+iron.add(<artisanworktables:artisans_spanner_iron>);
+iron.add(<artisanworktables:artisans_sifter_iron>);
+iron.add(<artisanworktables:artisans_pliers_iron>);
+iron.add(<artisanworktables:artisans_chisel_iron>);
+iron.add(<artisanworktables:artisans_knife_iron>);
+iron.add(<artisanworktables:artisans_file_iron>);
+iron.add(<artisanworktables:artisans_solderer_iron>);
+iron.add(<chesttransporter:chesttransporter_iron>);
+iron.add(<contenttweaker:ring>);
+
+
+
+	# Gold
+gold.add(<minecraft:golden_sword>);
+gold.add(<minecraft:golden_pickaxe>);
+gold.add(<minecraft:golden_shovel>);
+gold.add(<minecraft:golden_hoe>);
+gold.add(<minecraft:golden_axe>);
+gold.add(<minecraft:golden_helmet>);
+gold.add(<minecraft:golden_chestplate>);
+gold.add(<minecraft:golden_leggings>);
+gold.add(<minecraft:golden_boots>);
+gold.add(<minecraft:golden_horse_armor>);
+gold.add(<artisanworktables:artisans_cutters_gold>);
+gold.add(<artisanworktables:artisans_hammer_gold>);
+gold.add(<artisanworktables:artisans_handsaw_gold>);
+gold.add(<artisanworktables:artisans_cutting_board_gold>);
+gold.add(<artisanworktables:artisans_pan_gold>);
+gold.add(<artisanworktables:artisans_spanner_gold>);
+gold.add(<artisanworktables:artisans_sifter_gold>);
+gold.add(<artisanworktables:artisans_pliers_gold>);
+gold.add(<artisanworktables:artisans_chisel_gold>);
+gold.add(<artisanworktables:artisans_knife_gold>);
+gold.add(<artisanworktables:artisans_file_gold>);
+gold.add(<artisanworktables:artisans_solderer_gold>);
+gold.add(<chesttransporter:chesttransporter_gold>);
+
+
+
+	# Diamond
+diamond.add(<minecraft:diamond_sword>);
+diamond.add(<minecraft:diamond_pickaxe>);
+diamond.add(<minecraft:diamond_shovel>);
+diamond.add(<minecraft:diamond_hoe>);
+diamond.add(<minecraft:diamond_axe>);
+diamond.add(<minecraft:diamond_helmet>);
+diamond.add(<minecraft:diamond_chestplate>);
+diamond.add(<minecraft:diamond_leggings>);
+diamond.add(<minecraft:diamond_boots>);
+diamond.add(<minecraft:diamond_horse_armor>);
+diamond.add(<artisanworktables:artisans_cutters_diamond>);
+diamond.add(<artisanworktables:artisans_hammer_diamond>);
+diamond.add(<artisanworktables:artisans_handsaw_diamond>);
+diamond.add(<artisanworktables:artisans_cutting_board_diamond>);
+diamond.add(<artisanworktables:artisans_pan_diamond>);
+diamond.add(<artisanworktables:artisans_spanner_diamond>);
+diamond.add(<artisanworktables:artisans_sifter_diamond>);
+diamond.add(<artisanworktables:artisans_pliers_diamond>);
+diamond.add(<artisanworktables:artisans_chisel_diamond>);
+diamond.add(<artisanworktables:artisans_knife_diamond>);
+diamond.add(<artisanworktables:artisans_file_diamond>);
+diamond.add(<artisanworktables:artisans_solderer_diamond>);
+diamond.add(<chesttransporter:chesttransporter_diamond>);
+*/
+
+
+# Nugget recipes
+# Only used if the item would give <3 nuggets
+# Gives half the XP
+furnace.addRecipe(<minecraft:iron_nugget>*2, <minecraft:iron_bars>, 0.5);
+# furnace.addRecipe(<minecraft:iron_nugget>, <byg:chainplating>, 0.5);
+
+
+# Scrap recipes
+val scrap = <contenttweaker:iron_scrap>;
+val small_scrap = <contenttweaker:small_iron_scrap>;
+
+val gscrap = <contenttweaker:gold_scrap>;
+val gsmall_scrap = <contenttweaker:small_gold_scrap>;
+
+val dscrap = <contenttweaker:diamond_scrap>;
+val dsmall_scrap = <contenttweaker:small_diamond_scrap>;
+
+
+furnace.addRecipe(small_scrap, <minecraft:shield>|<minecraft:iron_sword>|<minecraft:iron_pickaxe>, 0.5);
+
+
+recipes.addShapeless(scrap, [small_scrap, small_scrap, small_scrap]);
+recipes.addShapeless(gscrap, [gsmall_scrap, gsmall_scrap, gsmall_scrap]);
+recipes.addShapeless(dscrap, [dsmall_scrap, dsmall_scrap, dsmall_scrap]);
+
+furnace.addRecipe(<minecraft:iron_ingot>, scrap, 1.0);
+furnace.addRecipe(<minecraft:gold_ingot>, gscrap, 2.0);
+furnace.addRecipe(<minecraft:diamond>, dscrap, 3.0);
+
+furnace.addRecipe(small_scrap, <ore:meltable_iron>, 0);
+furnace.addRecipe(gsmall_scrap, <ore:meltable_gold>, 0);
+
+
+print("1-scrap.zs loaded");

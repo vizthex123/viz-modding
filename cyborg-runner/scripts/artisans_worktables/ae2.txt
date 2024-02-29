@@ -1,0 +1,1007 @@
+# Changes recipes for Applied Energistics blocks/items
+
+import mods.artisanworktables.builder.RecipeBuilder;
+import mods.artisanintegrations.requirement.FTGU;
+
+print("ae2.zs loading...");
+
+/*
+recipes.remove(<>);
+recipes.addShaped(<output>, [[<null>, <null>, <null>],
+                                      [<null>, <null>, <null>],
+                                      [<null>, <null>, <null>]]);
+recipes.addShapeless(<output>, [<input1>, <INPUT2>, <INPUT3>, <ETC. {UP TO 9 MAX}>]);
+furnace.addRecipe(<output>, <input>, XP[F]);
+*/
+# move illuminated panels here
+var logic = <appliedenergistics2:material:22>;
+var calculation = <appliedenergistics2:material:23>;
+var engineering = <appliedenergistics2:material:24>;
+var cable = <appliedenergistics2:part:16>;
+
+var lapis = <minecraft:dye:4>;
+var iron = <minecraft:iron_ingot>;
+var redstone = <minecraft:redstone>;
+var glowstone = <minecraft:glowstone_dust>;
+var electrotine = <projectred-core:resource_item:105>;
+var pulsaton = <contenttweaker:pulsaton_sliver>;
+var certus = <ore:certus>;
+
+var eukeite = <glacidus:eukeite>;
+var opesium = <glacidus:opesium>;
+var residuum = <glacidus:residuum>;
+var glacidite = <glacidus:glacidite_fragment>;
+var vulcanite = <vulcanite:vulcanite_ingot>;
+
+var pearl = <appliedenergistics2:material:9>;
+var pristeel = <pristeel:pristeel_ingot>;
+
+var glass = <ore:blockGlass>;
+var quartz_glass = <appliedenergistics2:quartz_glass>;
+
+
+var pliers = <ore:artisansPliers>;
+var solderer = <ore:artisansSolderer>;
+var spanner =  <ore:artisansSpanner>;
+
+
+# Change the recipes for processors
+recipes.remove(<appliedenergistics2:material:16>);
+recipes.remove(<appliedenergistics2:material:17>);
+recipes.remove(<appliedenergistics2:material:18>);
+recipes.remove(<appliedenergistics2:material:20>);
+
+recipes.remove(<appliedenergistics2:material:22>);
+recipes.remove(<appliedenergistics2:material:23>);
+recipes.remove(<appliedenergistics2:material:24>);
+
+var silicon_board = <appliedenergistics2:material:20>;
+var logic_board = <appliedenergistics2:material:18>;
+var calculation_board = <appliedenergistics2:material:16>;
+var engineering_board = <appliedenergistics2:material:17>;
+
+// Silicon Board
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemSilicon>])
+  .addTool(solderer, 1)
+  .addOutput(silicon_board)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("silicon_board")
+  .create();
+  
+RecipeBuilder.get("chemist")
+  .setShapeless([residuum, residuum])
+  .addTool(solderer, 3)
+  .addOutput(silicon_board)
+  .setExtraOutputOne(silicon_board, 0.5)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("silicon_board_residuum")
+  .create();
+
+// Logic Board
+RecipeBuilder.get("chemist")
+  .setShapeless([<minecraft:gold_ingot>])
+  .addTool(solderer, 2)
+  .addOutput(logic_board)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("logic_board")
+  .create();
+
+// Calculation Board
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:material:10>])
+  .addTool(solderer, 2)
+  .addOutput(calculation_board)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("calculation_board")
+  .create();
+
+// Engineering Board
+RecipeBuilder.get("chemist")
+  .setShapeless([<minecraft:diamond>|glacidite|vulcanite])
+  .addTool(solderer, 3)
+  .addOutput(engineering_board)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("engineering_board")
+  .create();
+ 
+// Logic Processor
+RecipeBuilder.get("chemist")
+  .setShapeless([silicon_board, logic_board, redstone])
+  .addTool(solderer, 5)
+  .addOutput(logic)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("logic_processor")
+  .create();
+
+// Calculation Processor
+RecipeBuilder.get("chemist")
+  .setShapeless([silicon_board, calculation_board, redstone|electrotine])
+  .addTool(solderer, 7)
+  .addOutput(calculation)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("calculation_processor")
+  .create();
+
+// Engineering Processor
+RecipeBuilder.get("chemist")
+  .setShapeless([silicon_board, engineering_board, electrotine, redstone])
+  .addTool(solderer, 11)
+  .addOutput(engineering)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("engineering_processor")
+  .create();
+
+
+# Storage Components & Cells
+recipes.remove(<appliedenergistics2:material:35>);
+recipes.remove(<appliedenergistics2:material:36>);
+recipes.remove(<appliedenergistics2:material:37>);
+recipes.remove(<appliedenergistics2:material:38>);
+
+var comp1k = <appliedenergistics2:material:35>;
+var comp4k = <appliedenergistics2:material:36>;
+var comp16k = <appliedenergistics2:material:37>;
+var comp64k = <appliedenergistics2:material:38>;
+
+// 1k component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [glowstone, certus, glowstone],
+    [certus, logic, certus],
+    [glowstone, certus, glowstone]])
+  .addTool(solderer, 3)
+  .addOutput(comp1k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_component")
+  .create();
+
+// 4k component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [redstone, calculation, redstone],
+    [comp1k, quartz_glass, comp1k],
+    [redstone, comp1k, redstone]])
+  .addTool(solderer, 12)
+  .addOutput(comp4k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_component")
+  .create();
+
+// 16k component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [redstone|electrotine, calculation, redstone|electrotine],
+    [comp4k, quartz_glass, comp4k],
+    [redstone|electrotine, comp4k, redstone|electrotine]])
+  .addTool(solderer, 36)
+  .addOutput(comp16k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_component")
+  .create();
+
+// 64k component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [electrotine, calculation, electrotine],
+    [comp16k, quartz_glass, comp16k],
+    [electrotine, comp16k, electrotine]])
+  .addTool(solderer, 108)
+  .addOutput(comp64k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_component")
+  .create();
+
+
+# Cells
+recipes.remove(<appliedenergistics2:material:39>);
+
+recipes.remove(<appliedenergistics2:storage_cell_1k>);
+recipes.remove(<appliedenergistics2:storage_cell_4k>);
+recipes.remove(<appliedenergistics2:storage_cell_16k>);
+recipes.remove(<appliedenergistics2:storage_cell_64k>);
+
+recipes.remove(<appliedenergistics2:fluid_storage_cell_1k>);
+recipes.remove(<appliedenergistics2:fluid_storage_cell_4k>);
+recipes.remove(<appliedenergistics2:fluid_storage_cell_16k>);
+recipes.remove(<appliedenergistics2:fluid_storage_cell_64k>);
+
+var housing = <appliedenergistics2:material:39>;
+
+# Storage Housing
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, null, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 32)
+  .addOutput(housing)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("storage_housing")
+  .create();
+
+// 1k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, comp1k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 8)
+  .addOutput(<appliedenergistics2:storage_cell_1k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, comp1k])
+  .addTool(solderer, 8)
+  .addOutput(<appliedenergistics2:storage_cell_1k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:storage_cell_1k>])
+  .addTool(spanner, 16)
+  .addOutput(housing)
+  .setExtraOutputOne(comp1k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("1k_cell_salvage")
+  .create();
+
+// 4k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, comp4k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 16)
+  .addOutput(<appliedenergistics2:storage_cell_4k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, comp4k])
+  .addTool(solderer, 16)
+  .addOutput(<appliedenergistics2:storage_cell_4k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:storage_cell_4k>])
+  .addTool(spanner, 32)
+  .addOutput(housing)
+  .setExtraOutputOne(comp4k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("4k_cell_salvage")
+  .create();
+
+// 16k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, comp16k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:storage_cell_16k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, comp16k])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:storage_cell_16k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:storage_cell_16k>])
+  .addTool(spanner, 64)
+  .addOutput(housing)
+  .setExtraOutputOne(comp16k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("16k_cell_salvage")
+  .create();
+
+// 64k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, comp64k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:storage_cell_64k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, comp64k])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:storage_cell_64k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:storage_cell_64k>])
+  .addTool(spanner, 128)
+  .addOutput(housing)
+  .setExtraOutputOne(comp64k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("64k_cell_salvage")
+  .create();
+
+
+
+# Fluid storage components
+recipes.remove(<appliedenergistics2:material:54>);
+recipes.remove(<appliedenergistics2:material:55>);
+recipes.remove(<appliedenergistics2:material:56>);
+recipes.remove(<appliedenergistics2:material:57>);
+
+var fluidcomp1k = <appliedenergistics2:material:54>;
+var fluidcomp4k = <appliedenergistics2:material:55>;
+var fluidcomp16k = <appliedenergistics2:material:56>;
+var fluidcomp64k = <appliedenergistics2:material:57>;
+
+// 1k fluid component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [lapis, certus, lapis],
+    [certus, logic, certus],
+    [lapis, certus, lapis]])
+  .addTool(solderer, 3)
+  .addOutput(fluidcomp1k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_fluid_component")
+  .create();
+
+// 4k fluid component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [lapis, calculation, lapis],
+    [fluidcomp1k, quartz_glass, fluidcomp1k],
+    [lapis, fluidcomp1k, lapis]])
+  .addTool(solderer, 12)
+  .addOutput(fluidcomp4k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_fluid_component")
+  .create();
+
+// 16k fluid comp16k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [eukeite, calculation, eukeite],
+    [fluidcomp4k, quartz_glass, fluidcomp4k],
+    [eukeite, fluidcomp4k, eukeite]])
+  .addTool(solderer, 36)
+  .addOutput(fluidcomp16k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_fluid_component")
+  .create();
+
+// 64k fluid comp16k
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [opesium, calculation, opesium],
+    [fluidcomp16k, quartz_glass, fluidcomp16k],
+    [opesium, fluidcomp16k, opesium]])
+  .addTool(solderer, 108)
+  .addOutput(fluidcomp64k)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_fluid_component")
+  .create();
+
+
+
+# Fluid storage cells
+// 1k fluid
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, fluidcomp1k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 8)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_1k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_fluid_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, fluidcomp1k])
+  .addTool(solderer, 8)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_1k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("1k_fluid_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:fluid_storage_cell_1k>])
+  .addTool(spanner, 16)
+  .addOutput(housing)
+  .setExtraOutputOne(fluidcomp1k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("1k_fluid_cell_salvage")
+  .create();
+
+
+
+// 4k fluid
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, fluidcomp4k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 16)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_4k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_fluid_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, fluidcomp4k])
+  .addTool(solderer, 16)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_4k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("4k_fluid_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:fluid_storage_cell_4k>])
+  .addTool(spanner, 32)
+  .addOutput(housing)
+  .setExtraOutputOne(fluidcomp4k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("4k_fluid_cell_salvage")
+  .create();
+
+
+
+// 16k fluid
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, fluidcomp16k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_16k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_fluid_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, fluidcomp16k])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_16k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16k_fluid_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:fluid_storage_cell_16k>])
+  .addTool(spanner, 64)
+  .addOutput(housing)
+  .setExtraOutputOne(fluidcomp16k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("16k_fluid_cell_salvage")
+  .create();
+
+
+
+// 64k fluid
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, fluidcomp64k, residuum],
+    [iron, iron, iron]])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_64k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_fluid_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, fluidcomp64k])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:fluid_storage_cell_64k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("64k_fluid_cell_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:fluid_storage_cell_64k>])
+  .addTool(spanner, 128)
+  .addOutput(housing)
+  .setExtraOutputOne(fluidcomp64k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("64k_fluid_cell_salvage")
+  .create();
+
+
+
+# Spatial Cells
+recipes.remove(<appliedenergistics2:material:32>);
+recipes.remove(<appliedenergistics2:material:33>);
+recipes.remove(<appliedenergistics2:material:34>);
+
+recipes.remove(<appliedenergistics2:spatial_storage_cell_2_cubed>);
+recipes.remove(<appliedenergistics2:spatial_storage_cell_16_cubed>);
+recipes.remove(<appliedenergistics2:spatial_storage_cell_128_cubed>);
+
+var spatial2comp = <appliedenergistics2:material:32>;
+var spatial16comp = <appliedenergistics2:material:33>;
+var spatial128comp = <appliedenergistics2:material:34>;
+
+	// 2 cubed spatial component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [glowstone, pearl, glowstone],
+    [pearl, engineering, pearl],
+    [glowstone, pearl, glowstone]])
+  .addTool(solderer, 8)
+  .addOutput(spatial2comp)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("2_cubed_spatial_component")
+  .create();
+
+	// 16 cubed spatial component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [glowstone, spatial2comp, glowstone],
+    [spatial2comp, engineering, spatial2comp],
+    [glowstone, spatial2comp, glowstone]])
+  .addTool(solderer, 16)
+  .addOutput(spatial16comp)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16_cubed_spatial_component")
+  .create();
+
+	// 128 cubed spatial component
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [glowstone, spatial16comp, glowstone],
+    [spatial16comp, engineering, spatial16comp],
+    [glowstone, spatial16comp, glowstone]])
+  .addTool(solderer, 32)
+  .addOutput(spatial128comp)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("128_cubed_spatial_component")
+  .create();
+
+
+# Spatial cells
+// 2 cubed spatial cell
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, spatial2comp, residuum],
+    [pristeel, pristeel, pristeel]])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_2_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("2_cubed_spatial")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, spatial2comp])
+  .setSecondaryIngredients([pristeel*3])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_2_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("2_cubed_spatial_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:spatial_storage_cell_2_cubed>])
+  .addTool(spanner, 64)
+  .addOutput(housing)
+  .setExtraOutputOne(spatial2comp, 1.0)
+  .setExtraOutputTwo(pristeel*3, 0.5)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("2_cubed_spatial_salvage")
+  .create();
+
+
+
+// 16 cubed spatial cell
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, spatial16comp, residuum],
+    [pristeel, pristeel, pristeel]])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_16_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16_cubed_spatial")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, spatial16comp])
+  .setSecondaryIngredients([pristeel*3])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_16_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("16_cubed_spatial_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:spatial_storage_cell_16_cubed>])
+  .addTool(spanner, 128)
+  .addOutput(housing)
+  .setExtraOutputOne(spatial16comp, 1.0)
+  .setExtraOutputTwo(pristeel*3, 0.5)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("16_cubed_spatial_salvage")
+  .create();
+
+
+
+// 128 cubed spatial cell
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, residuum, quartz_glass],
+    [residuum, spatial128comp, residuum],
+    [pristeel, pristeel, pristeel]])
+  .addTool(solderer, 128)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_128_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("128_cubed_spatial")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([housing, spatial128comp])
+  .setSecondaryIngredients([pristeel*3])
+  .addTool(solderer, 128)
+  .addOutput(<appliedenergistics2:spatial_storage_cell_128_cubed>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("128_cubed_spatial_housing")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:spatial_storage_cell_128_cubed>])
+  .addTool(spanner, 256)
+  .addOutput(housing)
+  .setExtraOutputOne(spatial128comp, 1.0)
+  .setExtraOutputTwo(pristeel*3, 0.5)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("128_cubed_spatial_salvage")
+  .create();
+
+
+
+
+# Portable Cell
+recipes.remove(<appliedenergistics2:portable_cell>);
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:energy_cell:*>, <appliedenergistics2:chest>, comp1k])
+  .addTool(solderer, 24)
+  .addOutput(<appliedenergistics2:portable_cell>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("portable_cell")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:portable_cell:*>])
+  .addTool(spanner, 48)
+  .addOutput(<appliedenergistics2:chest>)
+  .setExtraOutputOne(<appliedenergistics2:energy_cell>, 1.0)
+  .setExtraOutputTwo(comp1k, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:crafting/recycling", "cyborg:technology/storage_compression"]))
+  .setName("portable_cell_salvage")
+  .create();
+
+
+
+############################
+#		BLOCKS		 #
+############################
+var fcore = <appliedenergistics2:material:43>;
+var acore = <appliedenergistics2:material:44>;
+
+# Security Station
+recipes.remove(<appliedenergistics2:security_station>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, <ore:itemIlluminatedPanel>, iron],
+    [cable, <appliedenergistics2:material:35>, cable],
+    [iron, calculation, iron]])
+  .addTool(pliers, 5)
+  .addTool(solderer, 10)
+  .setSecondaryIngredients([pulsaton*2])
+  .addOutput(<appliedenergistics2:security_station>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("security_station")
+  .create();
+
+// Energy Acceptor
+recipes.remove(<appliedenergistics2:energy_acceptor>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, quartz_glass, iron],
+    [quartz_glass, electrotine, quartz_glass],
+    [iron, quartz_glass, iron]])
+  .setSecondaryIngredients([residuum*2, pulsaton*4])
+  .addTool(solderer, 35)
+  .addOutput(<appliedenergistics2:energy_acceptor>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("energy_acceptor")
+  .create();
+
+// Controller
+recipes.remove(<appliedenergistics2:controller>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:12>, <appliedenergistics2:smooth_sky_stone_block>],
+    [<appliedenergistics2:material:12>, engineering, <appliedenergistics2:material:12>],
+    [<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:12>, <appliedenergistics2:smooth_sky_stone_block>]])
+  .setSecondaryIngredients([pulsaton*16])
+  .addTool(solderer, 500)
+  .addOutput(<appliedenergistics2:controller>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("controller")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<projectred-exploration:stone:11>, <appliedenergistics2:material:12>, <projectred-exploration:stone:11>],
+    [<appliedenergistics2:material:12>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:material:12>],
+    [<projectred-exploration:stone:11>, <appliedenergistics2:material:12>, <projectred-exploration:stone:11>]])
+  .setSecondaryIngredients([engineering, residuum*4, pulsaton*8])
+  .addTool(solderer, 300)
+  .addOutput(<appliedenergistics2:controller>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("acceptor_upgrade")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [<minecraft:redstone_block>, <appliedenergistics2:material:12>, <minecraft:redstone_block>],
+    [<appliedenergistics2:material:12>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:material:12>],
+    [<minecraft:redstone_block>, <appliedenergistics2:material:12>, <minecraft:redstone_block>]])
+  .setSecondaryIngredients([engineering, residuum*6, pulsaton*12])
+  .addTool(solderer, 350)
+  .addOutput(<appliedenergistics2:controller>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("acceptor_upgrade_redstone")
+  .create();
+
+
+
+// ME Chest
+recipes.remove(<appliedenergistics2:chest>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, <appliedenergistics2:part:380>, quartz_glass],
+    [cable, null, cable],
+    [iron, <appliedenergistics2:material:7>|<appliedenergistics2:material:12>, iron]])
+  .addTool(solderer, 35)
+  .addOutput(<appliedenergistics2:chest>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("me_chest")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, <appliedenergistics2:part:380>, quartz_glass],
+    [cable, null, cable],
+    [pulsaton, <ironchest:iron_chest>|<ironchest:iron_chest:3>, pulsaton]])
+  .addTool(solderer, 50)
+  .addOutput(<appliedenergistics2:chest>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("iron_chest_upgrade")
+  .create();
+
+// ME Drive
+recipes.remove(<appliedenergistics2:drive>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, engineering, iron],
+    [cable, residuum, cable],
+    [iron, engineering, iron]])
+  .addTool(solderer, 100)
+  .addOutput(<appliedenergistics2:drive>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("drive")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, calculation, iron],
+    [cable, <appliedenergistics2:chest>, cable],
+    [residuum, residuum, residuum]])
+  .addTool(solderer, 50)
+  .addOutput(<appliedenergistics2:drive>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("me_chest_upgrade")
+  .create();
+
+
+
+# Terminals
+recipes.remove(<appliedenergistics2:part:340>);
+recipes.remove(<appliedenergistics2:part:360>);
+recipes.remove(<appliedenergistics2:part:380>);
+recipes.remove(<appliedenergistics2:part:480>);
+recipes.remove(<appliedenergistics2:part:520>);
+
+// Regular
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:itemIlluminatedPanel>, logic, fcore, acore])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:part:380>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("terminal")
+  .create();
+
+// Crafting
+RecipeBuilder.get("chemist")
+  .setShapeless([<ore:workbench>, <appliedenergistics2:part:380>, calculation])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:part:360>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("crafting_terminal")
+  .create();
+
+// Pattern
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:part:360>, engineering])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:part:340>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("pattern_terminal")
+  .create();
+
+// Interface
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:interface>|<appliedenergistics2:part:440>, <ore:itemIlluminatedPanel>, engineering])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:part:480>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("interface_terminal")
+  .create();
+
+// Fluid
+RecipeBuilder.get("chemist")
+  .setShapeless([<appliedenergistics2:part:380>, <ore:gemLapis>, logic])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:part:520>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("fluid_terminal")
+  .create();
+
+
+
+# Crafting Storages
+recipes.remove(<appliedenergistics2:crafting_unit>);
+recipes.remove(<appliedenergistics2:crafting_accelerator>);
+recipes.remove(<appliedenergistics2:crafting_storage_1k>);
+recipes.remove(<appliedenergistics2:crafting_storage_4k>);
+recipes.remove(<appliedenergistics2:crafting_storage_16k>);
+recipes.remove(<appliedenergistics2:crafting_storage_64k>);
+recipes.remove(<appliedenergistics2:crafting_monitor>);
+
+var unit = <appliedenergistics2:crafting_unit>;
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, calculation, iron],
+    [cable, engineering, cable],
+    [iron, calculation, iron]])
+  .addTool(solderer, 10)
+  .addOutput(unit)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("crafting_unit")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, engineering])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:crafting_accelerator>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("crafting_co_processor")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, comp1k])
+  .addTool(solderer, 3)
+  .addOutput(<appliedenergistics2:crafting_storage_1k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("1k_crafting_storage")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, comp4k])
+  .addTool(solderer, 12)
+  .addOutput(<appliedenergistics2:crafting_storage_4k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("4k_crafting_storage")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, comp16k])
+  .addTool(solderer, 36)
+  .addOutput(<appliedenergistics2:crafting_storage_16k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("16k_crafting_storage")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, comp64k])
+  .addTool(solderer, 108)
+  .addOutput(<appliedenergistics2:crafting_storage_64k>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("64k_crafting_storage")
+  .create();
+
+
+	// Crafting Monitor
+RecipeBuilder.get("chemist")
+  .setShapeless([unit, <appliedenergistics2:part:400>])
+  .addTool(solderer, 10)
+  .addOutput(<appliedenergistics2:crafting_monitor>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("crafting_monitor")
+  .create();
+
+	// Molecular Assembler
+recipes.remove(<appliedenergistics2:molecular_assembler>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, quartz_glass, iron],
+    [acore, <ore:workbench>, fcore],
+    [iron, quartz_glass, iron]])
+  .addTool(solderer, 24)
+  .addOutput(<appliedenergistics2:molecular_assembler>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/compression_crafting"]))
+  .setName("molecular_assembler")
+  .create();
+
+
+
+# Crystal Growth Accelerator
+recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [iron, cable, iron],
+    [quartz_glass, <appliedenergistics2:fluix_block>, quartz_glass],
+    [iron, cable, iron]])
+  .addTool(solderer, 64)
+  .addOutput(<appliedenergistics2:quartz_growth_accelerator>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("crystal_growth_accelerator")
+  .create();
+
+
+
+# IO Ports
+recipes.remove(<appliedenergistics2:io_port>);
+recipes.remove(<appliedenergistics2:spatial_io_port>);
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, quartz_glass, quartz_glass],
+    [cable, <appliedenergistics2:drive>, cable],
+    [iron, logic, iron]])
+  .addTool(solderer, 32)
+  .addOutput(<appliedenergistics2:io_port>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("io_port")
+  .create();
+
+RecipeBuilder.get("chemist")
+  .setShaped([
+    [quartz_glass, quartz_glass, quartz_glass],
+    [cable, <appliedenergistics2:io_port>, cable],
+    [iron, engineering, iron]])
+  .addTool(solderer, 128)
+  .addOutput(<appliedenergistics2:spatial_io_port>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/science", "cyborg:technology/storage_compression"]))
+  .setName("spatial_io_port")
+  .create();
+
+print("ae2.zs loaded");

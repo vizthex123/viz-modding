@@ -8,7 +8,7 @@
           ]
         }
       },
-	"replaceStrategy": "REPLACE_ITEMS",
+	"replaceStrategy": "REPLACE",
 	"dropStrategy": "REPEAT",
 	"drops": [{
 		"item": {
@@ -18,19 +18,19 @@
 		},
 		"selector": {
 		 "weight": {
-		  "value": 100
+		  "value": 50
 		  }
 		}
 	},
 	{
 		"item": {
 			"items": [
-			"contenttweaker:pulsaton_sliver"
+			"nibrockscoal:diamond_coal"
 			]
 		},
 		"selector": {
 		 "weight": {
-		  "value": 50
+		  "value": 5
 		  }
 		}
 	}

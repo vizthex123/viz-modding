@@ -126,7 +126,7 @@
 			"generator": {
 				"block": "coal_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 14
+				"cluster-size": 12
 			},
 			"cluster-count": 20,
 			"min-height": 0,
@@ -138,26 +138,6 @@
 				"value": [
 					-1,
 					1,
-					3
-				]
-			}
-		},
-
-		"coal_jungle": {
-			"distribution": "uniform",
-			"generator": {
-				"block": "coal_ore",
-				"material": "minecraft:stone",
-				"cluster-size": 8
-			},
-			"cluster-count": 10,
-			"min-height": 0,
-			"max-height": 128,
-			"retrogen": true,
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
 					3
 				]
 			}
@@ -266,7 +246,8 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					3
 				]
 			}
 		},

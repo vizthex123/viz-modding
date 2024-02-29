@@ -1,10 +1,14 @@
 {
 	"name": "nourished",
 	"potion": "nutrition:nourished",
-	"amplifier": 0,
-	"minimum": 90,
+	"amplifier": 1,
+	"minimum": 75,
 	"maximum": 100,
-	"detect": "cumulative",
 	"cumulative_modifier": 1,
+	"detect": "average",
+	"nutrients": [
+        "calories",
+        "minerals"
+    ],
 	"enabled": true
 }

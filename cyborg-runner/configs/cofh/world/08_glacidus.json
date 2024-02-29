@@ -1,0 +1,66 @@
+{
+	"dependencies": "glacidus",
+	"priority": 5,
+	"populate": {
+		"crystals": {
+			"enabled": "true",
+			"distribution": "cave",
+			"generator": {
+				"block": "glacidus:small_crystal",
+				"material": "glacidus:frozen_antinatric_stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 2,
+			"min-height": 31,
+			"max-height": 70,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					84
+				]
+			}
+		},
+		"crystals_core": {
+			"enabled": "true",
+			"distribution": "cave",
+			"generator": {
+				"block": "glacidus:small_crystal",
+				"material": "glacidus:thawed_antinatric_stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 30,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					84
+				]
+			}
+		},
+		"pulsaton": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "glacidus:pulsaton_ore",
+				"material": "glacidus:thawed_antinatric_stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 30,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					84
+				]
+			}
+		}
+	}
+}

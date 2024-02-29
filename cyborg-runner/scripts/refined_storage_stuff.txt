@@ -1,8 +1,0 @@
-# Leftover stuff from Refined Storage
-
-<refinedstorage:cutting_tool>.maxDamage = 30;
-
-<refinedstorage:upgrade>.displayName = "Blank Upgrade";
-<refinedstorage:quartz_enriched_iron>.displayName = "Quartz-Enriched Iron";
-
-mods.ItemStages.removeItemStage(<refinedstorage:silicon>);

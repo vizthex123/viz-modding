@@ -1,0 +1,28 @@
+[
+  {
+    "item" : "vulcanite:vulcanite_ore",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 0,
+        "depth_max": 20,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "vulcanite:nether_vulcanite_ore",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:hell",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 25,
+        "weight": 5
+      }
+    ]
+  }
+]

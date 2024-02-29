@@ -2,8 +2,6 @@
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
-import mods.artisanintegrations.requirement.Reskillable;
-import mods.artisanintegrations.requirement.GameStages;
 
 print("chef.zs loading...");
 
@@ -13,18 +11,24 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
 
+var pumpkin = <minecraft:pumpkin>|<byg:pumpkinmash>;
+
+var pan = <ore:artisansPan>;
+var knife =<ore:artisansKnife>;
+var board = <ore:artisansCuttingBoard>;
+
 # Vanilla Foods
 recipes.remove(<minecraft:cake>);
 recipes.remove(<minecraft:beetroot_soup>);
 recipes.remove(<minecraft:pumpkin_pie>);
 recipes.remove(<minecraft:rabbit_stew>);
 
-// Poisonous Potato > Baked Potato
+// Poisonous Potato -> Baked Potato
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:poisonous_potato>])
-  .addTool(<ore:artisansPan>, 3)
+  .addTool(pan, 3)
   .addOutput(<minecraft:baked_potato>)
-  .addRequirement(GameStages.allOf(["cooking"]))
+  .setExtraOutputOne(<alchemistry:element:8>*4, 1.0)
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("poisonous_to_potato")
   .create();
@@ -35,9 +39,8 @@ RecipeBuilder.get("chef")
     [<minecraft:sugar>, <minecraft:egg>, <minecraft:sugar>],
     [<ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>]])
   .setFluid(<liquid:milk> * 3000)
-  .addTool(<ore:artisansKnife>, 7)
+  .addTool(knife, 7)
   .addOutput(<minecraft:cake>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.allOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("cake")
   .create();
@@ -45,9 +48,8 @@ RecipeBuilder.get("chef")
 // Beetroot Soup
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:beetroot>, <minecraft:beetroot>, <minecraft:beetroot>, <minecraft:bowl>])
-  .addTool(<ore:artisansPan>, 3)
+  .addTool(pan, 3)
   .addOutput(<minecraft:beetroot_soup>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("beetroot_soup")
   .create();
@@ -55,10 +57,8 @@ RecipeBuilder.get("chef")
 // Rabbit Stew
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:cooked_rabbit>, <minecraft:baked_potato>, <minecraft:bowl>, <minecraft:carrot>, <minecraft:brown_mushroom>|<minecraft:red_mushroom>])
-  .addTool(<ore:artisansPan>, 5)
-  .setFluid(<liquid:lava> * 100)
+  .addTool(pan, 5)
   .addOutput(<minecraft:rabbit_stew>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("rabbit_stew")
   .create();
@@ -70,10 +70,9 @@ recipes.remove(<natura:soups:*>);
 	// Vanilla
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <ore:mushroom>, <ore:mushroom>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<minecraft:mushroom_stew>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("mushroom_stew")
   .create();
@@ -81,40 +80,36 @@ RecipeBuilder.get("chef")
 	// Natura
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls>, <ore:mushroom>, <ore:mushroom>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("mushroom_stew_ghostwood")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls:1>, <ore:mushroom>, <ore:mushroom>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:1>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("mushroom_stew_bloodwood")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls:2>, <ore:mushroom>, <ore:mushroom>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:2>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("mushroom_stew_darkwood")
   .create();
 
 RecipeBuilder.get("chef")
-  .setShapeless([<natura:empty_bowls:2>, <ore:mushroom>, <ore:mushroom>])
-  .addTool(<ore:artisansPan>, 5)
+  .setShapeless([<natura:empty_bowls:3>, <ore:mushroom>, <ore:mushroom>])
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
-  .addOutput(<natura:soups:2>)
-  .addRequirement(GameStages.allOf(["cooking"]))
+  .addOutput(<natura:soups:3>)
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("mushroom_stew_fusewood")
   .create();
@@ -122,10 +117,9 @@ RecipeBuilder.get("chef")
 
 // Pumpkin Pie
 RecipeBuilder.get("chef")
-  .setShapeless([<minecraft:pumpkin>, <minecraft:egg>, <minecraft:sugar>])
-  .addTool(<ore:artisansKnife>, 3)
+  .setShapeless([pumpkin, <minecraft:egg>, <minecraft:sugar>])
+  .addTool(knife, 3)
   .addOutput(<minecraft:pumpkin_pie>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("pumpkin_pie")
   .create();
@@ -136,53 +130,58 @@ RecipeBuilder.get("chef")
 
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <ore:glowshroom>, <ore:glowshroom>, <ore:glowshroom>])
-  .addTool(<ore:artisansPan>, 7)
+  .addTool(pan, 7)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:4>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("glowshroom_stew")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls>, <ore:glowshroom>, <ore:glowshroom>, <ore:glowshroom>])
-  .addTool(<ore:artisansPan>, 7)
+  .addTool(pan, 7)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:5>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("glowshroom_stew_ghostwood")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls:1>, <ore:glowshroom>, <ore:glowshroom>, <ore:glowshroom>])
-  .addTool(<ore:artisansPan>, 7)
+  .addTool(pan, 7)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:6>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("glowshroom_stew_bloodwood")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls:2>, <ore:glowshroom>, <ore:glowshroom>, <ore:glowshroom>])
-  .addTool(<ore:artisansPan>, 7)
+  .addTool(pan, 7)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:7>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("glowshroom_stew_darkwood")
   .create();
 
 RecipeBuilder.get("chef")
   .setShapeless([<natura:empty_bowls:3>, <ore:glowshroom>, <ore:glowshroom>, <ore:glowshroom>])
-  .addTool(<ore:artisansPan>, 7)
+  .addTool(pan, 7)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<natura:soups:8>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("glowshroom_stew_fusewood")
   .create();
+
+// Berry Medley
+RecipeBuilder.get("chef")
+  .setShapeless([<minecraft:bowl>, <ore:listAllberries>, <ore:listAllberries>, <ore:listAllberries>])
+  .addTool(knife, 4)
+  .addOutput(<natura:soups:9>)
+  .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
+  .setName("berry_medley")
+  .create();
+
 
 
 ### Change recipes for BYG's food items
@@ -194,10 +193,9 @@ recipes.remove(<byg:green_glowshroom_stew>);
 // Blue
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:blueglowshroomitem>, <byg:blueglowshroomitem>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<byg:glowshroomsoupblue>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.allOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("blue_glowshroom_soup")
   .create();
@@ -205,10 +203,9 @@ RecipeBuilder.get("chef")
 // Green
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:greenglowshroomitem>, <byg:greenglowshroomitem>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<byg:green_glowshroom_stew>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.allOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("green_glowshroom_soup")
   .create();
@@ -216,10 +213,9 @@ RecipeBuilder.get("chef")
 // Purple
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:purpleglowshroomitem>, <byg:purpleglowshroomitem>])
-  .addTool(<ore:artisansPan>, 5)
+  .addTool(pan, 5)
   .setFluid(<liquid:milk> * 25)
   .addOutput(<byg:glowshroomsouppurple>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.allOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("purple_glowshroom_soup")
   .create();
@@ -233,7 +229,6 @@ recipes.remove(<byg:greenapplepie>);
 RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:pie_shell>, <byg:blueberry>, <byg:blueberry>, <minecraft:egg>, <minecraft:sugar>])
   .addOutput(<byg:blueberrypie>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("blueberry_pie")
   .create();
@@ -242,7 +237,6 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:pie_shell>, <ore:cropStrawberry>, <ore:cropStrawberry>, <minecraft:egg>, <minecraft:sugar>])
   .addOutput(<byg:strawberrypie>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("strawberry_pie")
   .create();
@@ -251,7 +245,6 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<xlfoodmod:pie_shell>, <byg:greenapple>, <byg:greenapple>, <minecraft:egg>, <minecraft:sugar>])
   .addOutput(<byg:greenapplepie>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("green_apple_pie")
   .create();
@@ -260,9 +253,8 @@ RecipeBuilder.get("chef")
 recipes.remove(<byg:pumpkinmash>);
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:pumpkin>, <minecraft:pumpkin>, <minecraft:bowl>])
-  .setFluid(<liquid:water> * 50)
-  .addOutput(<byg:pumpkinmash> * 3)
-  .addRequirement(GameStages.allOf(["cooking"]))
+  .setFluid(<liquid:water> * 100)
+  .addOutput(<byg:pumpkinmash> * 4)
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("pumpkin_mash")
   .create();
@@ -270,11 +262,19 @@ RecipeBuilder.get("chef")
 // Pumpkin Bread
 recipes.remove(<byg:pumpkinbread>);
 RecipeBuilder.get("chef")
-  .setShapeless([<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <byg:pumpkinmash>])
-  .addOutput(<byg:pumpkinbread> * 3)
-  .addRequirement(GameStages.allOf(["cooking"]))
+  .setShapeless([<ore:listAllgrain>, <ore:listAllgrain>, <ore:listAllgrain>, pumpkin])
+  .addTool(board, 3)
+  .addOutput(<byg:pumpkinbread>)
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("pumpkin_bread")
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([pumpkin, <minecraft:bread>])
+  .addTool(board, 6)
+  .addOutput(<byg:pumpkinbread>)
+  .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
+  .setName("pumpkin_bread_combine")
   .create();
 
 # Other Soups
@@ -286,9 +286,8 @@ recipes.remove(<byg:spidereyesoup>);
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:cookedcarrot>, <byg:cookedcarrot>, <minecraft:sugar>])
   .setFluid(<liquid:water> * 100)
-  .addTool(<ore:artisansKnife>, 2)
+  .addTool(knife, 2)
   .addOutput(<byg:carrotsoup>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("carrot_soup")
   .create();
@@ -297,9 +296,8 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:cookedpufferfish>|<byg:cookedtropicalfish>, <byg:cookedpufferfish>|<byg:cookedtropicalfish>, <ore:listAllvegetable>])
   .setFluid(<liquid:water> * 500)
-  .addTool(<ore:artisansKnife>, 5)
+  .addTool(knife, 5)
   .addOutput(<byg:tropicalfishsoup>)
-  .addRequirement(GameStages.allOf(["advanced_cooking"]))
   .addRequirement(FTGU.allOf(["cyborg:crafting/chef", "cyborg:survival/advanced_cooking"]))
   .setName("tropical_fish_soup")
   .create();
@@ -308,9 +306,8 @@ RecipeBuilder.get("chef")
 RecipeBuilder.get("chef")
   .setShapeless([<minecraft:bowl>, <byg:cookedspidereye>, <byg:cookedspidereye>])
   .setFluid(<liquid:water> * 50)
-  .addTool(<ore:artisansKnife>, 1)
+  .addTool(knife, 1)
   .addOutput(<byg:spidereyesoup>)
-  .addRequirement(GameStages.allOf(["cooking"]))
   .addRequirement(FTGU.anyOf(["cyborg:crafting/chef", "cyborg:survival/basic_cooking"]))
   .setName("spider_eye_soup")
   .create();

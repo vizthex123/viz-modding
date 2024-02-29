@@ -4,7 +4,7 @@
   "target-nbt": "{Type:\"extrautils2:generator_ender\"}",
   "target-count": 1,
   "catalyst": "extrautils2:machine",
-  "catalyst-meta": 0,
+  "catalyst-nbt": "{Type:\"extrautils2:generator\"}",
   "duration": 300,
   
   "input-types": {

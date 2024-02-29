@@ -1,0 +1,41 @@
+[
+  {
+    "item" : "pristeel:prismarine_ore",
+    "color" : 9,
+    "rarity" : [
+      {
+        "whitelist": "minecraft:river, minecraft:ocean, minecraft:deep_ocean, minecraft:frozen_river, minecraft:frozen_ocean, minecraft:mutated_swampland, minecraft:swampland, byg:bglaciers",
+        "blacklist": "",
+        "depth_min": 0,
+        "depth_max": 63,
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "item" : "scalinghealth:crystalore",
+    "color" : 14,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 0,
+        "depth_max": 25,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "xlfoodmod:rock_salt",
+    "color" : 0,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 0,
+        "depth_max": 64,
+        "weight": 10
+      }
+    ]
+  }
+]

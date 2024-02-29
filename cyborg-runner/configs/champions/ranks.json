@@ -1,0 +1,42 @@
+[
+  {
+    "tier": 1,
+    "color": 16777215,
+    "affixes": 1,
+    "growthFactor": 1,
+    "chance": 0.20,
+    "potions": []
+  },
+  {
+    "tier": 2,
+    "color": 205,
+    "affixes": 2,
+    "growthFactor": 3,
+    "chance": 0.15,
+    "potions": []
+  },
+  {
+    "tier": 3,
+    "color": 14423100,
+    "affixes": 3,
+    "growthFactor": 7,
+    "chance": 0.12,
+    "potions": []
+  },
+  {
+    "tier": 4,
+    "color": 16747520,
+    "affixes": 4,
+    "growthFactor": 12,
+    "chance": 0.07,
+    "potions": []
+  },
+  {
+    "tier": 5,
+    "color": 9699539,
+    "affixes": 5,
+    "growthFactor": 16,
+    "chance": 0.05,
+    "potions": []
+  }
+]

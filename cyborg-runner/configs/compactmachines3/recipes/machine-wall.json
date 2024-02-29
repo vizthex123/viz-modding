@@ -1,7 +1,7 @@
 {
-	"name": "compactmachines3:wall",
+	"name": "wall",
 	"target-block": "compactmachines3:wallbreakable",
-	"target-count": 8,
+	"target-count": 9,
 	"catalyst": "minecraft:clay",
 
 	"input-types": {
@@ -12,7 +12,7 @@
 	"shape": [
 		[
 			["s", "s", "s"],
-			["s", "_", "s"],
+			["s", "s", "s"],
 			["s", "s", "s"]
 		]
 	]

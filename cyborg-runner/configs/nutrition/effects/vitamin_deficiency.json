@@ -1,0 +1,13 @@
+{
+	"name": "fatigue",
+	"potion": "minecraft:weakness",
+	"amplifier": 0,
+	"minimum": 0,
+	"maximum": 10,
+	"cumulative_modifier": 1,
+	"detect": "all",
+	"nutrients": [
+        "minerals"
+    ],
+	"enabled": true
+}

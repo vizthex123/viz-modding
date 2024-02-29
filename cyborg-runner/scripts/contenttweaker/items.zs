@@ -12,29 +12,13 @@ rearranger.setMaxStackSize(16);
 
 rearranger.register();
 
+# Credit Chips
+// Sol Chip
+var sol_chip = VanillaFactory.createItem("sol_chip");
+sol_chip.setMaxStackSize(64);
 
-// Iron Ring
-var ring = VanillaFactory.createItem("ring");
-ring.setMaxStackSize(16);
+sol_chip.register();
 
-ring.register();
-
-
-// DIY Melon Circuit
-var melon_circuit = VanillaFactory.createItem("melon_circuit");
-melon_circuit.setMaxStackSize(64);
-
-melon_circuit.register();
-
-
-// Damaged Solarskin
-var damaged_solarskin = VanillaFactory.createItem("damaged_solarskin");
-damaged_solarskin.setMaxStackSize(1);
-
-damaged_solarskin.register();
-
-
-# Toilary Chips
 // Damaged Chip
 var damaged_chip = VanillaFactory.createItem("damaged_chip");
 damaged_chip.setMaxStackSize(64);
@@ -78,11 +62,107 @@ chip100.setMaxStackSize(64);
 chip100.register();
 
 
-// Slime Green Dye
+/*
+// Iron Ring
+var ring = VanillaFactory.createItem("ring");
+ring.setMaxStackSize(16);
+
+ring.register();
+
+### Scrap
+# Iron
+var scrap = VanillaFactory.createItem("iron_scrap");
+scrap.setMaxStackSize(64);
+
+scrap.register();
+
+	// Small
+var small_scrap = VanillaFactory.createItem("small_iron_scrap");
+small_scrap.setMaxStackSize(64);
+
+small_scrap.register();
+
+# Gold
+var gold_scrap = VanillaFactory.createItem("gold_scrap");
+gold_scrap.setMaxStackSize(64);
+
+gold_scrap.register();
+
+	// Small
+var small_gold_scrap = VanillaFactory.createItem("small_gold_scrap");
+small_gold_scrap.setMaxStackSize(64);
+
+small_gold_scrap.register();
+
+# Diamond
+var diamond_scrap = VanillaFactory.createItem("diamond_scrap");
+diamond_scrap.setMaxStackSize(64);
+
+diamond_scrap.register();
+
+	// Small
+var small_diamond_scrap = VanillaFactory.createItem("small_diamond_scrap");
+small_diamond_scrap.setMaxStackSize(64);
+
+small_diamond_scrap.register();
+*/
+
+// DIY Melon Circuit
+var melon_circuit = VanillaFactory.createItem("melon_circuit");
+melon_circuit.setMaxStackSize(64);
+
+melon_circuit.register();
+
+
+// Damaged Solarskin
+var damaged_solarskin = VanillaFactory.createItem("damaged_solarskin");
+damaged_solarskin.setMaxStackSize(1);
+
+damaged_solarskin.register();
+
+
+// MDF Board
+var mdf = VanillaFactory.createItem("mdf");
+mdf.setMaxStackSize(64);
+
+mdf.register();
+
+
+# Slime Dyes
+var slime_black = VanillaFactory.createItem("slime_black");
+slime_black.setMaxStackSize(64);
+
+slime_black.register();
+
+var slime_blue = VanillaFactory.createItem("slime_blue");
+slime_blue.setMaxStackSize(64);
+
+slime_blue.register();
+
 var slime_green = VanillaFactory.createItem("slime_green");
 slime_green.setMaxStackSize(64);
 
 slime_green.register();
+
+var slime_pink = VanillaFactory.createItem("slime_pink");
+slime_pink.setMaxStackSize(64);
+
+slime_pink.register();
+
+var slime_purple = VanillaFactory.createItem("slime_purple");
+slime_purple.setMaxStackSize(64);
+
+slime_purple.register();
+
+var slime_red = VanillaFactory.createItem("slime_red");
+slime_red.setMaxStackSize(64);
+
+slime_red.register();
+
+var slime_yellow = VanillaFactory.createItem("slime_yellow");
+slime_yellow.setMaxStackSize(64);
+
+slime_yellow.register();
 
 
 // Pulsaton Sliver
@@ -97,13 +177,6 @@ var wrapped_bone = VanillaFactory.createItem("wrapped_bone");
 wrapped_bone.setMaxStackSize(64);
 
 wrapped_bone.register();
-
-
-// MDF Board
-var mdf = VanillaFactory.createItem("mdf");
-mdf.setMaxStackSize(64);
-
-mdf.register();
 
 
 # Bottled Foods
@@ -122,5 +195,11 @@ var bottled_cocoa = VanillaFactory.createItem("bottled_cocoa");
 bottled_cocoa.setMaxStackSize(64);
 
 bottled_cocoa.register();
+
+// Recycling icon
+var recycling = VanillaFactory.createItem("recycling");
+recycling.setMaxStackSize(1);
+
+recycling.register();
 
 print("items.zs loaded");

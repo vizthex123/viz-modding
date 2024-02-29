@@ -1,0 +1,80 @@
+[
+  {
+    "item" : "xp_ore:xp_ore_tier_1",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 0,
+        "depth_max": 100,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "xp_ore:xp_ore_tier_1",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 32,
+        "depth_max": 80,
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "item" : "xp_ore:xp_ore_tier_2",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 64,
+        "depth_max": 96,
+        "weight": 15
+      }
+    ]
+  },
+  {
+    "item" : "xp_ore:xp_ore_tier_3",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 32,
+        "depth_max": 128,
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "item" : "xp_ore:xp_ore_tier_4",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 16,
+        "depth_max": 64,
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "item" : "xp_ore:xp_ore_tier_5",
+    "color" : 13,
+    "rarity" : [
+      {
+        "whitelist": "",
+        "blacklist": "minecraft:hell, minecraft:sky, glacidus:glacidus",
+        "depth_min": 0,
+        "depth_max": 32,
+        "weight": 1
+      }
+    ]
+  }
+]

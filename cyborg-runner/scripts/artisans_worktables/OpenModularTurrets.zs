@@ -3,21 +3,37 @@
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanintegrations.requirement.FTGU;
-import mods.artisanintegrations.requirement.Reskillable;
-import mods.artisanintegrations.requirement.GameStages;
 
 print("OpenModularTurrets.zs loading...");
+
+var quartz = <minecraft:quartz>;
+var redstone = <minecraft:redstone>;
+
+var iron = <minecraft:iron_ingot>;
+var gold = <minecraft:gold_ingot>;
+var diamond = <minecraft:diamond>;
+var obsidian = <minecraft:obsidian>;
+
+
+var hammer = <ore:artisansHammer>;
+var cutters = <ore:artisansCutters>;
+var file = <ore:artisansFile>;
+
+var pliers = <ore:artisansPliers>;
+var solderer = <ore:artisansSolderer>;
+var spanner = <ore:artisansSpanner>;
+
 
 // IO Bus
 recipes.remove(<openmodularturrets:intermediate_regular>);
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>],
-    [null, <minecraft:gold_ingot>, null]])
-  .addTool(<ore:artisansSolderer>, 2)
+    [null, iron, null],
+    [redstone, redstone, redstone],
+    [null, gold, null]])
+  .addTool(solderer, 2)
   .addOutput(<openmodularturrets:intermediate_regular>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("io_bus")
   .create();
 
@@ -32,24 +48,24 @@ recipes.remove(<openmodularturrets:intermediate_tiered:4>);
 // T1
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:redstone>, null],
-    [<minecraft:redstone>, <ore:planks>, <minecraft:redstone>],
-    [null, <minecraft:redstone>, null]])
-  .addTool(<ore:artisansSolderer>, 1)
+    [null, redstone, null],
+    [redstone, <ore:plankWood>, redstone],
+    [null, redstone, null]])
+  .addTool(solderer, 1)
   .addOutput(<openmodularturrets:intermediate_tiered>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_sensor")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_tiered>, <minecraft:iron_ingot>],
+    [null, iron, null],
+    [iron, <openmodularturrets:intermediate_tiered>, iron],
     [null, <openmodularturrets:intermediate_regular>, null]])
-  .addTool(<ore:artisansSolderer>, 2)
+  .addTool(solderer, 2)
   .addOutput(<openmodularturrets:intermediate_tiered:1>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_sensor")
   .create();
 
@@ -57,38 +73,38 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_regular>, null],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_tiered:1>, <minecraft:gold_ingot>],
+    [gold, <openmodularturrets:intermediate_tiered:1>, gold],
     [null, <openmodularturrets:intermediate_regular>, null]])
-  .addTool(<ore:artisansSolderer>, 3)
-  .addTool(<ore:artisansSpanner>, 3)
+  .addTool(solderer, 3)
+  .addTool(spanner, 3)
   .addOutput(<openmodularturrets:intermediate_tiered:2>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_sensor")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <minecraft:diamond>, <minecraft:gold_ingot>],
+    [gold, diamond, gold],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:2>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>]])
-  .addTool(<ore:artisansSolderer>, 5)
-  .addTool(<ore:artisansSpanner>, 5)
+    [quartz, diamond, quartz]])
+  .addTool(solderer, 5)
+  .addTool(spanner, 5)
   .addOutput(<openmodularturrets:intermediate_tiered:3>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_sensor")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:emerald>, <minecraft:obsidian>, <minecraft:emerald>],
+    [<minecraft:emerald>, obsidian, <minecraft:emerald>],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:3>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:glowstone_dust>, <minecraft:obsidian>, <minecraft:glowstone_dust>]])
-  .addTool(<ore:artisansSolderer>, 10)
-  .addTool(<ore:artisansSpanner>, 10)
+    [<minecraft:glowstone_dust>, obsidian, <minecraft:glowstone_dust>]])
+  .addTool(solderer, 10)
+  .addTool(spanner, 10)
   .addOutput(<openmodularturrets:intermediate_tiered:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_sensor")
   .create();
 
@@ -105,62 +121,62 @@ recipes.remove(<openmodularturrets:intermediate_tiered:9>);
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
-    [null, <ore:plankWood>, <minecraft:redstone>],
+    [null, <ore:plankWood>, redstone],
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]])
-  .addTool(<ore:artisansPliers>, 2)
+  .addTool(pliers, 2)
   .addOutput(<openmodularturrets:intermediate_tiered:5>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_chamber")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [null, <openmodularturrets:intermediate_tiered:5>, <minecraft:redstone>],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansPliers>, 5)
+    [iron, iron, iron],
+    [null, <openmodularturrets:intermediate_tiered:5>, redstone],
+    [iron, iron, iron]])
+  .addTool(pliers, 5)
   .addOutput(<openmodularturrets:intermediate_tiered:6>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_chamber")
   .create();
 
 // T3
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
+    [gold, gold, gold],
     [null, <openmodularturrets:intermediate_tiered:6>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansPliers>, 8)
-  .addTool(<ore:artisansSpanner>, 8)
+    [gold, gold, gold]])
+  .addTool(pliers, 8)
+  .addTool(spanner, 8)
   .addOutput(<openmodularturrets:intermediate_tiered:7>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_chamber")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>],
+    [quartz, diamond, quartz],
     [null, <openmodularturrets:intermediate_tiered:7>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>]])
-  .addTool(<ore:artisansPliers>, 14)
-  .addTool(<ore:artisansSpanner>, 14)
+    [quartz, diamond, quartz]])
+  .addTool(pliers, 14)
+  .addTool(spanner, 14)
   .addOutput(<openmodularturrets:intermediate_tiered:8>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_chamber")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:quartz>, <minecraft:obsidian>, <minecraft:obsidian>],
+    [quartz, obsidian, obsidian],
     [null, <openmodularturrets:intermediate_tiered:8>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:quartz>, <minecraft:obsidian>, <minecraft:obsidian>]])
-  .addTool(<ore:artisansPliers>, 32)
-  .addTool(<ore:artisansSpanner>, 32)
+    [quartz, obsidian, obsidian]])
+  .addTool(pliers, 32)
+  .addTool(spanner, 32)
   .addOutput(<openmodularturrets:intermediate_tiered:9>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_chamber")
   .create();
 
@@ -178,58 +194,58 @@ RecipeBuilder.get("engineer")
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
     [null, <ore:plankWood>, null],
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]])
-  .addTool(<ore:artisansSpanner>, 1)
+  .addTool(spanner, 1)
   .addOutput(<openmodularturrets:intermediate_tiered:10>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_barrel")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [iron, iron, iron],
     [null, <openmodularturrets:intermediate_tiered:10>, null],
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansSolderer>, 4)
+    [iron, iron, iron]])
+  .addTool(solderer, 4)
   .addOutput(<openmodularturrets:intermediate_tiered:11>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_barrel")
   .create();
 
 // T3
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
+    [gold, gold, gold],
     [null, <openmodularturrets:intermediate_tiered:11>, null],
-    [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansSolderer>, 9)
+    [gold, gold, gold]])
+  .addTool(solderer, 9)
   .addOutput(<openmodularturrets:intermediate_tiered:12>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_barrel")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>],
+    [quartz, diamond, quartz],
     [null, <openmodularturrets:intermediate_tiered:12>, null],
-    [<minecraft:quartz>, <minecraft:diamond>, <minecraft:quartz>]])
-  .addTool(<ore:artisansSolderer>, 16)
+    [quartz, diamond, quartz]])
+  .addTool(solderer, 16)
   .addOutput(<openmodularturrets:intermediate_tiered:13>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_barrel")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>],
+    [obsidian, obsidian, obsidian],
     [<minecraft:glowstone_dust>, <openmodularturrets:intermediate_tiered:13>, <minecraft:glowstone_dust>],
-    [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]])
-  .addTool(<ore:artisansSolderer>, 28)
-  .addTool(<ore:artisansSpanner>, 28)
+    [obsidian, obsidian, obsidian]])
+  .addTool(solderer, 28)
+  .addTool(spanner, 28)
   .addOutput(<openmodularturrets:intermediate_tiered:14>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_barrel")
   .create();
 
@@ -242,62 +258,62 @@ RecipeBuilder.get("engineer")
     [<ore:cobblestone>, <ore:plankWood>, <ore:cobblestone>],
     [<minecraft:planks>, <openmodularturrets:intermediate_tiered>, <ore:plankWood>],
     [<ore:cobblestone>, <ore:plankWood>, <ore:cobblestone>]])
-  .addTool(<ore:artisansPliers>, 5)
+  .addTool(pliers, 5)
   .addOutput(<openmodularturrets:turret_base>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_base")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <openmodularturrets:turret_base>, <minecraft:iron_ingot>],
+    [iron, <openmodularturrets:turret_base>, iron],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:1>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansSpanner>, 10)
+    [iron, <openmodularturrets:intermediate_regular>, iron]])
+  .addTool(spanner, 10)
   .addOutput(<openmodularturrets:turret_base:1>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_base")
   .create();
 
 // T3
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <openmodularturrets:turret_base:1>, <minecraft:gold_ingot>],
+    [gold, <openmodularturrets:turret_base:1>, gold],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:2>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansPliers>, 25)
-  .addTool(<ore:artisansSpanner>, 25)
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(pliers, 25)
+  .addTool(spanner, 25)
   .addOutput(<openmodularturrets:turret_base:2>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_base")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:diamond>, <openmodularturrets:turret_base:2>, <minecraft:diamond>],
+    [diamond, <openmodularturrets:turret_base:2>, diamond],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:3>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:diamond>, <openmodularturrets:intermediate_regular>, <minecraft:diamond>]])
-  .addTool(<ore:artisansPliers>, 40)
-  .addTool(<ore:artisansSolderer>, 40)
-  .addTool(<ore:artisansSpanner>, 40)
+    [diamond, <openmodularturrets:intermediate_regular>, diamond]])
+  .addTool(pliers, 40)
+  .addTool(solderer, 40)
+  .addTool(spanner, 40)
   .addOutput(<openmodularturrets:turret_base:3>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_base")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:obsidian>, <openmodularturrets:turret_base:3>, <minecraft:obsidian>],
+    [obsidian, <openmodularturrets:turret_base:3>, obsidian],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:4>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:obsidian>, <openmodularturrets:intermediate_regular>, <minecraft:obsidian>]])
-  .addTool(<ore:artisansPliers>, 75)
-  .addTool(<ore:artisansSolderer>, 75)
-  .addTool(<ore:artisansSpanner>, 75)
+    [obsidian, <openmodularturrets:intermediate_regular>, obsidian]])
+  .addTool(pliers, 75)
+  .addTool(solderer, 75)
+  .addTool(spanner, 75)
   .addOutput(<openmodularturrets:turret_base:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_base")
   .create();
 
@@ -315,57 +331,57 @@ RecipeBuilder.get("engineer")
     [<ore:cobblestone>, <ore:plankWood>, <ore:cobblestone>],
     [<openmodularturrets:intermediate_regular>, <ore:chest>, <openmodularturrets:intermediate_regular>],
     [<ore:cobblestone>, <openmodularturrets:intermediate_regular>, <ore:cobblestone>]])
-  .addTool(<ore:artisansCutters>, 5)
+  .addTool(cutters, 5)
   .addOutput(<openmodularturrets:expander>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_inv_expander")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <openmodularturrets:expander>, <minecraft:iron_ingot>],
+    [iron, <openmodularturrets:expander>, iron],
     [<openmodularturrets:intermediate_regular>, <ore:chest>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansCutters>, 15)
+    [iron, <openmodularturrets:intermediate_regular>, iron]])
+  .addTool(cutters, 15)
   .addOutput(<openmodularturrets:expander:1>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_inv_expander")
   .create();
 
 // T3
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <openmodularturrets:expander:1>, <minecraft:gold_ingot>],
+    [gold, <openmodularturrets:expander:1>, gold],
     [<openmodularturrets:intermediate_regular>, <ore:chest>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansCutters>, 25)
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(cutters, 25)
   .addOutput(<openmodularturrets:expander:2>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_inv_expander")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:diamond>, <openmodularturrets:expander:2>, <minecraft:diamond>],
+    [diamond, <openmodularturrets:expander:2>, diamond],
     [<openmodularturrets:intermediate_regular>, <ore:chest>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:diamond>, <openmodularturrets:intermediate_regular>, <minecraft:diamond>]])
-  .addTool(<ore:artisansCutters>, 35)
+    [diamond, <openmodularturrets:intermediate_regular>, diamond]])
+  .addTool(cutters, 35)
   .addOutput(<openmodularturrets:expander:3>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_inv_expander")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:obsidian>, <openmodularturrets:expander:3>, <minecraft:obsidian>],
+    [obsidian, <openmodularturrets:expander:3>, obsidian],
     [<openmodularturrets:intermediate_regular>, <ore:chest>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:obsidian>, <openmodularturrets:intermediate_regular>, <minecraft:obsidian>]])
-  .addTool(<ore:artisansCutters>, 50)
+    [obsidian, <openmodularturrets:intermediate_regular>, obsidian]])
+  .addTool(cutters, 50)
   .addOutput(<openmodularturrets:expander:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_inv_expander")
   .create();
 
@@ -375,64 +391,64 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:cobblestone>, <ore:plankWood>, <ore:cobblestone>],
-    [<openmodularturrets:intermediate_regular>, <minecraft:redstone>, <openmodularturrets:intermediate_regular>],
+    [<openmodularturrets:intermediate_regular>, redstone, <openmodularturrets:intermediate_regular>],
     [<ore:cobblestone>, <openmodularturrets:intermediate_regular>, <ore:cobblestone>]])
-  .addTool(<ore:artisansSolderer>, 5)
+  .addTool(solderer, 5)
   .addOutput(<openmodularturrets:expander:5>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t1_power_expander")
   .create();
 
 // T2
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <openmodularturrets:expander:5>, <minecraft:iron_ingot>],
+    [iron, <openmodularturrets:expander:5>, iron],
     [<openmodularturrets:intermediate_regular>, <minecraft:redstone_block>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansSolderer>, 15)
+    [iron, <openmodularturrets:intermediate_regular>, iron]])
+  .addTool(solderer, 15)
   .addOutput(<openmodularturrets:expander:6>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t2_power_expander")
   .create();
 
 // T3
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <openmodularturrets:expander:6>, <minecraft:gold_ingot>],
+    [gold, <openmodularturrets:expander:6>, gold],
     [<openmodularturrets:intermediate_regular>, <minecraft:redstone_block>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansSolderer>, 25)
-  .addTool(<ore:artisansSpanner>, 25)
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(solderer, 25)
+  .addTool(spanner, 25)
   .addOutput(<openmodularturrets:expander:7>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t3_power_expander")
   .create();
 
 // T4
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:diamond>, <openmodularturrets:expander:7>, <minecraft:diamond>],
+    [diamond, <openmodularturrets:expander:7>, diamond],
     [<openmodularturrets:intermediate_regular>, <minecraft:redstone_block>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:diamond>, <openmodularturrets:intermediate_regular>, <minecraft:diamond>]])
-  .addTool(<ore:artisansPliers>, 50)
-  .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansSpanner>, 50)
+    [diamond, <openmodularturrets:intermediate_regular>, diamond]])
+  .addTool(pliers, 50)
+  .addTool(solderer, 50)
+  .addTool(spanner, 50)
   .addOutput(<openmodularturrets:expander:8>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t4_power_expander")
   .create();
 
 // T5
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:obsidian>, <openmodularturrets:expander:8>, <minecraft:obsidian>],
+    [obsidian, <openmodularturrets:expander:8>, obsidian],
     [<openmodularturrets:intermediate_regular>, <minecraft:redstone_block>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:obsidian>, <openmodularturrets:intermediate_regular>, <minecraft:obsidian>]])
-  .addTool(<ore:artisansPliers>, 100)
-  .addTool(<ore:artisansSolderer>, 100)
-  .addTool(<ore:artisansSpanner>, 100)
+    [obsidian, <openmodularturrets:intermediate_regular>, obsidian]])
+  .addTool(pliers, 100)
+  .addTool(solderer, 100)
+  .addTool(spanner, 100)
   .addOutput(<openmodularturrets:expander:9>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("t5_power_expander")
   .create();
 
@@ -443,29 +459,29 @@ recipes.remove(<openmodularturrets:addon_meta:*>);
 // Turret Concealer
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:diamond>, <minecraft:quartz>, <minecraft:ender_pearl>, <minecraft:quartz>, <minecraft:diamond>],
-    [<minecraft:quartz>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:quartz>],
-    [<minecraft:ender_pearl>, <minecraft:redstone>, <multistorage:stone_storage:3>|<multistorage:stone_storage:4>, <minecraft:redstone>, <minecraft:ender_pearl>],
-    [<minecraft:quartz>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:quartz>],
-    [<minecraft:diamond>, <minecraft:quartz>, <minecraft:ender_pearl>, <minecraft:quartz>, <minecraft:diamond>]])
-  .addTool(<ore:artisansPliers>, 250)
-  .addTool(<ore:artisansSolderer>, 250)
-  .addTool(<ore:artisansSpanner>, 250)
+    [diamond, quartz, <minecraft:ender_pearl>, quartz, diamond],
+    [quartz, redstone, redstone, redstone, quartz],
+    [<minecraft:ender_pearl>, redstone, <multistorage:stone_storage:3>|<multistorage:stone_storage:4>, redstone, <minecraft:ender_pearl>],
+    [quartz, redstone, redstone, redstone, quartz],
+    [diamond, quartz, <minecraft:ender_pearl>, quartz, diamond]])
+  .addTool(pliers, 250)
+  .addTool(solderer, 250)
+  .addTool(spanner, 250)
   .addOutput(<openmodularturrets:addon_meta>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("concealer_add-on")
   .create();
 
 // Damage Boost
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+    [iron, iron, iron],
     [<minecraft:ender_pearl>, <minecraft:redstone_block>, <minecraft:ender_pearl>],
-    [<minecraft:iron_ingot>, <minecraft:diamond>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansCutters>, 30)
+    [iron, diamond, iron]])
+  .addTool(solderer, 50)
+  .addTool(cutters, 30)
   .addOutput(<openmodularturrets:addon_meta:1>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("damage_boost_add-on")
   .create();
 
@@ -476,25 +492,25 @@ print("TODO - Find out what the Potentia Converter does");
 // Recycler
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <ore:circuitBasic>, <minecraft:gold_ingot>],
+    [gold, <ore:circuitBasic>, gold],
     [<ore:circuitAdvanced>, <nhc:energypearl>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:gold_ingot>, <ore:circuitBasic>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansSolderer>, 35)
+    [gold, <ore:circuitBasic>, gold]])
+  .addTool(solderer, 35)
   .addOutput(<openmodularturrets:addon_meta:3>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("recycler_add-on")
   .create();
 
 // Redstone Reactor
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:quartz>, <minecraft:redstone_block>, <minecraft:quartz>],
+    [quartz, <minecraft:redstone_block>, quartz],
     [<minecraft:redstone_block>, <nhc:energypearl>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:quartz>, <minecraft:redstone_block>, <minecraft:quartz>]])
-  .addTool(<ore:artisansSolderer>, 25)
-  .addTool(<ore:artisansSpanner>, 20)
+    [quartz, <minecraft:redstone_block>, quartz]])
+  .addTool(solderer, 25)
+  .addTool(spanner, 20)
   .addOutput(<openmodularturrets:addon_meta:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("reactor_add-on")
   .create();
 
@@ -502,25 +518,25 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
-    [<minecraft:redstone>, <solarflux:solar_panel_3>, <minecraft:redstone>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansPliers>, 30)
-  .addTool(<ore:artisansSolderer>, 40)
+    [redstone, <solarflux:solar_panel_3>, redstone],
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(pliers, 30)
+  .addTool(solderer, 40)
   .addOutput(<openmodularturrets:addon_meta:6>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("solar_panel_add-on")
   .create();
 
 // Fake Drops
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:quartz>, <minecraft:lapis_block>, <minecraft:quartz>],
+    [quartz, <minecraft:lapis_block>, quartz],
     [<minecraft:lapis_block>, <minecraft:ender_pearl>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:quartz>, <minecraft:lapis_block>, <minecraft:quartz>]])
-  .addTool(<ore:artisansPliers>, 30)
-  .addTool(<ore:artisansHammer>, 50)
+    [quartz, <minecraft:lapis_block>, quartz]])
+  .addTool(pliers, 30)
+  .addTool(hammer, 50)
   .addOutput(<openmodularturrets:addon_meta:7>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("fake_drops_add-on")
   .create();
 
@@ -530,12 +546,12 @@ recipes.remove(<openmodularturrets:upgrade_meta:*>);
 // Accuracy
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:quartz>, null],
-    [<minecraft:quartz>, <minecraft:gold_ingot>, <minecraft:quartz>],
+    [null, quartz, null],
+    [quartz, gold, quartz],
     [null, <openmodularturrets:intermediate_regular>, null]])
-  .addTool(<ore:artisansSolderer>, 10)
+  .addTool(solderer, 10)
   .addOutput(<openmodularturrets:upgrade_meta>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("accuracy_upgrade")
   .create();
 
@@ -545,61 +561,61 @@ RecipeBuilder.get("engineer")
     [null, <minecraft:emerald>, null],
     [<minecraft:emerald>, <extrautils2:ingredients:2>, <minecraft:emerald>],
     [null, <openmodularturrets:intermediate_regular>, null]])
-  .addTool(<ore:artisansSpanner>, 10)
+  .addTool(spanner, 10)
   .addOutput(<openmodularturrets:upgrade_meta:1>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("om_efficiency_upgrade")
   .create();
 
 // Fire Rate
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:quartz>, null],
-    [<minecraft:quartz>, <minecraft:blaze_powder>, <minecraft:quartz>],
+    [null, quartz, null],
+    [quartz, <minecraft:blaze_powder>, quartz],
     [null, <openmodularturrets:intermediate_regular>, null]])
   .setSecondaryIngredients([<minecraft:fire_charge> * 3])
-  .addTool(<ore:artisansSpanner>, 22)
+  .addTool(spanner, 22)
   .addOutput(<openmodularturrets:upgrade_meta:2>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("fire_rate_upgrade")
   .create();
 
 // Range
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:gold_ingot>, null],
-    [<minecraft:gold_ingot>, <minecraft:diamond>, <minecraft:gold_ingot>],
+    [null, gold, null],
+    [gold, diamond, gold],
     [null, <openmodularturrets:intermediate_regular>, null]])
   .setSecondaryIngredients([<ore:blockGlass>])
-  .addTool(<ore:artisansHammer>, 15)
+  .addTool(hammer, 15)
   .addOutput(<openmodularturrets:upgrade_meta:3>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("range_upgrade")
   .create();
 
 // Scatter Shot
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:quartz>, null],
-    [<minecraft:quartz>, <minecraft:prismarine_shard>, <minecraft:quartz>],
+    [null, quartz, null],
+    [quartz, <minecraft:prismarine_shard>, quartz],
     [null, <openmodularturrets:intermediate_regular>, null]])
-  .addTool(<ore:artisansPliers>, 30)
-  .addTool(<ore:artisansSolderer>, 25)
+  .addTool(pliers, 30)
+  .addTool(solderer, 25)
   .addOutput(<openmodularturrets:upgrade_meta:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("scatter_shot_upgrade")
   .create();
 
 RecipeBuilder.get("engineer")
   .setShaped([
-    [null, <minecraft:quartz>, null],
-    [<minecraft:quartz>, null, <minecraft:quartz>],
+    [null, quartz, null],
+    [quartz, null, quartz],
     [null, <openmodularturrets:intermediate_regular>, null]])
   .setSecondaryIngredients([<extrautils2:endershard> * 8])
-  .addTool(<ore:artisansSolderer>, 25)
-  .addTool(<ore:artisansCutters>, 15)
+  .addTool(solderer, 25)
+  .addTool(cutters, 15)
   .addOutput(<openmodularturrets:upgrade_meta:4>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("scatter_shot_upgrade_ender")
   .create();
 
@@ -608,53 +624,55 @@ recipes.remove(<openmodularturrets:ammo_meta:*>);
 
 // Blazing Clay
 // 0.5x durability
+var clay = <minecraft:clay_ball>;
+
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>],
-    [<minecraft:redstone>, <minecraft:fire_charge>, <minecraft:redstone>],
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>]])
-  .addTool(<ore:artisansFile>, 8)
+    [clay, redstone, clay],
+    [redstone, <minecraft:fire_charge>, redstone],
+    [clay, redstone, clay]])
+  .addTool(file, 8)
   .addOutput(<openmodularturrets:ammo_meta> * 16)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("blazing_clay_charge")
   .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>],
-    [<minecraft:redstone>, <minecraft:blaze_powder>, <minecraft:redstone>],
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>]])
-  .addTool(<ore:artisansFile>, 32)
+    [clay, redstone, clay],
+    [redstone, <minecraft:blaze_powder>, redstone],
+    [clay, redstone, clay]])
+  .addTool(file, 32)
   .addOutput(<openmodularturrets:ammo_meta> * 64)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("blazing_clay_blaze")
   .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>],
-    [<minecraft:redstone>, <minecraft:clay_ball>, <minecraft:redstone>],
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>]])
+    [clay, redstone, clay],
+    [redstone, clay, redstone],
+    [clay, redstone, clay]])
   .setFluid(<liquid:lava> * 1000)
-  .addTool(<ore:artisansFile>, 64)
+  .addTool(file, 64)
   .addOutput(<openmodularturrets:ammo_meta> * 64)
   .setExtraOutputOne(<openmodularturrets:ammo_meta> * 64, 1.0)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("blazing_clay_lava")
   .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<minecraft:redstone>, <minecraft:clay_ball>, <minecraft:redstone>],
-    [<minecraft:clay_ball>, <minecraft:redstone>, <minecraft:clay_ball>],
-    [<minecraft:redstone>, <minecraft:clay_ball>, <minecraft:redstone>]])
+    [clay, redstone, clay],
+    [redstone, clay, redstone],
+    [clay, redstone, clay]])
   .setFluid(<liquid:pyrotheum> * 1000)
-  .addTool(<ore:artisansFile>, 128)
+  .addTool(file, 128)
   .addOutput(<openmodularturrets:ammo_meta> * 64)
   .setExtraOutputOne(<openmodularturrets:ammo_meta> * 64, 1.0)
   .setExtraOutputTwo(<openmodularturrets:ammo_meta> * 64, 1.0)
   .setExtraOutputThree(<openmodularturrets:ammo_meta> * 64, 1.0)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("blazing_clay_pyrotheum")
   .create();
 
@@ -662,12 +680,12 @@ RecipeBuilder.get("blacksmith")
 // 1x durability
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:gunpowder>, <minecraft:redstone>, <minecraft:gunpowder>],
-    [null, <minecraft:iron_ingot>, null]])
-  .addTool(<ore:artisansFile>, 64)
+    [null, iron, null],
+    [<minecraft:gunpowder>, redstone, <minecraft:gunpowder>],
+    [null, iron, null]])
+  .addTool(file, 64)
   .addOutput(<openmodularturrets:ammo_meta:1> * 64)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("bullet")
   .create();
 
@@ -675,13 +693,13 @@ RecipeBuilder.get("blacksmith")
 // 2x durability
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:iron_ingot>],
-    [<minecraft:redstone>, <minecraft:iron_ingot>, <minecraft:redstone>]])
+    [null, iron, null],
+    [iron, redstone, iron],
+    [redstone, iron, redstone]])
    .setSecondaryIngredients([<openmodularturrets:ammo_meta:1> * 32])
-  .addTool(<ore:artisansFile>, 64)
+  .addTool(file, 64)
   .addOutput(<openmodularturrets:ammo_meta:2> * 32)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("ferro-magnetic_slug")
   .create();
 
@@ -689,12 +707,12 @@ RecipeBuilder.get("blacksmith")
 // 4x durability
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:redstone>, null],
-    [<minecraft:iron_ingot>, <minecraft:gunpowder>, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
-  .addTool(<ore:artisansFile>, 64)
+    [null, redstone, null],
+    [iron, <minecraft:gunpowder>, iron],
+    [null, iron, null]])
+  .addTool(file, 64)
   .addOutput(<openmodularturrets:ammo_meta:3> * 16)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("grenade_gunpowder")
   .create();
 
@@ -703,9 +721,9 @@ RecipeBuilder.get("blacksmith")
     [<minecraft:iron_trapdoor>],
     [<minecraft:tnt>],
     [<minecraft:redstone_block>]])
-  .addTool(<ore:artisansFile>, 128)
+  .addTool(file, 128)
   .addOutput(<openmodularturrets:ammo_meta:3> * 32)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("grenade_tnt")
   .create();
 
@@ -713,26 +731,26 @@ RecipeBuilder.get("blacksmith")
 // 10x durability
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:gunpowder>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:iron_ingot>]])
+    [null, iron, null],
+    [iron, <minecraft:gunpowder>, iron],
+    [iron, redstone, iron]])
   .setSecondaryIngredients([<minecraft:fire_charge> * 6])
-  .addTool(<ore:artisansFile>, 480)
-  .addTool(<ore:artisansSolderer>, 48)
+  .addTool(file, 480)
+  .addTool(solderer, 48)
   .addOutput(<openmodularturrets:ammo_meta:4> * 16)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("rocket_gunpowder")
   .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <minecraft:tnt>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:redstone_block>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansFile>, 360)
-  .addTool(<ore:artisansSolderer>, 36)
+    [null, iron, null],
+    [iron, <minecraft:tnt>, iron],
+    [iron, <minecraft:redstone_block>, iron]])
+  .addTool(file, 360)
+  .addTool(solderer, 36)
   .addOutput(<openmodularturrets:ammo_meta:4> * 64)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("rocket_tnt")
   .create();
 
@@ -756,22 +774,22 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:10>, null],
     [<ore:cobblestone>, <openmodularturrets:intermediate_tiered:5>, <ore:cobblestone>],
-    [<ore:cobblestone>, <minecraft:redstone>, <ore:cobblestone>]])
-  .addTool(<ore:artisansHammer>, 5)
+    [<ore:cobblestone>, redstone, <ore:cobblestone>]])
+  .addTool(hammer, 5)
   .addOutput(<openmodularturrets:disposable_item_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("disposable_item_turret")
   .create();
 
 // Potato Cannon
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:redstone>, <openmodularturrets:intermediate_tiered:10>, <minecraft:redstone>],
+    [redstone, <openmodularturrets:intermediate_tiered:10>, redstone],
     [<ore:cobblestone>, <openmodularturrets:intermediate_tiered:10>, <ore:cobblestone>],
     [<ore:cobblestone>, <openmodularturrets:intermediate_tiered:5>, <ore:cobblestone>]])
-  .addTool(<ore:artisansHammer>, 10)
+  .addTool(hammer, 10)
   .addOutput(<openmodularturrets:potato_cannon_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("potato_cannon")
   .create();
 
@@ -780,11 +798,11 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:11>, null],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:11>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_tiered:6>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansHammer>, 15)
-  .addTool(<ore:artisansCutters>, 7)
+    [iron, <openmodularturrets:intermediate_tiered:6>, iron]])
+  .addTool(hammer, 15)
+  .addTool(cutters, 7)
   .addOutput(<openmodularturrets:machine_gun_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("machine_gun")
   .create();
 
@@ -793,11 +811,11 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:11>, null],
     [null, <openmodularturrets:intermediate_tiered:6>, null],
-    [<minecraft:iron_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:iron_ingot>]])
-  .addTool(<ore:artisansHammer>, 10)
-  .addTool(<ore:artisansCutters>, 15)
+    [iron, <openmodularturrets:intermediate_regular>, iron]])
+  .addTool(hammer, 10)
+  .addTool(cutters, 15)
   .addOutput(<openmodularturrets:incendiary_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("flamethrower")
   .create();
 
@@ -805,26 +823,26 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:12>, null],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_tiered:7>, <minecraft:gold_ingot>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansHammer>, 25)
-  .addTool(<ore:artisansCutters>, 20)
+    [gold, <openmodularturrets:intermediate_tiered:7>, gold],
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(hammer, 25)
+  .addTool(cutters, 20)
   .addOutput(<openmodularturrets:grenade_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("grenade_turret")
   .create();
 
 // Relativistic
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<minecraft:gold_ingot>, <nhc:energypearl>, <minecraft:gold_ingot>],
+    [gold, <nhc:energypearl>, gold],
     [<minecraft:ender_pearl>, <openmodularturrets:intermediate_tiered:2>, <minecraft:ender_pearl>],
-    [<minecraft:gold_ingot>, <openmodularturrets:intermediate_regular>, <minecraft:gold_ingot>]])
-  .addTool(<ore:artisansPliers>, 10)
-  .addTool(<ore:artisansHammer>, 15)
-  .addTool(<ore:artisansSpanner>, 5)
+    [gold, <openmodularturrets:intermediate_regular>, gold]])
+  .addTool(pliers, 10)
+  .addTool(hammer, 15)
+  .addTool(spanner, 5)
   .addOutput(<openmodularturrets:relativistic_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("relativistic_turret")
   .create();
 
@@ -832,13 +850,13 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:13>, null],
-    [<minecraft:quartz>, <openmodularturrets:intermediate_tiered:8>, <minecraft:quartz>],
-    [<minecraft:diamond>, <openmodularturrets:intermediate_regular>, <minecraft:diamond>]])
+    [quartz, <openmodularturrets:intermediate_tiered:8>, quartz],
+    [diamond, <openmodularturrets:intermediate_regular>, diamond]])
   .setSecondaryIngredients([<openmodularturrets:intermediate_tiered:3>])
-  .addTool(<ore:artisansHammer>, 50)
-  .addTool(<ore:artisansCutters>, 75)
+  .addTool(hammer, 50)
+  .addTool(cutters, 75)
   .addOutput(<openmodularturrets:rocket_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("rocket_launcher")
   .create();
 
@@ -846,14 +864,14 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<minecraft:ender_pearl>, <openmodularturrets:intermediate_regular>, <minecraft:ender_pearl>],
-    [<minecraft:diamond>, <openmodularturrets:intermediate_tiered:3>, <minecraft:diamond>],
+    [diamond, <openmodularturrets:intermediate_tiered:3>, diamond],
     [<minecraft:ender_pearl>, <thermalexpansion:capacitor>, <minecraft:ender_pearl>]])
   .setSecondaryIngredients([<nhc:energypearl>])
-  .addTool(<ore:artisansPliers>, 5)
-  .addTool(<ore:artisansSolderer>, 25)
-  .addTool(<ore:artisansSpanner>, 10)
+  .addTool(pliers, 5)
+  .addTool(solderer, 25)
+  .addTool(spanner, 10)
   .addOutput(<openmodularturrets:teleporter_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("teleporter")
   .create();
 
@@ -862,13 +880,13 @@ RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:14>, null],
     [<openmodularturrets:intermediate_regular>, <openmodularturrets:intermediate_tiered:9>, <openmodularturrets:intermediate_regular>],
-    [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]])
+    [obsidian, obsidian, obsidian]])
   .setSecondaryIngredients([<openmodularturrets:intermediate_tiered:4>])
-  .addTool(<ore:artisansPliers>, 20)
-  .addTool(<ore:artisansSolderer>, 20)
-  .addTool(<ore:artisansSpanner>, 15)
+  .addTool(pliers, 20)
+  .addTool(solderer, 20)
+  .addTool(spanner, 15)
   .addOutput(<openmodularturrets:laser_turret>)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("laser_turret")
   .create();
 
@@ -876,13 +894,13 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [null, <openmodularturrets:intermediate_tiered:14>, null],
-    [<minecraft:obsidian>, <openmodularturrets:intermediate_tiered:9>, <minecraft:obsidian>],
-    [<minecraft:obsidian>, <openmodularturrets:intermediate_tiered:4>, <minecraft:obsidian>]])
+    [obsidian, <openmodularturrets:intermediate_tiered:9>, obsidian],
+    [obsidian, <openmodularturrets:intermediate_tiered:4>, obsidian]])
   .setSecondaryIngredients([<openmodularturrets:intermediate_regular>*2])
-  .addTool(<ore:artisansPliers>, 30)
-  .addTool(<ore:artisansSolderer>, 50)
-  .addTool(<ore:artisansSpanner>, 25)
-  .addRequirement(FTGU.allOf(["cyborg:technology/defenses"]))
+  .addTool(pliers, 30)
+  .addTool(solderer, 50)
+  .addTool(spanner, 25)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/engineering", "cyborg:technology/automated_defenses"]))
   .setName("rail_gun")
   .addOutput(<openmodularturrets:rail_gun_turret>)
   .create();

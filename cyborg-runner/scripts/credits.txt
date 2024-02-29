@@ -6,11 +6,12 @@ Google images for the discord logos used on the menu
 Textcraft.net to make the modpack title on the main menu
 
 
-Thanks to @FCP211#6685 on Discord for suggesting the satchel at the start be named 'Evidence Bag' (in an old build)
+Thanks to @FCP211#6685 on Discord for suggesting the satchel at the start be named 'Evidence Bag' (in a very old build)
 Thanks to @Phillap#6464 on Discord for telling me what Targeted Immunosuppressant does (+max tolerance but some negative potion effects are worse)
 Thanks to Alivda on the Discord for testing the modpack in its early stages
-Thanks to masterfulpotato on Discord for making the sprite for the Iron Ring & Slime Green
 Thanks to truepuregold on the Discord for suggesting I make research hints & add scannable
+Thanks to masterfulpotato on Discord for making half the sprites
+- XDFlame made the other half
 
 
 

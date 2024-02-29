@@ -18,7 +18,7 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 79
+  x = 122
   width = 268
   action = deep_customization_element:title_screen_forge_top
   actionid = c53448d0-1aa1-4632-ada5-78c25794128a1687975476614
@@ -33,18 +33,18 @@ customization {
   width = 169
   action = deep_customization_element:title_screen_branding
   actionid = 37c9a0f7-bada-4766-9ac6-4b9b9e37d29b1687975476628
-  y = 178
+  y = 214
   height = 60
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 198
+  x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 426e13cb-ebd7-4424-b27d-4056c7572eb71687975476628
-  y = 220
+  y = 256
   height = 9
 }
 
@@ -84,7 +84,7 @@ customization {
 }
 
 customization {
-  path = resources/menu/title.png
+  path = config/fancymenu/customization/title.png
   orientation = top-left
   x = 15
   width = 395
@@ -98,7 +98,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://discord.gg/NtwzA6X%btnaction_splitter_fm%
-  backgroundhovered = resources/menu/discord_logo.png
+  backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   hoverlabel = Discord
@@ -107,7 +107,7 @@ customization {
   action = addbutton
   actionid = fb597d68-862a-4788-8c0b-77d0ebaa46291687975734625
   y = 192
-  backgroundnormal = resources/menu/discord_logo.png
+  backgroundnormal = config/fancymenu/customization/discord_logo.png
   height = 20
 }
 

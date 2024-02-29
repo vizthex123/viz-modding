@@ -10,9 +10,9 @@
   "input-types": {
 	"r": {"id": "minecraft:redstone_block"},
 	"w": {
-	"id":
-	"minecraft:redstone_wire",
-	"ignore-meta": true"
+		"id":
+		"minecraft:redstone_wire",
+		"ignore-meta": true"
 	}
   },
 

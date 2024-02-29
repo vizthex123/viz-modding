@@ -1,0 +1,13 @@
+{
+	"name": "hunger",
+	"potion": "minecraft:hunger",
+	"amplifier": 1,
+	"minimum": 0,
+	"maximum": 20,
+	"cumulative_modifier": 1,
+	"detect": "all",
+	"nutrients": [
+        "minerals"
+    ],
+	"enabled": true
+}

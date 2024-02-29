@@ -1,0 +1,30 @@
+{
+	"name": "compactmachines3:wall",
+	"target-block": "compactmachines3:wallbreakable",
+	"target-count": 16,
+	"catalyst": "minecraft:redstone",
+  "disabled": true,
+
+	"input-types": {
+		"r": {
+		"id":
+			"minecraft:redstone_wire",
+			"ignore-meta": true
+		},
+		"s": {"id": "minecraft:iron_block"}
+	},
+
+	"symmetrical": true,
+	"shape": [
+		[
+			["_", "_", "_"],
+			["_", "r", "_"],
+			["_", "_", "_"]
+		],
+		[
+			["_", "_", "_"],
+			["_", "i", "_"],
+			["_", "_", "_"]
+		]
+	]
+}

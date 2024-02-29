@@ -3,8 +3,12 @@
 	"potion": "nutrition:malnourished",
 	"amplifier": 0,
 	"minimum": 0,
-	"maximum": 15,
-	"detect": "cumulative",
+	"maximum": 5,
 	"cumulative_modifier": 1,
+	"detect": "average",
+	"nutrients": [
+        "calories",
+        "minerals"
+    ],
 	"enabled": true
 }

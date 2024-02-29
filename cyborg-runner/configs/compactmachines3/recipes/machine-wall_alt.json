@@ -1,0 +1,29 @@
+{
+	"name": "wall_gravel",
+	"target-block": "compactmachines3:wallbreakable",
+	"target-count": 8,
+	"catalyst": "minecraft:clay",
+
+	"input-types": {
+		"g": {"id": "minecraft:gravel"}
+	},
+
+	"symmetrical": true,
+	"shape": [
+		[
+			["g", "g", "g"],
+			["g", "g", "g"],
+			["g", "g", "g"]
+		],
+		[
+			["g", "g", "g"],
+			["g", "g", "g"],
+			["g", "g", "g"]
+		],
+		[
+			["g", "g", "g"],
+			["g", "g", "g"],
+			["g", "g", "g"]
+		]
+	]
+}

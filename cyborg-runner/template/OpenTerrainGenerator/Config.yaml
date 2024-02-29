@@ -102,7 +102,7 @@ Dimensions:
     PortalColor: "beige"
     PortalParticleType: "portal"
     PortalMobType: "cyberware:cyberzombie"
-    PortalMobSpawnChance: 500
+    PortalMobSpawnChance: 250
     IsOTGPlus: true
     DimensionBelow: ""
     DimensionAbove: ""

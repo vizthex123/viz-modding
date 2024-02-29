@@ -3,82 +3,16 @@
 
 print("1-OreDict.zs loading...");
 /*
-val NAME = <OreDict Entry>;
+var NAME = <OreDict Entry>;
 ENTRYNAME.add(<item>);
 ENTRYNAME.remove(<item>);
 <OREDICT ENTRY>.add(<ITEMNAME>);
 <OREDICT ENTRY>.remove(<ITEMNAME>);
 */
 
-<ore:carpet>.add(<minecraft:carpet>);
-
-# Ores
-val xp = <ore:oreXP>;
-
-xp.add(<xp_ore:xp_ore_drained>);
-xp.add(<xp_ore:xp_ore_tier_1>);
-xp.add(<xp_ore:xp_ore_tier_2>);
-xp.add(<xp_ore:xp_ore_tier_3>);
-xp.add(<xp_ore:xp_ore_tier_4>);
-xp.add(<xp_ore:xp_ore_tier_5>);
-
-<ore:oreCrimsonCoal>.add(<cm:crimson_coal_ore>);
-<ore:oreChaoticCoal>.add(<cm:chaotic_coal_ore>);
-
-<ore:orePrismarine>.add(<pristeel:prismarine_ore>);
-
-<ore:oreHeartCrystal>.add(<scalinghealth:crystalore>);
-
-<ore:oreGlacidite>.add(<glacidus:glacidite_ore>);
-<ore:oreEukeite>.add(<glacidus:eukeite_ore>);
-<ore:oreCrysium>.add(<glacidus:crysium_ore>);
-<ore:oreOpesium>.add(<glacidus:opesium_ore>);
-<ore:orePulsaton>.add(<glacidus:pulsaton_ore>);
-
-
-	// Dense
-<ore:oreDenseIron>.add(<densemetals:dense_iron_ore>);
-<ore:oreDenseCoal>.add(<densemetals:dense_coal_ore>);
-<ore:oreDenseGold>.add(<densemetals:dense_gold_ore>);
-<ore:oreDenseDiamond>.add(<densemetals:dense_diamond_ore>);
-<ore:oreDenseEmerald>.add(<densemetals:dense_emerald_ore>);
-<ore:oreDenseLapis>.add(<densemetals:dense_lapis_ore>);
-<ore:oreDenseRedstone>.add(<densemetals:dense_redstone_ore>);
-<ore:oreDenseQuartz>.add(<densemetals:dense_quartz_ore>);
-
-<ore:oreDenseAluminum>.add(<densemetals:dense_aluminum_ore>);
-<ore:oreDenseCopper>.add(<densemetals:dense_copper_ore>);
-<ore:oreDenseTin>.add(<densemetals:dense_tin_ore>);
-<ore:oreDenseLead>.add(<densemetals:dense_lead_ore>);
-<ore:oreDenseSilver>.add(<densemetals:dense_silver_ore>);
-<ore:oreDenseNickel>.add(<densemetals:dense_nickel_ore>);
-<ore:oreDenseMithril>.add(<densemetals:dense_mithril_ore>);
-<ore:oreDenseIridium>.add(<densemetals:dense_iridium_ore>);
-<ore:oreDensePlatinum>.add(<densemetals:dense_platinum_ore>);
-
-// Super
-<ore:oreSuperIron>.add(<superores:super_iron>);
-<ore:oreSuperCoal>.add(<superores:super_coal>);
-<ore:oreSuperGold>.add(<superores:super_gold>);
-<ore:oreSuperDiamond>.add(<superores:super_diamond>);
-<ore:oreSuperEmerald>.add(<superores:super_emerald>);
-<ore:oreSuperLapis>.add(<superores:super_lapis>);
-<ore:oreSuperRedstone>.add(<superores:super_redstone>);
-<ore:oreSuperQuartz>.add(<superores:super_quartz>);
-
-<ore:oreSuperAluminum>.add(<superores:super_aluminum>);
-<ore:oreSuperCopper>.add(<superores:super_copper>);
-<ore:oreSuperTin>.add(<superores:super_tin>);
-<ore:oreSuperLead>.add(<superores:super_lead>);
-<ore:oreSuperSilver>.add(<superores:super_silver>);
-<ore:oreSuperNickel>.add(<superores:super_nickel>);
-<ore:oreSuperIridium>.add(<superores:super_iridium>);
-<ore:oreSuperPlatinum>.add(<superores:super_platinum>);
-
-
 
 // Arrows
-val arrow = <ore:arrow>;
+var arrow = <ore:arrow>;
 
 arrow.add(<simplyarrows:arrow_flint>);
 arrow.add(<simplyarrows:arrow_bone>);
@@ -86,8 +20,30 @@ arrow.add(<simplyarrows:arrow_iron>);
 arrow.add(<simplyarrows:arrow_flame>);
 arrow.add(<simplyarrows:arrow_tnt>);
 
+
+// Carpets (sawmill recipe)
+var carpet = <ore:carpet>;
+
+carpet.add(<minecraft:carpet>);
+carpet.add(<minecraft:carpet:1>);
+carpet.add(<minecraft:carpet:2>);
+carpet.add(<minecraft:carpet:3>);
+carpet.add(<minecraft:carpet:4>);
+carpet.add(<minecraft:carpet:5>);
+carpet.add(<minecraft:carpet:6>);
+carpet.add(<minecraft:carpet:7>);
+carpet.add(<minecraft:carpet:8>);
+carpet.add(<minecraft:carpet:9>);
+carpet.add(<minecraft:carpet:10>);
+carpet.add(<minecraft:carpet:11>);
+carpet.add(<minecraft:carpet:12>);
+carpet.add(<minecraft:carpet:13>);
+carpet.add(<minecraft:carpet:14>);
+carpet.add(<minecraft:carpet:15>);
+
+
 // Seeds
-val seed = <ore:listAllseed>;
+var seed = <ore:listAllseed>;
 
 seed.add(<minecraft:wheat_seeds>);
 seed.add(<minecraft:pumpkin_seeds>);
@@ -102,9 +58,17 @@ seed.add(<xlfoodmod:tomato_seeds>);
 seed.add(<xlfoodmod:strawberry_seeds>);
 
 
+// Flowers
+<ore:flowerBlue>.add(<glacidus:crysial_flower>);
+<ore:flowerBlue>.add(<glacidus:solegia_flower>);
+<ore:flowerCyan>.add(<glacidus:pulphorus_flower>);
+<ore:flowerYellow>.add(<glacidus:aurantiacus_flower>);
+<ore:flowerYellow>.add(<glacidus:flavula_flower>);
+
+
 // Mushrooms
-val glowshroom = <ore:glowshroom>;
-val mushroom = <ore:mushroom>;
+var glowshroom = <ore:glowshroom>;
+var mushroom = <ore:mushroom>;
 
 glowshroom.add(<natura:nether_glowshroom>);
 glowshroom.add(<natura:nether_glowshroom:1>);
@@ -112,26 +76,59 @@ glowshroom.add(<natura:nether_glowshroom:2>);
 
 mushroom.add(<minecraft:brown_mushroom>);
 mushroom.add(<minecraft:red_mushroom>);
-// mushroom.add(<ore:glowshroom>);
+mushroom.add(<byg:black_puff>);
+mushroom.add(<byg:weeping_milk_cap>);
+mushroom.add(<byg:wood_blewit>);
+
+// Berries
+// Mainly for the Berry Medley recipe
+var berry = <ore:listAllberries>;
+
+berry.add(<byg:blueberry>);
+berry.add(<byg:hollyberries>);
+berry.add(<byg:rowanberries>);
+berry.add(<byg:hawthornberries>);
+berry.add(<byg:salal_berry>);
+berry.add(<natura:edibles:2>);
+berry.add(<natura:edibles:3>);
+berry.add(<natura:edibles:4>);
+berry.add(<natura:edibles:5>);
+berry.add(<natura:edibles:6>);
+berry.add(<natura:edibles:7>);
+berry.add(<natura:edibles:8>);
+berry.add(<natura:edibles:9>);
+
 
 
 // Fruits
 // Mostly for basic cooking research
-val fruit = <ore:listAllfruit>;
+var fruit = <ore:listAllfruit>;
 
-fruit.add(<byg:strawberry>);
-fruit.add(<xlfoodmod:strawberry>);
 fruit.add(<byg:baobabfruit>);
 fruit.add(<byg:greenapple>);
 fruit.add(<byg:silver_apple>);
+fruit.add(<byg:blueberry>);
+fruit.add(<byg:strawberry>);
+fruit.add(<byg:hollyberries>);
+fruit.add(<byg:rowanberries>);
+fruit.add(<byg:hawthornberries>);
+fruit.add(<byg:salal_berry>);
+
+<ore:cropBlueberry>.add(<byg:blueberry>);
+<ore:cropStrawberry>.add(<byg:strawberry>);
+
+fruit.add(<glacidus:grapes>);
+
 fruit.add(<minecraft:apple>);
 fruit.add(<minecraft:golden_apple>);
 fruit.add(<minecraft:golden_apple:1>);
 
+fruit.add(<xlfoodmod:strawberry>);
+
 
 // Advanced Pie
 // For the Special Cooking quest
-val pie = <ore:advPie>;
+var pie = <ore:advPie>;
 
 pie.add(<xlfoodmod:apple_pie>);
 pie.add(<xlfoodmod:cheese_pie>);
@@ -143,7 +140,7 @@ pie.add(<xlfoodmod:fish_pie>);
 
 // Vegetables
 // Mainly for the chicken pot pie recipe
-val veg = <ore:listAllvegetable>;
+var veg = <ore:listAllvegetable>;
 
 veg.add(<minecraft:carrot>);
 veg.add(<minecraft:beetroot>);
@@ -155,7 +152,7 @@ veg.add(<xlfoodmod:raw_corn>);
 
 
 // Raw Meat
-val rmeat = <ore:listAllmeatraw>;
+var rmeat = <ore:listAllmeatraw>;
 
 rmeat.add(<minecraft:porkchop>);
 rmeat.add(<minecraft:fish>);
@@ -169,20 +166,21 @@ rmeat.add(<natura:edibles>);
 
 
 // Cooked Meat
-val cmeat = <ore:listAllmeatcooked>;
+var cmeat = <ore:listAllmeatcooked>;
 
 cmeat.add(<minecraft:cooked_beef>);
 cmeat.add(<minecraft:cooked_porkchop>);
 cmeat.add(<minecraft:cooked_fish>);
 cmeat.add(<minecraft:cooked_fish:1>);
-cmeat.add(<byg:cookedflesh>);
-cmeat.add(<byg:cookedpufferfish>);
-cmeat.add(<byg:cookedtropicalfish>);
 cmeat.add(<minecraft:cooked_chicken>);
 cmeat.add(<minecraft:cooked_rabbit>);
 cmeat.add(<minecraft:cooked_mutton>);
-cmeat.add(<natura:edibles:1>);
+cmeat.add(<byg:cookedflesh>);
+cmeat.add(<byg:cookedspidereye>);
+cmeat.add(<byg:cookedpufferfish>);
+cmeat.add(<byg:cookedtropicalfish>);
 cmeat.add(<glacidus:grilled_porcali_meat>);
+cmeat.add(<natura:edibles:1>);
 cmeat.add(<xlfoodmod:cooked_chicken_wing>);
 
 
@@ -217,8 +215,8 @@ cmeat.add(<xlfoodmod:cooked_chicken_wing>);
 
 
 // Add Chest & Chest Wood to various blocks
-val chest = <ore:chest>;
-val chestw = <ore:chestWood>;
+var chest = <ore:chest>;
+var chestw = <ore:chestWood>;
 
 chest.add(<extrautils2:largishchest>);
 chest.add(<glacidus:underground_chest>);
@@ -229,37 +227,11 @@ chestw.add(<extrautils2:largishchest>);
 chestw.add(<glacidus:underground_chest>);
 
 
+
 // Doors
 // Mainly for research
-val door = <ore:door>;
-val doorw = <ore:doorWood>;
+var door = <ore:doorWood>;
 
-door.add(<byg:baobabdooritem>);
-door.add(<byg:aspen_door_item>);
-door.add(<byg:blue_enchanted_door>);
-door.add(<byg:green_enchanted_door>);
-door.add(<byg:cherry_door>);
-door.add(<byg:cika_door>);
-door.add(<byg:cypress_door>);
-door.add(<byg:ebony_door>);
-door.add(<byg:fir_door>);
-door.add(<byg:frozen_oak_door>);
-door.add(<byg:hawthorn_door>);
-door.add(<byg:holly_door>);
-door.add(<byg:ironwood_door>);
-door.add(<byg:jacaranda_door>);
-door.add(<byg:mahogany_door>);
-door.add(<byg:mangrove_door>);
-door.add(<byg:maple_door>);
-door.add(<byg:palm_door>);
-door.add(<byg:pine_door>);
-door.add(<byg:eucalyptus_door>);
-door.add(<byg:rowan_door>);
-door.add(<byg:skyris_door>);
-door.add(<byg:willow_door>);
-door.add(<byg:witch_hazel_door>);
-door.add(<byg:zelkova_door>);
-door.add(<byg:great_oak_door>);
 door.add(<natura:overworld_doors>);
 door.add(<natura:overworld_doors:1>);
 door.add(<natura:overworld_doors:2>);
@@ -273,52 +245,12 @@ door.add(<natura:nether_doors:1>);
 door.add(<natura:nether_doors:2>);
 door.add(<natura:nether_doors:3>);
 
-doorw.add(<byg:baobabdooritem>);
-doorw.add(<byg:aspen_door_item>);
-doorw.add(<byg:blue_enchanted_door>);
-doorw.add(<byg:green_enchanted_door>);
-doorw.add(<byg:cherry_door>);
-doorw.add(<byg:cika_door>);
-doorw.add(<byg:cypress_door>);
-doorw.add(<byg:ebony_door>);
-doorw.add(<byg:fir_door>);
-doorw.add(<byg:frozen_oak_door>);
-doorw.add(<byg:hawthorn_door>);
-doorw.add(<byg:holly_door>);
-doorw.add(<byg:ironwood_door>);
-doorw.add(<byg:jacaranda_door>);
-doorw.add(<byg:mahogany_door>);
-doorw.add(<byg:mangrove_door>);
-doorw.add(<byg:maple_door>);
-doorw.add(<byg:palm_door>);
-doorw.add(<byg:pine_door>);
-doorw.add(<byg:eucalyptus_door>);
-doorw.add(<byg:rowan_door>);
-doorw.add(<byg:skyris_door>);
-doorw.add(<byg:willow_door>);
-doorw.add(<byg:witch_hazel_door>);
-doorw.add(<byg:zelkova_door>);
-doorw.add(<byg:great_oak_door>);
-doorw.add(<natura:overworld_doors>);
-doorw.add(<natura:overworld_doors:1>);
-doorw.add(<natura:overworld_doors:2>);
-doorw.add(<natura:overworld_doors:3>);
-doorw.add(<natura:overworld_doors:4>);
-doorw.add(<natura:overworld_doors:5>);
-doorw.add(<natura:overworld_doors:6>);
-doorw.add(<natura:overworld_doors:7>);
-doorw.add(<natura:nether_doors>);
-doorw.add(<natura:nether_doors:1>);
-doorw.add(<natura:nether_doors:2>);
-doorw.add(<natura:nether_doors:3>);
 
 
 // Trapdoors
-val trapdoor = <ore:trapdoor>;
-val trapdoorw = <ore:trapdoorWood>;
+var trapdoor = <ore:trapdoorWood>;
 
 trapdoor.add(<minecraft:trapdoor>);
-trapdoor.add(<minecraft:iron_trapdoor>);
 trapdoor.add(<natura:maple_trap_door>);
 trapdoor.add(<natura:silverbell_trap_door>);
 trapdoor.add(<natura:amaranth_trap_door>);
@@ -333,26 +265,12 @@ trapdoor.add(<natura:bloodwood_trap_door>);
 trapdoor.add(<natura:fusewood_trap_door>);
 trapdoor.add(<natura:darkwood_trap_door>);
 
-trapdoorw.add(<minecraft:trapdoor>);
-trapdoorw.add(<natura:maple_trap_door>);
-trapdoorw.add(<natura:silverbell_trap_door>);
-trapdoorw.add(<natura:amaranth_trap_door>);
-trapdoorw.add(<natura:tiger_trap_door>);
-trapdoorw.add(<natura:willow_trap_door>);
-trapdoorw.add(<natura:eucalyptus_trap_door>);
-trapdoorw.add(<natura:hopseed_trap_door>);
-trapdoorw.add(<natura:sakura_trap_door>);
-trapdoorw.add(<natura:redwood_trap_door>);
-trapdoorw.add(<natura:ghostwood_trap_door>);
-trapdoorw.add(<natura:bloodwood_trap_door>);
-trapdoorw.add(<natura:fusewood_trap_door>);
-trapdoorw.add(<natura:darkwood_trap_door>);
 
 
 // Add the Fence and Fence Gate OreDict entries to things missing them
 // Mainly for research
-val fence = <ore:fenceWood>;
-val gate = <ore:fenceGateWood>;
+var fence = <ore:fenceWood>;
+var gate = <ore:fenceGateWood>;
 
 fence.add(<natura:maple_fence>);
 fence.add(<natura:silverbell_fence>);
@@ -384,7 +302,7 @@ gate.add(<natura:darkwood_fence_gate>);
 
 
 // Pressure Plates
-val plate = <ore:pressurePlateWood>;
+var plate = <ore:pressurePlateWood>;
 
 plate.add(<minecraft:wooden_pressure_plate>);
 plate.add(<natura:maple_pressure_plate>);
@@ -403,7 +321,7 @@ plate.add(<natura:darkwood_pressure_plate>);
 
 
 // Buttons
-val button = <ore:buttonWood>;
+var button = <ore:buttonWood>;
 
 button.add(<minecraft:wooden_button>);
 button.add(<natura:maple_button>);
@@ -421,15 +339,21 @@ button.add(<natura:fusewood_button>);
 button.add(<natura:darkwood_button>);
 
 
-// Glacidus OreDict entries
+// Extra Glacidus OreDict entries
+// The rest are grouped together in sections above & below this one
 fence.add(<glacidus:underground_fence>);
 <ore:bookshelf>.add(<glacidus:underground_bookshelf>);
 <ore:bookshelfWood>.add(<glacidus:underground_bookshelf>);
-<ore:doorWood>.add(<glacidus:underground_door>);
-<ore:trapdoorWood>.add(<glacidus:underground_trapdoor>);
+door.add(<glacidus:underground_door>);
+trapdoor.add(<glacidus:underground_trapdoor>);
 <ore:stairWood>.add(<glacidus:underground_stairs>);
 <ore:logWood>.add(<glacidus:underground_log>);
 <ore:stickWood>.add(<glacidus:underground_stick>);
+<ore:treeSapling>.add(<glacidus:dead_lumicia>);
+<ore:treeSapling>.add(<glacidus:lumicia_sapling>);
+
+<ore:leather>.add(<glacidus:merialces_hide>);
+<ore:dirt>.add(<glacidus:lumicia_dirt>);
 
 
 
@@ -441,7 +365,8 @@ fence.add(<glacidus:underground_fence>);
 
 
 // Gears
-val gears = <ore:gears>;
+// Mainly for research
+var gears = <ore:gears>;
 
 gears.add(<extrautils2:ingredients:1>);
 gears.add(<redstonearsenal:material:96>);
@@ -470,7 +395,8 @@ gears.add(<thermalfoundation:material:295>);
 
 
 // Plates
-val plates = <ore:plates>;
+// Mainly for research
+var plates = <ore:plates>;
 
 plates.add(<dse:components:3>);
 plates.add(<dse:components:4>);
@@ -503,73 +429,112 @@ plates.add(<thermalfoundation:material:359>);
 
 
 
-// Misc
-<ore:dyeGreen>.add(<contenttweaker:slime_green>);
-<ore:dyeLime>.add(<contenttweaker:slime_green>);
-<ore:plankWood>.add(<contenttweaker:mdf>);
+// Workbenches
+var workbench = <ore:workbench>;
 
-<ore:workbench>.add(<sct:stone_crafting_table>);
+workbench.add(<sct:stone_crafting_table>);
+workbench.add(<natura:overworld_workbenches>);
+workbench.add(<natura:overworld_workbenches:1>);
+workbench.add(<natura:overworld_workbenches:2>);
+workbench.add(<natura:overworld_workbenches:3>);
+workbench.add(<natura:overworld_workbenches:4>);
+workbench.add(<natura:overworld_workbenches:5>);
+workbench.add(<natura:overworld_workbenches:6>);
+workbench.add(<natura:overworld_workbenches:7>);
+workbench.add(<natura:overworld_workbenches:8>);
+workbench.add(<natura:nether_workbenches>);
+workbench.add(<natura:nether_workbenches:1>);
+workbench.add(<natura:nether_workbenches:2>);
+workbench.add(<natura:nether_workbenches:3>);
+
+
+
+// Misc
+# <ore:record>.add(<distinctdamagedescriptions:recorddistinction>);
 <ore:slimeball>.add(<thermalfoundation:material:832>);
 <ore:slimeball>.add(<thermalfoundation:material:833>);
-<ore:stickWood>.add(<byg:stonestick>);
 <ore:string>.add(<natura:materials:7>);
 <ore:listAllgrain>.add(<minecraft:wheat>);
-<ore:cropStrawberry>.add(<byg:strawberry>);
 <ore:itemSilicon>.add(<projectred-core:resource_item:301>);
-<ore:dirt>.add(<glacidus:lumicia_dirt>);
+
+<ore:rodStone>.add(<sct:stone_stick>);
+<ore:obsidianRod>.add(<redstonearsenal:material:192>);
+
+<ore:ingotSteel>.remove(<dse:components>);
 
 
 
-// Artisan's Tool Removals
-<ore:artisansHammer>.remove(<artisanworktables:artisans_hammer_wood>);
-<ore:artisansHammer>.remove(<artisanworktables:artisans_hammer_flint>);
+# Ores
+# Mainly for the Scanner, but I might use them in some recipes in the future
+<ore:oreFossil>.add(<bonecraft:pamfossil>);
 
-<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_wood>);
-<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_stone>);
-<ore:artisansSpanner>.remove(<artisanworktables:artisans_spanner_flint>);
+<ore:oreCrimsonCoal>.add(<cm:crimson_coal_ore>);
+<ore:oreChaoticCoal>.add(<cm:chaotic_coal_ore>);
 
-<ore:artisansCutters>.remove(<artisanworktables:artisans_cutters_wood>);
-<ore:artisansCutters>.remove(<artisanworktables:artisans_cutters_flint>);
+<ore:orePrismarine>.add(<pristeel:prismarine_ore>);
 
-<ore:artisansChisel>.remove(<artisanworktables:artisans_chisel_wood>);
-<ore:artisansChisel>.remove(<artisanworktables:artisans_chisel_flint>);
+<ore:oreHeartCrystal>.add(<scalinghealth:crystalore>);
 
-<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_wood>);
-<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_stone>);
-<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_flint>);
-<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_gold>);
-<ore:artisansPliers>.remove(<artisanworktables:artisans_pliers_bone>);
+<ore:oreEukeite>.add(<glacidus:eukeite_ore>);
+<ore:oreCrysium>.add(<glacidus:crysium_ore>);
+<ore:oreOpesium>.add(<glacidus:opesium_ore>);
+<ore:oreGlacidite>.add(<glacidus:glacidite_ore>);
+<ore:orePulsaton>.add(<glacidus:pulsaton_ore>);
+<ore:crystal>.add(<glacidus:small_crystal>);
 
-<ore:artisansPan>.remove(<artisanworktables:artisans_pan_wood>);
-<ore:artisansPan>.remove(<artisanworktables:artisans_pan_stone>);
-<ore:artisansPan>.remove(<artisanworktables:artisans_pan_flint>);
-<ore:artisansPan>.remove(<artisanworktables:artisans_pan_gold>);
-<ore:artisansPan>.remove(<artisanworktables:artisans_pan_bone>);
+<ore:oreVulcanite>.remove(<vulcanite:nether_vulcanite_ore>);
+<ore:oreNetherVulcanite>.add(<vulcanite:nether_vulcanite_ore>);
 
-<ore:artisansKnife>.remove(<artisanworktables:artisans_knife_wood>);
-<ore:artisansKnife>.remove(<artisanworktables:artisans_knife_stone>);
-<ore:artisansKnife>.remove(<artisanworktables:artisans_knife_flint>);
+<ore:oreSalt>.add(<xlfoodmod:rock_salt>);
 
-<ore:artisansFile>.remove(<artisanworktables:artisans_file_wood>);
-<ore:artisansFile>.remove(<artisanworktables:artisans_file_stone>);
-<ore:artisansFile>.remove(<artisanworktables:artisans_file_flint>);
+var xp = <ore:oreXP>;
 
-<ore:artisansBeaker>.remove(<artisanworktables:artisans_beaker_wood>);
-<ore:artisansBeaker>.remove(<artisanworktables:artisans_beaker_stone>);
-<ore:artisansBeaker>.remove(<artisanworktables:artisans_beaker_flint>);
-<ore:artisansBeaker>.remove(<artisanworktables:artisans_beaker_bone>);
+xp.add(<xp_ore:xp_ore_drained>);
+xp.add(<xp_ore:xp_ore_tier_1>);
+xp.add(<xp_ore:xp_ore_tier_2>);
+xp.add(<xp_ore:xp_ore_tier_3>);
+xp.add(<xp_ore:xp_ore_tier_4>);
+xp.add(<xp_ore:xp_ore_tier_5>);
+<ore:oreXPDrained>.add(<xp_ore:xp_ore_drained>);
 
-<ore:artisansBurner>.remove(<artisanworktables:artisans_burner_wood>);
-<ore:artisansBurner>.remove(<artisanworktables:artisans_burner_stone>);
-<ore:artisansBurner>.remove(<artisanworktables:artisans_burner_flint>);
-<ore:artisansBurner>.remove(<artisanworktables:artisans_burner_gold>);
-<ore:artisansBurner>.remove(<artisanworktables:artisans_burner_bone>);
 
-<ore:artisanSifter>.remove(<artisanworktables:artisans_sifter_wood>);
-<ore:artisanSifter>.remove(<artisanworktables:artisans_sifter_stone>);
+	// Dense
+<ore:oreDenseIron>.add(<densemetals:dense_iron_ore>);
+<ore:oreDenseCoal>.add(<densemetals:dense_coal_ore>);
+<ore:oreDenseGold>.add(<densemetals:dense_gold_ore>);
+<ore:oreDenseDiamond>.add(<densemetals:dense_diamond_ore>);
+<ore:oreDenseEmerald>.add(<densemetals:dense_emerald_ore>);
+<ore:oreDenseLapis>.add(<densemetals:dense_lapis_ore>);
+<ore:oreDenseRedstone>.add(<densemetals:dense_redstone_ore>);
+<ore:oreDenseQuartz>.add(<densemetals:dense_quartz_ore>);
 
-<ore:artisanHandsaw>.remove(<artisanworktables:artisans_handsaw_wood>);
-<ore:artisanHandsaw>.remove(<artisanworktables:artisans_handsaw_flint>);
+<ore:oreDenseAluminum>.add(<densemetals:dense_aluminum_ore>);
+<ore:oreDenseCopper>.add(<densemetals:dense_copper_ore>);
+<ore:oreDenseTin>.add(<densemetals:dense_tin_ore>);
+<ore:oreDenseLead>.add(<densemetals:dense_lead_ore>);
+<ore:oreDenseSilver>.add(<densemetals:dense_silver_ore>);
+<ore:oreDenseNickel>.add(<densemetals:dense_nickel_ore>);
+<ore:oreDenseMithril>.add(<densemetals:dense_mithril_ore>);
+<ore:oreDenseIridium>.add(<densemetals:dense_iridium_ore>);
+<ore:oreDensePlatinum>.add(<densemetals:dense_platinum_ore>);
 
+	// Super
+<ore:oreSuperIron>.add(<superores:super_iron>);
+<ore:oreSuperCoal>.add(<superores:super_coal>);
+<ore:oreSuperGold>.add(<superores:super_gold>);
+<ore:oreSuperDiamond>.add(<superores:super_diamond>);
+<ore:oreSuperEmerald>.add(<superores:super_emerald>);
+<ore:oreSuperLapis>.add(<superores:super_lapis>);
+<ore:oreSuperRedstone>.add(<superores:super_redstone>);
+<ore:oreSuperQuartz>.add(<superores:super_quartz>);
+
+<ore:oreSuperAluminum>.add(<superores:super_aluminum>);
+<ore:oreSuperCopper>.add(<superores:super_copper>);
+<ore:oreSuperTin>.add(<superores:super_tin>);
+<ore:oreSuperLead>.add(<superores:super_lead>);
+<ore:oreSuperSilver>.add(<superores:super_silver>);
+<ore:oreSuperNickel>.add(<superores:super_nickel>);
+<ore:oreSuperIridium>.add(<superores:super_iridium>);
+<ore:oreSuperPlatinum>.add(<superores:super_platinum>);
 
 print("1-OreDict.zs loaded");
