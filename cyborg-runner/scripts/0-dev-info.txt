@@ -24,13 +24,20 @@ Dark Red - Defamont
 
 
 
-
 worldborder is set at 64!
+center: 
+3430 -700
+
+
+changes to 80
+center: 3228 -859
+
 
 Template Defaults:
-- Difficulty: Normal (Locked)
+- Difficulty: Normal
 - Time: 8000
 - Not raining
+
 
 
 Nutrition info:

@@ -15,9 +15,9 @@ print("GameStages.zs loading...");
 # Stage mods
 mods.ItemStages.stageModItems("ceramics", "ceramics");
 
-mods.ItemStages.stageModItems("technology", "thermaldynamics");
-mods.ItemStages.stageModItems("technology", "thermalexpansion");
-mods.ItemStages.stageModItems("technology", "thermalfoundation");
+mods.ItemStages.stageModItems("thermal_technology", "thermaldynamics");
+mods.ItemStages.stageModItems("thermal_technology", "thermalexpansion");
+mods.ItemStages.stageModItems("thermal_technology", "thermalfoundation");
 
 mods.ItemStages.stageModItems("base_defense", "ompd");
 mods.ItemStages.stageModItems("base_defense", "openmodularturrets");
