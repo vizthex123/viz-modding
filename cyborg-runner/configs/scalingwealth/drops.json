@@ -26,15 +26,15 @@
       "minecraft:zombie":{
          "[0, 50]":[
             {
-               "chance": 0.1,
-               "item": "contenttweaker:chip1",
-               "amount": "[0, 5]"
+               "chance": 0.03,
+               "item": "contenttweaker:damaged_chip",
+               "amount": "[0, 3]"
             }
          ],
-         "[45, 50]":[
+         "[30, 50]":[
             {
-               "chance": 0.025,
-               "item": "contenttweaker:damaged_chip",
+               "chance": 0.05,
+               "item": "contenttweaker:chip1",
                "amount": "[0, 3]"
             }
          ]
@@ -42,21 +42,21 @@
       "minecraft:zombie_villager":{
          "[0, 25]":[
             {
-               "chance": 0.02,
+               "chance": 0.01,
                "item": "contenttweaker:sol_chip",
                "amount": "[0, 2]"
             }
          ],
          "[0, 50]":[
             {
-               "chance": 0.12,
+               "chance": 0.05,
                "item": "contenttweaker:chip1",
                "amount": "[1, 5]"
             }
          ],
          "[45, 50]":[
             {
-               "chance": 0.03,
+               "chance": 0.07,
                "item": "contenttweaker:damaged_chip",
                "amount": "[1, 5]"
             }
@@ -65,9 +65,9 @@
       "minecraft:skeleton":{
          "[0, 50]":[
             {
-               "chance": 0.05,
+               "chance": 0.03,
                "item": "contenttweaker:damaged_chip",
-               "amount": "[0, 5]"
+               "amount": "[0, 3]"
             }
          ],
          "[45, 50]":[
@@ -139,16 +139,16 @@
          ],
          "[0, 50]":[
             {
-               "chance": 0.25,
-               "item": "contenttweaker:chip10",
-               "amount": "[0, 2]"
-            }
-         ],
-         "[40, 50]":[
-            {
                "chance": 0.75,
                "item": "contenttweaker:empty_chip",
                "amount": "[5, 15]"
+            }
+         ],
+         "[30, 50]":[
+            {
+               "chance": 0.25,
+               "item": "contenttweaker:chip10",
+               "amount": "[0, 2]"
             }
          ]
       },
@@ -160,9 +160,9 @@
                "amount": "[0, 3]"
             }
          ],
-         "[45, 50]":[
+         "[40, 50]":[
             {
-               "chance":1.0,
+               "chance": 0.5,
                "item": "contenttweaker:empty_chip",
                "amount": "[0, 5]"
             }
@@ -171,16 +171,16 @@
       "minecraft:enderman":{
          "[0, 35]":[
             {
-               "chance": 0.03,
-               "item": "contenttweaker:sol_chip",
-               "amount": "[0, 3]"
+               "chance": 0.05,
+               "item": "contenttweaker:empty_chip",
+               "amount": "[4, 12]"
             }
          ],
          "[0, 50]":[
             {
                "chance": 0.01,
-               "item": "contenttweaker:empty_chip",
-               "amount": "[4, 12]"
+               "item": "contenttweaker:sol_chip",
+               "amount": "[0, 3]"
             }
          ]
       },
@@ -219,14 +219,14 @@
       "cyberware:cyberzombie":{
          "[0, 50]":[
             {
-               "chance": 0.2,
+               "chance": 0.07,
                "item": "contenttweaker:empty_chip",
                "amount": "[0, 5]"
             }
          ],
          "[42, 50]":[
             {
-               "chance": 0.15,
+               "chance": 0.12,
                "item": "contenttweaker:damaged_chip",
                "amount": "[0, 5]"
             }
@@ -235,14 +235,14 @@
       "rewired:cyberskeleton":{
          "[0, 50]":[
             {
-               "chance": 0.05,
+               "chance": 0.07,
                "item": "contenttweaker:damaged_chip",
                "amount": "[1, 2]"
             }
          ],
          "[42, 50]":[
             {
-               "chance": 0.15,
+               "chance": 0.12,
                "item": "contenttweaker:damaged_chip",
                "amount": "[1, 3]"
             }

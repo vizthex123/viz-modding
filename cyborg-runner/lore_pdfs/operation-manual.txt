@@ -1,0 +1,21 @@
+Operation Instructions:
+
+1) Package all necessary supplies, and place them into the storage modules.
+
+Board any passengers alongside any extra cargo they bring on-board.
+
+
+
+2) Assume position in the pilot's seat and enter your credentials.
+
+Note: All passengers will be scanned.
+
+Any passengers posessing criminal records will be ejected to the nearest planet deemed "survivable".
+
+
+
+3) Secure all passengers and cargo, then begin the launch sequence.
+
+After the ship finishes scanning everyone on-board, the launch sequence will begin.
+
+If the pilot fails the scan, the autopilot AI will take over.

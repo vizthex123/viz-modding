@@ -19,6 +19,7 @@ val stick = <ore:stickWood>;
 val iron = <minecraft:iron_ingot>;
 val redstone = <minecraft:redstone>;
 val electrotine = <projectred-core:resource_item:105>;
+var basic_circuit = <ore:circuitBasic>;
 
 
 var hammer = <ore:artisansHammer>;
@@ -28,6 +29,55 @@ var handsaw = <ore:artisansHandsaw>;
 var chisel = <ore:artisansChisel>;
 
 var solderer = <ore:artisansSolderer>;
+
+# Replacement Robosurgeons and Surgery Chambers
+recipes.remove(<cyberware:surgery_chamber>);
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [basic_circuit, iron, basic_circuit],
+    [iron, <ore:blockElectrotine>, iron],
+    [basic_circuit, iron, basic_circuit]])
+  .addTool(solderer, 25)
+  .addOutput(<cyberware:surgery>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/basic", "cyborg:technology/technology"]))
+  .setName("robosurgeon")
+  .create();
+  
+RecipeBuilder.get("basic")
+  .setShapeless([<cyberware:surgery>])
+  .addTool(cutters, 35)
+  .addOutput(iron*4)
+  .setExtraOutputOne(<dse:components:10>*4, 1.0)
+  .setExtraOutputTwo(electrotine*9, 1.0)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/basic", "cyborg:crafting/recycling", "cyborg:technology/technology"]))
+  .setName("robosurgeon_recycle")
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [iron, basic_circuit, iron],
+    [iron, <extrautils2:compressedcobblestone:1>, iron],
+    [iron, iron, iron]])
+  .addTool(cutters, 25)
+  .addOutput(<cyberware:surgery_chamber>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/basic", "cyborg:technology/technology"]))
+  .setName("surgery_chamber")
+  .create();
+
+
+// Miner's Ring
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<byg:chainplating>, <byg:chainplating>, <byg:chainplating>],
+    [<byg:chainplating>, redstone|electrotine, <byg:chainplating>],
+    [<byg:chainplating>, <byg:chainplating>, <byg:chainplating>]])
+  .addTool(cutters, 16)
+  .addOutput(<baubles:ring>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/basic"]))
+  .setName("miners_ring")
+  .create();
+
 
 // Piston with Electrotine
 RecipeBuilder.get("basic")
@@ -101,7 +151,7 @@ recipes.remove(<translocators:translocator_part>);
 recipes.remove(<translocators:translocator_part:1>);
 
 RecipeBuilder.get("basic")
-  .setShapeless([<ore:circuitBasic>, <minecraft:hopper>, redstone|electrotine])
+  .setShapeless([basic_circuit, <minecraft:hopper>, redstone|electrotine])
   .addTool(solderer, 50)
   .addOutput(<translocators:translocator_part>*2)
   .setName("translocator")
@@ -109,7 +159,7 @@ RecipeBuilder.get("basic")
   .create();
 
 RecipeBuilder.get("basic")
-  .setShapeless([<ore:circuitBasic>, <wopper:wopper>, <wopper:wopper>, <wopper:wopper>, redstone|electrotine])
+  .setShapeless([basic_circuit, <wopper:wopper>, <wopper:wopper>, <wopper:wopper>, redstone|electrotine])
   .addTool(solderer, 50)
   .addOutput(<translocators:translocator_part>*2)
   .setName("translocator_wooden")
@@ -117,7 +167,7 @@ RecipeBuilder.get("basic")
   .create();
 
 RecipeBuilder.get("basic")
-  .setShapeless([<ore:circuitBasic>, <minecraft:bucket>, <ore:gemLapis>, redstone|electrotine])
+  .setShapeless([basic_circuit, <minecraft:bucket>, <ore:gemLapis>, redstone|electrotine])
   .addTool(solderer, 50)
   .addOutput(<translocators:translocator_part:1>*2)
   .setName("fluid_translocator")
@@ -125,7 +175,7 @@ RecipeBuilder.get("basic")
   .create();
 
 RecipeBuilder.get("basic")
-  .setShapeless([<ore:circuitBasic>, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ore:gemLapis>, redstone|electrotine])
+  .setShapeless([basic_circuit, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ceramics:clay_bucket>|<glacidus:underground_bucket>, <ore:gemLapis>, redstone|electrotine])
   .addTool(solderer, 50)
   .addOutput(<translocators:translocator_part:1>*2)
   .setName("fluid_translocator_clay")
@@ -176,6 +226,8 @@ RecipeBuilder.get("basic")
   .addRequirement(FTGU.allOf(["cyborg:crafting/basic"]))
   .setName("respawn_obelisk")
   .create();
+
+
 
 # New recipes for Nether Quartz tools
 recipes.remove(<natura:netherquartz_sword>);

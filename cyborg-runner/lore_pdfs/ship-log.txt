@@ -1,0 +1,55 @@
+Passenger boarding
+Passenger has been registered as the ship's pilot
+Scanning pilot...
+ERROR: Credentials linked to criminal profile!
+Scanning for planets...
+
+
+
+Planet located.
+
+Water levels: High
+Food levels: Low
+Resource levels: Medium
+Terrain: Dense jungles
+Final Rating: "Survivable"
+
+Ejecting pilot...
+
+WARNING: System failure imminent!
+Cause: Unknown
+
+
+
+Running self-diagnostic system...
+
+WARNING: Unauthorized maintenance credentials detected!
+
+Purging system...
+
+WARNING: System purge interrupted!
+
+ERROR: Auto-pilot not engaged!
+
+
+
+Crash imminent!
+
+Ejecting cargo...
+
+No passengers found
+
+Ejecting pilot... failed
+
+WARNING: Pilot credentials linked to criminal profiel!
+
+Ejecting pilot... failed
+
+
+
+WARNING: Crash imminent!
+
+System failure immiNAAHUU@$@
+*&Y*R&+@%%@@%%^
+
+*End of log*

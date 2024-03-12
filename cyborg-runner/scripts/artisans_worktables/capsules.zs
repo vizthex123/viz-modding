@@ -59,7 +59,7 @@ RecipeBuilder.get("designer")
     [null, button, null],
     [<minecraft:gold_ingot>, ender_pearl, <minecraft:gold_ingot>],
     [null, iron, null]])
-  .addOutput(<capsule:capsule>.withTag({color: 13421772, size: 3}))
+  .addOutput(<capsule:capsule>.withTag({color: 16766720, size: 5}))
   .addRequirement(FTGU.allOf(["cyborg:crafting/designing", "cyborg:technology/capsules"]))
   .setName("capsule_gold")
   .create();
@@ -77,7 +77,7 @@ RecipeBuilder.get("designer")
 RecipeBuilder.get("designer")
   .setShaped([
     [null, <openblocks:big_button>, null],
-    [diamond, <minecraft:nether_star>, diamond],
+    [<pristeel:pristeel_ingot>, <minecraft:nether_star>, <pristeel:pristeel_ingot>],
     [null, diamond, null]])
   .addOutput(<capsule:capsule>.withTag({color: 16777215, size: 1, overpowered: 1}))
   .addRequirement(FTGU.allOf(["cyborg:crafting/designing", "cyborg:technology/capsules"]))

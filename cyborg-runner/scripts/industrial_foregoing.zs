@@ -146,33 +146,4 @@ recipes.removeShaped(<item>);
 recipes.removeShapeless(<item>);
 */
 
-
-/*
-# Change the recipes for Black Hole blocks
-recipes.remove(<industrialforegoing:black_hole_controller_reworked>);
-recipes.remove(<industrialforegoing:black_hole_tank>);
-recipes.remove(<industrialforegoing:black_hole_unit>);
-
-// Controller
-recipes.addShaped(<industrialforegoing:black_hole_controller_reworked>, [[<industrialforegoing:plastic>, <ore:gemBlockValuable>, <industrialforegoing:plastic>],
-                                    	       				                          [<bloodmagic:slate:2>, <storagedrawers:controller>, <bloodmagic:slate:2>],
-                                   	            				    	      [<botania:manaresource:7>, <thermalexpansion:frame>, <botania:manaresource:7>]]);
-// Tank
-recipes.addShaped(<industrialforegoing:black_hole_tank>, [[<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>],
-                                    	          			               [<botania:manaresource:7>, <enderstorage:ender_storage:1>, <botania:manaresource:7>],
-                                   	                			               [<theaurorian:ceruleanbucket>, <thermalexpansion:frame>, <theaurorian:ceruleanbucket>]]);
-// Unit (Chest)
-recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>],
-                                    	                  			              [<bloodmagic:slate:3>, <enderstorage:ender_storage>, <bloodmagic:slate:3>],
-                                   	             			              [<ore:advancedChest>, <thermalexpansion:frame>, <ore:advancedChest>]]);
-
-// Should fix recipe order
-recipes.removeShapeless(<industrialforegoing:black_hole_unit>);
-recipes.addShapeless(<industrialforegoing:black_hole_unit>, [<industrialforegoing:black_hole_unit>]);
-
-// Should fix recipe order
-recipes.removeShapeless(<industrialforegoing:black_hole_tank>);
-recipes.addShapeless(<industrialforegoing:black_hole_tank>, [<industrialforegoing:black_hole_tank>]);
-*/
-
 print("industrial_foregoing.zs loaded");

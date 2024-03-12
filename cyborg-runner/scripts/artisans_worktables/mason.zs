@@ -11,11 +11,28 @@ https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
 https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
 */
 
+var cobblestone = <minecraft:cobblestone>;
+
 var hammer = <ore:artisansHammer>;
 var sifter = <ore:artisansSifter>;
 
 var chisel = <ore:artisansChisel>;
 var file = <ore:artisansFile>;
+
+# New Research Table recipe
+recipes.remove(<ftgumod:research_table>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
+    [cobblestone, <ore:workbench>, cobblestone],
+    [cobblestone, cobblestone, cobblestone]])
+  .addTool(chisel, 20)
+  .addOutput(<ftgumod:research_table>)
+  .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
+  .setName("research_table")
+  .create();
+
+
 
 // Change the recipe for the Wetstone
 recipes.remove(<wetstone:wetstone>);
@@ -88,7 +105,7 @@ RecipeBuilder.get("mason")
 
 // Cobble > Gravel
 RecipeBuilder.get("mason")
-  .setShapeless([<minecraft:cobblestone>])
+  .setShapeless([cobblestone])
   .addTool(file, 10)
   .addOutput(<minecraft:gravel>)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
@@ -560,10 +577,10 @@ RecipeBuilder.get("mason")
   .setShapeless([<byg:hardeneddirt>])
   .setFluid(<liquid:water> * 500)
   .addTool(sifter, 35)
-  .addOutput(<minecraft:cobblestone>)
+  .addOutput(cobblestone)
   .setExtraOutputOne(dirt, 1.0)
   .setExtraOutputTwo(dirt, 0.75)
-  .setExtraOutputThree(<minecraft:cobblestone>, 0.75)
+  .setExtraOutputThree(cobblestone, 0.75)
   .addRequirement(FTGU.allOf(["cyborg:crafting/masonry"]))
   .setName("sift_hardened_dirt")
   .create();

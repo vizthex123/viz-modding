@@ -21,7 +21,8 @@ var plank = <ore:plankWood>;
 
 
 var basic = <artisanworktables:worktable:5>;
-
+var stone_brick = <ore:bricksStone>;
+var stone = <ore:stone>;
 
 var hammer = <ore:artisansHammer>;
 var cutters = <ore:artisansCutters>;
@@ -115,7 +116,7 @@ RecipeBuilder.get("basic")
   .setShaped([
     [null, <minecraft:stone_slab>|<minecraft:stone_slab:5>, null],
     [log, basic, log],
-    [<ore:stone>, null, <ore:stone>]])
+    [stone, null, stone]])
   .setFluid(<liquid:water> * 1000)
   .addTool(hammer, 20)
   .addOutput(<artisanworktables:worktable:2>)
@@ -127,8 +128,8 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [null, <minecraft:brick_block>|<minecraft:nether_brick>, null],
-    [<ore:bricksStone>, <artisanworktables:worktable:2>, <ore:bricksStone>],
-    [<ore:bricksStone>, null, <ore:bricksStone>]])
+    [stone_brick, <artisanworktables:worktable:2>, stone_brick],
+    [stone_brick, null, stone_brick]])
   .setFluid(<liquid:water> * 2000)
   .addTool(hammer, 25)
   .addTool(chisel, 10)
@@ -153,8 +154,8 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("basic")
   .setShaped([
     [iron, iron, iron],
-    [<ore:stone>, basic, <ore:stone>],
-    [<ore:stone>, null, <ore:stone>]])
+    [stone, basic, stone],
+    [stone, null, stone]])
   .setFluid(<liquid:lava> * 1000)
   .addTool(hammer, 35)
   .addOutput(<artisanworktables:worktable:3>)
@@ -166,8 +167,8 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("mason")
   .setShaped([
     [iron, iron, iron],
-    [<ore:bricksStone>, <artisanworktables:worktable:3>, <ore:bricksStone>],
-    [<ore:bricksStone>, null, <ore:bricksStone>]])
+    [stone_brick, <artisanworktables:worktable:3>, stone_brick],
+    [stone_brick, null, stone_brick]])
   .setFluid(<liquid:lava> * 2000)
   .addTool(hammer, 50)
   .addTool(cutters, 25)
@@ -180,7 +181,7 @@ RecipeBuilder.get("mason")
 RecipeBuilder.get("basic")
   .setShaped([
     [iron, iron, iron],
-    [<ore:stone>, <artisanworktables:worktable:3>, <ore:stone>],
+    [stone, <artisanworktables:worktable:3>, stone],
     [log, null, log]])
   .addTool(hammer, 50)
   .addOutput(<artisanworktables:worktable:6>)
@@ -205,8 +206,8 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [iron, iron, iron],
-    [<ore:stone>, <artisanworktables:worktable:6>, <ore:stone>],
-    [<ore:stone>, null, <ore:stone>]])
+    [stone, <artisanworktables:worktable:6>, stone],
+    [stone, null, stone]])
   .addTool(hammer, 50)
   .addTool(cutters, 25)
   .addOutput(<artisanworktables:workstation:6>)
@@ -256,8 +257,8 @@ RecipeBuilder.get("blacksmith")
 RecipeBuilder.get("basic")
   .setShaped([
     [<ore:paper>, <ore:paper>, <ore:paper>],
-    [log, basic, log],
-    [<ore:bricksStone>, null, <ore:bricksStone>]])
+    [stone_brick, basic, stone_brick],
+    [stone_brick, null, stone_brick]])
   .setSecondaryIngredients([<ore:dyeBlue>*3])
   .setFluid(<liquid:water> * 1000)
   .addTool(spanner, 25)

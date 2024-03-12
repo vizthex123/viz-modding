@@ -4,6 +4,7 @@ MADE BY: vizthex
 
 
 Non-pilot lore is written from the Runner's perspective.
+"No OTG!" message prints after 3 minutes
 
 How to use tellraw (make sure it's a team reward!):
 

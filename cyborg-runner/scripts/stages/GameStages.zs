@@ -17,7 +17,6 @@ mods.ItemStages.stageModItems("ceramics", "ceramics");
 
 mods.ItemStages.stageModItems("thermal_technology", "thermaldynamics");
 mods.ItemStages.stageModItems("thermal_technology", "thermalexpansion");
-mods.ItemStages.stageModItems("thermal_technology", "thermalfoundation");
 
 mods.ItemStages.stageModItems("base_defense", "ompd");
 mods.ItemStages.stageModItems("base_defense", "openmodularturrets");
@@ -32,6 +31,7 @@ mods.ItemStages.stageModItems("storage_compression", "refinedstoragerequestify")
 mods.ItemStages.stageModItems("storage_compression", "storagetech");
 
 mods.ItemStages.removeItemStage(<refinedstorage:silicon>);
+
 
 # Change item names if players don't have the stage unlocked
 /* old AE2 stuff in case i ever wanna replace RS again lol

@@ -29,20 +29,6 @@ var hammer = <ore:artisansHammer>;
 var cutters = <ore:artisansCutters>;
 
 
-// Miner's Ring
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<byg:chainplating>, <byg:chainplating>, <byg:chainplating>],
-    [<byg:chainplating>, <projectred-core:resource_item:104>, <byg:chainplating>],
-    [<byg:chainplating>, <byg:chainplating>, <byg:chainplating>]])
-  .addTool(cutters, 16)
-  .addOutput(<baubles:ring>)
-  .addRequirement(FTGU.allOf(["cyborg:crafting/smithing"]))
-  .setName("miners_ring")
-  .create();
-
-
-
 # Craft TE Alloys
 // Bronze
 RecipeBuilder.get("blacksmith")
