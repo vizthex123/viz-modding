@@ -1,5 +1,7 @@
 # Changes miscellanous recipes & whatnot
+
 print("misc.zs loading...");
+
 /*
 craftingTable.remove(<item>);
 craftingTable.removeByName("name");
@@ -16,13 +18,24 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-var amethyst = <item:minecraft:amethyst_shard>;
-var echo = <item:minecraft:echo_shard>;
-var gold = <item:minecraft:gold_ingot>;
-var lapis = <item:minecraft:lapis_lazuli>;
-var redstone = <item:minecraft:redstone>;
+val amethyst = <item:minecraft:amethyst_shard>;
+val echo = <item:minecraft:echo_shard>;
+val gold = <item:minecraft:gold_ingot>;
+val lapis = <item:minecraft:lapis_lazuli>;
+val redstone = <item:minecraft:redstone>;
 
-var wool = <tag:items:minecraft:wool>;
+val wool = <tag:items:minecraft:wool>;
+
+// Convert the Pancake Disc into Pancakes
+craftingTable.addShapeless("pancake_disc_to_pancakes", <item:supplementaries:pancake>*2, [<item:supplementaries:pancake_disc>]);
+
+// Turn Clay into Dripstone
+craftingTable.addShaped("pointed_dripstone", <item:minecraft:pointed_dripstone>*2, 
+    [[<item:minecraft:gravel>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]]);
+
+craftingTable.addShaped("dripstone", <item:minecraft:dripstone_block>*2, 
+    [[<item:minecraft:granite>, <item:minecraft:clay>],
+    [<item:minecraft:clay>, <item:minecraft:granite>]]);
 
 // Balance the Ring of Attraction's recipe a tad
 craftingTable.remove(<item:ring_of_attraction:ring_of_attraction>);
@@ -47,12 +60,6 @@ craftingTable.addShaped("angel_ring_echo", <item:doomangelring:angelring>,
     [[<item:minecraft:feather>, echo, <item:minecraft:feather>],
     [gold, <item:minecraft:elytra>, gold],
     [gold, gold, gold]]);
-
-// Dye from Berries
-craftingTable.addShapeless("brown_dye", <item:minecraft:brown_dye>, [<item:cinderscapes:bramble_berries>]);
-craftingTable.addShapeless("cyan_dye", <item:minecraft:cyan_dye>, [<item:nears:soul_berries>]);
-craftingTable.addShapeless("orange_dye", <item:minecraft:orange_dye>, [<item:minecraft:glow_berries>]);
-craftingTable.addShapeless("red_dye", <item:minecraft:red_dye>, [<item:minecraft:sweet_berries>]);
 
 // Change the recipe for Soul Berry Seeds
 craftingTable.remove(<item:nears:soul_seeds>);

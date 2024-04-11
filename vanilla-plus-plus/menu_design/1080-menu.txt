@@ -5,6 +5,8 @@ customization-meta {
   randomgroup = 1
   renderorder = background
   randommode = false
+  [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][req_id:2cc4cb36-ac5a-46d3-a394-7777363a52d01712730432279] = 1017
+  [loading_requirement:fancymenu_loading_requirement_is_fullscreen][requirement_mode:if_not][req_id:b75360e2-f757-4ca6-988d-f05f39ca822a1712730457593] = 
   randomonlyfirsttime = false
 }
 
@@ -17,10 +19,10 @@ customization {
   orientation = top-left
   hidden = false
   x = 2
-  width = 165
+  width = 114
   action = deep_customization_element:title_screen_branding
   actionid = e83bf813-d535-41f8-8224-cb61b4cee7571675121590820
-  y = 264
+  y = 258
   height = 10
 }
 
@@ -50,41 +52,40 @@ customization {
   orientation = mid-centered
   splash_color = #ffff00
   hidden = false
-  x = 154
+  x = 155
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
   actionid = b0f0253e-80a6-4c98-b98d-83be40f784221675121590820
-  y = -54
+  y = -43
   height = 30
 }
 
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;%btnaction_splitter_fm%
   backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
   hoverlabel = Discord
-  x = 132
+  x = 116
   width = 20
-  actionid = 050cc838-8c8f-40d7-8611-76443b2250151675121650017
   action = addbutton
-  y = 177
+  actionid = 050cc838-8c8f-40d7-8611-76443b2250151675121650017
+  y = 171
   backgroundnormal = config/fancymenu/customization/discord_logo.png
-  value = 
   height = 20
 }
 
 customization {
   path = config/fancymenu/customization/vpp_title.png
   orientation = top-left
-  x = 55
-  width = 400
+  x = 69
+  width = 350
   action = addtexture
   actionid = 718f110f-3c37-4f99-9e9c-6621344a85a11675121610446
-  y = 27
-  height = 70
+  y = 32
+  height = 60
 }
 

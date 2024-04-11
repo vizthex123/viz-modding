@@ -1,10 +1,42 @@
 # Adds tags to various items
+#priority 25
 
 print("0-tags.zs loading...");
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
+
+
+# Raw Meat and Seeds are in 0-tags-biomass.zs
+
+
+# Ash
+# Used to make Soap
+<tag:items:vanilla:ash>.add(<item:supplementaries:ash>);
+<tag:items:vanilla:ash>.add(<item:cinderscapes:ash_pile>);
+
+
+# Bark
+# Used to make Sticks
+val bark = <tag:items:vanilla:bark>;
+
+bark.add(<item:farmersdelight:tree_bark>);
+bark.add(<item:treebark:oak_bark>);
+bark.add(<item:treebark:spruce_bark>);
+bark.add(<item:treebark:birch_bark>);
+bark.add(<item:treebark:jungle_bark>);
+bark.add(<item:treebark:acacia_bark>);
+bark.add(<item:treebark:dark_oak_bark>);
+bark.add(<item:treebark:mangrove_bark>);
+bark.add(<item:treebark:crimson_bark>);
+bark.add(<item:treebark:warped_bark>);
+
+
+# Adds Raw Ores to the Ores tag so smelting can be unified
+<tag:items:minecraft:copper_ores>.add(<item:minecraft:raw_copper>);
+<tag:items:minecraft:iron_ores>.add(<item:minecraft:raw_iron>);
+<tag:items:minecraft:gold_ores>.add(<item:minecraft:raw_gold>);
 
 
 # Bowls
@@ -16,144 +48,184 @@ print("0-tags.zs loading...");
 # Mushrooms
 <tag:items:vanilla:mushroom>.add(<item:minecraft:brown_mushroom>);
 <tag:items:vanilla:mushroom>.add(<item:minecraft:red_mushroom>);
-<tag:items:vanilla:mushroom>.add(<item:minecraft:crimson_fungus>);
-<tag:items:vanilla:mushroom>.add(<item:minecraft:warped_fungus>);
-<tag:items:vanilla:mushroom>.add(<item:cinderscapes:umbral_fungus>);
+<tag:items:vanilla:mushroom>.add(<item:betterend:bolux_mushroom>);
+<tag:items:vanilla:mushroom>.add(<item:betterend:chorus_mushroom_raw>);
+<tag:items:vanilla:mushroom>.add(<item:betterend:small_amaranita_mushroom>);
+<tag:items:vanilla:mushroom>.add(<item:betternether:hook_mushroom>);
+<tag:items:vanilla:mushroom>.add(<item:betternether:orange_mushroom>);
+<tag:items:vanilla:mushroom>.add(<item:betternether:wall_mushroom_brown>);
+<tag:items:vanilla:mushroom>.add(<item:betternether:wall_mushroom_red>);
 
-<tag:items:vanilla:mushroom_stew_fungus>.add(<item:minecraft:brown_mushroom>);
-<tag:items:vanilla:mushroom_stew_fungus>.add(<item:minecraft:red_mushroom>);
-<tag:items:vanilla:mushroom_stew_fungus>.add(<item:cinderscapes:umbral_fungus>);
-
-
-
-# Crops
-<tag:items:c:crops>.add(<item:minecraft:beetroot>);
-<tag:items:c:crops>.add(<item:minecraft:carrot>);
-<tag:items:c:crops>.add(<item:minecraft:melon>);
-<tag:items:c:crops>.add(<item:minecraft:melon_slice>);
-<tag:items:c:crops>.add(<item:minecraft:pumpkin>);
-<tag:items:c:crops>.add(<item:minecraft:potato>);
-<tag:items:c:crops>.add(<item:minecraft:wheat>);
-
-
-<tag:items:c:crops/beetroot>.add(<item:minecraft:beetroot>);
-<tag:items:c:crops/carrot>.add(<item:minecraft:carrot>);
-<tag:items:c:crops/melon>.add(<item:minecraft:melon>);
-<tag:items:c:crops/melon>.add(<item:minecraft:melon_slice>);
-<tag:items:c:crops/pumpkin>.add(<item:minecraft:pumpkin>);
-<tag:items:c:crops/pumpkin>.add(<item:minecraft:carved_pumpkin>);
-<tag:items:c:crops/potato>.add(<item:minecraft:potato>);
-<tag:items:c:crops/wheat>.add(<item:minecraft:wheat>);
-<tag:items:c:crops/wheat>.add(<item:skylorlib:golden_wheat_item>);
-
-<tag:items:c:crops>.add(<item:farmersdelight:pumpkin_slice>);
-<tag:items:c:crops/pumpkin>.add(<item:farmersdelight:pumpkin_slice>);
-
-<tag:items:c:crops>.add(<item:nethersdelight:propelpearl>);
-<tag:items:c:crops/propelpearl>.add(<item:nethersdelight:propelpearl>);
-
-<tag:items:c:crops>.add(<item:nears:near>);
-<tag:items:c:crops>.add(<item:nears:faar>);
-<tag:items:c:crops>.add(<item:nears:soul_berries>);
-
-<tag:items:c:crops/near>.add(<item:nears:near>);
-<tag:items:c:crops/faar>.add(<item:nears:faar>);
-<tag:items:c:crops/soul_berry>.add(<item:nears:soul_berries>);
-
-
-# Seeds
-<tag:items:c:seeds>.add(<item:minecraft:beetroot_seeds>);
-<tag:items:c:seeds>.add(<item:minecraft:melon_seeds>);
-<tag:items:c:seeds>.add(<item:minecraft:pumpkin_seeds>);
-<tag:items:c:seeds>.add(<item:minecraft:wheat_seeds>);
-
-<tag:items:c:seeds/beetroot>.add(<item:minecraft:beetroot_seeds>);
-<tag:items:c:seeds/melon>.add(<item:minecraft:melon_seeds>);
-<tag:items:c:seeds/pumpkin>.add(<item:minecraft:pumpkin_seeds>);
-<tag:items:c:seeds/wheat>.add(<item:minecraft:wheat_seeds>);
-
-<tag:items:c:seeds>.add(<item:nears:faar_seeds>);
-<tag:items:c:seeds>.add(<item:nears:near_seeds>);
-<tag:items:c:seeds>.add(<item:nears:soul_seeds>);
-<tag:items:c:seeds/faar>.add(<item:nears:faar_seeds>);
-<tag:items:c:seeds/near>.add(<item:nears:near_seeds>);
-<tag:items:c:seeds/soul_berries>.add(<item:nears:soul_seeds>);
-
-<tag:items:c:seeds>.add(<item:skylorlib:golden_seeds_item>);
-<tag:items:c:seeds/wheat>.add(<item:skylorlib:golden_seeds_item>);
-<tag:items:c:seeds/golden_wheat>.add(<item:skylorlib:golden_seeds_item>);
+<tag:items:vanilla:fungus>.add(<item:minecraft:crimson_fungus>);
+<tag:items:vanilla:fungus>.add(<item:minecraft:warped_fungus>);
+<tag:items:vanilla:fungus>.add(<item:betterend:bolux_mushroom>);
+<tag:items:vanilla:fungus>.add(<item:betterend:chorus_mushroom_raw>);
+<tag:items:vanilla:fungus>.add(<item:betterend:small_amaranita_mushroom>);
+<tag:items:vanilla:fungus>.add(<item:cinderscapes:umbral_fungus>);
 
 
 
-# Biomass Materials
-<tag:items:vanilla:biomass_materials>.add(<tag:items:c:crops>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:c:dyes>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:c:seeds>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:flowers>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:minecraft:saplings>);
-<tag:items:vanilla:biomass_materials>.add(<tag:items:vanilla:mushroom>);
+# Pottery shards
+val shard = <tag:items:vanilla:shards>;
 
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:bamboo>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sugar_cane>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sweet_berries>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:glow_berries>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:honeycomb>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:honey_bottle>);
-
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:kelp>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:seagrass>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:sea_pickle>);
-
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:vine>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:twisting_vines>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:weeping_vines>);
-
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:chorus_fruit>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:carved_pumpkin>);
-<tag:items:vanilla:biomass_materials>.add(<item:minecraft:poisonous_potato>);
-
-<tag:items:vanilla:biomass_materials>.add(<item:ecologics:walnut>);
-
-<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:straw>);
-<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:tree_bark>);
-<tag:items:vanilla:biomass_materials>.add(<item:farmersdelight:rotten_tomato>);
+shard.add(<item:archeology:ender_dragon_shard>);
+shard.add(<item:archeology:creeper_shard>);
+shard.add(<item:archeology:shovel_shard>);
+shard.add(<item:archeology:temple_shard>);
+shard.add(<item:archeology:hoe_shard>);
+shard.add(<item:archeology:propagule_shard>);
+shard.add(<item:archeology:slime_shard>);
+shard.add(<item:archeology:diamond_shard>);
+shard.add(<item:archeology:sun_shard>);
+shard.add(<item:archeology:sword_shard>);
+shard.add(<item:archeology:axe_shard>);
+shard.add(<item:archeology:emerald_shard>);
+shard.add(<item:archeology:snowflake_shard>);
 
 
 
-# Raw Meats
-<tag:items:c:raw_fishes/pufferfish>.add(<item:minecraft:pufferfish>);
+# Lightning Rods
+# Mainly for the recycling recipe
+val lightning = <tag:items:vanilla:lightning_rods>;
 
-<tag:items:c:raw_fishes>.add(<item:culturaldelights:glow_squid>);
-<tag:items:c:raw_fishes>.add(<item:culturaldelights:squid>);
-<tag:items:c:raw_fishes/squid>.add(<item:culturaldelights:glow_squid>);
-<tag:items:c:raw_fishes/squid>.add(<item:culturaldelights:squid>);
-<tag:items:c:raw_fishes>.add(<item:ecologics:crab_meat>);
-<tag:items:c:raw_fishes/crab>.add(<item:ecologics:crab_meat>);
-
-<tag:items:c:raw_meat>.add(<tag:items:c:raw_fishes>);
-<tag:items:c:raw_meat>.add(<item:minecraft:pufferfish>);
-
-<tag:items:c:raw_meat>.add(<item:farmersdelight:ham>);
-<tag:items:c:raw_meat>.add(<item:culturaldelights:glow_squid>);
-<tag:items:c:raw_meat>.add(<item:culturaldelights:squid>);
-<tag:items:c:raw_meat>.add(<item:nethersdelight:hoglin_loin>);
-<tag:items:c:raw_meat>.add(<item:ecologics:crab_meat>);
-
-<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:bacon>);
-<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:chicken_cuts>);
-<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:mutton_chops>);
-<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:cod_slice>);
-<tag:items:minecraft:raw_meat_cuts>.add(<item:farmersdelight:salmon_slice>);
+lightning.add(<item:minecraft:lightning_rod>);
+lightning.add(<item:friendsandfoes:exposed_lightning_rod>);
+lightning.add(<item:friendsandfoes:weathered_lightning_rod>);
+lightning.add(<item:friendsandfoes:oxidized_lightning_rod>);
+lightning.add(<item:friendsandfoes:waxed_lightning_rod>);
+lightning.add(<item:friendsandfoes:waxed_exposed_lightning_rod>);
+lightning.add(<item:friendsandfoes:waxed_weathered_lightning_rod>);
+lightning.add(<item:friendsandfoes:waxed_oxidized_lightning_rod>);
 
 
+# Doors
+# Mainly for the recycling recipe
+val door = <tag:items:vanilla:copper_doors>;
+val trapdoor = <tag:items:vanilla:copper_trapdoors>;
 
-# Meaty Clump Materials
-<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:c:raw_meat>);
-#	<tag:items:vanilla:meaty_clump_materials>.add(<tag:items:c:raw_fishes>);
+door.add(<item:copperandtuffbackport:copper_door>);
+door.add(<item:copperandtuffbackport:exposed_copper_door>);
+door.add(<item:copperandtuffbackport:oxidized_copper_door>);
+door.add(<item:copperandtuffbackport:weathered_copper_door>);
+door.add(<item:copperandtuffbackport:waxed_copper_door>);
+door.add(<item:copperandtuffbackport:waxed_exposed_copper_door>);
+door.add(<item:copperandtuffbackport:waxed_oxidized_copper_door>);
+door.add(<item:copperandtuffbackport:waxed_weathered_copper_door>);
 
-<tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rabbit_foot>);
-<tag:items:vanilla:meaty_clump_materials>.add(<item:minecraft:rotten_flesh>);
-<tag:items:vanilla:meaty_clump_materials>.add(<item:magehand:flesh_hand_item>);
+trapdoor.add(<item:copperandtuffbackport:copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:exposed_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:oxidized_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:weathered_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:waxed_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:waxed_exposed_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:waxed_oxidized_copper_trapdoor>);
+trapdoor.add(<item:copperandtuffbackport:waxed_weathered_copper_trapdoor>);
+
+
+# Copper Pipes
+# Mainly for the recycling recipe
+val pipe = <tag:items:vanilla:copper_pipes>;
+
+pipe.add(<item:lunade:copper_pipe>);
+pipe.add(<item:lunade:exposed_copper_pipe>);
+pipe.add(<item:lunade:weathered_copper_pipe>);
+pipe.add(<item:lunade:oxidized_copper_pipe>);
+pipe.add(<item:lunade:waxed_copper_pipe>);
+pipe.add(<item:lunade:waxed_exposed_copper_pipe>);
+pipe.add(<item:lunade:waxed_weathered_copper_pipe>);
+pipe.add(<item:lunade:waxed_oxidized_copper_pipe>);
+pipe.add(<item:lunade:corroded_pipe>);
+
+pipe.add(<item:lunade:black_pipe>);
+pipe.add(<item:lunade:red_pipe>);
+pipe.add(<item:lunade:green_pipe>);
+pipe.add(<item:lunade:brown_pipe>);
+pipe.add(<item:lunade:blue_pipe>);
+pipe.add(<item:lunade:purple_pipe>);
+pipe.add(<item:lunade:cyan_pipe>);
+pipe.add(<item:lunade:light_gray_pipe>);
+pipe.add(<item:lunade:gray_pipe>);
+pipe.add(<item:lunade:pink_pipe>);
+pipe.add(<item:lunade:lime_pipe>);
+pipe.add(<item:lunade:yellow_pipe>);
+pipe.add(<item:lunade:light_blue_pipe>);
+pipe.add(<item:lunade:magenta_pipe>);
+pipe.add(<item:lunade:orange_pipe>);
+pipe.add(<item:lunade:white_pipe>);
+
+pipe.add(<item:lunade:glowing_black_pipe>);
+pipe.add(<item:lunade:glowing_red_pipe>);
+pipe.add(<item:lunade:glowing_green_pipe>);
+pipe.add(<item:lunade:glowing_brown_pipe>);
+pipe.add(<item:lunade:glowing_blue_pipe>);
+pipe.add(<item:lunade:glowing_purple_pipe>);
+pipe.add(<item:lunade:glowing_cyan_pipe>);
+pipe.add(<item:lunade:glowing_light_gray_pipe>);
+pipe.add(<item:lunade:glowing_gray_pipe>);
+pipe.add(<item:lunade:glowing_pink_pipe>);
+pipe.add(<item:lunade:glowing_lime_pipe>);
+pipe.add(<item:lunade:glowing_yellow_pipe>);
+pipe.add(<item:lunade:glowing_light_blue_pipe>);
+pipe.add(<item:lunade:glowing_magenta_pipe>);
+pipe.add(<item:lunade:glowing_orange_pipe>);
+pipe.add(<item:lunade:glowing_white_pipe>);
+
+
+
+# Copper Fittings
+# Mainly for the recycling recipe
+val fitting = <tag:items:vanilla:copper_fittings>;
+
+fitting.add(<item:lunade:copper_fitting>);
+fitting.add(<item:lunade:exposed_copper_fitting>);
+fitting.add(<item:lunade:weathered_copper_fitting>);
+fitting.add(<item:lunade:oxidized_copper_fitting>);
+fitting.add(<item:lunade:corroded_fitting>);
+
+fitting.add(<item:lunade:black_fitting>);
+fitting.add(<item:lunade:red_fitting>);
+fitting.add(<item:lunade:green_fitting>);
+fitting.add(<item:lunade:brown_fitting>);
+fitting.add(<item:lunade:blue_fitting>);
+fitting.add(<item:lunade:purple_fitting>);
+fitting.add(<item:lunade:cyan_fitting>);
+fitting.add(<item:lunade:light_gray_fitting>);
+fitting.add(<item:lunade:gray_fitting>);
+fitting.add(<item:lunade:pink_fitting>);
+fitting.add(<item:lunade:lime_fitting>);
+fitting.add(<item:lunade:yellow_fitting>);
+fitting.add(<item:lunade:light_blue_fitting>);
+fitting.add(<item:lunade:magenta_fitting>);
+fitting.add(<item:lunade:orange_fitting>);
+fitting.add(<item:lunade:white_fitting>);
+
+fitting.add(<item:lunade:glowing_black_fitting>);
+fitting.add(<item:lunade:glowing_red_fitting>);
+fitting.add(<item:lunade:glowing_green_fitting>);
+fitting.add(<item:lunade:glowing_brown_fitting>);
+fitting.add(<item:lunade:glowing_blue_fitting>);
+fitting.add(<item:lunade:glowing_purple_fitting>);
+fitting.add(<item:lunade:glowing_cyan_fitting>);
+fitting.add(<item:lunade:glowing_light_gray_fitting>);
+fitting.add(<item:lunade:glowing_gray_fitting>);
+fitting.add(<item:lunade:glowing_pink_fitting>);
+fitting.add(<item:lunade:glowing_lime_fitting>);
+fitting.add(<item:lunade:glowing_yellow_fitting>);
+fitting.add(<item:lunade:glowing_light_blue_fitting>);
+fitting.add(<item:lunade:glowing_magenta_fitting>);
+fitting.add(<item:lunade:glowing_orange_fitting>);
+fitting.add(<item:lunade:glowing_white_fitting>);
+
+
+
+# End discs
+# Converts into Ender Shards
+val end_disc = <tag:items:vanilla:end_discs>;
+
+end_disc.add(<item:betterend:music_disc_endseeker>);
+end_disc.add(<item:betterend:music_disc_eo_dracona>);
+end_disc.add(<item:betterend:music_disc_grasping_at_stars>);
+end_disc.add(<item:betterend:music_disc_strange_and_alien>);
 
 
 
@@ -164,5 +236,8 @@ print("0-tags.zs loading...");
 
 <tag:items:c:bread>.add(<item:skylorlib:golden_bread_item>);
 <tag:items:c:bread/golden>.add(<item:skylorlib:golden_bread_item>);
+
+<tag:items:c:slimeballs>.add(<item:hybrid-aquatic:glow_slime>);
+<tag:items:c:slime_balls>.add(<item:hybrid-aquatic:glow_slime>);
 
 print("0-tags.zs loaded");

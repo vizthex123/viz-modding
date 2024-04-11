@@ -19,27 +19,12 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+val stick = <tag:items:balm:wooden_rods>;
+val empty = <item:minecraft:air>;
+
 // Crying Obsidian -> Obsidian
-craftingTable.addShapeless("obsidian", <item:minecraft:obsidian>, [<item:minecraft:diamond_pickaxe>.anyDamage().transformDamage(5), <item:minecraft:crying_obsidian>]);
-
-// Uses for Glow Ink Sacs
-craftingTable.addShapeless("glow_sac_to_cyan_dye", <item:minecraft:cyan_dye>, [<item:minecraft:glow_ink_sac>]);
-craftingTable.addShapeless("glow_sac_to_ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
-
-// Slimeballs from Shards
-craftingTable.addShapeless("shards_to_slimeballs", <item:minecraft:slime_ball>*8, [<item:kubejs:biomass>|<item:kubejs:meaty_clump>, <item:minecraft:echo_shard>, <item:minecraft:amethyst_shard>]);
-
-// Upgrade the Baby Backpack to a Frayed one
-craftingTable.addShaped("baby_backpack_upgrade", <item:inmis:frayed_backpack>, 
-    [[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>],
-    [<item:minecraft:leather>, <item:inmis:baby_backpack>, <item:minecraft:leather>],
-    [<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]]);
-
-// Upgrade the Blazing Backpack to a Withered one
-craftingTable.addShaped("blazing_backpack_upgrade", <item:inmis:withered_backpack>, 
-    [[<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>],
-    [<tag:items:minecraft:soul_fire_base_blocks>, <item:inmis:blazing_backpack>, <tag:items:minecraft:soul_fire_base_blocks>],
-    [<item:minecraft:air>, <tag:items:minecraft:soul_fire_base_blocks>, <item:minecraft:air>]]);
+blastFurnace.addRecipe("blast_crying_obsidian", <item:minecraft:obsidian>, <item:minecraft:crying_obsidian>, 4.0, 100);
+blastFurnace.addRecipe("blast_blue_crying_obsidian", <item:minecraft:obsidian>, <item:betternether:blue_crying_obsidian>, 8.0, 100);
 
 // Logs -> Sticks
 craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16, 
@@ -49,9 +34,42 @@ craftingTable.addShaped("logs_to_sticks", <item:minecraft:stick>*16,
 // Saplings -> Sticks
 craftingTable.addShapeless("saplings_to_sticks", <item:minecraft:stick>, [<tag:items:minecraft:saplings>]);
 
+// Bark -> Sticks
+craftingTable.addShapeless("bark_to_sticks", <item:minecraft:stick>*2, [<tag:items:vanilla:bark>]);
+
+// Cobwebs -> Webs
+craftingTable.addShapeless("web_to_string", <item:minecraft:string>, [<item:minecraft:cobweb>]);
+
+// Tiny (Char)coal -> Torches
+craftingTable.addShaped("tiny_torch", <item:minecraft:torch>, 
+    [[<item:tinycoal:tinycharcoal>|<item:tinycoal:tinycoal>, <item:tinycoal:tinycharcoal>|<item:tinycoal:tinycoal>],
+    [stick, empty]]);
+
 // Tiny (Char)coal -> (Char)coal
-craftingTable.addShapeless("tiny_coal_smasher", <item:minecraft:coal>, [<item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>]);
-craftingTable.addShapeless("tiny_charcoal_smasher", <item:minecraft:charcoal>, [<item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>]);
+craftingTable.addShapeless("combine_tiny_coal", <item:minecraft:coal>, [<item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>]);
+
+craftingTable.addShapeless("combine_tiny_charcoal", <item:minecraft:charcoal>, [<item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>]);
+
+// Slimeballs from Echo and Amethyst Shards
+craftingTable.addShapeless("shards_to_slimeballs", <item:minecraft:slime_ball>*8, [<item:kubejs:biomass>|<item:kubejs:meaty_clump>, <item:minecraft:echo_shard>, <item:minecraft:amethyst_shard>]);
+
+// Add more uses for Glow Ink Sacs
+// Dye recipe is in dyes.zs
+craftingTable.addShapeless("glow_sac_to_ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
+
+// Upgrade the Baby Backpack to a Frayed one
+craftingTable.addShaped("baby_backpack_upgrade", <item:inmis:frayed_backpack>, 
+    [[empty, <item:minecraft:leather>, empty],
+    [<item:minecraft:leather>, <item:inmis:baby_backpack>, <item:minecraft:leather>],
+    [empty, <item:minecraft:leather>, empty]]);
+
+// Upgrade the Blazing Backpack to a Withered one
+craftingTable.addShaped("blazing_backpack_upgrade", <item:inmis:withered_backpack>, 
+    [[empty, <item:minecraft:nether_star>, empty],
+    [<tag:items:minecraft:soul_fire_base_blocks>, <item:inmis:blazing_backpack>, <tag:items:minecraft:soul_fire_base_blocks>],
+    [empty, <tag:items:minecraft:soul_fire_base_blocks>, empty]]);
+
+
 
 // Cheaper Chains
 craftingTable.remove(<item:minecraft:chain>);
@@ -59,48 +77,35 @@ craftingTable.remove(<item:charm:gold_chain>);
 craftingTable.remove(<item:pfm:iron_chain>);
 
 craftingTable.addShaped("chain", <item:minecraft:chain>, 
-    [[<item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>]]);
+    [[<tag:items:balm:iron_nuggets>],
+    [<tag:items:balm:iron_nuggets>],
+    [<tag:items:balm:iron_nuggets>]]);
 
 craftingTable.addShaped("iron_chain", <item:pfm:iron_chain>*2, 
-    [[<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>, <item:minecraft:iron_nugget>]]);
-craftingTable.addShapeless("iron_chain_combine", <item:pfm:iron_chain>, [<item:minecraft:chain>, <item:minecraft:iron_nugget>]);
+    [[<tag:items:balm:iron_nuggets>, <tag:items:balm:iron_nuggets>],
+    [<tag:items:balm:iron_nuggets>, <tag:items:balm:iron_nuggets>],
+    [<tag:items:balm:iron_nuggets>, <tag:items:balm:iron_nuggets>]]);
+
+craftingTable.addShapeless("iron_chain_combine", <item:pfm:iron_chain>, [<item:minecraft:chain>, <item:minecraft:chain>]);
 
 craftingTable.addShaped("gold_chain", <item:charm:gold_chain>, 
-    [[<item:minecraft:gold_nugget>],
-    [<item:minecraft:gold_nugget>],
-    [<item:minecraft:gold_nugget>]]);
+    [[<tag:items:balm:gold_nuggets>],
+    [<tag:items:balm:gold_nuggets>],
+    [<tag:items:balm:gold_nuggets>]]);
+
+craftingTable.addShaped("cincinnasite_chain_cheap", <item:betternether:cincinnasite_chain>, 
+    [[<item:betternether:cincinnasite_ingot>]]);
+
+craftingTable.addShaped("thallasium_chain", <item:betterend:thallasium_chain>, 
+    [[<item:betterend:thallasium_nugget>],
+    [<item:betterend:thallasium_nugget>],
+    [<item:betterend:thallasium_nugget>]]);
+
+craftingTable.addShaped("terminite_chain", <item:betterend:terminite_chain>, 
+    [[<item:betterend:terminite_nugget>],
+    [<item:betterend:terminite_nugget>],
+    [<item:betterend:terminite_nugget>]]);
 
 
-
-### Recipe Fixes ###
-## Adds tag support to recipes
-craftingTable.remove(<item:nears:soul_sundae>);
-craftingTable.remove(<item:nears:glowy_snack>);
-craftingTable.remove(<item:minecraft:rabbit_stew>);
-craftingTable.remove(<item:minecraft:mushroom_stew>);
-craftingTable.remove(<item:minecraft:beetroot_soup>);
-
-var bowl = <tag:items:vanilla:bowl>;
-var mushroom = <tag:items:vanilla:mushroom>;
-var mushroom2 = <tag:items:vanilla:mushroom_stew_fungus>;
-
-// Soul Sundae
-craftingTable.addShapeless("soul_sundae", <item:nears:soul_sundae>, [<tag:items:nears:sundae_soils>, <item:nears:faar>, <item:nears:soul_juice>, bowl]);
-
-// Glowy Snack
-craftingTable.addShapeless("glowy_snack", <item:nears:glowy_snack>, [<item:minecraft:glow_berries>, <item:nears:near>, bowl]);
-
-// Rabbit Stew
-craftingTable.addShapeless("rabbit_stew", <item:minecraft:rabbit_stew>, [<item:minecraft:baked_potato>, <item:minecraft:cooked_rabbit>, bowl, <item:minecraft:carrot>, mushroom]);
-
-// Mushroom Stew
-craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [bowl, mushroom2, mushroom2]);
-
-// Beetroot Soup
-craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [bowl, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>]);
 
 print("qol.zs loaded");

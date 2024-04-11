@@ -1,15 +1,14 @@
 # Adds items to the Compostor
 print("compost.zs loading...");
-
 /*
-composter.setValue(<item>, amount);
+composter.setValue(<item>, chance);
 
-"amount" being how much it fills up the compostor
+"chance" being the chance for it to fill a layer
 */
 
 # Biomass & Clump
-composter.setValue(<item:kubejs:biomass>, 0.7);
-composter.setValue(<item:kubejs:meaty_clump>, 0.65);
+composter.setValue(<item:kubejs:biomass>, 0.75);
+composter.setValue(<item:kubejs:meaty_clump>, 0.7);
 
 
 # Crops
