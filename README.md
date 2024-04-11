@@ -1,7 +1,7 @@
 # Radiance Modding Repository
 Welcome to the GitHub repository for all of my Minecraft modpacks! (and published scripts)
 
-Mods will have their own seperate repositories (since they're a bunch of code).
+Mods will have their own seperate repositories (since it's just a bunch of random files).
  
 This is where you'll report issues, make suggestions, etc. outside of the [Discord](https://discord.gg/NtwzA6X) (or CurseForge comments).
 
@@ -17,6 +17,6 @@ Official Discord Server (for all of my projects): https://discord.gg/NtwzA6X
 
 Modpack issue tracker: https://github.com/vizthex123/viz-projects/issues
 
-Wiki (for every project): https://raddev.fandom.com/wiki/Radiance_Modding_Wiki
+Wiki (for every project): https://github.com/vizthex123/viz-projects/wiki
 
-Trello boards (to-do lists) for all of my projects: https://trello.com/radiancedevelopment 
+Trello boards (to-do lists) for all of my projects: https://trello.com/w/radiancemodding 
