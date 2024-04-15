@@ -1,21 +1,38 @@
-# Name: LootRoulette.zs
-# Changes: Tooltips for Loot Roulette items, and display names
-# Script by vizthex
+# Changes things related to Loot Roulette (and houses most recipes that use it)
+# Nether Star recipe is in misc.zs
+print("LootRoulette.zs loading...");
 
-<LootRoulette:MaterialCache>.displayName = "Mystical Cache";
-<LootRoulette:MaterialCache>.addTooltip(format.gold("Contains Mystical Gems, which can be turned into coins"));
-<LootRoulette:MaterialCache>.addTooltip(format.gold("or used to craft various items"));
+val cache = <LootRoulette:MaterialCache>;
+val common = <LootRoulette:C>;
+val uncommon = <LootRoulette:U>;
+val rare = <LootRoulette:R>;
+val legendary = <LootRoulette:L>;
 
-<LootRoulette:C>.addTooltip(format.gold("Worth 500 Coins"));
-<LootRoulette:U>.addTooltip(format.gold("Worth 1,500 Coins"));
-<LootRoulette:R>.addTooltip(format.gold("Worth 5,000 Coins"));
-<LootRoulette:L>.addTooltip(format.gold("Worth 15,000 Coins"));
+val diamond_coin = <universalcoins:item.diamond_coin>;
+val obsidian_coin = <universalcoins:item.obsidian_coin>;
 
-<LootRoulette:C>.displayName = "Mystical Ruby";
-<LootRoulette:U>.displayName = "Mystical Sapphire";
-<LootRoulette:R>.displayName = "Mystical Amythest";
-<LootRoulette:L>.displayName = "Mystical Topaz";
+# Cache recipe
+recipes.addShaped(cache*4, [[diamond_coin, diamond_coin, diamond_coin],
+											      [diamond_coin, obsidian_coin, diamond_coin],
+											      [diamond_coin, diamond_coin, diamond_coin]]);
 
-recipes.addShaped(<LootRoulette:MaterialCache>*4, [[<universalcoins:item.obsidian_coin>, <universalcoins:item.diamond_coin>, <universalcoins:item.obsidian_coin>],
-                                            		                    [<universalcoins:item.diamond_coin>, <universalcoins:item.obsidian_coin>, <universalcoins:item.diamond_coin>],
- 		              		                    [<universalcoins:item.obsidian_coin>, <universalcoins:item.diamond_coin>, <universalcoins:item.obsidian_coin>]]);
+# Green Hearts
+val empty_canister = <TConstruct:heartCanister>;
+recipes.addShapeless(<TConstruct:heartCanister:5>, [diamond_coin, <TConstruct:heartCanister:3>, <TConstruct:heartCanister:1>]);
+recipes.addShapeless(<TConstruct:heartCanister:6>, [empty_canister, empty_canister, <TConstruct:heartCanister:5>, rare]);
+
+# Renames & Tooltips
+cache.displayName = "Mystical Cache";
+cache.addTooltip(format.gold("Contains Mystical Gems (used to craft various items)"));
+
+common.addTooltip(format.gold("Worth 500 Coins"));
+uncommon.addTooltip(format.gold("Worth 1,500 Coins"));
+rare.addTooltip(format.gold("Worth 5,000 Coins"));
+legendary.addTooltip(format.gold("Worth 15,000 Coins"));
+
+common.displayName = "Mystical Ruby";
+uncommon.displayName = "Mystical Sapphire";
+rare.displayName = "Mystical Amythest";
+legendary.displayName = "Mystical Topaz";
+
+print("LootRoulette.zs loaded");

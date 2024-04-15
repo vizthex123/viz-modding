@@ -1,50 +1,77 @@
 # Miscellaneous recipes
+print("misc.zs loading...");
 
-# Iridium Ore
-recipes.addShaped(<IC2:itemOreIridium>, [[<AWWayofTime:reinforcedSlate>, <IC2:itemUran235>, <Botania:manaResource>],
-                                                                                   [<IC2:itemUran238>, <LogisticsPipes:item.pipeComponents:2>,<IC2:itemUran238>],
- 		                                          [<ewysworkshop:WorkshopTableUpgrade>, <IC2:itemUran235>, <Thaumcraft:ItemShard:6>]]);
+val common = <LootRoulette:C>;
+val uncommon = <LootRoulette:U>;
+val rare = <LootRoulette:R>;
+val legendary = <LootRoulette:L>;
 
-# Dragon Egg
-recipes.remove(<minecraft:dragon_egg>);
-recipes.addShaped(<minecraft:dragon_egg>, [[<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>],
-                                                                                        [<Avaritia:Resource:1>, <Avaritia:Resource:4>,<Avaritia:Resource:1>],
- 		                                                [<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>]]);
+// Fix the Cardboard Sheet have a million recipes for no reason
+recipes.remove(<EMT:EMTItems:11>);
+recipes.addShaped(<EMT:EMTItems:11>, [[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
+																		[<ore:logWood>, <ore:logWood>, <ore:logWood>],
+																		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
 
-# Chance Icosahedron
-recipes.addShaped(<chancecubes:Chance_Icosahedron> * 16, [[<pandorasbox:pandorasBox>, <chancecubes:Chance_Cube>, <pandorasbox:pandorasBox>],
-                                                                                                                          [<chancecubes:Chance_Cube>, <Avaritia:Resource:7>, <chancecubes:Chance_Cube>],
- 		                                                                                  [<pandorasbox:pandorasBox>, <chancecubes:Chance_Cube>, <pandorasbox:pandorasBox>]]);
+// Convert Crafting Tables into vanilla ones
+recipes.addShapeless(<minecraft:crafting_table>, [<ore:craftingTableWood>, <ore:stickWood>]);
 
-# Craftable Nether Star recipes
+// Upgrade the Ore Converter into the Automatic one
+recipes.addShaped(<fodc:oreAutoconverter>, [[<minecraft:redstone>, <fodc:oreConverter>, <minecraft:redstone>],
+																			   [<ore:cobblestone>, <fodc:oreConvTable>, <ore:cobblestone>],
+																			   [<minecraft:redstone>, <ore:cobblestone>, <minecraft:redstone>]]);
+
+// Iridium Ore
+val diamond_coin = <universalcoins:item.diamond_coin>;
+recipes.addShaped(<IC2:itemOreIridium>, [[diamond_coin, legendary, diamond_coin],
+																		 [legendary, <IC2:itemUran235>, legendary],
+																		 [diamond_coin, legendary, diamond_coin]]);
+
+# Chance Cubes recipe changes
+val chance_cube = <chancecubes:Chance_Cube>;
+val pandoras_box = <pandorasbox:pandorasBox>;
+
+// Chance Cubes
+recipes.remove(chance_cube);
+recipes.addShaped(chance_cube, [[uncommon, common, uncommon],
+													       [common, <minecraft:lapis_block>, common],
+													       [uncommon, common, uncommon]]);
+
+// Chance Icosahedron
+recipes.addShaped(<chancecubes:Chance_Icosahedron>*16, [[pandoras_box, chance_cube, pandoras_box],
+																										   [chance_cube, <RandomThings:ingredient:6>, chance_cube],
+																										   [pandoras_box, chance_cube, pandoras_box]]);
+
+# Craftable Nether Star recipe changes
 recipes.remove(<craftnstar:starcore>);
 recipes.remove(<craftnstar:starbranch>);
-recipes.addShaped(<craftnstar:starbranch>, [[null, <LootRoulette:R>, null],
-                                                                                      [<minecraft:diamond>, <LootRoulette:L>, <minecraft:diamond>],
- 		                                              [<minecraft:diamond>, <minecraft:glowstone>, <minecraft:diamond>]]);
+recipes.remove(<minecraft:nether_star>);
 
-recipes.addShaped(<craftnstar:starcore>, [[<minecraft:glowstone>, <LootRoulette:L>, <minecraft:glowstone>],
-                                                                                 [<minecraft:diamond>, <minecraft:emerald>, <minecraft:diamond>],
- 		                                         [<minecraft:glowstone>, <LootRoulette:L>, <minecraft:glowstone>]]);
+val emerald = <minecraft:emerald>;
+val diamond = <ore:gemDiamond>;
 
-recipes.addShaped(<craftnstar:starcore>, [[<minecraft:glowstone>, <minecraft:diamond>, <minecraft:glowstone>],
-                                                                                 [<LootRoulette:L>, <minecraft:emerald>, <LootRoulette:L>],
- 		                                         [<minecraft:glowstone>, <minecraft:diamond>, <minecraft:glowstone>]]);
+val thaumium = <Thaumcraft:ItemResource:2>;
+val quicksilver = <Thaumcraft:ItemResource:3>;
 
-recipes.addShaped(<minecraft:nether_star>, [[<minecraft:glowstone>, <craftnstar:starbranch>, <minecraft:glowstone>],
-                                                                                       [<craftnstar:starbranch>, <craftnstar:starcore>, <craftnstar:starbranch>],
- 		                                               [<minecraft:glowstone>, <craftnstar:starbranch>, <minecraft:glowstone>]]);
+recipes.addShaped(<craftnstar:starbranch>, [[null, rare, null],
+																			[emerald, thaumium, emerald],
+																			[emerald, thaumium, emerald]]);
 
-# HQM Full Heart
-recipes.addShaped(<HardcoreQuesting:hearts:3>, [[null, <universalcoins:item.obsidian_coin>, null],
-                                                     	                                            [<universalcoins:item.obsidian_coin>, <universalcoins:item.obsidian_coin>, <universalcoins:item.obsidian_coin>],
- 		            	    	                        [null, <universalcoins:item.obsidian_coin>, null]]);
+recipes.addShaped(<craftnstar:starcore>, [[legendary, quicksilver, legendary],
+																		[quicksilver, diamond, quicksilver],
+																		[legendary, quicksilver, legendary]]);
 
-# Lore Expansion Journal
-recipes.addShapeless(<LoreExp:journal>, [<minecraft:book>, <universalcoins:item.obsidian_coin>]);
+recipes.addShaped(<minecraft:nether_star>, [[null, <craftnstar:starbranch>, null],
+																			  [<craftnstar:starbranch>, <craftnstar:starcore>, <craftnstar:starbranch>],
+																			  [null, <craftnstar:starbranch>, null]]);
 
-# Invalid Item Use
-recipes.addShapeless(<HardcoreQuesting:bags>, [<HardcoreQuesting:hqmInvalidItem>]);
+// Full Heart with coins
+val obsidian_coin = <universalcoins:item.obsidian_coin>;
+recipes.addShapeless(<HardcoreQuesting:bags:1>, [obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin]);
 
-# The One Ring use
-recipes.addShapeless(<HardcoreQuesting:bags:4>, [<EMT:BaseBaubles>]);
+// Invalid Item Use
+recipes.addShapeless(<HardcoreQuesting:bags:1>, [<HardcoreQuesting:hqmInvalidItem>]);
+
+// The One Ring use
+recipes.addShapeless(<HardcoreQuesting:bags:4>*4, [<EMT:BaseBaubles>]);
+
+print("misc.zs loaded");

@@ -1,26 +1,40 @@
 # Changes recipes for ProjectE's content
+print("ProjectE.zs loading...");
+
+val obsidian = <ore:obsidian>;
+val glowstone = <minecraft:glowstone>;
+
+val dark_matter= <ProjectE:item.pe_matter>;
+val dark_matter_block = <ProjectE:matter_block>;
+
+val terrasteel = <Botania:manaResource:4>;
+val reinforced_slate = <AWWayofTime:reinforcedSlate>;
+
+val thaumium = <Thaumcraft:ItemResource:2>;
+val quicksilver = <Thaumcraft:ItemResource:3>;
+
 // Philosopher's Stone
 recipes.remove(<ProjectE:item.pe_philosophers_stone>);
-recipes.addShaped(<ProjectE:item.pe_philosophers_stone>, [[<minecraft:emerald_block>, <minecraft:diamond_block>, <minecraft:emerald_block>],
-                                                                                                                     [<minecraft:diamond_block>, <minecraft:nether_star>, <minecraft:diamond_block>],
- 					                 [<minecraft:emerald_block>, <minecraft:diamond_block>, <minecraft:emerald_block>]]);
+recipes.addShaped(<ProjectE:item.pe_philosophers_stone>, [[thaumium, reinforced_slate, thaumium],
+																									    [reinforced_slate, <RedstoneArsenal:material:96>, reinforced_slate],
+																									    [thaumium, reinforced_slate, thaumium]]);
+
 // Transmutation Table
 recipes.remove(<ProjectE:transmutation_table>);
-recipes.addShaped(<ProjectE:transmutation_table>, [[<minecraft:nether_star>, <minecraft:golden_apple:1>, <minecraft:nether_star>],
-                                                                                                      [<minecraft:golden_apple:1>, <ProjectE:item.pe_philosophers_stone>,<minecraft:golden_apple:1>],
- 		                                                              [<minecraft:nether_star>, <minecraft:golden_apple:1>, <minecraft:nether_star>]]);
+recipes.addShaped(<ProjectE:transmutation_table>, [[quicksilver, terrasteel, quicksilver],
+																						  [terrasteel, <ProjectE:item.pe_philosophers_stone>, terrasteel],
+																						  [obsidian, obsidian, obsidian]]);
 
 // Transmutation Tablet (portable table)
 recipes.remove(<ProjectE:item.pe_transmutation_tablet>);
-recipes.addShaped(<ProjectE:item.pe_transmutation_tablet>, [[<ProjectE:matter_block:1>, <ProjectE:matter_block>, <ProjectE:matter_block:1>],
-                                                                                                                        [<ProjectE:matter_block>, <ProjectE:transmutation_table>, <ProjectE:matter_block>],
- 		                                                                               [<ProjectE:matter_block:1>, <ProjectE:matter_block>, <ProjectE:matter_block:1>]]);
+recipes.addShaped(<ProjectE:item.pe_transmutation_tablet>, [[dark_matter, dark_matter_block, dark_matter],
+																										   [dark_matter_block, <ProjectE:transmutation_table>, dark_matter_block],
+																										   [dark_matter, dark_matter_block, dark_matter]]);
+
 // Watch of Flowing Time
 recipes.remove(<ProjectE:item.pe_time_watch>);
-recipes.addShaped(<ProjectE:item.pe_time_watch>, [[<ProjectE:item.pe_matter:1>, <minecraft:obsidian>, <ProjectE:item.pe_matter>],
-                                                                                                     [<minecraft:glowstone>, <minecraft:clock>, <minecraft:glowstone>],
- 		                                                             [<ProjectE:item.pe_matter>, <minecraft:obsidian>, <ProjectE:item.pe_matter:1>]]);
+recipes.addShaped(<ProjectE:item.pe_time_watch>, [[dark_matter, obsidian, null],
+																						   [glowstone, <minecraft:clock>, glowstone],
+																						   [null, obsidian, dark_matter]]);
 
-recipes.addShaped(<ProjectE:item.pe_time_watch>, [[<ProjectE:item.pe_matter>, <minecraft:glowstone>, <ProjectE:item.pe_matter:1>],
-                                                                                                     [<minecraft:obsidian>, <minecraft:clock>, <minecraft:obsidian>],
- 		                                                             [<ProjectE:item.pe_matter:1>, <minecraft:glowstone>, <ProjectE:item.pe_matter>]]);
+print("ProjectE.zs loaded");
