@@ -1,6 +1,7 @@
 resourcePacks:["vanilla","Supplementaries Generated Pack","Default Seamless Resources","pfm-asset-resources","Fabric Mods","file/EnderEyes_1.19_v2.zip","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","file/STONEBORN - 1.19 - V3.2.1.zip","file/EmbellishedStone-1.19-1.0.0.zip","file/Vertical Nuggets 1.19.1 - 1.19.2.zip","charmonium/journeyman"]
-advancedItemTooltips:false
 chatHeightUnfocused:0.45
+advancedItemTooltips:false
+realmsNotifications:false
 tutorialStep:none
 key_Reload Menu | CTRL + ALT + :key.keyboard.unknown
 key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.unknown

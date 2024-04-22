@@ -25,6 +25,10 @@ craftingTable.removeByName("betternether:rail");
 craftingTable.removeByName("betternether:shield");
 */
 craftingTable.removeByName("charm:variant_chests/hopper");
+
+craftingTable.removeByName("cratedelight:minecraft/crafting/sugar_bag");
+craftingTable.removeByName("cratedelight:minecraft/crafting/gunpowder_bag");
+
 craftingTable.removeByName("leatheredboots:crafting/leathered_chainmail_boots");
 craftingTable.removeByName("leatheredboots:crafting/leathered_iron_boots");
 craftingTable.removeByName("leatheredboots:crafting/leathered_gold_boots");

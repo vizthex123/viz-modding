@@ -11,6 +11,11 @@ print("0-tags.zs loading...");
 # Raw Meat and Seeds are in 0-tags-biomass.zs
 
 
+# Eggs
+<tag:items:vanilla:eggs>.add(<item:minecraft:egg>);
+<tag:items:vanilla:eggs>.add(<item:minecraft:turtle_egg>);
+
+
 # Ash
 # Used to make Soap
 <tag:items:vanilla:ash>.add(<item:supplementaries:ash>);
@@ -239,5 +244,11 @@ end_disc.add(<item:betterend:music_disc_strange_and_alien>);
 
 <tag:items:c:slimeballs>.add(<item:hybrid-aquatic:glow_slime>);
 <tag:items:c:slime_balls>.add(<item:hybrid-aquatic:glow_slime>);
+
+<tag:items:c:furnaces>.add(<item:betterend:end_stone_furnace>);
+<tag:items:c:furnaces>.add(<item:betternether:basalt_furnace>);
+<tag:items:c:furnaces>.add(<item:betternether:blackstone_furnace>);
+<tag:items:c:furnaces>.add(<item:betternether:netherrack_furnace>);
+<tag:items:c:furnaces>.add(<item:nethersdelight:blackstone_furnace>);
 
 print("0-tags.zs loaded");

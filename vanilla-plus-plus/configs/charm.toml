@@ -66,7 +66,7 @@
 "ExtraWanderingTrades Enabled" = true
 #Extract enchantments from any enchanted item into an empty book using the grindstone.
 #The player must pay a cost (in xp levels) to extract enchantments from the item.
-"ExtractEnchantments Enabled" = true
+"ExtractEnchantments Enabled" = false
 #Potion effect particles are much less obtrusive by default and can optionally be entirely hidden.
 "GentlePotionParticles Enabled" = true
 #Goats have a chance to drop mutton when killed.
@@ -123,7 +123,7 @@
 "NoSpyglassScope Enabled" = true
 #Treasure enchantments such as Mending and Soul Speed are no longer tradeable with villagers.
 #This is an opinionated feature designed to force the player to explore and so is disabled by default.
-"NoTreasureEnchantmentTrading Enabled" = false
+"NoTreasureEnchantmentTrading Enabled" = true
 #Automatically opens double doors.
 "OpenBothDoors Enabled" = true
 #Parrots stay on your shoulder when jumping and falling. Crouch to make them dismount.
@@ -150,7 +150,7 @@
 "RepairTridentsFromShards Enabled" = true
 #The repsawn anchor can be used in the End.
 #This is an opinionated feature that changes core gameplay and so is disabled by default.
-"RespawnAnchorInTheEnd Enabled" = false
+"RespawnAnchorInTheEnd Enabled" = true
 #An item's repair cost is shown in their tooltip when looking at the anvil screen.
 "ShowRepairCost Enabled" = true
 #Drag and drop items into a shulkerbox from within your inventory.
@@ -318,7 +318,7 @@
 
 [GoatsDropMutton]
 	#Maximum pieces of mutton dropped when goat is killed.
-	"Maximum drops" = 2
+	"Maximum drops" = 3
 
 [HusksDropSand]
 	#Maximum sand dropped when husk is killed.

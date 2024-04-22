@@ -2,14 +2,14 @@
   "quivers": [
     {
       "name": "basic",
-      "rowWidth": 3,
+      "rowWidth": 1,
       "numberOfRows": 1,
       "isFireImmune": false,
       "openSound": "minecraft:item.armor.equip_leather"
     },
     {
       "name": "copper",
-      "rowWidth": 4,
+      "rowWidth": 3,
       "numberOfRows": 1,
       "isFireImmune": false,
       "openSound": "minecraft:item.armor.equip_iron"

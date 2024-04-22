@@ -1,0 +1,14 @@
+{
+  "blockChances": {
+    "entries": {
+      "minecraft:gold_block": 0.3,
+      "minecraft:iron_block": 0.3,
+      "minecraft:quartz_block": 0.3,
+      "minecraft:diamond_block": 0.15,
+	  "rosegoldequipment:rose_gold_block": 0.25,
+	  "betternether:cincinnasite_forged": 0.2,
+	  "betternether:nether_ruby_block": 0.1
+    },
+    "defaultBlock": "minecraft:iron_block"
+  }
+}

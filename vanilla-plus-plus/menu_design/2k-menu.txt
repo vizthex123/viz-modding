@@ -52,24 +52,23 @@ customization {
   orientation = mid-centered
   splash_color = #ffff00
   hidden = false
-  x = 154
+  x = 149
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
   actionid = b0f0253e-80a6-4c98-b98d-83be40f784221675121590820
-  y = -53
+  y = -54
   height = 30
 }
 
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink;%btnaction_splitter_fm%
+  buttonaction = openlink;https://discord.com/invite/NtwzA6X%btnaction_splitter_fm%
   backgroundhovered = config/fancymenu/customization/discord_logo.png
   label = 
   loopbackgroundanimations = true
-  hoverlabel = Discord
-  x = 132
+  x = 360
   width = 20
   action = addbutton
   actionid = 050cc838-8c8f-40d7-8611-76443b2250151675121650017
@@ -81,11 +80,11 @@ customization {
 customization {
   path = config/fancymenu/customization/vpp_title.png
   orientation = top-left
-  x = 87
+  x = 85
   width = 350
   action = addtexture
   actionid = 718f110f-3c37-4f99-9e9c-6621344a85a11675121610446
-  y = 35
+  y = 33
   height = 60
 }
 

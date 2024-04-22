@@ -26,6 +26,8 @@ val redstone = <item:minecraft:redstone>;
 
 val wool = <tag:items:minecraft:wool>;
 
+val empty = <item:minecraft:air>;
+
 // Convert the Pancake Disc into Pancakes
 craftingTable.addShapeless("pancake_disc_to_pancakes", <item:supplementaries:pancake>*2, [<item:supplementaries:pancake_disc>]);
 
@@ -40,9 +42,9 @@ craftingTable.addShaped("dripstone", <item:minecraft:dripstone_block>*2,
 // Balance the Ring of Attraction's recipe a tad
 craftingTable.remove(<item:ring_of_attraction:ring_of_attraction>);
 craftingTable.addShaped("echo_ring", <item:ring_of_attraction:ring_of_attraction>, 
-    [[redstone, redstone, lapis],
-    [redstone, echo, lapis],
-    [redstone, lapis, lapis]]);
+    [[empty, lapis, redstone],
+    [lapis, echo, lapis],
+    [empty, lapis, empty]]);
 
 craftingTable.addShaped("amethyst_ring", <item:ring_of_attraction:ring_of_attraction>, 
     [[redstone, redstone, redstone],

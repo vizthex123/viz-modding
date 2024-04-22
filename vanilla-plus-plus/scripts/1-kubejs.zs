@@ -35,9 +35,15 @@ craftingTable.addShapeless("disc_residue_to_coal", <item:minecraft:coal>*16, [<i
 # Craft Biomass & Meaty Clumps
 val organic = <tag:items:vanilla:biomass_materials>;
 val meat = <tag:items:vanilla:meaty_clump_materials>;
-craftingTable.addShapeless("biomass", <item:kubejs:biomass>, [organic, organic, organic, organic, organic, organic, organic, organic]);
-craftingTable.addShapeless("meaty_clump", <item:kubejs:meaty_clump>, [meat, meat, meat, meat, meat, meat, meat, meat]);
+craftingTable.addShaped("biomass", <item:kubejs:biomass>,
+    [[organic, organic, organic],
+    [organic, organic, organic],
+    [organic, organic, organic]]);
 
+craftingTable.addShaped("meaty_clump", <item:kubejs:meaty_clump>,
+    [[meat, meat, meat],
+    [meat, meat, meat],
+    [meat, meat, meat]]);
 
 # Craft Small Scrap into Scrap
 craftingTable.addShapeless("copper_scrap", <item:kubejs:copper_scrap>, [<item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>, <item:kubejs:small_copper_scrap>]);
@@ -86,7 +92,8 @@ blastFurnace.addRecipe("blast_gold_scrap", <item:minecraft:gold_ingot>, <item:ku
 blastFurnace.addRecipe("blast_diamond_scrap", <item:minecraft:diamond>, <item:kubejs:diamond_scrap>, 0.5, 100);
 
 # Tags
-<tag:items:balm:wooden_rods>.add(<item:kubejs:stone_stick>);
+<tag:items:c:wooden_rods>.add(<item:kubejs:stone_stick>);
+# <tag:items:balm:wooden_rods>.add(<item:kubejs:stone_stick>);
 <tag:items:balm:stone_rods>.add(<item:kubejs:stone_stick>);
 
 <tag:items:balm:gold_nuggets>.add(<item:kubejs:small_gold_scrap>);

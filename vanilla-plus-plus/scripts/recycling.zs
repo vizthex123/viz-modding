@@ -42,33 +42,11 @@ craftingTable.addShapeless("recycle_lead", <item:minecraft:string>*2, [<tag:item
 
 
 // Recycle Music Discs
-blastFurnace.addRecipe("recycle_music_disc", <item:kubejs:disc_residue>, <tag:items:minecraft:music_discs>, 5.0, 100);
+furnace.addRecipe("recycle_music_disc", <item:kubejs:disc_residue>, <tag:items:minecraft:music_discs>, 5.0, 200);
+blastFurnace.addRecipe("blast_recycle_music_disc", <item:kubejs:disc_residue>, <tag:items:minecraft:music_discs>, 5.0, 100);
 
 // Recycle Candles
 furnace.addRecipe("recycle_candles", <item:minecraft:honeycomb>, <tag:items:minecraft:candles>, 0.5, 100);
-
-
-
-### Untagged Recipes
-// Blast Golden Apples into Gold Scrap
-furnace.addRecipe("smelt_golden_apple", gold_scrap*8, <item:minecraft:golden_apple>, 2.0, 200);
-blastFurnace.addRecipe("blast_golden_apple", gold_scrap*8, <item:minecraft:golden_apple>, 2.0, 100);
-
-// Blast Enchanted Golden Apples into Gold Scrap
-blastFurnace.addRecipe("blast_enchanted_golden_apple", gold_scrap*64, <item:minecraft:enchanted_golden_apple>, 8.0, 100);
-
-// Blast Totems of Undying into Gold Scrap
-blastFurnace.addRecipe("blast_totem", gold_scrap*32, <item:minecraft:totem_of_undying>, 10.0, 200);
-
-// Blast Echo Shards into Diamond Scrap
-blastFurnace.addRecipe("blast_echo_shard", diamond_scrap, <item:minecraft:echo_shard>, 12.0, 400);
-
-// Blast Heart of the Sea into Diamond Scrap
-blastFurnace.addRecipe("blast_heart", diamond_scrap*8, <item:minecraft:heart_of_the_sea>, 20.0, 600);
-
-// Blast Sculk Catalysts & Shriekers into Echo Shards
-blastFurnace.addRecipe("blast_sculk_catalyst", <item:minecraft:echo_shard>, <item:minecraft:sculk_catalyst>, 16.0, 200);
-blastFurnace.addRecipe("blast_sculk_shrieker", <item:minecraft:echo_shard>, <item:minecraft:sculk_shrieker>, 32.0, 200);
 
 
 
@@ -79,7 +57,7 @@ blastFurnace.addRecipe("blast_recycle_amethyst_hand", <item:minecraft:amethyst_s
 
 // Recycle Ring of Attraction
 furnace.addRecipe("recycle_ring", <item:minecraft:lapis_lazuli>*2, <item:ring_of_attraction:ring_of_attraction>, 0.1, 200);
-blastFurnace.addRecipe("blast_recycle_ring", <item:minecraft:lapis_lazuli>*2, <item:ring_of_attraction:ring_of_attraction>, 0.1, 100);
+blastFurnace.addRecipe("blast_recycle_ring", <item:minecraft:redstone>*3, <item:ring_of_attraction:ring_of_attraction>, 0.1, 100);
 
 
 

@@ -161,9 +161,12 @@ iron.add(<tag:items:supplementaries:candle_holders>);
 // Must be worth < 3 nuggets to gain this tag
 val small_iron = <tag:items:vanilla:meltable_iron_small>;
 
-small_iron.add(<item:cookingforblockheads:tool_rack>);
 small_iron.add(<item:minecraft:chain>);
+small_iron.add(<item:minecraft:iron_bars>);
 small_iron.add(<item:minecraft:rail>);
+
+small_iron.add(<item:cookingforblockheads:tool_rack>);
+
 small_iron.add(<item:supplementaries:sconce>);
 small_iron.add(<item:supplementaries:sconce_lever>);
 small_iron.add(<item:supplementaries:sconce_soul>);
@@ -203,6 +206,7 @@ gold.add(<item:minecraft:golden_hoe>);
 gold.add(<item:minecraft:clock>);
 gold.add(<item:minecraft:gilded_blackstone>);
 gold.add(<item:minecraft:glistering_melon_slice>);
+gold.add(<item:minecraft:golden_apple>);
 gold.add(<item:minecraft:golden_carrot>);
 gold.add(<item:minecraft:light_weighted_pressure_plate>);
 gold.add(<item:minecraft:powered_rail>);
@@ -278,7 +282,6 @@ diamond.add(<item:betternether:cincinnasite_axe_diamond>);
 
 diamond.add(<item:minecraft:enchanting_table>);
 diamond.add(<item:minecraft:jukebox>);
-diamond.add(<item:minecraft:recovery_compass>);
 
 diamond.add(<item:betterend:diamond_hammer>);
 

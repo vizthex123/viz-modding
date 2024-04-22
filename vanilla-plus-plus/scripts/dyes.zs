@@ -17,6 +17,7 @@ craftingTable.addShapeless("white_dye", <item:minecraft:white_dye>, [<tag:items:
 # Orange
 craftingTable.remove(<item:minecraft:orange_dye>);
 craftingTable.addShapeless("orange_dye", <item:minecraft:orange_dye>, [<tag:items:vanilla:orange_dye_materials>]);
+furnace.addRecipe("mushroom_orange", <item:minecraft:orange_dye>, <item:betternether:orange_mushroom>|<item:betterend:bolux_mushroom>, 0.1, 100);
 
 
 # Magenta
@@ -42,6 +43,7 @@ craftingTable.addShapeless("quadruple_yellow_dye", <item:minecraft:yellow_dye>*4
 craftingTable.remove(<item:minecraft:pink_dye>);
 craftingTable.addShapeless("pink_dye", <item:minecraft:pink_dye>, [<tag:items:vanilla:pink_dye_materials>]);
 craftingTable.addShapeless("double_pink_dye", <item:minecraft:pink_dye>*2, [<tag:items:vanilla:pink_dye_materials_double>]);
+furnace.addRecipe("mushroom_pink", <item:minecraft:pink_dye>, <item:betternether:hook_mushroom>, 0.1, 100);
 
 
 # Gray
@@ -57,11 +59,14 @@ craftingTable.addShapeless("light_gray_dye", <item:minecraft:light_gray_dye>, [<
 # Cyan
 craftingTable.remove(<item:minecraft:cyan_dye>);
 craftingTable.addShapeless("cyan_dye", <item:minecraft:cyan_dye>, [<tag:items:vanilla:cyan_dye_materials>]);
+furnace.addRecipe("mushroom_cyan", <item:minecraft:cyan_dye>, <item:minecraft:warped_fungus>, 0.1, 200);
 
 
 # Purple
 craftingTable.remove(<item:minecraft:purple_dye>);
 craftingTable.addShapeless("purple_dye", <item:minecraft:purple_dye>, [<tag:items:vanilla:purple_dye_materials>]);
+furnace.addRecipe("mushroom_purple", <item:minecraft:purple_dye>, <item:cinderscapes:umbral_fungus>, 0.1, 100);
+
 
 # Blue
 craftingTable.remove(<item:minecraft:blue_dye>);
@@ -71,6 +76,7 @@ craftingTable.addShapeless("blue_dye", <item:minecraft:blue_dye>, [<tag:items:va
 # Brown
 craftingTable.remove(<item:minecraft:brown_dye>);
 craftingTable.addShapeless("brown_dye", <item:minecraft:brown_dye>, [<tag:items:vanilla:brown_dye_materials>]);
+furnace.addRecipe("mushroom_brown", <item:minecraft:brown_dye>, <item:minecraft:brown_mushroom>, 0, 100);
 
 
 # Green
@@ -82,6 +88,7 @@ craftingTable.addShapeless("green_dye", <item:minecraft:green_dye>, [<tag:items:
 craftingTable.remove(<item:minecraft:red_dye>);
 craftingTable.addShapeless("red_dye", <item:minecraft:red_dye>, [<tag:items:vanilla:red_dye_materials>]);
 craftingTable.addShapeless("double_red_dye", <item:minecraft:red_dye>*2, [<tag:items:vanilla:red_dye_materials_double>]);
+furnace.addRecipe("mushroom_red", <item:minecraft:red_dye>, <item:minecraft:red_mushroom>|<item:minecraft:crimson_fungus>|<item:betterend:small_amaranita_mushroom>, 0.1, 100);
 
 
 # Black

@@ -41,20 +41,22 @@ craftingTable.addShapeless("bark_to_sticks", <item:minecraft:stick>*2, [<tag:ite
 craftingTable.addShapeless("web_to_string", <item:minecraft:string>, [<item:minecraft:cobweb>]);
 
 // Tiny (Char)coal -> Torches
+val tiny_coal = <item:tinycoal:tinycoal>;
+val tiny_charcoal = <item:tinycoal:tinycharcoal>;
+
 craftingTable.addShaped("tiny_torch", <item:minecraft:torch>, 
-    [[<item:tinycoal:tinycharcoal>|<item:tinycoal:tinycoal>, <item:tinycoal:tinycharcoal>|<item:tinycoal:tinycoal>],
+    [[tiny_charcoal|tiny_coal, tiny_charcoal|tiny_coal],
     [stick, empty]]);
 
 // Tiny (Char)coal -> (Char)coal
-craftingTable.addShapeless("combine_tiny_coal", <item:minecraft:coal>, [<item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>, <item:tinycoal:tinycoal>]);
+craftingTable.addShapeless("combine_tiny_coal", <item:minecraft:coal>, [tiny_coal, tiny_coal, tiny_coal, tiny_coal, tiny_coal, tiny_coal, tiny_coal, tiny_coal]);
 
-craftingTable.addShapeless("combine_tiny_charcoal", <item:minecraft:charcoal>, [<item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>, <item:tinycoal:tinycharcoal>]);
+craftingTable.addShapeless("combine_tiny_charcoal", <item:minecraft:charcoal>, [tiny_charcoal, tiny_charcoal, tiny_charcoal, tiny_charcoal, tiny_charcoal, tiny_charcoal, tiny_charcoal, tiny_charcoal]);
 
 // Slimeballs from Echo and Amethyst Shards
 craftingTable.addShapeless("shards_to_slimeballs", <item:minecraft:slime_ball>*8, [<item:kubejs:biomass>|<item:kubejs:meaty_clump>, <item:minecraft:echo_shard>, <item:minecraft:amethyst_shard>]);
 
-// Add more uses for Glow Ink Sacs
-// Dye recipe is in dyes.zs
+// Convert Glow Ink Sacs into regular ones
 craftingTable.addShapeless("glow_sac_to_ink_sac", <item:minecraft:ink_sac>*2, [<item:minecraft:glow_ink_sac>, <item:minecraft:glow_ink_sac>]);
 
 // Upgrade the Baby Backpack to a Frayed one

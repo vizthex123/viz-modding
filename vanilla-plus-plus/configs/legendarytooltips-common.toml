@@ -41,8 +41,8 @@
 	#    NBT tag - & followed by tag name and optional comparator (=, >, <, or !=) and value, in the format <tag><comparator><value> or just <tag>.  Examples: "&Damage=0", "&Tier>1", "&map!=128", "&Enchantments"
 	[client.definitions]
 		level0_entries = ["!epic", "@dragonloot", "techreborn:industrial_machine_frame"]
-		level1_entries = ["!rare", "minecraft:heart_of_the_sea", "minecraft:totem_of_undying", "techreborn:advanced_machine_frame"]
-		level2_entries = ["!uncommon", "minecraft:echo_shard", "kubejs:diamond_scrap", "kubejs:small_diamond_scrap"]
+		level1_entries = ["!rare", "%netherite", "minecraft:heart_of_the_sea", "minecraft:totem_of_undying", "kubejs:disc_residue", "techreborn:advanced_machine_frame"]
+		level2_entries = ["!uncommon", "%diamond", "minecraft:echo_shard", "@skylib"]
 		level3_entries = []
 		level4_entries = []
 		level5_entries = []

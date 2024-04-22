@@ -1,6 +1,6 @@
 # Fixes various recipes by using tags instead of items
 
-print("recipe-tag-fixes.zs loading...");
+print("recipe_fixes.zs loading...");
 
 /*
 craftingTable.remove(<item>);
@@ -20,6 +20,26 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 
 val iron = <tag:items:balm:iron_ingots>;
 val empty = <item:minecraft:air>;
+
+
+# Paper with Bark
+val bark = <tag:items:vanilla:bark>;
+craftingTable.removeByName("farmersdelight:paper_from_tree_bark");
+craftingTable.addShaped("bark_paper", <item:minecraft:paper>, 
+    [[bark, bark, bark]]);
+
+
+# Tag support for Organic Compost
+val bone_meal = <item:minecraft:bone_meal>;
+val dirt = <item:minecraft:dirt>|<item:minecraft:rooted_dirt>|<item:minecraft:podzol>;
+val rotten_flesh = <item:minecraft:rotten_flesh>;
+val straw = <tag:items:supplementaries:straw>;
+
+craftingTable.remove(<item:farmersdelight:organic_compost>);
+craftingTable.addShapeless("organic_compost", <item:farmersdelight:organic_compost>, [dirt, bone_meal, bone_meal, bark, bark, bark, bark, straw, straw]);
+
+craftingTable.addShapeless("organic_compost_flesh", <item:farmersdelight:organic_compost>, [dirt, rotten_flesh, rotten_flesh, rotten_flesh, bone_meal, bone_meal, bone_meal, straw, straw]);
+
 
 # Make Soap with any Ash and Meat
 val ash = <tag:items:vanilla:ash>;
@@ -92,6 +112,12 @@ craftingTable.addShapeless("mushroom_stew", <item:minecraft:mushroom_stew>, [bow
 
 // Beetroot Soup
 craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [bowl, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>]);
+
+// Make Pumpkin Pie use either type & the egg tag
+craftingTable.remove(<item:minecraft:pumpkin_pie>);
+craftingTable.addShapeless("pumpkin_pie", <item:minecraft:pumpkin_pie>, [<item:minecraft:pumpkin>|<item:minecraft:carved_pumpkin>, <tag:items:vanilla:eggs>, <item:minecraft:sugar>]);
+
+
 
 // Soul Sundae
 craftingTable.addShapeless("soul_sundae", <item:nears:soul_sundae>, [<tag:items:nears:sundae_soils>, <item:nears:faar>, <item:nears:soul_juice>, bowl]);
@@ -187,51 +213,4 @@ craftingTable.addShaped("exotic_roll_medley", <item:culturaldelights:exotic_roll
 craftingTable.removeByName("nethersdelight:warped_moldy_meat");
 craftingTable.addShapeless("warped_moldy_meat", <item:nethersdelight:warped_moldy_meat>, [<item:nethersdelight:hoglin_sirloin>, <item:minecraft:warped_roots>, <item:minecraft:warped_roots>, bowl]);
 
-
-
-# Make all ore smelting use tags
-val copper_ore = <tag:items:minecraft:copper_ores>;
-val iron_ore = <tag:items:minecraft:iron_ores>;
-val gold_ore = <tag:items:minecraft:gold_ores>;
-val diamond_ore = <tag:items:minecraft:diamond_ores>;
-val emerald_ore = <tag:items:minecraft:emerald_ores>;
-
-# Removals are in 1-kubejs.zs to prevent conflicts with the scrap recipes
-
-furnace.addRecipe("copper_ingot", <item:minecraft:copper_ingot>, copper_ore, 0.5, 200);
-blastFurnace.addRecipe("blast_copper_ingot", <item:minecraft:copper_ingot>, copper_ore, 0.5, 100);
-
-furnace.addRecipe("iron_ingot", <item:minecraft:iron_ingot>, iron_ore, 0.7, 200);
-blastFurnace.addRecipe("blast_iron_ingot", <item:minecraft:iron_ingot>, iron_ore, 0.7, 100);
-
-furnace.addRecipe("gold_ingot", <item:minecraft:gold_ingot>, gold_ore, 1.5, 200);
-blastFurnace.addRecipe("blast_gold_ingot", <item:minecraft:gold_ingot>, gold_ore, 1.5, 100);
-
-furnace.addRecipe("diamond", <item:minecraft:diamond>, diamond_ore, 2.0, 200);
-blastFurnace.addRecipe("blast_diamond", <item:minecraft:diamond>, diamond_ore, 2.0, 100);
-
-furnace.addRecipe("emerald", <item:minecraft:emerald>, emerald_ore, 3.0, 200);
-blastFurnace.addRecipe("blast_emerald", <item:minecraft:emerald>, emerald_ore, 3.0, 100);
-
-
-
-# Ores no sane person would smelt but I'll fix them anyway to be consistent
-
-val coal_ore = <tag:items:minecraft:coal_ores>;
-val lapis_ore = <tag:items:minecraft:lapis_ores>;
-val redstone_ore = <tag:items:minecraft:redstone_ores>;
-val quartz_ore = <tag:items:c:quartz_ores>;
-
-furnace.addRecipe("coal", <item:minecraft:coal>, coal_ore, 0.1, 200);
-blastFurnace.addRecipe("blast_coal", <item:minecraft:coal>, coal_ore, 0.1, 100);
-
-furnace.addRecipe("lapis", <item:minecraft:lapis_lazuli>, lapis_ore, 0.35, 200);
-blastFurnace.addRecipe("blast_lapis", <item:minecraft:lapis_lazuli>, lapis_ore, 0.35, 100);
-
-furnace.addRecipe("redstone", <item:minecraft:redstone>, redstone_ore, 0.65, 200);
-blastFurnace.addRecipe("blast_redstone", <item:minecraft:redstone>, redstone_ore, 0.65, 100);
-
-furnace.addRecipe("quartz", <item:minecraft:quartz>, quartz_ore, 0.25, 200);
-blastFurnace.addRecipe("blast_quartz", <item:minecraft:quartz>, quartz_ore, 0.25, 100);
-
-print("recipe-tag-fixes.zs loaded");
+print("recipe_fixes.zs loaded");
