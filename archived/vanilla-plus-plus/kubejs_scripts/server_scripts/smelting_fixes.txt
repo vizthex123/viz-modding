@@ -1,0 +1,18 @@
+// Fixes smelting recipes
+ServerEvents.tags("item", e => {
+
+    // Add tag to ores so recipes can be unified
+    e.add("minecraft:copper_ores", ["raw_copper"])
+    e.add("minecraft:iron_ores", ["raw_iron"])
+    e.add("minecraft:gold_ores", ["raw_gold"])
+
+})
+
+
+
+ServerEvents.recipes(e => {
+
+    e.remove({type: "smelting", output: "copper_ingot"})
+    e.smelting("copper_ingot", "#minecraft:copper_ores", 0.5).id("kubejs:smelt_copper")
+
+})

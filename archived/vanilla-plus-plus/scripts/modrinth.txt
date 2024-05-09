@@ -1,0 +1,11 @@
+mods to remove before uploading:
+
+- clickable advancements
+- cupboard
+- nether's delight
+- smooth chunk save
+
+- stoneborn modded compat
+
+
+be sure to disable the nether's delight script as well.

@@ -1,0 +1,10 @@
+// Removes recipes
+ServerEvents.tags("item", e => {
+
+    e.remove({id: "farmersdelight:cutting/cherry_log"})
+    e.remove({id: "farmersdelight:cutting/cherry_wood"})
+    e.remove({id: "rosegoldequipment:rose_golden_hoe"})
+
+    e.remove({type: "crafting_shapeless", output: "nyfsquiver:silver_quiver"})
+
+})

@@ -1,0 +1,9 @@
+{
+	"vanilla.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, edit the config file.",
+	"vanilla.tip.cooldown": "Unlike my other modpacks, you unfortunately have to suffer with the combat cooldown until I can find a mod to balance axe damage.",
+	"vanilla.tip.mouse_tweaks": "Remember that Mouse Tweaks is installed, so you can shift+click and drag the mouse to mass-move items (and more).",
+	"vanilla.tip.recipes": "Due my addiction to Quality-of-Life features, there are plenty of alternate recipes avaliable. Be sure to check REI whenever you craft something.",
+	"vanilla.tip.rei": "Flip through REI if you want to find the full list of mods. Some of them might add a feature or block you'd be interested in.",
+	"vanilla.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server (same for reporting issues)",
+	"vanilla.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."
+}

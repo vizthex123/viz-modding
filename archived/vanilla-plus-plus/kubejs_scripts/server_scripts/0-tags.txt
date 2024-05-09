@@ -1,0 +1,10 @@
+// Adds tags to items
+ServerEvents.tags("item", e => {
+
+    // Custom
+    e.add("vanilla:ash", ["cinderscapes:ash_pile", "supplementaries:ash"])
+    e.add("vanilla:bark", ["farmersdelight:tree_bark", "treebark:acacia_bark", "treebark:birch_bark", "treebark:crimson_bark", "treebark:dark_oak_bark", "treebark:jungle_bark", "treebark:mangrove_bark", "treebark:oak_bark", "treebark:spruce_bark", "treebark:warped_bark"])
+    e.add("vanilla:eggs", ["egg", "turtle_egg"])
+
+
+})
