@@ -1,0 +1,74 @@
+{
+"content": {
+	"sherd": {
+		"type": "item_tag",
+		"rarity": "COMMON",
+			"content": "minecraft:decorated_pot_sherds",
+			"amount": {
+				"min": 4,
+				"max": 8
+			},
+		"unitWorth": 200
+	},
+	"submarine_wheel": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+			"content": "alexscaves:game_controller",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 10000
+	},
+	"occult_gem": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "alexscaves:occult_gem",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+		"unitWorth": 1600
+	},
+	"pure_darkness": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "alexscaves:pure_darkness",
+			"amount": {
+				"min": 3,
+				"max": 9
+			},
+		"unitWorth": 5000
+	},
+	"artifact_shard": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:artifact_shards",
+			"amount": {
+				"min": 1,
+				"max": 3
+			},
+		"unitWorth": 1000
+	},
+	"unidentified_artifact": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "betterarcheology:unidentified_artifact",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 9000
+	},
+	"forgotten_hat": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "quark:forgotten_hat",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 12000
+	}
+  }
+}

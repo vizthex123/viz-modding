@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"caving"
+	],
+	"rewards": [
+		"caving_rewards",
+		"money"
+	]
+}

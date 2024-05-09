@@ -1,0 +1,10 @@
+{
+	"objectives": [
+		"paleontology_objectives",
+		"fossils"
+	],
+	"rewards": [
+		"history_rewards",
+		"money"
+	]
+}

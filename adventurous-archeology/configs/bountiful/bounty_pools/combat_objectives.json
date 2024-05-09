@@ -1,0 +1,134 @@
+{
+"content": {
+	"giant_tooth": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "mobcompack:giant_tooth",
+			"amount": {
+				"min": 1,
+				"max": 4
+		},
+		"unitWorth": 350
+	},
+	"rose_gelball": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "mobcompack:rose_gelball",
+			"amount": {
+				"min": 1,
+				"max": 2
+		},
+		"unitWorth": 300
+	},
+	"phantom_membrane": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "minecraft:phantom_membrane",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+		"unitWorth": 500
+	},
+	"zombie": {
+		"type": "entity",
+		"rarity": "COMMON",
+			"content": "minecraft:zombie",
+			"amount": {
+				"min": 1,
+				"max": 10
+		},
+		"unitWorth": 125
+	},
+	"husk": {
+		"type": "entity",
+		"rarity": "UNCOMMON",
+			"content": "minecraft:husk",
+			"amount": {
+				"min": 3,
+				"max": 7
+		},
+		"unitWorth": 150
+	},
+	"skeleton": {
+		"type": "entity",
+		"rarity": "COMMON",
+			"content": "minecraft:skeleton",
+			"amount": {
+				"min": 2,
+				"max": 12
+		},
+		"unitWorth": 200
+	},
+	"stray": {
+		"type": "entity",
+		"rarity": "RARE",
+			"content": "minecraft:stray",
+			"amount": {
+				"min": 1,
+				"max": 3
+		},
+		"unitWorth": 300
+	},
+	"pillager": {
+		"type": "entity",
+		"rarity": "RARE",
+			"content": "minecraft:pillager",
+			"amount": {
+				"min": 1,
+				"max": 2
+		},
+		"unitWorth": 350
+	},
+	"vincidator": {
+		"type": "entity",
+		"rarity": "RARE",
+			"content": "minecraft:vincidator",
+			"amount": {
+				"min": 1,
+				"max": 2
+		},
+		"unitWorth": 500
+	},
+	"illusioner": {
+		"type": "entity",
+		"rarity": "EPIC",
+			"content": "minecraft:illusioner",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 2000
+	},
+	"evoker": {
+		"type": "entity",
+		"rarity": "LEGENDARY",
+			"content": "minecraft:evoker",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 4000
+	},
+	"ravager": {
+		"type": "entity",
+		"rarity": "LEGENDARY",
+			"content": "minecraft:ravager",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 10000
+	},
+	"blaze": {
+		"type": "blaze",
+		"rarity": "UNCOMMON",
+			"content": "minecraft:blaze",
+			"amount": {
+				"min": 1,
+				"max": 2
+		},
+		"unitWorth": 1000
+	}
+  }
+}

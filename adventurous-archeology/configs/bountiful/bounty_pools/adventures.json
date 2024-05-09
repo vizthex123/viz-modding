@@ -1,0 +1,114 @@
+{
+"content": {
+	"music_disc": {
+		"type": "item_tag",
+		"rarity": "RARE",
+			"content": "minecraft:music_discs",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1000
+	},
+	"name_tag": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "minecraft:name_tag",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+		"unitWorth": 350
+	},
+	"saddle": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "minecraft:saddle",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 250
+	},
+	"iron_horse_armor": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "minecraft:iron_horse_armor",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 500
+	},
+	"golden_horse_armor": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "minecraft:golden_horse_armor",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1000
+	},
+	"diamond_horse_armor": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "minecraft:diamond_horse_armor",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000
+	},
+	"heart_of_the_sea": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+			"content": "minecraft:heart_of_the_sea",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000
+	},
+	"pearl": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "alexscaves:pearl",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+		"unitWorth": 800
+	},
+	"seashell": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "ecologics:seashell",
+			"amount": {
+				"min": 4,
+				"max": 12
+			},
+		"unitWorth": 100
+	},
+	"giant_tooth": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "mobcompack:giant_tooth",
+			"amount": {
+				"min": 1,
+				"max": 4
+		},
+		"unitWorth": 250
+	},
+	"rose_gelball": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "mobcompack:rose_gelball",
+			"amount": {
+				"min": 1,
+				"max": 4
+		},
+		"unitWorth": 350
+	}
+  }
+}

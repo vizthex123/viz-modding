@@ -1,0 +1,10 @@
+{
+  "defaultCycleTime": 5000,
+  "ignoredNamespaces": [
+    "tipsmod",
+    "aether",
+    "deep_aether",
+    "outer_end"
+  ],
+  "ignoredTips": []
+}

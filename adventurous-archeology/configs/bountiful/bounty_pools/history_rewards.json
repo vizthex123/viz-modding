@@ -1,0 +1,85 @@
+{
+"content": {
+	"book": {
+		"type": "item",
+		"rarity": "COMMON",
+		"weightMult": "0.5",
+			"content": "minecraft:book",
+			"amount": {
+				"min": 3,
+				"max": 30
+		},
+		"unitWorth": 300
+	},
+	"knowledge": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "minecraft:experience_bottle",
+			"amount": {
+				"min": 1,
+				"max": 4
+		},
+		"unitWorth": 500
+	},
+	"cave_tablet_magnetic": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+		"repRequired": "2",
+			"content": "alexscaves:cave_tablet",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 4000,
+		"nbt": "{CaveBiome:\"alexscaves:magnetic_caves\"}"
+	},
+	"cave_tablet_primordial": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+		"repRequired": "2",
+			"content": "alexscaves:cave_tablet",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 2500,
+		"nbt": "{CaveBiome:\"alexscaves:primordial_caves\"}"
+	},
+	"cave_tablet_toxic": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+		"repRequired": "3",
+			"content": "alexscaves:cave_tablet",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000,
+		"nbt": "{CaveBiome:\"alexscaves:toxic_caves\"}"
+	},
+	"cave_tablet_abyss": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+		"repRequired": "3",
+			"content": "alexscaves:cave_tablet",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 4500,
+		"nbt": "{CaveBiome:\"alexscaves:abyssal_chasm\"}"
+	},
+	"cave_tablet_forlorn": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+		"repRequired": "1",
+			"content": "alexscaves:cave_tablet",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1500,
+		"nbt": "{CaveBiome:\"alexscaves:forlorn_hollows\"}"
+	}
+  }
+}

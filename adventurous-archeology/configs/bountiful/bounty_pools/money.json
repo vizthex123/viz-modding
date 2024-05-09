@@ -1,0 +1,94 @@
+{
+"content": {
+	"small_coin": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "simcur:small_coin",
+			"amount": {
+				"min": 1,
+				"max": 8
+		},
+		"unitWorth": 25
+	},
+	"emerald_shard": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "spelunkery:emerald_shard",
+			"amount": {
+				"min": 1,
+				"max": 12
+		},
+		"unitWorth": 111
+	},
+	"medium_coin": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "simcur:medium_coin",
+			"amount": {
+				"min": 1,
+				"max": 6
+		},
+		"unitWorth": 125
+	},
+	"large_coin": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "simcur:large_coin",
+			"amount": {
+				"min": 1,
+				"max": 4
+		},
+		"unitWorth": 250
+	},
+	"extra_large_coin": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "simcur:extra_large_coin",
+			"amount": {
+				"min": 1,
+				"max": 3
+		},
+		"unitWorth": 500
+	},
+	"emerald": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "minecraft:emerald",
+			"amount": {
+				"min": 1,
+				"max": 2
+		},
+		"unitWorth": 1000
+	},
+	"regalium": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "undergarden:regalium_crystal",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 5000
+	},
+	"emerald_block": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "minecraft:emerald_block",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 9000
+	},
+	"regalium_block": {
+		"type": "item",
+		"rarity": "LEGENDARY",
+			"content": "undergarden:regalium_block",
+			"amount": {
+				"min": 1,
+				"max": 1
+		},
+		"unitWorth": 45000
+	}
+  }
+}

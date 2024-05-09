@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"archeology_objectives"
+	],
+	"rewards": [
+		"history_rewards",
+		"money"
+	]
+}

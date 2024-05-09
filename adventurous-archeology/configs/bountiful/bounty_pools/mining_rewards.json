@@ -1,0 +1,14 @@
+{
+"content": {
+	"raw_gold_nugget": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "spelunkery:raw_gold_nugget",
+			"amount": {
+				"min": 1,
+				"max": 18
+		},
+		"unitWorth": 250
+	}
+  }
+}

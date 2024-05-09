@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"adventure_objectives",
+		"horns"
+	],
+	"rewards": [
+		"adventure_rewards"
+	]
+}

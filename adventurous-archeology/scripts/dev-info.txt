@@ -1,0 +1,24 @@
+Quest shapes:
+
+Circle - default
+Rounded square - shop
+Hexagon - adventuring
+
+
+
+Guilds & such:
+
+Explorer's Guild
+Archeological Association
+University of Paleontology
+Cavern of Speleology
+
+
+
+Text colours:
+
+Green - Guild representative
+
+
+
+/tellraw @p {"text":"MSG", "color":"green"}

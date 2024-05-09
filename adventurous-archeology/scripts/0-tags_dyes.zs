@@ -1,0 +1,208 @@
+# Adds tags to items used to make dyes
+# Dyes are in the minecraft order, item list is in alphabetical order (by mod first)
+#priority 20
+
+print("0-tags_dyes.zs loading...");
+
+/*
+<tag>.add(<item>);
+<tag>.remove(<item>);
+*/
+/*
+# White
+val white = <tag:items:modpack:white_dye_materials>;
+
+white.add(<item:minecraft:bone_meal>);
+white.add(<item:minecraft:lily_of_the_valley>);
+white.add(<item:aether:white_flower>);
+white.add(<item:biomesoplenty:white_petals>);
+white.add(<item:deep_aether:enchanted_blossom>);
+white.add(<item:silverbirch:white_flower_patch>);
+white.add(<item:spelunkery:white_inkcap_mushroom>);
+white.add(<item:undergarden:veil_mushroom>);
+
+
+# Orange
+val orange = <tag:items:modpack:orange_dye_materials>;
+
+orange.add(<item:minecraft:carrot>);
+orange.add(<item:minecraft:glow_berries>);
+orange.add(<item:minecraft:orange_tulip>);
+orange.add(<item:minecraft:torchflower>);
+orange.add(<item:biomesoplenty:orange_cosmos>);
+orange.add(<item:biomesoplenty:burning_blossom>);
+orange.add(<item:deep_aether:golden_aspess>);
+orange.add(<item:deep_aether:golden_flower>);
+
+
+# Magenta
+val magenta = <tag:items:modpack:magenta_dye_materials>;
+val big_magenta = <tag:items:modpack:magenta_dye_materials_double>;
+
+magenta.add(<item:minecraft:allium>);
+magenta.add(<item:minecraft:bubble_coral>);
+magenta.add(<item:minecraft:bubble_coral_fan>);
+magenta.add(<item:biomesoplenty:wildflower>);
+
+big_magenta.add(<item:minecraft:lilac>);
+big_magenta.add(<item:twilightforest:huge_water_lily>);
+
+
+# Light Blue
+val light_blue = <tag:items:modpack:light_blue_dye_materials>;
+val big_light_blue = <tag:items:modpack:light_blue_dye_materials_double>;
+
+light_blue.add(<item:minecraft:blue_orchid>);
+light_blue.add(<item:alexscaves:bioluminesscence>);
+light_blue.add(<item:aquamirae:esca>);
+light_blue.add(<item:undergarden:miserabell>);
+
+big_light_blue.add(<item:biomesoplenty:icy_iris>);
+big_light_blue.add(<item:biomesoplenty:blue_hydrangea>);
+
+
+# Yellow
+val yellow = <tag:items:modpack:yellow_dye_materials>;
+val big_yellow = <tag:items:modpack:yellow_dye_materials_double>;
+
+yellow.add(<item:minecraft:dandelion>);
+yellow.add(<item:minecraft:horn_coral>);
+yellow.add(<item:minecraft:horn_coral_fan>);
+yellow.add(<item:friendsandfoes:buttercup>);
+yellow.add(<item:snifferent:lumibulb>);
+yellow.add(<item:undergarden:butterbunch>);
+
+big_yellow.add(<item:minecraft:sunflower>);
+big_yellow.add(<item:biomesoplenty:goldenrod>);
+
+
+# Lime only has 2 recipes
+
+
+# Pink
+val pink = <tag:items:modpack:pink_dye_materials>;
+val big_pink = <tag:items:modpack:pink_dye_materials_double>;
+
+pink.add(<item:minecraft:brain_coral>);
+pink.add(<item:minecraft:brain_coral_fan>);
+pink.add(<item:minecraft:pink_petals>);
+pink.add(<item:minecraft:pink_tulip>);
+pink.add(<item:biomesoplenty:pink_daffodil>);
+pink.add(<item:biomesoplenty:pink_hibiscus>);
+pink.add(<item:deep_aether:aerlavender>);
+pink.add(<item:silverbirch:pink_flower_patch>);
+pink.add(<item:undergarden:amorous_bristle>);
+
+big_pink.add(<item:minecraft:peony>);
+big_pink.add(<item:deep_aether:tall_aerlavender>);
+
+
+# Gray only has 1 recipe
+
+
+# Light Gray
+val light_gray = <tag:items:modpack:light_gray_dye_materials>;
+
+light_gray.add(<item:minecraft:azure_bluet>);
+light_gray.add(<item:minecraft:oxeye_daisy>);
+light_gray.add(<item:minecraft:white_tulip>);
+light_gray.add(<item:nourished_nether:ghoulflower>);
+
+
+# Cyan
+val cyan = <tag:items:modpack:cyan_dye_materials>;
+val big_cyan = <tag:items:modpack:cyan_dye_materials_double>;
+
+cyan.add(<item:minecraft:glow_ink_sac>);
+cyan.add(<item:minecraft:twisting_vines>);
+cyan.add(<item:minecraft:warped_roots>);
+cyan.add(<item:aquamirae:fin>);
+cyan.add(<item:biomesoplenty:glowflower>);
+cyan.add(<item:deep_aether:aether_cattails>);
+cyan.add(<item:snifferent:sniffberry>);
+cyan.add(<item:snifferent:spineflower>);
+
+big_cyan.add(<item:minecraft:pitcher_plant>);
+big_cyan.add(<item:aquamirae:elodea>);
+big_cyan.add(<item:deep_aether:tall_aether_cattails>);
+
+
+# Purple (best colour)
+val purple = <tag:items:modpack:purple_dye_materials>;
+val big_purple = <tag:items:modpack:purple_dye_materials_double>;
+
+purple.add(<item:aether:purple_flower>);
+purple.add(<item:biomesoplenty:lavender>);
+purple.add(<item:biomesoplenty:violet>);
+purple.add(<item:deep_aether:echaisy>);
+purple.add(<item:deep_aether:radiant_orchid>);
+purple.add(<item:silverbirch:purple_flower_patch>);
+
+big_purple.add(<item:biomesoplenty:tall_lavender>);
+big_purple.add(<item:snifferent:bloom_plant>);
+
+
+# Blue
+val blue = <tag:items:modpack:blue_dye_materials>;
+
+blue.add(<item:minecraft:cornflower>);
+blue.add(<item:minecraft:lapis_lazuli>);
+blue.add(<item:minecraft:tube_coral>);
+blue.add(<item:minecraft:tube_coral_fan>);
+blue.add(<item:deep_aether:iaspove>);
+blue.add(<item:undergarden:indigo_mushroom>);
+
+
+# Brown
+val brown = <tag:items:modpack:brown_dye_materials>;
+val big_brown = <tag:items:modpack:brown_dye_materials_double>;
+
+brown.add(<item:minecraft:brown_mushroom>);
+brown.add(<item:minecraft:cocoa_beans>);
+
+big_brown.add(<item:biomesoplenty:cattail>);
+
+
+# Green
+val green = <tag:items:modpack:green_dye_materials>;
+
+green.add(<item:minecraft:vine>);
+green.add(<item:aquamirae:wisteria_niveis>);
+
+
+# Red
+val red = <tag:items:modpack:red_dye_materials>;
+val big_red = <tag:items:modpack:red_dye_materials_double>; // Better make sure this doesn't spill onto my desk...
+
+red.add(<item:minecraft:beetroot>);
+red.add(<item:minecraft:fire_coral>);
+red.add(<item:minecraft:fire_coral_fan>);
+red.add(<item:minecraft:poppy>);
+red.add(<item:minecraft:red_mushroom>);
+red.add(<item:minecraft:red_tulip>);
+red.add(<item:minecraft:sweet_berries>);
+red.add(<item:minecraft:weeping_vines>);
+red.add(<item:alexscaves:flytrap>);
+red.add(<item:biomesoplenty:rose>);
+red.add(<item:biomesoplenty:waterlily>);
+red.add(<item:deep_aether:goldenleaf_berries>);
+red.add(<item:deep_aether:sky_tulips>);
+red.add(<item:twilightforest:thorn_rose>);
+red.add(<item:undergarden:blood_mushroom>);
+
+big_red.add(<item:minecraft:rose_bush>);
+
+
+# Black
+val black = <tag:items:modpack:black_dye_materials>;
+val huge_black = <tag:items:modpack:black_dye_materials_quadruple>;
+
+black.add(<item:minecraft:ink_sac>);
+black.add(<item:minecraft:wither_rose>);
+black.add(<item:spelunkery:inkcap_mushroom>);
+black.add(<item:supplementaries:antique_ink>);
+black.add(<item:undergarden:ink_mushroom>);
+
+huge_black.add(<item:kubejs:disc_residue>);
+*/
+print("0-tags_dyes.zs loaded");

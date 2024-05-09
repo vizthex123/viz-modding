@@ -1,0 +1,214 @@
+{
+"content": {
+	"villager_fossil": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "betterarcheology:villager_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 10000
+	},
+	"villager_fossil_head": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:villager_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000
+	},
+	"villager_fossil_body": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:villager_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000
+	},
+	"creeper_fossil": {
+		"type": "item",
+		"rarity": "EPIC",
+			"content": "betterarcheology:creeper_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 5000
+	},
+	"creeper_fossil_head": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:creeper_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 2500
+	},
+	"creeper_fossil_body": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:creeper_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 2500
+	},
+	"guardian_fossil": {
+		"type": "item",
+		"rarity": "RARE",
+			"content": "betterarcheology:guardian_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 7500
+	},
+	"guardian_fossil_head": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:guardian_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 3750
+	},
+	"guardian_fossil_body": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:guardian_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 3750
+	},
+	"chicken_fossil": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:chicken_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1500
+	},
+	"chicken_fossil_head": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:chicken_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 750
+	},
+	"chicken_fossil_body": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:chicken_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 750
+	},
+	"ocelot_fossil": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:ocelot_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 3000
+	},
+	"ocelot_fossil_head": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:ocelot_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1500
+	},
+	"ocelot_fossil_body": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:ocelot_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1500
+	},
+	"sheep_fossil": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:sheep_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 2000
+	},
+	"sheep_fossil_head": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:sheep_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1000
+	},
+	"sheep_fossil_body": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:sheep_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1000
+	},
+	"wolf_fossil": {
+		"type": "item",
+		"rarity": "UNCOMMON",
+			"content": "betterarcheology:wolf_fossil",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 2500
+	},
+	"wolf_fossil_head": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:wolf_fossil_head",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1250
+	},
+	"wolf_fossil_body": {
+		"type": "item",
+		"rarity": "COMMON",
+			"content": "betterarcheology:wolf_fossil_body",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+		"unitWorth": 1250
+	}
+  }
+}
