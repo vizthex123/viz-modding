@@ -1,9 +1,3 @@
-1-dev-info.txt
-2-lore_locations.txt
-2-reskillable_help.txt
-2-thanks-messages.txt
-easter_egg.txt
-template.txt
-wiki_text.txt
 .cache
 *.xcf
+*.lnk

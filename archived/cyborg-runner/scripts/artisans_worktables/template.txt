@@ -1,0 +1,20 @@
+# Adds recipes to the Worktable(s)
+
+import mods.artisanworktables.builder.RecipeBuilder;
+import mods.artisanintegrations.requirement.FTGU;
+
+print("TABLE.zs loading...");
+
+/*
+https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
+https://artisan-worktables.readthedocs.io/en/latest/recipes/tools/
+https://artisan-worktables.readthedocs.io/en/latest/recipes/basic/
+*/
+
+
+
+
+
+
+
+print("TABLE.zs loaded");
