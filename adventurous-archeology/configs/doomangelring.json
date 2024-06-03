@@ -1,6 +1,0 @@
-{
-  "max_ring_durability": 1000,
-  "ticks_until_damage": 20,
-  "ring_damage_on_tick": 1,
-  "keep_ring_on_death": true
-}

@@ -1,9 +1,0 @@
-{
-	"objectives": [
-		"ocean_objectives"
-	],
-	"rewards": [
-		"ocean_rewards",
-		"money"
-	]
-}
