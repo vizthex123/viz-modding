@@ -14,6 +14,8 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
+// Make chains cheaper
+
 // Rose Gold decraft
 craftingTable.addShapeless("rose_gold_fix", <item:tconstruct:rose_gold_ingot>*9, [<item:thermal:rose_gold_block>]);
 

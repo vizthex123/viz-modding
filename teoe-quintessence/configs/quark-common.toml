@@ -233,7 +233,7 @@
 [management]
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
-	"Inventory Sorting" = false
+	"Inventory Sorting" = true
 	"Hotbar Changer" = true
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = false
@@ -720,10 +720,10 @@
 				#Allowed values: [-64,320]
 				"Max Height" = 60
 				#Allowed values: [0,)
-				"Cluster Size" = 32
+				"Cluster Size" = 64
 				#Can be a positive integer or a fractional value betweeen 0 and 1. If integer, it spawns that many clusters. If fractional, it has that chance to spawn a single cluster. Set exactly zero to not spawn at all.
 				#Allowed values: [0,)
-				"Cluster Count" = 0.25
+				"Cluster Count" = 2.0
 
 			[world.new_stone_types.myalite.oregen_upper]
 				#Allowed values: [-64,320]
@@ -731,18 +731,18 @@
 				#Allowed values: [-64,320]
 				"Max Height" = 128
 				#Allowed values: [0,)
-				"Cluster Size" = 48
+				"Cluster Size" = 64
 				#Can be a positive integer or a fractional value betweeen 0 and 1. If integer, it spawns that many clusters. If fractional, it has that chance to spawn a single cluster. Set exactly zero to not spawn at all.
 				#Allowed values: [0,)
-				"Cluster Count" = 0.15
+				"Cluster Count" = 0.1666666
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
-		"Chance Per Chunk" = 0.003
+		"Chance Per Chunk" = 0.1
 		#The chance for a spike to be big (1 is 100%, 0 is 0%)
-		"Big Spike Chance" = 0.005
+		"Big Spike Chance" = 0.03
 		#Should a chunk have spikes, how many would the generator try to place
-		"Tries Per Chunk" = 1
+		"Tries Per Chunk" = 4
 		"Big Spike Spawners" = true
 
 		[world.nether_obsidian_spikes.dimensions]
@@ -1142,11 +1142,11 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end, underground]
-					"Biome Types" = ["end"]
-					"Is Blacklist" = false
+					"Biome Types" = []
+					"Is Blacklist" = true
 
 				[world.big_stone_clusters.myalite.biomes.biomes]
-					Biomes = ["minecraft:end_barrens", "minecraft:end_highlands", "byg:cryptic_wastes"]
+					Biomes = ["minecraft:end_barrens", "minecraft:end_highlands", "byg:bulbis_gardens", "byg:cryptic_wastes", "byg:ethereal_islands", "byg:imparius_grove", "byg:nightshade_forest", "byg:shulkren_forest", "byg:viscal_isles"]
 					"Is Blacklist" = false
 
 	[world.big_dungeon]
@@ -1199,7 +1199,7 @@
 			"Max Cost" = 0.7
 			"Spawn Cost" = 0.15
 			#Allowed values: (0,)
-			"Spawn Weight" = 8
+			"Spawn Weight" = 12
 			#Allowed values: [1,)
 			"Min Group Size" = 1
 			#Allowed values: [1,)
@@ -1471,7 +1471,7 @@
 		"Food Tooltips" = true
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true
-		"Enchanting Tooltips" = true
+		"Enchanting Tooltips" = false
 		"Shulker Box Use Colors" = true
 		"Shulker Box Require Shift" = false
 		"Map Require Shift" = false
@@ -1634,7 +1634,7 @@
 		#How much each candle influences an enchantment. This works as a multiplier to its weight
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
-		"Automatically Convert" = false
+		"Automatically Convert" = true
 		#Candles with soul sand below them or below the bookshelves dampen enchantments instead of influence them.
 		"Soul Candles Invert" = true
 

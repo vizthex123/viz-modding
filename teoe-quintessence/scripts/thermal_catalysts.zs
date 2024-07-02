@@ -23,7 +23,7 @@ Min chance is the minium chance to trigger the catalyst (I guess?)
 // Not sure what the min chance for Cinnabar is, so let's hope this is close enough
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("cinnabar_dust", <item:thermal:cinnabar_dust>, 3.0, 3.5, 2.75, 0.5, 0.7);
 
-<recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <tag:items:teoe:corundum>, 1.25, 1.0, 0.9, 0.5, 0.65);
+<recipetype:thermal:pulverizer_catalyst>.addCatalyst("corundum", <tag:items:teoe:corundum>, 1.25, 1.0, 0.8, 0.5, 0.65);
 
 
 # Induction Smelter

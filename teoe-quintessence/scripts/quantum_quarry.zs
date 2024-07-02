@@ -27,7 +27,7 @@ mods.extendedcrafting.EnderCrafting.addShaped("enhanced_upgrade_base", <item:qua
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]], 15);
 
 // Filter
-mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_filter_upgrade", <item:quantumquarryplus:filter_upgrade>, 5000, [<item:quantumquarryplus:upgrade_base>, <item:essentials:hopper_filter>, <item:thermal:item_filter_augment>, <item:squarry:upgrade_filter>, <item:rftoolsbase:filter_module>], 50);
+mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_filter_upgrade", <item:quantumquarryplus:filter_upgrade>, 5000, [<item:quantumquarryplus:upgrade_base>, <item:essentials:hopper_filter>, <item:thermal:item_filter_augment>, <item:create:filter>|<item:create:attribute_filter>, <item:rftoolsbase:filter_module>], 50);
 
 // Pump
 mods.extendedcrafting.CombinationCrafting.addRecipe("quantum_pump_upgrade", <item:quantumquarryplus:pump_upgrade>, 5000, [<item:thermal:device_water_gen>, <item:rangedpumps:pump>, <item:create:mechanical_pump>, <item:botania:pump>], 50);
@@ -64,7 +64,7 @@ craftingTable.remove(<item:quantumquarryplus:quantum_quarry_plus>);
 mods.extendedcrafting.TableCrafting.addShaped("quantum_quarry", 2, <item:quantumquarryplus:quantum_quarry_plus>,
 	[[<item:botania:elementium_ingot>, enhanced_ender, <item:malum:soul_stained_steel_pickaxe>.anyDamage(), enhanced_ender, <item:botania:elementium_ingot>],
 	[<item:thermal:enderium_ingot>, <item:quantumquarryplus:quarry_framw>, <item:quantumquarryplus:quarry_framw>, <item:quantumquarryplus:quarry_framw>, <item:thermal:enderium_ingot>],
-	[<item:rftoolsbase:infused_enderpearl>, <item:quantumquarryplus:endercell>, <item:squarry:powered_quarry>, <item:quantumquarryplus:endercell>, <item:rftoolsbase:infused_enderpearl>],
+	[<item:rftoolsbase:infused_enderpearl>, <item:quantumquarryplus:endercell>, <item:quarryplus:quarry>, <item:quantumquarryplus:endercell>, <item:rftoolsbase:infused_enderpearl>],
 	[<item:thermal:enderium_ingot>, <item:quantumquarryplus:quarry_framw>, <item:quantumquarryplus:quarry_framw>, <item:quantumquarryplus:quarry_framw>, <item:thermal:enderium_ingot>],
 	[<item:botania:elementium_ingot>, enhanced_ender, <item:ae2:quantum_link>, enhanced_ender, <item:botania:elementium_ingot>]]);
 

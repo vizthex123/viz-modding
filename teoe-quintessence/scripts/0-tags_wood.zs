@@ -3,7 +3,7 @@
 
 import crafttweaker.api.tag.MCTag;
 
-print("1-tags_wood.zs loading...");
+print("0-tags_wood.zs loading...");
 
 # TEoE Planks
 # Used in my custom Chest recipe
@@ -263,4 +263,4 @@ logs.add(<item:tconstruct:stripped_greenheart_wood>);
 logs.add(<item:tconstruct:stripped_skyroot_wood>);
 logs.add(<item:tconstruct:stripped_bloodshroom_wood>);
 
-print("1-tags_wood.zs loaded");
+print("0-tags_wood.zs loaded");

@@ -91,8 +91,8 @@ craftingTable.addShapeless("rope_uncoiling", <item:additionaladditions:rope>*4, 
 furnace.addRecipe("smelt_glass_shards", <item:quark:clear_shard>, <tag:items:quark:shards>, 0, 100);
 
 // Smelt Dripleaves into Green Dye
-furnace.addRecipe("dripleaf_dye", <item:minecraft:green_dye>*2, <item:minecraft:big_dripleaf>, 1.5, 200);
-furnace.addRecipe("dripleaf_dye_small", <item:minecraft:green_dye>, <item:minecraft:small_dripleaf>, 2.0, 200);
+furnace.addRecipe("dripleaf_dye", <item:minecraft:green_dye>*2, <item:minecraft:big_dripleaf>, 2.0, 200);
+furnace.addRecipe("dripleaf_dye_small", <item:minecraft:green_dye>, <item:minecraft:small_dripleaf>, 1.0, 200);
 
 // Convert webs into string
 craftingTable.addShapeless("web_to_string", <item:minecraft:string>, [<item:minecraft:cobweb>]);

@@ -70,7 +70,7 @@ craftingTable.addShaped("cooking_2", <item:cookingforblockheads:crafting_book>,
     [[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
     [<tag:items:forge:workbenches>, <item:cookingforblockheads:recipe_book>, <tag:items:forge:workbenches>],
     [<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]]);
-
+/*
 // New Quarry recipes (fueled & powered) 
 craftingTable.remove(<item:squarry:fuel_quarry>);
 craftingTable.remove(<item:squarry:powered_quarry>);
@@ -84,7 +84,7 @@ mods.extendedcrafting.TableCrafting.addShaped("powered_quarry", 1, <item:squarry
 	[[<item:thermal:constantan_ingot>, <item:minecraft:quartz>, <item:thermal:bronze_ingot>], 
 	[<item:minecraft:quartz>, <item:squarry:fuel_quarry>, <item:minecraft:quartz>], 
 	[<item:thermal:bronze_ingot>, <item:minecraft:quartz>, <item:thermal:constantan_ingot>]]);
-
+*/
 // Vanilla ladder recipe
 craftingTable.addShaped("ladder_sticks", <item:minecraft:ladder>*3,
     [[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>],

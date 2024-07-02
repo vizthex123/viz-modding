@@ -1,0 +1,19 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "teoe:coinifier",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "#minecraft:music_discs",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_gold",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

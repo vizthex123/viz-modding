@@ -20,6 +20,8 @@ val netherite_coin = <item:lightmanscurrency:coin_netherite>;
 val black_iron = <item:extendedcrafting:black_iron_ingot>;
 val slate = <item:extendedcrafting:black_iron_slate>;
 
+val empty = <item:minecraft:air>;
+
 # Make Black Iron Slate shapeless
 craftingTable.remove(slate);
 craftingTable.addShapeless("black_iron_slate", slate, [black_iron, black_iron]);
@@ -30,18 +32,18 @@ craftingTable.addShapeless("luminessence", <item:extendedcrafting:luminessence>,
 # Bundle with normal leather
 mods.extendedcrafting.TableCrafting.addShaped("leather_bundle", 1, <item:minecraft:bundle>, 
     [[<item:minecraft:string>, <item:minecraft:leather>, <item:minecraft:string>],
-    [<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:leather>],
+    [<item:minecraft:leather>, empty, <item:minecraft:leather>],
     [<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]]);
 
 # New Enchanting Table recipes
 craftingTable.remove(<item:minecraft:enchanting_table>);
 craftingTable.addShaped("matrix_enchanter", <item:quark:matrix_enchanter>,
-    [[<item:minecraft:air>, <item:minecraft:book>, <item:minecraft:air>],
+    [[empty, <item:minecraft:book>, empty],
     [<item:minecraft:diamond>, <item:minecraft:obsidian>, <item:minecraft:diamond>],
     [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
 
 mods.extendedcrafting.TableCrafting.addShaped("enchanting_table", 1, <item:minecraft:enchanting_table>,
-	[[<item:minecraft:air>, <item:twilightforest:carminite>, <item:minecraft:air>], 
+	[[empty, <item:twilightforest:carminite>, empty], 
 	[<tag:items:teoe:magic_dust>, <item:quark:matrix_enchanter>, <tag:items:teoe:magic_dust>], 
 	[<item:minecraft:crying_obsidian>, <item:deepresonance:dense_obsidian>, <item:minecraft:crying_obsidian>]]);
 
@@ -59,8 +61,8 @@ craftingTable.remove(<item:extendedcrafting:ultimate_auto_table>);
 // Regular
 craftingTable.addShaped("basic_table", <item:extendedcrafting:basic_table>,
     [[iron_coin, <item:extendedcrafting:basic_component>, iron_coin],
-    [<item:minecraft:air>, <tag:items:forge:workbenches>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:create:zinc_block>, <item:minecraft:air>]]);
+    [empty, <tag:items:forge:workbenches>, empty],
+    [empty, <item:create:zinc_block>, empty]]);
 
 craftingTable.addShaped("advanced_table", <item:extendedcrafting:advanced_table>,
     [[gold_coin, <item:extendedcrafting:advanced_component>, gold_coin],
@@ -109,13 +111,13 @@ craftingTable.addShaped("crafting_core", <item:extendedcrafting:crafting_core>,
 # Pedestals
 craftingTable.remove(<item:extendedcrafting:pedestal>);
 craftingTable.addShaped("cheap_pedestal", <item:extendedcrafting:pedestal>*2,
-    [[<item:minecraft:air>, black_iron, <item:minecraft:air>],
-    [<item:minecraft:air>, black_iron, <item:minecraft:air>],
+    [[empty, black_iron, empty],
+    [empty, black_iron, empty],
     [black_iron, black_iron, black_iron]]);
 
 craftingTable.addShaped("pedestal", <item:extendedcrafting:pedestal>*6,
-    [[<item:minecraft:air>, black_iron, <item:minecraft:air>],
-    [<item:minecraft:air>, black_iron, <item:minecraft:air>],
+    [[empty, black_iron, empty],
+    [empty, black_iron, empty],
     [black_iron, <item:extendedcrafting:black_iron_block>, black_iron]]);
 
 # Repair Long Fall Boots
@@ -137,12 +139,11 @@ mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <i
 # Doubles Enhanced Ender output
 mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:enhanced_ender_ingot>);
 mods.extendedcrafting.EnderCrafting.addShaped("enhanced_ender", <item:extendedcrafting:enhanced_ender_ingot>*8,
-	[[<item:minecraft:air>, <item:extendedcrafting:ender_ingot>, <item:minecraft:air>], 
+	[[empty, <item:extendedcrafting:ender_ingot>, empty], 
 	[<item:extendedcrafting:ender_ingot>, <item:extendedcrafting:ender_star>, <item:extendedcrafting:ender_ingot>], 
-	[<item:minecraft:air>, <item:extendedcrafting:ender_ingot>, <item:minecraft:air>]]);
+	[empty, <item:extendedcrafting:ender_ingot>, empty]]);
 
-# New Enchanted Golden Apple recipe
-# Replaces the one from Apotheosis
+# Enchanted Golden Apple recipe
 craftingTable.remove(<item:minecraft:enchanted_golden_apple>);
 mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item:minecraft:enchanted_golden_apple>*16,
 	[[gold_coin, <tag:items:teoe:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:teoe:shard>, gold_coin],
@@ -172,14 +173,14 @@ mods.extendedcrafting.TableCrafting.addShaped("evil_ultimate_ingot", 2, <item:ex
 
 # Quintessence
 mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:quintessence>,
-	[[<tag:items:teoe:tape_measure>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:easypaxellite:diamond_paxel>.anyDamage()],
-	[<item:minecraft:air>, <item:packingtape:tape>.anyDamage(), <item:minecraft:air>, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:advanced_item_pipe>|<item:refinedpipes:advanced_extractor_attachment>, <item:minecraft:air>, <tag:items:elevatorid:elevators>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:ftbquests:book>, <item:quantumquarryplus:filter_upgrade>|<item:quantumquarryplus:pump_upgrade>, <item:apotheosis:ender_library>, <item:tconstruct:plate_chestplate>.anyDamage(), <item:rangedpumps:pump>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:tesseract:tesseract>, netherite_coin, <item:minecraft:air>],
+	[[<tag:items:teoe:tape_measure>, empty, empty, empty, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, empty, empty, empty, <item:easypaxellite:diamond_paxel>.anyDamage()],
+	[empty, <item:packingtape:tape>.anyDamage(), empty, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:advanced_item_pipe>|<item:refinedpipes:advanced_extractor_attachment>, empty, <tag:items:elevatorid:elevators>],
+	[empty, empty, <item:ftbquests:book>, <item:enderquarry:ender_quarry>, <item:bloodmagic:sacrificerune2>, <item:tconstruct:plate_chestplate>.anyDamage(), <item:rangedpumps:pump>, empty, empty],
+	[empty, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:tesseract:tesseract>, netherite_coin, empty],
 	[<item:create:blaze_cake>, <item:naturesaura:end_city_finder>, <item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:the_ultimate_ingot>, <item:thermal:upgrade_augment_3>, <item:aquamirae:three_bolt_helmet>.anyDamage(), <item:chickenchunks:spot_loader>],
-	[<item:minecraft:air>, <item:reliquary:infernal_chalice>, <item:minecraft:netherite_block>|<item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:necronium_block>, <item:storagedrawers:drawer_key>|<item:storagedrawers:quantify_key>|<item:storagedrawers:shroud_key>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:ironchest:obsidian_chest>|<item:ironchest:trapped_obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:netherite_pickaxe>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:squarry:powered_quarry>, <item:minecraft:air>, <item:minecraft:air>, <item:appliedcooking:kitchen_station>, <item:minecraft:air>],
-	[<item:quark:flamerang>.anyDamage(), <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:deepresonance:generator_controller>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:ae2:quantum_ring>]]);
+	[empty, <item:reliquary:infernal_chalice>, <item:minecraft:netherite_block>|<item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:necronium_block>, <item:functionalstorage:linking_tool>|<item:functionalstorage:configuration_tool>, empty],
+	[empty, empty, <item:ironchest:obsidian_chest>|<item:ironchest:trapped_obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, empty, empty],
+	[empty, <item:minecraft:netherite_pickaxe>.anyDamage(), empty, empty, <item:quarryplus:solid_fuel_quarry>, empty, empty, <item:appliedcooking:kitchen_station>, empty],
+	[<item:quark:flamerang>.anyDamage(), empty, empty, empty, <item:deepresonance:generator_controller>, empty, empty, empty, <item:ae2:quantum_ring>]]);
 
 print("ExtendedCrafting.zs loaded");

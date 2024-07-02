@@ -38,46 +38,52 @@ craftingTable.addShaped("gear_press", <item:thermal:press_gear_die>,
     [empty, <item:thermal:invar_plate>, empty]]);
 
 
-# Replace rubber recipes to add tag support
+# Replace rubber recipes and add tag support
 val water = <item:minecraft:water_bucket>;
+val saplings = <tag:items:minecraft:saplings>;
+val small_flowers = <tag:items:minecraft:small_flowers>;
+val tall_flowers = <tag:items:minecraft:tall_flowers>;
+val glow_lichen = <item:minecraft:glow_lichen>;
+val slimy_vines = <tag:items:teoe:slimy_vines>;
+val vines = <tag:items:teoe:vines>;
 
 // Saplings
 craftingTable.removeByName("thermal:rubber_from_dandelion");
 craftingTable.addShaped("rubber_saplings", <item:thermal:rubber>,
-    [[<tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>],
-    [<tag:items:minecraft:saplings>, water, <tag:items:minecraft:saplings>],
-    [<tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>, <tag:items:minecraft:saplings>]]);
+    [[saplings, saplings, saplings],
+    [saplings, water, saplings],
+    [saplings, saplings, saplings]]);
 
 // Flowers
 craftingTable.addShaped("rubber_flowers", <item:thermal:rubber>,
-    [[<tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>],
-    [<tag:items:minecraft:small_flowers>, water, <tag:items:minecraft:small_flowers>],
-    [<tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>, <tag:items:minecraft:small_flowers>]]);
+    [[small_flowers, small_flowers, small_flowers],
+    [small_flowers, water, small_flowers],
+    [small_flowers, small_flowers, small_flowers]]);
 
 	// Tall Flowers
 craftingTable.addShaped("rubber_tall_flowers", <item:thermal:rubber>*3,
-    [[<tag:items:minecraft:tall_flowers>, <tag:items:minecraft:tall_flowers>, <tag:items:minecraft:tall_flowers>],
-    [<tag:items:minecraft:tall_flowers>, water, <tag:items:minecraft:tall_flowers>],
-    [<tag:items:minecraft:tall_flowers>, <tag:items:minecraft:tall_flowers>, <tag:items:minecraft:tall_flowers>]]);
+    [[tall_flowers, tall_flowers, tall_flowers],
+    [tall_flowers, water, tall_flowers],
+    [tall_flowers, tall_flowers, tall_flowers]]);
 
 // Vines
 craftingTable.removeByName("thermal:rubber_from_vine");
 craftingTable.addShaped("rubber_vines", <item:thermal:rubber>*2,
-    [[<tag:items:teoe:vines>, <tag:items:teoe:vines>, <tag:items:teoe:vines>],
-    [<tag:items:teoe:vines>, water, <tag:items:teoe:vines>],
-    [<tag:items:teoe:vines>, <tag:items:teoe:vines>, <tag:items:teoe:vines>]]);
+    [[vines, vines, vines],
+    [vines, water, vines],
+    [vines, vines, vines]]);
 
 // Slimy Vines
 craftingTable.addShaped("rubber_slimy_vines", <item:thermal:rubber>*4,
-    [[<tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>],
-    [<tag:items:teoe:slimy_vines>, water, <tag:items:teoe:slimy_vines>],
-    [<tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>, <tag:items:teoe:slimy_vines>]]);
+    [[slimy_vines, slimy_vines, slimy_vines],
+    [slimy_vines, water, slimy_vines],
+    [slimy_vines, slimy_vines, slimy_vines]]);
 
 // Glow Lichen
 craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
-    [[<item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>],
-    [<item:minecraft:glow_lichen>, water, <item:minecraft:glow_lichen>],
-    [<item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>, <item:minecraft:glow_lichen>]]);
+    [[glow_lichen, glow_lichen, glow_lichen],
+    [glow_lichen, water, glow_lichen],
+    [glow_lichen, glow_lichen, glow_lichen]]);
 
 
 
@@ -169,8 +175,8 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Flower tags
 # <recipetype:thermal:press>.removeByRecipeName("thermal:machines/press/press_dandelion_to_latex");
 # <recipetype:thermal:press>.removeRecipe(<item:minecraft:dandelion>);
-<recipetype:thermal:press>.addRecipe("small_latex", [empty], <fluid:thermal:latex>*50, [<tag:items:minecraft:small_flowers>, empty], 400);
-<recipetype:thermal:press>.addRecipe("tall_latex", [empty], <fluid:thermal:latex>*100, [<tag:items:minecraft:tall_flowers>, empty], 400);
+<recipetype:thermal:press>.addRecipe("small_latex", [empty], <fluid:thermal:latex>*50, [small_flowers, empty], 400);
+<recipetype:thermal:press>.addRecipe("tall_latex", [empty], <fluid:thermal:latex>*100, [tall_flowers, empty], 400);
 
 // Glow Berries
 <recipetype:thermal:press>.addRecipe("glow_berry_latex", [empty], <fluid:thermal:latex>*75, [<item:minecraft:glow_berries>, empty], 400);

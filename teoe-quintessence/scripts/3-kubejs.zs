@@ -18,17 +18,6 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
-# Tags
-val crushed_ore = <tag:items:create:crushed_ores>;
-
-crushed_ore.add(<item:kubejs:crushed_cobalt>);
-crushed_ore.add(<item:kubejs:crushed_pendorite>);
-crushed_ore.add(<item:kubejs:crushed_platinum>);
-<tag:items:minecraft:planks>.add(<item:kubejs:mdf>);
-<tag:items:twilightforest:portal/activator>.add(<item:kubejs:portal_catalyst>);
-
-
-
 # Crushed Ores
 # Recipes to make them are in create.zs
 blastFurnace.addRecipe("blast_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 100);
@@ -122,8 +111,6 @@ blastFurnace.addRecipe("blast_travertine", quicklime, <item:byg:travertine>, 0, 
 # Glue
 val glue = <item:kubejs:glue>;
 
-craftingTable.remove(<item:create:super_glue>);
-
 craftingTable.addShapeless("glue", glue, [<tag:items:forge:slimeballs>, <tag:items:forge:slimeballs>, <item:minecraft:paper>]);
 craftingTable.addShapeless("glue_bone", glue, [<item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:bone>, <item:minecraft:paper>]);
 craftingTable.addShapeless("glue_necrotic_bone", glue, [<item:tconstruct:necrotic_bone>, <item:minecraft:paper>]);
@@ -132,6 +119,7 @@ craftingTable.addShapeless("glue_sharp_bone", glue, [<item:aquamirae:sharp_bones
 craftingTable.addShapeless("glue_honeycomb", glue, [<item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:honeycomb>, <item:minecraft:paper>]);
 
 // Super Glue
+craftingTable.remove(<item:create:super_glue>);
 craftingTable.addShapeless("super_glue", <item:create:super_glue>, [glue, glue, <tag:items:forge:plates/iron>]);
 
 
@@ -196,5 +184,16 @@ craftingTable.addShaped("portal_catalyst", <item:kubejs:portal_catalyst>,
 [[<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>],
 [<tag:items:forge:plates/lead>, <item:kubejs:iridium_chunks>, <tag:items:forge:plates/lead>],
 [<item:minecraft:air>, <tag:items:forge:plates/lead>, <item:minecraft:air>]]);
+
+
+
+# Tags
+val crushed_ore = <tag:items:create:crushed_ores>;
+
+crushed_ore.add(<item:kubejs:crushed_cobalt>);
+crushed_ore.add(<item:kubejs:crushed_pendorite>);
+crushed_ore.add(<item:kubejs:crushed_platinum>);
+<tag:items:minecraft:planks>.add(<item:kubejs:mdf>);
+<tag:items:twilightforest:portal/activator>.add(<item:kubejs:portal_catalyst>);
 
 print("3-kubejs.zs loaded");

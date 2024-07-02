@@ -1,0 +1,32 @@
+{
+	"duration": 200,
+	"structureId": "machines:coinifier",
+	"name": {
+		"translation": "recipes.mm.coinify"
+	},
+	"inputs": [
+	{
+	"type": "mm:simple",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2000
+		}
+	},
+	"type": "mm:simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "#minecraft:music_discs",
+			"count": 1
+		}
+	],
+	"outputs": [
+    {
+		"type": "mm:simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "lightmanscurrency:coin_gold",
+			"amount": 1
+      }
+	}
+  ]
+}

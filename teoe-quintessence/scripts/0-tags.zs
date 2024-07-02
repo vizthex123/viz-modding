@@ -3,13 +3,13 @@
 
 import crafttweaker.api.tag.MCTag;
 
-print("1-tags.zs loading...");
+print("0-tags.zs loading...");
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
 
-
+/*
 # Dynamics duct (quest)
 val duct = <tag:items:teoe:duct>;
 val fluiduct = <tag:items:teoe:fluiduct>;
@@ -19,7 +19,7 @@ duct.add(<item:thermal:fluid_duct>);
 duct.add(<item:thermal:fluid_duct_windowed>);
 fluiduct.add(<item:thermal:fluid_duct>);
 fluiduct.add(<item:thermal:fluid_duct_windowed>);
-
+*/
 
 # Torches (recipes)
 val torch = <tag:items:teoe:torch>;
@@ -754,4 +754,4 @@ tall_flowers.remove(<tag:items:minecraft:small_flowers>);
 
 mushrooms.remove(<item:byg:white_puffball_cap>);
 
-print("1-tags.zs loaded");
+print("0-tags.zs loaded");

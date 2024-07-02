@@ -13,14 +13,16 @@ mods.jei.JEI.addDescription(<item>, ["line1", "line2"]);
 
 
 # Add JEI Info tabs for various items
-mods.jei.JEI.addDescription(<item:appbot:mana_p2p_tunnel>, ["Right-click a P2P tunnel with any Botania item to make it a Mana Tunnel"]);
-mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins"]);
 mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla wood to make that variation of a ladder (e.g. Dark Oak makes Dark Oak Ladders)"]);
-mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
-mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley"]);
+
+mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins"]);
+mods.jei.JEI.addDescription(<item:appbot:mana_p2p_tunnel>, ["Right-click a P2P tunnel with any Botania item to make it a Mana Tunnel"]);
+mods.jei.JEI.addDescription(<item:nourished_nether:necronium_ingot>, ["Process a Gold Ingot in a Soul Forge"]);
+mods.jei.JEI.addDescription(<item:nourished_nether:soul_quartz>, ["Stand on Soul Sludge until it turns, then harvest with a Hoe"]);
 mods.jei.JEI.addDescription(<item:ob_core:magic_dust>, ["Find a Magic Crystal Cluster deep in the underground, which will grow Magic Dust over time." + "\n\nThey seem to be more common near lava"]);
-mods.jei.JEI.addDescription(<item:nourished_nether:soul_quartz>, ["Stand on Soul Sludge in the Nether until it damages you, then harvest it with a Hoe"]);
-mods.jei.JEI.addDescription(<item:nourished_nether:necronium_ingot>, ["Crafted by processing Gold Ingots in a Soul Forge"]);
+mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley"]);
+mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
+
 
 
 # Hides infested blocks
@@ -40,12 +42,9 @@ mods.jei.JEI.hideIngredient(<item:botania:infrangible_platform>);
 mods.jei.JEI.hideIngredient(<item:botania:lens_storm>);
 mods.jei.JEI.hideIngredient(<item:botania:corporea_spark_creative>);
 mods.jei.JEI.hideIngredient(<item:createaddition:creative_energy>);
-mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_storage_upgrade>);
-mods.jei.JEI.hideIngredient(<item:storagedrawers:creative_vending_upgrade>);
 mods.jei.JEI.hideIngredient(<item:thermal:fluid_tank_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_efficiency_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_catalyst_creative_augment>);
-mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);
 mods.jei.JEI.hideIngredient(<item:quantumquarryplus:creative_cell>);
 mods.jei.JEI.hideIngredient(<item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:creative" as string}));
@@ -108,12 +107,13 @@ mods.jei.JEI.hideIngredient(<item:twilightforest:orange_force_field>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:green_force_field>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:blue_force_field>);
 mods.jei.JEI.hideIngredient(<item:twilightforest:violet_force_field>);
-
+/*
 mods.jei.JEI.hideIngredient(<item:titanium:block_test>);
 mods.jei.JEI.hideIngredient(<item:titanium:block_twenty_four_test>);
 mods.jei.JEI.hideIngredient(<item:titanium:block_asset_test>);
+mods.jei.JEI.hideIngredient(<item:titanium:creative_generator>);
 mods.jei.JEI.hideIngredient(<item:titanium:machine_test>);
-
+*/
 mods.jei.JEI.hideIngredient(<item:structure_gel:red_gel>);
 mods.jei.JEI.hideIngredient(<item:structure_gel:blue_gel>);
 mods.jei.JEI.hideIngredient(<item:structure_gel:green_gel>);

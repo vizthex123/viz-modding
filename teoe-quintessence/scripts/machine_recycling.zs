@@ -28,29 +28,6 @@ val redstone = <item:minecraft:redstone>;
 val sawdust = <item:thermal:sawdust>;
 val scrap = <item:kubejs:small_iron_scrap>;
 
-## Arrows
-# Regular ones are in sawmills.zs
-# Normal recycling rules don't apply due to their recipes making 4 or 6 at once
-	// Obsidian
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_obsidian_arrow", [<item:create:powdered_obsidian>*2 % 5, feather % 5, sawdust % 5], <item:apotheosis:obsidian_arrow>, 0, 500);
-<recipetype:create:crushing>.addRecipe("crush_obsidian_arrow", [<item:create:powdered_obsidian>*2 % 5, feather % 5, sawdust % 5], <item:apotheosis:obsidian_arrow>, 60);
-
-	// Broadhead
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_broadhead_arrow", [scrap % 5, feather % 5, sawdust % 5], <item:apotheosis:broadhead_arrow>, 0, 500);
-<recipetype:create:crushing>.addRecipe("crush_broadhead_arrow", [scrap % 5, feather % 5, sawdust % 5], <item:apotheosis:broadhead_arrow>, 60);
-
-	// Explosive
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_explosive_arrow", [<item:minecraft:gunpowder> % 10, feather % 5, sawdust % 5], <item:apotheosis:explosive_arrow>, 0, 500);
-<recipetype:create:crushing>.addRecipe("crush_explosive_arrow", [<item:minecraft:gunpowder> % 10, feather % 5, sawdust % 5], <item:apotheosis:explosive_arrow>, 60);
-
-	// Iron
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_iron_arrow", [scrap % 5, feather % 5, sawdust % 10], <item:apotheosis:iron_mining_arrow>, 0, 500);
-<recipetype:create:crushing>.addRecipe("crush_iron_arrow", [scrap % 5, feather % 5, sawdust % 10], <item:apotheosis:iron_mining_arrow>, 60);
-
-	// Diamond
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_diamond_arrow", [<item:kubejs:small_diamond_scrap> % 5, feather % 5, sawdust % 10], <item:apotheosis:diamond_mining_arrow>, 0, 500);
-<recipetype:create:crushing>.addRecipe("crush_diamond_arrow", [<item:kubejs:small_diamond_scrap> % 5, feather % 5, sawdust % 10], <item:apotheosis:diamond_mining_arrow>, 60);
-
 
 
 # Lever

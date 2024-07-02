@@ -19,7 +19,7 @@ val spider_string = <item:minecraft:string>;
 # Mechanical Saw gives 50% more sawdust, rounded down
 
 // Bowls
-<recipetype:thermal:sawmill>.addRecipe("saw_bowl", [sawdust], <item:minecraft:bowl>, 500);
+<recipetype:thermal:sawmill>.addRecipe("saw_bowl", [sawdust % 75], <item:minecraft:bowl>, 500);
 <recipetype:create:cutting>.addRecipe("mech_saw_bowl", sawdust, <item:minecraft:bowl>, 1);
 
 // Torches
@@ -46,7 +46,7 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_note_block", sawdust*12, <item:minecraft:note_block>, 5);
 
 // Jukebox
-<recipetype:thermal:sawmill>.addRecipe("saw_jukebox", [sawdust*8, <item:minecraft:diamond> % 50], <item:minecraft:jukebox>, 2000);
+<recipetype:thermal:sawmill>.addRecipe("saw_jukebox", [sawdust*8, <item:minecraft:diamond> % 75], <item:minecraft:jukebox>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_jukebox", sawdust*12, <item:minecraft:jukebox>, 5);
 
 // Lectern
@@ -73,13 +73,11 @@ val spider_string = <item:minecraft:string>;
 <recipetype:thermal:sawmill>.addRecipe("saw_stairs", [sawdust, sawdust % 50], <tag:items:minecraft:wooden_stairs>, 1500);
 <recipetype:create:cutting>.addRecipe("mech_saw_stairs", sawdust, <tag:items:minecraft:wooden_stairs>, 3);
 
-// Fences
-<recipetype:thermal:sawmill>.addRecipe("saw_fences", [sawdust, sawdust % 60], <tag:items:forge:fences/wooden>, 1000);
+// Fences & Gates
+<recipetype:thermal:sawmill>.addRecipe("saw_fences", [sawdust, sawdust % 66], <tag:items:forge:fences/wooden>, 1000);
 <recipetype:create:cutting>.addRecipe("mech_saw_fences", sawdust*2, <tag:items:forge:fences/wooden>, 2);
-
-// Fence Gates
 <recipetype:thermal:sawmill>.addRecipe("saw_fence_gates", [sawdust*3], <tag:items:forge:fence_gates/wooden>, 1250);
-<recipetype:create:cutting>.addRecipe("mech_saw_fence_gates", sawdust*3, <tag:items:forge:fence_gates/wooden>, 2);
+<recipetype:create:cutting>.addRecipe("mech_saw_fence_gates", sawdust*4, <tag:items:forge:fence_gates/wooden>, 2);
 
 // Trapdoors
 <recipetype:thermal:sawmill>.addRecipe("saw_trapdoors", [sawdust*3], <tag:items:minecraft:wooden_trapdoors>, 1500);

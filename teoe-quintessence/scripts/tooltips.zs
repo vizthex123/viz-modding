@@ -29,7 +29,6 @@ val ital = "\u00A7o";
 val clf = "\u00A7r";
 
 /*
-<item>.displayName = "newName";
 <item>.addTooltip("tip");
 */
 
@@ -54,7 +53,7 @@ val clf = "\u00A7r";
 <item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Quicklime in an Induction Smelter");
 
 
-
+/*
 # Quarries
 <item:squarry:fuel_quarry>.addTooltip(red + "Only mines the chunk it's placed in");
 <item:squarry:fuel_quarry>.addTooltip(red +"Doesn't accept upgrades");
@@ -62,7 +61,7 @@ val clf = "\u00A7r";
 <item:squarry:powered_quarry>.addTooltip(red +"Only mines the chunk it's placed in");
 <item:squarry:powered_quarry>.addTooltip(aqua +"Accepts both RF and solid fuel");
 <item:squarry:powered_quarry>.addTooltip(green + "Can hold 5 upgrades");
-
+*/
 
 
 # Coinification tooltips
