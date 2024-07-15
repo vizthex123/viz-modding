@@ -1,2 +1,8 @@
 Aurorian: 3
 Betweenlands: 4
+Bedrock: 5
+AbyssalCraft: 6 - 9
+Outer Lands: 10
+
+Deep Dark: -9999
+Quantum Quarry: -11325

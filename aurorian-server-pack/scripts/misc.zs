@@ -14,7 +14,7 @@ furnace.addRecipe(<output>, <input>, XP[F]);
 */
 
 // Craft Chests with Silentwood Logs
-recipes.addShaped(<minecraft:chest>*4, [[<theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>],
+recipes.addShaped(<theaurorian:silentwoodchest>*4, [[<theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>],
 																  	   [<theaurorian:silentwoodlog>, null, <theaurorian:silentwoodlog>],
 																	   [<theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>, <theaurorian:silentwoodlog>]]);
 
@@ -40,5 +40,8 @@ recipes.addShaped(<extrautils2:teleporter:1>, [[<extrautils2:compressedcobblesto
 
 // Decraft cobwebs
 recipes.addShapeless(<minecraft:string>, [<minecraft:web>]);
+
+// Make Crystals stack to 64
+<theaurorian:crystal>.maxStackSize=64;
 
 print("misc.zs loaded");
