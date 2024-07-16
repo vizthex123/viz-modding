@@ -25,16 +25,16 @@
             "count": 64
         },
         {
-            "item": "alexscaves:immortal_embryo",
-            "count": 1
+            "item": "alexscaves:scrap_metal",
+            "count": 16
         },
         {
             "item": "alexscaves:enigmatic_engine",
             "count": 1
         },
         {
-            "item": "alexscaves:scrap_metal",
-            "count": 16
+            "item": "alexscaves:immortal_embryo",
+            "count": 1
         }
     ],
     "tier_data": [
