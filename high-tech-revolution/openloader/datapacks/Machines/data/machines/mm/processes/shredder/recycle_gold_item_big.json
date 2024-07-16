@@ -1,0 +1,39 @@
+{
+	"ticks": 250,
+	"structureId": "machines:shredder",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2500
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:scrappable/gold_big",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:gold_scrap",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "cofh_core:experience",
+			"amount": 7
+		}
+	}
+  ]
+}

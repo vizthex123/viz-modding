@@ -1,0 +1,19 @@
+{
+	"name": "Transmutator",
+    "controllerIds": "mm:transmutation_core",
+    "layout": [
+        [
+            "ICO"
+        ]
+    ],
+    "key": {
+		"I": {
+			"port": "mm:item_tiny",
+            "input": true
+        },
+		"O": {
+			"port": "mm:item_tiny",
+            "input": false
+        }
+    }
+}

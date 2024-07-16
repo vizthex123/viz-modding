@@ -1,0 +1,39 @@
+{
+	"ticks": 300,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 6000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:fissile_core",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:uranium",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:toxic_paste",
+			"count": 6
+		}
+	}
+  ]
+}

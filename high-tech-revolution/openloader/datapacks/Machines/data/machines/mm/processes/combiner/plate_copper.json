@@ -1,0 +1,31 @@
+{
+	"ticks": 200,
+	"structureId": "machines:combiner",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 3200
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:copper_ingot",
+			"count": 2
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "copperworks:copper_plate",
+			"count": 1
+		}
+	}
+  ]
+}

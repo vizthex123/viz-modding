@@ -1,0 +1,41 @@
+{
+	"name": "Crystal Transmutator",
+    "controllerIds": "mm:transmutation_core",
+    "layout": [
+        [
+            " V "
+        ],
+        [
+            "GYG"
+        ],
+        [
+            "IEO"
+        ],
+        [
+            " C "
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"I": {
+            "tag": "revolution:non_tiny_input",
+            "input": true
+        },
+		"O": {
+            "tag": "revolution:non_tiny_output",
+            "input": false
+        },
+		"Y": {
+            "block": "mm:circuitry"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

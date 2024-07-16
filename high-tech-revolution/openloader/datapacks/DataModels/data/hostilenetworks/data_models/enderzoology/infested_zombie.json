@@ -1,0 +1,51 @@
+{
+    "entity": "enderzoology:infested_zombie",
+    "variants": [],
+    "name": "entity.enderzoology.infested_zombie",
+    "name_color": "#2a6349",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.infested_zombie",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 48
+        },
+        {
+            "item": "minecraft:carrot",
+            "count": 16
+        },
+        {
+            "item": "minecraft:potato",
+            "count": 16
+        },
+        {
+            "item": "minecraft:iron_ingot",
+            "count": 8
+        },
+        {
+            "item": "minecraft:book",
+            "count": 12
+        },
+        {
+            "item": "enderzoology:ender_fragment",
+            "count": 8
+        },
+        {
+            "optional": true,
+            "item": "reliquary:zombie_heart",
+            "count": 2
+        }
+    ]
+}

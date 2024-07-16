@@ -1,0 +1,41 @@
+{
+	"name": "Reprocessor",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "IV",
+            "CO"
+        ],
+        [
+            "EG",
+            "YF"
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"F": {
+            "port": "mm:fluid",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "tag": "revolution:big_output",
+            "input": false
+        },
+		"Y": {
+            "block": "mm:circuitry"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

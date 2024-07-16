@@ -1,0 +1,26 @@
+{
+    "entity": "galosphere:preserved",
+    "variants": [],
+    "name": "entity.galosphere.preserved",
+    "name_color": "#e8b0a4",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.preserved",
+    "fabricator_drops": [
+        {
+            "item": "galosphere:salted_jerky",
+            "count": 16
+        }
+    ]
+}

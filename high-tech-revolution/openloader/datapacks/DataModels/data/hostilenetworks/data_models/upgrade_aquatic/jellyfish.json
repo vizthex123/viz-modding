@@ -1,0 +1,27 @@
+{
+    "entity": "upgrade_aquatic:immortal_jellyfish",
+    "variants": [
+		"upgrade_aquatic:box_jellyfish",
+		"upgrade_aquatic:cassiopea_jellyfish"
+	],
+    "name": "entity.upgrade_aquatic.immortal_jellyfish",
+    "name_color": "#96d1d5",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.jellyfish",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:slime_ball",
+            "count": 8
+        }
+    ]
+}

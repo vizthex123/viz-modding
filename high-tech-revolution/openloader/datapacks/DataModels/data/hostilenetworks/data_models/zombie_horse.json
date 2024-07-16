@@ -1,0 +1,35 @@
+{
+    "entity": "minecraft:zombie_horse",
+    "variants": [
+        "enderzoology:fallen_mount"
+    ],
+    "name": "entity.minecraft.zombie_horse",
+    "name_color": "#406c40",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.zombie_horse",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 64
+        },
+        {
+            "item": "minecraft:saddle",
+            "count": 1
+        },
+        {
+            "optional": true,
+            "item": "reliquary:zombie_heart",
+            "count": 3
+        }
+    ]
+}

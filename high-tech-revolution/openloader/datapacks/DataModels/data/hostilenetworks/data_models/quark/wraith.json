@@ -1,0 +1,28 @@
+{
+    "entity": "quark:wraith",
+    "variants": [],
+    "name": "entity.quark.wraith",
+    "name_color": "#d7fbfc",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 144,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+	"trivia": "custom.trivia.wraith",
+    "fabricator_drops": [
+		{
+            "item": "quark:soul_bead",
+            "count": 2
+        },
+		{
+            "item": "nourished_nether:ectoplasm",
+            "count": 8
+        }
+    ]
+}

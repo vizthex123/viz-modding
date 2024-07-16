@@ -1,0 +1,8 @@
+{
+	"block.biggerreactors.raw_uranium_block": "Block of Raw Uranium",
+	"block.biggerreactors.uranium_block": "Block of Uranium",
+
+	"fluid_type.biggerreactors.steam": "Steam",
+	"fluid_type.biggerreactors.liquid_obsidian": "Liquid Obsidian",
+	"fluid_type.biggerreactors.liquid_uranium": "Liquid Uranium"
+}

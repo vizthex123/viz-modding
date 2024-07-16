@@ -1,0 +1,30 @@
+{
+    "entity": "enderzoology:owl",
+    "variants": [],
+    "name": "entity.enderzoology.owl",
+    "name_color": "#988365",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 72,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.owl",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:feather",
+            "count": 24
+        },
+        {
+            "item": "enderzoology:owl_egg",
+            "count": 12
+        }
+    ]
+}

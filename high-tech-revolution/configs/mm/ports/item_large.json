@@ -1,0 +1,10 @@
+{
+	"id": "item_large",
+	"name": "Large Item",
+	"controllerIds": ["mm:extractinator_core"],
+	"type": "mm:item",
+	"config": {
+		"rows": 5,
+		"columns": 5
+	}
+}

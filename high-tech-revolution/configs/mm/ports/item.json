@@ -1,0 +1,10 @@
+{
+	"id": "item",
+	"name": "Standard Item",
+	"controllerIds": ["mm:controller", "mm:extraction_core"],
+	"type": "mm:item",
+	"config": {
+		"rows": 3,
+		"columns": 3
+	}
+}

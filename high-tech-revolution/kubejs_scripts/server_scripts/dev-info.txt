@@ -1,0 +1,23 @@
+World seed:
+
+-6583776041235573765
+
+For the sake of recipes, 1 XP = 10 mB Essence of Knowledge (rounded down)
+
+
+Better names for Alex's Caves:
+
+Magnetic Cavern
+Primordial Grotto
+Toxic Dump
+
+
+
+Text colours:
+
+White - Player
+Green - Whoever's sent you on the quest
+
+
+
+/tellraw @p {"text":"MSG", "color":"green"}

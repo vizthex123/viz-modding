@@ -1,0 +1,52 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:cobblestone",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "tinyredstone:silicon_compound",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0025,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:copper_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0015,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "xycraft_world:aluminum_nugget",
+			"count": 1
+		}
+	}
+  ]
+}

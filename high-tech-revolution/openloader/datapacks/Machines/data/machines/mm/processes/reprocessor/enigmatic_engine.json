@@ -1,0 +1,57 @@
+{
+	"ticks": 600,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 16000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:enigmatic_engine",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:copper_ingot",
+			"count": 16
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.85,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_ingot",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "biggerreactors:uranium_ingot",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "thermal:crude_oil",
+			"amount": 25
+		}
+	}
+  ]
+}

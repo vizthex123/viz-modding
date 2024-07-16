@@ -1,0 +1,5 @@
+{
+	"id": "minter_core",
+	"name": "Coin Minter Core",
+	"type": "mm:machine"
+}

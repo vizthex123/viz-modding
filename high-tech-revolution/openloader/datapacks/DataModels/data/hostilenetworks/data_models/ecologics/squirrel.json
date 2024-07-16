@@ -1,0 +1,32 @@
+{
+    "entity": "ecologics:squirrel",
+    "variants": [],
+    "name": "entity.ecologics.squirrel",
+    "name_color": "#6e4f2f",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+	"trivia": "custom.trivia.squirrel",
+    "fabricator_drops": [
+        {
+            "item": "ecologics:walnut",
+            "count": 4
+        },
+		{
+            "item": "alexscaves:pine_nuts",
+            "count": 4
+        },
+		{
+            "item": "minecraft:sweet_berries",
+            "count": 4
+        }
+    ]
+}

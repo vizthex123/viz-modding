@@ -1,0 +1,64 @@
+{
+	"ticks": 400,
+	"structureId": "machines:combiner",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 3200
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:netherite",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "lolenderite:enderite_fragment",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:popped_chorus_fruit",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "excavated_variants:end_stones",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "lolenderite:enderite_ingot",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.35,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "lolenderite:enderite_ingot",
+			"count": 1
+		}
+	}
+  ]
+}

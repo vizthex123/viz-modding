@@ -1,0 +1,39 @@
+{
+	"ticks": 200,
+	"structureId": "machines:crystal_transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:gems/xychorium",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/brown",
+			"count": 2
+		}
+	}
+	],
+	"outputs": [
+    {
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "xycraft_world:xychorium_gem_dark",
+			"count": 1
+		}
+	}
+  ]
+}

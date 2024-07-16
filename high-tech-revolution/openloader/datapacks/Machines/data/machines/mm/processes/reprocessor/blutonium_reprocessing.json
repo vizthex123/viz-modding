@@ -1,0 +1,40 @@
+{
+	"ticks": 400,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 16000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "biggerreactors:blutonium_ingot",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.1,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "biggerreactors:uranium_ingot",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscave:uranium_shard",
+			"count": 6
+		}
+	}
+  ]
+}

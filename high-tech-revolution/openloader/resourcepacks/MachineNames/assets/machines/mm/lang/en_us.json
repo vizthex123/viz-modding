@@ -1,0 +1,10 @@
+{
+	"item.mm.blueprint": "Blueprint",
+	"machines.mm.core": "Machine Core",
+	
+	"machines.mm.recycler": "Recycler",
+	"machines.mm.recycling": "Recycling...",
+	
+	"machines.mm.crystal_converter": "Crystal Converter",
+	"machines.mm.converting": "Converting Xychorium..."
+}

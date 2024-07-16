@@ -1,0 +1,25 @@
+{
+	"name": "Coin Minter",
+    "controllerIds": "mm:minter_core",
+    "layout": [
+        [
+            "I"
+        ],
+        [
+            "C"
+        ],
+        [
+            "O"
+        ]
+    ],
+    "key": {
+		"I": {
+            "port": "mm:item_tiny",
+            "input": true
+        },
+		"O": {
+            "port": "mm:item_tiny",
+            "input": false
+        }
+    }
+}

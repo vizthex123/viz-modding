@@ -1,0 +1,42 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "nourished_nether:ash",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "nourished_nether:ash_lump",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:quartz",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "nourished_nether:soul_coal",
+			"count": 1
+		}
+	}
+  ]
+}

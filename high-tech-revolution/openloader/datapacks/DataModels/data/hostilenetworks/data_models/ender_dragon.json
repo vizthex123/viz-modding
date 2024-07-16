@@ -1,0 +1,44 @@
+{
+	"entity": "minecraft:ender_dragon",
+    "name": "entity.minecraft.ender_dragon",
+	"name_color": "#CC00CC",
+	"gui_scale": 0.25,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0.5,
+	"gui_z_offset": 0,
+	"sim_cost": 2560,
+	"input": {
+		"item": "hostilenetworks:prediction_matrix"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:end_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.ender_dragon",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:dragon_egg",
+			"count": 1
+		},
+		{
+			"item": "minecraft:dragon_breath",
+			"count": 16
+		},
+		{
+			"optional": true,
+			"item": "quark:dragon_scale",
+			"count": 8
+		}
+	],
+    "tier_data": [
+		100,
+        150,
+        200,
+        1200
+    ],
+    "data_per_kill": [
+        50,
+        50,
+        50,
+        240
+    ]
+}

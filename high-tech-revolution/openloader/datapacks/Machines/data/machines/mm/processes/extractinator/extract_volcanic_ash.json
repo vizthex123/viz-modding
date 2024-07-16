@@ -1,0 +1,52 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "regions_unexplored:volcanic_ash",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:calcite",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.2,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.1,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:uranium_shard",
+			"count": 1
+		}
+	}
+  ]
+}

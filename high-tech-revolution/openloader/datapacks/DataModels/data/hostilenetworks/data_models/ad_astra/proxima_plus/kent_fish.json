@@ -1,0 +1,28 @@
+{
+    "entity": "ad_astra_proxima_plus:kent_fish",
+    "variants": [],
+    "name": "entity.ad_astra_proxima_plus:kent_fish",
+    "name_color": "#8d0c0c",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.kent_fish",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:salmon",
+            "count": 16
+        },
+        {
+            "item": "minecraft:redstone",
+            "count": 16
+        }
+    ]
+}

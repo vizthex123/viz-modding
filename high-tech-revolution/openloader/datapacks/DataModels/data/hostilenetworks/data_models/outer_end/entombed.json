@@ -1,0 +1,26 @@
+{
+    "entity": "outer_end:entombed",
+    "variants": [],
+    "name": "entity.outer_end.entombed",
+    "name_color": "#4C324A",
+    "gui_scale": 0.8,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.entombed",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:purpur_block",
+            "count": 32
+        }
+    ]
+}

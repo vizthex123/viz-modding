@@ -1,0 +1,45 @@
+{
+    "entity": "minecraft:pufferfish",
+    "variants": [],
+    "name": "entity.minecraft.pufferfish",
+    "name_color": "#9e6d13",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.pufferfish",
+    "fabricator_drops": [
+        {
+            "optional": true,
+            "item": "croptopia:roe",
+            "count": 64
+        },
+        {
+            "item": "minecraft:pufferfish",
+            "count": 32
+        },
+        {
+            "item": "minecraft:bone_meal",
+            "count": 2
+        }
+    ],
+    "tier_data": [
+        6,
+        54,
+        354,
+        1254
+    ],
+    "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+    ]
+}

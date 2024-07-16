@@ -1,0 +1,50 @@
+{
+	"ticks": 300,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:fire_charge",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.33,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:blaze_powder",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.33,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gunpowder",
+			"count": 1
+		}
+	}
+  ]
+}

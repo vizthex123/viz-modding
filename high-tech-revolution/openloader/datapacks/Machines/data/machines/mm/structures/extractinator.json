@@ -1,0 +1,31 @@
+{
+	"name": "Extractinator",
+    "controllerIds": "mm:extraction_core",
+    "layout": [
+        [
+            "G",
+            "I"
+        ],
+        [
+            "G",
+            "C"
+        ],
+        [
+            "G",
+            "O"
+        ]
+    ],
+    "key": {
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "port": "mm:item_large",
+            "input": false
+        }
+    }
+}

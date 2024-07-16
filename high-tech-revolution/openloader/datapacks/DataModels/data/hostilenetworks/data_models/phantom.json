@@ -1,0 +1,26 @@
+{
+    "entity": "minecraft:phantom",
+    "variants": [
+		"upgrade_aquatic:flare"
+	],
+    "name": "entity.minecraft.phantom",
+    "name_color": "#3B457C",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.phantom",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:phantom_membrane",
+            "count": 8
+        }
+    ]
+}

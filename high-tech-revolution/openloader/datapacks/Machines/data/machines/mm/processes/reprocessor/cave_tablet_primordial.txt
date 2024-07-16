@@ -1,0 +1,49 @@
+{
+	"ticks": 600,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 8000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:cave_tablet",
+			"nbt": "{CaveBiome:\"alexscaves:primordial_caves\"}",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:eggs",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:paper",
+			"count": 12
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:cave_codex",
+			"nbt": "{CaveBiome:\"alexscaves:primordial_caves\"}",
+			"count": 1
+		}
+	}
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "disableCrouchMining": false,
+  "disableExtraToolDamage": false,
+  "disableExtraFoodExhaustion": false,
+  "treeLifetimeLength": 4.0,
+  "dynamicMiningSpeed": {
+    "disable": false,
+    "speedMultiplication": 0.5,
+    "maxSpeedMultiplication": 16.0
+  },
+  "trees": {
+    "standardTree": {
+      "algorithm": {
+        "maxLeavesRadius": 10,
+        "maxLogAmount": 256,
+        "shouldFallOnMaxLogAmount": false,
+        "shouldIgnorePersistentLeaves": true
+      },
+      "logFilter": {
+        "whitelistedTags": [
+			"minecraft:logs"
+        ],
+        "whitelist": [
+			"regions_unexplored:saguaro_cactus"
+        ],
+        "blacklist": []
+      },
+      "leavesFilter": {
+        "whitelistedTags": [
+			"minecraft:leaves",
+			"minecraft:wart_blocks"
+        ],
+        "whitelist": [
+			"regions_unexplored:saguaro_cactus"
+        ],
+        "blacklist": []
+      },
+      "extraBlockFilter": {
+        "whitelistedTags": [
+          "regions_unexplored:branches"
+        ],
+        "whitelist": [
+			"minecraft:cocoa",
+			"minecraft:bee_nest",
+			"minecraft:vine",
+			"alexscaves:pewen_branch",
+			"alexscaves:thornwood_branch",
+			"regions_unexplored:joshua_beard",
+			"regions_unexplored:palm_beard",
+			"regions_unexplored:kapok_vines",
+			"regions_unexplored:cactus_flower",
+			"silverbirch:shelf_fungus"
+        ],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": true,
+      "allowedToolFilter": {
+        "whitelistedTags": [
+			"minecraft:axes"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "verticalTree": {
+      "filter": {
+        "whitelistedTags": [],
+        "whitelist": [
+			"minecraft:cactus",
+			"minecraft:bamboo"
+        ],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "chorusTree": {
+      "enabled": false,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "mushroomTree": {
+      "stemFilter": {
+        "whitelistedTags": [
+			"minecraft:logs"
+        ],
+        "whitelist": [
+			"minecraft:mushroom_stem"
+        ],
+        "blacklist": []
+      },
+      "capFilter": {
+        "whitelistedTags": [],
+        "whitelist": [
+			"minecraft:brown_mushroom_block",
+			"minecraft:red_mushroom_block"
+        ],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": true,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    }
+  }
+}

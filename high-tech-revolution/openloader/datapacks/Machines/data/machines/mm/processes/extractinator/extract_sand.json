@@ -1,0 +1,52 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:sand",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:apatite",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.025,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gold_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0025,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:lead_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0001,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:uranium_shard",
+			"count": 1
+		}
+	}
+  ]
+}

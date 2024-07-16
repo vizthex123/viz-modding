@@ -1,0 +1,28 @@
+{
+    "entity": "minecraft:wolf",
+    "variants": [
+		"enderzoology:dire_wolf"
+	],
+    "name": "entity.minecraft.wolf",
+    "name_color": "#979494",
+    "gui_scale": 1.0,
+    "gui_x_offset": 0.0,
+    "gui_y_offset": 0.0,
+    "gui_z_offset": 0.0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.wolf",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:bone",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+#Thermaloot Config
+#---------------
+#The number of translations provided in a resource pack. Note that if this is higher than the number of actual translation keys per naming tier that a client has then the names will show up as raw lang keys.
+number_of_name_variants = 1
+
+[name_qualities]
+	#How lucky/unlucky something needs to be to get a name from that tier.
+	#The amount of luck to go from a terrible name to a bad name
+	#Range: 0.0 ~ 1.0
+	terrible_bad = 0.25
+	#The amount of luck to go from a bad name to a good name
+	#Range: 0.0 ~ 1.0
+	bad_good = 0.5
+	#The amount of luck to go from a good name to an amazing name
+	#Range: 0.0 ~ 1.0
+	good_amazing = 0.75
+
+[extra_names]
+	#Used to disable the nesting of names, like Amazing Soggy Thing, because that may not work in some languages
+	nest_adjectives = false
+	#How lucky a capacitor needs to be to get a second name
+	#Range: 0.0 ~ 1.0
+	extra_lucky = 0.95
+	#How unlucky a capacitor needs to be to get a second (or third) name
+	#Range: 0.0 ~ 1.0
+	extra_unlucky = 0.03

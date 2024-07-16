@@ -1,0 +1,31 @@
+{
+    "entity": "enderzoology:enderminy",
+    "variants": [],
+    "name": "entity.enderzoology.enderminy",
+    "name_color": "#082420",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 384,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.enderminy",
+    "fabricator_drops": [
+        {
+            "item": "enderzoology:ender_fragment",
+            "count": 16
+        },
+        {
+            "optional": true,
+            "item": "reliquary:nebulous_heart",
+            "count": 1
+        }
+    ]
+}

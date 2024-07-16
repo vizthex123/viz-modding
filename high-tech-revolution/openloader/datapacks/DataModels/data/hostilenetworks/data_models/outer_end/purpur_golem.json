@@ -1,0 +1,30 @@
+{
+    "entity": "outer_end:purpur_golem",
+    "variants": [],
+    "name": "entity.outer_end.purpur_golem",
+    "name_color": "#6e4f6e",
+    "gui_scale": 0.65,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.purpur_golem",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:purpur_block",
+            "count": 24
+        },
+        {
+            "item": "minecraft:ender_eye",
+            "count": 8
+        }
+    ]
+}

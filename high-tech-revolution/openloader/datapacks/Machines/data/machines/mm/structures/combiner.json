@@ -1,0 +1,27 @@
+{
+	"name": "Amalgamation Station",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "GEG",
+            "ICO"
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"I": {
+            "tag": "revolution:big_input",
+            "input": true
+        },
+		"O": {
+            "tag": "revolution:non_tiny_output",
+            "input": false
+        }
+    }
+}

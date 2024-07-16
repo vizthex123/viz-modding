@@ -1,0 +1,115 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gravel",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:flint",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.015,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:redstone",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "ae2:certus_quartz_dust",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:copper_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.025,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.02,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gold_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.001,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "translocators:diamond_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:tin_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:lead_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:silver_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0003,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:uranium_shard",
+			"count": 1
+		}
+	}
+  ]
+}

@@ -1,0 +1,172 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'cavesanddepths',
+  provided_stones: [
+    {
+      id: 'chert',
+      lang: {
+        en_us: 'Chert',
+      },
+      block_id: 'cavesanddepths:chert',
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'chalkstone',
+      lang: {
+        en_us: 'Chalkstone',
+      },
+      block_id: 'cavesanddepths:chalkstone',
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'mudstone',
+      lang: {
+        en_us: 'Mudstone',
+      },
+      block_id: 'cavesanddepths:mudstone',
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'slate',
+      lang: {
+        en_us: 'Slate',
+      },
+      block_id: 'cavesanddepths:slate',
+      types: [
+		'stone',
+      ],
+    },
+  ],
+  provided_ores: [
+	{
+      id: 'coal_ore',
+      lang: {
+		en_us: 'Coal Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_coal_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'copper_ore',
+      lang: {
+		en_us: 'Copper Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_copper_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'iron_ore',
+      lang: {
+		en_us: 'Iron Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_iron_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'gold_ore',
+      lang: {
+		en_us: 'Gold Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_gold_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'diamond_ore',
+      lang: {
+		en_us: 'Diamond Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_diamond_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'emerald_ore',
+      lang: {
+		en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_emerald_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'lapis_ore',
+      lang: {
+		en_us: 'Lapis Lazuli Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_lapislazuli_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'redstone_ore',
+      lang: {
+		en_us: 'Redstone Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_redstone_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+  ],
+}

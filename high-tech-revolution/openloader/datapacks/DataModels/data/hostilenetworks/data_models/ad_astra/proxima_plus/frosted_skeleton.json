@@ -1,0 +1,32 @@
+{
+    "entity": "ad_astra_proxima_plus:frosted_skeleton",
+    "variants": [],
+    "name": "entity.ad_astra_proxima_plus:frosted_skeleton",
+    "name_color": "#779696",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.frosted_skeleton",
+    "fabricator_drops": [
+        {
+            "item": "ad_astra_proxima_plus:proxima_c_ice",
+            "count": 8
+        },
+        {
+            "item": "ad_astra:ice_shard",
+            "count": 16
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 16
+        }
+    ]
+}

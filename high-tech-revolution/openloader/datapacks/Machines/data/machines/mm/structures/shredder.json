@@ -1,0 +1,33 @@
+{
+	"name": "Shredder",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "GCF"
+        ],
+        [
+            "IEO"
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"F": {
+            "port": "mm:fluid",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "tag": "revolution:non_tiny_output",
+            "input": false
+        }
+    }
+}

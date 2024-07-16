@@ -1,0 +1,24 @@
+{
+	"ticks": 200,
+	"structureId": "machines:coin_minter",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "coinsje:copper_coin",
+			"count": 10
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "coinsje:iron_coin",
+			"count": 1
+		}
+	}
+  ]
+}

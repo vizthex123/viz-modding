@@ -1,0 +1,14 @@
+{
+	"revolution.tip.ae": "1 RF = 0.5 AE power units.",
+	"revolution.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack because there's already mods that show you the relevant info without the annoying tooltip spam.",
+	"revolution.tip.bundle": "You can scroll the mouse wheel over a Bundle (or Bag of Holding) to select which item you want to extract.",
+	"revolution.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
+	"revolution.tip.cooldown": "Unlike my other modpacks, you unfortunately have to suffer with the combat cooldown until I can find a mod to balance axe damage.",
+	"revolution.tip.mouse_tweaks": "Remember that Mouse Tweaks is installed, so you can shift+click and drag the mouse to mass-move items (and more).",
+	"revolution.tip.quests": "Don't forget that you can view quests (and their dependencies) even if they're locked. Lets you plan ahead a bit.",
+	"revolution.tip.recipes": "Many recipes are different than what you're (probably) used to, and several items have additional recipes. Be sure to check them even if you've long since memorized it.",
+	"revolution.tip.rei": "REI can be configured by clicking the gear wheel in your inventory. You can also filter it to only show craftable items from that quick-menu (and there's more options in the full settings menu).",
+	"revolution.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
+	"revolution.tip.tesseract": "Tesseracts are able to transport energy, items, and fluids across time & space. Consider this when selecting a Flux Network or Tesseract for a task.",
+	"revolution.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."
+}

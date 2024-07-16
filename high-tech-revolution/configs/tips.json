@@ -1,0 +1,8 @@
+{
+  "defaultCycleTime": 5000,
+  "ignoredNamespaces": [
+    "tipsmod",
+    "outer_end"
+  ],
+  "ignoredTips": []
+}

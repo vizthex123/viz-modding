@@ -1,0 +1,28 @@
+{
+    "entity": "aquatic_frontiers:spongesquid",
+    "variants": [],
+    "name": "entity.aquatic_frontiers.spongesquid",
+    "name_color": "#bfba4d",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.spongesquid",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:wet_sponge",
+            "count": 8
+        },
+        {
+            "item": "minecraft:ink_sac",
+            "count": 24
+        }
+    ]
+}

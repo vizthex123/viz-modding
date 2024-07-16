@@ -1,0 +1,43 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "regions_unexplored:ash",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:calcite",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.15,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "galosphere:pink_salt_shard",
+			"count": 1
+		}
+	}
+  ]
+}

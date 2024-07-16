@@ -1,0 +1,24 @@
+{
+	"ticks": 40,
+	"structureId": "machines:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "regions_unexplored:mossy_stone",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "cavesanddepths:mossy_cobblestone",
+			"count": 1
+		}
+	}
+  ]
+}

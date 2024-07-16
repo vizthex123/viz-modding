@@ -1,0 +1,46 @@
+{
+    "entity": "minecraft:hoglin",
+    "variants": [
+		"minecraft:zoglin",
+		"ad_astra:mogler",
+		"ad_astra:zombified_mogler"
+	],
+    "name": "entity.minecraft.hoglin",
+    "name_color": "#E8A074",
+    "gui_scale": 1.0,
+    "gui_x_offset": 0.0,
+    "gui_y_offset": 0.0,
+    "gui_z_offset": 0.0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.hoglin",
+    "fabricator_drops": [
+        {
+            "item": "nourished_nether:raw_hoglin",
+            "count": 16
+        },
+        {
+            "item": "nourished_nether:hoglin_hide",
+            "count": 8
+        }
+    ],
+    "tier_data": [
+        6,
+        54,
+        354,
+        1254
+    ],
+    "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"ticks": 20,
+	"structureId": "machines:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "silverbirch:silver_birch_logs",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "regions_unexplored:silver_birch_log",
+			"count": 1
+		}
+	}
+  ]
+}

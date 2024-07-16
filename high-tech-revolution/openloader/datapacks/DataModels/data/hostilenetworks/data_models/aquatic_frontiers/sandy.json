@@ -1,0 +1,56 @@
+{
+    "entity": "aquatic_frontiers:sandy",
+    "variants": [
+		"aquatic_frontiers:sandy_coral",
+		"aquatic_frontiers:sandy_pickle",
+		"aquatic_frontiers:soul_sandy"
+	],
+    "name": "entity.aquatic_frontiers.sandy",
+    "name_color": "#d7cda1",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 32,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.sandy",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:sand",
+            "count": 8
+        },
+        {
+            "item": "minecraft:soul_sand",
+            "count": 4
+        },
+        {
+            "item": "minecraft:brain_coral",
+            "count": 16
+        },
+        {
+            "item": "minecraft:bubble_coral",
+            "count": 16
+        },
+        {
+            "item": "minecraft:fire_coral",
+            "count": 16
+        },
+        {
+            "item": "minecraft:horn_coral",
+            "count": 16
+        },
+        {
+            "item": "minecraft:tube_coral",
+            "count": 16
+        },
+        {
+            "item": "minecraft:sea_pickle",
+            "count": 16
+        }
+    ]
+}

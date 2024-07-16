@@ -1,0 +1,39 @@
+{
+	"ticks": 300,
+	"structureId": "machines:dye_extractor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 3200
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "xycraft_world:xychorium_gem_blue",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+    {
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "xycraft_world:xychorium_gem_light",
+			"count": 1
+		}
+    },
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:blue_dye",
+			"count": 1
+		}
+    }
+  ]
+}

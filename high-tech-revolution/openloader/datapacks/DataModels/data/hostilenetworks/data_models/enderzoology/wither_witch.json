@@ -1,0 +1,39 @@
+{
+    "entity": "enderzoology:wither_witch",
+    "variants": [],
+    "name": "entity.enderzoology.wither_witch",
+    "name_color": "#1a1a1a",
+    "gui_scale": 0.9,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 320,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.wither_witch",
+    "fabricator_drops": [
+        {
+            "item": "enderzoology:withering_dust",
+            "count": 16
+        },
+        {
+            "item": "minecraft:glass_bottle",
+            "count": 32
+        },
+        {
+            "item": "minecraft:stick",
+            "count": 32
+        },
+        {
+            "optional": true,
+            "item": "reliquary:witch_hat",
+            "count": 3
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"block.xycraft_world.aluminum_storage": "Block of Aluminum",
+	"block.xycraft_world.raw_aluminum_block": "Block of Raw Aluminum",
+
+	"block.xycraft_world.xychorium_storage_blue": "Block of Blue Xychorium Gems",
+	"block.xycraft_world.xychorium_storage_green": "Block of Green Xychorium Gems",
+	"block.xycraft_world.xychorium_storage_red": "Block of Red Xychorium Gems",
+	"block.xycraft_world.xychorium_storage_dark": "Block of Dark Xychorium Gems",
+	"block.xycraft_world.xychorium_storage_light": "Block of Light Xychorium Gems",
+
+	"item.xycraft_world.xychorium_gem_blue": "Blue Xychorium Gem",
+	"item.xycraft_world.xychorium_gem_green": "Green Xychorium Gem",
+	"item.xycraft_world.xychorium_gem_red": "Red Xychorium Gem",
+	"item.xycraft_world.xychorium_gem_dark": "Dark Xychorium Gem",
+	"item.xycraft_world.xychorium_gem_light": "Light Xychorium Gem"
+}

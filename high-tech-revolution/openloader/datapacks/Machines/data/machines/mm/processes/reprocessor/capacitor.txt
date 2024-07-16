@@ -1,0 +1,50 @@
+{
+	"ticks": 300,
+	"structureId": "machines:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermaloot:variable_capacitor",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:redstone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gold_nugget",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.45,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "xycraft_world:aluminum_nugget",
+			"count": 3
+		}
+	}
+  ]
+}

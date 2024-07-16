@@ -1,0 +1,10 @@
+{
+	"id": "item_small",
+	"name": "Small Item",
+	"controllerIds": ["mm:controller", "mm:extractinator_core", "mm:minter"],
+	"type": "mm:item",
+	"config": {
+		"rows": 1,
+		"columns": 3
+	}
+}

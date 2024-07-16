@@ -1,0 +1,26 @@
+{
+    "entity": "outer_end:spectrafly",
+    "variants": [],
+    "name": "entity.outer_end.spectrafly",
+    "name_color": "#9AB2bA",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction",
+        "count": 1
+    },
+    "trivia": "custom.trivia.spectrafly",
+    "fabricator_drops": [
+        {
+            "item": "outer_end:spectragel",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"ticks": 200,
+	"structureId": "machines:dye_extractor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:dye_materials/cyan_extractables",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:cyan_dye",
+			"count": 2
+		}
+    }
+  ]
+}

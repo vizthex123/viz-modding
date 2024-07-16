@@ -1,0 +1,71 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ */
+
+{
+  mod_id: 'ad_astra',
+  provided_stones: [],
+  provided_ores: [
+	{
+      id: 'desh',
+      lang: {
+        en_us: 'Desh Ore',
+      },
+      block_id: [
+        'ad_astra:deepslate_desh_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'deepslate',
+      ],
+	},
+	{
+      id: 'calorite',
+      lang: {
+        en_us: 'Calorite Ore',
+      },
+      block_id: [
+        'ad_astra:deepslate_calorite_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'deepslate',
+      ],
+	},
+	{
+      id: 'ostrum',
+      lang: {
+        en_us: 'Ostrum Ore',
+      },
+      block_id: [
+        'ad_astra:deepslate_ostrum_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'deepslate',
+      ],
+	},
+	{
+      id: 'ice_shard',
+      lang: {
+        en_us: 'Ice Sard Ore',
+      },
+      block_id: [
+        'ad_astra:deepslate_ice_shard_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'deepslate',
+      ],
+	},
+  ],
+}

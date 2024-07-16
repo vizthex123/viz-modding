@@ -1,0 +1,32 @@
+{
+	"ticks": 400,
+	"structureId": "machines:crystal_transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:certus",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "fluxnetworks:flux_dust",
+			"count": 4
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "ae2:charged_certus_quartz_crystal",
+			"count": 1
+		}
+	}
+  ]
+}
