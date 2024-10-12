@@ -12,14 +12,16 @@ val diamond_coin = <universalcoins:item.diamond_coin>;
 val obsidian_coin = <universalcoins:item.obsidian_coin>;
 
 # Cache recipe
-recipes.addShaped(cache*4, [[diamond_coin, diamond_coin, diamond_coin],
-											      [diamond_coin, obsidian_coin, diamond_coin],
-											      [diamond_coin, diamond_coin, diamond_coin]]);
+recipes.addShapeless(cache*4, [obsidian_coin, obsidian_coin]);
+recipes.addShapeless(cache*2, [diamond_coin, diamond_coin, diamond_coin, diamond_coin, diamond_coin]);
+
 
 # Green Hearts
 val empty_canister = <TConstruct:heartCanister>;
+
 recipes.addShapeless(<TConstruct:heartCanister:5>, [diamond_coin, <TConstruct:heartCanister:3>, <TConstruct:heartCanister:1>]);
-recipes.addShapeless(<TConstruct:heartCanister:6>, [empty_canister, empty_canister, <TConstruct:heartCanister:5>, rare]);
+recipes.addShapeless(<TConstruct:heartCanister:6>, [<TConstruct:heartCanister:4>, empty_canister, <TConstruct:heartCanister:5>, rare]);
+
 
 # Renames & Tooltips
 cache.displayName = "Mystical Cache";

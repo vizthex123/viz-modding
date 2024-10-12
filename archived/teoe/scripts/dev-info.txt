@@ -1,0 +1,44 @@
+Alfheim items have double the EMC
+Divide mana cost by 10 to get EMC addition
+
+Old idea:
+100 Mana is +10 EMC
+
+
+
+Dimension IDs:
+
+-112 - Last Millenium
+-100 - Deep Dark
+-42 - Outer Lands
+-34 - Runic Dungeon
+3 - Aether
+4 - Aether Dungeon
+6 - Mining Dimension
+7 - Twilight Forest
+
+
+
+If ExtraE ever gets an add-on or unofficial release, change each tier as follows (transfer/gen | storage)
+
+Relays:
+
+Mk 4 - 720 | 15,000,000
+Mk 5 - 2,560 | 20,000,000
+Mk 6 - 4,000 | 30,000,000
+
+Collectors:
+
+Mk 4 - 64 | 8,000
+Mk 5 - 128 | 120,000
+Mk 6 - 256 | 256,000
+
+Gotta change the recipes too.
+
+
+
+How to give player head:
+
+/give @p skull 1 3 {SkullOwner:"SethBling"}
+
+/give @p skull 1 3 {SkullOwner:"direwolf20"}

@@ -6,6 +6,11 @@ val uncommon = <LootRoulette:U>;
 val rare = <LootRoulette:R>;
 val legendary = <LootRoulette:L>;
 
+// Toaster
+recipes.addShaped(<cookingbook:toaster>, [[null, null, <minecraft:stone_button>],
+																			[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+																			[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+
 // Fix the Cardboard Sheet have a million recipes for no reason
 recipes.remove(<EMT:EMTItems:11>);
 recipes.addShaped(<EMT:EMTItems:11>, [[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
@@ -13,6 +18,7 @@ recipes.addShaped(<EMT:EMTItems:11>, [[<minecraft:paper>, <minecraft:paper>, <mi
 																		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
 
 // Convert Crafting Tables into vanilla ones
+// Some recipes only accept vanilla ones, and without KubeJS I can't replace all the inputs
 recipes.addShapeless(<minecraft:crafting_table>, [<ore:craftingTableWood>, <ore:stickWood>]);
 
 // Upgrade the Ore Converter into the Automatic one
@@ -46,25 +52,24 @@ recipes.remove(<craftnstar:starcore>);
 recipes.remove(<craftnstar:starbranch>);
 recipes.remove(<minecraft:nether_star>);
 
-val emerald = <minecraft:emerald>;
 val diamond = <ore:gemDiamond>;
-
 val thaumium = <Thaumcraft:ItemResource:2>;
 val quicksilver = <Thaumcraft:ItemResource:3>;
 
 recipes.addShaped(<craftnstar:starbranch>, [[null, rare, null],
-																			[emerald, thaumium, emerald],
-																			[emerald, thaumium, emerald]]);
+																			[diamond, thaumium, diamond],
+																			[diamond, thaumium, diamond]]);
 
-recipes.addShaped(<craftnstar:starcore>, [[legendary, quicksilver, legendary],
-																		[quicksilver, diamond, quicksilver],
-																		[legendary, quicksilver, legendary]]);
+recipes.addShaped(<craftnstar:starcore>, [[quicksilver, legendary, quicksilver],
+																		[legendary, diamond, legendary],
+																		[quicksilver, legendary, quicksilver]]);
 
 recipes.addShaped(<minecraft:nether_star>, [[null, <craftnstar:starbranch>, null],
 																			  [<craftnstar:starbranch>, <craftnstar:starcore>, <craftnstar:starbranch>],
 																			  [null, <craftnstar:starbranch>, null]]);
 
 // Full Heart with coins
+// Failsafe in case players somehow die a ton, are in multiplayer and can't get enough lives, etc.
 val obsidian_coin = <universalcoins:item.obsidian_coin>;
 recipes.addShapeless(<HardcoreQuesting:bags:1>, [obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin]);
 

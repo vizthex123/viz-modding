@@ -24,11 +24,6 @@ mods.biggercraftingtables.Huge.addShapeless(<output>,
 [<input>, <INPUT2>, <UP TO 49 MAX>]);
 */
 
-// Tome of Knowledge
-// After 8 years, I finally made it a shapeless recipe. pog.
-mods.biggercraftingtables.Huge.addShapeless(<ProjectE:item.pe_tome>,
-[<AdvancedSolarPanel:asp_crafting_items:13>, <appliedenergistics2:tile.BlockQuantumLinkChamber>, <BigReactors:BRMetalBlock:4>, <ChickenChunks:chickenChunkLoader>, <CompactSolars:CompactSolarBlock:2>, <cookingbook:cookingtable>, <eng_toolbox:modular_socket>, <ewysworkshop:WorkshopTable>, <ExtraUtilities:unstableingot:2>, <GraviSuite:itemSimpleItem:5>, <IC2:itemPartIridium>, <LootRoulette:L>, <minecraft:dragon_egg>, <ObsidiPlates:ObsidianPressurePlate>, <ProjectE:item.pe_klein_star:5>, <peaether:alchemicalCoinItem>, <ProjRed|Core:projectred.core.part:59>, <RandomThings:ingredient:6>, <RedstoneArsenal:Storage>, <RArm:BlockIngotStorage>, <SuperMultiDrills:DrillBattery:4>.withTag({Battery: {Energy: 1000000}}), <Thaumcraft:ItemEldritchObject:3>, <Translocator:translocator:1>, <TwilightForest:item.charmOfKeeping3>, <TwilightForest:item.charmOfLife2>]);
-
 // Essence
 val nether_star = <minecraft:nether_star>;
 val alchemy_coin = <peaether:alchemicalCoinItem>;
@@ -42,12 +37,9 @@ mods.biggercraftingtables.Big.addShaped(<ModName:Essence>*64,
 	[null, obsidian_coin, alchemy_coin, obsidian_coin, null],
 	[nether_star, null, legendary, null, nether_star]]);
 
-/*
-# Dragon Egg
-recipes.remove(<minecraft:dragon_egg>);
-recipes.addShaped(<minecraft:dragon_egg>, [[<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>],
-																			  [<Avaritia:Resource:1>, <Avaritia:Resource:4>,<Avaritia:Resource:1>],
-																			  [<Avaritia:Resource:1>, <Avaritia:Resource:1>, <Avaritia:Resource:1>]]);
-*/
+// Tome of Knowledge
+// After 8 years, I finally figured out how to make it a shapeless recipe. pog af.
+mods.biggercraftingtables.Huge.addShapeless(<ProjectE:item.pe_tome>,
+[<AdvancedSolarPanel:asp_crafting_items:13>, <appliedenergistics2:tile.BlockQuantumLinkChamber>, <BigReactors:BRMetalBlock:4>, <ChickenChunks:chickenChunkLoader>, <cookingbook:cookingtable>, <eng_toolbox:modular_socket>, <ewysworkshop:WorkshopTable>, <ExtraUtilities:decorativeBlock1:1>, <GraviSuite:itemSimpleItem:5>, <IC2:itemPartIridium>, legendary, nether_star, <ProjectE:item.pe_klein_star:5>, <ProjRed|Core:projectred.core.part:59>, <RandomThings:ingredient:6>, <RedstoneArsenal:Storage>, <RArm:BlockIngotStorage>, <SuperMultiDrills:DrillBattery:4>.withTag({Battery: {Energy: 1000000}}), <Mekanism:TeleportationCore>, <ObsidiPlates:ObsidianPressurePlate>, <Translocator:translocator>, <Translocator:translocator:1>, <Thaumcraft:ItemEldritchObject:3>, <ThaumicTinkerer:kamiResource:2>, <TwilightForest:item.charmOfKeeping3>, <TwilightForest:item.charmOfLife2>, alchemy_coin, obsidian_coin]);
 
 print("BiggerCraftingTables.zs loaded");

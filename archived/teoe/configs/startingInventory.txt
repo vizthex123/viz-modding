@@ -1,3 +1,2 @@
 harvestcraft:chickensandwichItem,4,0
 minecraft:torch,16,0
-HardcoreQuesting:quest_book,1,0

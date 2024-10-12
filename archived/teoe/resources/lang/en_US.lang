@@ -1,0 +1,12 @@
+item.itemSimpleItem/2.name=Cooling Core
+item.itemEngineBoost.name=Engine Booster
+item.itemGravitationEngine.name=Gravitation Engine
+item.itemMagnetron.name=Magnetron
+item.itemSuperConductor.name=Superconductor
+item.itemSuperConductorCover.name=Superconductor Cover
+item.itemVajraCore.name=Vajra Core
+
+item.ModName.essence_leggings.name=The Essence of Everything Leggings
+
+item.cookingbook.toast.name=Toast
+tile.cookingbook.toaster.name=Toaster
