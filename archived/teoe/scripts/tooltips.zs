@@ -170,10 +170,6 @@ print("tooltips.zs loading...");
 
 
 
-// Invalid item failsafe
-<HardcoreQuesting:hqmInvalidItem>.addTooltip(format.red("If you have this item, report it to the modpack dev!"));
-<HardcoreQuesting:hqmInvalidItem>.addTooltip(format.gold("Can be crafted into a Reward Bag as a failsafe"));
-
 /*
 // Facade/Microblock tooltips since the blocks are hidden in NEI
 <appliedenergistics2:item.ItemMultiPart:120>.addTooltip(format.green("Used to craft Applied Energistics facades"));

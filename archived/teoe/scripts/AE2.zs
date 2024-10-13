@@ -6,10 +6,6 @@ val uncommon = <LootRoulette:U>;
 val rare = <LootRoulette:R>;
 val legendary = <LootRoulette:L>;
 
-
-# Grindstone recipes
-mods.appeng.Grinder.addRecipe(<HardcoreQuesting:hearts:3>, <TConstruct:heartCanister:1>, 8);
-
 # Presses
 val silicon = <appliedenergistics2:item.ItemMultiMaterial:19>;
 val logic = <appliedenergistics2:item.ItemMultiMaterial:15>;

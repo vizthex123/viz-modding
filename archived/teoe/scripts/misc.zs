@@ -68,15 +68,4 @@ recipes.addShaped(<minecraft:nether_star>, [[null, <craftnstar:starbranch>, null
 																			  [<craftnstar:starbranch>, <craftnstar:starcore>, <craftnstar:starbranch>],
 																			  [null, <craftnstar:starbranch>, null]]);
 
-// Full Heart with coins
-// Failsafe in case players somehow die a ton, are in multiplayer and can't get enough lives, etc.
-val obsidian_coin = <universalcoins:item.obsidian_coin>;
-recipes.addShapeless(<HardcoreQuesting:bags:1>, [obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin, obsidian_coin]);
-
-// Invalid Item Use
-recipes.addShapeless(<HardcoreQuesting:bags:1>, [<HardcoreQuesting:hqmInvalidItem>]);
-
-// The One Ring use
-recipes.addShapeless(<HardcoreQuesting:bags:4>*4, [<EMT:BaseBaubles>]);
-
 print("misc.zs loaded");
