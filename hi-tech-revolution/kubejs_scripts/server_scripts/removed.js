@@ -1,13 +1,44 @@
 // Removes various recipes
 ServerEvents.recipes(e => {
 
+    // Remove redundant recipes
+    e.remove({id: "outer_end:slime_from_gel"})
+
+    e.remove({id: "silverbirch:smelt_silver_birch_log_into_charcoal"})
+
+    e.remove({id: "xycraft_machines:shaped/sticky_piston_tagged"})
+
+    // For some reason, this doesn't work with the tagged recipe
+    // e.remove({id: "yungscavebiomes:glass_from_ancient_sand"})
+
+
+
+    // Remove vanilla wool dyeing recipes
+    e.remove({id: "minecraft:dye_white_wool"})
+    e.remove({id: "minecraft:dye_orange_wool"})
+    e.remove({id: "minecraft:dye_magenta_wool"})
+    e.remove({id: "minecraft:dye_light_blue_wool"})
+    e.remove({id: "minecraft:dye_yellow_wool"})
+    e.remove({id: "minecraft:dye_lime_wool"})
+    e.remove({id: "minecraft:dye_pink_wool"})
+    e.remove({id: "minecraft:dye_gray_wool"})
+    e.remove({id: "minecraft:dye_light_gray_wool"})
+    e.remove({id: "minecraft:dye_cyan_wool"})
+    e.remove({id: "minecraft:dye_purple_wool"})
+    e.remove({id: "minecraft:dye_blue_wool"})
+    e.remove({id: "minecraft:dye_brown_wool"})
+    e.remove({id: "minecraft:dye_green_wool"})
+    e.remove({id: "minecraft:dye_red_wool"})
+    e.remove({id: "minecraft:dye_black_wool"})
+
+
+
+    // Removed for balancing/replacement
     e.remove({id: "ad_astra:steel_ingot"})
     e.remove({id: "ad_astra:steel_block"})
+    e.remove({id: "ad_astra:strophar_ladder"})
 
     e.remove({id: "ae2:vibration_chamber"})
-
-    e.remove({id: "alexscaves:azure_neodymium_ingot"})
-    e.remove({id: "alexscaves:scarlet_neodymium_ingot"})
 
     e.remove({id: "cavesanddepths:chalkstoner"})
     e.remove({id: "cavesanddepths:mossballr"})
@@ -36,11 +67,6 @@ ServerEvents.recipes(e => {
     e.remove({id: "galosphere:silver_ingot_from_nuggets"})
     e.remove({id: "galosphere:raw_silver_block"})
 
-    e.remove({id: "lolenderite:enderite_fragment_from_smelting_primordial_remnants"})
-    e.remove({id: "lolenderite:enderite_fragment_from_blasting_primordial_remnants"})
-
-    e.remove({id: "mffs:steel_compound"})
-
     e.remove({id: "nourished_nether:netherite_nugget"})
     e.remove({id: "nourished_nether:netherite_nuggets_to_ingot"})
     e.remove({id: "nourished_nether:hoglin_hide_to_leather"})
@@ -48,51 +74,17 @@ ServerEvents.recipes(e => {
     e.remove({id: "quark:building/crafting/compressed/gunpowder_sack"})
     e.remove({id: "quark:building/crafting/compressed/gunpowder_sack_uncompress"})
 
-    e.remove({id: "redstone_arsenal:materials/flux_gem"})
-    e.remove({id: "redstone_arsenal:materials/flux_dust"})
-    e.remove({id: "redstone_arsenal:materials/flux_ingot_fire_charge_from_dust"})
-
     e.remove({id: "rftoolsbase:dimensionalshard"})
-
-    e.remove({id: "silverbirch:smelt_silver_birch_log_into_charcoal"})
-
-    e.remove({id: "tempad:tempad"})
 
     e.remove({id: "thermal:augments/rs_control_augment"})
 
-    e.remove({id: "xycraft_machines:shaped/sticky_piston_tagged"})
+    e.remove({id: "thermal_extra:machine/component_assembly/redstone_servo1"})
 
-
-
-    // Remove redudant wool dyeing recipes
-    e.remove({id: "minecraft:dye_white_wool"})
-    e.remove({id: "minecraft:dye_orange_wool"})
-    e.remove({id: "minecraft:dye_magenta_wool"})
-    e.remove({id: "minecraft:dye_light_blue_wool"})
-    e.remove({id: "minecraft:dye_yellow_wool"})
-    e.remove({id: "minecraft:dye_lime_wool"})
-    e.remove({id: "minecraft:dye_pink_wool"})
-    e.remove({id: "minecraft:dye_gray_wool"})
-    e.remove({id: "minecraft:dye_light_gray_wool"})
-    e.remove({id: "minecraft:dye_cyan_wool"})
-    e.remove({id: "minecraft:dye_purple_wool"})
-    e.remove({id: "minecraft:dye_blue_wool"})
-    e.remove({id: "minecraft:dye_brown_wool"})
-    e.remove({id: "minecraft:dye_green_wool"})
-    e.remove({id: "minecraft:dye_red_wool"})
-    e.remove({id: "minecraft:dye_black_wool"})
 
 
     // Removes recipes I moved to the Amalgamation Station
     e.remove({id: "minecraft:ender_pearl"})
     e.remove({id: "minecraft:netherite_ingot"})
-
-    e.remove({id: "minecraft:music_disc_5"})
-    e.remove({id: "alexscaves:music_disc_fusion"})
-    e.remove({id: "upgrade_aquatic:music_disc_atlantis"})
-
-    e.remove({id: "lolenderite:enderite_ingot"})
-    e.remove({id: "lolenderite:obsidian_infused_enderite_ingot"})
 
     e.remove({id: "minecraft:white_concrete_powder"})
     e.remove({id: "minecraft:orange_concrete_powder"})
@@ -111,9 +103,26 @@ ServerEvents.recipes(e => {
     e.remove({id: "minecraft:red_concrete_powder"})
     e.remove({id: "minecraft:black_concrete_powder"})
 
+    e.remove({id: "minecraft:music_disc_5"})
+    e.remove({id: "alexscaves:music_disc_fusion"})
+    e.remove({id: "upgrade_aquatic:music_disc_atlantis"})
+
+    e.remove({id: "alexscaves:azure_neodymium_ingot"})
+    e.remove({id: "alexscaves:scarlet_neodymium_ingot"})
+
+    e.remove({id: "mffs:steel_compound"})
+
+    e.remove({id: "redstone_arsenal:materials/flux_gem"})
+    e.remove({id: "redstone_arsenal:materials/flux_dust"})
+    e.remove({id: "redstone_arsenal:materials/flux_ingot_fire_charge_from_dust"})
+
+    e.remove({id: "tempad:tempad"})
+
+
     // Removes recipes I moved to the Reprocessor
     e.remove({id: "biggerreactors:smelting/graphite_ingot"})
     e.remove({id: "biggerreactors:blasting/graphite_ingot"})
+
 
     // Removes recipes I moved to the Shredder
     e.remove({id: "nourished_nether:smelt_netherite_gear"})

@@ -17,24 +17,6 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:uranium_ingot")
 
-
-    // Change Uranium Rods to use Graphite, Iron Rods, and Tags
-    e.remove({id: "alexscaves:uranium_rod"})
-    e.shaped(
-     "alexscaves:uranium_rod",
-        [
-          "URU",
-          "UGU",
-          "URU"
-        ],
-        {
-          G: "#forge:ingots/graphite",
-          R: "#forge:rods/iron",
-          U: "#forge:raw_materials/uranium"
-        }
-    ).id("kubejs:uranium_rod")
-    e.recipes.thermal.smelter(["alexscaves:uranium_rod"], ["4x #forge:ingots/graphite", "12x #forge:ingots/uranium", "2x #forge:ingots/aluminum"]).energy(8000).id("kubejs:ingot_uranium_rod")
-
     //// Change nuke recipes to have a bit of progression
     /// Also makes the grenade and cart craftable
         // TE
@@ -103,7 +85,39 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:fuel_rod")
 
-    // Change Fuel Rods to use Uranium Rods
+    // Change Reactor Casings to better reflect real-life recipes
+    e.remove({id: "biggerreactors:crafting/reactor/reactor_casing"})
+    e.shaped(
+      "4x biggerreactors:reactor_casing",
+        [
+          "SCS",
+          "CGC",
+          "SCS"
+        ],
+        {
+          C: "#alexscaves:concrete",
+          G: "#forge:ingots/graphite",
+          S: "#forge:rods/steel"
+        }
+    ).id("kubejs:reactor_casing")
+
+    // Change Reactor Coolant Manifolds so they don't conflict with Framed Glass
+    e.remove({id: "biggerreactors:crafting/reactor/reactor_manifold"})
+    e.shaped(
+      "4x biggerreactors:reactor_manifold",
+        [
+          "IGI",
+          "GSG",
+          "IGI"
+        ],
+        {
+          G: "#revolution:glass_viewer",
+          I: "iron_ingot",
+          S: ["powder_snow_bucket", "snow_block", "ecologics:snow_bricks"]
+        }
+    ).id("kubejs:reactor_manifold")
+
+    // Change the Cyanite Reprocessor's recipe
     e.remove({id: "biggerreactors:crafting/cyanite_reprocessor"})
     e.shaped(
      "biggerreactors:cyanite_reprocessor",
@@ -120,35 +134,5 @@ ServerEvents.recipes(e => {
           R: "biggerreactors:reactor_casing"
         }
     ).id("kubejs:cyanite_reprocessor")
-
-    // Change Reactor Coolant Manifolds so they don't conflict with Framed Glass
-    e.remove({id: "biggerreactors:crafting/reactor/reactor_manifold"})
-    e.shaped(
-      "4x biggerreactors:reactor_manifold",
-        [
-          "IGI",
-          "GSG",
-          "IGI"
-        ],
-        {
-          G: "#revolution:glass_viewer",
-          I: "iron_ingot",
-          S: ["powder_snow_bucket", "snow_block", "ecologics:snow_bricks", "xycraft_machines:water_block"]
-        }
-    ).id("kubejs:reactor_manifold")
-
-    e.shaped(
-      "4x biggerreactors:reactor_casing",
-        [
-          "SCS",
-          "CGC",
-          "SCS"
-        ],
-        {
-          C: "#alexscaves:concrete",
-          G: "#forge:ingots/graphite",
-          S: "#forge:rods/steel"
-        }
-    ).id("kubejs:reactor_casing")
 
 })

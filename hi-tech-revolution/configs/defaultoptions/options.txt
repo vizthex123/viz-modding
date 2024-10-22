@@ -1,4 +1,4 @@
-resourcePacks:["vanilla","mod_resources","builtin/add_xycraft_overrides_glass","builtin/add_xycraft_overrides_stone","builtin/add_xycraft_overrides_metal","mm_resources","Moonlight Mods Dynamic Assets","tact/restore_end_story","default_seamless","file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip","file/STONEBORN+-+1.20-1.20.1+-+V3.2.1.zip","file/ExtraModelTrivia-1.2.1.zip","resources/LoadingTips.zip","resources/Renamer.zip","file/Vertical Nuggets 1.20.zip"]
+resourcePacks:["vanilla","mod_resources","builtin/add_xycraft_overrides_glass","builtin/add_xycraft_overrides_stone","builtin/add_xycraft_overrides_metal","mm_resources","Moonlight Mods Dynamic Assets","tact/restore_end_story","default_seamless","file/STONEBORN Inventory Tweaks compat.zip","file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip","file/STONEBORN+-+1.20-1.20.1+-+V3.2.1.zip","file/ExtraModelTrivia-1.3.zip","resources/LoadingTips.zip","resources/Renamer.zip","file/Vertical Nuggets 1.20.zip"]
 incompatibleResourcePacks:["file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip"]
 advancedItemTooltips:false
 chatHeightUnfocused:0.45

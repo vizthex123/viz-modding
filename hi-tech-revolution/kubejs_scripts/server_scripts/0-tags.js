@@ -2,8 +2,8 @@
 ServerEvents.tags("item", e => {
 
     // Custom
+    // Tags used exclusively in multiblock recipes are in masterful_machinery.js
     e.add("revolution:bowls", ["bowl", "ecologics:coconut_husk"])
-    e.add("revolution:cleaning_agent", ["galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
     e.add("revolution:mossy_material", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "quark:moss_paste"])
     e.add("revolution:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "glow_lichen", "cavesanddepths:lichenfungusplaceable", "caveroot:torch_spore"])
 
@@ -12,6 +12,7 @@ ServerEvents.tags("item", e => {
 
 
 
+    e.add("revolution:crafting_table", ["crafting_table", "biomeswevegone:aspen_crafting_table", "biomeswevegone:baobab_crafting_table", "biomeswevegone:blue_enchanted_crafting_table", "biomeswevegone:green_enchanted_crafting_table", "biomeswevegone:cike_crafting_table", "biomeswevegone:cypress_crafting_table", "biomeswevegone:ebony_crafting_table", "biomeswevegone:fir_crafting_table", "biomeswevegone:florus_crafting_table", "biomeswevegone:holly_crafting_table", "biomeswevegone:ironwood_crafting_table", "biomeswevegone:jacaranda_crafting_table", "biomeswevegone:mahogany_crafting_table", "biomeswevegone:maple_crafting_table", "biomeswevegone:palm_crafting_table", "biomeswevegone:pine_crafting_table", "biomeswevegone:rainbow_eucalyptus_crafting_table", "biomeswevegone:redwood_crafting_table", "biomeswevegone:sakura_crafting_table", "biomeswevegone:skyris_crafting_table", "biomeswevegone:white_mangrove_crafting_table", "biomeswevegone:willow_crafting_table", "biomeswevegone:witch_hazel_crafting_table", "biomeswevegone:zelkova_crafting_table"])
     e.add("revolution:furnace", ["furnace", "quark:blackstone_furnace", "quark:deepslate_furnace"])
     e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "cavesanddepths:chert", "cavesanddepths:cobbled_slate", "cavesanddepths:mossy_cobblestone", "cavesanddepths:mossy_cobbled_deepslate", "quark:jasper", "quark:shale", "upgrade_aquatic:kelpy_cobblestone"])
     e.add("revolution:input_stones", ["#forge:stone", "tuff", "quark:jasper", "quark:shale"])
@@ -37,9 +38,13 @@ ServerEvents.tags("item", e => {
 
 
     e.add("revolution:cacti", ["cactus", "regions_unexplored:saguaro_cactus", "regions_unexplored:barrel_cactus"])
-    e.add("revolution:cave_plants", ["glow_lichen", "caveroot:cave_root", "caveroot:torch_spore"])
+    e.add("revolution:cave_plants", ["glow_lichen", "cavesanddepths:lichenfungusplaceable", "caveroot:cave_root", "caveroot:torch_spore", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach", "yungscavebiomes:prickly_vines"])
     e.add("revolution:nether_plants", ["crimson_fungus", "crimson_roots", "weeping_vines", "warped_fungus", "warped_roots", "twisting_vines"])
     e.add("revolution:vines", ["vine", "weeping_vines", "twisting_vines", "alexscaves:archaic_vine", "biomesoplenty:willow_vine", "outer_end:azure_vines", "regions_unexplored:kapok_vines"])
+    Ingredient.of("#minecraft:tall_flowers").itemIds.forEach(id => {
+        if(id != "minecraft:sunflower")
+        e.add("revolution:tall_flowers", id)
+    })
 
 
 
@@ -53,11 +58,11 @@ ServerEvents.tags("item", e => {
 
 
     // Forge tags
-    e.add("forge:eggs", ["#minecraft:eggs", "turtle_egg", "sniffer_egg", "enderzoology:owl_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_grey", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
+    e.add("forge:eggs", ["#minecraft:eggs", "turtle_egg", "sniffer_egg", "enderzoology:owl_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_gray", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
     e.add("forge:feathers", ["ecologics:penguin_feather"])
     e.add("forge:leather", ["alexscaves:tough_hide", "nourished_nether:hoglin_hide"])
     e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom", "regions_unexplored:mycotoxic_mushrooms", "silverbirch:shelf_fungus"])
-    e.add("forge:slimeballs", ["thermal:tar", "thermal:rosin", "mobcompack:rose_gelball"])
+    e.add("forge:slimeballs", ["mobcompack:rose_gelball", "outer_end:spectragel", "thermal:tar", "thermal:rosin", "thermal_extra:sticky_ball"])
 
     e.add("forge:rods", ["cb_microblock:stone_rod"])
     e.add("forge:rods/wooden", ["cb_microblock:stone_rod"])
@@ -141,9 +146,6 @@ ServerEvents.tags("item", e => {
 
 
     /// Crop fixes
-    e.remove("forge:fruits", ["upgrade_aquatic:mulberry"])
-    e.remove("forge:fruits/mulberry", ["upgrade_aquatic:mulberry"])
-
     e.add("forge:crops", ["glow_berries", "sweet_berries", "pitcher_pod", "torchflower_seeds", "outer_end:azure_berries", "phantasm:pream_berry", "regions_unexplored:salmonberry", "upgrade_aquatic:mulberry"])
 
     e.add("forge:crops/azureberry", ["outer_end:azure_berries"])
@@ -188,26 +190,14 @@ ServerEvents.tags("item", e => {
 // Block tags
 ServerEvents.tags("block", e => {
 
+    // Seems like this got fixed, but I'll keep it here just in case
+    // e.remove("minecraft:overworld_carver_replaceables", ["air"])
+
     // Add the "destroyed in space" tag to other blocks
     e.add("ad_astra:destroyed_in_space", ["xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
 
-    // Make blocks mineable
-    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine", "essentials:bricks_iron", "essentials:bricks_gold", "essentials:bricks_bronze", "essentials:bricks_tin"])
-
-    // Change mining levels for things
-    e.remove("minecraft:needs_iron_tools", ["biggerreactors:uranium_ore", "biggerreactors:deepslate_uranium_ore"])
-
-    e.add("minecraft:needs_iron_tool", ["#forge:ores/silver", "#forge:ores/uranium", "alexscaves:enigmatic_engine"])
-
-    // Fix Galosphere's Silver Blocks having the wrong mining level
-    e.remove("minecraft:needs_stone_tool", ["galosphere:raw_silver_block", "galosphere:silver_block", "galosphere:silver_balance", "galosphere:silver_panel", "galosphere:silver_panel_stairs", "galosphere:silver_panel_slab", "galosphere:silver_tiles", "galosphere:silver_tiles_stairs", "galosphere:silver_tiles_slab", "galosphere:silver_lattice"])
-
-    e.add("minecraft:needs_iron_tool", ["galosphere:raw_silver_block", "galosphere:silver_block", "galosphere:silver_balance", "galosphere:silver_panel", "galosphere:silver_panel_stairs", "galosphere:silver_panel_slab", "galosphere:silver_tiles", "galosphere:silver_tiles_stairs", "galosphere:silver_tiles_slab", "galosphere:silver_lattice"])
-
-    // Fix Silver variants not having the proper mining level
-    // I might unify these to only TE Silver instead but idk for sure. I kinda like having both. It's sorta retro, ya know?
-    e.remove("minecraft:needs_stone_tool", ["galosphere:silver_ore", "galosphere:deepslate_silver_ore",
-    "excavated_variants:andesite_silver", "excavated_variants:argillite_silver", "excavated_variants:biomesoplenty_black_sandstone_silver", "excavated_variants:biomesoplenty_orange_sandstone_silver", "excavated_variants:biomesoplenty_white_sandstone_silver", "excavated_variants:calcite_silver", "excavated_variants:chalk_silver", "excavated_variants:chalkstone_silver", "excavated_variants:chert_silver", "excavated_variants:diorite_silver", "excavated_variants:dripstone_silver", "excavated_variants:granite_silver", "excavated_variants:kivi_silver", "excavated_variants:mudstone_silver", "excavated_variants:pastel_pink_salt_silver", "excavated_variants:pink_salt_silver", "excavated_variants:quark_jasper_silver", "excavated_variants:quark_limestone_silver", "excavated_variants:quark_shale_silver", "excavated_variants:red_sandstone_silver", "excavated_variants:rose_pink_salt_silver", "excavated_variants:sandstone_silver", "excavated_variants:slate_silver", "excavated_variants:smooth_basalt_silver", "excavated_variants:tuff_silver"])
+    // Whitelist modded Crafting Tables
+    e.add("ftbchunks:interact_whitelist", ["biomeswevegone:aspen_crafting_table", "biomeswevegone:baobab_crafting_table", "biomeswevegone:blue_enchanted_crafting_table", "biomeswevegone:green_enchanted_crafting_table", "biomeswevegone:cike_crafting_table", "biomeswevegone:cypress_crafting_table", "biomeswevegone:ebony_crafting_table", "biomeswevegone:fir_crafting_table", "biomeswevegone:florus_crafting_table", "biomeswevegone:holly_crafting_table", "biomeswevegone:ironwood_crafting_table", "biomeswevegone:jacaranda_crafting_table", "biomeswevegone:mahogany_crafting_table", "biomeswevegone:maple_crafting_table", "biomeswevegone:palm_crafting_table", "biomeswevegone:pine_crafting_table", "biomeswevegone:rainbow_eucalyptus_crafting_table", "biomeswevegone:redwood_crafting_table", "biomeswevegone:sakura_crafting_table", "biomeswevegone:skyris_crafting_table", "biomeswevegone:white_mangrove_crafting_table", "biomeswevegone:willow_crafting_table", "biomeswevegone:witch_hazel_crafting_table", "biomeswevegone:zelkova_crafting_table"])
 
 })
 

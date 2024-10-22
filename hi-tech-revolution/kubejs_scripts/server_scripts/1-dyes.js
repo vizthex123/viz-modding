@@ -176,20 +176,39 @@ ServerEvents.tags("item", e => {
 // Change dye recipes to use the tags above
 // Only wet & dry items require smelting (like in vanilla)
 ServerEvents.recipes(e => {
-
-    // White
+/*
+    // Removals
     e.remove({id: "silverbirch:white_flower_patch_to_dye"}) // Why is this shaped lol
     e.remove({type: "crafting_shapeless", output: "white_dye"})
+    e.remove({type: "crafting_shapeless", output: "orange_dye"})
+    e.remove({type: "crafting_shapeless", output: "magenta_dye"})
+    e.remove({type: "crafting_shapeless", output: "light_blue_dye"})
+    e.remove({type: "crafting_shapeless", output: "yellow_dye"})
+    e.remove({type: "crafting_shapeless", output: "lime_dye"})
+    e.remove({id: "silverbirch:pink_flower_patch_to_dye"}) // lol this one's shaped too
+    e.remove({type: "crafting_shapeless", output: "pink_dye"})
+    e.remove({type: "crafting_shapeless", output: "gray_dye"})
+    e.remove({id: "nourished_nether:ghoulflower_to_dye"}) // And this one!
+    e.remove({type: "crafting_shapeless", output: "light_gray_dye"})
+    e.remove({type: "crafting_shapeless", output: "cyan_dye"})
+    e.remove({id: "silverbirch:purple_flower_patch_to_dye"}) // All the Silver Birch recipes are shaped for some reason. Very odd.
+    e.remove({type: "crafting_shapeless", output: "purple_dye"})
+    e.remove({type: "crafting_shapeless", output: "blue_dye"})
+    e.remove({type: "crafting_shapeless", output: "brown_dye"})
+    e.remove({type: "smelting", output: "green_dye"})
+    e.remove({type: "crafting_shapeless", output: "green_dye"})
+    e.remove({type: "crafting_shapeless", output: "red_dye"})
+    e.remove({type: "crafting_shapeless", output: "black_dye"})
+*/
+    // White
     e.shapeless("white_dye", ["#revolution:dye_materials/white"]).id("kubejs:white_dye")
     e.shapeless("2x white_dye", ["#revolution:dye_materials/white_double"]).id("kubejs:white_dye_double")
 
     // Orange
-    e.remove({type: "crafting_shapeless", output: "orange_dye"})
     e.shapeless("orange_dye", ["#revolution:dye_materials/orange"]).id("kubejs:orange_dye")
     e.shapeless("2x orange_dye", ["#forge:dyes/yellow", "#forge:dyes/red"]).id("kubejs:orange_dye_combine")
 
     // Magenta
-    e.remove({type: "crafting_shapeless", output: "magenta_dye"})
     e.shapeless("magenta_dye", ["#revolution:dye_materials/magenta"]).id("kubejs:magenta_dye")
     e.shapeless("2x magenta_dye", ["#revolution:dye_materials/magenta_double"]).id("kubejs:magenta_dye_double")
     e.shapeless("2x magenta_dye", ["#forge:dyes/purple", "#forge:dyes/pink"]).id("kubejs:magenta_dye_combine")
@@ -197,67 +216,52 @@ ServerEvents.recipes(e => {
     e.shapeless("4x magenta_dye", ["#forge:dyes/red", "#forge:dyes/red", "#forge:dyes/blue", "#forge:dyes/white"]).id("kubejs:magenta_dye_quadruple_combine")
 
     // Light Blue
-    e.remove({type: "crafting_shapeless", output: "light_blue_dye"})
     e.shapeless("light_blue_dye", ["#revolution:dye_materials/light_blue"]).id("kubejs:light_blue_dye")
     e.shapeless("2x light_blue_dye", ["#revolution:dye_materials/light_blue_double"]).id("kubejs:light_blue_dye_double")
     e.shapeless("2x light_blue_dye", ["#forge:dyes/white", "#forge:dyes/blue"]).id("kubejs:light_blue_dye_combine")
     e.smelting("light_blue_dye", ["#regions_unexplored:hyacinth_blooms"], 1).id("kubejs:smelt_hyacinth")
 
     // Yellow
-    e.remove({type: "crafting_shapeless", output: "yellow_dye"})
     e.shapeless("yellow_dye", ["#revolution:dye_materials/yellow"]).id("kubejs:yellow_dye")
     e.shapeless("2x yellow_dye", ["#revolution:dye_materials/yellow_double"]).id("kubejs:yellow_dye_combine")
 
     // Lime
-    e.remove({type: "crafting_shapeless", output: "lime_dye"})
     e.shapeless("lime_dye", ["#revolution:dye_materials/lime"]).id("kubejs:lime_dye")
     e.shapeless("2x lime_dye", ["#revolution:dye_materials/lime_double"]).id("kubejs:lime_dye_double")
 
     // Pink
-    e.remove({id: "silverbirch:pink_flower_patch_to_dye"}) // lol this one's shaped too
-    e.remove({type: "crafting_shapeless", output: "pink_dye"})
     e.shapeless("pink_dye", ["#revolution:dye_materials/pink"]).id("kubejs:pink_dye")
     e.shapeless("2x pink_dye", ["#revolution:dye_materials/pink_double"]).id("kubejs:pink_dye_double")
     e.shapeless("2x pink_dye", ["#forge:dyes/white", "#forge:dyes/red"]).id("kubejs:pink_dye_combine")
 
     // Gray
-    e.remove({type: "crafting_shapeless", output: "gray_dye"})
     e.shapeless("gray_dye", ["#revolution:dye_materials/gray"]).id("kubejs:gray_dye")
     e.shapeless("gray_dye", ["#forge:dyes/white", "#forge:dyes/black"]).id("kubejs:gray_dye_combine")
 
     // Light Gray
-    e.remove({id: "nourished_nether:ghoulflower_to_dye"}) // And this one!
-    e.remove({type: "crafting_shapeless", output: "light_gray_dye"})
     e.shapeless("light_gray_dye", ["#revolution:dye_materials/light_gray"]).id("kubejs:light_gray_dye")
     e.shapeless("2x light_gray_dye", ["#forge:dyes/white", "#forge:dyes/gray"]).id("kubejs:light_gray_dye_combine")
     e.shapeless("3x light_gray_dye", ["#forge:dyes/white", "#forge:dyes/white", "#forge:dyes/black"]).id("kubejs:light_gray_dye_triple_combine")
 
     // Cyan
-    e.remove({type: "crafting_shapeless", output: "cyan_dye"})
     e.shapeless("cyan_dye", ["#revolution:dye_materials/cyan"]).id("kubejs:cyan_dye")
     e.shapeless("2x cyan_dye", ["#revolution:dye_materials/cyan_double"]).id("kubejs:cyan_dye_double")
     e.shapeless("2x cyan_dye", ["#forge:dyes/green", "#forge:dyes/blue"]).id("kubejs:cyan_dye_combine")
 
     // Purple
-    e.remove({id: "silverbirch:purple_flower_patch_to_dye"}) // All the Silver Birch recipes are shaped for some reason. Very odd.
-    e.remove({type: "crafting_shapeless", output: "purple_dye"})
     e.shapeless("purple_dye", ["#revolution:dye_materials/purple"]).id("kubejs:purple_dye")
     e.shapeless("2x purple_dye", ["#revolution:dye_materials/purple_double"]).id("kubejs:purple_dye_double")
     e.shapeless("2x purple_dye", ["#forge:dyes/red", "#forge:dyes/blue"]).id("kubejs:purple_dye_combine")
 
     // Blue
-    e.remove({type: "crafting_shapeless", output: "blue_dye"})
     e.shapeless("blue_dye", ["#revolution:dye_materials/blue"]).id("kubejs:blue_dye")
     e.shapeless("blue_dye", ["#forge:dyes/black", "#forge:dyes/light_blue"]).id("kubejs:blue_dye_combine")
 
     // Brown
-    e.remove({type: "crafting_shapeless", output: "brown_dye"})
     e.shapeless("brown_dye", ["#revolution:dye_materials/brown"]).id("kubejs:brown_dye")
     e.shapeless("2x brown_dye", ["#revolution:dye_materials/brown_double"]).id("kubejs:brown_dye_double")
 
     // Green
-    e.remove({type: "smelting", output: "green_dye"})
-    e.remove({type: "crafting_shapeless", output: "green_dye"})
     e.shapeless("green_dye", ["#revolution:dye_materials/green"]).id("kubejs:green_dye")
     e.shapeless("2x green_dye", ["#revolution:dye_materials/green_double"]).id("kubejs:green_dye_double")
     e.smelting("green_dye", ["#revolution:cacti"], 1).id("kubejs:cactus_green")
@@ -265,12 +269,10 @@ ServerEvents.recipes(e => {
     e.smelting("green_dye", "scute", 2).id("kubejs:scute_green")
 
     // Red
-    e.remove({type: "crafting_shapeless", output: "red_dye"})
     e.shapeless("red_dye", ["#revolution:dye_materials/red"]).id("kubejs:red_dye")
     e.shapeless("2x red_dye", ["#revolution:dye_materials/red_double"]).id("kubejs:red_dye_double")
 
     // Black
-    e.remove({type: "crafting_shapeless", output: "black_dye"})
     e.shapeless("black_dye", ["#revolution:dye_materials/black"]).id("kubejs:black_dye")
 
 

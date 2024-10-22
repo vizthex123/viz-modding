@@ -228,11 +228,9 @@ ServerEvents.tags("item", e => {
     //// Recipe tags
     // Used to make Circuitry
     e.add("revolution:circuits", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
- 
 
-
-    // Used to make Enderite
-    e.add("revolution:netherite", ["netherite_ingot", "thermal:netherite_dust"])
+    // Used to clean Filters and Rusty Barrels
+    e.add("revolution:cleaning_agent", ["galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
 
     // Used to convert Silver Birch
     e.add("revolution:convertable_silver_birch_logs", ["regions_unexplored:silver_birch_log", "regions_unexplored:silver_birch_wood"])
@@ -249,7 +247,7 @@ ServerEvents.tags("item", e => {
     e.add("revolution:dense_coals", ["thermal:coal_coke", "nourished_nether:soul_coal"])
     e.add("revolution:tooth", ["alexscaves:corrodent_teeth", "mobcompack:giant_tooth", "mobcompack:giant_tooth", "upgrade_aquatic:thrasher_tooth"])
 
-    e.add("revolution:coal_blocks", ["coal_block", "thermal:charcoal_block"])
+    e.add("revolution:coal_blocks", ["coal_block", "thermal:charcoal_block", "bygonenether:withered_coal_block"])
     e.add("revolution:flesh_blocks", ["biomesoplenty:flesh", "biomesoplenty:porous_flesh"])
     e.add("revolution:limestone", ["alexscaves:limestone", "quark:limestone"])
 

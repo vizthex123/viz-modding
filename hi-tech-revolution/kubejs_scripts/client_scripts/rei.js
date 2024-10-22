@@ -20,6 +20,4 @@ REIEvents.information(e => {
 
     e.addItem("alexscaves:nuclear_furnace_component", "Nuclear Blasting", ["Construct in a 2x2 to make a Nuclear Furnace (which acts like a Blast Furnace, but smelts items much faster. Its fuel also lasts much longer)."])
 
-
-
 })

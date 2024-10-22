@@ -7,7 +7,7 @@
     "gui_x_offset": 0.0,
     "gui_y_offset": -0.15,
     "gui_z_offset": 0.0,
-    "sim_cost": 2664,
+    "sim_cost": 2666,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },
@@ -38,7 +38,7 @@
             "optional": true,
             "item": "apotheosis:warden_tendril",
             "count": 1
-        }
+		}
     ],
     "tier_data": [
         6,

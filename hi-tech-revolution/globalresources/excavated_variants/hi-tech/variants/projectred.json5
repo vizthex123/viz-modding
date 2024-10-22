@@ -29,8 +29,7 @@
   ],
   provided_ores: [
 	{
-      id: 'ruby',
-      orename: 'ruby_ore',
+      id: 'ruby_ore',
       lang: {
 		en_us: 'Ruby Ore',
       },
@@ -47,8 +46,7 @@
       ],
     },
 	{
-      id: 'sapphire',
-      orename: 'sapphire_ore',
+      id: 'sapphire_ore',
       lang: {
 		en_us: 'Sapphire Ore',
       },

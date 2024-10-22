@@ -1,6 +1,21 @@
 // Fixes recipes I can't fix with replacer.js
 ServerEvents.recipes(e => {
 
+    // Make Iron Ladders match the recipes for the other types
+    e.remove({id: "quark:building/crafting/iron_ladder"})
+    e.shaped(
+      "4x quark:iron_ladder",
+        [
+          "N N",
+          "NIN",
+          "N N"
+        ],
+        {
+          I: "#forge:ingots/iron",
+          N: "#forge:nuggets/iron",
+        }
+    ).id("kubejs:iron_ladder")
+
     // Make Thermal's Ruby & Sapphire Blocks the default
     e.remove({id: "projectred_exploration:ruby_block"})
     e.remove({id: "projectred_exploration:sapphire_block"})
@@ -168,21 +183,6 @@ ServerEvents.recipes(e => {
           S: "#forge:slimeballs"
         }
     ).id("kubejs:sticky_multi_piston")
-
-    // Craft Alex's Caves Block of Uranium with Rods
-    e.remove({id: "alexscaves:block_of_uranium"})
-    e.remove({id: "alexscaves:uranium_from_block"})
-    e.shaped(
-      "alexscaves:block_of_uranium",
-        [
-          "UU",
-          "UU"
-        ],
-        {
-          U: "alexscaves:uranium_rod"
-        }
-    ).id("kubejs:cave_uranium")
-    e.shapeless("4x alexscaves:uranium_rod", ["alexscaves:block_of_uranium"]).id("kubejs:decraft_cave_uranium")
 
 
 

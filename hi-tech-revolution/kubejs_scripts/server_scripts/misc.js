@@ -1,6 +1,21 @@
 // Adds miscellanous recipes
 ServerEvents.recipes(e => {
 
+    // Make Pneumatic Tubes use Bronze (like they should)
+    e.remove({id: "projectred_expansion:pneumatic_tube"})
+    e.shaped(
+      "8x projectred_expansion:pneumatic_tube",
+        [
+          "BGB",
+          "BGB",
+          "BGB"
+        ],
+        {
+          B: "#forge:ingots/bronze",
+          G: "#forge:glass_panes"
+        }
+    ).id("kubejs:pneumatic_tube")
+
     // Ravager Hide -> Tough Hide
     e.shapeless("4x alexscaves:tough_hide", ["quark:ravager_hide"]).id("kubejs:ravager_hide_to_tough_hide")
 
@@ -9,11 +24,11 @@ ServerEvents.recipes(e => {
       "slime_ball",
         [
           "MMM",
-          "MGM",
+          "MFM",
           "MMM"
         ],
         {
-          G: "kubsjs:glue",
+          F: ["alexscaves:fertilizer", "thermal:phytogrow"],
           M: "quark:moss_paste"
         }
     ).id("kubejs:slimeball_with_moss_paste")

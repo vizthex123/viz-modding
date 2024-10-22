@@ -8,6 +8,8 @@
 	"revolution.tip.quests": "Don't forget that you can view quests (and their dependencies) even if they're locked. Lets you plan ahead a bit.",
 	"revolution.tip.recipes": "Many recipes are different than what you're (probably) used to, and several items have additional recipes. Be sure to check them even if you've long since memorized it.",
 	"revolution.tip.rei": "REI can be configured by clicking the gear wheel in your inventory. You can also filter it to only show craftable items from that quick-menu (and there's more options in the full settings menu).",
+	"revolution.tip.rei_bookmarks": "You can bookmark an entire recipe png with REI. Simply hover over a recipe and drag it to the bookmarks area. If multiple can are bookmarked, they will chain together.",
+	"revolution.tip.rei_bookmarks_recipe": "You can bookmark a recipe by tapping the \"bookmark\" key while hovering over it, allowing you to quick-craft it.",
 	"revolution.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
 	"revolution.tip.tesseract": "Tesseracts are able to transport energy, items, and fluids across time & space. Consider this when selecting a Flux Network or Tesseract for a task.",
 	"revolution.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."

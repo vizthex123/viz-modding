@@ -14,6 +14,12 @@ ServerEvents.recipes(e => {
         "#revolution:furnace"
     )
 
+    e.replaceInput(
+      { input: "crafting_table" },
+        "crafting_table",
+        "#revolution:crafting_table"
+    )
+
 
 
     // Forge tags
@@ -144,7 +150,12 @@ ServerEvents.recipes(e => {
 
 
 
-
+    // Fix the Block of Raw Tin not using tags
+    e.replaceInput(
+      { input: "thermal:raw_tin" },
+        "thermal:raw_tin",
+        "#forge:raw_materials/tin"
+    )
 
     // Make Silver stuff use tags
     e.replaceInput(

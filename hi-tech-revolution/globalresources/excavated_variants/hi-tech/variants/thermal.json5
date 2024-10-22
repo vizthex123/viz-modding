@@ -144,7 +144,8 @@
       ],
     },
 	{
-      id: 'ruby_ore',
+      id: 'ruby',
+      orename: 'ruby_ore',
       lang: {
 		en_us: 'Ruby Ore',
       },
@@ -161,7 +162,8 @@
       ],
     },
 	{
-      id: 'sapphire_ore',
+      id: 'sapphire',
+      orename: 'sapphire_ore',
       lang: {
 		en_us: 'Sapphire Ore',
       },

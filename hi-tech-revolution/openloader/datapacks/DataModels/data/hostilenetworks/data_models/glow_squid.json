@@ -23,6 +23,7 @@
             "count": 32
         },
         {
+            "optional": true,
             "item": "cavesanddepths:glow_squid_tentacle",
             "count": 32
         },

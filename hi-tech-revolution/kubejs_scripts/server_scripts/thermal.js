@@ -25,6 +25,10 @@ ServerEvents.recipes(e => {
     // Polymer Plate Parity
     e.recipes.thermal.pulverizer([Item.of("thermal:sulfur_dust").withChance(0.5), Item.of("alexscaves:toxic_paste").withChance(0.15), Item.of("quark:clear_shard").withChance(0.1), Item.of("3x kubejs:tiny_iron_scrap").withChance(0.2)], "alexscaves:polymer_plate", 1).energy(2000).id("kubejs:pulverize_polymer_plate")
 
+    //// Pulverize all types of Corundum
+    e.recipes.thermal.pulverizer(["2x quark:red_corundum_cluster"], ["quark:red_corundum", "quark:waxed_red_corundum"], 0.5).energy(2000).id("kubejs:pulverize_red_corundum")
+
+
 
 
     // Aluminum
@@ -52,7 +56,7 @@ ServerEvents.recipes(e => {
 
     // Change Flux-Infused Electrum to require Enderite
     e.remove({id: "thermal:compat/redstone_arsenal/smelter_rsa_alloy_flux"})
-    e.recipes.thermal.smelter(["8x redstone_arsenal:flux_ingot"], ["4x thermal:electrum_ingot", "lolenderite:enderite_ingot", "16x redstone"]).energy(8000).id("kubejs:flux_infused_electrum")
+    e.recipes.thermal.smelter(["16x redstone_arsenal:flux_ingot"], ["4x thermal:electrum_ingot", "netherite_ingot", "16x redstone"]).energy(8000).id("kubejs:flux_infused_electrum")
 
     // Flux Dust
     e.recipes.thermal.smelter(["8x fluxnetworks:flux_dust"], [["#forge:ingots/uranium", "#forge:ingots/cyanite", "#forge:dusts/uranium", "#forge:dusts/cyanite"], "#forge:gems/xychorium", "4x redstone"]).energy(6400).id("kubejs:alloy_flux_dust")
@@ -116,8 +120,8 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#revolution:cacti"], 0.2).energy(400).id("kubejs:cacti_to_latex")
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#minecraft:small_flowers"], 0.1).energy(400).id("kubejs:small_flowers_to_latex")
-    e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#minecraft:tall_flowers"], 0.15).energy(400).id("kubejs:tall_flowers_to_latex")
-    
+    e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#revolution:tall_flowers"], 0.15).energy(400).id("kubejs:tall_flowers_to_latex")
+
     e.recipes.thermal.press([Fluid.of("thermal:latex", 500)], ["#revolution:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 250)], ["#revolution:nether_plants"], 0.35).energy(1600).id("kubejs:nether_plants_to_latex")

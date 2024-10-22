@@ -1,29 +1,37 @@
 {
-	"ticks": 600,
+	"ticks": 200,
 	"structureId": "machines:combiner",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 6400
+			"amount": 8000
 		}
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "revolution:xychorized_obsidian",
-			"count": 4
-		}
+			"item": "biggerreactors:uranium_ingot",
+			"count": 3
+	  }
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "lolenderite:enderite_ingot",
+			"item": "biggerreactors:graphite_ingot",
 			"count": 1
-		}
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal_extra:lead_rod",
+			"count": 2
+	  }
 	}
 	],
 	"outputs": [
@@ -31,7 +39,7 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "lolenderite:obsidian_infused_enderite_ingot",
+			"item": "alexscaves:uranium_rod",
 			"count": 1
 		}
 	}

@@ -1,7 +1,9 @@
 // Changes all the auto-crafters to have a set order
 ServerEvents.recipes(e => {
 
-    // Change the recipe for the Fabricator
+    // Quark's crafter uses the default recipe
+
+    // Fabricator
     e.remove("xycraft_machines:shaped/fabricator")
     e.shaped(
       "xycraft_machines:fabricator",
@@ -19,32 +21,34 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:fabricator")
 
-    // Change the recipe for the Sequential Fabricator
+    // Sequential Fabricator
     e.remove("thermal:machine_crafter")
     e.shaped(
       "thermal:machine_crafter",
         [
-          " C ",
-          "TFT",
+          " F ",
+          "TMT",
           "GRG"
         ],
         {
-          C: "quark:crafter",
-          F: "thermal:machine_frame",
+          F: "xycraft_machines:fabricator",
+          M: "thermal:machine_frame",
           G: "#forge:gears/copper",
           R: "thermal:rf_coil",
           T: "#forge:ingots/tin"
         }
     ).id("kubejs:sequential_fabricator")
 
-    // Change the recipe for RFTools' Crafter
+    // RFTools' Crafters
     e.remove("rftoolsutility:crafter1")
+    e.remove("rftoolsutility:crafter2")
+    e.remove("rftoolsutility:crafter3")
     e.shaped(
       "rftoolsutility:crafter1",
         [
-          " M ",
-          "RSR",
-          "CFC"
+          " F ",
+          "RMR",
+          "CSC"
         ],
         {
           F: "xycraft_machines:fabricator",
@@ -55,4 +59,36 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:crafter")
 
+    e.shapeless("rftoolsutility:crafter2", ["rftoolsutility:crafter1", "projectred_expansion:project_bench"]).id("kubejs:crafter2")
+    e.shapeless("rftoolsutility:crafter3", ["rftoolsutility:crafter2", "projectred_expansion:project_bench", "projectred_expansion:project_bench"]).id("kubejs:crafter3")
+
+/*
+    e.shaped(
+      "rftoolsutility:crafter2",
+        [
+          " T ",
+          "PCP",
+          " T "
+        ],
+        {
+          C: "rftoolsutility:crafter1",
+          P: "projectred_expansion:project_bench",
+          T: "xycraft_world:aluminum_torch"
+        }
+    ).id("kubejs:crafter2")
+
+    e.shaped(
+      "rftoolsutility:crafter3",
+        [
+          " T ",
+          "PCP",
+          " T "
+        ],
+        {
+          C: "rftoolsutility:crafter2",
+          P: "projectred_expansion:project_bench",
+          T: "xycraft_world:aluminum_torch"
+        }
+    ).id("kubejs:crafter3")
+*/
 })

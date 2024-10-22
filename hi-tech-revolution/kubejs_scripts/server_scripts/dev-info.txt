@@ -17,7 +17,8 @@ Text colours:
 
 White - Player
 Green - Whoever's sent you on the quest
-
+Dark Purple - Meta messages from me
 
 
 /tellraw @p {"text":"MSG", "color":"green"}
+

@@ -50,7 +50,7 @@
 		"ingredient": {
 			"type": "mm:fluid",
 			"fluid": "thermal:crude_oil",
-			"amount": 25
+			"amount": 250
 		}
 	}
   ]

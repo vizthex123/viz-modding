@@ -87,6 +87,15 @@
 		#Range: 1000 ~ 10000000
 		"Base Capacity" = 4000
 
+	[Tools."Watering Can"]
+		#This sets the maximum base fluid capacity for the Watering Can.
+		#Range: 1000 ~ 10000000
+		"Base Capacity" = 4000
+		#If TRUE, the Watering Can can be used by Fake Players.
+		"Allow Fake Players" = false
+		#If TRUE, the Watering Can consumes source blocks when refilling.
+		"Consume Source Blocks" = true
+
 [Mobs]
 	#If TRUE, the Basalz Mob is enabled.
 	Basalz = true
@@ -127,7 +136,7 @@
 	[Devices.Composter]
 		#This sets the base time constant (in ticks) for the Batch Composter.
 		#Range: 20 ~ 72000
-		"Time Constant" = 100
+		"Time Constant" = 120
 		#If TRUE, the Batch Composter will have particle effects when operating.
 		Particles = true
 
@@ -152,16 +161,22 @@
 		#This sets the recipe energy multiplier for the Sawmill. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
 		"Energy Multiplier" = 1.0
+		#If TRUE, default Log processing recipes will be automatically created for the Sawmill. Datapack recipes will take priority over these.
+		"Default Log Recipes" = true
 
 	[Recipes.Pulverizer]
 		#This sets the recipe energy multiplier for the Pulverizer. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
 		"Energy Multiplier" = 1.0
+		#If TRUE, default Furnace-Based processing recipes will be automatically created for the Pulverizer. Datapack recipes will take priority over these.
+		"Default Furnace-Based Recipes" = true
 
 	[Recipes.Smelter]
 		#This sets the recipe energy multiplier for the Induction Smelter. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
 		"Energy Multiplier" = 1.0
+		#If TRUE, default Furnace-Based processing recipes will be automatically created for the Smelter. Datapack recipes will take priority over these.
+		"Default Furnace-Based Recipes" = true
 
 	[Recipes.Insolator]
 		#This sets the recipe energy multiplier for the Phytogenic Insolator. This scales all recipe energy requirements.
@@ -231,22 +246,22 @@
 	[Dynamos.Compression]
 		#This sets the base power generation (RF/t) for the Compression Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 50
+		"Base Power" = 80
 
 	[Dynamos.Magmatic]
 		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 50
+		"Base Power" = 60
 
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60
+		"Base Power" = 50
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60
+		"Base Power" = 50
 
 	[Dynamos.Disenchantment]
 		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
@@ -329,4 +344,14 @@
 		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
 		#Range: 1 ~ 32000
 		"Base Power" = 20
+
+[Crops]
+	#If TRUE, some Thermal Cultivation seeds will be able to drop from grass. Disabling this will ignore any datapack setting using Thermal's 'seeds_from_grass' Global Loot Modifier.
+	"Drop Seeds From Grass" = true
+	#If TRUE, Glimmercap Mushrooms produce light when fully grown. Disabling this may improve performance.
+	"Glowstone Mushroom Light" = true
+	#If TRUE, Fluxtooth Mushrooms produce light when fully grown. Disabling this may improve performance.
+	"Redstone Mushroom Light" = true
+	#If TRUE, Fluxtooth Mushrooms emit a redstone signal when fully grown. Disabling this may improve performance.
+	"Redstone Mushroom Signal" = true
 
