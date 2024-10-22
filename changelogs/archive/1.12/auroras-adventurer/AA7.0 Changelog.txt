@@ -1,0 +1,83 @@
+v7.0 Changelog
+
+
+Increased damage taken by the Red Stone when crafting Aeternalis Fuel to 25
+Now you can't go below 10 health (5 hearts)
+Silentwood Bow conversion recipe is no longer locked behind the "Aurorian Escape" Game Stage
+
+
+Red Stone Shards can be used to re-roll quality modifiers on any item
+Silentwood Plank conversion recipes aren't locked behind the "Aurorian Escape" Game Stage, and give Spruce Wood Planks
+Halved requirements to unlock "Exotic Goods Buyers"
+
+
+Added an alternate recipe for the Stone Reinforced Bow, using Aurorian Stone & Silentwood Sticks
+Tweaked furnace requirements to get speed increase (from 4 to 5)
+Added an alternate recipe for Chainmail Plates (uses Cerulean Nuggets)
+
+
+Tweaked sorting rules of InvTweaksTree to place lower-value food items at a lower priority
+Updated Fuel Canister config & tooltip to work correctly with Aurorian Coal blocks
+- Added Weeping Willow Sap to the list of accepted items
+Added an EMC various items
+
+
+Re-balanced LevelHearts values, you now get hearts at Level 55, 60, 75, 95, and 110 in addition to the current levels (10/20/30/40/50)
+Reduced the amount of Spiderlings required to complete the quests
+Tweaked a few quest rewards
+
+
+Added Small Storage Crates to the "highlyAdvancedChest" OreDict
+Changed Gold Furnace upgrade recipe of the Redstone Furnace to use 2 Tin Gears
+Changed Extra Utils furnace upgrade recipe of the Redstone Furnace to use a Conductance Coil and Nether Bricks
+- Replaced Lead Gears with Iron Gears
+
+
+Changed Powered Quarry upgrade recipe to use an Emerald Gear instead of Diamond
+- Changed other gears to Iron, Copper, and Tin
+Changed recipe for Quantum Quarry Actutator
+- Now uses Quartzburnt and 2 Black or Smokey Quartz
+
+
+Tweaked Transmutation Tablet recipe
+- Uses T4 instead of T5 slates, since the Compression Reagent needed for the Shards requires a T4 altar + lots of Demonic Will
+Hopefully fixed the "Basic Powergen" quest not detecting items
+- Did basic testing and it seems to be working
+
+
+Tweaked my custom recipe for the Empty Redstone Fluxduct
+- It's a tad cheaper now
+Added a custom recipe for Empty Resonant Fluxducts
+Boosted the chance that pulverizing Soul Sand gives you a Drop of Evil (from 5% to 7%)
+
+
+Tweaked smelting time of the Golden Furnace
+- Made it slightly slower to help balance it more
+Fixed some set bonuses not working properly
+- Hopefully all of them are fixed now
+Buffed the set bonus of Aurorian Steel Armour
+- Now increases movespeed by 25%
+
+
+I'm going to consider the Twilight Forest questline completed, it covers the major parts of the mod (and the proper final boss is never going to make it into this version of the mod anyway)
+Started working on the Botania questline
+Changed the pronunciation of aurum (bet you didn't know I even wrote down how to pronounce it)
+Fixed a couple broken quest rewards
+
+
+Added Custom Main Menu
+- Disabled because it doesn't like working with me. Might just remove it later, fiddling with the settings is a pain.
+
+
+Updated Aurorian Items
+Updated CraftTweaker 2
+Updated Hammer Lib Core
+Updated JEI
+Updated Mystical World
+Updated MysticalLib
+Updated RandomPatches
+Updated SimpleHarvest
+Updated Simply Jetpacks 2
+Updated Aether Legacy
+Updated The Twilight Forest
+Updated YUNG's Better Mineshafts

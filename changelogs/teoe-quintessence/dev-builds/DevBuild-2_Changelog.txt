@@ -1,0 +1,52 @@
+Dev Build 2 Changelog:
+
+
+Added 4x Bread as a starting item
+Added a questline for AE2
+Added questlines for the Nether and End
+Tweaked quest plaques a bit so the normal ones don't instantly go away
+Tweaked crystal (Deep Resonance) spawnrates so they're a tad rarer
+Removed the duplicate Bundle recipe
+Fixed vanilla chests not being craftable
+Changed the reward for "Better Mining" to Raw Tin
+Swapped the Block of Copper reward in "Fall Damage Prevention Device" (long fall boots quests) to a Block of Silver
+Buffed the reward for "Iron-ic Protection" since ores take way longer to find now
+
+
+Fixed axes so they have their proper damage
+Buffed the Netherite Sword to deal 9 damage
+Buffed the Gilded Netherite Sword to do 12 damage
+Re-balanced several tools
+Forced Fiery Ingots to be made in a Smithing Table
+Added Refined Pipes' items to the list of usable P2P tunnel items
+Balanced the extractors from Refined Pipes
+Fixed the recipe for Sugar Water giving 50 sugar instead ofa  50% chance to gain 1 sugar
+Changed the recipe for chests so it doesn't conflict with Quark's recipes
+- Now uses a new tag that every non-vanilla plank has - it took forever to add, so please appreciate it
+
+
+Changed the reward for "The Purest Flower" to a Livingrock
+Updated the description for "Apothecaric Solutions"
+Added recipes to convert Dripleaf into Green Dye
+Added the green dye tag to Moss Paste
+
+
+
+Updated JEI
+Updated Bookshelf
+Updated CraftTweaker
+Updated FTB Library
+Updated GeckoLib
+Updated Jade
+
+
+
+Added Simple Quarry
+Added Ocean Recovery
+Added Enigmatic Graves
+Added Endless Ocean: Aquatic Adventures
+Added Aquamirae Mod: Extra Music
+Added Aquatic Torches
+Added Colds: Easy Paxel (Lite)
+Added Liquid Blocks
+- If you can give me some good trivia about the mod's history, you'll get +5 pog points

@@ -1,0 +1,123 @@
+v5.3 Changelog:
+
+Main changes
+
+Updated the menu
+- Discord button is now functional
+- Replaced the Vanilla++ title with a high-res one
+
+Added some loading screen tips
+
+Tweaked Charm's config
+- Goats now drop a bit more mutton
+- Respawn Anchors can now be used in The End
+- Villagers no longer trade treasure enchantments (like mending). Said enchantments are fairly easy to find in the world, and you should explore anyway since that's vastly more fun & rewarding
+
+
+
+
+
+Balance changes
+
+Raw Ore Block blasting recipes now take 45 seconds (was 30)
+Reduced the arrow capacity of Basic and Copper Quivers
+Reduced the XP gain from my raw ore block - > ore block recipes
+The Ring of Attraction now has a range of 3 (was 5)
+Replaced Charm's enchantment removal (using a Grindstone) with Grind Enchantments
+- I've configured the mod to cost more XP than Charm used in exchange for curses being ignored
+- The mod also lets you transfer enchantments between books for a small amount of XP
+
+
+
+
+
+Recipe changes
+
+Apples can now be turned into Biomass
+Mushrooms can now be smelted into dyes
+Music Discs can now be smelted into Disc Residue
+Biomass and Meaty Clumps now require 9 items (was 8)
+Added tag support to bark recipes from Farmer's Delight
+The Bark -> Paper recipe now uses the bark tag
+Organic Compost recipes now have tag support
+
+
+
+
+Misc changes
+
+Added the seed tag to everything that was missing it
+Modded equipment now generates in "Better" buildings (like Desert Temples)
+Changed the Ring of Attraction's Echo Shard recipe to make it more ring-esque
+- Now smelts into 2 Lapis and blasts into 3 Redstone
+The Homing (makes arrows home in on enemies) and Vigor (increases health) enchantments are now treasure enchantments
+Enabled the Siphon (magnet for pickaxes) enchantment from VanillaTweaks
+Soul Fire (block) now deals 50% more damage
+
+
+Disabled VanillaTweaks' storage blocks
+- Supplementaries does the same thing better
+- Supplementaries' Sugar Cube has been disabled in favour of Charm's
+Disabled the Bag of Sugar and Gunpowder from Crate Delight
+Tweaked the Falling Tress config
+- Trees are now a bit quieter when ending their fall
+
+
+
+
+
+
+Texture & Shader pack changes
+
+Removed Enhanced Boss Bars
+- Conflicts with several things
+Removed Gilded UI
+- Seems like it's been abadoned
+
+
+Added Nostalgia Shader
+Added Solas Shader
+Added Vanilla+ Shader
+Swapped BSL Shaders for Super Duper Vanilla Shaders
+- It seems like Complimentary is just a better version of BSL, so I figured I'd swap it out
+
+
+
+
+Mod changes
+
+Updated Fabric
+
+
+Removed Fastload
+- Seems like it doesn't help at all lol - but either way, the mod's been abandoned.
+Removed DragonLoot
+- BetterEnd does the same thing a bit better
+Removed Lithium
+- Devs ended support for this version
+
+
+Added Additional Additions
+Added Better Tag Tips
+Added Chisels & Bits
+Added Dark Enchanting
+Added Dark Waters
+Added Distant Horizons
+Added Extractinator
+Added Grind Enchantments
+Added Grindstone Sharper Tools
+Added Load My F***ing Tags
+Added Neruina
+Added Player Plates
+Added Tips
+Added Traverse
+Added Variant Grindstones
+Added Villagers Respawn
+
+
+
+Updated Collective
+Updated KubeJS
+Updated ModernFix
+Updated PandaLib
+Updated Roughly Enough Items

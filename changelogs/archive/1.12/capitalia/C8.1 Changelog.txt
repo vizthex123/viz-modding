@@ -1,0 +1,30 @@
+v8.1 Changelog
+
+
+Added unfamiliar names for all staged ores
+- I did try to make them unique/interesting though
+New sprite for the Paxel Mold, made by @masterfulpotato#4037 on the Discord
+
+
+(Regular) Golden Apples can now be sold for $300
+Biomes O' Plenty is now the default world type (but you can change it if you want)
+Re-enabled the Stirling Engine (meant to do this in v8.0 but forgot)
+Fixed the Heavy Cloth recipe not using the Ore Dictionary
+Add a new recipe for the Miner's Ring
+
+
+Increased the cost of the Iron Age research
+- It now costs 4 Bronze and 8 Stone Data Disks (Old cost was 2/4)
+Increased the cost of the Industrial Age research
+- It now costs 4 Iron, 8 Bronze, and 32 Stone Data Disks. (Old cost was 3/6/8)
+
+
+Moved Certus (and charged) Ore to the Information Age
+Fixed duplicate Sponge (from Open Blocks) recipes
+Changed Diamond Pipes rewards around for various quarry quests (gives 8 total, spread over 3 quests)
+Added a new end-game quest 
+
+
+
+
+Updated ResearchTable

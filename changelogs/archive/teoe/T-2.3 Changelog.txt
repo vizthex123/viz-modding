@@ -1,0 +1,22 @@
+v2.3 Changelog - Quest & Fix
+
+Changed the recipe for Ender Compass
+Re-Enabled Watch of Flowing Time's functionality
+-Re-wired quest requirements
+--Changed recipe
+Fixed "Creative Stuff" rewards (Gave so many you couldn't store them so you couldn't claim them)
+
+Changed rewards for "Too Many Things"
+Changed description for "Hungry Much?"
+Changed rewards for "Hidden Expensive Items"
+-Changed unlock requirements
+Changed Botania recipe for Golden Apple
+-Added EMC (It's the EMC it normally has due to the materials not having EMC's)
+
+Changed recipe for Starry Apple
+-Changed EMC
+Started Draconic Evolution questline
+
+Updated Ewy's Workshop
+
+Added 6 Quests total

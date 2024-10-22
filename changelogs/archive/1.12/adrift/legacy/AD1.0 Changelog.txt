@@ -1,0 +1,60 @@
+v1.0 Changelog:
+
+
+Initial release.
+
+
+Changes from test build 2.0:
+
+Edited template world
+- Part of the start area is now shallower so you can gather materials easier
+- I've placed some creepvines, resources, and secrets around the place. Try to find them all ;D
+Fixed early-game quests not being doable due to me breaking the research by accident (sorry)
+Boosted a few quest rewards
+Fixed my custom structures not spawning correctly
+Added a new structure: Sea Temple (Small) by xdkiller1549: https://complex.ivorius.de/submissions/119
+
+
+Tweaked speeds of most of the recipes in the Iron-Reinforced Centrifuge
+Fixed multiple recipes not working due to a scripting oversight
+Modular Machines now has its own research, and new recipes
+Several Iron-Reinforced Centrifuge recipes can now accept Lava as an input, and get increased outputs
+Added recipes to the Chef's Worktable
+
+
+The recipe for Cooking for Blockheads II can now use a Kitchen Corner (or the previous counter)
+Added 2 new Modular Machines:
+- Combustion Generator: Converts burn time into RF. Sadly though, I can't configure it as much as I want to; so it's set to use coal's burn time (1600). Any extra will be lost.
+- Energy Extractor: Extracts energy from various (mostly natural) resources. Currently supports fish, fish fillets (both kinds), ink sacs, creepvines (and their seeds), and acid mushrooms.
+Both aren't that expensive, but should hopefully help alleviate the lack of power when you first unlock modular machines.
+Acid Mushrooms should now properly generate (in new chunks)
+Creepvines should now properly generate (in new chunks)
+Seagrass should now properly generate (in new chunks)
+
+
+Added several new recipes to the Recycler
+- You can now recycle full sets of armour (vanilla, Hardened Leather, and Studded)
+- You can now recycler a few tool-type items
+Balanced out Bedrock Miner in a way I want
+
+
+
+
+
+
+
+Removed Simple Generators
+Removed Valkyrie Lib
+Removed Tesslocator
+Removed ItemFilters
+
+
+Added Ender IO
+- I've got to go through and disable several things, but for now it's fine.
+Added Ender Tweaker
+Added Ender IO Fluxified
+
+
+Updated Bulider's Bag
+Updated CraftTweaker
+Updated Creative Core

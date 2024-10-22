@@ -1,0 +1,145 @@
+v1.2 Changelog:
+
+
+
+Main changes:
+
+Shaft Segments now craft at 5 RF/t (was 1)
+Destaged Certus Quartz blocks
+Migrated all Mechanical Saw recycling recipes to the Millstone
+Added Diamond Scrap
+
+
+
+Balance changes:
+
+Tweaked XNet RF values
+Reduced the stress impact of Pumps and Presses
+Increased the stress impact of Mechanical Arms
+Reduced the Crafting Core, Flux Alternator, and Quantum Compressor's power storages to 100,000
+Crushing Gilded Blackstone only gives Gold Scrap 50% of the time (was 100%)
+Mirrors now use Glass Panes instead of Blocks
+
+
+
+Economy changes:
+
+Raw Iron and Tungsten are no longer buyable
+- Added Prestige quests to buy high quantities of each
+Witches now drop Iron Coins (was Copper)
+Ravagers now drop Gold Coins (was Iron)
+
+
+Changed the sell value for the following items:
+- Buffed Ooze to 5,000 (was 1,000)
+- Buffed End Crystals to 300 (was 200)
+- Reduced Nuclear Fuel to 550 (was 750)
+- AE 2's presses (200 each)
+- Illunite Shards (75)
+- Glowstone Dust (35)
+- Sky Stone Dust (35)
+
+
+
+Quest changes:
+
+Buffed the reward of "Solar Generation I" to 5 - 10 Coins (was 5)
+Buffed the reward of "Solar Generation II" to 25 Coins (was 10)
+Buffed the reward of "Solar Generation III" to 150 Coins (was 50)
+Buffed all rewards (except Brass) from the "Create-ive Items" table
+Halved the reward of "Motorized Rotation"
+
+
+"Alien Samples" now accepts any type of Myalite
+Added a quest to make a Sifter
+Added a quest to make an Advanced Inscriber
+Moved "Natural Selection" to Explorative Exploitation
+- Quest is no longer optional
+Moved "Primitive Alloying" to the Iron Age
+- Renamed it to "Bricktastic Alloying"
+
+
+
+Recipe changes:
+
+Recycling the Forgotten Hat now gives 8 Shredded Hide (was 6)
+Added recipes to recycle various gear that naturally generates/drops
+Added recycling recipes for Nether Brick blocks
+
+
+
+Reduced the cost of the Diamond Drawplate
+Added recipes to crush Corundum Blocks into Crystals
+Crafting Glue now requires a Copper Ingot instead of Paper
+The Akashic Tome now requires 2 Books to craft (was 1)
+Coal Blocks can now be used to make Tungsten Carbide (intended in v1.1 but I somehow overlooked it)
+Crafting Parchment with Sawdust now takes twice as much Sawdust
+Quicklime can now be gained by blasting Limestone
+- Removed the Millstone and Crushing recipes
+Infused Teslatite now makes 4 per craft
+- Reduced RF rate to 50
+
+
+Replaced the Biodiesel Buckets in the Information Pad's recipe with Batteries
+The Atomic Hologram now uses Nuclear Fuel instead of Radioactive Thorium
+Added materials from Enlightend to some Project Expansion parts
+Added a recipe to convert Ender Dust into Ender Pearls
+Added a recipe to craft Netherite Scrap with various nether items
+Reduced the chance to get Copper Nuggets from washing Crushed Raw Silver to 50% (was 75%)
+Tweaked the droprates for crushing Myalite blocks
+- Added a crushing recipe for Myalite Crystals
+Moved dirt crushing to the sifter
+- Slightly adjusted droprates
+
+
+Added a recipe to wash Tungsten Dust
+Added a recipe to decraft Soul Steel Blocks
+Rubber Logs can now be processed in a Mechanical Saw
+Bluepower's Zinc now gives Crushed Raw Zinc when put through Crushing Wheels
+Saplings can now be turned into Plant Oil
+Removed the Smoking recipe for Poisonous Potatoes
+Moved Magma -> Lava to the Mixer
+- Now gives 250 mB of Lava (was 100)
+
+
+Removed the blasting recipes for iron/gold gear -> nuggets (as intended in v1.0)
+Made the Netherite Magnet give 8 per craft instead of 2
+- Now requires a Basic Table
+
+
+
+Misc changes:
+
+Ravager Hide now has the leather tag
+Hoglin Hide now has the leather tag and can no longer be converted into it
+Removed the various stars & expensive materials from Extended Crafting that go unused
+Mushrooms can now be fermented into Ethanol
+
+
+
+Mod changes:
+
+Added Better Fps - Render Distance
+Added Blue Flame Burning
+Added Memory Settings
+Added Server Performance - Smooth Chunk Save
+
+Replaced Mechanical Machinery with Create Sifting
+- Migrated all recipes to use Sifting's dust
+
+Removed Create Sandpaper Overhaul
+Removed Cave Dweller Reimagined
+Removed Enchantment Descriptions
+- Quark does it already
+
+Updated AdminShop Overhauled
+Updated Create Enchantment Industry
+Updated Embeddium
+Updated Experience Obelisk
+Updated Jade
+Updated KubeJS
+Updated KubeJS Create
+Updated Quark
+Updated Rhino
+Updated Saturn
+Updated Seamless

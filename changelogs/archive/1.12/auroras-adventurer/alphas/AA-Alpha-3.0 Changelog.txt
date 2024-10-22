@@ -1,0 +1,28 @@
+A3.0 Changelog:
+
+"Magical Flower" now accepts any regular Mystical Flower.
+
+All* XP Rewards are now Team Rewards
+- I haven't tested whether or not this gives more or less than I intend though. If it doesn, I'll have to add an XP Bottler mod and use those instead.
+* Currently, one doesn't as you are supposed to have everyone collect their own amount of XP from the quest.
+
+Added several new quests (I forgot to keep track lmao)
+
+
+Mod Changes:
+
+Updated The Aurorian Mod
+
+Added Leo's Craftable Chainmail
+Added Ranged Pumps
+Added Simple Generators
+Added Simple Quarry
+Added XNet
+Added Uppers
+Added Embers: Rekindled
+Added Speedy Hoppers
+Added Hopper Ducts
+Added Extra Rails
+Added Dung Pipe
+Added Industrial Renewal
+Added FactInventory

@@ -1,0 +1,88 @@
+v11.0 Changelog:
+
+
+Alright, I'm declaring this and all of my other 1.12 modpacks unsupported. I will fix any game-breaking issues, crashes, etc. if people report them - but I'm finally moving out of my rut and onto 1.16+. Mods for 1.12 aren't really being updated anymore, and newer mods have cool systems I'd like to use (plus, this pack is complete - so all I've been doing for the past few updates is bugfixes and minor tweaks).
+
+Since the issue tracker is just the GitHub repository, I'll leave the label for this pack up - just in case people report more minor bugs that others may want to know about.
+
+Thank you for downloading & playing this pack, and I hope you enjoy my newer ones as much as you enjoyed this.
+
+
+
+Cleaned up all of the lore, as well as fixing typos in several entries.
+- Also fixed how half of it wouldn't load in
+The orange heart recipes have been transferred to the new yellow heart
+- I'm personally not sure why the dev changed it (or even when it was changed), but whatever.
+Scaling Health's canisters now use 3 XP levels
+Coins can now be converted into XP or melted down for their corresponding material's nuggets (1 coin = 1 nugget)
+The player now starts with the default amount of health in Minecraft (20, 10 hearts)
+The Heart Amulet now uses any type of heart
+Tweaked the rewards for each heart canister quest
+
+
+Fixed Better Mineshafts not liking me for doing the config wrong
+Tweaked trial keystone drops:
+- Witches now drop 8 Glitch Hearts
+- Wither Skeletons now drop 7 Glitch Hearts
+Hid creative-only items from JEI
+
+
+Buffed the Evil Iron recipe for Iron Toolkits to 4 (was 3)
+Added Aether armour to the Scrapper
+Gravitite items can now be processed in a Scrapper
+Gravitite can now be turned into 500,000 RF in an Enervation Dynamo
+Golden Amber can now be turned into 100,000 RF in an Enervation Dynamo
+Reduced the Grand Magic Crystal > Aurorian Crystal recipe result to 32
+Added a recipe to craft Aurorian Crystals with Astral Diamonds, makes 64
+Increased the amount of durability crafting ProjectE fuels with a Red Stone requires
+Buffed Klein Star quest rewards
+Added a couple more quests, re-organized the chapter list
+
+
+
+Removed BetterBedrockGen
+Replaced Bigger Crafting Tables with Extended Crafting: Nomifactory Edition
+- It kept crashing the game, and since 1.12 mods as a whole have been abandoned, it's never getting fixed
+- Recipes have been migrated to tables from Extended Crafting
+- Extended Crafting's tables have been made cheaper to keep in line with how it was with Bigger Crafting Tables
+
+
+
+Updated Forge
+
+
+Updated Anvil patch - lawful
+Updated B.A.S.E
+Updated Baubley Heart Canisters
+Updated BiblioCraft
+Updated Botania
+Updated Cardboard Boxes
+Updated CraftPresence
+Updated CraftTweaker
+Updated Durability101
+Updated Electroblob's Wizardry
+Updated Fantastic Lib
+Updated FoamFix
+Updated ForgeEndertech
+Updated Hammer Lib
+Updated LevelHearts
+Updated LibraryEx
+Updated LootTweaker
+Updated MTLib
+Updated MixinBootstrap
+Updated ModTweaker
+Updated Mystical World
+Updated MysticalLib
+Updated NetherEx
+Updated ReAuth
+Updated Reborn Core
+Updated RecipeStages
+Updated Simple Quarry
+Updated Simply Jetpacks 2
+Updated Tesla Core Lib
+Updated The Aether
+Updated The Aurorian
+Updated U Team Core
+Updated UniDict
+Updated Village Names
+Updated WanionLib

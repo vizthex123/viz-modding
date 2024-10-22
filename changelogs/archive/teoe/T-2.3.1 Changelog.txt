@@ -1,0 +1,57 @@
+v2.3.1 Changelog - Hotfixs And Rewards
+
+Mod Changes
+
+Replaced MineTweaker with CraftTweaker (by jaredIII08 and lanse505)
+- It works like MineTweaker and will hopefully fix the chat console spamming "COULD NOT RESOLVE <null>" every time you load a world)
+-- It also makes ModTweaker work a bit better
+Added all Project Red modules (I can't believe I forgot to do this before publishing v1.0 LOL)
+Added Forge Multipart by chicken_bones
+-Added FMPI by wasilebob
+
+
+
+Quest Changes
+
+Fixed how I broke the quest order in Botania...sorry about that...
+-Did this by completely re-doing the structure
+Fixed "Unlocking: A Quest" description
+Changed "Unlocking" Applied Energistics" description
+Changed unlock requirements for "Unlocking: Draconic Evolution"
+Changed description for "Ewy's Upgrade"
+-Changed rewards
+--Fixed typos
+Changed description for "The Nether"
+Changed rewards for "Unlocking: Logistics Pipes"
+Changed "Lucky Things" rewards & requirements
+Changed "Stuff For Magic" requirements & rewards
+Changed ALL AE Cell quests to "Detection" (Crafting wouldn't pick them up)
+
+
+
+Recipe Changes
+
+Added recipe for Chance Icosahedron
+-Changed EMC to reflect recipe cost
+Added recipe for turning Bedrock into Randomite Ore (The stone type)
+-This is due to my Testers getting lots of the "Trollin'" reward but not being able to use the Bedrock
+Changed recipe for Material Cache
+Added recipe for each LootRoulette material (Using Botania' Runic Altar)
+Added recipe for Basic reward bag (Using Runic Altar) [Please tell me if this is balanced, cuz idk if it is...]
+Removed HQM bag recipes using LootRoulette
+Changed recipe for Record Fragment
+
+
+
+Misc
+
+Changed EMC of Transmutation Tablet (It had an EMC that was too low...xD)
+Removed EMC of Asgardilak...that OP flower from Avaritia that gives infinite Mana, it's got 0 EMC now
+-This is because the "Trollin'" reward gives Bedrock, and since you can't do anything with it...
+--Also 2 new rewards give Bedrock
+Added new Reward Bag loot (A few of them were added to "The Best RNG" group)
+Tweaked a few Reward Bag groups (Mostly changing amount of times you can get an item)
+Removed Golden Eye 64 reward
+-Due to the Eyes being useless and you getting it a lot. Plus you can craft it if you really want them
+
+Added 7 new quests total (I'm still learning how to use Draconic Evolution so those won't be added until later!)

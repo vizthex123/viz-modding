@@ -1,0 +1,42 @@
+v6.0 Changelog - The Twilight Update
+
+
+Added EMC to some building-related items
+Removed EMC from some items for balance
+Recipe change for Moon Stones now works properly
+Added rewards to the Energy Condenser quest
+- Named quest "Matter Condensing"
+Added Thickened Glass & its variants to the "blockGlass" OreDict
+- Ethereal and Ineffable Glass are exempt since they're special
+
+
+Added an optional quest to craft a Network Tool
+Marked all AE2/ProjectE compat quests as optional
+- I still recommend doing them though, as they can help quite a bit
+Tweaked quest order in "The Aurorian" to accommodate the new boss/dungeon
+- Updated icons of the boss quests to use their new trophies
+
+
+Updated the LootTweaker script to fix some issues I caused, as well as add support for the new Aurorian enemies
+Increased Wither loot to 7 Platinum Coins (350 Aurum total)
+- Boosted Deep Mob Learning recipe to reflect this changed
+
+
+Started working on the Twilight Forest quests
+Finished "The Dragon Tyrant" (quest to kill the Ender Dragon)
+Added a recipe to convert Moon Sand to normal Sand
+
+
+Tweaked power drain of content from Equivalent Energistics
+Made the Sigil of Holding quest optional, added one for Augmented Holding
+Started working on the Botania questline
+
+The Transmutation Table now needs Tier 5 Slates
+Added a recipe for the Whirlwind Sigil
+- 1 Whirlwind Sigil + 1 Ethereal (Tier 5) Slate in an Alchemy Array
+
+
+Updated Aurorian Items
+
+
+Removed Builder's Bag & its ProjectE addon

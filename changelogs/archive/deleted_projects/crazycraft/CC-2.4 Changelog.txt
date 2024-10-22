@@ -1,0 +1,30 @@
+Added Crafting Tweaks
+Added Anti ID Conflict - will be disabled in all releases as it's only meant for modpack authors to fix ID conflicts, so there's no point having it increase load times otherwise.
+
+ 
+
+Removed Inventory Tweaks
+- Added Tweaked Inventory Tweaks (same thing but you can add custom configs for what goes where, and fixes a couple bugs)
+
+ 
+
+Updated DragonAPI
+Updated HEXCraft
+Updated Hopper Ducts
+Updated MeteorCraft
+
+ 
+
+Removed Meldexun's Crystalic Void - causes crashes now, issuie reported to author. I doubt it'll be fixed though since this is such an old version of Minecraft.
+Removed Thaumcraft Mob Aspects
+Removed Refined Tools and Armor
+Removed Boss Tools
+Removed Chunk Purge - causes lots of lag
+Removed Ender IO Recipes in Thermal Expansion Induction Smelter (EIORecipesTEInductionSmelter)
+Removed Ender Enhancement
+Removed Forbidden Industry
+Removed Thermal Smeltery Redux
+Remvoed Uncrafting Grinder - you can pretty much do the same thing with AetherCraft, so it's useless. Plus due to recipe order chagnes and how it works it can lead to exploits.
+Removed Tinker's Steelworks
+Removed Simply Platinum
+Removed More Ores

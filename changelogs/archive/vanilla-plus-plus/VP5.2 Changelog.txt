@@ -1,0 +1,227 @@
+v5.2 Changelog:
+
+
+I've changed a few of the worldgen mods around, so you might need to make a new world.
+
+It will prompt you to make a backup before entering existing worlds though, but said worlds might not work as expected if you load them on this version.
+
+
+
+Main changes
+
+Fixed the menu
+Added a 1080p menu
+Adjusted Archeology mod config
+- Brushes can no longer break blocks
+- Brushes take a bit longer to reveal items inside of blocks
+
+
+Optimized scripts
+- Should make worlds load a bit faster
+All ore smelting recipes now use tags because I hate UI spam
+- I've also adjusted the XP gains to better match the rarity of each ore
+Added tooltips to all Mage Hands so players know what each one does
+Added scrap tags to everything* that needs it
+*Note that I might've missed a couple of items - but I'm pretty sure I didn't
+
+
+Added Stone Sticks
+- Acts like normal Sticks for all recipes that accept them
+- Can be converted into Sticks
+Changed the internal name of Iron Scrap (both kinds)
+- Note that this will delete any you have, so be sure to process or give them back before updating
+Imported the meltable_iron_big tag from The Essence of Everything: Quintessence
+Soups & Stews now stack to 16
+Updated all scrap textures
+
+
+
+Bugfixes
+
+Rails now have the meltable_iron_small tag
+
+
+
+
+Balance changes
+
+Old Combat Mod is now disabled by default
+- I can't find a mod that lets me change damage values (like every other version of minecraft has ffs), so for now y'all have to suffer with the pointless cooldown (sorry)
+Leathered Boots now require a Smithing Table instead of crafting
+
+
+
+Recipe changes
+
+Replaced all dye recipes with tag-supported ones
+- Excludes combination recipes (e.g. red + yellow = orange)
+- Recipes that give 2 dyes have their own tag (e.g. Lilacs)
+- Added support for a few more item -> dye recipes
+
+
+Smelting/Blasting Scrap now gives XP
+Adjusted the XP gain for all recycling recipes
+Smelting Candles into Honeycombs now takes half as long
+Blasting Enchanted Golden Apples into Gold Scrap now takes half as long
+Diamond Scrap can now be smelted in a Furnace
+Diamond and Netherite Scrap recycling recipes can now be processed in a Furnace
+- Changed Blast Furnace times to match other Blast Furnace recipes
+Horse Amours now give Scrap instead of Small Scrap
+Heart of the Sea now gives 8 Diamond Scrap (was 4)
+Totem of Undying now gives 32 Scrap (was 64)
+
+
+Changed the recipe for the Nether Salad
+- Now uses the fungus tag (contains Crimson, Warped, Umbral, and the mushrooms from BetterEnd)
+Added a recipe to make Torches with Tiny Coal/Charcoal
+Changed the Chain Combination recipe for Paladin's Chains
+- Now uses 2 Chains to make 1 Iron Chain (was 1 Chain and 1 Iron Nugget)
+Chain and Gold Chain recipes now use tags and 3 nuggets (instead of the standard ingot + 2 nuggets)
+- The recipe change applies to all Chains
+- Cincinnasite Chains are the only exception since they don't have a nugget. Instead, I added an alternate recipe (1 ingot for 3 chains)
+Added tag support to multiple recipes
+
+
+Added recipes to smelt Dripstone into Clay
+Added recipes to craft Dripstone from Clay
+Added blasting recipes for all raw ore blocks
+Added a recipe to smelt Pottery Shards into Clay
+Added a recipe to blast Sculk Catalysts into Echo Shards
+Added a recipe to blast Sculk Shriekers into Echo Shards
+My Crying Obsidian -> Obsidian recipe is now a blasting recipe
+
+
+
+
+Misc changes
+
+Removed several duplicate recipes
+Added the mushroom tag to items that were missing it
+Added a new fungus tag for recipes that use nether items
+Biomass now has a 75% chance to fill the Composter (was 70%)
+Meaty Clumps now have a 70% chance to fill the Composter (was 65%)
+All types of Mushrooms and Fungi can now be used to make Biomass
+Dried Kelp can now be used to make Biomass
+Seashells can now be used to make Biomass
+Eggs can now be used to make Biomass
+
+
+
+
+
+
+Mod changes
+
+Added Gilded UI
+Updated Enhanced Boss Bars
+Updated Vertical Nuggets
+
+
+Updated Fabric
+Updated Fabric API
+
+
+
+Added Apple Trees Revived
+Added Aquatic Torches
+Added Charmonium
+Added Connected Glass
+Added Copper & Tuff Backport
+Added Copper Pipes
+Added Crate Delight
+Added Durability Tooltip
+Added End's Delight
+Added Friends & Foes
+Added Friends & Foes - Beekeeper Hut
+Added Friends & Foes - Flowery Mooblooms
+Added Hybrid Aquatic
+Added ModernFix
+Added Not Enough Recipe Book
+Added Ocean's Delight
+Added Panda's Falling Trees
+Added Polymorph
+Added Porting Lib
+Added Precise Damage
+Added Primal Storage
+Added Rose Gold Equipment
+Added Scaffolding Drops Nearby
+Added Seamless
+Added Stone Grinder
+Added Storage Delight
+Added Storage Labels
+Added Supplementaries
+Added TreeBark+
+Added Universal Ores
+Added YUNG's Better Desert Temples
+Added YUNG's Better Dungeons
+Added YUNG's Better Jungle Temples
+Added YUNG's Better Nether Fortresses
+Added YUNG's Better Ocean Monuments
+Added YUNG's Better Strongholds
+
+
+
+Replaced Charm of Undying with Better Totem of Undying
+Replaced Incendium with BetterNether
+Replaced Nullscape with BetterEnd
+
+
+Removed Loot Goblins
+Removed Void Fog
+
+
+Updated Accelerated Decay
+Updated Angel Block Renewed
+Updated AppleSkin
+Updated Archeology Mod
+Updated Architectury API
+Updated Balm
+Updated Bookshelf
+Updated Charm of Undying
+Updated Cinderscapes
+Updated Client Tweaks
+Updated Cloth Config API
+Updated Collective
+Updated Cooking for Blockheads
+Updated CraftTweaker
+Updated Crafting Tweaks
+Updated Cultural Delights
+Updated Cupboard
+Updated Death Counter Fabric
+Updated Default Options
+Updated Elytra Slot
+Updated Entity Culling
+Updated Fabric Language Kotlin
+Updated FancyMenu
+Updated Farmer's Delight
+Updated Fastload
+Updated Forge Config API Port
+Updated GeckoLib
+Updated Geophilic
+Updated Incendium
+Updated Iris Shaders
+Updated JamLib
+Updated JourneyMap
+Updated Konkrete
+Updated KubeJS
+Updated Leathered Boots
+Updated Lithium
+Updated Max Health Fix
+Updated Mouse Wheelie
+Updated Nullscape
+Updated OpenBlocks Elevator
+Updated Paladin's Furniture
+Updated Puzzles Lib
+Updated Repurposed Structures
+Updated Rhino
+Updated RightClickHarvest
+Updated Roughly Enough Items
+Updated Server Performance
+Updated Simple Discord RPC
+Updated Smooth Chunk Save
+Updated TerraBlender
+Updated Terrestria
+Updated Textile Backup
+Updated VanillaTweaks
+Updated YUNG"s Better Mineshafts
+Updated YUNG's API

@@ -1,0 +1,96 @@
+v1.0 Changelog:
+
+
+Now marked as a full release
+- Should've done this at the start, but oh well
+The modpack now has an end goal: Make an Alchemical Sampling to impress the Alchemical Bureau
+- It costs a bit of everything, but shouldn't be too hard
+Everything* now has an AMC value and recipes to go with it
+- *Other than any items I might have missed, demon will & items related to it, and unobtainable stuff
+
+
+Changed the texture of the Sub & Microscopic Matter Crystals
+Added a new "Crystalpression" catalyst
+- Made with 1 Crystallization and 1 Compression. Used in special "crystalpress" recipes that give both bags and crystals.
+- Might change them back to just one of each Catalyst since this extra step is really only used to distinguish the recipes at a glance
+Improved all Ender Crafting recipes
+- Now you use stacked catalysts for them if more than 1 is needed
+- Made the recipe times way less grindy too. New values are (AMC | Time in seconds):
+<500 | 5 or AMC value
+500 - 1,000 | 10
+1k+ | 15
+2.5k+ | 30
+5k+ | 45
+10k+ | 60
+15k+ | 75
+25k+ | 90
+
+
+Crates now say "Storing X AMC" instead of "Holding"
+- This makes it easier to distinguish the 2 types of items without having to look at the textures. Plus I think it sounds better.
+Removed some useless recipes for the 1k crate
+- Migrated the 6k recipe to the 10k crate
+Hid several unused/creative items from JEI
+Removed a bunch of useless items/recipes
+HWYLA should now be hidden when gaining an advancement
+- Stupid thing didn't save last time >:{
+- Have I mentioned how I hate this new config system since it never saves anything?
+Advancement Plaques now last for their intended amounts of time
+- Tasks stay for 5 seconds
+- Goals stay for 7
+- Challenges stay for 10
+- Also reduced the spacing to 12 pixels so it doesn't feel like it's in the middle of the screen, and tweaked the fade in/out effects a tad
+Fixed some improperly coloured tooltips
+
+
+Nerfed axe damage (as it should be)
+- All of them have been reduced by half, like it was before Mojang broke the game.
+Netherite Swords now do 10 damage (which should be in Beta v1.0, but I think I forgot to add it to the changelog)
+DefaultOptions should now properly load into new installs
+Fixed my custom glass and leather recipes not working (oops)
+Mineshafts are now rarer
+Added a few quality-of-life recipes
+Added the "Music Discs" tag to the discs from Odd Water Mobs
+Reduced the burn times of Banner Patterns to 200
+Added a burn time to sugar cane and paper (50)
+Increased the burn time of paper walls to 400 (was 300)
+Items worth 0.5 AMC can now be crafted into 1 AMC bags
+Items worth 3 or 4 AMC can now be crafted into 5 AMC bags
+Items worth 6, 7, 8, or 9 AMC can now be crafted into 10 AMC bags
+Adjusted the amount of Catalysts needed for some recipes
+
+
+
+Replaced Simple Discord Rich Presence with DiscordRichPresence
+
+
+Added Portable Crafting Table
+
+
+Deleted Vault Research
+Removed Thermal Cultivation
+- It adds almost nothing useful (not even machines to automate farming with!) so there's no reason for me to waste time adding AMCs to everything from it
+
+
+Updated Forge
+
+
+Updated Advancement Plaques
+Updated Architectury API
+Updated Blood Magic
+Updated Controlling
+Updated CraftTweaker
+Updated Durability101
+Updated Equipment Compare
+Updated FTB Library
+Updated FTB Quests
+Updated Flat Bedrock
+Updated Iceberg
+Updated Just Enough Items (JEI)
+Updated Kotlin for Forge
+Updated Max Health Fix
+Updated MoreVanillaLib
+Updated Odd Water Mobs
+Updated Placebo
+Updated Valhelsia Core
+Updated Valhelsia Structures

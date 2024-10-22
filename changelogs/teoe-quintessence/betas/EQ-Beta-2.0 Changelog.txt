@@ -1,0 +1,64 @@
+B2.0 Changelog
+
+
+Made a list of known issues, viewable here: https://github.com/vizthex123/viz-projects/issues/4
+
+
+Fixed custom tooltips not rendering on multiple items
+The Thermal Expansion Machine Frame can be used in the alternate Redstone Furnace recipe (smoker + furnace)
+- Added Quark furnaces to recipe
+Changed the icon for "Item Retention"
+Added a tag to furnaces that can be used for the quest and several recipes
+Changed the "Storage" quest to accept any chest with the forge:chests/wooden tag
+Changed basic TE machines to only need the dynamo quest started, rather than completed
+
+
+Added more quests for Create
+Added a quest to make a Flower Pouch
+Added a quest to make a paxel (any kind)
+Added a recipe to pulverize Music Discs into Lead Coins
+Added a recipe to pulverize Limestone into Bones (since you can find fossils in them IRL)
+- This will be removed when ContentTweaker updates and I can add a custom Lime item, that can then be processed into various things
+Added a recipe to make ladders with sticks
+Buffed the rope recipe to give 2 per craft
+Blacklisted a few mods from randomium ore drops
+
+
+
+Removed Engimatic Graves
+- Enigmatic Legacy does the same thing (though it sometimes spawns above your head after you die), and removing this (hopefully) fixes some issues that both mods had while trying to fight over items
+
+
+
+Added EffectsLeft
+Added Item Stitching Fix
+Added Nourished Nether
+Added Simple Diving Gear
+Added Starlight
+Added YUNG's Better Desert Temples
+Added YUNG's Better Witch Huts
+
+
+
+Updated Additional Additions
+Updated Architectury
+Updated Balm
+Updated Bookshelf
+Updated Clumps
+Updated CraftTweaker
+Updated Crafting Tweaks
+Updated Dark Utilities
+Updated Deep Resonance
+Updated Deep Resonance
+Updated Default Options
+Updated Enchantment Descriptions
+Updated Enigmatic Legacy
+Updated FTB Backups 2
+Updated Item Filters
+Updated Just Enough Resources
+Updated Mantle
+Updated Packing Tape
+Updated Patchouli
+Updated Structure Gel API
+Updated The Twilight Forest
+Updated Tinker's Construct

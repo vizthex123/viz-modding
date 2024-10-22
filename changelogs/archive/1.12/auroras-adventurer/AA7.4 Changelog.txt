@@ -1,0 +1,49 @@
+v7.4 Changelog
+
+
+Added Elven Lapis to the dyePink OreDict
+Increased minimum Will and Will Drain for the Body Essence recipe
+- Now needs 35 min, 100 drain (was 25/25)
+Reduced the amount of Nether Quartz gained from Overworld Quartz Ore
+Added the recipe to duplicate Weak Blood Shards
+- There's been a description that says you can do this for awhile, but I forgot to add the actual recipe
+
+
+Fixed duplicate Comparator recipe
+Astral Diamonds no longer require Lapidary Calibration to be turned into RF
+Reduced RF gained from Sun Crystals to 1,250,000
+All of EB Wizardry's elemental crystals are now worth 225,000 RF
+- Radiant Crystals are 235,000
+Buffed Magic Crystal Shards to 2,775 RF
+
+
+The Blue Heart recipe that uses Magic Apples now requires Chaos Essence
+The Blue Heart recipe that uses (regular) Golden Apples now requires Body Essence
+The Blue Heart recipe that uses Mystical Apples (the shiny golden one) now requires Life Essence
+- RF Cost increased to 50,000
+Increased LP Cost of crafting Chaotic Matter to 26,845
+Swapped LP costs of infusing Orange and Green hearts into Blue Hearts
+The Blue Heart Canister recipe that requires a Green Heart Canister now uses 6 Life Essence (was 4)
+
+
+Actually fixed the recipe for Lavender Flour
+Fixed some AE2 recipes using the wrong tier Slate
+Change secondary ME Chest recipe (the one that uses a terminal)
+- Now gives 2 Chests, uses the scrapIngot OreDict
+-- Swapped the Slate tiers in each recipe
+Alternate recipe for Aurorian Glass now uses 4 Moonglass and 1 of any blue dye, makes 2 glass
+
+
+Every Data Model recipe only has one dependency now ("Counting Your Kills")
+Fixed/changed a couple misc quests
+Boosted reward for "Ancient Metalworking"
+Added a quest to make a mining well
+Added a few wood variants to the Tree Fluid Extractor
+- Doubled the output from Redwood Roots
+
+
+
+
+Updated Aurorian Items
+Updated Netherending Ores
+Updated Don't Even Axe

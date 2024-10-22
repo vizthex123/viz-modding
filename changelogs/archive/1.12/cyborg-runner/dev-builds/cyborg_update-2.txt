@@ -1,0 +1,87 @@
+
+
+
+
+#######################
+DONE ALREADY:
+#######################
+replace cobwebs in stone cabinet with unnamed ones
+remove linking book
+fix survivor books saying they're by vizthex
+
+disable quest toasts
+
+add more uses for the ring
+add more spawners, remove the linking book
+- make it perma night
+
+
+chef hint
+design hint
+basically all the other tables
+
+advanced cooking hint
+
+
+
+add modded foods to the sorting rules
+disable cheats in the template (if i can)
+fix template (remove furnace gen, fill up turret power)
+lower the number of spawners
+reduce HUDLens floating
+- change rejection to 25
+- set lens to 0.05 float, jack to 0.01
+
+change cyberware UI
+- battery in the bottom-left, next to the hotbar (40, 256)
+- purple colour
+- armour thing in the bottom-right (343, -18)
+
+electrotine in translocator recipes
+basic worktable hint:
+- flint can be used
+reduce machine wall to 8 per craft
+
+change feather to manual claim on "runner"
+hamburger + cheese = cheeseburger
+bread + pan = buns
+add signs to wood constant
+change pyrotheum cheese recipe to use milk fluid (so it's consistent)
+- be sure it gives back the bucket
+reduce bone sword to 4 dmg
+
+
+move worktable research around to see if it's covering up something else
+re-add oredict to wooden artisan tools, or change the quest rewards
+disable coal gen in the alien jungle, or update the quest description
+rename furnace researches to "smelting"
+remove gold ingot info quest thing
+trapdoor oredict for the tech research
+- add the entry to doors & trapdoors (check on the fences to)
+
+change 2 brick -> brick slab recipe to use the mason table + a chisel (same for normal slab recipe)
+disable primitive crafting for bone torches (flint & steel recipe)
+add some sawdust recipes that use the handsaw
+handsaw recipes to get more wood
+- dark oak and jungle are the only ones in the Alien Jungle
+
+fix security log quest not accepting the right book
+autoclaim XP on running
+change difficulty to easy after 5 mins
+- normal after 7
+- hard after 15
+
+fix backpack storage (AGAIN!)
+
+check on why the difficulty keeps swapping to peaceful, maybe scrap my scaling system and lock it at hard
+
+use any furnace in the redstone furnace recipe
+- make it & the pulverizer use the engineering table
+make gold & higher furnaces require the blacksmith table
+- make iron need the basic table
+electrotine in circuits
+- required for the elite one
+
+reduce the price of parts since they're not too hard to get
+human eye recipe for the scanner
+- maybe it costs 2 + some alloys?

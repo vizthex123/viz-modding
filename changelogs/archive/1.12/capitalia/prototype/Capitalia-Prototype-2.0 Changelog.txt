@@ -1,0 +1,72 @@
+v2.0 Changelog
+
+Changed sell values of a few Composite-tier ingots
+- Also Platinum & Titanium Ingots, and Enriched Uranium (Highly Advanced)
+-- Altered coin values for all changed metals (coins always sell for ~25% more than their ingot counterpart)
+
+Halved value of shiny golden apples (from $5k to $2.5k)
+Added value tooltips for all items that can be sold
+- Ones that can be bought will come later
+
+Added decrafting recipes for Just Coins' items
+
+Actually remove Capacity Upgrade x64 recipe to replace it with my own
+Added intended Item Stage support for a few Extended Crafting blocks
+- Currently the Tier 3 & 4 Table, and the Quantum Compressor. I doubt more will come.
+
+Updated quest dependencies of a few things
+Fixed a few other minor bugs
+- Note that there's currently a weird quest duplication bug happening. No clue why but it isn't breaking things, just being annoying.
+
+You can now sell some fluids:
+Note: Prices are for every 1,000 Millibuckets (mB) [Equal to 1 bucket]
+(Filled buckets of each fluid also have tooltips reflecting their values)
+
+Water - $1
+Milk - $15
+Lava - $25
+Oil (Cool) - $100
+Dense Oil (Cool) - $75
+Heavy Oil (Cool) - $85
+Distilled Oil (Cool) - $95
+Light Fuel - $125
+Mixed Light Fuels - $150
+Dense Fuel - $200
+
+Diamond Miner is now cheaper (4 total diamonds instead of the default 10)
+- Fixed recipe for Diamond Upgrade needing a Diamond Upgrade
+
+Re-added Burn Time to Fuel Pellets
+- No idea why or how it got removed
+
+Changed rewards on "Basic Ore Doubling"
+Changed the way "Researching Hell" works to match the way it works for the Overworld research (where you submit X amount of anything in the category)
+- "Researching Hell II" remains the same since I can't settle on a specific amount of items to find
+-- I planned to change "The End", but since everything is much more spread out in that dimension I'll have to add multiple game stages
+
+Restructured all of "Cheques & Balances", every quest is now combined into 1; with 3 extras you can do afterwards as an optional challenge
+- Also renamed it to "The Money Factory"
+-- Also added several secret optional challenges, and made the quest shapes consistent with my system
+
+Changed/added sell values for a few items
+Fixed some broken scripts
+Added a few new alternate recipes for items
+
+Added Exchangers
+Added Food Expansion
+Added Mo' Villages
+-  This is one of my standard mods and idk why i didnt have it. Would be nice if I could reduce the spawnrates though.
+Added Better Than Mending
+Added EnderStorage
+- Has its own Game Stage that must be researched
+
+Added AE2 Stuff
+- Disabled Pattern Encoder
+Added Energy Converters
+- Remember that MJ producers need a wooden kinesis pipe
+Added Ranged Pumps
+Added Long Fall Boots
+- Reduced durability from 858 to 750
+-- Might change again later, but it doesn't use durability to prevent fall damage and is somewhat cheap to craft
+Added Flux Networks
+- Disabled RF storage aspect of the mod

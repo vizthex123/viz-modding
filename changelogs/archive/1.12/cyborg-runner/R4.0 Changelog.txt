@@ -1,0 +1,177 @@
+v4.0 Changelog
+
+ 
+
+Moved the Miner's Ring recipe to the Blacksmith's Worktable
+- The recipe is now locked behind Mining 3 to ensure you don't make a useless item by accident. Uses 8 Artisan's Hammer durability.
+ 
+
+Updated the survivor's logbook lore pages
+Iridium can now be turned into Artisan's Tools
+- It has 2,500 durability and 12 enchantability
+Reduced the durability for Bronze artisan's tools
+Fixed my custom Simply Jetpacks recipes not working right
+Added a recipe for the Blank Design Pattern
+
+ 
+
+Increased the burn time of Red Coal to 2,000 (10 items)
+Fixed the "sugar" nutrient not being correctly localized
+Reduced Cyberware HUDLens/jack "float" to the proper values
+Capitalized the "Hud" part of the Hudlens/jack
+Witches can now drop human organs and spawn with augments
+Fixed how bonecraft items weren't decraftable if they were damaged
+Increased the range at which you can see a Champion's healthbar
+- Doubled it from 50 to 100
+Began to configure Scaling Wealth
+- Currently, Zombies, Skeletons, Creepers, Husks, and Evokers drop extra loot.
+
+ 
+
+Cyberzombies & skeletons can no longer spawn as Champions
+Witches will always spawn as Tier 1 or 2 champions
+Fixed the second Caramel Apple recipe not using the correct amount of apples
+- Added a third recipe that uses 100 mB of Lava
+-- The recipe to make 4 at once now uses the entire crafting grid
+Doubled the durability of all vanilla magnets (from Tiered Magnets)
+Boosted the recipe output for Chocolate to 3, now uses 250 mB of Lava
+Boosted the durability of Vulcanite items to 1750 (meant to do this in v3.0 but forgot)
+Reduced durability of Glacidite items to 2,000, armour by 100
+All Glacidite items now have XP locks
+Increase the mining speed of Glacidite tools to 12 (base is 8)
+Reduced Pristeel items to 350 durability, armour by 35
+Reduced Katana durability to 1,500
+Reduced Katana damage to 12
+Reduced the prices for the organ/limb selling quests
+
+ 
+
+Chocolate Syrup now uses my bottling system since the mod doesn't balance it by default
+Gold Paxels & Universal Tools now work for "Better Mining"
+Added a reward to the "Golden Defense" quest
+The "Junk Dump" quest now has a proper reward
+The Neuropozone shop now costs 2,100 Toilaries
+Disabled all the Capsules after the 5x5x5 one
+- This is to encourage the player to use a Compact Machine for their base, as Capsules are more meant for the one-time crafting system I have.
+Added skill locks to Hammers & Excavators
+The lava bucket cheese recipe now gives 6, and requires 6,000 mB of milk
+- The fire charge one now requires 3,000 mB of milk and gives 3 cheese
+-- Increased durability costs of both
+
+ 
+
+Reduced the Portable Tank storage to 8,000 MB
+Reduced the Cache storage to 8,192 items
+Fixed a few food items missing the proper nutrients
+Set nutrition decay back to 1.0x (the default)
+Reduced water usage in the ice recipe to 4,000 mB, increased durability usage to 30
+The Designer's Worktable is now broken with an axe
+The Packed Ice recipe for Ice Cream Sandwiches no longer uses water
+- The regular ice one now uses water
+
+ 
+
+Reduce the Agility requirement to use Diamond Armour to 10
+Glacidite Armour is now properly skill-locked, requiring Defense 15 and Agility 12
+Merialces Armour now requires Gathering 5
+- It now gives 10 total defense, and 5 armour toughness
+Vulcanite armour now requires Defense 20 and Agility 15
+
+ 
+
+The "Technology" research now requires the "Ceramics" research
+The "Ore Vein Excavation" research now requires the "Advanced Tools" research
+- Change the cost of both
+Drop Spiders now always spawn as Tier 2 champions
+Tweaked chances of champions spawning
+Added a recipe to convert Crysium into Cryotheum
+Hid NYI/WIP items from Deep Sea Expansion in JEI
+Migrated the capsule recipes I had so they now render in JEI
+
+ 
+
+Added all (eligible) Natura items to the Bioreactor
+Added all (eligible) Glacidus items to the Bioreactor
+Added all (eligible) Oh the Biomes You'll Go items to the Bioreactor
+Added the last few missing XL Food Mod items to the Bioreactor
+Added a few missing Minecraft items to the Bio/Protein Reactors
+
+ 
+
+Changed the recipe for Gravel > Flint to only use an Artisan's Sifter
+- Now makes 2 flint per craft, uses 10 durability
+The sandstone > sand recipe now uses an Artisan's File (in addition to the hammer), and needs 250 mB of water
+- Each Sandstone type now gives its respective type of Sand
+Added a recipe to sifter Sandy Dirt to get 1 Sand and 1 Dirt (with a 50% chance to get 1 Coarse Dirt). Requires 100 mB of water, and 15 Artisan's Sifter durability
+Added a recipe to file Soapstone into Magnesium, with a 50% chance to get one extra (requires 10 Artisan's File durability & 500 mB of water)
+Added a recipe to file Scoria into various crystals (requires 15 Artisan's File durability & 500 mB of water)
+
+ 
+
+Added recipes to convert various types of Sand into various kinds of Dust: (base item is always salt unless specified) {uses 10 Artisan's Sifter durability unless specified}
+(Regular) Sand occasionally gives you Nether Quartz (5% chance), Gold Dust (7% chance), and Iron Dust (10% chance)
+Red Sand occasionally gives you Gold Dust (10% chance) and Iron Dust (20% chance), but doesn't give you Nether Quartz
+White Sand occasionally gives you Iron Dust (25% chance), and always produces 1 Calcium Carbonate
+Black Sand gives 2 Basalz Powder, and can give 1 extra 50% of the time. 25% chance to get 1 piece of Charcoal (requires 15 durability)
+Light Blue Sand gives 2 Blizz Powder, and can give 1 extra 50% of the time. 25% chance to get 1 Lapis Lazuli (requires 20 durability)
+Pink Sand gives you 3 Calcium Carbonate. Can give 1 extra 35% of the time.
+Purple Sand gives you 2 Pulverized Obsidian. Gives 4 Calcium Carbonate 75% of the time, 3 Gold Dust 50% of the time, and 3 Copper Dust 30% of the time. (requires 25 durability, and 250 mB of water)
+
+ 
+
+Added several types of crystals to Lapidary Calibration
+Added Electrotine (and its block) to the Enervation Dynamo
+Added Enchanted Golden Apples to the Enervation Dynamo (makes 10,000,000 RF)
+Added the Totem of Undying to the Enervation Dynamo (makes 25,000,000 RF)
+Added the Dragon Egg to the Enervation Dynamo (makes 50,000,000 RF)
+
+
+
+Removed JJ Meteor
+- It only works in the Overworld and I can't change that, sadly
+
+ 
+
+Replaced Reborn Storage with Storage Tech
+
+ 
+
+Added Refined Storage
+Added Refined Storage Addons
+Added Refined Storage: Requestify
+Added Refined Storage Fluxified
+
+ 
+
+Added Redstone Arsenal
+Added Project Red: Base
+Added Project Red: Compat
+Added Project Red: Integration
+Added Project Red: World
+Added Artisan's Automation
+- These are mostly used in the final battle, but you can use them during normal gameplay
+Added Nether Metals
+
+ 
+
+Added Open Modular Passive Defense
+- Recipes have been migrated to the Engineer's Worktable/station/shop, as with Open Modular Turrets' items & blocks
+Added Infinity & Mending Unnerf
+Added Mending Gems
+Added Mending Fix
+Added Block Drop Tweaker
+
+ 
+
+Updated Champions
+Updated Anvil Patch - lawful
+Updated Artisan Worktables
+Updated Ceramics
+Updated DupeFix Project
+Updated FTB Quests
+Updated OpenTerrainGenerator
+Updated ResearchTable
+Updated Hammer (Lib) Core
+Updated Patchouli
+Updated UniDict
+Updated VillageNames

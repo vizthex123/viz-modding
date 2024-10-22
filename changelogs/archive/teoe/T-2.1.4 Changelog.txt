@@ -1,0 +1,19 @@
+v2.1.4 Changelog - Yay! Hotfixes! And Rewards
+
+Added a recipe for turning Command Blocks into Redstone Blocks
+Added A LOT of new Reward Bag loot
+Fixed Transmutation Table having 2 recipes
+Changed ProjectE changelog
+Added recipe for Tome of Knowledge
+Added new quest "Too Many Things"
+Changed EMC of Dragon Heart
+Changed recipe for Material Cache
+Misc Bug fixes
+
+ 
+
+Updated Storage Drawers
+
+ 
+
+And I made sure Edit Mode was turned off before uploading the patch this time!

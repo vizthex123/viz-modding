@@ -1,0 +1,42 @@
+BETA v0.0.5 Changelog
+
+Updated JourneyMap
+
+Added Chisel (Suggested by Beta Tester JerySprigs)
+Added Ender Zoo
+-Disabled Dire Slime from spawning (Slime made of dirt, spawns after you break dirt without a Spade)
+
+Added Flesh2Leather
+Added Forestry
+Added Ore Dictionary Converter (This is because you get many different types of the same ore, so to counteract this I added this mod which lets you turn them all to 1 type [I'd say Thermal Foundation ones are the best])
+Added BuildCraft
+- Added Logistics Pipes
+
+Edited Chance Cubes config (Disabled clear inventory "loot")
+
+Removed cooldown of "Do-Over!" (You can do it infinitely as long as you have the materials)
+-Changed it to require 1 Credit
+--Changed cobble you get at the beginning of the map to Credits (1 credit * 6)
+Changed description of "(Better) Storage START!"
+Finally finished "Ewy's Upgrades"
+-Changed rewards
+Changed reward bag stuff
+
+Finished Adventurer's Backpack Questgroup
+Changed uses of Cardboard Box to 5
+-Changed amount of rows from 1 to 2
+Changed recipe for Miniature Black Hole
+
+Added recipes for all Thaumcraft ores
+Changed output of Iridium Card grinder recipe
+Can't change the Grinder recipe... it won't let me remove the recipe to add the new one :v you'll have to just use Credits to buy quartz then make it (I'd say Nether quartz, it's cheaper)
+
+Added new "Buy" recipes for: (Cheap - Expensive)
+Sand, Slimeball, Leather, Nether Wart, Nether Brick (Item), Blaze Rod
+
+Changed recipe for Mana Infused Stone
+Changed world a bit so it'll reset your world, sorry
+-This shouldn't happen anymore though
+Mystcraft Crystal can now drop 500 more credits 1% of the time
+
+Added 11 new quests total

@@ -1,0 +1,12 @@
+v10.2.1 Changelog
+
+
+Added a sell price to Hellish Viscera ($325/bucket)
+Fixed the research table showing completed and unavailable research
+Stone Data Lumps can now use Chisel's Marble & Limestone, and Basalt from Project Red
+Updated Discord rich presence
+Fixed the recipes for plates not showing up in JEI
+Fixed the Basic Melting Crucible's tooltip not rendering on the correct machine
+Fixed ingot recipes not using Thermal Expansion's ingots
+Fixed staging of some ores
+Added a recipe for the Iron Miner that uses the Fueled Quarry

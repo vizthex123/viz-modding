@@ -1,0 +1,42 @@
+B3.0 Changelog:
+
+
+Disabled the uncrafting table since there's so much stuff to blacklist
+- There's also very few times you really *need* to uncraft anything, and there's usually other ways to process useless items. I might re-enable it later, but I doubt it.
+
+
+Reduced the rope coil recipe to give 6 instead of 8 per craft
+Added a recipe to convert Additional Addition's ropes into rope coils (at a 4:1 ratio)
+Tweaked the power stats for a few Industrial Foregoing machines
+Reduced the cost of the Lead Anvil
+Removed the Raw Tin reward from "Burning Power"
+The Nether Portal quest now requires Flint & Steel, and gives a Queen's Slime Ingot rather than a Flint & Steel
+Added quests for Industrial Foregoing, and some other mod items
+Added multiple gems to the Lapidary Dynamo
+Fixed Kelp Blocks giving the wrong RF in a Stirling Dynamo
+Fixed the wooden hopper upgrade recipe not actually upgrading it
+Fixed the wooden hopper being too expensive
+
+
+Changed randomium ore drops to be a whitelist instead of a blacklist
+Added a recipe to pulverize Blank Runes into Lead Coins
+Finished off the AE2 questline
+Added quests for XNet and the Wormhole mod
+Changed the Energy Acceptor upgrade recipe to use 2 fluix + 2 charged certus quartz
+Started working on the exploration questline
+Added a few more quests for Create
+Added quests for a few items from Essentials
+
+
+
+Replaced Portality with Wormhole (Portals)
+- Portality is buggy and crashes the game, but I might re-add it later since the portals are pretty cool
+
+
+Added Essentials
+
+
+Removed Dark Utilities
+
+
+Updated Applied Energistics 2

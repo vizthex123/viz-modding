@@ -1,0 +1,20 @@
+v2.3 Changelog - Slight Tweaks
+ 
+
+Removed Modular Powersuits
+- Removed Numia
+Added The Betweenlands
+Added Anti ID Conflict
+- Will always be disabled, since it's for dev use only (And it's easier to do that over reinstalling it every time) [Plus it should help load times be a tad fster, since the game wouldn't be trying to log every ID]
+
+ 
+
+Edited several Aether values
+- Unifed Aether value for main ingots (Copper, Tin, Bronze, Steel, Alumin(i)um)
+
+Changed ConveyorCraft recipes, fixes exploits and unifies recipes
+
+ 
+
+Added Achievement Book for Challenges
+- It's called the "Challenge Book" (Unsurprisingly), but works off the honour system (Since I have no way of checking if you've built a factory), but it's the way for you to document the progress you've made with the mods

@@ -1,0 +1,183 @@
+Initial release.
+
+
+
+Changes from test build:
+
+Finished up the incomplete quests (and added a few more)
+Added a basic menu design
+- Added support for 1080p
+Added Gold Scrap (and a Tiny version)
+- Renamed Scrap to Iron Scrap (same for Tiny Scrap)
+- Gained from recycling recipes and processed in the same way Iron Scrap is
+- Tiny Scrap is now crafted into Scrap rather than Ingots (still has the nugget tag though)
+
+
+Bits now require an Iron Drill instead of Diamond
+Support Scaffolding now requires Powdered Obsidian instead of Sturdy Sheets
+- Changed the Catalyst to a Soul Steel Ingot
+Changed the recipe for the Quantum Compressor
+Replaced all my terrible dev art with proper textures (made by XDFlame)
+Gave Prestige a few more uses
+- Can now be exchanged for expensive items/components from various mods
+- Added a new Challenge to submit a stack of each Prestige type
+- More to come in v1.1 & beyond (as I think of them)
+
+
+
+Bugfixes:
+
+Removed a few uncraftable recipes
+Fixed the Information Data Pad being softlocked behind the Information Age
+Fixed JEI info for Ender Cells & Gates
+Fixed Packing Tape using any Binding insted of any Paper
+Fixed a stray pixel in the Tiny Iron Scrap texture
+Fixed recycling recipes that give Iron Scrap not using the proper ratio
+Fixed the Cartography Table's sawing recipe not using the proper item 
+Raw Tungsten is now buyable for 1,500 instead of 500 to prevent an infinite buy/sell exploit
+
+
+
+
+Balance:
+
+Halved the power storage of the Flux Alternator (was 500k)
+Rose Gold armour now gives the same protection as Iron
+- No longer gives Toughness
+Tweaked the Ender Magnet config a tad
+- Increased the ranged of all Magnets
+- Restored the default range of the Torch
+
+
+
+
+Economy:
+
+Transferred the last few items with values to the Shop
+- If anything is missing, please let me know
+Moved Trade Permit quests to Economics instead of Challenges
+- Removed Prestige rewards
+
+
+Reduced the value of Ooze
+Reduced the value of Charged Certus Quartz
+Reduced the value of Copper and Iron Wire
+Increased the value of Purple Alloy
+
+
+Massively increased the sell value of the Worldbreaker Drill
+Tweaked coin spawning and added *many* more supported chests
+
+
+Added a new Trade Permit tier for High-Tech Materials
+Added Music Discs to the Shop Terminal
+The following items are now sellable:
+- Crying Obsidian
+- Crystaltine Ingots
+- Energized Steel
+- Necronium Ingots
+- Phantom Membrane (Also has the binding tag)
+- Polished Rose Quartz
+- Malachite
+- Bismuth Ingots
+- Adamantite Ingots
+- Chorloam
+- Xenon
+- Helium
+
+
+
+Quests:
+
+Moved "Projecting Crafts" to "The Basics"
+"Stone Age Mastery" now gives a Chit instead of Scrip
+"Item Retention" now requires a Prestige Scrip
+- Moved to Prestige
+
+
+Added a new Quest Chapter: Milestones
+- Milestones are achieved by getting certain advancements or items, and reward Prestige & Experience
+- There's currently a Milestone for each Age in the pack and a few progression steps, with more to come in the future
+Changed all Shulker Box rewards to Loot Rewards
+Added a quest to make a Redstone Pen
+
+
+
+Recipes:
+
+Changed Sandpaper to use the paper tag
+Added a recipe to compact Magma into Lava
+Added a recycling recipe for Redstone Lamps
+Added crushing recipes for the following blocks:
+- Gilded Blackstone into Gold Scrap and Blackstone (can't believe I forgot it)
+- Nether Quartz Blocks into Nether Quartz
+- Crying Obsidian into Powdered Obsidian
+- Basalt (both kinds) into into Tuff
+- Mesmerite into Illunite Shards
+
+
+
+Glue now uses the paper tag
+Unwritten Scrolls now use 2 Paper instead of 1
+Added a recipe to make Parchment out of Fibers
+The Quicklime recipe for Parchment now requires some Fibers
+Added Sawing recipes for unsupported Logs, Quark's Hollow Logs, and Silver Birch's eponymous logs (also applies to Wood for each Log)
+Removed the Brass recipe for the Blast Furnace
+- Moved to the Iron Age
+
+
+Shredded Hide now only takes 2 to convert into Leather (was 4)
+Added a recipe to crush Quartz Blocks into Quartz
+Removed the Combination Crafting recipe for fluix
+- I didn't realize AE2 had built-in compat with Create lol
+Added a recipe to convert Prestige Chits into Scrip and vice versa
+Changed the recipe for Long Fall Boots
+
+
+Added recycling recipes for Lanterns
+Buffed the Minecart with TNT - > Scrap recipe to 5 Scrap (as originally intended)
+Scrap can no longer be smelted in a Furnace
+- Now takes twice as long to smelt
+The Axe + Plank Sawdust recipe now uses 10 durability (was 5)
+Washing Thorium now only gives 1 Uraninite instead of 2
+
+
+
+
+Misc:
+
+Added Tiny Gold Scrap
+Illager Flesh can now be composted (35% chance)
+Raw Uraninite can now drop from Randomium
+Charged Certus Quartz can now drop from Randomium
+Added the fence and fence_gates tags to both blocks from Biome Makeover, Enlightened, and Silver Birch
+- Also added Burn Times to them
+
+Added JEI Info to all transmutable items from Phantasmic
+Renamed Base to Foundation
+
+
+
+
+Mods:
+
+Enabled Curios Quark Oddities Backpack
+- A Quark update fixed the crash it was causing when you used it alongside Deep Dark Regrowth. Glad to have it in the full release. Still not sure why Vazkii hasn't put in into the mod though....
+
+Added Create Sandpaper Overhaul
+Added Incendium
+Added Myrtrees
+Added Redstone Pen
+Added Scannable
+Added Simple Discord RPC
+
+Replaced Charm of Undying with Better Totem of Undying
+
+Removed Custom Machinery
+
+Updated AdminShop Overhauled
+Updated Create Enchantment Industry
+Updated ModernFix
+Updated Quark
+Updated SuperMartijn642's Core Lib
+Updated Titanium

@@ -1,0 +1,182 @@
+Beta 2 Changelog:
+
+
+Main changes:
+
+Added some quests
+Tweaked a couple of loading tips to be accurate to changes I've made
+Balanced Jet Boots to better fit the mid-game tier I want them at
+- Disabled most of the upgrades
+- Removed the non-Jet Boot items
+
+
+Disabled some duplicate REI categories
+Removed duplicate recipes for all AE2 cables
+Removed more duplicate recipes I forgot to list
+Added collapsible entries for AE2's cables and P2P tunnels
+Improved the collapsible entries for Xychorium-Infused blocks
+Blacklisted all Thermal Series machine UIs from being sorted
+
+
+Added 8 custom machines:
+- Amalgamation Station: Combines things into other things
+- Coin Minter: Lets you combine coins (since each one is worth 10 of the previous). I'll probably refine this system in the future, but for now it's just a cheap multiblock
+- Crystal Transmutate: Converts Xychorium into other colours (and Certus Quartz), and has a couple other recipes
+- Dye Extractor: Extracts extra dye from valid items, and has unique recipes to process minerals
+- Extractinator: Not yet implemented (it's not working properly), but if it ever decides to work it'll be like the extractinator from Terraria (I can't configure the mod as well as I'd like to, so I didn't use it due to that).
+- Reprocessor: As the name implies, it processes varies items into other items (mostly items from Alex's Caves)
+- Shredder: Replaces smelting recipes for Scrap (and nuggets), and has a few unique recipes
+- Transmuter: Swaps between item/block variants at no cost
+
+
+
+Standardized dye recipes
+- Pretty sure I already had it in place, but if not you can now use all the default items (and some extras) to make dyes in one tagged recipe
+- Said items can also be processed in a Dye Extractor to get extra dye (costing no RF) or Centrifugal Separator (costs RF, but gives more dye and some XP)
+
+
+
+
+
+Bugfixes:
+
+Removed an invalid recipe from the Sawmill
+Fixed the names of several blocks & fluids that aren't properly localized
+Fixed Stonecutter recipes for Xychorium-Infused Aluminum and Deepslate Bricks being removed
+Fixed the Glowing RGB Viewer being hidden when it shouldn't be
+
+
+
+
+
+Balance changes:
+
+Reduced lava powergen in a Magmatic Dynamo to 20k RF (was 100k)
+Added Proxima E lava to the Magmatic Dynamo (makes 100k RF)
+Changed the mining levels for a few ores to make things consistent
+Reduced the effectiveness of Ash as a catalyst
+Marine Snow can now be used as a catalyst
+Fertilizer can now be used as a catalyst
+
+
+Thraser data models now give 8 teeth (was 12)
+Nucleeper data models now require 512 RF/t (was 256)
+- Now gives 2 Fissile Cores (was 4)
+- Now gives 64 Gunpowder (was 48)
+
+
+
+
+
+Recipe changes:
+
+Torch Spores can now be crafted into Torches
+Changed the Latex Bucket -> Rubber recipe to give 4 instead of 3
+The Glow Lichen recipe for Rubber now gives 8 (was 4) and accepts Torch Spores
+Added Multiservo Press recipes for Latex from all the items my custom recipes use
+Disc Residue now requires 1,200 RF to process (was 800)
+Compressed Sawdust can be smelted (or Pyrolyzed) into Charcoal
+MDF Boards now make 2 per craft (was 1)
+- Recipe now uses 1 Glue, and is shapeless
+
+
+Raw Rose Gold now only uses 2 Raw Copper & Gold (was 4)
+- Added a recipe that uses ingots to give a higher output
+Spectragel can be processed into Cyan Dye
+Floral Paste can now be used to make Light Blue Dye
+Bioluminesscence can now be turned into Light Blue Dye
+Added Biomes o' Plenty's flowers to dye recipe tags
+Uranium stuff from Alex's Caves now use Uranium Ingots
+Tesseracts now use a Machine Frame instead of a Telecore
+Condensed all decraft recipes for Certus Quartz into a single recipe
+- Meant to do this in the first beta and forgot lol
+
+
+All rubber recipes now use tags
+Rubber can now be crafted with plants found in the Nether
+Added blasting recipes for all Raw Ore blocks
+- All recipes now have much higher smelting times
+Added recipes to combine drawers into higher tier ones (e.g. 2 1x1 drawers makes a 1x2 drawer)
+Added Biomes o' Plenty's woods to my recipe fixer tag
+Added Sawmill recipes for all the woods that were missing it
+Added recipes to convert Hollow Logs into Planks
+- Also added Sawmill recipes
+
+
+
+
+
+Misc changes:
+
+Tough and Hoglin Hides now have the leather tag
+- Also added a recipe to convert 1 of each into 3 Leather (with a 50% chance to get an extra piece)
+Both types of Steam now have the forge:steam fluid tag
+Added a data model for Spectraflies, Entombed, and Star Crawlers
+Added tags to ingots that were missing it (still hoping mod devs start fixing missing tags before publishing their mods...)
+Removed item tags from all infested blocks
+
+
+
+
+
+Mod changes:
+
+Removed the Better Smithing Table texture pack
+Replaced Clean Swing Through Grass with Cut Through
+
+
+
+Added the following mods:
+
+Bag of Holding
+Better Tridents
+Biomes o' Plenty
+Combat Nouveau
+Functional Thermal Drawers
+Mobtimizations
+Model Gap Fix
+Portable Hole
+Ranged Pumps
+Redstone Pen
+Silver Birch
+Toast Control
+Woodworks
+
+
+Removed the following mods:
+
+Better Smithing Table
+Dense Ores
+DimensionalDoors
+GunpowderLib
+ProbeJS
+- Only installed for development purposes, as it does nothing for the end user
+Quad
+Thermal Extra
+- I can't configure it and the mod dev doesn't want to add KubeJS support
+ZeroCore 2
+
+
+
+Updated the following mods:
+
+Applied Energistics 2
+Aquatic Frontiers
+CB Multipart
+CoinsJE
+FLIB
+FancyMenu
+Jade
+Masterful Machinery
+McJtyLib
+Mouse Tweaks
+Neruina
+PolyLib
+Puzzles Lib
+Quark
+TACT
+Tiny Redstone
+Titanium
+XNet
+YUNG's API
+YUNG's Better Jungle Temples

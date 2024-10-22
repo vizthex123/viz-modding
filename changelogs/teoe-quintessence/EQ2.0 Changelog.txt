@@ -1,0 +1,86 @@
+v2.0 Changelog:
+
+
+This patch fixes a crash that several people have reported, so be sure to update!
+
+
+Added quests for Reliquary's items
+Added some post-game content - good luck ;p
+- Creative items have the Quintessal rarity
+Ultimate Ingots now give 4 per craft
+Advancements should now print in chat again
+Removed the redstone from the map recycling recipe
+Reduced the RF cost to recycle Depth Meters and Gold Rings
+Added recipes to upgrade trading blocks into a Medium Network Traders
+Removed the Create pressing recipe for Compressed Sawdust
+- You can only have 1 item input & output, so it's been replaced with a new Sawdust Clump recipe (same for the multipress version). Both textures have been swapped.
+Crafting Compressed Sawdust no longer requires a 2x2 packing die
+The Hard Mode quests now accepts any coin
+Disabled the completion toast for Hard Mode and Item Retention
+Nether Grout now accepts modded Soul Sands/Soils
+- Also added a recipe that uses Soul Sludge
+
+
+Crystaltine Ingots now have the Stellar rarity
+Nether Star Blocks now have the Radiant rarity
+Blank Runes now give 90 Essenarium when coinified
+Heart of Diamond can now be coinified
+Heart of the Earth can now be coinified
+Spellstones can now be coinified
+Pulverizer recycling recipes can now be done with Crushing Wheels
+Added more recycling recipes:
+- Iron Doors
+- Redstone Lamps
+- Droppers & Dispensers
+- Observers
+- Tripwire Hooks
+- Buckets
+- Fuel Canister
+- Glowsticks
+- Ropes
+
+
+Removed duplicate Magma Cream recipes
+Added a Crushing Wheel recipe for Raw Platinum
+Added Corundum recipes to the Crushing Wheel
+- They give 1 extra over the Pulverizer, and have a higher chance to grant the secondary
+Tweaked Amethyst as a Pulverizer Catalyst
+Corundum now has a use chance of 65% instead of 50
+Overhauled the Magmatic Dynamo:
+- Massively nerfed the RF gain from Lava, 1 bucket of lava now gives 5,000 RF (was 100,000)
+- Magma can now be used, and makes 35,000 RF (per bucket, as with all of these)
+- Blazing Blood can now be used, and makes 50,000 RF
+- Molten Fiery can now be used, and makes 75,000 RF
+Venom can now be used in the Compression Dynamo, and makes 65,000 RF
+
+
+Disabled the Gunpowder Block from Quark (Thermal Expansion adds one already)
+ Stick Blocks now have a burn time of 400
+Whisperwood's enemies now drop Coins
+Made the Crafting Core cheaper
+Migrated Waystone recipes to Combination Crafting
+- Each one is now slightly cheaper, but requires the combination crafting multi-block
+- Scroll & Warp Dust recipes were not moved
+- Slightly tweaked the Warp Stone recipe to have better mod integration
+Changed the Quantum Quarry recipes to integrate with other mods
+- Also added a quest for it
+
+
+
+Added Bee Fix
+Added Quantum Quarry Plus
+
+
+Removed Runelic
+
+
+Updated Applied Energistics 2
+Updated Chunk Pregenerator
+Updated Controlling
+Updated Cucumber
+Updated Lightman's Currency
+Updated Lightman's Discord Integration
+Updated Nature's Compass
+Updated Quest Plaques
+Updated Structure Gel API
+Updated YUNG's Better Desert Temples

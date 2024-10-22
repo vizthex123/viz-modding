@@ -1,0 +1,12 @@
+v3.3.2 Changelog
+
+
+Fixed my ContentTweaker items not having custom textures & names from the v3.3.1 release
+
+
+Updated Architectury API (Forge)
+Updated Better Advancements
+Updated CraftTweaker
+Updated Create Crafts & Additions
+Updated Kotlin for Forge
+Updated Structurize

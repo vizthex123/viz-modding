@@ -1,0 +1,191 @@
+v3.0 Changelog:
+
+
+Waystones should now work correctly on servers
+Added quests for a couple of Engimatic Legacy's items
+Replaced the Liquid Soulsand Bucket with a Quantum Quarry upgrade in the Quintessence recipe
+Quintessence now accepts a couple other modded lamps in addition to the Analog Lamp
+Changed creative item recipes to only use 1 Quintessence
+All creative item recipes now use some Enhanced Ender Ingots
+Added a recipe for the Creative Slot upgrades from Tinker's Construct
+Removed the creative slot reward from Unlimited Crafting Power!
+Made a new texture for Crushed Platinum in an attempt to mimic Create's style
+Fixed Curses, Coiled Again! not using the custom tag I made
+Buffed the reward for Pick-a-Rific Range to 1 Gold Coinpile
+
+
+Magmatic Dynamos once again accept Lava
+- Lava now gives 10k RF per bucket
+Tweaked the default output rates for TE's dynamos
+- Stirling: 20
+- Compression: 80
+- Magmatic: 40
+- Numismatic & Lapidary: 60
+- Disenchantment: 120
+- Gourmand: 50
+Changed the Disenchantment Mycelial Generator to require a Disenchantment Dynamo
+The Magma Mycelial Generator now requires Signalum Gears instead of Emerald
+
+
+The mechanical press recipe for Compressed Sawdust now takes 1 second instead of 2
+The Muliservo Press recipe for Compressed Sawdust now makes & uses 2
+- This is a temporary workaround until the CraftTweaker devs can fix it not working at all
+The Compressed Sawdust recipe for Sticks now makes 8 per craft
+Changed the Heart of the Sea to a coinification recipe instead of emeralds
+- This is what I wanted to do originally, but you could exploit the villager trades to get infinite coins (like shadow does); so I made it emeralds
+Changed Endercells to require Mechanical Crafting
+- The recipe remains unchanged
+The Earth Orb now requires the Runic Altar
+- The recipe now requires 2 Infused Iron Ingots and Glue instead of 4
+Changed the Netherite Pickaxe in the Quantum Quarry recipe to a Soul Stained Steel pickaxe
+Replaced the Glowstone Singularity with a Zinc Singularity
+
+
+Buffed the gains from sawing banners
+Changed Sawdust in the following ways:
+- Pulverizing planks now has a 100% chance to give 2 Sawdust, rather than 50%. Now uses 500 RF (was 1,000)
+-- Adding Crushing Wheel versions of both recipes
+- Re-did existing recipes to give Sawdust based on the amount of Wood used
+Added Sawmill recipes for the following:
+- Added Mechanical Saw versions of each recipe where applicable
+- Stairs
+- Fences
+- Trapdoors
+- Door
+- Slabs
+Added recipes to saw Twilight Forest's Hollow Logs into Planks
+Made Suspicious Stew use tags
+Added a recipe to induction smelt raw platinum into platinum ingots
+The Iron and Gold Wallet Upgrades now use coins instead of piles
+Added recipes to coinfy AE2's presses
+- Each one gives 2.5k Essenarium
+Heart of Diamond now gives 5k Essenarium when coinified
+The Enchanted Golden Apple recipe now gives 8 per craft (was 4)
+Nautilus Shells can now be pulverized into Bone Meal
+Changed the Multiservo Press recipe for Compressed Sawdust so that it actually works
+
+
+Reduced Apatite to 20,000 RF in a Lapidary Dynamo
+Reduced Dimensional Shards to 250,000 RF in a Lapidary Dynamo
+Buffed Ametrine Crystals to 500,000 RF in a Lapidary Dynamo
+Buffed multiple quest rewards
+Changed the rewards for Flash Freezing
+Reduced the rewards for Chained Defense
+Added coin rewards to some optional quests that were missing them
+Molten Fiery now gives 100k RF in a Magmatic Dynamo
+Long Fall Boots now have the Uncommon rarity
+Extended Crafting's crafting blocks now have rarities:
+- Basic Table: Uncommon
+- Advanced Table: Rare
+- Elite Table: Epic
+- Quantum Compressor: Quintessal
+- Crafting Core & Pedestals: Shadow (new rarity)
+- Black Iron Frame: Shadow
+
+
+Stick Blocks now have 1,000 burn time
+Spyglass recycling now gives back a Shard each time, with a 50% chance to get a Copper Ingot
+Added recycling recipes for Repeaters and Comparators
+Added recipes to process Bumblezone's various honeycomb blocks into Honey & Honeycombs
+Added recipes to drain Bumblezone's sugar water buckets & bottles
+Added a recipe to craft Glue out of Honeycombs
+Changed the sawmill recipes for beds & carpets to use tags
+- Beds now give 4 sawdust 100% of the time, and give extra string
+Armour Displays and Ticket Kiosks/Machines now require an Induction Smelter to recycle
+- Now gives clear glass shards
+Added QoL recipes to convert Interfaces and Pattern Providers to each other
+Added recipes to pulverize (or crushing wheel) Slime Crystal Blocks into their crystal
+Added recipes to induction smelt slime crystals into slimeballs
+- Gives 2 Slimeballs per crystal
+
+
+Added recipes to craft AE2's presses
+AE2's presses now have the Uncommon rarity
+The Glue > Super Glue recipe now requires 2 Glue
+Zotzpyres now drop iron coins instead of copper
+Hidebehinds now drop gold coins instead of iron
+Added coinification recipes for some Enigmatic Legacy items I missed
+The coinification recipe for Heart of Diamond now gives a diamond coin (10k Essenarium)
+Fixed Malum's burnable blocks giving less power in a Stirling Generator than intended
+Reduced Rose Gold items to 275 durability, and their damage to 6
+- Reduced the armour durability by 135
+- Reduced total defense by 3
+Coinification tooltips now require shift to be held (except for the Heart of Diamond
+Disabled the Vibration Chamber
+Adjusted the rewards for Astro-nomical
+
+
+Deep Resonance crystals can now store 2.5 Million RF max, and output 4800 RF/t
+Added the forge:end_stones tag to Smooth End Stone
+Wrappist Blocks can now be crushed into Wrappist Shards
+Wrappist Shards can now be used as a Pulverizer Catalyst, alternate item in the Enchanted Golden Apple recipe, and burned in the Lapidary Dynamo
+Added a recipe to process Galcite into Coal and Powdered Obsidian
+The Ender Obsidian recipe that uses Crying Obsidian now gives 24 per craft (was 18)
+Added recipes to make Fiery Essence
+- Added it to the Magmatic Dynamo, makes 85,000 RF per bucket
+Subzero Ash can now be used as a catalyst in the Phytogenic Insolator
+Replaced Compressed Sawdust with Sawdust Clumps as Phytogenic Insolator catalysts
+Compressed Sawdust can now be unpacked into a Sawdust Clump
+- Added Multiservo Press recipes for it
+
+
+Quantum Quarry's upgrades now require Combination Crafting
+Removed Fire Charges and Lava Buckets as an Induction Smelter catalyst
+Added Astral and Magic Dust as an Induction Smelter catalyst
+Subzero Ash can now be induction smelted into Charcoal
+Travertine can now be processed into Lime (with a 100% chance instead of 50), or Induction Smelted into Stone
+Lime can now be used to make Steel, with a 15% chance that it works
+Subzero and Therium Shards can now be burned in the Lapidary Dynamo
+Frost Magma can now be processed into water & magma cream
+Ender Stars now have the Radiant rarity
+Enhanced Ender Ingots now have the Stellar rarity
+Added Raw Platinum & Soulstone to the randomium whitelist
+- Removed Manasteel, added the other versions of Resonating Ore
+- Added Copper Coinpiles & Blocks, and Iron Coinpiles
+Added recipes to crush Sweet Berries into Red Dye
+Added a recipe to crush Raw Quarts Blocks into Quartz
+
+
+Added recipes to process Cobalt, Pendorite, Platinum, and Soulstone ores & ore blocks in the Crushing Wheel
+- Soulstone was replaced since the mod has recipes by default, but they aren't consistent with other ore crushing recipes
+- If you want me to add recipes for any other ores that don't have any, let me know. Randomium is the only one I'm not willing to add.
+Added Blast Furnace recipes for Blocks of Raw Cobalt and Soulstone
+Added Induction Smelter recipes for all raw ore block > ingot recipes
+Raw ore blocks for Platinum, Pendorite, and Cobalt now require an Induction Smelter
+Added the create:crushed_ores tag to Crushed Soulstone
+- The tag isn't used in any recipes, but it does make it easier to find all the crushed ores with Create recipes. Mostly done for consistency though.
+Added the create:sleepers tag to multiple modded slabs
+Hid the non-ME P2P tunnels from JEI
+Added more items that can be used for light P2P tunnels
+Added a few more items to the Fuel Canister's auto-fuels config
+Removed a duplicate quest
+Removed the duplicate bottle recipe
+Updated the default options to unbind useless keys by default, freeing up a lot of keyboard space
+
+
+
+Added Tesseract
+Added Shrines Structures
+Added JER Integration
+
+
+Removed Loyalty Rewards
+Removed More Villagers
+
+
+Updated Forge
+
+
+Updated CraftTweaker
+Updated Create
+Updated Create Crafts & Additions
+Updated CreateTweaker
+Updated FancyMenu
+Updated Flywheel
+Updated Jade
+Updated Jade Addons
+Updated Lightman's Currency
+Updated Oh The Biomes You'll Go
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib
+Updated The Twilight Forest

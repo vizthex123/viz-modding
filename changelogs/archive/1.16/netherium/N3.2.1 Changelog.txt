@@ -1,0 +1,32 @@
+v3.2.1 Changelog
+
+
+Now marked as a full release since things seem fairly stable!
+Should've fixed the crash with Create multiple people seem to have.
+- I can't replicate it though, so perhaps updating Java will fix it?
+
+
+Added a recipe to convert Magma Cream (fluid) into Magma Cream
+Magma Cream can no longer be put in a Fuel Canister
+Mini Coal & Charcoal can now be put in a Fuel Canister
+Added tooltips to items that increase Overslime
+Fixed the Blood & Pink Slime crystals having the wrong smelting times
+Fixed the Ultimate Repair Chest using a Copper Sheet
+Changed the recipe for the Advanced Repair Chest
+- Now uses Rose Gold and Brass Sheets
+
+
+Added a quest to make a Fuel Canister
+- Added tooltips to it with a list of accepted fuels, like in my other modpacks
+Added a quest to make a Waystone
+- Also added the mod back, since it got removed for some reason?
+Renamed the Engineer's Guld to the Engineering Guild
+
+
+Updated Large Ore Deposits
+Updated Enchantment Descriptions
+
+
+Deleted Jet Boots
+Removed Armor Slots in other Inventories
+- It has issues with several UIs, which I did report to the mod dev; but they don't seem super active so it may not get fixed.

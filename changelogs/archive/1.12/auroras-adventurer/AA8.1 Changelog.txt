@@ -1,0 +1,57 @@
+v8.1 Changelog
+
+
+Fixed the Gold Toolkit using the wrong Crafting Runes
+Increased amount of XP used by Scaling Health's heart containers to 2 levels
+Halved damage values for Axes from the Aurorian Mod
+
+
+Boosted damage dealt by the Runestone Dungeon Keeper by 50%
+Tripled damage dealt by the Spider Mother
+- Also increased health by 25% (from ~160 to ~200)
+Slightly reduced enemy density in Moon Temples
+- Hopefully this gets it to the amount I want
+
+
+Removed armour toughness from set bonus of Aurorian Steel armour
+- Also reduced Resistance level to 2 (was 3)
+Glitch-Infused armour's set bonus now gives +40% Movement Speed and Strength II
+Buffed Set Bonus of Knight Armour
+- Now gives +20 Armour Toughness and +25% Attack Damage (Was +50%)
+
+
+Added tooltips to Orange and Blue hearts about the amount of health they restore when eaten
+Difficulty is now reduced when killing a Blight enemy (they have the purple fire)
+Changed recipe for the Diamond Toolkit
+- The one that uses Evil Infused Iron now only needs 2 Astral Diamonds instead of 4
+All toolkits now need varying Slates to be crafted
+- Meant to do this in v8.0, but forgot
+Everchanging Moss -> Ball of Moss recipe now makes 2 instead of 4
+Increased cost of Weak Blood Shard duplication recipe
+- Now uses an Imbued Slate instead of Reinforced
+Improved tooltip info for Charged Runes
+- Now explains what they do
+Improved tooltip info for Acceleration Runes
+- Now also tells you to check the FTB Wiki or Sanguine Scientiem for info
+Improved tooltips info for Rune of the Orb
+- Wording has been improved
+
+
+Fixed mixed seed recipe
+- Now uses the listAllseed OreDict
+Added Actually Additions' various seeds to the listAllseed OreDict entry
+Reduced chance to gain a Drop of Evil from pulverizing Soul Sand
+Reduced amount of Sand gained from pulverizing Soul Sand
+Increased RF cost to pulverize Soul Sand into Sand
+Parchment Fragment -> Paper recipe now needs 3 to make 6 paper
+Fixed bug with some Iron items giving Pigiron
+
+
+Expanded upon the Botania questline
+- It's just quests for the other basic generating flora + some miscellaneous stuff, but for now it's good. I'll add more later.
+
+
+Replaced Food Expansion with XL Food Mod
+- Added its items to Forestry's backpacks
+
+Removed Torch Bandolier

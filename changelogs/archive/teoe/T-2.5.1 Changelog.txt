@@ -1,0 +1,9 @@
+v2.5.1 Changelog - Quest & Fix
+
+Fixed Blood magic progression... sorry I added the Divination Sigil to the first one...
+Fixed EMC of Mystical Purple Flower being higher than it should've
+
+Added some new stuff to Magi-Tech Limbo (Yay 4 new quests :D)
+Changed several quest rewards
+Changed first few Magic quests
+Added more reward bag loots ;D

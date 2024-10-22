@@ -1,0 +1,16 @@
+v3.1 Changelog - A Quick Fix
+
+Buffed the rewards from "The Tower's Guardian"
+Changed "Tribute" to be optional
+- Swapped the dialogue so it matches the rest stylistically
+-- Boosted reward to 20 XP
+
+Moved the Arcane Workbench Covering reward to "Magical Crystals"
+
+Fixed several bugs:
+
+- Removed the items I had favourited (that was in my playtesting world and isn't meant to be there by default)
+- Boosted portal frame requirement in "My Thanks, Adventurer" to 14 (like it's supposed to be)
+- Restored InvTweaksRules to its default (having food in slot 1)
+- Added Willow Wood Planks to the "plankWood" OreDict, so they can be used to make regular crafting tables and sticks
+-- The quests reflect this by accepting regular variants of the items

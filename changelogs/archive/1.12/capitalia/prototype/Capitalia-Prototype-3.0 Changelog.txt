@@ -1,0 +1,82 @@
+v3.0 Changelog
+
+Reduced Long Fall Boots durability to 500 (still ~70 more than diamond boots)
+Reduced durability of Stone Hammer (Magneticraft) to 100
+Removed stacksizes for stews/soups, has a glitch where you can eat them infinite times
+
+Reduced droprate of Coins from Spiders (now 33% instead of 50)
+
+Fixed value tooltips for Enderium and Diamonds
+Fixed Dense Oil not showing value tooltip
+Changed storage values for Flux Networks items (there's tooltips for each) and added recipes for the storage items
+
+
+Changed recipe for BuildCraft Quarry (to match my intended progression)
+- Meant to do this latch update and forgot
+
+Music Disks sell for $40 instead of $50
+- You get them fairly often from Loot Bags, so this balances it out
+
+Oil now sells for $60/1,000 mB
+
+All Compressed Blocks (from Extra Utils 2) now have sell values:
+
+Cobblestone:
+- Stone has been changed to $0.55
+Regular can be sold for $0.50
+Double for $4.15
+Triple for $37.50
+Quadruple for $330
+Quintuple for $2,953
+Sextuple for $26,573
+Septuple for $239,150
+Octuple for $2,152,350
+
+Dirt:
+- Can be sold for $0.10
+Compressed can be sold for $1
+Double for $9
+Triple for $73.35
+Quadruple for $657
+
+Gravel:
+Compressed & Double Compressed Gravel can now be sold for $1.40 and $12.25, respectively
+
+Sand:
+- Can be sold for $0.25
+-- Glass has been reduced to $0.35
+Compressed can be sold for $2.25
+Double compressed for $20.40
+
+Netherrack:
+- Can be sold for $0.40
+Compressed for $3.75
+Double for $32.50
+Triple for $292.15
+Quadruple for $2,625
+Quintuple for $23,620
+Sextuple for $212,577
+
+Destabilized Clathrate now sells for $25 (was $20)
+- Energized can now be sold for $100, Resonant for $200
+
+Opinium Cores don't render in the shop (but can still be sold) and their value tooltips always render
+
+Lunar Reactive Dust now sells for $4
+Nether Star now sells for $7,500
+Magic Apples now sell for $20
+Magical Wood now sells for $30
+Blocks of Enchanted and Evil Metal can now be sld for 10x the amount Ingots are worth
+- Blocks of Demon Metal can be sold for 9.5x the ingots' value
+
+Slag can be sold for $5
+Rich Slag can be sold for $15
+
+
+
+Added Industrial Foregoing
+Added Simply Jetpacks
+- This is a standard mod of mine and idk why it wasn't installed
+
+Removed DimStorage
+- I added EnderStorage last update and forgot I installed this to replace it lol. DimStorage doesn't add tanks, and you access it much earlier than I'd like

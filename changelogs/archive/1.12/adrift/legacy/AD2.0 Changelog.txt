@@ -1,0 +1,146 @@
+v2.0 Changelog:
+
+
+BE SURE TO MAKE A NEW WORLD AFTER YOU UPDATE!
+
+
+Replaced Better Questing with FTB Quests
+- I wanted to make a cool custom theme for the book, but nothing is working out; and the mod itself is *incredibly* annoying to use. I've used FTB Quests extensively due to how flexible and easy it is. Wanted to change things around a bit for this pack, but it's more trouble than it's worth.
+
+
+Added more lore pages
+- Due to the mod constantly killing itself though, I've gone ahead and disabled it.
+Added the Overgrown Stone Brick texture pack
+- This makes the UIs more closely themed to what I'm going for, and is (should be) enabled by default.
+
+
+Changed the structure of the Iron Centrifuge
+Changed the structure of the Lava Fractioner
+
+
+Added research for the Alloy Smelter and SAG Mill
+Expanded the list of items accepted by the "Cooking" and "Better Cooking" research
+Changed the recipes for the Alloy Smelter and SAG Mill
+- They now use parts from their original multiblock machine (Alloy Furnace and Pulverizer) to craft
+- Costs less than the original machine (since they're more efficient and require research)
+
+
+Re-balanced (almost) all the armour sets in the game
+- Gave every set a skill requirement
+- Leather is unchanged, and is intended to be the first set you get.
+- Bone Armour now gives 9 defense total (was 12). Requires Defense 2.
+- Hardened Leather Armour now gives 10 Defense and 2 Toughness (was 13/0). Requires Defense 3.
+- Chainmail Armour is unchanged other than now requiring Defense 4
+- Golden Armour is intended to be an alternative to Chainmail, and requires Defense 3 and Magic 2. Unchanged otherwise.
+Horse Armour (called Pet Armor in-game) now gives a Saddle (25% chance) when recycled
+Diamond Armour (full set) now gives 6 toughness instead of 8
+
+
+Added recycler recipes for Stone Tools
+Added recycler recipes for Iron Tools
+Added recycler recipes for Golden Tools
+Added recycler recipes for Neptunium Armour & Tools
+Re-balanced a few recycling recipes
+
+
+Added names and requirements to all Artisan's Worktables recipes
+- This is almost entirely a technical change though, so you can pretty much ignore it
+
+Simplified & standardized Modular Machine's input/output block recipes
+- Added recipes for the last few missing ones, and disabled everything higher than Reinforced
+Configured Modular Machines' Fluid & Energy In/outputs
+- Fluid is now 250/500/1000/4000
+- Energy is now 512/1024/2048/8192
+- Energy RF/t rate is now 64/128/256/1024
+
+
+
+The combination recipes for Studded Armour now accept any damage value
+Added recipes to recycle Power Cells & Batteries
+Reduced the amount of time it takes to recycled both damaged anvils
+Reduced the amount of Iron you get from recycling a Damaged Anvil by 1
+Removed the furnace adapter from the Alloy Smelter
+- This should prevent it from having that empty recipe (idk what's even causing that)
+Changed the recipes for Grains of Infinity in the Iron Centrifuge
+- One now uses 1,000 mB of Fire Water + Obsidian to make 5 (50% chance to get 5 extra) {Uses 12,000 RF}
+- The other is now 1,000 mB of Lava to make 2 (with a 50% chance to get 1 extra) {Uses 24,000 RF}
+
+
+Renamed the "Energy Extractor" to the "Caloric Ignitor"
+- Ink Sacs now take twice as long to process (but make the same amount of RF)
+- Raw Fish now makes 1,200 RF at 6/tick (was 1,000 at 5/tick)
+- Should've fixed the upgrade not working properly
+Added Caloric Ignitor recipes for Cooked (2,000 RF per) & Cured Fish (1,600 RF per)
+Removed Fish Fillet combo recipes from the Caloric Ignitor
+- They kept being ignored by the game, not sure why.
+Fixed my speed upgrades for a few Modular Machines not actually making them faster (oops)
+
+
+Added a new machine: the Water Filtrator
+- Converts 250 mB of Water into 1 Salt (25% chance) {Uses 2,000 RF}
+- If combined with a Dense Net, gives a 35% chance to make 3 {Uses 3,000 RF and 500 mB} (Returns a regular net half the time)
+- If combined with a Water Filter, gives 3 with a 50% chance to get 2 more, and returns a dirty filter {Uses 4,800 RF}
+- If you instead give it 500 mB of Purified Water and a Water Filter, it will produce Ice Chunks, and returns a dirty filter {Uses 12,000 RF}
+- Dirty Filters can be cleaned with water (anything with the listAllwater OreDict entry) in a crafting grid
+Added a Combustion Generator recipe for Creepvine Seed Clusters
+
+
+Increased the durability cost of the glass block solar cell recipe to 12 (was 7)
+Re-balanced Studded Armour
+- Now gives a tad less protection than Hardened Leather, but it lasts longer and gives armour toughness
+Vanilla fish can now give Fish Oil (5% chance)
+- Only 2 Fish Oil is required to make Lubricant now
+Squid now have a chance to give Large Fish Fillets
+Sharks and Whales now use more knife durability
+Fixed my boosted planks recipes giving the wrong items
+- Added one for Wither Logs (from Treasure2)
+- Added one for Jungle Logs (since I forgot when making them)
+Fixed Energy Outputs not using the correct items in their recipes
+Increased the amount of durability crafting Neptunium gear uses
+
+
+
+Replaced Anvil Fix with Anvil Patch - lawful
+- Stupid mod dev went and deleted the 1.12.2 versions of the mod >:{
+
+
+Added Additional Compression
+Added Armor Underwear
+- I've configured Better Diving's gear to accept insulation, but may change this later on (if it can be done the way I want to)
+- All the other modded armours will also accept liners (that is kind of the point after all), with the only exception being ice and cloth armour
+Added Difficulty Lock
+Added Discord Rich Presence
+Added Fluid Funnel
+Added Ranged Pumps
+Added Reskillable
+- Various things are now locked behind certain skills (mainly gear and some machines/parts). I may change this later, but I like the idea of a skill tree you can unlock & progress through. (plus it makes all the XP rewards you get useful)
+- I'll add more stuff in future updates as I plan them better
+
+Added SimpleDifficulty
+- Basically anything that's made with water can be drunk to restore thirst, as well as source blocks (shift+right-click them to do so)
+- Harvestcraft's sodas have a 10% chance to give you the "thirsty" debuff
+Added Water Control Extreme
+
+
+Updated Forge
+
+
+Updated Artisan Integrations
+Updated Better Foliage
+Updated Collective
+Updated ContentTweaker
+Updated CraftTweaker
+Updated CreativeCore
+Updated Ender IO
+Updated EnderTweaker
+Updated FoamFix
+Updated I Know What I'm Doing
+Updated LootTweaker
+Updated MTLib
+Updated ModTweaker
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib
+Updated Treasure2!
+
+
+Removed TickrateChanger

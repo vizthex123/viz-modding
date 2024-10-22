@@ -1,0 +1,105 @@
+B1.0 Changelog:
+
+Added a recipe to smelt rotten flesh into leather
+
+Returned Creepers to normal vanilla behaviour
+- Except for the Scaling Health HP increase, they should be back to normal
+-- I wanted to reduce the health cap for Creepers, but I can't. Sorry!
+
+Made the armour awarded from hunting various enemies Chainmail instead of Leather
+
+Reduced burn time of Solid Fuel from 40,000 (200 Items worth) to 4000 (2.5 Coal's)
+
+Reduced the amount of Valuable Gemstones required in "Fragments of a Heart" to 2
+- Added a quest similar to it for Scaling Health's Heart Crystals, required 12 XP Levels and 1 Valuable Gem to get 3 - 6 Fragments (since you need 9 per heart)
+
+Added recipes to turn Heart Containers and Baubley Hearts' various hearts into Heart Dust (from Scaling Health)
+- This allows you to turn excess hearts into healing items, since the maximum HP is set to 1,024
+
+Added purchasing quest for Blue Hearts
+- Since they're purely based on worldgen RNG, I figure being able to buy them is nice.
+-- They require 1 Valuable Gem (Diamond, Emerald, or Amethyst) and 1 of each lower tier heart. You'll get 1 - 2.
+
+Added way to buy difficulty changing hearts from ScalingHealth
+- Enchanted (-25 diff) is more expensve than Cursed (+25 dif)
+
+Heart Containers from Scaling Health no longer require XP to use
+
+Changed a few quest rewards
+
+
+
+MOD CHANGES:
+
+Added NotEnoughScaffold
+Added Torch Bandolier
+- Added a recipe that uses Amethyst
+Added Extra Bows
+-- Added B.A.S.E
+Added XP From Harvest
+Added XP Ore
+Added Ignition: Foundry
+- This is because I can't get Embers to work (I'm leaving it installed though, in case someone out there knows how to get it working; and because I want to be able to make it work), so in order for people to still have Ore Doubling I'm adding this mod.
+-- When I get Embers working, I might remove this mod. I will have a warning in the Changlog though.
+Added Tinker's Construct
+- Ore Doubling is DISABLED! (And the Smeltery Controller has a tooltip saying so)
+-- This also nullifies the pickaxe crafting quests, so for the Diamond one you will get 3 Diamonds back as a reward. All of them now consume the Pickaxe.
+Added Tinker I/O
+- Removed Ore Crusher so that you have to use Foundry to double ores.
+Added Tinker's JEI
+Added Tinkering with Blood Magic
+Added Tinkers Mechworks Fork
+Added Construct's Armory
+Added JEI Integration
+Added Flux Networks
+- This is currently the only form of RF Storage (except for Extra Utilities) in the pack. It can store a huge amount though, and works wirelessly.
+-- Tweaked it a bit to have a nicer progression curve. Tooltips communicate this.
+Added Solar Flux Reborn
+Added Thermal Dynamics
+Added Rock Candy
+Added Just Another Rotten Flesh to Leather Mod
+- Removed my custom recipe
+Added Baubley Heart Canisters
+- Added tooltips explaining how to get each one
+Added HeartDrops
+- Sometimes when a mob is killed (I want it to be 55%, but the mod won't let me), you'll get a Zelda-esque floating heart that will restore 2 HP (1 Heart's worth)
+-- Increased maximum difficulty from ScalingHealth to 150
+Added Champions
+- This makes rare, powerful enemies spawn every so often.
+Added Auto Ore Dictionary Converter
+Added Large Ore Deposits
+Added Thermal Expansion
+- Added Thermal Innovation
+-- Added Redstone Arsenal
+--- Disabled Energy Cells & Ore Doubling system
+
+
+Updated The Aurorian Mod
+- Changed Aurorian Stone recipe since the bricks got removed
+Updated FoamFix
+Updated Classic Bars
+
+
+Removed XP Tome
+- For one from Thermal Foundation is better, so there's no need for the XP Tome
+-- XP Tome quest changed to the Tome of Knowledge
+Removed Tips
+Revmoed Loading Tips
+- Neither were being used.
+Removed FTB Tutorials
+Removed FTB Guides
+- Both of these weren't being used, as I have been placing info in the quest descriptions.
+Removed Industrial Renewal
+Removed Furnace Overhaul
+Removed Extra Alchemy
+Removed ContentTweaker
+- It's annoying to use and I think it's breaking a few things
+Removed Crafting Station
+- Tinker's adds the exact same block, so it was redundant
+
+
+Removed Spark's Hammers
+Removed MultiTool
+- Both of these are redundant due to Tinker's Construct
+Removed all Stages mods
+- Not being used, probably never will

@@ -1,0 +1,123 @@
+v1.0 Changelog:
+
+
+The pack is now fully released!
+
+Due to this, I consider it mostly content-complete. I'll probably make a few more versions to polish things up, add quests for stuff I missed, etc. - but, it's now basically complete
+
+So yeah, enjoy gathering the Essence of Everything once more - and be on the lookout for more content
+
+
+Added a custom menu design
+Added a questline for Malum
+Tweaked Quintessence a bit
+- It now glows (same for the Twilight Portal Catalyst)
+- Now accepts any key from Storage Drawers
+- Added tag support for Elevators
+Added custom names for the MDF Board and Portal Catalyst
+Added 4 custom rarities: Legendary, Radiant, Stellar, and Quintessal
+- From lowest > highest, it goes: Uncommon, Rare, Epic, Legendary, Radiant, Stellar, and Quintessal
+- Each one has custom colours, based on the "standard rarity colour scheme" one of my friends told me about awhile ago
+- Minecraft's default uncommon, rare, and epic rarities have new tooltips stylings to match the other rarities
+The following items have been assigned a rarity:
+- Quintessal: Quintessence, and the "Ultimate Items" from Extended Crafting
+- Stellar: Totem of Undying, Heart of the Sea, Dragon Egg, Dragon's Breath
+- Radiant: Nether Star
+- Legendary: Netherite coin items
+- Epic: Diamond coin items, Minecraft's epic items
+- Rare: Emerald coin items, Warp Stone, Elytra, Minecraft's rare items
+- Uncommon: Twilight Portal Catalyst. Trading Core, Warp Stone, Waystones' scroll items, Minecraft's uncommon items
+
+
+Trading Cores can now use any dust instead of just redstone
+Buffed the Elytra coinification recipe to 2,500 Essenarium
+Tweaked some quest rewards to be more consistent
+Fixed Extended Crafting's tables not using the proper component tier
+Table upgrade recipes now only require Black Iron Slates
+Ultimate Auto-Tables now require Coin Piles
+Added rewards & a name to the three bolt suit quest
+Added quests to get an Enchanting Table & some Bookshelves
+Added Obscuria's Tooltip support to the Scythes from Malum
+Fixed a technical quest having a completion plaque
+Tweaked Cinnabar Dust as a Pulverizer Catalyst
+
+
+The empty tag recipes have now been fixed thanks to a CraftTweaker update!
+- Removed them as a known issue
+- This means that my custom recipes to recycle Music Discs, Planks, and a few more items now work as intended
+Added a new item: Compressed Sawdust
+- Can be used to make Sticks, MDF Boards, and Charcoal
+- Replaces Sawdust as a Phytogenic Insolator catalyst (buffed the stat gains a bit)
+Added the minecraft:signs tag to all modded signs
+- Mainly used in the Sawmill recycling recipe that I made
+Illager Flesh can now be used to make leather
+Added recipes to use modded items to make Bowl of Fish Bones and Gelatin from Food Enhancements
+Soul Quartz can now be used in a Lapidary Dynamo
+Hid NYI items from Twilight Forest from JEI
+Hid disabled items from JEI
+
+
+Added nugget tags to the Netherite Nugget from Nourished Nether
+Fixed the Netherite Nuggets > Ingot recipe not using the tags for the center item
+Added Malum and Extended Crafting's ingots to the recipe for The Ultimate Ingot
+- The recipe now makes 2 per craft
+Processed Soulstone can now be used in the Warp Stone recipe
+The Enchanted Golden Apple recipe now gives 4 per craft
+Music Discs now give 100 Essenarium when coinified
+Changed the Keep Inventory and Hard Mode quests to use Coins
+Added rewards to Pick-a-Rific Range
+Waystones now accept Warp Scrolls in addition to Stones
+Warp Plates now accept any scroll
+Mana Powder can now be used to craft 1 Warp Dust
+Magic Dust can now be used to craft 32 Warp Dust
+Astral Dust can now be used to craft 64 Warp Dust
+Infused Ender Pearls now make 16 Warp Dust, but require 2 dye
+
+
+Added a recipe to pulverize Flower Pots into Clay
+Added a recipe to coinfy the Keystone of the Oblivion
+Added a recipe to recycle Hearts of the Sea into Emeralds
+- I was going to make it a coinification recipe, but you can get them from villager trading due to More Villagers' adding it. And I can't disable said trade, and doubt the mod dev will add a config option for it (though I did ask)
+Added a recipe to recycle Tridents into Prismarine Shards
+Added a recipe to saw boats (any kind) into Sawdust
+Fixed the Pendorite horse armour recycling recipe not using Pendorite horse armour
+Horse armour recycling recipes now have a 100% chance to give 3 of the base item, and a 50% chance to give 3 more
+The Multiplayer Info quest now tells you about Lightman's teams system
+
+
+
+Added Bow Infinity Fix
+Added Polymorph
+Added Nature's Compass, as suggested by Larvitar
+Replaced QuickTeleports with FTB Essentials
+Replaced PackMenu with FancyMenu
+
+
+Removed Better Villages
+- It's not compatible with Waystones, and it's kind of meh on its own
+Removed DefaultSettings
+
+
+Updated Forge
+Updated the Vertical Nuggets resource pack
+
+
+Updated Advancement Plaques
+Updated Architectury API
+Updated Botania
+Updated Chunk Pregenerator
+Updated Controlling
+Updated CraftTweaker
+Updated Deep Resonance
+Updated Endless Ocean
+Updated Enigmatic Legacy
+Updated GeckoLib
+Updated KubeJS
+Updated Legendary Tooltips
+Updated Lightman's Currency
+Updated Nourished Nether
+Updated Patchouli
+Updated ReAuth
+Updated Wormholes
+Updated YUNG's Better Mineshafts
+Updated YUNG's Better Witch Huts

@@ -1,0 +1,26 @@
+v3.2 Changelog - Quest improvements
+
+
+NOTE: If you find any quests that give Invalid Item as a reward, please report it on the issue tracker with the name of the quest and the branch it's in (example: "The Basics", "Unlocking: A Quest")
+
+ 
+
+Fixed issue #3
+- Because I can't disable The One Ring, it's just hidden form NEI and I've added a warning tooltip (as well as a recipe to change it into 2 Legendary Reward Bags (subject to change))
+Changed requirment for "Unlocking: A Quest" to require 1 Mystical Topaz
+Updated and added some quests to "Reputations"
+Updated rewards for Blood Magic altar quests
+- Now gives you an increasing amount of bags for each one, and T4 gives you an extra choice
+-- Buffed rewards for "T6 Atar"
+
+
+Changed rewards for "Legen...wait for it...dary" reward bag reward, now gives 12 Legendary Loot Bags and 4 Legendary Reward Bags. It's also only retrivable 3 times.
+Added 3 new rewards - "Basic Storage", "Storage", and "Storage Upgrades". Each can be reitreved infinite times.
+Re-ordererd "Vampical Gathering" tiers (Alucard comes before Dracula, but after Van Helsing)
+Changed "Dryad" rank is "Druid Society" to be 500 instead of 650
+- Changed "Druid" to 350
+
+Changed a few rewards in "Crazy Stuff", but I won't list them because surprises. (and spoilers)
+Buffed the rewards of several quests in "Dragons?!"
+
+Added 3 more quests

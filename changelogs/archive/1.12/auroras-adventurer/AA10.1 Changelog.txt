@@ -1,0 +1,39 @@
+v10.1 Changelog
+
+
+Downgraded Forge
+- This is so you can still set up a server with Bisect (you have to make a custom one, and they don't support Forge 14.23.5.2855)
+Fixed multiple custom Fractionating Still/Fluid Transposer recipes being uncraftable due to exceeding the maximum fluid storage of the block
+Fixed Simply Jetpacks' recipes being duplicated and generally broken
+Increased base protection of Knight's Armour to 10 (2/3/3/2), changed set bonus to +25% Damage and +10 Armour Toughness
+Coins can now be melted into their material
+- 1 Coin = 3 nuggets
+Fixed Discord button on the main menu not rendering properly
+
+
+Added Material Changer
+
+
+Removed Clean View
+- ClientTweaks has a setting that does the same thing, which has been enabled
+
+
+Updated Anvil Patch - Lawful
+Updated Buildcraft
+Updated Champions
+Updated CraftPresence
+Updated CraftTweaker
+Updated Electroblob's Wizardry
+Updated Exchangers
+Updated Flux Networks
+Updated Integration Foregoing
+Updated Mystical World
+Updated MysticalLib
+Updated NetherEx
+Updated Recipe Stages
+Updated Simple Quarry
+Updated Simply Jetpacks 2
+Updated The Aurorian
+Updated UniDict
+Updated Village Names
+Updated YUNG's Better Mineshafts

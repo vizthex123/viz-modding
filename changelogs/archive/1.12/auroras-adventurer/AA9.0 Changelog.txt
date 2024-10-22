@@ -1,0 +1,87 @@
+v9.0 Changelog - Natural Aetheria
+
+Replaced the Dark Modern GUIs texture pack with Unity: Dark Edition
+- This keeps the nice dark theme UI, while also fitting better with the Unity texture pack
+
+
+Finished the Botania (Natural Magic) questline
+- There's a few more things I could add, but it covers the basics so it's fine for now
+Finished the Aether: Legacy questline
+- Most of it is optional since the core progression isn't super long, but does convey more lore than other questlines
+
+
+Re-named a couple quests, re-did some rewards
+Changed the placement of a few questlines, to (roughly) reflect their placement in the progression of the modpack
+
+
+Disabled Aether: Legacy menu swap button
+- Feel free to re-enable it if it's your preferred menu though
+Weakened Blood Shard duplication recipe now requires an Imbued Slate, as intended
+Reduced Will cost of Body Essence to 25
+Buffed set bonus of Glitch-Infused Armour
+- Now also gives Resistance I
+Increased base speed of the Resourceful Furnace
+- Speed Upgrades (Tesla Core Lib) seem to not work, but I wanted the furnace to be faster
+
+
+Slime Islands (Tinker's Construct) now no longer generate in the Aurorian and Daedalus Labyrinth
+Actually Additions' ores & worldgen features no longer generate in the Aurorian, Aether, and Twilight Forest
+Added Aechor Petals to the dyePurple OreDict entry
+Buffed Aurorian Crystal crafting recipes:
+Moonstone one now gives 4 & accepts any Electroblob's Crystal
+Grand Magic Crystal one now gives 64
+Removed recipe to make Copper Aurum with TE Coins
+Added Zanite items to the Adventurer's Backpack
+You can now use Zanite Items with the Scrapper to get Zanite Gems back
+
+
+Added Ambrosium Torches to the Inventory Tweaks sorting tree
+Boosted Bedrock Brick output to 8
+The ME Drive now uses a Blank Slate in its recipe
+Boosted alternate Dimensional Shard recipe to 12
+Added a recipe to elven trade a Mana Spreader for an Elven one
+Undid my recipe change for the XP Drain
+Reduced durability used to craft ProjectE fuels with a Red Stone
+- Alchemical Coal now uses 25
+- Mobius Fuel now uses 50
+- Aeternalis Fuel now uses 75
+
+
+The "craft 3 at once" recipes for AE2's Storage Components now use Blank Slates
+- Crafting 6 at once accepts an Imbued Slate as an alternate item
+Reduced the amount of silverfish that can spawn from Infested champions
+A few quests now give black(er) lotuses as a reward
+
+
+Fixed a bug where Aurorian Chimneys stopped working if you had 5
+The Scrapper is slightly faster (15 seconds instead of 20)
+Added a recipe to craft 4 Chests at once using Silentwood Logs
+Added burn times (300) to Silentwood Tools
+
+
+
+
+Added Extra Utilities Fixes
+Added Mixin 0.7-0.8 Compatibility
+- Should fix Dynamic Surroundings and VanillaFix causing issues/crashes
+
+
+
+
+Updated UniDict
+Updated WanionLib
+Updated RandomPatches
+Updated MixinBootstrap
+Updated Bigger Crafting Tables
+Updated Aurorian Items
+Updated The Aurorian
+Updated Dynamic Surroundings
+Updated VanillaFix
+Updated CraftPresence
+Updated Fantasic Lib
+Updated Mystical World
+Updated The Aether (Aether Legacy)
+Updated YUNG's Better Mineshafts
+
+
+Removed Dirt2Path

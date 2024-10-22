@@ -1,0 +1,18 @@
+v1.2 Changelog - Minor Patch
+
+Updated Doomlike Dungeons
+Updated Modular Powersuits
+
+ 
+
+Added Network
+Removed Advanced Inventory
+- Several mods add bags, pouches, etc, that makes this mod pointless
+Added Quadrum
+- This is so I can add a couple misc items I need, such as the Emerald Nugget
+
+ 
+
+Edited a couple scripts
+- Added "tooltips.zs"
+-- Added uses for Loot Roulette items, you can use them to make AE2 Presses

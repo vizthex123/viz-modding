@@ -1,0 +1,27 @@
+v5.1 Changelog:
+
+
+The new world template has been added to the game. I meant to do this in v5.0, but forgot. Sorry. It's got a few secrets and lore bits, if you're interested.
+
+
+Finished migrating research over to From the Ground Up
+- Storage Compression (Refined Storage) and Advanced Mining (Ore Excavation) have been migrated
+Tweaked XP requirements for Level Up HP
+- Now increases by 15 per level, base requirement is 35
+Added a few more items as acceptable for the Thermal Technology research's idea
+Slimes can no longer spawn as Champions
+Increased damaged done by Flint & Steel to 10
+Fixed how the basic cooking research gave the wrong game stage
+Fixed Bows not having the proper stat requirements
+
+
+Reduce the mining level of the Bone Pickaxe to 1 (same as stone)
+Fixed a few broken scripts
+Tweaked droprates of Nibrock's Coal from Coal, Chaotic, and Crimson ores
+Increased the amount of time the player has to respond to the first IPC attack, tweaked the others
+Added a third IPC attack wave
+- More are planned (which you can see on the Trello board here: https://trello.com/c/IxUrlP7C/352-ipc-attacks), but for now just the 3 are in the game.
+
+
+
+Updated Dupe Fix Project

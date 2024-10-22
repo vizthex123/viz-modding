@@ -1,0 +1,10 @@
+v11.01 Changelog
+
+
+Fixed ore processing being broken
+
+v11.02 Changelog
+
+
+
+Manually zipped up folder to see if that fixes an issue HydrA reported

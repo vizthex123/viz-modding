@@ -1,0 +1,38 @@
+v3.2 Changelog
+
+
+Fixed a bunch of recipes not existing even though they should
+Fixed several ingot recipes not being added properly
+TConstruct melting now only makes 1 ingot per ore
+Added a recipe to make 16 sticks at once using 2 logs
+Reduced the amount of meals each food pouch can store
+Added a few more items to the list of things Overslime can use (value in () is amount restored):
+- Anything with the forge:slimeball tag (1)
+- Magma Cream (25)
+- Pink Slime Ingot (150)
+- Blood Crystal (15) {custom item}
+- Pink Slime Crystal (50) {custom item}
+
+
+Added recipes to crush Electrodynamic's useless ores
+- Also added one to crush Vanadite into its impure dust and (rarely) crushed lead
+Reduced the amount of time the wraps + water > porkchops recipe takes
+Added a recipe to convert TConstruct ladders to vanilla ones (since they're non-functional for some reason?)
+
+
+
+Added Storage Racks
+Added Fast Leaf Decay
+Added ContentTweaker
+- Added 3 custom items, though the textures are currently broken and I have no idea why. They're fully functional though, so I went ahead and kept them in.
+
+
+Updated FTB Library
+Updated The Bumblezone
+
+
+Removed Ceramic Bucket
+Removed Wooden Buckets
+Removed Culinary Construct
+Removed Modular Routers
+Deleted Smooth Scrolling Everywhere

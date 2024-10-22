@@ -1,0 +1,97 @@
+v8.0 Changelog
+
+
+Fixed a "bug" that caused Machine Frames to be uncraftable
+- Not a real bug since I did it and overlooked the change though
+You should be able to actually process ores (in the Enrichment Chamber) now
+
+
+Ender Stars and Enhanced Ender Ingots are actually sellable now
+(Regular) Golden Apples can now be sold for $300
+Ender Ingots can now be sold for $350
+- Also added a mass-crafting recipe in the Ender Crafter (similar to the one for Black Iron) {takes 20 seconds to craft}
+Black Iron can now be sold for $25
+- May change next update since I can't settle on a balanced price
+
+
+Reduced the maximum RF capacity of the Quantum Compressor to 5,000,000
+Reduced the mining speed of Steel tools to 8, Paxel to 8.25
+Reduced the damage of Steel swords to 9.5
+Buffed the durability of Diamond tools to 1,225
+
+
+Added a burn time to saplings that didn't have them
+Increased the sell price of Limestone Bricks to $3
+Increased the RF storage of Golden Jetpacks to 22,500
+Fixed the "Oil Processing" research being mislabeled and using the wrong fluid
+
+
+Added alternate recipes to the Culinary Generator that uses Beets or Barley, and accepts Cooked Salmon
+Re-enabled Iron Hammers & Excavators (Thermal Foundation)
+Reset the Fueled Quarry to 64 blocks/1 Coal (1600 Burn Time)
+- This is due to it mining an area of 256 blocks at once. I'd like 1 coal to mine 1 quarter of 1 layer of 1 chunk, that way it's cheap enough to warrent the investment; but not so good that you don't want to upgrade
+
+
+Staged a few leftover Refined Storage items
+"Machine Age" research now requires the Advanced Circuitry research
+Fixed how basic and advanced circuits (Advanced Rocketry) couldn't be crafted when intended
+Updated a few quests, item stages, etc.
+Tweaked fuel usage & charge rates of all 3 "vanilla" jetpacks
+Several items can be now melted in a Crucible
+
+
+Staged all the upgrades from Simple Quarry behind the Iron Age
+Staged the Fusion Reactor behind the Atomic Age
+Increased the burn time of Red Coal to 2,000 (10 items)
+Changed the "Electric Mining" quest to use a Fluxbore
+Reduced the cost of Industrial Data Disks by 1 Steel Ingot
+Reduced the cost of Oil Processing to 500 mB of Fluid Research
+
+
+The Wireless Power Transmission research now costs 1,000 mB of Fluid Research instead of 8 industrial & 4 machine disks
+Replaced the Atomic & Information Disks for the Basic Reactor research with 2,000 mB of Fluid Research
+The Advanced Circuitry research now only needs 12 basic circuits
+Reduced the Information Pad cost of the Atomic Age to 4
+Essence (of Knowledge) can now be used to crate Fluid Research
+You can now infuse Protons and Electrons to get Atomic Data Models
+- The Fluid Research cost varies each time
+
+
+Added value tooltips to multiple items that were missing them
+Forge Energy now sells for 1 Cent per unit (so every 10,000 RF sells for $500)
+Various gemstones can now be sold
+Quarries (powered and higher) & Diamond Miners can now be sold
+Reduced the price of Waystone to $1,000
+Increased the mining speed of the Steel Pickaxe to 8.5, Paxel to 9
+Hollow Point bullets now make 3 Military Data Packets per craft instead of 2
+
+
+The Gold Jetpack now uses 20 RF/t (was 17)
+The Diamond Jetpack now uses 30 RF/t (was 25)
+Swapped research costs for Jacketed & Elemental ammo (and location in the UI)
+Reduced cost of AP Shells to 6
+Increased cost of Advanced Rounds research to 8
+You can now melt Military Data Packets into 5 mB of Fluid Research each
+Reduced Stone to 1 mB of Fluid Research
+
+
+Re-did some balance stuff
+Added a recipe to make Hardened Glass in the Alloy Furnace
+Massivley reduced the power gen gained from the gas-burning generator
+
+
+
+Added Biomes O' Plenty
+- I highly recommend using this as your world type, but it's not required of course
+
+
+Updated AE2 Fluid Crafting
+Updated FantasticLib
+Updated FTB Quests
+Updated Hammer (Lib) Core
+Updated Patchouli
+Updated Simply Jetpacks 2
+Updated UniDict
+
+
+Removed Coral Reef

@@ -1,0 +1,21 @@
+v2.6.1 Changelog - Fixes & Changes
+
+Changed a couple requirements for "Quest Hub" quests to make it flow better
+Added recipes for miniature hearts from Tinker's
+Fixed craftable nether star recipe
+Removed Lexica Botania from "Unlocking: Magic & Tech" due to it not being picked up.
+- You still need to craft it though, and the description says this too
+-- Changed rewards
+
+
+Changed requirements & rewards for "Unlocking: A Quest"
+Changed amount of Unrouted Logistics Pipes required for "Unlocking: Logistics Pipes"
+- Same with "basic pipes"
+
+
+Added recipes to AE Presses
+- The duplication ones are still there though
+Changed recipe for all MFR machines in config (They all use their vanilla recipes)
+Tweaked a few Reward Bag rewards
+
+Added ClearChat __Infinia__

@@ -1,0 +1,101 @@
+R1.0 Changelog:
+
+First official release! Woo-hoo!!
+
+Increased amount of random bonus Hearts in "Heart of Blue" by 1
+Added new quest to sell 16 Common Runes at once.
+
+Changed progression for AE2
+- Controller now needs a few magical items
+
+Difficulty changes based on the dimension you're in
+- In the Nether, it's 75% the usual
+-- In The End, it's 150% (1.5x) the usual
+--- More will be added later
+
+Unhide Foundry's (and Forestry's) refractory capsules from JEI
+
+Added recipes to upgrade Crafting Runes to higher tier ones
+- Removed the quest to sell 16 common ones at once
+-- You use 4 of the lower tier to make 1 higher tier. So 4 Uncommon Runes make 1 Rare Rune.
+--- Renamed them to make it seem like they're some sort of ancient tablets. (added tooltips about their rarity)
+---- In addition, the first letter of the name of each Rune corresponds to their rarity.
+
+Reduced the amount of XP gained from "Mob Hunter V" to 12 Levels
+
+Fixed special Diamond armour set from "Mob Hunter V" having the wrong enchantments
+
+Increased Chance Cube reward from "Basic Housing"
+- Now gives 2 - 4 instead of just 1
+
+Renamed "Ancient 'Uaeh' Rune" to "'Ancient 'Uy'yeh'* Rune"
+* Pronouced oo-yeh
+
+Changed "Shop Unlocking" to use 1 Block of Gold
+- This is because you can buy a lot of things (and gold is semi-useless)
+
+Renamed "Building Storage" to "Supply Storage"
+
+Changed "Urn Payments" reward table: Now gives the choice of 6 XP Levels, a Block of Iron, or 4 Gold Ingots (was previoulsy 6 Levels, 4 Iron Ingots, or 2 Gold Ingots)
+
+Fixed a few typos (both in quests and in renames/tooltips)
+
+Reduced amount of creeper kills needed to complete "Creeper HUnter I" to 5 (from 10)
+
+Changed Level Hearts progression (Now it's +1 Heart at levels 20, 25, 30, 40, 45, 50, and 60)
+
+Increased chance of a golden heart from HeartDrops being dropped
+
+Added basic quests for TInker's Construct
+- I'll add more later; but for now there's enough to teach you the basics
+
+Removed Laser Gun from PlusTiC
+- Boosted Katana's damage bonnus to 2x  instead of the default 1.25x
+
+Changed the progression of unlocking the "Electrical Engineering" questline
+- Moved "Basic Power Generation" to the "Electrical Engineering" questline
+-- "Machine Frames" is now located in "Starting Out"
+--- All quests (except 1) in "Electrical Engineering" require you to complete "Basic Power Generation"
+
+Added a recipe for Flux (form Flux Networks) using Ancient Runes
+- It's 1 Legendary, 4 Rare Runes and 4 Uncommons to make 24 Flux
+
+Rebalanced storage & transfer values for all Flux Networks storages
+- They can all transfer 15% of their maximum capcity.
+-- The capacities are (lowest ---> highest tier): 1,000,000 (back to the default); 5,000,000; 10,000,000 (remember as well you can have multiple cells)
+--- Trasnfer rate: 150,000; 750,000; 1,500,000
+
+Removed Energy Cells from Thermal Expansion
+- This forces you to use Flux Networks as storage. I might add a recipe later that uses special quest-only items though.
+
+
+MOD CHANGES:
+
+Added Applied Energistics 2
+Added ExtraCells2
+- Added Just Enough Energistics (JEE)
+-- Added shop for Charged Certus Quartz
+Added Deep Mob Learning
+- This allows you to make mob farms that don't rely on RNG spawns, and does so in a way that helps prevent lag
+Added CleanView
+- Some things give permanent potion effects, and I find it annoying to have particles 24/7. Feel free to disable or rmeove it if you want the particles back.
+Added PlusTiC
+Added Exchangers
+Added OptiFine
+
+
+
+Updated The Aurorian Mod (there were like 5 versions released while I was making this updated, calm down)
+Updated Fantastic Lib
+Updated FTBLibrary
+Updated ConnectedTexturesMod
+Updated Classic Bars
+Updated Forge Endertech
+
+
+Removed Scaffolding Block
+- Idk why I didn't do this earlier
+
+
+Disabled Rough Mobs
+- Scaling Health adds a lot of difficulty already; and this modpack isn't meant to be Dark Souls: Minecraft Edition

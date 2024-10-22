@@ -1,0 +1,68 @@
+v5.3.1 Changelog:
+
+
+This'll probably be the last update since I don't really like this pack. The whole thing was just an experiment to see how viable Fabric is for my modpacks (it's not).
+
+As always, feel free to report any issues you've got in the comments, on the GitHub, or in the Discord server.
+
+
+
+Main changes
+
+Imported the dye recipe fixer system from my other modpacks
+
+
+Fixed the pause menu (removing the feedback and bug reports buttons)
+Fixed loading screen tips not working
+- Note that you might need to manually disable the old resource pack to get the new fixed ones to apply
+- Added a few more
+
+
+Added some custom collapsible categories to REI
+Disabled Paladin's Furniture's update checker
+- Meant to do this in v5.3 and forgot, oof
+
+
+
+Bugfixes
+
+Fixed Vines being used to make Brown Dye instead of Green
+Fixed Orange Dye not being craftable with Red and Yellow
+
+
+
+Recipe changes
+
+Dripleaves and Scute can now be used to make Green Dye
+Various nether items can now be turned into dyes
+
+
+
+Mod changes
+
+Added Fastload
+Added Flat Bedrock
+- I can't believe I didn't do this first thing when I made the pack :'c
+Added Nature's Compass
+Added Open Loader
+
+
+Replaced FancyMenu with FancyMenu
+- They moved the mod to a new page, so I might as well list it here
+
+
+Removed Distant Horizons
+
+
+
+
+
+Updated the following mods:
+
+Better Tag Tips
+Collective
+Crate Delight
+Fabric Language Kotlin
+ModernFix
+Roughly Enough Items
+Storage Delight

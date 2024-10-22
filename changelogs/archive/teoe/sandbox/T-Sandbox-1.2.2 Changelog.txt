@@ -1,0 +1,10 @@
+v1.2.2 Changelog - Hotfix 2
+
+Removed Quadrum
+- Replaced Emerald Nuggets with Emerald Gems from Resource Engineering
+Removed libVulpes
+
+ 
+
+Added Veinminer
+Added The Tool Tooltip Tool mod

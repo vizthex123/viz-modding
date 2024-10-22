@@ -1,0 +1,3 @@
+Fixed "mod sorting cycle" error
+
+Updated a few mods

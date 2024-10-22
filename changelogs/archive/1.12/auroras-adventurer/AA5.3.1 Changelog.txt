@@ -1,0 +1,28 @@
+v5.3.1 Changelog - v5.3 Hotfix 1
+
+
+Slightly tweaked Quality Tools' config
+Slightly tweaked Simply Jetpacks' config
+Tweaked the damage of Aurorian Steel items
+
+
+Slightly increased speed of Iron & Gold furnaces
+Actually disabled some items from Blood Arsenal
+- It's just the divinity sigil and item to craft it, which are already unobtainable since they need a Tier 6 altar
+
+
+Updated some tooltips
+Tweaked a few quest rewards
+Expanded the Blood Magic questline
+Expanded the ProjectE questline
+
+The Dark Modern GUIs and Unity texture packs are now included with the modpack
+- I couldn't find whether or not I'm technically allowed to do that, but based on the license they use it should be fine. If the devs tell me not to though, I'll remove them.
+
+Added CraftPresence
+Added Aurorian Items
+- This is a mod I made to add a few things because ContentTweaker hates me
+-- Changed "Gifting a Diamond Necklace" to use the mods' necklace item
+
+
+Removed DefaultOptions

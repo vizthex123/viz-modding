@@ -1,0 +1,18 @@
+v3.3.1 Changelog
+
+
+Removed the uranium power and dense power cores
+Re-balanced all the uranium cores, new values are now:
+- Pellet: 8 items smelted (same as coal), stacks to 64, costs 2 Uraninite + 1 Redstone
+- Drop: 16 items smelted, stacks to 32, costs 2 pellets + 1 item with the minecraft:coals tag (or 8 Uraninite + 1 Redstone to make 2 at once)
+- Canister: 32 items smelted, stacks to 16, 2 drops + 1 Copper Can
+- Rod: 64 items smelted, stacks to 8, 2 canisters + 4 Basic Capacitors in a Crafting Table or Compactor
+- Fuel Core: 128 items smelted, stacks to 4, 2 rods + 1 Vanadium Dust (or 4 Impure Dust) in a Mechanical Crafter
+- Wrapped Fuel Cores: Can't smelt items, stacks to 2. Allows you to store more cores in less slots. (A chest full of Fuel Cores will hold 108, but a chest full of wrapped ones holds 216 {twice as much!}). Costs 4 Fuel Cores + 2 Dried Kelp (or 4 String) in a Compactor. Decrafted in a Mechanical Crafter.
+
+
+Tweaked all (craftable) jetpacks
+- Disabled the uncraftable ones (platinum, electrum, and invar)
+Added a quest to make a Fluid Extractor
+Fixed the names of all my custom items not showing up in the game properly
+Tweaked JourneyMaps' default settings

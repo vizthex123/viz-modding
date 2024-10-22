@@ -1,0 +1,29 @@
+B2.1 Changelog
+
+
+Removed Starlight since it was making worlds lit all the time (and I couldn't toggle it off), which is rather broken
+Properly buffed the rope recipe
+- Also buffed the recipe for Rope Coils from Quark
+Changed the alternate Redstone Furnace recipe, the smoker & furnace now replace the bricks instead of copper gears
+Added a recipe to smelt any Glass Shards into regular ones
+Removed the duplicate recipe for leads
+Added a couple in-between quests to help with progression
+Tweaked a few quest descriptions
+Added a temporary reward for the final quest
+
+
+
+
+Added Better Fps - Render Distance
+Added Chunk Loaders
+Added FerriteCore
+Added Industrial Foregoing
+
+
+Removed Simple Diving Gear
+
+
+Updated Deep Resonance
+Updated Clumps
+Updated ReAuth
+Updated Architectury

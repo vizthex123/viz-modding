@@ -1,0 +1,69 @@
+v3.0 Changelog:
+
+
+Added a recipe to recycle Warped Fungus on a Stick
+- This is due to how some modded structures let you find it as loot, and it's only useful in a specific situation
+Changed the recipe for the Uncured Coin Press
+Copper Coins now drop more often
+Silver Coins can now drop rarely
+Tweaked a few things from Create
+Fixed Dried Kelp Block's burn time
+Added a burn time to Dried Kelp (445)
+Magma Cream can now be made with 1 Blaze Powder and any Slimeball in a Heated mechanical mixer
+- The Blaze Powder + Magma Cream (liquid) recipe no longer requires heat
+- The Slimeball + Magma Cream (liquid) recipe now uses 500 mB instead of 250
+The Magma Block > Magma Cream recipe no longer requires superheating
+Melting Magma Blocks into Lava now requires a piece of Coal/Charcoal or Flint
+- This is so you don't do it by accident when trying to make Magma Cream (fluid)
+
+
+Fixed the second Agility Oil recipe not being loaded in
+- Changed first recipe to use Phantom Membranes instead of Weeping Abscess
+Hid Lightness Oil in JEI
+The Anointing Table recipe now uses a Block of Quartz instead of a Silver Coin
+- Also accepts Rose Quartz
+Added tooltips to Repair Chests about their speed
+The recipe for Porkchops that uses water now only requires 250 mB (was 1,000)
+Slightly increased the amount of exhaustion turning the hand crank gives
+Phantom Membranes can now be liquified (gives 1,000 mB if heated. If not heated {and given 1 item with the water_provider tag, applied to items that make 100 mB or more}, it will give 500)
+Crimson and Warped Roots can now be turned into water (2:50 mB) {but don't have the water_provider tag}
+
+
+The Obsidian Dust recipe now gives 20 per craft instead of 12
+Mixing recipes that were meant to have custom times now have said custom times
+The Obsidian recipe now uses 1,000 mB of Magma Cream (fluid)
+The Magma Cream > Magma Cream (fluid) recipe in the Mixer now uses 500 mB of Lava
+Changed "The Way Out?" to only require 10 Obsidian
+- The first step now requires 32 Crying Obsidian, which should be about enough to make 10 Obsidian
+- Also added descriptions
+The XP Bioreactor quest now has rewards
+- Fixed it giving the wrong kind o reputation
+Changed the rates at which the Repairs Chests repair items
+- From basic > ultimate: 10/5/1
+All 3 Repair Chests now require mechanical crafting
+- Changed the recipe for the Advanced and Ultimate
+The Collector's Gift now requires 50 reputation (Small-time Collector)
+- Doubled rewards
+Swapped the Crafter's Gift rewards
+- First one now gives 2, second gives 3
+
+
+Keep Inventory is no longer turned on by default
+The few bits of dialogue from the Hellrasiers that existed are now red in chat
+Changed the recipe for the following items:
+- Ring of Attraction
+- Magnet Upgrade
+- Smelting Upgrade
+- Auto-Smelting Upgrade
+Added a quest to purchase Zinc for Cobalt
+Added a few more quests to the "Otherworldy Tribute" tree
+
+
+
+Added Sophisticated Backpacks
+- Replaces the storage drawers quest, which has been moved to Otherworldy Tribute
+- Tweaked values of backpack storage, upgrades, etc.
+
+
+Updated The Bumblezone
+Updated SuperMartijn642's Config Lib

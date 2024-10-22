@@ -1,0 +1,61 @@
+v4.0 Changelog:
+
+Balance changes:
+
+Chains now have the meltable_metal_small tag
+- This gives 1 Nugget instead of 1 Scrap, and is reserved for items that use 3 or fewer nuggets in their recipe
+- Modded chains also have this tag
+Changed the recipe for the Ring of Attraction
+- Upped the pull radius to 5
+
+
+
+Recipe changes:
+
+Added a recipe to smelt Candles into Honeycombs
+Amethyst Mage Hands now recycle into 3 Amethyst Shards
+Changed the Angel Ring recipe to encourage more exploration
+Added more recyclable items:
+- Angel Ring
+- Anvils (all types)
+- Blast Furnaces now have the meltable_metal tag
+- Combined Minecarts
+- Cooking Pot
+- Cooking for Blockheads content
+- Ductworks content
+- Enchanting Table
+- Gold Bars (and chains)
+- Gold Lanterns
+- Gilded Blackstone
+- Hoglin Mount
+- Iron Chains
+- Inmis backpacks
+- Jukebox
+- Lodestones
+- Name Tags now have the meltable_metal tag
+- Netherite Bars
+- Pistons
+- Redstone Lanterns
+- Ring of Attraction
+- Skillet
+- Smithing Tables
+- Stove
+- Wood Working Tables
+- Woodcutters
+
+
+
+Miscellaneous changes:
+
+Added Corn Kernals and Rice to the Mage Hand's planting list
+Biomass now has a burn time (600, smelts 3 items)
+Added the crops tag to Nears, Faars, and Soul Berries
+- Meant to do this last update and somehow forgot, rip
+
+
+
+Mod Changes:
+
+Updated Collective
+Updated CraftTweaker
+Updated YetAnotherConfigLib

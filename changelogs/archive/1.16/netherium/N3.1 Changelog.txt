@@ -1,0 +1,25 @@
+v3.1 Changelog
+
+
+Added a smoker version of the Rotten Flesh to Leather recipe
+Dustsprout can now be milled into Sticks & String (35% chance)
+Removed mirrored Anointing Table recipes
+Fixed Netherite blasting recipes giving too much scrap
+Vines now give 2 sticks per recipe
+Reduced the amonut of items recycling horse armour in a Blast Furnace gives
+Change the block required to prevent nether spread from Netherite to Gold (but it now requires 4)
+Disabled the Infested affix for champions
+Tweaked the ranks for The Collector & Engineer's Guild
+Added rep rewards to all pickaxe quests except wood
+Fixed food pouches being full when crafted
+
+
+
+Added OpenLoader
+
+
+Removed Burn in the Sun
+Removed Global XP
+- XP Coins does the same thing, and I want people to use that instead
+Removed Tubes Reloaded
+- Create is a main focus of the pack, and it's more interesting to use that than the same old pipes MC has had for years

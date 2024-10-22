@@ -1,0 +1,82 @@
+v3.0 Changelog
+
+
+Added a recipe to swap between mushroom types
+Fixed multiple broken recipes
+Fixed how the Basic Worktable didn't work as a normal crafting table
+Should've fixed the building skill tree not giving you the points needed to unlock Perfect Recover
+Reduced the amount of negative effects Mystcraft instability can cause
+Updated damaged Solarskin sprite (thanks to @masterfulpotato#4037 on the Discord for doing it)
+Slightly moved the position of the Nutrient button (gives a bit of buffer space in-between it and the offhand slot)
+The Toilary Mold can now be used in a Blacksmith's Workstation (or shop) to make Toilaries out of ingots
+Changed several Miniaturization recipes
+Increased maximum Tolerance to 125, rejection now starts at 20
+
+
+Overhauled the entire tool/armour progression, using Reskillable. Changed some stats too. (e.g. diamond tools now have 1,250 Durability instead of 1,561)
+For the new progression list, go to #modpack-updates on the Discord
+Boosted the durability of Golden tools (Artisan's included) to 75
+
+Set the global nutrition decay rate to 0.85x
+- This is because I noticed that you use the nutrients quite fast, and crafting food is somewhat if you got a bad Mystcraft roll (like I did). Lore-wise, this is because cybernetics enhance the digestive system. (I don't plan to change the value again, hopefully I won't have to)
+Added a new nutrient: Sugars
+- It drains fast, but isn't all that hard to gain. There's 45 foods that I've added to the list, most of which are the "dessert" items from XL Food.
+The starting nutrients have been boosted to 35% so you don't immediately start with the worst effects
+Overeating has been enabled. This allows you to eat food even if your hunger bar is full, which allows you to absorb the nutrients from them
+- If I find it to be unbalanced though, I'll change it back
+Tweaked the thresholds for the default potion effects
+- I was originally going to add multiple stages of various effects, but during my own testing I've found that it's quite hard to get good food items, so you'd basically always have negative effects.
+
+
+Heart Containers no longer consume XP on use
+- I meant to enable this in v2.1, but forgot
+Reduced the crafting time of the Miner's Ring to 3 seconds (was 10)
+(Vanilla) Buckets can now be smelted into 3 Iron Ingots
+Fixed how the Toolbox didn't use the Ore Dictionary
+Re-enabled Bone and Flint artisan's tools
+Changed Compact Machines (the block) recipes to use various circuits
+
+
+Dried Flesh is no longer gated behind the "cooking" stage
+Vanilla soups/stews are now staged behind "cooking" instead of "advanced cooking"
+- In addition, Carrot Soup has also been changed to "cooking"
+Natura's Berry Medley is no longer behind the "advanced cooking" stage
+Vanilla Cream & Tomato Sauce are no longer staged behind "advanced cooking"
+Dough & various "snack items" are now part of the Cooking stage
+Blights now properly reduce difficulty, and are a bit more common
+Tweaked Nutrient drain rates
+Improved output of all Open Modular Turrets ammo recipes
+Increased rewards on all Artisan's Table quests
+Prismarine blocks can now be turned into Shards/Crystals in a Mason's Worktable/station
+Changed all soups/stews to not use Bowls as a secondary ingredient
+- This allows you to craft them in the Chef's Worktable instead of needing at least a Station
+Removed the duplicate Tropical Fish Soup recipe
+
+
+
+
+
+
+
+Added SignEdit
+Added Double Doors
+Added Fortune Gives Experience
+- This should stack with COFH's "Insight" enchantment
+Added XP From Harvest
+Added XP Ore
+Added CleanView
+Added Too Many Efficiency Losses
+Added Anvil Patch - lawful
+
+
+Removed Cooking for Blockheads
+- Since I migrated food recipes to Artisan's Worktables, this mod no longer functions for 90% of the recipes. The quests have been removed as well, and replaced with ones to make each Artisan's Table
+Actually removed the following mods:
+- Ore Stages
+- Extended Crafting
+- FactInventory
+- Demagnetize
+- Roguelike Dungeons
+- Torch Bandolier
+- Simple Quarry
+- Chest Hoppers

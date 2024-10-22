@@ -1,0 +1,81 @@
+v5.0 Changelog
+
+
+Replaced Research Table with From the Ground Up
+- Migrated all current research to FTGU. It still uses Game Stages, so you shouldn't lose any progress. If you did though, just say so on the Discord and I'll give you steps to fix it.
+- You will have to re-do your research though. "Special Cooking" is currently the only research that doesn't use Game Stages.
+
+
+Added Electrotine & its block to the Enervation Dynamo
+Changed the texture for Slime Green Dye
+Fixed Bonecraft armour not having the correct durability
+Increased the burn time of Book & Quill to 125 (was 50)
+Added pulverizer versions of the various decraft recipes done in a Mason's Worktable
+Increased durability of Golden items to 100 (+30 on armour pieces)
+Changed durability of stone Artisan's Tools to 125
+Pumpkin Stew has been moved to the "cooking" stage
+Added XL Food's crops to the Simple Harvest config
+- This lets you right-click harvest them, like with vanilla crops.
+Changed the colour of the Chemist's Worktable UI
+- It's a bit lighter now, so it should be easier to see things. This change isn't reflected in JEI though.
+Added 5 durability to each piece of Clay Armour
+Reduced Clay Shears durability to 75
+
+
+Removed the "Special Foods" stage, since From the Ground Up can just lock specific items
+Removed the "Beverages" (drinks) stage, since From the Ground Up can just lock specific items
+Nerfed Fuel Canister storage to 512 (was 4,096)
+- Updated its tooltips to show fuel gain from accepted items
+- Added Nibrock's Coals to the accepted items list
+- Added Crimson Coal (and its blocks) to accepted items list
+Fixed Turret Base T1 not using the Ore Dictionary
+Crimson Coal can rarely drop from Coal Ore
+Added Crimson and Nibrock's coal to the Dense and Super coal ores
+- Both have higher droprates for the better types of coal
+Chaotic Coal Ore can also drop the rare types of coal, and in higher quantities
+
+
+Updated Large Ore Deposits worldgen, it should now include dense and super version of all ores
+- Coal deposits can also spawn Crimson Coal's ores
+Added Leather Armour to the "Basic Defenses" quest
+Added Heart Crystals to the Enervation Dynamo
+Melon Slices and Carrots now have the sugar nutrient
+Ceramics items can now be recycled into Clay when pulverized
+- Gives back half of the Clay used to make the item
+- Recipes only added for fired clay items, since the mod does unfired on its own
+- All of them use 1,000 RF, except for the Clay Plate which uses 500
+Re-added Unfired Clay Shears
+
+
+Slightly increased skeleton arrow shot cooldown (changed from 10 ticks to 25)
+The Blacksmith's Workstation (T2) now requires Stone Bricks
+Added skill locks to Project: Red tools & armour
+Migrated the Artisan's Worktables script to its own folder
+- 100% a back-end change, but it makes them more readable and easier to make recipes for
+
+
+
+
+Replaced Block Drops Tweaker with Dropt
+- This is 99% (I think it works slightly better than the Block Drops Tweaker mod I was using) a back-end change, so you won't really see any difference. But it makes things easier to change for me.
+
+
+Added Onslaught
+Added Pouch of Unknown
+
+
+Updated Alchemistry
+Updated Artisan's Integrations
+Updated Artisan's Worktables
+Updated CraftTweaker
+Updated Packed Up
+Updated Recipe Stages
+Updated Simply Jetpacks
+Updated UniDict
+Updated Village Names
+Updated Better Mineshafts
+
+
+Removed Tool Progression
+Removed Village Spawn Point
+Removed Just Enough Throwing in Fluids

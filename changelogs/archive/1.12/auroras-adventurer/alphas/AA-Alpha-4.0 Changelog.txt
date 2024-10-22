@@ -1,0 +1,61 @@
+A4.0 Changelog:
+
+Fixed Starting Inventory duplicating the Leather Helmet
+Renamed "Lightleather's Flight" set bonus to "Lightleather's Haste"
+- It now gives a 25% speed boost instead of 15
+-- Gold's set bonus now gives a 40% boost instead of 30
+
+QUEST CHANGES:
+
+Removed Crafting Table reward from "Basic Materials"
+- Now only gives 10 XP instead of 1 XP Level
+Boosted XP reward on "Craftability" from 1 to 15
+Added a Waystone as a reward to the "Basic Housing" quest
+- Now only gives 9 XP instead of 9 XP Levels
+"More Lights" now needs 48 Torches
+- Gives 12 XP instead of 5
+-- Gives 12 Cobblestone instead of 8
+Removed the Breakable Sword of Power from "Mob Hunter I"
+"Basic Materials" now accepts all Vanilla wood.
+
+
+MISC CHANGES:
+
+Mod devs, YouTubers, FTB Team members, etc. from Headcrumbs don't spawn anymore
+- You can re-enable this if you want, but I just personally find it annoying.
+Heads drop randomly now from enemies
+Players heads aren't dungeon loots anymore
+
+You no longer start with a full set of Leather Armour
+Hardened clay doesn't generate underground now
+- If you want to re-enable this, go to fclayspawn.cfg and set the option to "true"
+The first heart from Level Hearts now happens at Level 10 instead of 5
+You can no longer use Ore Excavation with an empty hand
+Skeletons now have a 10-tick (about half a second) delay between shots
+
+
+Fixed Chainmail Helmet recipe
+Creepers no longer become invisible when within 6 blocks of the player
+After 2 minutes, graves no longer need a key
+Ghostly Shape now lasts for 2:30 instead of 2 minutes
+- It's also supposed to slow down fall speed, but I can't find the setting for that.
+Undead mobs (zombies, skeletons, etc.) drop Grave's Dust 25% of the time instead of 10
+
+Added bare skeleton of shop system, where you can sell a few dungeon loot items. I'll expand it as I find more "useless" items in my test world.
+Made a basic questline for Psi
+- Due to how flexible (and complicated) the mod is though, I probably won't make anything more than what's there already.
+
+Added some more quests, there's currently 93
+
+
+
+MOD CHANGES:
+
+Added Ruins
+Added jglrxavpok's Uncrafting Table
+Added The Disenchanter Mod
+Added Dynamic Trees
+Added StatusEffectHUD Updated
+- Added bspkrs Core Updated
+
+Updated the Aurorian Mod to Build 1619

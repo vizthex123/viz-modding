@@ -1,0 +1,4 @@
+v3.0.1 Changelog - Hotfix
+
+Disabled Edit Mode in HQM
+Set up basic framework for the FTB Guide system (will start implementing it in the next update)

@@ -1,0 +1,51 @@
+Rv1.3 Changelog
+
+ 
+
+Updated Lots of Stuff
+Updated Cyberware
+Updated Treasure2
+
+ 
+
+THIS BELOW SECTION IS NYI BECUASE OF BUGS!!!
+Changed Set of Tools store to let you buy 4 at once
+- This is because my recipes don't use the durability and idk how to do that.
+-- Price is 150 Crurnea per item, so it's 4 Gold Crurnea and 8 Silver Crurnea to buy 4 Set of Tools
+-- You can buy either 1, 4, 16, 32, or 64 at once
+--- Stacksize changed from 1 to 64 so you can do this
+==========================================================================================
+
+ 
+
+Alright now it's implemented stuff.
+
+ 
+
+---- Moved them to their own Store Tab, called "Tools" (might add more stuff to it later)
+Moved Repair Paste and Set of Tools sales to the "Patchwork" tab
+Swapped around store positioning
+- Patchwork is above Tools shop now
+You can now sell the Robosurgeon
+- It's worth 10,000 Crurnea. You only need 1 to use Cyberware, so this lets you get rid of extras you might get from Loot Bags or exploring a lot. Will change price if it proves to be too high or low.
+-- It gives you 2 Enderium Coins (because of stacksize restraints imposed by Minecraft), and you can sell each of those for 5,000 Crurnea. (Or make 150k RF)
+--- Coins can be sold in "Minecraftian Store" store
+
+ 
+
+Removed Coin of Fortune crafting recipe
+- It's worth a lot and it's meant to be a cool rare item
+
+Removed being able to sell Zinc, replaced with Titanium
+- Zinc is semi-useful because of Railcraft now, but Titanium is still useless.
+-- You can also use Titanium to make 32 Key Carver tools from Treasure2
+
+ 
+
+Changed Arrow recipes
+- Vanilla one gives 4, Natura gives 8, Twilight Forest gives 16
+
+ 
+
+Reduced amount of loot the Loot Recycler needs to make a new bag
+- Down to 500 from the default 1,500 (there's nothing about how much items are worth though so I'll have to play around with this a bit to see if it's balanced or not)

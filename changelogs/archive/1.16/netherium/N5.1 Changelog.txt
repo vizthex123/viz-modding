@@ -1,0 +1,72 @@
+v5.1 Changelog
+
+
+Added a new item: Netherrack Fuel Pod
+- Has a burn time of 800 (4 items), and requires 4 Netherrack (any kind) to craft.
+Added a recipe to process Wallcreep Blooms into food
+Buffed the food gained from Wallcreep blocks
+- Now gives 2 Rotten Flesh with a 50% chance to get 2 crimson/warped wraps, a 25% chance to get 5 Wallcreep Blooms, and a 100% chance to get 2 Pink Slimeballs. Processing time increase to 5 seconds (was 3).
+Reduced the chance to get wraps from vines to 35% (was 40%)
+Vines now give sticks when milled (100% chance to get 1)
+Compacted Roots can now be turned into Water
+- The regular root recipe now requires 4 roots
+- Removed the roots tag from them
+Dried Roots now have the roots tag
+Liquifying Rotten Flesh into water now takes 7 seconds
+The membrane + water_provider recipe for water should now be at the back of the list
+
+
+The crushing recipe for Shroomlight now gives 2 Glowstone
+Changed the recipe for anvils that uses lead
+The recipe to make String out of Plant Fibers now makes 3
+The Dragonstone and Netherite pickaxe quests now unlock after making an Iron Pickaxe
+- Their respective tribute quests now unlock after completing the diamond pickaxe quest
+Changed the "Fellow Collector" tier to "Expert Collector"
+Added a new reputation tier for The Collector: "Grandmaster Collector" (250 rep)
+Tweaked the required reputation to reach the expert collector tier, now 125 (was 100)
+Added several new Tribute quests:
+- Cobalt
+- Netherite
+- 2 new XP coin ones
+
+
+Relocated a few quests
+Reduced the reward of "Experienced in Offerings?"
+- Now requires 6 silver XP coins instead of 12
+- Reputation gained is now 10 Collector, 5 Hellraiser
+Buffed Gilded Blackstone > Gold crushing recipe
+- Now gives 2 Crushed Gold
+- Now has a 15% chance to give a Rose Gold Nugget
+Mechanical Crafters now impose less stress on the system
+- This allows you to actually use them
+- You may need to copy the file from the defaultconfigs folder to actually change them
+
+
+Fixed smelting & blasting recipes for gear not giving the correct amounts
+Fixed the recipe for Obsidian making Obsidian Blocks (from JAOPCA) if you put in too much Powdered Obsidian
+Changed "The Way Out?" to only require 1 Crying Obsidian.
+Tweaked the reward bag drop values a tad
+- Rare loot can no longer appear in anything below Greater or Epic
+Removed Netherite Wings from reward bags
+Added a few more rewards
+Buffed the reward for the "Advanced Crushing" quest
+
+
+Overhauled the values for Dragonstone and Netherite items
+- Dragonstone tools now have 2,500 Durability (was 4,000). All of the items are immune to lava (like Netherite is)
+- Armour durability has been reduced by 200
+- Dragonstone is more enchantable (17 vs. Netherite's 15)
+- Dragonstone now gives less armour and toughness (20/6 vs. Netherite's 20/12)
+-- Netherite items now have 3k durability (was 2,031)
+-- Armour durability has been increased by 50
+- Netherite swords now deal 12 damage, Dragonstone now deals 10
+
+
+Updated CodeChicken Lib 1.8+
+Updated CraftTweaker
+Updated Electrodynamics
+Updated ForgeEndertech
+Updated FTB Library
+Updated JEI
+Updated Kotlin for Forge
+Updated SuperMartijn642's Core Lib

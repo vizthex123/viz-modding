@@ -1,0 +1,82 @@
+Rv1.1 Changelog
+
+ 
+
+NOTE: Forestry's Adventurer's Backpack picks up dungeon items (Iron Bars, loot you can find, etc.) [I added this was added awhile back, but forgot to tell people about it.]
+If you want a full list, you'll have to check the config. Also, you can suggest things I should add to it in the comments or on the issue tracker.
+
+ 
+
+Reduced Max Capacity of Fuel Canister from 8,192 (1,024 items) to 1,024 (128 items)
+- You can now fill it with Coal Coke, Blocks of Coal/Charcoal, and Blocks of Coal Coke
+
+Fixed Set Bonus bugs
+- Currently, only Iron, Gold, and Diamond Armour have set bonuses but I'll add modded ones soon™
+
+ 
+
+Added a couple dungeon loot related things
+Changed Crurnea values of Iron, Copper, and Tin coins from Thermal Foundation
+
+ 
+
+Added a few recipes for Patchwork coins
+- Most of them will use Bigger Crafting Tables, and all except 1 will need Set of Tools from Patchwork. You can either find these or buy them or 150 Crurnea (They sell for 100, this makes it slightly better to find them but also not expensive enough to warrant never buying them) [The Tools have 50 uses, but idk if it will use durability when crafting]
+
+ 
+
+ 
+
+Boosted XP given by Bounties
+
+- It's now 10, 20, 40, and 80 based on rarity
+
+-- I will change them if it seems like too much or little
+Tweaked values of Gold Ingot and Nuggets
+
+ 
+
+ 
+
+Added Clumps
+Added Better Than Mending
+Added Extreme Reactors
+- Added ZeroCore
+-- If you are using a world you've made before I added this or Netherending Ores, you will have to go to new chunks or dimensions you haven't been to (Nether and End for example) to get Yellorite.
+Added Storage Cabinet
+- It's basically the filing cabinet from Extra Utilities 1, because Real Filing Cabinets doesn't like me storing Enchanted Books.
+Added UniDict (should've done this earlier)
+- Added WanionLib
+Added Railcraft
+Added Bigger Crafting Tables
+- Currently only used for Patchwork's coins and a few special items, but might have more uses later.
+
+Actually added Loot Bags
+
+
+
+Removed OreDict Fixes store
+
+- Since I added UniDict, it's useless
+
+Added a few extra items to stores
+
+- Re-enabled Treasure2 and it's store
+
+ 
+
+Updated Calmi's Utilities (1.0.10.1 at first)
+Updated FTB Lib (5.4.3.129 at first)
+Updated Iron Chests (1.12.2-7.0.71.846 at first)
+Updated Lots of Stuff (V0.2.1 at first)
+Updated Treasure 2
+
+ 
+
+Removed Lots of Stuff - Biomes O' Plenty Support
+
+ 
+
+Made Bloodmoons happen 5% of the time and not on full moons
+Slightly edited Rough Mobs 2 config
+Removed Ardite, Cobalt, etc. from Netherending Ores since the mods that use them aren't installed

@@ -1,0 +1,46 @@
+v2.0 Changelog
+
+ 
+
+Removed Mariculture
+Removed ElectroMagicTools
+- Both of these add too much stuff, and it causes crashes & lag.
+
+Added Compacter
+- Renamed the Compacter to "Compactor"
+-- This acts like the AutoPackager, but it's got an inventory and a bit more flexibility. The idea is touse whichever works with your setup, the AutoPackager (which needs a 1x3 space) or the Compactor, which is a bit more expensive but only uses 1 block. (Not counting any automatic piping for either of course)
+Added More Ores and Resources Mod
+Added AdvancedRocketry
+- Added LibVulpes
+Added EMC Condenser
+- Added LatCoreMC
+Added CompositeGear
+Added Millénaire*
+Added Simply Platinum
+Added Secret Rooms Mod
+Added Mine Trading Cards
+Added Brain Stone Mod
+Added Backpacks
+Added Meldexun's Crystalic Void
+Added Survival Tweaks
+Added SimpleCore API
+- Added Fusion
+- Added Netherrocks
+- Added Machines
+- Added SimpleOres
+Added Weather, Storms & Tornadoes
+Added ChunkPurge
+
+ 
+
+Wrote guides for Resource Engineering and CandyCraft
+- I might add some for other mods, but it depends. Most of them have got information already present in the game (with some kind of book), so the guides will only really be for more unkown mods or ones without in-game documentation.
+
+ 
+
+* In order for this to work, I had to remove MoVillages
+Changed the StartingInventory item amounts
+Removed Alternate Terrain Generation
+Removed Chain Armor, too many other mods add recipes for Chainmail Armour.
+Removed Seared Brick de-craft with Diamond Pickaxe
+Removed script stuff relating to the non-Curse mods I had to remove in v1.0

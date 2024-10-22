@@ -1,0 +1,93 @@
+BETA v0.0.9 Changelog - The Story Update
+
+Still a better love story than Twilight lol.
+
+HEAVILY edited quest book description (The page that appears when you open the HQM Quest Book) & quest descriptions
+- This means there's now a story! (More or less) and the descriptions and titles reflect that (I'd been meaning to have one all along but never got around to it)
+-- Less comedy though, sorry.
+
+Fixed world sometimes not rendering in "Worlds" screen (Maybe...)
+
+Edited some MineTweaker scripts (I'd rather not list them since I edited basically all of them...)
+
+Edited Morph config
+- Disabled all abilities (Like flight, fire resist, etc.)
+
+Changed AE Config Amounts
+- Encourages use of Mekanism power while discouraging other mods.
+-- ME System Power Usage changed to 5x the regular amount
+--- Wireless Terminals uses 2.5x the regular amount
+----- This is because of the way MineTweaker works with AE, it's *very* hard to change the recipes.
+
+Edited Better Achievements config
+- Custom icons for a few mods
+Started making quests for Chourfeowy (Magic) questline
+Disabled Advanced Tooltips from Actually Additions
+
+
+
+Mod Edits:
+
+Edited ArmorOverlay config
+- Renders 5 bars
+Enabled Simply Jetpacks' EnderIO integration
+
+
+Added Another One Bites the Dust
+Added Actually Additions
+Added MoreArmor
+Added TooMuchArmor
+Added Chain Armor
+Added Calculator
+Added Electro-Magic Tools
+Added OreDictionaryConverter
+Removed Tinker's Construct and all its addons
+- Tinker's is really cool, but it needs lots of infrastructure and time.
+Added Super Multi-Drills
+Added IC2 and lots of its addons
+Added AppleCore
+Disabled Lockdown
+- A world should be there though, so use that one. YOU MUST USE THE CUSTOM WORLD!
+Added LaunchGUI
+- Should negate the lake fo Lockdown working effect
+-- Also gives info new players might need
+Added Redstone Paste
+Added MouseTweaks
+Removed Recipes+
+- Added too many hackish recipes
+Added JQuarry
+Added Avaritia
+- You won't really need to worry though, since it's pretty much only used to make the final end-game item
+Added HopperDucts
+Removed OpenEye
+Added WR-CBE-Universal
+Added Aroma1997s Dimensional World
+Added [SBM] Wooden Shears
+Added [SBM] Cacti Bucket
+Added Mekanism
+- Added Mekanism sub-mods
+Added Quantum Storage
+Added BiblioCraft: BiblioWoods Natura Edition
+Added Storage Drawers: Natura Pack
+Added Storage Drawers: Erebus Pack
+Addeed Pandora's Box
+- Edited config to make it give positive effects more often
+Added Natura
+Added RFTools
+Added Morpheus
+Added MeteorCraft
+Added Void Decay
+
+
+
+Mod Updates:
+
+Updated BiblioCraft
+Updated BuildCraft
+Updated Chance Cubes
+Updated DeathQuotes
+- Disabled a few of the quotes
+Updated Logistics Pipes
+Updated MystCraft
+
+Added 7 quests total.

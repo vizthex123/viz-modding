@@ -1,0 +1,107 @@
+B4.0 Changelog:
+
+
+Finished the Twilight Forest questline
+- All of the quests need better rewards, so please suggest what should grant which thing.
+Finished the Aquamirae questline
+- Since it's rather light, I also added some general water-y quests to it
+Changed the recipe for bedrock
+Changed the "Advanced Crafting" quest to require an Ultimate Crafting table, and changed its name to "Unparalleled Crafting Power"
+- Buffed rewards
+Added a quest to make a Basic Crafting Table
+Added rewards to The Essence of Everything quest
+- Also changed the subtitle
+Added more things to the Fuel Canister's list of accepted items
+- You can also craft it with any fuel item to fill it
+
+
+Replaced all Mini Coal & Charcoal rewards with fragments from Malum
+Replaced rewards on Heated Processing with 4 Arcane Charcoal Fragments
+Fixed burn times for Block of Arcane Charcoal and Blazing Quartz
+Changed the reward for "Endearing Flames" to Arcane Charcoal
+Amethyst Shards can now be used as a Pulverizer Catalyst
+Corundum can now be use in the Lapidary Dynamo
+- Each one makes 30k RF
+Removed the duplicate Fire Charge recipe
+- Also made it use tags
+Removed the duplicate End Crystal recipe
+
+
+Buffed the XP gained from smelting raw ore blocks
+Reduced the exhaustion caused by the hand crank
+Configured Wormhole now that it saves configs
+Buffed Gilded Netherite durability to 2,200
+- Added 65 durability to each armour piece
+Added a recipe for the Enchanted Golden Apple
+Fixed Amethyst Shards not being removed from the Lapidary Dynamo, making there be 2 recipes instead of 1
+Hid creative-only items from JEI
+Hid infested blocks from JEI
+
+
+Removed the duplicate Fiery Ingot recipe
+Added JEI info for how to get tickets
+Tweaked some recipes for Lightman's Currency's items
+- Changed recipes for coin piles & blocks to use the Multiservo Press
+- Changed wallets to use shaped recipes, but also have upgrade recipes
+Coins can spawn inside of naturally generated chests from mods
+- Not every chest has been added though, as I don't know what all of them are
+Overhauled default coin drops to be more balanced, and add mod support
+- Most enemies will drop Copper or Iron coins (worth 10 each), but some rare/more powerful ones will drop gold or higher.
+- Bosses will drop a large amount of coins when killed, depending on how difficult they are to kill
+Randomium can now drop coins (excluding diamond and netherite ones)
+Tweaked spawnrates of theatres
+
+
+
+Removed Enchantment Descriptions
+- Other mods do the same thing
+Removed MiniCoal
+- The same items are added by Malum, so this is now just a duplicate mod
+
+
+Added FTB Ranks
+Added FTB Chunks
+Added Loyalty Rewards
+Added Lightman's Currency
+Added Lightman's Discord Integration
+Added QuickTeleports (suggested by Shadow_of_Nobody)
+- All of these are meant for servers, but have some use in singleplayer - which will be expanded upon as time goes on
+- It's annoying and rather time-wasting to maintain a separate server pack instance (like I did with Capitalia), so instead I'm bundling it all together.
+
+
+Added Advancement Frames
+Added Better Compatibility Checker
+Added Boss Music Mod
+Added Cooking for Blockheads
+Added Malum
+Added Max Health Fix
+Added Piglin Expansion
+Added Smarter Farmers
+Added Waystones
+Added Whisperwoods
+
+
+Updated Apotheosis
+Updated Architectury API
+Updated Better Mineshafts
+Updated Botania
+Updated CoFH Core
+Updated CodeChickenLib
+Updated CraftTweaker
+Updated Curios
+Updated FuelCanister
+Updated Item Stitching Fix
+Updated Jade
+Updated Just Enough Items
+Updated Placebo
+Updated Quark
+Updated ReAuth
+Updated Structure Gel API
+Updated SuperMartijn642's Config Lib
+Updated Thermal Cultivation
+Updated Thermal Expansion
+Updated Thermal Foundation
+Updated Thermal Innovation
+Updated Thermal Integration
+Updated Thermal Locomotion
+Updated Wooden Hopper

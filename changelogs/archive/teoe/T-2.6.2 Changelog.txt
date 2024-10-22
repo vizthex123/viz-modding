@@ -1,0 +1,14 @@
+v2.6.2 Changelog - Hotfixes
+
+Change amounts of ticks that the Watch of Flowing Time gives
+Fixed many broken rewards (They'd give too many unstackable items)
+Changes some mod configs
+
+
+Changed a couple rewards in "Transmutation!"
+-Changed dark and red matter quests to Detection
+--Changed rewards of the alchemical fuel quests
+
+
+Changed amount of Crystal Clusters required for "T6 Sigils"
+-Changed rewards

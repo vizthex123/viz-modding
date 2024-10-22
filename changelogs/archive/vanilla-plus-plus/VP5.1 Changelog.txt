@@ -1,0 +1,31 @@
+v5.1 Changelog:
+
+Main changes:
+
+Added a custom main menu
+Added new textures for all scrap types
+Updated Stoneborn Modded Compatibility
+
+
+Diamond items now take 7.5 seconds to recycle (was 5)
+Seashells can now be composted (35% chance)
+Spider Eyes can now be composted (20% chance)
+Rabbit's Foot now has a 25% compost chance (was 20)
+
+
+
+Recipe changes:
+
+The Paladin's Furniture book can now be scrapped
+Removed the Sculk Catalyst -> Echo Shards recipe
+Added recipes to convert berries into dyes
+
+
+
+Mod changes:
+
+Added FancyMenu
+
+Updated Better Tridents
+Updated CraftTweaker
+Updated REI

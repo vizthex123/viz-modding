@@ -1,0 +1,82 @@
+v3.0 Changelog - Lore & Content
+
+Finally fixed Lore Expansion! Thanks to the developer for helping me.
+I've overhauled the current lore entries, and added a bunch more.
+I don't think it's quite as much as I want in the final build, but it should be sufficient for the time being.
+
+My tester found that attack speed does nothing since I have the incredible stupid & pointless combat cooldown disabled, so all set bonuses that affect it have been re-balanced
+
+There was also a power outage while I was working on this, and that corrupted most of the quests; so I had to download v2.3.1 and work off of that.
+
+
+Changed Flux Networks, and added some alternate recipes for Flux
+
+Difficulty is now increased by 100 while in the Deep Dark, and increases 5x as fast; to fit the lore better
+Finished questline for Deep Mob Learning
+
+Hopefully fixed broken Chance Cubes config
+Buffed the reward from "A Copy of Your Experiences"
+Re-balanced Life Essence recipes
+- Added another one that can be made in a Tier 2 Blood Altar
+
+Re-balanced recipes for Netherending Ores
+Increased base Quiver fluid storage from 1,250 to 2,000
+Increased base Quiver arrow storage from 72 to 80
+- These changes double the default arrow and potion storage
+-- Since ranged combat is a focus of the modpack, I feel it's only fair to buff the Quiver this way (I might re-balanced it later though)
+--- Note that each arrow imbued uses 50 mB of potion fluid (allowing you to shoot half of the stored arrows as imbued ones)
+
+Increased the enchantment levels of all armour sets made with Empowered crystals to 3
+- The only exception is Aqua Affinity, as it only has 1 level
+
+Added Astral Diamonds to the Diamond and Valuable Gem OreDict
+- I have no idea what they're used for in the mod, so I just did this. Of course you are free to choose what to do with them.
+Nerfed Set Bonus for Emerald Armour
+- Now gives Resistance I instead of II
+Slightly reduced spawnrate of Actually Additions' crystals in Battle Towers
+
+Removed my changes to Aurorian Coal's recipes
+Changed ME Drive upgrade recipe
+- The recipe is the same, but now it accepts Diamond/Crystal/Obsidian Chests or an ME Drive
+
+Slightly boosted output of Chance Cube recipes when made in a Bigger Crafting Table
+- Also added a recipe to make the Icosahedron with a regular crafting table
+Tweaked extra spawnrate of Champions added by difficulty
+
+Added the 2 alternate swords to the list of items accepted by the Tinker's quests
+Added other basic metals to the list for "Advanced Tools"
+
+Added various smelting temperatures to items I've added smelting recipes for
+- I meant to that when I added the recipes, and forgot
+Reduced the amount of iron you get from Drill Cores
+- idk why it was so high
+
+Properly removed the Diamond and higher furnaces
+Added recipes to melt down the iron and gold furnaces into 6 of their component
+
+Finished adding set bonuses for nether armour
+
+Added a few enemies to the list of accepted enemies for Data Models
+- They're just variations of the same enemy from other mods
+
+Changed the way all of the quest rewards where the queen (and other characters) thank you work
+- Now it uses /tellraw instead of /say, so the [Server] part isn't there. And it's coloured aqua for the queen, gray for Akashic, red for Forgebrow, and blue for Oseille
+-- I may have missed a couple, so please tell me if so
+Added Crystal Flowers, Mystical Flowers, Terra Spores, all Wooden Planks, and Wildroots to the Forester's Backpack accepted items list
+
+
+
+Replaced Worley's Caves with YUNG's Better Caves
+- Worley's Caves are near-identical to those of The Aurorian, and I want them to have at least some variety
+
+Added YUNG's Better Mineshafts
+
+Updated Forge Endertech
+Updated RPG-Hud
+Updated Simply Jetpacks 2
+Updated The Aurorian
+
+Removed Deep Resonance
+- It's easily outclassed by other mods
+Removed Potion Rings
+- It's kind of pointless

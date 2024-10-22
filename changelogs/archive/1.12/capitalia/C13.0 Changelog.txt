@@ -1,0 +1,57 @@
+v13.0 Changelog:
+
+
+Alright, I'm declaring this and all of my other 1.12 modpacks unsupported. I will fix any game-breaking issues, crashes, etc. if people report them - but I'm finally moving out of my rut and onto 1.16+. Mods for 1.12 aren't really being updated anymore, and newer mods have cool systems I'd like to use (plus, this pack is complete - so all I've been doing for the past few updates is bugfixes and minor tweaks).
+
+I'll also tweak the server pack as needed, just let me know what needs to be changed.
+
+Since the issue tracker is just the GitHub repository, I'll leave the label for this pack up - just in case people report more minor bugs that others may want to know about.
+
+Thank you for downloading & playing this pack, and I hope you enjoy my newer ones as much as you enjoyed this.
+
+
+Added a processing tree to convert liquid XP (and its variants) into Liquified Research
+- It now has to be fractionated into Fluidic Theorems, which have a chance to give a Knowledge Data Unit (which can also be crafted)
+- After that, it must be fluid transposed into an Empty Knowledge Data Unit to create a Knowledge Data Unit, which can then be melted into more Liquified Research
+- Due to this new tree, processing XP now uses slightly less fluid, and gives more research
+The "Dust Collection" reward table now gives TE sulfur
+- Added more dusts
+
+
+Reduced the fluix recipe to 8k RF instead of 12k
+AE2 cores now use processors instead of computer chips
+- Computer chip versions now give 4 per craft
+All 3 TE duct quests now only require the Machine Age to unlock
+- Changed their rewards
+Unrefined Machine Data Cores now TE machine frames and Magneticraft's machine blocks
+Storage Components now use processors instead of computer chips
+Fixed 64k Fluid Storage Components not being craftable
+Removed all recipe stages so that AE2 crafting works properly
+- Note that items themselves are still staged, so you need to unlock said stage before being able to hold the item
+
+
+Non-basic ME Terminals no longer require a Control Circuit
+The ME IO Port can now use either a logistics or mathematics computer chip
+Fixed the 4k drive reward on the Advanced ME Storage quest being hidden
+Changed the storage component for Compact Trash Bin
+Buffed the rewards for Input/Output Management and Cybersec Center
+Blacklisted Fluix from the Miner's Backpack
+Added proper names to some AE2 quests that were missing them
+Fixed dust tooltip saying "ingots" instead of "ingot"
+The Computation reward table now gives 2 - 4 chips
+
+
+Tweaked the recipes for solar panels 2 and 3
+Reduced the RF cost to pulverizer Soul Sand, boosted the chance to get a Drop of Evil
+The Ultimate Ingot recipe now gives 4 per craft
+Added another post-game quest to craft the Ultimate Singularity
+- Added a recipe for it
+
+
+
+
+Removed RecipeStages
+
+
+Updated ModTweaker
+Updated ReAuth

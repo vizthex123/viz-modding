@@ -1,0 +1,157 @@
+v6.0 Changelog:
+
+
+
+Main changes:
+
+
+Fixed the menu (again)
+- Seems like it differs based on your monitor's resolution, and idk how to make it scale based on that, so unless your monitor is also 2560x1440 it'll look kinda weird
+- Changed the title so it looks less squished
+
+Imported my scrap system from Vanilla++
+- Recyable items will now have a tag, and can be smelted into Small Scrap
+- 3 Small Scrap makes 1 Scrap, which can be smelted into 1 corresponding resource
+- Accepted items are equal to those from Vanilla++ v4.0, plus some TEoE-specific ones (like Thermal Series items)
+- Diamond Scrap now takes 5 seconds to smelt instead of 10
+
+FTB Chunks no longer makes death waypoints
+- It's a feature of the mod, but gets annoying since they render like JourneyMap's waypoints
+- Change the client config if you want them back
+
+
+
+
+Quest changes:
+
+Tweaked some quests in "Beneath the Waves"
+- If they don't have visible lines, they're optional
+"Chained Defense" now requires Chainmail Armour instead of Chain Plating
+Fixed the typo in "Cast Storage"
+Renamed the flux storage quest to "Fluxtastic Storage"
+- Fixed the broken dependency it had, so you can now complete it properly
+"Nice & Bundles" and "Alien Stones" are now optional
+Renamed "Boating Around" to "Boating About the Place"
+"Scrolls" is now optional
+
+
+
+
+Recipe changes:
+
+Changed the default metal gear -> nugget recipes
+- Now gives 3 nuggets instead of 1
+- Flint & Steel can be smelted, in addition to shields
+The Smoker recipe for the Redstone Furnace no longer accepts an RF Tools machine frame
+Added a recipe for luminessence that uses Esca
+The recipe for the Creative Crate now uses the forge:dusts/diamond tag
+Added a recipe for the Handheld Worldshaper
+Added a recipe for the Creative Fluid Tank
+Added a recipe for the Creative Mana Pool
+
+
+Removed multiple duplicate recipes
+Added recipes to recycle Twilight Forest armour
+Added recipes to coinify Twilight Forest boss drops
+Quark's Limestone can now be crafted into Cut Limestone
+Changed the recipe for Quicklime to smelting Cut Limestone instead of pulverizing/crushing regular Limestone
+Fixed the recipe to melt Fiery Blood into Fiery Essence not accepting Fiery Tears when it should've
+The Arboreal Extractor can now process logs from Malum, Quark, and Twilight Forest
+Tweaked the recipes for Artifical Dragon Eggs
+- The dragon scale one now uses the magic_dust tag, and only takes 1 minute to craft
+- The dragonstone one now takes 5 minutes to craft instead of 1
+
+
+Added tag support to Mushroom Stew
+Compressed scepter coinification into a single recipe
+Totems of Undying can now be coinified into 10k Essenarium
+AE2 Presses now coinfy into 1.5k Essenarium (was 2.5k)
+The Non-Euclidean Cube now coinfies into 100k Essenarium (was 10k)
+Added a recipe for bundles that uses normal leather
+Shelves and Card Displays now saw into their intended amount of Sawdust
+All sawmill recycling recipes (that I've added) can now be processed in the Mechanical Saw
+- Ropes and Glowsticks are the only exception since I can't do percentage chances on it
+
+
+Balance changes:
+
+Tweaked the output of several sawdust recipes
+Gold Wallets can now manually convert coins
+- Since these options are in the serverconfig folder, you may need to copy it manually
+Emerald Wallets can now pick up coins
+Items with affixes now have a much lower chance to spawn
+Iridium Fuel Cells now smelt a stack of items
+
+Resonating Crystals no longer generate in the Nether and Twilight Forest
+Dimensional Ore now generates in The End
+Removed the cheap Netherite recipe from Tinker's Construct
+Reduced the use chance of Sawdust Clumps as a catalyst to 70% (was 75)
+Beehive Beeswax now gives 2 Sawdust when recycled
+
+
+
+
+Item changes:
+
+Renamed "lime" to "quicklime"
+- Note that this will erase any existing ones since I also changed its internal name
+Renamed "iridium" to "iridium chunks"
+Iridium Fuel Cells now stack to 4 instead of 16
+
+
+
+
+Miscellaneous changes:
+
+Updated the Stoneborn Resource Pack
+Added the forge:mushrooms tag to Crimson and Warped fungi
+Hid mob charms and their fragments from JEI
+- They're still craftable & functional, but seeing a huge list of basically the same item is annoying
+- Blacklisted Twilight Forest bosses from dropping charms
+- Blacklisted multiple boss/rare enemies from dropping charms
+
+
+
+
+Mod changes:
+
+
+Added Better Compatibility Checker
+Added Game Menu Remove GFARB
+
+
+Removed Enchantment Descriptions
+- Obscure API does the same thing
+
+
+Updated Forge
+
+Updated AE2 Things
+Updated Aquamirae
+Updated Balm
+Updated Bookshelf
+Updated CraftTweaker
+Updated Create
+Updated EffectsLeft
+Updated Enchantment Descriptions
+Updated Equipment Compare
+Updated FancyMenu
+Updated Flywheel
+Updated FTB Quests
+Updated JourneyMap
+Updated KubeJS
+Updated Lightman's Currency
+Updated Lightman's Discord Integration
+Updated Lodestone
+Updated Malum
+Updated Mantle
+Updated McJtyLib
+Updated Obscure API
+Updated PackagedAuto
+Updated PackagedExCrafting
+Updated SuperMartijn642's Core Lib
+Updated Tesseract
+Updated Tinker's Construct
+Updated Twilight Forest
+Updated Wooden Hopper
+Updated Wormhole

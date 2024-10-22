@@ -1,0 +1,22 @@
+v2.1.3 Changelog - More Hotfixes!
+
+Changed amount of Loot Bags "Recyclotron Is Ready" to 1 Million each
+-Changed rewards
+Added a new quest "Hungry Much?"
+Added a new quest called "QDS"
+Fixed 4 Mil EMC bug on ME Drive
+Changed recipe for the Philosopher's Stone
+Changed reward bag loottable
+Changed recipe for Transmutation Table
+
+Added 2 Quests total
+Fixed "INFINITE COSMIC POWER!" (Had more items it needed)
+
+
+Removed Tinker's Modifiers
+
+
+Added Draconic Evolution
+
+
+Actually added the mods I said I'd add in the last patch (Sorry I failed you ;-;)

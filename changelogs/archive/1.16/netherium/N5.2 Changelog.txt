@@ -1,0 +1,63 @@
+v5.2 Changelog
+
+
+Gutted the "Sustain Yourself" mode
+- It doesn't fit with this pack and is honestly painful to deal with. If you liked it though, feel free to just copy the files over from an old version.
+Overhauled the fuel values for all uranium fuel items
+- Changed their recipes, everything is now compacting-only and crafts much faster (cores still use mechanical crafting though)
+- Pellets no longer use Coal
+- Drops can now use anything with the forge:fuel_dust tag
+Changed the default InvTweaks behaviour
+- Now keeps food in your first slot, and the first slot is also locked
+- Auto-restocking is disabled by default (which has been a thing for all updates)
+- To change these, edit or delete the config
+
+
+Added a new tier to the Engineering Guild: Ultimate Engineer (325 rep)
+- You can only gain this after maxing out the reputation, and it'll give you something nice.
+Increased the rep reward (for the collector) from "An Eggscellent Offering" to 15
+Added a few new quests
+(hopefully) fixed some broken quests
+
+
+Vanadium ore tweaks:
+- Removed JAOPCA's recipe, so now my custom one should be the only one
+- Now gives some Crushed Vanadium (2), increased dust outputs
+Tweaked the droprates of Uraninite's crushing recipes
+Thoranite ore now rarely gives some Vandium Dust (both kinds)
+Monazite ore now always gives 1 Raw Uraninite, and gives Cobblestone more often
+Added recipes to smelt fish into fish
+
+
+Tweaked Nether Portal Spread's settings since it seemed to be causing lag when you go to the overworld
+- If you still have problems, just disable or remove Nether Portal Spread
+Tweaked the clay worldgen rates
+- It should appear a bit less often now
+Added a recipe to make Glass in a Blast Furnace
+Added a recipe to make Stone in a Blast Furnace
+- I have no idea why these aren't in vanilla yet
+Fixed the recipe conflict between the flesh > crimson stem and flesh > bramble recipes
+Removed the duplicate (vanilla) recipe for Sticky Pistons
+
+
+Reduced the amount of time Andesite Alloy takes to craft in a Mixer
+Fixed torch recipes not being mirrable
+- Did the same for logs > sticks
+Added emptying recipes for all the fluid tanks form tinker's
+
+
+
+
+
+
+Added Magnesium and Sulfuric
+- These should massively help with any performance issues people have, since it makes Java way better t having decent optimization
+Added Measurements
+
+
+
+Updated Collective
+Updated Controlling
+Updated CraftTweaker
+Updated JEI
+Updated Not Enough Crashes

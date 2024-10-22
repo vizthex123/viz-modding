@@ -1,0 +1,34 @@
+v3.1 Changelog
+
+
+Fixed Giant & Maximum Compact Machines not showing up in JEI
+The HUDLens & HUDJack overlays now "float" as you move
+- HUDJacks have almost no "float"
+Re-enabled Thermal Foundation's Hammers & Excavators
+- I didn't intend for them to be disabled at all, but oh well
+Fixed the technology research not granting it to you
+- If you researched it but didn't receive the stage, do /gamestage add @p technology
+The Mason's worktable/station/shop now function as normal crafting tables
+Buffed the recipes for Cheese
+- The Fire Charge one now gives 3, Lava gives 5
+
+
+More entities can spawn with Cyberware augments
+Added a tooltip to the Katana about its function, and increase its attack damage to 15
+Cyberskeletons are a tad more common now, and can spawn in bigger groups
+Fixed the recipe conflict with top & bottom buns
+Increased the chance of getting a blueprint from a salvaged item back to the 15% default
+Tweaked durability costs of a few XL Food recipes
+Added loot to the last few vanilla enemies that were missing it
+Disabled the Last Stand enchantment
+- XP is much more valuable since you need to level up your skills to progress, so wasting it on taking another hit or two is a bit annoying.
+-- Note that it may still appear on dropped gear, so if you really want to use it; you can. (or even dischant the item and put it on something better)
+
+
+
+Added Compacter
+- Renamed it to "Compactor", made it early-game, added a quest
+
+
+Removed BetterBedrockGen
+- COFH Core does the same thing, but better

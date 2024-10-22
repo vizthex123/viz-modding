@@ -1,0 +1,52 @@
+v2.5 Changelog - Tweaks & Quests
+
+WARNING: The AE2 Stuff machines will crash the game, so just be warned: Do not use them!! I don't know what causes this but I'm looking into it.
+
+
+
+Quest Changes:
+
+
+Changed amount of items required by "Too...Much...Storage..." (From 10,000,000 to 100,000)
+Changed structure of a few "Crazy Stuff" quests
+Changed amount of Blood Orbs "Ultimate Soul Network" requires (From 100 to 1) [No idea why it was 100...]
+Changed amount of blocks required by "MOAR FUEL!" (From 10,000 to 1,000)
+Changed many quest rewards
+
+
+Changed all AE2 Stuff quests to Consume tasks (For the reason the warning above says)
+Changed "Cheaty Ore Location" to Crafting task
+Recipe Changes:
+Changed crafting station for Nether Star to vanilla crafting table (Petal Apothecary wasn't accepting items, thanks to ShafMBH for telling me this)
+
+
+Changed crafting station for Copper Coin (From smelting to Runic Altar)
+Changed recipe for Tome of Knowledge (Removed Power Suits component, replaced with Controller from AE2)
+-Added a couple other things to it
+--Might make it a proper shaped recipe, but idk...
+
+
+Changed all recipes for Essence Armour (It's called The Essence of Everything [armor piece], but I'll get the author to change the name soon though)
+Changed output of Full Heart recipe, it gives you 1 Silver Coin per heart
+-Changed crafting station to crafting table (Shapeless recipe)
+--This means you can turn full hearts into coins
+Started making more Magi-Tech Limo quests
+
+
+Misc Changes:
+
+
+Changed EMC of Tinker's hearts and the canisters.
+I've started to learn more about Draconic Evolution! Yay! Next patch (might) have some Draconic Evolution quests! For now though, have some Super Multi-Drills ones.
+Added 1 surprise for you guys ;D (Good luck finding it >:D)
+Added 18 new quests total.
+
+
+
+Mod Edits:
+
+
+Added The Essence of Everything (Mod) by XDFlame and me (Renders as ModName in-game though :'c)
+Removed Numia and Machinemuse's Modular Powersuits - Prevented sprinting, I have no idea how to fix this... if you guys like the mod, then you can add it yourself :D
+
+Updated Storage Drawers to v1.10.7

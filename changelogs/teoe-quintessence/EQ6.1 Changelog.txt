@@ -1,0 +1,33 @@
+v6.1 Changelog:
+
+Main changes:
+
+Changed the internal name of Iridium Chunks
+- This will erase existing ones, so be sure to either convert them into cells or give yourself whatever went missing after updating the pack
+Properly disabled FTB Chunks death points
+All FTB Chunks controls are now disabled by default to avoid a repeat of the unitcircle incident (https://discord.com/channels/758106282481156146/758106283046862882/1069118641313947658)
+Swapped out Stoneborn Extended for Stoneborn Modded Compatibility
+
+
+
+Recipe changes:
+
+Added pulverizer recipes for Cobalt
+Added a Crushing recipe for Block of Raw Soulstone
+Crushing/Pulverizing Cobalt now gives Iridium Chunks (15% chance)
+- Recipes that give Iridium Chunks will give more of it when done in the Crushing Wheels, but more primary output when done in the Pulverizer
+Standardized outputs of ores I added to the Crushing Wheels and Pulverizer
+
+
+Added the Sythian Stalk -> Gold Nuggets recipe to the Redstone Furnace
+The Subzero Ash -> Charcoal recipe is now a 40% chance (was 50)
+The Quicklime recipe for Steel now only needs 8 Quicklime (was 16)
+The Glue -> Superglue recipe now only needs 1 Glue
+
+
+
+Mod changes:
+
+Updated Boss Music Mod
+Updated Create
+Updated Measurements

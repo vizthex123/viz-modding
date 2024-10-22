@@ -1,0 +1,12 @@
+Beta v1.0 Changelog
+
+
+Added Cosmetic Armor Reworked
+Added Lag Goggles
+Added Chunk Pregenerator
+- I recommend disabling it after world creation as it acts weird in singleplayer.
+
+
+
+Disabled Elemental Dimensions - suspected of causing really bad tickrate lag
+- Hope to fix it soon because it sounds like a cool mod

@@ -1,0 +1,93 @@
+v4.0 Changelog
+
+All the gift quests should now register properly (Issue #6)
+Fixed the Warped Wood recipe using an Oak Wood Plank (Issue #4)
+
+If the game decides to load them in, there should be extra bounties for nether items, the Anointing Table should drop itself, and the Nether Furnaces should accept more items as fuel (Nether Bricks, Netherite Scrap, and Netherite Ingots)
+- All of these (very annoyingly) use datapacks, which is a system I barely know exists.
+
+
+Added my own Lapis Sheet (but I copied the texture from Create since I can't do art) since the Create devs removed it.
+- Recipe is pressing 1 Lapis Block, makes 2 Sheets
+Adjusted the config for Powah
+- Solid fuels generate less power (Coal makes 16,000), Magma and Blazing Blood can be used for Thermo Generators, and Essence can be used as Thermo Coolant. Reduced Blazing Crystal Blocks to 2,500 °C (from 2,800 °C)
+- Reduced the capacity of all Batteries
+- Transfer rates are now 1/100 of their capacity
+- *Heavily* nerfed the generator rate of Magmators. Magma can now be used in them.
+
+
+Reduced the fuel usage of all jetpacks (amount in parenthesis is the usage per second), also slightly re-balanced a few:
+- Copper: 75 > 10 (200)
+- Bronze: 150 > 18 (360)
+- Iron: 150 > 20 (400) {Now has +1 Armour Toughness}
+- Silver: 150 > 21 (420) {Now gives +2 Armour and Armour Toughness}
+- Gold: 400 > 23 (460) {Now gives 3 Armour instead of 4}
+- Steel: 400 > 25 (500) {Now has +1 Armour Toughness}
+- Diamond: 500 > 30 (600)
+- Emerald: 500 > 45 (900) {Now has +2 Armour Toughness}
+
+They should now seem more like "alternative upgrades" rather than a direct progression (For example: Gold is more enchantable than Steel, but gives less defense). You can read the tooltips for their full info.
+
+
+Fixed the Wrapped Fuel Core not being named properly
+Fixed the second Wrapped Fuel Core recipes not being loaded into the game correctly
+- Increased the crafting time of the string recipe by 50 ticks (now takes 20 seconds)
+- Kelp recipe now uses 8 Kelp and takes 200 ticks (10 seconds)
+Added Compacting versions of all Uranium Fuel Item recipes
+- All of them take 200 ticks (10 seconds) unless stated otherwise
+Changed the stacksize of each Uranium Fuel item
+- Halved them all, but the Fuel Core is now unstackable.
+Increased the amount of XP the Pink Slime and Blood Crystals give when smelted
+Changed Blood Crystals to give 20 Overslime instead of 15
+Added recipes to convert the Pink Slime and Blood Crystals to usable Slime Crystals from TiC
+- Updated tooltips of them both 
+
+
+Reduced the time it takes for Vanadium, Thoranite, and Uraninite to be crushed
+Change the Vanadium Ore crushing wheel recipe
+- Now gives 2 Impure Dust, a 5% chance for 1 Pure Dust, a 15% chance to get 3 Crushed Lead Ore, and a 15% chance to get 1 Cobblestone
+Tweaked the power values for a couple of Industrial Foregoing machines
+Fixed the logs > sticks recipe only working in the crafting table
+Fixed the mini coal torch recipe only working in the crafting table
+Moved the position of Soul Glass in the Advanced Repair Chest recipe
+Changed the Spectral Lanterns to Soul in a Bottle in the Ultimate Repair Chest recipe
+Added more recipes for the Culinary Mycelial Generator
+Added the forge:tanks tag to the searched & scorched ingot tank
+
+
+
+Added TipTheScales
+Added Equipment Compare
+
+
+Updated the Stoneborn resource pack
+
+
+Updated Forge
+
+
+Updated Architectury API
+Updated Collective
+Updated CraftTweaker
+Updated Create
+Updated Create Crafts & Additions
+Updated FTB Library
+Updated Industrial Foregoing
+Updated Iron Jetpacks
+Updated JEITweaker
+Updated JourneyMap
+Updated Kotlin for Forge
+Updated Mantle
+Updated Nether Portal Spread
+Updated Patchouli
+Updated Repurposed Structures
+Updated Structurize
+Updated SuperMartijn642's Core Lib
+Updated Tinker's Construct
+Updated Valhelsia Structures
+Updated YUNG's API
+Upgrade Ring of Attraction
+
+
+Removed Realistic Bees
+Removed The Bumblezone

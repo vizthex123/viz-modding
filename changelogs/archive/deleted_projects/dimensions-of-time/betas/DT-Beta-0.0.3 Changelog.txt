@@ -1,0 +1,10 @@
+Beta v0.0.3 Changelog
+
+Updated DeathQuotes
+Remembered to turn off edit mode before uploading patch...
+Added Credit recipes for 50 Credit Bill  -  Diamond Card (1 Mil Credits)
+Added Lockdown by TheAdubbz
+Actually removed FuelCanister
+Actually removed LockedDimesions
+
+Added like...7 quests I think, didn't' look xD

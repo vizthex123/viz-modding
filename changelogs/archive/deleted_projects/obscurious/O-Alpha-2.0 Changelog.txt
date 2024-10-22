@@ -1,0 +1,20 @@
+v2.0-A Changelog
+
+Mod Edits:
+
+Removed Android Shield Tweak
+Removed Matter Overdrive
+Removed AetherCraft
+Removed Maze World Mod
+Removed Chunk Purge
+Remvoed Void Monster
+- All caused issues & crashes, sadly.
+Removed Yugicraft
+
+Added Academy Craft
+Added Liquid Dirt
+Added AE2 Stuff
+Added AE2 Tech Addon
+
+Updated Applied Energistics 2
+Updated Security Craft

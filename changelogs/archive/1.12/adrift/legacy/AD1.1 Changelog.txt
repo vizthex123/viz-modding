@@ -1,0 +1,17 @@
+v1.1 Changelog
+
+
+Added a couple of lore pages
+- It's just a bit of prologue for now, I'll add more in 2.0
+Added 2 new quests:
+- One to make a Strainer Base
+- One to make a Sandwich Station
+Fixed a few broken things
+
+
+Added Lore Expansion
+Added Death Counter
+
+
+Removed Water Erosion
+- This mod is kind of pointless, and I think it's causing a few issues with some things

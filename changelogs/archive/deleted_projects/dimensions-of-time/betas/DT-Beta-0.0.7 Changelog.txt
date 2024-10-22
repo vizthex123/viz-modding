@@ -1,0 +1,26 @@
+BETA v0.0.7 Changelog
+
+Added Better Achievements
+Added Morph (Suggested by Beta Tester Chocopoko)
+-Disabled abilities
+Removed quest to get Cocaine Hydrocloride - wouldn't accept and I can't fix it
+-Changed to Keratin, should work better (hopefully)
+
+Changed some reward bag stuff
+Fixed *a lot* of spelling errors (Thanks to Beta Tester Chocopoko for telling me about them
+
+Added new "buy" recipes:
+Glowstone, Woven Forestry Backpacks, Sugar Cane, All Mystical Botania flowers (I'd say autocraft these), Tesseracts, End Stone and Unlinked Linking Book
+
+Added new "sell" materials:
+Uh....lots...deleted the list of ones I added before I copy/pasted...(it's mostly MineChem elements)
+
+Tweaked amount of stuff Mystcraft crystals give
+Tweaked amount of stuff Iridium card gives you
+Changed recipe for Flower Pouch
+
+Removed my Periodic Table gimmick, makes it take too long
+Changed some rewards on a few quests
+Disabled Tinkers keeping your hunger after death
+
+Added 12 new quests total (Mostly periodic table ones)

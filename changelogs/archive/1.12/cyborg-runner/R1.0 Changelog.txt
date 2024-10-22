@@ -1,0 +1,26 @@
+Revival v1.0 Changelog
+
+
+Re-worked *a lot* of mods, lore, quests, etc.
+This in the same vein as my other modpack overhaul/"revival" updates (for Aurora's Adventurer and Capitalia)
+
+
+There's been many a mod change, but the main core ones are still there (if you want a full list, just compare an old build to this one)
+
+
+Going forward, I want to try and make this modpack way more story-focused, so I've re-done a lot to help with that.
+
+
+In addition, there's now a new system to try and encourage you to move from world to world. It's still a bit WIP (since I can't enforce it much right now), but it should help add to the "runner" feel of the title.
+
+
+So, here's a list of the content I changed (that I remember at least.....forgot to document it all, whoops. Just add like 20 extra lines.)
+
+- Several food items have had their hunger/saturation values changed. Nothing from vanilla, but a few XL Food items that I felt were underpowered.
+- There's a new introduction, quests, etc.
+- The story/lore is being overhauled. A couple basic ones are in right now, but not all of them. Got some re-writing to do.
+- There's a basic research system, using Research Table. If you've played my Capitalia modpack, you know how it works (the data disks aren't in this pack though)
+- Compact Machines is one of the main focuses now, both for crafting and a place to make a semi-permanent base.
+- Reskillable is also rather important, as skills are nice to survive with.
+- Each questline has been replaced with a "chapter". Functionally the same, but they're a tad more themed now.
+- Storage is more limited, both with the removal of high-tier (gold & diamond) Iron Chests and AE2. But, you can now make a nifty Backpack that you can equip with Baubles. (and use B by default to open)

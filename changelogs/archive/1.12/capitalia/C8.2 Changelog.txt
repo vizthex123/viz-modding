@@ -1,0 +1,35 @@
+v8.2 Changelog
+
+
+Improved wording on the tooltip for iron & gold dust
+Added a burn time to Carbon Bricks (3,200, equal to its components)
+Doubled the durability of magnets
+Re-enabled Thermal Expansion's Energy Cells
+Increased the durability of Steel Hammers (Magneticraft) to 768 (256 items before breaking)
+Increased fluid research gain from Industrial and higher disks
+Changed the Atomic Data Model's fluid recipe to use 1 neutron and 2,000 fluid research
+Changed the Information Data Pad's fluid recipe to use 1,500 fluid research
+
+
+Increased the sell price of Apatite to 75 cents per item
+Salt can now be sold for 25 cents per item
+The Refractory Glass recipe for mirrors now makes 3 per craft
+Added an alternate recipe for Refractory Glass that uses normal glass
+- Increased the sand recipe to use 2 Clay
+
+
+The Quantum Compressor is now crafted in an Extended Crafting table
+The Crafting Core is now crafted in an Extended Crafting table
+- Tweaked their recipes
+Tweaked the recipe for the Automation Interface
+Fixed the mass-crafting recipe for Ender Iron making Black Iron instead
+Reduced cost of Broken Information Pads to 16
+The Advanced Circuitry research now uses 1 Industrial Disk
+- Also fixed how it sent the wrong message after being researched
+
+
+Swapped the placement of Efficiency & Machine Dispersal upgrades (Solar Flux)
+Removed Solar Panels 6 & 7
+Removed Photovoltaic Cells 4 & 5
+Photovoltaic Cells 1 - 3 are now crafted in an Extended Crafting table, and give 3 per crafting operation.
+Staged the Protein and Bio generators/reactors

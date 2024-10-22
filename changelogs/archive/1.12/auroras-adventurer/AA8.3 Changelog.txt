@@ -1,0 +1,48 @@
+v8.3 Changelog
+
+
+Reduce LP drain/loss for Blue Heart recipes in the Blood Altar
+Re-enabled Canyon and Crag Cliffs from Traverse
+Removed Extra Utils Crusher > Pulverizer recipe
+Fixed alternate Dimensional Shard recipe using the wrong Slate
+Improved wording on Crafting Co-Processor tooltip
+Fixed recipe order of the ME Interface
+
+
+Swapped amounts given for Chaos Essence recipes
+- RF costs have also been switched around
+Increased Will requirement & use for Body Essence
+- Now requires 150 minimum, and drains 100
+Added a recipe to strip NBT data from Nether Stars
+- Basically only because Chance Cubes gives me the stupid North Star reward 95% of the time and it's annoying
+
+
+Re-enabled the Redstone Engine and Wooden Kinesis Pipe (BuildCraft)
+Added JEi info on how to get each P2P tunnel (Applied Energistics 2)
+Removed my unnecessary Signalum -> Resonant Fluxduct recipe
+Removed unnecessary shapeless recipe for the Black Hole Controller v2.0 (Industrial Foregoing)
+Added multiple items to the Protein Reactor
+Added Aurorian trophies to the Enervation Dynamo
+- Runestone gives 50k RF, Spider Mother gives 75k, Moon Queen gives 100k
+-- I added this because I have to go back to get more scrap ingots every so often, but the trophies are useless after getting the first one. Plus, it can provide at least a small incentive to kill the bosses.
+Added Twilight Forest trophies to Enervation Dynamo
+
+Halved item cost of both Mystical (Shiny Golden) Apple recipes
+Reduced spawnrate of Battle Towers in the Overworld
+- They also now only spawn in 2 biomes in the Aurorian: Weeping Willow Forest, and Aurorian Forest
+Battle Towers can no longer spawn in the Aether or Twilight Forest
+Increased chance a tower will be buried
+Reduced cost of Induction Smelter recipe for Soul Essence
+- RF required has been slightly increased (from 50k to 55k)
+
+
+Added a recipe to craft vanilla mob spawners
+Mystical Worlds' armour sets can now be reforged with Copper & Silver
+Tweaked Body Essence Will cost & minimum
+- Minimum of 100, drains 50
+Changed name of "Hellfire Forge" quest to "Forged in Hellfire"
+Changed the highlyAdvancedChest OreDict entry to advancedChest
+- The entry is actually used now! In the recipe for the Black Hole Unit
+Tweaked multiple scripts
+- Mostly just changing the way recipes are loaded so items don't have 4 separate ones
+Hid a few debug items from JEI

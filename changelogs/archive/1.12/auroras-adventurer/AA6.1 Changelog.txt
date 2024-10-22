@@ -1,0 +1,39 @@
+v6.1 Changelog
+
+
+Fixed some typos
+Fixed a few broken scripts
+Moved dialogue from "Twilight Catalysts" to "The Twilight Realm"
+
+
+Hid multiple technical items
+Fixed a few broken quests & rewards
+Changed the Chance Cubes in the Transmutation Table's recipe to Mana Pearls
+- The Cubes were always placeholder, but I never could settle on an exact item to use; so I chose Mana Pearls.
+
+
+Fixed the Tape Measure Reel recipe not using the OreDict
+Fixed the Red Stone (Transmutation Stone from RetroExchange) not being consumed when it's supposed to
+- Some of the recipe will make it take damage. The ones that consumes it are:
+Transmutation Table & Tablet
+Alchemical Algorithms
+- Changed recipe to only use 1 Transmutation Stone
+Philosopher's Stone (already consumed in v6.0)
+
+
+Recipes where it gets damaged:
+ProjectE Fuels - 5 base, doubles each tier. Zeitheron fuel is 50 damage.
+Soul Talisman - 100 Damage per craft
+Conjuration Assembler - 250 damage per craft
+Transmutation Generator - 500 damage per craft
+Transmutation Dissassembler - 500 damage per craft
+
+
+The Transmutation Tablet no longer requires 1 Astral Diamond (all 4 slots use the gemValuable OreDict now)
+Changed recipe for the Soulbound Talisman
+The player now loses health upon death, but it can't go below your starting health (which is supposed to be 16, but stays at 12 for some reason)
+- Implemented a work-around fix by gving you a few hearts upon spawning
+
+
+
+Updated Aurorian Items (from v1.4 to v1.6)

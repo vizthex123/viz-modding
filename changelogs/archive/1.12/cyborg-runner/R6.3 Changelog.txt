@@ -1,0 +1,47 @@
+v6.3 Changelog:
+
+
+Added the new template world (that I meant to add multiple updates ago)
+- I advise you make a new world to at least check it out, and maybe restart the pack if you want to.
+Added a questline where players can buy hints
+Fixed the Idea Table being uncraftable (thanks to Edekwa on the Discord for reporting it)
+Bounty Boards now require wooden chests rather than any chest
+Removed the OreDict entries from unobtainable Artisan's Tools
+Mineral Salt can now be used in some recipes
+Fixed a few quest typos
+
+
+Streamlined researches that used wooden items to be more consistent
+The DIY Melon Circuit now accepts Redstone and Electrotine in addition to Glowstone.
+Tweaked the HP-XP gains & level requirements
+Players now lose a bit of HP-XP on death
+Added JEI info for how to get Glowstone without going to the Nether
+Fixed the dependencies for smelting upgrade research
+Reduced the cost for the Survivalist's Generator
+Changed the recipe for the Furnace Generator
+
+
+Disabled the Gold & Bone Pans
+Disabled the Gold & Bone Pliers
+Disabled the Wooden & Stone Sifters
+Disabled the Gold Burner
+
+
+
+
+Added the Vertical Nuggets texture pack
+
+
+Added Tool Progression
+- Fixes the long-standing issue of Bone Pickaxes not being able to mine Iron, and my workaround allowing them to mine Diamonds
+- Reduced Gold Ore to Stone mining level, that way you can get it with the Bone Pickaxe
+
+
+Removed CleanView
+- Client Tweaks does the same thing
+
+
+Updated CraftTweaker
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib
+Updated Village Names

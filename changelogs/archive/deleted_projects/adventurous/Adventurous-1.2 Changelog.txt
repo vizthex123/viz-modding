@@ -1,0 +1,6 @@
+Rv1.2 Changelog
+
+Added Redstone Arsenal
+
+Tweaked some scripts a bit
+- Fixed Signalman's Backpack name being weird (Also, you can get the backpack renames script on CurseForge if you want)

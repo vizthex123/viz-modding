@@ -1,0 +1,11 @@
+v1.0 Changelog - First Official Release
+
+
+I've tested the pack, and I think it's stable enough to come out of Beta.
+
+Started working on the Periodic Table quests.
+- Each update I'll add 1 row's worth of elements.
+Started working on more storage quests.
+Fixed "Craft Crafting Table" quest.
+
+Added 19 quests total

@@ -1,0 +1,29 @@
+v6.1 Changelog
+
+
+Fixed From the Ground Up (FTGU) (and thus all the research) not loading correctly
+Fixed scripts not loading properly
+Players now start with the various cybernetic parts, rather than having them be claimed from a quest
+Changed the Disk Workbench to require a 64k Storage Part, just like the fluid one
+
+
+The Salvaged Solarskin recipe now has a recipe to use Electrotine instead of Redstone
+All lore pages are now obtainable (meant to do that in v6.0, lol)
+Added a new structure
+
+
+Finished Compact Machines quests
+Made Necrotic Lighting optional
+Fixed a secret reward giving itself away
+Made several required quests optional
+Fixed some lore rewards not working as intended
+Balanced PackedUp
+
+
+
+Updated CraftTweaker
+Updated Dropt
+Updated PackedUp
+Updated ReAuth
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib

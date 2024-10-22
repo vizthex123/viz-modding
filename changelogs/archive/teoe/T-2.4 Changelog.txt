@@ -1,0 +1,48 @@
+v2.4 - Quests, Fixes & Mods
+
+
+Mod Changes
+
+
+Added Simply Currency by momnop
+-Added recipes for each Coin
+--This is mainly to server-proof the pack but also helps with balancing recipes
+Changed recipe of Nether Star (Craftable Nether Star + version)
+Fixed last 2 Klein Star quests
+Changed all "Transmutation!" rewards to Chance Icosahedron + Reward Bag (Rarity varies)
+
+Recipe Changes
+
+
+Removed recipe for Basic Reward Bag
+-Added new recipes for every HQM Bag
+Removed shapeless recipe for Blaze Powder (Only the 1 Redstone and 1 Glowstone recipe, vanilla one is fine)
+Same with shaped (1 Stick, 4 Blaze Powder)
+-This is due to being able to hack both recipes and exploit the way they're designed to be able to get Blaze Rods/Powder earlier than intended
+Changed LootRoulette's Material Cache to require Coins (Again, balance)
+Changed all Grindstone recipes I added to 1 turn
+Changed Record Fragment recipe's input to Diamond Lattice
+Changed HQM Heart recipes to Shapeless (Finally!)
+Changed Craftable Nether Star + recipe to default recipe
+Added coins to each recipe for Loot Roulette materials
+Added Unstable Ingot Block to recipe for Tome of Knowledge (Still can't make it shapeless, sorry)
+Added Platinum Coin to recipe for Tome of Knowledge
+Changed recipe for all Loot Bags to need Coins as well (For balancing) [Coin(s) corrospondes w/ bag tier]
+-Removed all shapless recipes for every Loot Bag
+Added recipe to turn Full Hearts into Minature Red Hearts and/or Coins (2 Seperate recipes but the Player can use whichever they want)
+-The Coin one is kinda like "Selling" it, and the Red Heart is to (sorta) give it an EMC and give you a way to use any extra Full Hearts laying around
+Removed Extra Utilities Nether Star recipe
+-Added different recipe
+Fixed typos
+
+
+Misc
+
+
+Changed several reward bag rewards (Both reward and times you can get)
+-Added new ones
+--Changed the rarity of "RNG Smiles Upon You" rewards
+Changed a few quest rewards
+Tweaked *many* quests
+
+Added 1 Quest total

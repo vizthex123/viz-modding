@@ -1,0 +1,86 @@
+Rv1.0 Changelog
+
+First release! This means that the modpack is (mostly) stable and has a good amount of content in it.
+
+
+
+Removed Village Names
+- Finally located the cause of that tickrate lag, will look into the other disabled mods in future updates. I do hope the mod dev fixes it though, this mod is kinda cool.
+Removed Artisan's Worktables & Anthenaeum. I can't get them to work, so now they're gone.
+- Removed unused scripts for them
+Removed Biomes O' Plenty
+- Everyone has used this before and I want to give Oh the Biomes You'll Go a chance to shine.
+
+
+Updated Calemi's Utilities
+Updated Champions
+Updated Level Hearts
+Updated Cyberware (Well, technically it's Robotic Parts; but it's still just Cyberware [which also sounds way cooler])
+Updated AutoRegLib
+Updated Classic Bar
+Updated Fantastic Lib
+Updated Industrial Foregoing
+Updated Iron Chests
+Updated Lots of Stuff
+Updated McJtyLib
+Updated Mega Loot
+Updated all Mekanism modules
+Updated More Overlays
+Updated all Project Red modules
+Updated Pyramid Plunder
+Updated Reborn Core
+Updated RF Tools
+Updated Silent's Gear
+Updated The Lost Cities
+Updated Treasure2
+- Disabled because something broke and I don't remember what version I had.
+Updated Village Names
+Updated XNet
+Updated Applied Energistics 2
+
+
+
+Added Loot Bags
+Added Better Diving
+Added Ocean Floor
+Added Oh The Biomes You'll Go
+Added The Emerald Haven
+- Disabled because it might be causing tickrate lag*
+Added The Beneath
+Added Glacidus
+- Disabled because it might be causing tickrate lag*
+Added Cavern II
+- Disabled because it might be causing tickrate lag*
+Added Dimensional Doors
+- Disabled because it might be causing tickrate lag*
+Added Mowzie's Mobs
+- Added LLibrary
+Added Bloodmoon
+- Made it a 5% chance per night
+-- Also happens every Full Moon
+--- Enemies are able to spawn within 8 blocks of the player, instead of the default 2, and spawn 4 blocks closer to the world spawn (20 instead of Vanilla's 24)
+- Disabled because it might be causing tickrate lag*
+Added Rough Mobs 2
+- Disabled invisible creepers, because that's a bit too hardcore. Feel free to turn it back on if you want though.
+Added Real Filing Cabinets
+Added Extra Bows
+Added OpenModularTurrets
+Added Open Modular Passive Defense
+- Added OmLib
+Added Netherending Ores
+
+
+
+Removed Quantum Storage
+- Other mods do the same thing and I've noticied this one just breaks stuff sometimes.
+Removed Daedalus's Labyrinth as it really didn't add much other than another dimension causing tickrate lag.
+Removed Don't Even Axe, didn't seem to do anything.
+Removed FTB Guides
+- I can't figure out how to write them and you can just use the mod's wiki pages or curseforge page to find out info
+-- Also removed FTB Guidebook
+
+
+Removed Patchwork Coin Recipes - Exploits (can't believe I didn't catch it earlier)
+
+
+* I will be testing these mods over the next few updates to be sure.

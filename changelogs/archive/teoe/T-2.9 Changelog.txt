@@ -1,0 +1,76 @@
+v2.9 Changelog - 300 Quests!
+
+Quest Edits:
+
+
+Added 9 Reputations:
+
+
+Thaumaturgical Council (Thaumcraft),
+Magic Counsel (All 3 magic mods),
+Druid Society (Botania),
+Vampirical Gathering (Blood Magic),
+Technological Innovators (All Tech mods),
+Alchemical Circle (ProjectE/ExtraE),
+Scientific Bureau (Anything related to tech, science, rocketry, etc..) [Actually kinda the same as Technological Innovators, but needs more reputation and will have better quests. But the Technological Innovators is also more of a first-time discovery thing, like real innovation; so I think that kinda balances it out],
+Chemistrial Atomium (MineChem),
+Blacksmith's Associates (Tinker's, maybe a couple other things...).
+
+
+
+Each reputation will eventually™ have certian quests connected to them, as well as some cool items (perhaps)
+In addition, some mods may contribute to multiple reputations, for example:
+Electro-Magic Tools is part of the Thaumaturgical Council, Technological Innovators, and Magic Counsel because it covers those 3 themes. A few other mods may be like this, but you'll have to play to find out.
+
+
+
+Created new quests for Super Massive Tech
+
+Changed a few quest rewards
+- Added 2 new Reward Bag rewards
+Added 8 new quests total
+
+
+
+Misc Edits:
+
+ 
+Added a script for changing item stacksizes
+Changed Potion ID for the Slippery debuff
+- Should fix conflict with Hunger Overhaul's "Well Fed" buff
+
+
+
+
+
+Mod Edits:
+
+
+Updated Thaumic Energistics
+
+
+
+Added Advanced Inventory
+Added Advanced Rocketry
+Added Anti ID Conflict
+Added Compacter
+Added CompositeGear
+Added Custom Chest Loot
+Added Enchanting Plus
+Added Enchiridion
+Added Iron Chest Minecarts
+Added Lore Expansion
+Added Magneticraft
+Added MineChem
+Added NotEnoughIDs
+Added NotEnoughResources
+Added Ocean Floor
+Added Resource Engineering
+Added Roguelike Dungeons
+Added Super Massive Tech
+Added Ultimate Ruby Mod
+Added Universal Coins Unoffical
+
+
+Removed FastCraft, was causing issues
+Removed both Vending mods

@@ -1,0 +1,225 @@
+v1.1 Changelog:
+
+
+Main changes:
+
+Create's Zinc Ore now needs a Stone Pickaxe instead of an Iron one to mine, fixing a softlock issue where you couldn't get to the Brass Age unless you found the much rarer Zinc from Bluepower
+Bluepower's Gems, Silver, and Tungsten now require an Iron Pickaxe to mine
+Enlightend's Ores now require a Diamond pickaxe to mine
+
+
+Renamed the "Base" of Project Expansion to "Foundation"
+Fixed Powah's config not loading into the game
+Made a starting inventory (meant to do that in 1.0 lol)
+Hid the Fluid Buyer and staged the Fluid Seller
+Staged EnderStorage behind the Industrial Age
+- Added quests for it
+
+
+All Prestige rewards are now Team Rewards
+Made Extended Crafting's auto tables cheaper
+Moved the Foundation to the Elite Crafting Table and made it cheaper
+All Project Expansion quests (to craft a main part) now give Prestige
+- Each one now require the crafting station to be crafted before the quest unlocks
+- Buffed reward from finishing the pack to 5 (was 2)
+- Tweaked the contents of the "Eternal Reward"
+- Fixed the XP reward not giving levels when it should've
+ 
+
+Replaced Scrap system with my standard one (from Quintessence and Vanilla++)
+- For those who don't know, you get 1 Small Scrap per ingot of the recycled item (e.g. a Bucket would give you 3 Small Iron Scrap), 3 of which can be combined into a Scrap that you can blast into the corresponding Ingot
+- Reduced the blasting time of each Scrap to 5 seconds
+- This basically nerfs the amount of metal you can get from recycling random worldgen objects, but it's a lot more balanced and easier to work with internally
+
+
+
+Quest changes:
+
+Revised the dependencies of Project Expansion quests to require the corresponding crafting station's quest to be completed
+All Bluepower quests are now optional
+"Selling" is now optional
+"Defensive Measures" now accepts Stone and Iron Swords
+"Heated Opportunities" now requires you to enter the Nether rather than finding Obsidian and Flint & Steel
+Reduced the reward for completing "Birthday Gift"
+Buffed the reward for Industrial, Information, and Atomic Mastery
+"Counterfeit Credits" is no longer optional. You must comply with galactic law.
+Fixed some typos
+
+
+
+Bugfixes:
+
+Added the drawer tag to drawers from Functional Storage Extra
+- This lets you use them for the quest, and maybe other stuff in the future
+Fixed Redstone Lamps giving Glowstone instead of Dust when recycled
+Finally fully fixed the Crossbow recycling recipes not giving the proper amount of outputs (as dictated by my arbitrary system)
+Removed the default recipe for DISK Housing  (intended in 1.0, but I missed it)
+
+
+
+Balance changes:
+
+Rose Gold armour now has slightly more durability and gives 1 Toughness
+Money Mending now uses Gold coins (was Iron)
+Removed the buffed recipe for ropes to ensure the recycling is balanced
+Increased the durability of Long Fall Boots to 512 (meant to do that in v1.0 lol)
+Increased the durability of the Forgotten Hat to 64
+Reduced the amount of Powdered Obsidian per Support Scaffold to 10 (was 50)
+Reduced the chance to get an extra XP nugget from Raw Tungsten to 50% (was 75% for 2 nuggets)
+
+
+Doubled the range of Elevators (now 32)
+- You might need to manually copy the new config from the defaultconfigs folder into your world's serverconfig folder
+
+
+Disabled Packing Tape's paper usage
+- Increased its durability to 12 (was 8)
+- You might need to manually copy the new config from the defaultconfigs folder into your world's serverconfig folder
+
+
+
+Economy changes:
+
+Buckets are now buyable (250 each)
+Buying Raw Iron now costs 100 (was 50)
+Added Corundum to the shop (can't believe I forgot it lol)
+Biodiesel now sells for $2,000 per bucket (was 1,000)
+Ethanol now sells for $1,000 per bucket
+- Now sells the fluid instead of buckets
+Ooze now sells the fluid instead of buckets 
+Fire Charges can now be sold for 50 each
+
+
+Changed the prices of the following items:
+- Corundum: 25 (was 100)
+- Charged Certus Quartz: 115 (was 250)
+- Dimensional Shard: 75 (was 5,000)
+- Infused Teslatite: 250 (was 150)
+- Rabbit's Foot: 30
+- Sponge: 250
+- Purple Alloy Ingot: 100 (was 200)
+- Plasma: 5,000
+- Unbreakability Seal: 20,000
+- Shulker Shell: 500
+- Necronium: 125 (was 200)
+- Goop: 250
+- Adamantite and Starsteel: 2,500
+
+
+
+Recipe changes:
+
+Added recycling recipes for the following:
+- Candles
+- Banners
+- Cauldron
+- Minecart with Chest (can't believe i forgot cauldrons & this in 1.0 lmao)
+- Cut Copper (and its Slab) and all of their oxidization stages
+- Redstone Repeater
+- Glazed Terracotta
+- Fishing Rod
+- Forgotten Hat
+
+
+Replaced the Netherite Supports in the Supports recipe with Sturdy Sheets 
+The Shaft and Drill Head now require Latex to craft
+Tungsten Carbide can now be made in a Mixer
+Changed the Experience Obelisk recipe (as intended in 1.0)
+Tweaked the recipe for the Advanced and Ultimate tables
+Added smelting recipes for Crushed Raw Silver
+Spore Blossoms can now be compacted into 1,000 mB of Plant Oil
+Anything with the small_flowers tag can now be compacted into 50 mB of Plant Oil
+Anything with the tall_flowers tag can now be compacted into 100 mB of Plant Oil
+Sunflowers now give 500 mB of Plant Oil (was 200)
+Phantom Membranes can now be compacted into Biodiesel
+
+
+Bedrolls now use the Leather tag instead of Binding
+Mud can now be milled into Mushrooms and Sticks
+Dirt can now be milled into various Seeds (with each one getting progressively rarer)
+Buffed parchment recipes
+- Sawdust one now gives 3 per craft
+- Quicklime one now gives 6 per craft and requires 3 of each item (was 4 quicklime and 2 fibers) and 1 Glue
+Fixed the Trading Core's alternate recipe using a Copper Coin instead of Iron
+- Changed the Coin Stacks to normal Coins
+Buffed the Dust gained from recycling Minecart with TNT to 4 and Charcoal to 5 (both were  before2)
+- Reduced Charcoal chance to 25%
+
+
+Copper Wallets no longer require a Create Deco coin
+Changed the Ender Dust in the Information Pad recipe to Infused Teslatite Dust
+Removed Glowstone Dust from the Dust Crushing output
+- Now gives Certus Quartz Dust 13% of the time (was 1%)
+The Suspicious Substance recipe for Glue no longer requires Paper
+Added new recipes for Glue that use Latex, Wheat Flour, and Cinder Flour
+Sticky Pistons can now be made with Glue
+
+
+Moved Book recycling to the Millstone
+Moved Rope, Wool, and Carpet recycling to the Mechanical Saw
+Heart of Diamond can now be crushed into Diamonds or sold
+Nether Fungus Stew now uses either Fungus
+Added a recipe to convert Mangrove Roots into Sticks
+Added a recipe to craft Anvils with Tungsten
+Blackstone can now be crushed into Cobblestone
+Crushing Deepslate only gives Gravel half the time
+
+
+
+Misc changes:
+
+Properly staged Bluepower's tools
+Staged all Project Expansion parts
+Staged the Blast Furnace
+Staged Functional Storage's upgrades
+Staged Netherite gear
+De-staged Magnetite
+De-staged Create's Zinc Ingots
+De-staged all Horse Armour
+De-staged Iron Blocks, Ingots, Nuggets, and Bars
+- Also de-staged Chains
+
+
+Removed the netherite_scrap tag
+Added the Hazmat Suit tag to Abyssal Armour
+Added the Freeze Immune tag to Cladded Boots, Diving Boots, Three-Bolt Boots, and Abyssal Boots
+Increased the rarity of the Prestige Scrip and Chit to Legendary and Epic respectively
+Fixed JourneyMap not loading the proper preset
+Blaze Lanterns can now be used as a heat source
+Disabled Honeyed Apples from Additional Additions
+- Create adds them already
+
+
+Unbreakability Seals now have Capital rarity
+Plasma now has Legendary rarity
+Plasma Chunks now have Epic rarity
+Plasmatic Sculk now has Mythical rarity
+Life Fruit now has Mythical rarity
+Sweet Berries, Potatoes, Apples, Green Apples, and Enlightend's plants now have the fibrous_foiliage tag
+Enlightend's plants now have the forge:fermentable tag
+More Fish can now be used to make Fish Fillets
+
+
+
+Mod changes:
+
+Added Cave Dweller Reimagined
+Added Cave Spelunking
+- This fixes the dumb oregen changes made in 1.18
+Added Difficult Caves
+Added Hostile Neural Networks
+Added Intelligence: Quarry
+Added Nature's Compass
+Added Solar Flux Reborn
+- Only the first couple tiers can be used as early-game RF generation. The rest are disabled.
+
+Replaced Rubidium with Embeddium
+Replaced InitialInventory with Custom Starter Gear
+
+Updated AE2 QoL Recipes
+Updated ChoiceTheorem's Overhauled Village
+Updated Cupboard
+Updated ModernFix
+Updated Quark
+Updated Repurposed Structures
+Updated Saturn

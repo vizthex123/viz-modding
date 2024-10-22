@@ -1,0 +1,29 @@
+v5.0 Changelog
+
+
+Added JJCoin's items to the Hunter's and Adventurer's Backpacks
+Buffed Fueled Quarry - now uses 1 Coal to break 64 blocks (twice as efficient as it was in v4.0)
+
+
+Disabled world generation for Project Red's Copper, Silver, and Tin ore.
+- Stop asking me, Jonab. I finally did it, happy now?
+
+
+Fixed Information Age being unobtainable until you reached the information age (https://www.curseforge.com/minecraft/modpacks/capitalia/issues/2)
+Changed the recipe for the Research Table, it now uses regular stone or polished granite/diorite/andesite
+Changed the recipe for the Junkbox and the Stone Upgrade to be more balanced
+Removed the recipes for the Reinforced Chests & Lockers from Better Storage Too
+
+
+
+Added Applied Energistics 2
+Added AE2 Stuff
+Added AE2 Fluid Crafting
+Added Just Enough Energistics (JEE)
+- All of the above have been disabled for now, will become functional in v6.0. I plan to make AE2 a direct upgrade to Refined Storage.
+Added Linear
+- It's got support for Builder's Bag too, which is nice.
+
+
+Updated Better Storage Too
+Updated Buildcraft

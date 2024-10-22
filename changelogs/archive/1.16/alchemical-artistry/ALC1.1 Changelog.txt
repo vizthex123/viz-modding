@@ -1,0 +1,53 @@
+v1.1 Changelog
+
+
+Buffed the Black Dye recipes made in the Induction Smelter
+Added a recipe to make Black Iron out of Iron Ore
+Removed my Rotten Flesh > Leather recipes
+- Both Thermal Expansion and Blood Magic add their own, so mine are kind of redundant (and breaks the Redstone Furnace recipe)
+Disabled singularity recipes (because for some reason they just wanted to be re-enabled I guess?)
+- Advanced Energy Pipes now transfer 250 RF/t
+- You may have to manually copy the config over (because for some reason it's not universal, stupid modern MC versions). Find it in the defaultconfigs folder, and copy it to the serverconfig folder of your world(s)
+
+
+Nether Quartz now makes 75,000 RF in a Lapidary Dynamo
+Added a recipe to make Torches out of Dwarf Torches (4 dwarf to 1 torch)
+Added a recipe to convert 125 AMC items to a 250 AMC crate
+Added a recipe to combine 35 and 15 AMC items to make a 50 AMC bag
+Changed the AMC of Stone Swords (should be 5.25, was 2.75)
+Added AMC to items from Mowzie's Mobs
+Added a Keep Inventory quest
+
+
+Updated Forge
+Updated the Stoneborn resource pack
+
+
+Updated Architectury API
+Updated Athenaeum
+Updated Blood Magic
+Updated Bookshelf
+Updated CB Multipart
+Updated Clumps
+Updated CodeChicken Lib 1.8+
+Updated ContentTweaker
+Updated Controlling
+Updated CraftTweaker
+Updated Curios API
+Updated DisenchantingForge
+Updated Equipment Compare
+Updated Extended Crafting
+Updated FTB Backups
+Updated FTB Library
+Updated FTB Quest
+Updated FTB Teams
+Updated Iceberg
+Updated JEITweaker
+Updated Just Enough Items
+Updated McJtyLib
+Updated No Default Auto-Jump
+Updated Patchouli
+Updated Valhelsia Core
+Updated Valhelsia Structure
+Updated YUNG's API
+Updated YUNG's Better Dungeons

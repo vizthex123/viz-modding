@@ -1,0 +1,72 @@
+A5.0 Changelog:
+
+Fixed duplication bug in "Starting Out"
+"Shop Unlocking" now consumes items, as intended.
+- This means you can submit a few at once and pay the rest later, if some Gold Nuggets are cluttering your storage. (Also since it's supposed to be a payment, it makes more sense)
+
+"Mob Hunter I" now needs 30 kills instead of 25
+Crafting Wither Skeleton Skulls from fragments now only needs 4
+
+"Mining Opus" also accepts Mystical World's Amethyst Pickaxe (since they're identical)
+- XP Reward auto-claims as intended
+
+"Basic Housing" now accepts any coloured bed
+
+Added 2 new tiers to LevelHearts - Level 35, and Level 50
+- As soon as you  hit those levels (or if you're already there), you should get the extra hearts.
+
+Tweaked Scaling Health's difficulty feature slightly
+- Mostly small changes, but the maximum difficulty is now 100 instead of 250
+
+Changed StatusEffectHUD to be in the bottom-right to prevent HUD conflicts with pinned quests
+- You are free to move it to wherever you want though. (Just click Esacpe --> Mod Options --> StatusEffectHUD)
+
+Added Curse of Binding to diamond armour gained from the Mob Hunter quests
+- I'll try to do this for all armour sets rewarded from quests, to help make it seem like some type of trade-off
+-- In addition, the full set is now rewarded upon completion of "Mob Hunter V" and Excalibur has been moved to "Mob Hunter IV"
+--- Hlmet now has Respiration III instead of I
+
+Creepers don't explode in a huge area and don't follow you no matter where you go now (basically they're back to normal except for the speed boost.)
+- Due to the speed boost though, they may be hard to avoid.
+
+
+MOD CHANGES:
+
+Added Forestry (basically only because I love the backpacks)
+Added Furnace Overhaul
+Added Water Strainer
+Added Shipwrecks!
+Added Villager Market
+Added Mo' Villages
+Added Extra Utilities 2
+Added Traverse: Legacy Edition
+Added Dynamic Trees Traverse Compat
+Added Traveller's Backpack
+Added BetterBedrockGen
+- I prefer XPlosion's Flat Bedrock, but it causes the tickrate to drop down to 2 so I had to remove it
+Added Equipment Tooltips
+- Added info quest for it too
+Added The Lost Quiver
+Added Charset Transport - Carts and Rails
+- Added Charset Lib
+Added Underwater Rails
+Added Useful Railroads
+- Added UTeamCore
+-- Direction Rail is disabled in favour of Extra Rail's
+--- Same for Telporting Rail, but that's due to it being weird & stupid to use. Until I can fix the Extra Rails' one, you can't teleport carts without some other mod or something.
+Added Spark's Hammers
+
+Disabled Teleporting Rail from Extra Rails
+- I can't get it to work, oh well. Use the one from Useful Railroads instead.
+
+
+Updated Classic Bar
+Updated FTB Guides
+Updated FTB Quests
+
+Removed Simple Generators
+- Since Extra Utils is included now, these are superfluous
+Removed TreesofStages
+- Wasn't useful since I doubt anyone is building a tree farm.
+
+Deleted a few unused configs (really only *slightly* reduces space on disk)

@@ -1,0 +1,38 @@
+BETA v0.0.4 Changelog
+
+Added Hats by iChun
+Added Portal Gun by iChun
+Added TiC Tooltips by squeek502
+Changed most "buy" and "sell" recipes to use AE Grindstone (Recipe for grindstone has been changed as well)
+-All of them require only 1 turn, but a few need more (based on price)
+--If they need more than 1 input, they use the vanilla crafting table
+---For outputs ("selling") it can use grinder
+
+
+Relieved the Smeltery of its use, so you can now use part builder for all materials in Tinkers'
+-Ore Doubling is still there though
+
+
+Added "buying" recipes for several items, most notably both types of Certus quartz (This is for quests later)
+Added "selling" recipes for many rare items (Mystcraft Crystals and End Stone, there are more but you need to find those out ;D)
+-These recipes will always be in AE Grinder unless it needs >3 coins/bills/cards from Currency mod
+
+Added "buy" recipes for ores (actual ore not just product)
+
+
+
+Removed Currency Mod recipes, due to possible explits
+Removed ProjectE - OP (Makes all my currency stuff useless)
+Removed Thaumic Equivilance - Add-on for ProjectE
+Removed ExtraE - Add-on for ProjectE
+Changed recipe for Long Fall Boots, they now use Credits instead of items (This is so you can get them easier)
+Added new recipe for Pure Certus Quartz
+-Same for Pure Fluix
+Tweaked lots of quests
+Expanded "Ewy's Upgrades"
+-Changed rewards
+--Same for normal Fluix
+Changed all recipes for Wooden Buckets, removed need for dye
+Enabled alt recipe for Bolts, 1 Arrowhead + 1 Tool rod in crafting grid
+
+Added 5 new quests total

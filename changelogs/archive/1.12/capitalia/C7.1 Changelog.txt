@@ -1,0 +1,37 @@
+v7.1 Changelog
+
+
+Fully implemented the Quantum Quarry quest
+Added a new secret quest (see if you can find it, and tell me if you do) 
+Added a description to "The Space Age"
+Updated the description for "The Iron Age"
+
+
+Shiny Golden Apples can now be sold for $2,500
+- (very) Long-time fans may remember that they were sellable before the re-structuring
+Nether Stars can be sold for $5,000
+Ender Stars can be sold for $10,000
+Enhanced Ender Ingots can $25,000
+
+Reduced Bronze tool durability to 375
+Staged Stone & Steel Shears
+Added all Magneticraft ore chunks to the Miner's Backpack list of accepted items
+Fixed broken localized name of Paxel Mold
+
+
+Fixed Osmium not being usable when it's supposed to be (due to improper staging)
+Added a burn time to Redstone Engines
+Increased iron data disk cost of the Industrial Age research (was 2, now 3)
+Removed stone disk cost for Machine Age research
+- Increased Bronze disk to 12 (was 10)
+Tweaked some of the stats of Extended Crafting blocks
+Tweaked cost of the materials you can buy
+The Black Iron Slate recipe is now shapeless
+
+
+Massive reduction to the RF Capacity of the vanilla (Iron, Gold, and Diamond) jetpacks
+- This is to balance it out compared to the upgraded Mekanism ones
+Buffed sell price of TNT to $30 per
+Buffed rewards of all Solar Panel quests
+Fixed a few bugs with research
+Added a new research: "Oil Processing". It's unique because it requires Liquid Research instead of Data Disks.

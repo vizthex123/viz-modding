@@ -1,0 +1,96 @@
+v5.0 Changelog - Equivalence
+
+Changed Nether Uranium and Zinc to be processed in the Pulverizer, as intended
+- Added them to the world generator
+
+
+Buffed the set bonus of Wither Bone armour
+- Now gives Strength II instead of I
+Updated tooltip for the Heart Amulet
+
+
+Updated a few quest descriptions
+Added some items to Forestry's backpacks
+Fixed me breaking the Hopper recipe (sorry)
+
+
+Improved some quest rewards
+Added a few more items to Forestry's backpacks
+Tweaked loot fabricator items (Deep Mob Learning)
+
+
+Doubled the default transfer rate of Flux Points & Plugs
+Changed recipe for the Fueled & Powered Quarries
+- Tweaked their costs, and added an alternate one for the Fueled Quarry
+Changed the alternate recipe for the Quantum Quarry
+- The Actuator stays the same
+-- You can still use the Snowglobe one, but mine isn't super expensive, doesn't require you to hunt down biomes, and lets you upgrade a BuildCraft Quarry to a Quantum one
+
+
+Expanded upon the Blood Magic questline
+Added a Set Bonus to Living (+20 Armour Toughness) and Sentient (+100% Attack Damage) armour
+Changed Black Quartz and Invar set bonus
+- I noticed some bonuses were broken, and suspect this was the cause
+-- The increased max HP effect I wanted doesn't work, so instead they do this:
+Invar - +2 armour toughness
+Black Quartz - +12% movement speed, +17% attack damage, wither effect removed 
+
+
+Reduced recipe cost for all Flux Storages (Flux Networks)
+Removed Diamond OreDict from Astral Diamond
+- You can place it in a Numismatic Dynamo with Lapidary Calibration to get 5,000,000 RF
+-- It still retains the gemValuable OreDict, but try not to use them since they're rare
+Astral Diamonds can now spawn in the top floor of Battle Towers
+
+
+Removed basic metal armours from Thermal Foundation
+Started working on ProjectE questline
+- Each of its add-ons will also have a group of quests in whatever section they're an add-on for
+Re-balanced several recipes (mostly the ones dealing with the Blue Heart, and Life/Soul Essence)
+
+
+Fixed Mushroom Stew exploit
+- Recipes have been re-enabled
+Re-balanced the Deep Mob Learning pristine fabrication recipes I added for coins
+- Changed the ones for Creepers, Spiders, Witches, and Twilight Glacier
+Boosted Aurum drops from Ender Dragon
+- Now drops 20 Platinum Coins (1,000 Aurum total) instead of 10
+
+Added loot drops for the following:
+
+Disturbed Hollow - 7 Copper Aurum
+Aurorian Slime - 1 Silver Aurum
+Runestone Dungeon Keeper - 2 Platinum Aurum, 5 Silver Aurum (125 Aurum total)
+
+Crystalline Sprite - 18 Copper Aurum
+Moon Acolyte - 6 Silver Aurum
+Moon Queen - 45 Silver Aurum (225 Aurum total)
+
+
+
+Replaced Fire's Clay Spawn with Pam's Clay Spawn
+
+Added Tips
+- Added a few custom hints/tricks/etc.
+Added Deep Mob Learning - Blood Magic Addon
+- Disabled since it's breaking my game, but I hope it gets fixed soon
+Added RetroExchange
+Added Equivalent Integrations
+Added ProjectE
+- I overhauled the entire progression system (and mod itself) so you *need* to check JEI for info on how to progress
+-- It's interconnected with a couple other mods, and can't be accessed until what I consider the latter half of mid-game
+
+Added Builder's Bag
+Added Builder's Bag - ProjectE Addon
+Added Stygian End: Biome Expansion
+
+
+Removed Traveller's Boots
+Removed Gendustry
+Removed Roots
+Removed Clay Bucket
+Removed Bauble of Undying
+Removed Bauble Shulker Boxes
+
+Updated Controlling
+Updated RandomPatches

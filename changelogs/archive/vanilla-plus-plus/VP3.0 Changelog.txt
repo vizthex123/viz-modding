@@ -1,0 +1,75 @@
+v3.0 Changelog:
+
+Main Changes:
+
+Added new textures for all the KubeJS items
+Stews & Soups now stack to 4
+Potions now stack to 2
+Overhauled Biomass
+- Removed the meat recipes for it
+-- Instead, Raw Meat is now compostable (fish are 45, cut meats are 30 (35 for fish)), other raw meats are 35, and rotten flesh has a 25% fill chance
+- 8 of anything with the vanilla:biomass_materials tag (found on crops, seeds, flowers, etc.) can now be used to make one Biomass (shapeless recipe)
+- fill chance is now 100% (was 60)
+Added Meaty Clump
+- Can be crafted with 8 items tagged with vanilla:meaty_clump_materials (shapeless), and has a 95% fill chance in the Composter 
+- Both this and Biomass can be used to craft Slimeballs (alongside an Echo and Amethyst Shard)
+
+
+
+Balance Changes:
+
+Bats will only drop leather half the time
+Reduced the radius of the Ring of Attraction to 3
+
+
+
+
+
+Recipe Changes:
+
+Added a recipe to recycle Music Discs
+Added a recipe to craft Slimeballs using Echo Shards, Amethyst Shards, and Biomass
+Leads can now be recycled into Fibers
+- Fibers can be used to make String or Rope
+
+
+
+
+Misc Changes:
+
+Mushroom Stew no longer accepts Crimson and Warped Fungus (due to conflict with the Nether Salad from Farmer's Delight)
+New Compostables (and fill chances):
+- Chorus Fruit (50%)
+- Crop Crates (85%)
+- Phantom Membrane (20%)
+- Rabbit's Foot (25%)
+- Shulker Shell (40%)
+- Honeycomb (50%)
+- Reduced the Poisonous Potato's compost rate to 50% (was 55)
+
+
+Disabled seed auto-planting
+Disabled the Fried Egg from VanillaTweaks
+Disabled the Sugar Block from VanillaTweaks
+Disabled the Siphon enchantment
+Slightly adjusted the duration of Advancement Plaques
+
+
+
+
+
+Mod Changes:
+
+Removed Catalogue
+- ModMenu does the same thing better
+
+
+Added Loot Goblins
+Added OpenBlocks Elevator
+
+
+Updated Bookshelf
+Updated Collective
+Updated CraftTweaker
+Updated Fabric API
+Updated Roughly Enough Items

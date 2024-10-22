@@ -1,0 +1,12 @@
+v1.4 Changelog
+
+Added 1 new quest to "The Basics"
+Started trying to include more quests that give hearts
+Started trying to include more "Pick One" quest rewards
+Added more quests to the "Thaumcraft" questgroup
+-Fixed the one quest I forgot to add stuff to
+--Fixed typos
+Started structuring "Magi-Tech Limbo"
+Changed description, rewards, structuring, etc. of several quests
+
+Added 10 new quests total

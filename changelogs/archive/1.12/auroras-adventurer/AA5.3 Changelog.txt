@@ -1,0 +1,40 @@
+v5.3 Changelog - Quests + Balance
+
+
+Fixed a few broken quests
+Fixed a few quest descriptions
+Fixed "Gifting a Diamond Necklace"
+Added a recipe to convert Soul Sand to normal Sand
+
+
+Re-balanced Blue Heart recipes (Induction Smelter)
+Reduced Blood Altar tier required to craft Life/Soul Essence by 1
+Increased Life Essence cost to make a Philosopher's Stone by 15,000
+
+
+Halved power consumption of the Quantum Quarry
+Finished adding thank-you messages to "The Dragon Tyrant"
+All "Collection Trial" quests are now optional, and give greater rewards
+
+
+Boosted the maximum amount of blocks that can be excavated at once
+Moon Stones (Extra Utilites) have to be crafted in a Moonlight Forge
+- Uses the stable ingot (made with nuggets)
+Changed recipe to convert Aurorian Cobblestone to regular, now uses dirt
+Boosted default transfer rate of Flux Plugs/Points to 20,000 RF/t
+Changed maximum network limit (Flux Networks) to 5
+
+
+
+
+Added Quality Tools
+- Suggested by my tester Gekiro
+Added Blood Arsenal
+- Suggested by my tester Gekiro
+-- I've disabled some of the redundant content, so be warned
+
+Added Bauble of Undying
+- Quality Tools says the modifiers work when in a slot, but doesn't natively add that
+
+Removed Actually Baubles
+- It's kind of pointless

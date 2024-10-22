@@ -1,0 +1,8 @@
+v5.1.1 Changelog - v5.0 Hotfix 1
+
+Fixed my alt recipe for EMC Storage Component Alpha being broken
+The EMC Condenser and Assembler quests now accept any tier
+- Added the Alchemical Tome to the Assembler one (which is required to make it work)
+
+Removed Tinker's Mechworks
+- Meant to do this awhile ago, but kept forgetting

@@ -1,0 +1,759 @@
+v8.0 Changelog:
+
+I'm basically requiring you to make a new world as I've changed a lot of internal stuff which will break existing ones (especially if you're still in the Alien Jungle).
+
+
+Well, I'm back for another legacy pack update. This one is gonna replace PackedUp and Refined Storage, so please retrieve your items before updating (though I recommend restarting due to many worldgen, progression, mod, and quest changes).
+
+In addition, I added several more performance mods to help curb the lag (though I'm sure it can still happen rarely).
+
+Also reduced the confusion research has caused some people by adding more hints, as suggested by Gold on the Discord. Also added Scannable at his suggestion.
+
+BE SURE TO MAKE A NEW WORLD!
+
+
+
+Main changes
+
+Fixed the ending so it actually works as intended
+- I started a few variations of it and never got around to fully finishing it until now lol. Sorry about that!
+Tweaked the "A Defensible Platform" quest to better reflect the actual set-up
+
+Added multiple optimization mods, (probably) making this my most-optimized modpack
+- If anyone is playing on a low-end PC, please let me know how much of a difference this makes compared to v7.0. I managed to get a (mostly) stable 144 FPS with max settings vs. ~60 with great TPS lag in v7.0.
+
+Added quests for each tier of gear so players can follow the intended progression (if they want to)
+Tweaked the default options:
+- Excavate is now bound to nothing
+- Quests is now bound to grave (~ next to 1 on the number row)
+- Cyberware menu is now bound to Z
+
+
+The maximum Cyberware Tolerance has been increased to 150 (was 125)
+- Cyberware Rejection now begins at 15 Tolerance (10% of the maximum. Was 20).
+
+
+Reduced maximum health to 60
+Players now lose some HP-XP on death
+Scaling Health's heart containers can no longer be used to increase your maximum health
+- However, they can still be used for healing and crafting
+The default difficulty is now set to "Normal"
+- You can still change it with Sol Credits, but as with the rest of the black market it requires the "Communication" quest to be completed
+
+
+All large ore deposits no longer generate in the Alien Jungle
+Most ores no longer generate in the Alien Jungle
+- Crimson Coal, Iron, Tin, Electrotine, Moon Stone, Salt, and Drained/Tier 1 XP Ores are the only ones that remain
+
+
+Replaced all Coins in various secrets & quests with Credit Chips (with 5 values instead of the 4 coins had)
+- Tweaked the contents of a couple secrets, replacing Coins with Credit Chips and slightly altering the main reward
+- Sol Credit Chips act as a collectible that can be exchanged for some unique items, or converted into Credit Chips after the appropriate research is discovered
+
+
+Finally managed to add in some custom Alchemistry recipes
+- You can now dissolve Barely, Flour, and various items from the Glacidus and Vulcanite mods
+- Added a chemical combiner recipe for Wheat
+Replaced JJCoin with a series of custom Credit Chip items
+Finally fixed the annoying bug that made worlds default to Peaceful when they should be on Normal
+Greatly expanded the list of accepted items across all the research
+- This fixes several researches not accepting the full list of items they should (e.g. anything that accepts redstone not accepting the full list of redstone items)
+-- I also went through and manually checked all of them, fixing the ones that needed it and tweaking things to fit the new recipes & progression
+- As always, please let me know if you feel like a specific research should accept more item(s)
+- (The categories file went from 806 lines to 2,379 lol)
+
+
+Added several new items
+- Added Slime Dyes for all colours (Rosin and Tar make artificial dye)
+- The Molecular Rearranger replaces coins in all conversion recipes
+- Credit Chips replace Coins, and JJCoin will be removed due to this. The 50 and 100 Chips can be turned into RF Numismatic Dynamo. 
+-- Due to this, the Toilary Mold and all associated recipes have been removed
+- Pulsaton can be found in the eponymous ore, and the ore can also drop Pure Coal. I can't get the droprates I want working though, so for now it's got a rare chance to drop Pure Coal instead of Pulsaton. Pulsaton Slivers can be used for various electronics, or turned into 50,000 RF in a Numismatic Dynamo with Lapidary Calibration
+
+
+
+
+
+Replaced all nutrients with 3 new ones:
+- Calories
+- Energy
+- Vitamins & Minerals (both share the same bar)
+
+Calories functions almost identically to vanilla hunger: Every food has it, and if enough is lost then you'll get negative effects
+Energy is similar to the energy system Cyberware uses - it's like calories for the player's cybernetics. Fewer items have it, but it drains slower and has a lower threshold for negative effects
+Vitamines & Minerals work in conjuction with calories to give both beneficial and negative effects at certain thresholds
+Nutrition loss on death has been restored. Players now lose 5% nutrients per death, and the bars can go down to 0
+- Due to this, you will have multiple negative effects if you die a lot - but I did try to make them more of a nusiance than an actual downside (alongside some difficulty tweaks)
+- To help offset this negative feedback loop, more quests give food rewards now
+
+I may revise, revert, or remove this system later on - but for now I think it's a good replacement. At any given time, you couldn't really refill the Dairy and Grains (and Sugars, to a lesser extent) ones due to the lack of items in the Alien Jungle, and with progress to other dimensions taking a bit of time it ended up being an annoying nusiance rather than a somewhat decent way to incentivise players to craft various types of food rather than farming a single one forever.
+
+
+
+
+
+Bugfixes
+
+Finally fixed the major bug that made worlds default to Peaceful when they should be on Normal
+Finally fixed the bug with Toolboxes not retaining their contents when broken (like they should)
+Fixed the Operation Manual sale not accepting the item
+Fixed Storage Disks not being craftable with Housings
+
+
+Fixed Pumpkin Bread not using the ore dictionary
+Fixed Steel Blend not being smeltable like it should be
+Fixed the sifting recipe for Hardened Dirt using Sandy Dirt
+Fixed Vulcanite not smelting properly in a Redstone Furnace
+Fixed the Pristeel Hoe's recipe not using the ore dictionary for one of the sticks
+Fixed the recipe for Stone Rods making Ghostwood Fletchings
+Fixed Saws not being craftable since the rods weren't craftable
+Fixed the Endest Furnace not having the intended crafting recipes
+- Moved it to the Scientist's Worktable
+Removed the default kit recipes (as intended from the start)
+
+
+Fixed the Iron Kit not being craftable
+Fixed multiple typos in quests & lore
+Fixed the "Hot Stuff" advancement being granted when it shouldn't
+Fixed "Hellish Defenses" not wanting the entire armour set
+Fixed a dependency order errors printing out character messages before you were able to contact characters in-universe
+Fixed the scheduled attacks not triggering properly
+Fixed the Ender Generator not using the correct catalyst
+Fixed the Pulverizer and Redstone Furnace recipes replacing the regular recipes instead of being upgrade alternatives
+
+
+Fixed Glacidite Shovels, Axes, and Hoes having the wrong durability
+Fixed champions spawning in the Glacidus dimension
+Fixed the Engineer's Workstation being crafted in a Basic Workstation when it's meant to be crafted in a Blacksmith's Workstation
+Fixed the Carpenter recipe to saw Basic Stations not giving the correct amount of Sawdust
+Fixed the missing recipe for the Berry Medley
+
+
+
+
+
+Balance changes
+
+Tweaked the RF usage and capacity of all Refined Storage items
+Enemies now drop more XP as Scaling Health's difficulty increases
+The Attack, Mining, and Defense Skills all use the same scaling (reduced the cost to max out Defense by quite a bit)
+
+
+"Undershirt" skill now costs 6
+"Effect Twists" skill now costs 4
+- Reduced the unlock requirements to Defense 10 and Attack 5 (was 15/7)
+Swapped the costs for "Roadwalk" and "Sidestep"
+
+
+The building skill is now capped at 5 (was 3)
+- Tweaked the skill locks of several items to fit the new tiering
+- "Perfect Recover" now costs 3
+
+The farming skill is now capped at 10 (was 5)
+- Tweaked the skill locks of several items to fit the new tiering
+
+The mining skill is now capped at 20 (was 30)
+- Reduced the cost of "Obsidian Smasher" to 7 (was 10). Also changed the Agility requirement to Gathering.
+- Reduced the cost of "Fossil Digger" to 3 (was 5)
+
+
+Hostile mobs now give 5 HP-XP (was 4)
+The Cutting Tool now has 32 durability (was 30)
+Changed the HP-XP scaling, now has a smoother curve
+Slightly increased the blueprint chance from the Engine
+Dimensional Shards now produce 200,000 RF in Lapidary Calibration
+Modded Slimes can no longer spawn as Champions
+Magma Cubes can no longer spawn as Champions
+Creepers can no longer spawn as Champions
+Spiders can no longer spawn as Champions
+Drop Spiders can no longer spawn Blighted
+
+
+A full set of Clay Armour now gives 8 protection (was 7)
+All Glacidus tools now have 2 extra mining speed over their Overworld counterparts (i.e. Underground Wood has 4 mining speed instead of 2)
+Reduced the damage of Glacidus weapons (excluding Glacidite) to be 50% more than their Overworld counterparts (e.g. the Eukeite Sword now has 6.5 instead of 7 damage)
+Buffed the durability of Glacidus tools
+- Underground now has 75 durability (was 59)
+- Antinatric now has 150 durability (was 131)
+- Eukeite now has 275 durability (was 250)
+- Merialces armour now has 10 extra durability per piece (and gives 2 toughness per set instead of 6)
+
+
+Enderman no longer cause you to drop items
+Vulcanite tools now have 1,850 durability (was 1,750)
+- Gave each armour piece has +150 durability
+Increased the fluid storage of all Engineer's tables
+The Pouch of Unknown now holds 4 stacks of items (was 1)
+Reduced the Glacidite Sword to 10 attack damage (was 12)
+Reduced the Vulcanite Sword to 12 attack damage (was 12.5)
+Reduced the Diamond Sword to 8 attack damage (was 8.5)
+Champions no longer spawn in the Alien Jungle
+Reduced the max size of large coal deposits
+Tweaked some oregen values
+
+
+Changed the stats for Glacidite armour
+- A full set of Glacidite now gives 22 protection and 6 toughness (was 30/15)
+- Vulcanite remains changed as both of them are intended as alternates in the same tier, but Vulcanite gives slightly more protection with lower durability as an optional trade-off
+
+
+Tweaked Reskillable locks for various items:
+"Level" refers to attack/mining
+- Clay Buckets now require Gathering 3, and regular Buckets now require Gathering 5
+- Project Red's gem tools now require level 7 and Agility 5 (was level 5 and agility 5)
+- The Katana now requires level 5 and agility 7 (was none before)
+
+- Bone armour now requires level 4 (was 2 and 2 agility)
+- Gold armour now requires agility 6 (was level 7 and agility 5)
+- Bronze armour now requires level 7 (was 6)
+- Project Red armour now requires agility 10 (was level 6 and agility 3/5)
+- Pristeel armour now requires level 10 (was level 5 and agility 4)
+- Diamond armour now requires level 12 and agility 10 (was level 10 and agility 10)
+- Vulcanite armour now requires level 15 and agility 12 (was level 15 and agility 10)
+- Glacidite armour now requires level 15 and gathering 10 (was 15 and agility 10)
+
+
+Added a large deposit for XP Ore
+Added a large deposit for Nether Quartz
+Tier 1 XP Ore now gives 10 XP (was 20)
+Higher tier XP Ores now give more XP (+10 per tier instead of 2)
+Modded ores no longer generate in the Glacidus dimension
+Dense and Super Ores now generate in all large ore deposits (as intended)
+Harvesting crops now gives 5 XP (was 10 XP)
+Players can now parry projectiles with shields
+Nerfed the amount of time shields can block for
+- Defaults to 2 seconds, and increases by .5 - 1 for each tier (flux-infused shields have a 7 second block time)
+
+
+Coal Ore can no longer drop Concentrated, Refined, Pure, and Crimson Coal
+- Slightly reduced spawnrate in the Alien Jungle
+Dense Coal Ore can no longer drop Pure or Crimson Coal
+Super Coal Ore can no longer drop Concentrated or Crimson Coal
+- Slightly buffed droprates
+
+
+Spider Eye Soup now restores 8 hunter (was 7)
+Cooked Flesh now restores 4 hunger (was 5)
+All Nutrition bars now start at 30% (was 50%)
+Nerfed the amount of hunger & saturation Pizza Slices restore
+Tweaked the level scaling for Attack, Defense, Agility, Building, Gathering, and Farming
+Defamont now sends his own strike teams after various milestones are met (and he has some dialogue now)
+Expanded the list of items accepted for research in the "Technology" tree
+Reduced the Katana's damage & durability
+
+
+Reduced the amount of credits gained from selling cyberware body parts
+Slight nerfed creepers by restoring the default fuse time
+Disabled Furnace Overhaul's advanced upgrades (electric and both processing)
+- There's now only 1 upgrade research to unlock every upgrade
+Furnace Overhaul's upgrades now only use the Solderer and/or Spanner
+Added an alternate recipe for Fluxed Electrum Blend that uses Vulcanite Ingots
+The Flux Crystal recipe now uses 9 Beaker and 15 Burner durability (was 7 beaker durability)
+- Added an alternate recipe that uses Glacidite
+
+
+Capsules can now only be upgraded once (was thrice)
+Zombie Horses can rarely drop Slimeballs
+All Slimeballs can now be converted into dye items
+Reduced the droprate of augments (was 100%, now 60%)
+Slightly increased the spawnrate of Cyberzombies
+Tweaked the spawnrate of Cyberskeletons
+Adjusted the coin drop rates from all enemies
+- Non-humanoid enemies no longer drop coins
+
+
+
+
+
+Economy changes
+
+Re-organized the shop quests to make it a bit less annoying to navigate.
+
+
+Replaced all coin rewards/requirements with Credit Chips
+Replaced the various "coin + item = different item" recipes with a new Molecular Rearranger
+- Concrete now gets decrafted instead of being converted into Terracotta
+Removed coin drops from most enemies
+- Humanoid enemies can still drop Credit Chips every so often. Lore-wise, they're survivors who escaped (or are native to) planets ravaged by plague - but ended up falling to it due to a prexisting infection. The player is imune to it because of their cybernetics.
+- Overhauled difficulty scaling. Enemies now have a rare chance to drop damaged Credit Chips at higher difficulties (which must be repaired in order to gain credits from them), and some enemies will only drop Damaged and/or Empty Credit Chips
+- If you care, each one has lore reasons for the drops in the new "Observations" category (for things the player character theorizes about). The entry can be read in-game, and is gained after gathering a certain amount of Credit Chips
+
+
+All Black Market listings now use Credits
+- Prices remain unchanged unless listed below.
+
+Added a listing to buy random Mystcraft pages
+Changed the Cow market listing to Milk
+- Increased price to 100 (was 50)
+Ender Pearls now cost 200 (was 175)
+Leather can now give 1 random bonus
+Paper now gives 3 per purchase instead of 1
+Feathers now give 2 per purchase instead of 3
+- Price reduced to 35
+
+
+Difficulty Change: Easy now costs 2 Sol Credits (was 500)
+Difficulty Change: Hard now costs 1 Sol Credit (was 50)
+Plantary Info now costs 100 (or a Sol Credit)
+Increased the sell price of necroctic limbs to 35 (was 25)
+Increased the sell price of organs to 25 (was 15)
+Increased the sell price of limbs to 15 (was 5) 
+Increased the sell price of the Security Log to 25 (was 7)
+Decreased the sell price of the Operation Manual to 15 (was 10)
+- Changed both of their descriptions to better match their new prices
+
+
+
+
+
+Lore changes
+
+Added some more lore
+Fixed some lore scraps being from Wessex even though he should have no knowledge of them
+Re-organized the Organizations lore, and added an entry for Triarch Construction
+Converted the written book logs into lore pages, and expanded upon them
+- Changed "An Escape?" to tie in with the lore pages rather than having an unexplained connection to the dealer
+Swapped the Defamont and Defamation Foundation lore page acquisition methods
+
+
+
+
+
+Quest changes
+
+Updated the description of "On the Run" (the first quest)
+Updated the description for "Communication"
+Named the quest to make an Augment Scanner
+Added an arrow pointing towards "Miniaturized" so players have a better idea of what to do first
+Added several info quests to the first chapter
+
+
+Added quests for Alchemistry
+Added a quest to make a Wooden Mortar
+Added a quest to make an Energetic Infuser
+Added a quest to make a Scanner (from Scannable)
+Changed the reward for "Engineering" to Cheese (was Blazing Clay)
+Reduced the requirements for the "Weapons" quest in the ending questline
+Changed "Electrical Crushing" (and Smelting) to only accept Thermal Expansion ones
+- This is due to Extra Utils blocks being *very* buggy when it comes to quests
+The Funding quest now requires 1,000 Credits (was 5,000)
+Tweaked a lot of minor quest stuff that I forgot to document
+Compact Machines quests now accept higher tier machines (e.g. "The Smallest Space" accepts all tiers, and "A Giant Space" accepts both a Giant and Huge machine)
+
+
+Added quests for Refined Storage
+Added quests for various tiers of gear so players can learn about the intended progression
+"Metal Storage" and "Junk Dump" are now optional
+Renamed "Book Holder" to "Akashic's Gift"
+Renamed "Copper Chest" to "Metal Storage"
+- Now requires an Iron Chest (since Copper no longer spawns in the Alien Jungle)
+Renamed "Mechanical Tool Storage" to "Automated Tool Storage"
+- Reduced XP reward to 25 (was 35)
+Buffed the rewards on "Cooked Food" and "Special Food"
+Adjusted the rewarded amounts for the "Supplies" loot table
+Replaced the AR Visor reward in the "Misc Parts" loot table
+Renamed "Magnetized" to "Magnetization"
+
+
+
+
+
+Recipe changes
+
+Removed the Iron Ring
+- Miner's Ring now uses Chain Plating
+Added recipes to craft some rare Cyberware
+Moved Translocators to the Basic Worktable
+Most alternate recipes that use Electrotine have been tweaked to reflect its comparative ease of access in the early-game
+Crafting Worktables now requires the table from the previous research to make it more consistent (e.g. the Designer's Worktable now needs a Basic Worktable instead of an Engineer's Worktable)
+The Designer's Worktable & Station are now crafted in a Basic Workstation (was Engineer's Workstation)
+All Worktables are now made in the Basic Worktable
+- Workstations are now made in the Blacksmith's Worktable
+-- Blacksmith's Workstation is an exception since it remains in the Basic Worktable
+- Moved the Engineer's Workshop to the Designer's Worktable and replaced the Hammer with a Solderer
+- Replaced the Hammer in the Scientist Table recipe with Pliers
+
+
+Rabbit Stew no longer requires lava
+Sand sifting no longer requires water
+Added a recipe to sift Lumicia Dirt (from Glacidus)
+Crafting Nether Bricks no longer requires Lava
+Boosted the output of stairs made in the Mason's Table
+Halved the durability cost of slabs made in the Mason's Table
+Converting Bitumen to Mini Coal now uses a Basic Worktable (was Blacksmith)
+Moved Glacidite gear to the Engineer's Worktable
+Moved Vulcanite gear to the Scientist's Worktable
+Removed the alternate recipe for OpenBlock's Tank
+Eenabled the Jeweler's Worktable
+- Moved the Miner's Ring to it
+- Moved Project: Red and Diamond gear to it
+- Moved the Diamond and Emerald furnaces to it
+Reduced durability cost of the Toolbox recipe to 16 (was 25)
+Tweaked the recipe for the Mechanical Toolbox
+- Now uses Cutters and a Spanner (was Hammer and Cutters)
+- Merged both recipes into a single one. Increased durability cost to 32 Handsaw, 16 Spanner (was 30/25)
+
+
+The Diamond Furnace is now slightly cheaper
+Removed skill locks from the few recipes that had them
+The Iron Furnace kit is now made in a Basic Worktable (was Blacksmith)
+Upgrading Furnaces with Kits now requires appropriate tools (Cutters for metals, Gem Cutter for gems, Spanner for end since I can't think of anything that matches)
+Moved Flux Armour to the Scientist's Worktable
+Moved some recipes from Simply Jetpacks to the Engineer's Worktable
+The Concentrated Coal recipe for Steel Blend now makes 2 per craft (was 1)
+Steel can now be made with all modded coals in an Induction Smelter
+Gold can now be made with Opesium and Pulsaton in an Induction Smelter
+Furnace Overhaul's Efficiency Upgrade now requires Electrum (was Redstone Dust)
+Reduced the cost of crafting Ice
+- Now uses 1/3 buckets of water (regular/mass crafting recipe)
+- Mass craft durability usage reduced to 90 (was 150)
+- Packed Ice's catalyst is now a Prismarine Shard (was a Water Bucket), and the recipe now gives 10 Ice per craft (was 5)
+Added a recipe to craft Ice out of Snow Blocks (can't believe I missed that lol)
+The Carbon Compressor is now crafted in a Scientist's Worktable
+
+
+Added a recipe to recycle Collation Folders
+Added a recipe to recycle the Pouch of Unknown
+Added a recipe to recycle Shields into Iron Nuggets
+Added a recipe to recycle Bows into String and Sawdust
+Removed the smelting recipes for Horse Armour
+Removed the smelting recipes for Diamond Equipment
+Compact Machine recycling is now done in the Basic Table (was Mason)
+- Now uses Cutters and a Spanner (was a File and Cutters)
+All (relevant) recycling recipes now give nuggets (unless they're processed in an Induction Smelter)
+Re-balanced recycling recipes to bring them in-line with my standard system
+- Added research to unlock them all
+- Compact Machines recycling is now more expensive and gives fewer walls
+
+
+Added a recipe to make Anvils from Lead
+Added an electrotine recipe for Pistons
+Added an electrotine recipe for Redstone Gears
+Added an electrotine recipe for Redstone Servos
+Added an electrotine recipe for Machine Blocks
+Added a recipe to upgrade Dense Junkboxes into Caches
+Added a recipe to make Cryotheum Dust with Gelid Cryotheum
+Changed the Triple Compressed Cobblestone -> Stone Bricks recipe to require an Induction Smelter, but now it give 2 stacks
+Re-balanced my nugget boosting smelting recipes
+Processing XP Ore now uses 2,000 RF (was 4,000)
+- Now makes 100 mB of Liquid XP from OpenBlocks (was 50 mB of Thermal Expansion's Essence of Knowledge)
+
+
+Tweaked the recipes for cheese
+- Pyrotheum now uses more durability (30 instead of 16) to convert 8 buckets of milk into 16 cheese
+- Lava now uses more durability (21 instead of 6) to convert 4 buckets of milk into 6 cheese
+- Fire Charges now makes 4 cheese from 2 buckets of milk, but requires 4 fire charges (was 3)
+Nether Quartz tools no longer require white dye
+Removed the non-bread recipes for Top and Bottom Buns
+The Miniaturization Field recipe now uses the oredict for Cobblestone
+MDF Boards now only require 1 Compressed Sawdust per board (was 2)
+The Stone Crafting Table now crafts directly rather than requiring you to make crafting plates first
+Moved the Merialces Hide armour recipes to the Basic Worktable
+Added slime dye versions for all slime ball variants
+- Rosin and Tar turn into Artificial Dyes
+
+
+Added a recipe to craft Tanks in a Miniaturization Field
+Added a recipe to convert Gravel into Machine Walls (27 gravel for 8 walls)
+The Stone -> Machine Walls recipe now requires 9 stone and makes 9 walls per craft
+The Solarskin Repair recipe now only accepts Electrotine (also accepted Redstone before)
+Removed the tank requirement from the Scientist's Workstation recipe
+Tweaked the recipes for Pristeel
+- Now requires 3 Iron and 3 Shards to make 6 Ingots (was 2/1 for 2) and uses 12 durability (was 5)
+- Added an alternate recipe that uses 1 Iron and 1 Crystal to make 1 Ingot
+
+
+Residuum can now be turned into Silicon
+Processors no longer require Lava to craft
+Refined Storage's Wrench no longer needs an artisan table to be crafted
+Reduced the output of Quartz-Enriched Iron to 2 (recipe adjusted as well - now uses 2 iron, 2 nether quartz, and 16 cutters durability (was 40 burner durability))
+- Added an Induction Smelter recipe
+Re-balanced most Refined Storage recipes
+Storage Blocks and Disks can now be recycled
+
+
+Tweaked the Long Fall Boots recipes
+- Now accepts Salvaged augments
+- Added a recipe that uses Citrate Enhancement
+Changed the recipes for the Cybernetics Scanner
+- Default recipe now requires Cybereyes (like the original recipe)
+- The Human Eyes recipe has been moved to the Workstation and its cost increases slightly
+- Added a recipe that uses Scannable's Scanner in place of Cybereyes
+Tweaked the DIY Melon Circuit recipes
+- Using Glowstone Dust is now its own recipe, and requires a Basic Worktable
+- Upgrading it to a Basic Circuit now requires Glowstone Dust (was Salt) and Electrotine (was Redstone or Electrotine)
+Changed the Basic Circuit recipes
+- Now requires Redstone (was Redstone or Electrotine)
+- As stated above, the DIY upgrade recipe has been changed
+
+
+The Blazing Clay recipe that uses Pyrotheum now has the same item shape as the Lava version
+Enchanted and Cursed Hearts now require a Molecular Rearranger in the center rather than various foods
+- Cursed Hearts now only require 4 Heart Dust (was 8)
+Added a recipe to mortar crush Bones into Bone Meal
+Added recipes to mortar crush various plants into Salt
+Added recipes to convert Glacidus items into Overworld items:
+- Eukeite can be processed into Lapis Lazuli and Sapphires
+- Antinatric Stone can be processed into Cobblestone
+- Glacium Buckets can be converted into Cryotheum Buckets
+- The following items can now be melted into Gelid Cryotheum:
+-- Crysium Ore (35 mB per block)
+-- Opesium (100 mB)
+-- Opesium Ore (150 mB)
+-- Glacidite Fragment (50 mB)
+-- Glacidite Ore (75 mB)
+
+
+Moved all Capsule recipes to the Design Table
+- Excludes upgrades as I am too lazy to deal with all that NBT data. Maybe in a future.
+- The Capture Base now requires a Chisel instead of File
+Capsules are now upgraded with Infused Enderpearls instead of Popped Chorus Fruit
+The Basic Farm capsule now uses fluid instead of a water bucket
+Capsule crafting recipes are no longer visible until you unlock the Designing research
+Added recipe names to capsule crafting recipes
+Crafting Basic Circuits no longer accept Redstone
+Soups & Stews now use a Pan instead of a Burner
+Pumpkin Bread, Pie, Stew, and Cake now accept a Pumpkin or Pumpkin Mash
+Pizza now gives 8 slices per craft (was 6)
+
+
+Reduced the amount of Water and Ice needed to make an Ice Cream Sandwich to 500 mB and 1 (was 4,000 mB and 4)
+The Mushroom Conversion recipes now use a Wooden Mortar and Dye (was any seed)
+Increased the water cost of the Mason Table to 1,000 mB
+- Increased Basic Worktable fluid capacity to 1,000 mB and the Basic Workstation to 2,000 mB
+The Energized Ender Pearl recipe for the Capture Base no longer requires a Hammer
+- Now requires a Sticky Piston
+- Now requires an Emerald Gear instead of Redstone
+- Increased file damage to 15 (was 5)
+- Can now be crafted in a Designer's Worktable
+The Carpenter's Worktable no longer needs water to craft
+
+
+The Basic Workstation now uses the chestWood oredict (was chest)
+Flint now requires 2 Gravel to craft instead of 4
+The Mason's Workstation now requires an Artisan's Chisel (in addition to the Hammer) to craft
+All 3 burgers now accept Lettuce or Cucumbers
+Changed the Bun recipes to be a tad better
+- Still not what I'd like them to be, but it's about as good as I can get it
+Mushroom Stew now accepts any Mushroom
+Natura's Mushroom Stews now use the same Chef Table recipe as vanilla's
+
+
+Refinind Springwater into Water now gives Clay instead of Mud
+- Buffed chance to 35% (was 25)
+Added a refining chain for Coal (in a Redstone Furnace with the Pyrolytic Conversion augment):
+- Concentrated Coal (or Coal Coke) can be converted into Refined Coal
+- Refined Coal can be converted into Pure Coal
+- Crimson Coal can be converted into Refined Coal, but rewards extra Creosote at the cost of double the RF
+- All Coal types can be processed into greater quantites of Liquifacted Coal than Pulverized Coal in a Magma Crucible
+
+
+Added more recipes that use the Wooden Mortar
+Added recipes to convert black and blue flowers into their respective dyes
+Replaced Nether Quartz with Dust in Sand crushing recipes
+Webs -> String now gives 1 String (was 2)
+Reduced the RF use of the following recipes:
+- Crysium -> Cryotheum: 4,000 (was 8,000)
+- Crysium Ore -> Cryotheum: 8,000 (was 12,000)
+- Crysium Block -> Cryotheum: 16,000 (was 24,000)
+
+
+
+
+
+Research changes
+
+Added hints for every research in the game
+Moved all Artisan Tool unlocks to a new research
+- The only exception to this are the Hammers and Cutters, which still unlock with the Basic Worktable research (with said research now being named "Specialized Crafting")
+All Artisan's Worktable recipes now have the proper locks in place
+- This prevents you from looking up all of them in JEI, as the point is to discover things as you go along
+- This also fixes several recipes that were rendered uncraftable because I changed research without updating the recipe
+- Removed all Game Stage locks as the research locks render them redundant
+
+
+Added research for Capsules
+Added research for Backpacks
+Added research for recycling recipes
+Added a research to unlock the Scannable mod
+The Excavation research now unlocks Hammers and Excavators (in addition to the Ore Excavation mod)
+Renamed "Base Defenses" to "Automated Defenses"
+Renamed "Smelting Upgrades" to "Upgraded Smelting"
+Optimized researches that accept fluids
+- Will now accept any container with the fluid in it (instead of just buckets)
+Renamed "Basic Smelting" to "Improved Smelting"
+- No longer unlocks Furnaces. Icon changed.
+Renamed "Improved Smelting" to "Enhanced Smelting"
+
+
+
+
+
+Misc changes
+
+Optimized all the scripts
+- Will probably make the game load a tad faster, but it's mostly a backend change
+Finally migrated my ContentTweaker items to use lang files instead of scripts
+- This means that you can now translate the item names into any language (that Minecraft 1.12.2 supports), and I can said translations to the pack. If you wish to do so, let me know on the Discord or in the comments. I'll help you put it into the correct format if needed.
+
+
+Reduced starting rations to 3 (was 6)
+Changed the starting Left Cyberarm to a Right Cyberarm
+The Compact Machines dimension will always be chunkloaded
+Assigned scanning colours, rarities, and OreDict entries to all the ores in the modpack
+Overhauled many of the triggers for various messages printed in chat as players progress
+- Mostly a back-end change, but it'll reduce the amount of spam you get when starting (and be more logical overall)
+
+
+Reduced HUDLens float
+Re-enabled the Diamond Capsule (7x7 range)
+Residuum and Opesium can now be turned into RF
+Replaced the RPG-HUD info quest with one about Emergency Items
+Replaced Wither summons with Elder Guardians in the regular invasion summons
+Industrial Foregoing machines no longer use Tesla Core Lib machine frames
+Added all modded ores to the Laser Drill Miner
+- The only exceptions are Dense and Super Ores as I feel like it'd be a tad unbalanced
+
+
+Re-enabled Redwood Trees and Heatscar Spiders
+The world template will now generate a new icon whenever it's loaded
+Natura's crafing tables now have the workbench OreDict entry
+Reduced the amount of Pulsaton Ore that spawns
+Small Crystals from Glacidus now generate in the dimension
+- Scannable's Scanner considers them a Rare Ore
+
+
+Bone Amour now requires Defense 3 (was 0)
+Modular Scuba Armour now requires Defense 7 and Gathering 3
+Impskin Armour now has skill locks (requires Defense 4. For reference, Leather requires 2)
+Merialces Hide now has the leather oredict entry (and can be converted into Leather)
+Fixed the level requirements for Project Red gear not matching their intended progression (slightly above iron)
+Disabled Project Red's Copper, Tin, and Silver oregen
+Disabled Satchels from Thermal Expansion
+
+
+Players now get a hint about capsule crafting recipes after obtaining a base or capsule
+Changed the internal name for DIY Melon Circuits
+- This will erase any existing ones in the world, so if you are playing an old world you should've made a new one. But if you insist, be sure to either write down and cheat in or re-craft the ones you already had.
+
+
+Integrated Glacidus' content much better (recipes, powergen, research, etc.)
+Added OreDict entries to the ores that were missing them
+- This allows Scannable to find said ores, and the player to view them all by typing $ore into JEI
+
+
+Removed Artisan's Flint Tools
+Removed Artisan's Lead Tools
+Fixed Artisan Bone Tools having the wrong durability
+Ruby, Sapphire, and Peridot artisan tools are now shiny
+The following items can now be used to make Artisan's Tools:
+- Pristeel
+- Underground Wood
+- Antinatric Stone
+- Eukeite
+- Glacidite
+- Vulcanite
+
+
+
+
+
+Mod changes
+
+Added Better Biome Blend
+Added CensoredASM
+Added Clumps
+Added ConfigAnytime
+Added Entity Culling
+Added Equipment Compare
+Added Extra Utilities Fixes
+Added FancyMenu
+Added First Join Message
+Added Integration Foregoing
+Added Nothirium
+Added Particle Culling
+Added Performant
+Added Potion Icon Remover
+Added Reach Fix
+Added Scannable (suggested by Gold on the Discord)
+Added Tesseract
+Added Vanilla Anvil Repair
+
+
+
+Replaced Anvil Patch - lawful with Fixed Anvil Repair Cost
+- Repair cost is now always 1 level
+Replaced Classic Bars with Armor Points++
+Replaced FoamFix with VintageFix
+Replaced Oh The Biomes You'll Go with Oh The Biomes You'll Go Fixes
+- This is a fork of the mod that fixes several minor issues (a few textures and removing unused content)
+- This fork removes Tamrelite, Pendorite, Latharium, and Kasai items. They have been removed from the pack's progression due to this.
+- Stone Sticks also got removed, so the few changes I made to them are now present on Stone Sticks from Stone Crafting Table
+Replaced HeartDrops with Rally Health
+Replaced PackedUp with Improved Backpacks
+Replaced Phosphor with Alfheim Lighting Engine
+Replaced *many* awesome tweak mods with Universal Tweaks
+- Devs of that mod are based af for shoving them all into a single one
+
+
+Removed Artisan's Automation
+- Doesn't even work as far as I can tell   
+Removed Bloodmoon   
+Removed Bountiful   
+- Didn't add much, nor did it fit the theme.   
+Removed Clay WorldGen   
+- CoFH World does it already   
+Removed CompatSkills
+Removed DeathQuotes
+Removed DupeFix Project (kept crashing the game)
+Removed ElecCore
+Removed ErdbeerbaerLP
+Removed Fantastic Lib
+Removed Faucets & Filters
+- The mod dev deleted it for no reason :c
+Removed Infinity & Mending Unnerf
+Removed Initial Inventory
+- I've been using Custom Starter Gear for a while now and forgot to remove this lol
+Removed Kiwi
+Removed Login HP Fix
+Removed MDXLib
+Removed MMD OreSpawn
+Removed MMDLib
+Removed Mending Gems
+Removed Mixin Compatibility
+Removed Nether Metals
+Removed Ocean Floor
+Removed Pyramid Plunder
+Removed RPG Hud
+Removed Tiered Magnets
+- Thermal Innovation and ReWIRED do the same thing better
+Removed Void Fog
+- Made it really hard to see in the Alien Jungle, and I still don't know why I installed it in the first place lol
+
+
+
+Updated Armor Points++
+Updated Artisan's Worktables
+Updated Athenaeum
+Updated BdLib
+Updated CensoredASM
+Updated Controlling
+Updated ConfigAnytime
+Updated CraftTweaker
+Updated Entity Culling
+Updated FancyMenu
+Updated ForgeEndertech
+Updated HammerLib
+Updated JourneyMap
+Updated Konkrete
+Updated LootTweaker
+Updated MDXLib
+Updated MixinBooter
+Updated Open Terrain Generator
+Updated Placebo
+Updated ReAuth
+Updated Recurrent Complex
+Updated RenderLib
+Updated Storage Drawers
+Updated Village Names
+Updated WanionLib

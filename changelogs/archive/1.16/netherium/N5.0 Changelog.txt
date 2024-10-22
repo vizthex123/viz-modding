@@ -1,0 +1,181 @@
+v5.0 Changelog
+
+ 
+
+Hopefully made the datapack configs actually load into the game
+- Have I mentioned how much I hate this system? I *really* hate this system.
+
+ 
+
+Re-balanced power generators from Powah
+- Furnators & Magmators now store less
+- Magmators now transfer a tad more
+- Starter reactors now generate 200 FE/t (was 150)
+- Solar Panels now store vastly less. Starter panels now generate 15 FE/t (was 10)
+- Energy Cells have been reduced by quite a bit (moreso at higher tiers)
+- Energy Hoppers & Player Transmitters now match the rates of Energy Cells, with charging speeds being half the transfer rate
+- Energy Dischargers have stats equal to half those of Energy Cells
+- Energy Cables now have the same transfer caps as Energy Cells. Energy capacity is vastly lower.
+- Ender Gates now transfer & store 1/2 the power of their cable counterparts.
+- Tweaked the transfer & storage of Energizing Rods a bit
+
+ 
+Renamed the "Hellrasier" reputation tier to "Boneshaker"
+Tweaked some loot bag chances/rewards
+Added an otherworldy tribute quest for submit eggs
+Nerfed axe damage, increased Netherite Sword to 10
+Added a new recipe to make Mushroom Stew using the forge:mushrooms tag
+The Magma + Blaze Powder = Magma Cream recipe now uses 500 mB (was 250)
+Added 2 new recipes for Magma Cream
+The recipe to make Raw Porkchops with Rotten Flesh and 1 of each Wrap now uses 2 Rotten Flesh (was 1)
+Added the minecraft:roots tag to some of BYG's roots
+Added more upgrade recipes
+- Fixed the black hole ones I broke
+
+ 
+
+Re-balanced Powah
+- Re-did my changes from v4.0 since the stupid game didn't save them:
+- Solid fuels generate less power (Coal makes 16,000), Magma and Blazing Blood can be used for Thermo Generators. Reduced Blazing Crystal Blocks to 2,500°C (from 2,800°C)"
+
+- Reduced the capacity of all Batteries (Transfer rates are now 1/100 of their capacity)
+- Magmators now generate far less, but accept liquid magma and blazing blood
+- Furnators now generate a bit less
+- Solar Panels now generate a bit more
+- Thermo Generators now generate a bit more, and you can use Purified Water (-5°C) and Soul Water (5°C) as a coolant
+- Reactors generate an transfer a tad more, but store less
+
+ 
+
+Reduced the burn time of Dried Kelp to 400
+Copied the Advancement Plaque settings from my Alchemical Artistry pack
+Both kinds of flesh wrap now have a 30% chance to drop from milled wallcreep
+Changed the polished basalt/blackstone recipes for the millstone to use 4 instead of 3
+- Now uses 2 Cogwheels
+Added a recipe to convert Nether Bricks back into Netherrack
+Buff the Lapis gain to 50% chance for 8 in the crushing recipe for Crying Obsidian
+You can now get an extra Powdered Obsidian when crushing Crying Obsidian
+Removed the water_provider tag from Abscess Danishes
+Added a recipe to mix Burning Blossoms into Lava (makes 50 mB per flower)
+Added recipes to convert new items from Comfortable Nether into Lava:
+- Liquid Grimdrop + 2 Grimdrop Stem: Makes 250 mB, requires heating. Not sure how to get it yet, so this is subject to change. I did add a recipe for Liquid Grimdrop though, just in case it's not currently obtainable and/or is rare.
+- Flaming Abscess: 125 mB
+
+ 
+
+Added a recipe to mill Shroomlight into Glowstone and Brown/Red Mushrooms
+- You won't get fungi this way (and the chances for mushrooms and glowstone are reduced), but it lets you process them earlier - if you want to.
+Changed the hellraiser reputation gain from "Repairs" to 5
+- A new quest to gather Wallcreep now gives 4 hellraiser reputation
+
+ 
+Added a recipe to convert flesh into crimson stems
+Reduced the bones > warped stem output to 2
+The recipe to make 2 Crimson Wraps from 1 Golden Warped Fungus and 1 Warped Wrap now gives 2 Warped Wraps
+Added a recipe to convert Tangleweed into 100 mB of Water
+Zinc recipes for Andesite Alloy now give 2 Alloy
+
+
+
+
+Updated the Stoneborn resource pack
+Added the Embellished Stone (Advancement Plaques) resource pack
+Added the Better Hearts resource pack
+- This is intended to be used with the new Sustain Yourself mode, as the vanilla hearts look pretty bad
+
+ 
+
+Replaced Simple Discord Rich Presence with DiscordRichPresence
+
+ 
+
+Added Advancement Plaques
+Added FastSuite
+Added Flat Bedrock
+Added Item Stitching Fix
+Added Property Modifier
+Added Sapience
+Added Sodium Reforged
+
+ 
+
+Updated Forge
+
+ 
+
+Updated Hardcore Questing Mode
+- This should fix the bugs that prevented some quests from working, and hopefully finally fix that one broken quest
+
+ 
+
+Updated Advancement Plaques
+Updated AppleSkin
+Updated Architectury API
+Updated BASE
+Updated Better Advancements
+Updated Biome ID Fixer
+Updated Blueprint
+Updated Bookshelf
+Updated Caelus API
+Updated Champions
+Updated Cloth Config
+Updated CodeChicken Lib 1.8.+
+Updated Collective
+Updated Comfortable Nether
+Updated ContentTweaker
+Updated Controlling
+Updated CraftTweaker
+Updated Create
+Updated Create Crafts & Additions
+Updated CreateTweaker
+Updated Cucumber Library
+Updated Curios API
+Updated Diet
+Updated DisenchantingForge
+Updated Durability101
+Updated Equipment Compare
+Updated FPS Reducer
+Updated FTB Backups
+Updated FTB Library
+Updated Flat Bedrock
+Updated Flywheel
+Updated ForgeEndertech
+Updated GraveStone Mod
+Updated Industrial Foregoing
+Updated Iron Chests
+Updated Iron Jetpacks
+Updated Item Collectors
+Updated JAOPCA
+Updated JEI
+Updated JEITweaker
+Updated JourneyMap
+Updated Just Enough Items
+Updated Just Enough Resources
+Updated Kotlin for Forge
+Updated Large Ore Deposits
+Updated Mantle
+Updated Max Health Fix
+Updated MixingBootstrap
+Updated Nether Portal Spread
+Updated Netherrocks
+Updated No Default Auto-Jump
+Updated Oh The Biomes You'll Go
+Updated Patchouli
+Updated Placebo
+Updated Property Modifier
+Updated Repurposed Structures
+Updated SimpleCore API
+Updated Sophisticated Backpacks
+Updated Storage Drawers
+Updated Storage Racks
+Updated Structure Gel API
+Updated Structurize
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib
+Updated Tinker's Construct
+Updated Valhelsia Core
+Updated Valhelsia Structures
+Updated Water Source
+Updated Waystones
+Updated YUNG's API
+Updated ZeroCore 2

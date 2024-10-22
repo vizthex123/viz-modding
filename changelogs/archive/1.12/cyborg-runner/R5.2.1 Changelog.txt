@@ -1,0 +1,18 @@
+v5.2.1 Changelog
+
+
+Fixed research not loading properly
+Should've fully fixed template once and for all
+Changed the recipe for the PSD
+- Replaced 2 Bone Blocks on the sides with Bones
+Added a proper difficulty curve:
+- For the first 5 minutes, the game will be in Easy mode.
+- After 10 minutes pass, it will go to Normal
+- After 15 minutes, it will go to Hard mode (where it will stay)
+
+
+Tweaked the first couple of IPC waves
+- The first one now spawns 1 Cyberzombie and 2 Zombies
+- The second now spawns 1 Cyberzombie and 2 Skeletons
+- Removed the Ghast from the 3rd wave, now spawns 2 Cyberskeletons and 1 Cyberzombie
+- All of them now spawn a few blocks away from the player

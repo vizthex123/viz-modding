@@ -1,0 +1,61 @@
+Bv2.0 Changelog:
+
+
+Increased Bank limit from 5 to 10 Million (should've been like that from the start)
+
+Made Spawn Temple only generate the Fountain
+- If I could just reduce the size of the temple I wouldn't have done this, but it's currently too big.
+Changed a few other configs
+
+
+
+Added Delivery (finally got that store in!**)
+- For now it's pretty basic, but I will add more things later.
+Added Workbench Plus
+- Added KorgeLin
+Added Lots of Stuff
+Added Lots of Stuff - Biome O' Plenty support
+Added IronFurnaces
+Added Treasure2
+- Added GottschCore
+Added Refined Relocation
+- Modern Logistics Pipes is terrible, so I'm replacing it with this.
+Added CleanView
+Added Back Tools
+Added Set Bonus
+- Added Fantasic Lib
+Added Don't Even Axe
+Added Solar Panels Reforged
+Added Ender Compass
+Added Custom Stuff 4*
+Added Artisan's Worktables*
+- Added Athenaeum*
+-- This is meant for a sorta of "profession" system I'll work on. Where you have to have certain tiles to craft specific items (like useing the Tanner's Bench to make Leather form Rotten Flesh and Rabbit Hide)
+
+
+
+* Currently disabled until I can get the recipe scripts to work.
+
+ ** WIP because I'm still figuring out the script-writing for it.
+
+
+
+Removed Logistics Pipes
+Removed AI Improvements
+- Kinda didn't do anything it seems like. Did seem to help reduce tickrate lag after removal though.
+Removed Elemental Dimensions
+- If I (or any of you) can figure out how to make it not cause immense tickrate lag, I'll re-add it
+Removed Chunk Pregenerator
+- Honestly not super useful for singleplayer.
+Removed Forgiving Void
+- Not super useful since few dimensions lead into the Void
+Removed My Little Mod Grinder
+- Extra Utilities and other mods add the same things, so this one is just redundant.
+
+
+
+Disabled RF Tools Dimensions
+- Nice to have, but for now it might be one of the causes of tickrate lag
+Disabled Artsan's Worktables & Athenaeum
+- Will be re-enabled after I fix the recipes, but for now they're just doing nothing and increasing load times.
+-- Disabled scripts

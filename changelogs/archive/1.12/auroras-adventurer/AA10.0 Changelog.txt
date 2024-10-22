@@ -1,0 +1,72 @@
+v10.0 Changelog - Finality
+
+
+I plan for this to be the final big content update (might do patches & whatnot) so I can fully finish this modpack. So, onto the content:
+
+
+Should've added a button to the main menu that takes you to the Discord
+
+
+Finished the Botania questline
+- The mod has a ton of content, but the questline has covered the main ones so it's fine in my eyes
+Finished the Elementaristics questline
+- This mod is kind of like Thaumcraft combined with Botania and Ars Magica. Lots of content & lots of customizability, so there's only a few quests.
+
+
+Fixed issue #16 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/16)
+Fixed issue #17 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/17)
+Fixed issue #18 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/18)
+Fixed issue #19 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/19)
+Fixed issue #20 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/20)
+Fixed issue #21 (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/21)
+Added all XL Food seeds to the Bioreactor
+Added Lavender & its seeds to the Bioreactor
+Added Silkberries to the Bioreactor
+Added Weeping Willow Sap to the Bioreactor
+Added saplings from The Aether to the Bioreactor
+Added saplings from The Aurorian to the Bioreactor
+Added saplings from Traverse to the Bioreactor
+Added saplings from The Twilight Forest to the Bioreactor
+Added some Mystical World items to the Bioreactor
+
+
+Added a recipe to convert Mana Essence into Mana (Botania) {you actually just turn it into a 2 Blacker Lotuses since I can't make it work in the pool}
+Hid several items in JEI
+- They're all just technical blocks/items that ultimately spam the UI
+
+
+
+
+Updated Forge
+
+
+Updated Buildcraft
+Updated ChanceCubes
+Updated CraftPresence
+Updated Demagnetize
+Updated Electroblob's Wizardry
+Updated Fanatastic Lib
+Updated FoamFix
+Updated ForgeEndertech
+Updated FTB Quests
+Updated MixinBootstrap
+Updated Patchouli
+Updated RandomPatches
+Updated Set Bonus
+Updated The Aurorian
+Updated UniDict
+Updated Village Names
+Updated Water Strainer
+Updated CraftPresence
+Updated Item Damage Rebalancer
+Updated Village Names
+Updated Actually Additions
+Updated LibraryEx
+Updated NetherEx
+Updated Simply Jetpacks 2
+Updated The Aether
+Updated Village Names
+Updated GunpowderLib
+
+
+Removed Better Portals

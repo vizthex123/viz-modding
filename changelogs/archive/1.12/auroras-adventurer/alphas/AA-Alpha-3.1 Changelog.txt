@@ -1,0 +1,8 @@
+A3.1 Changelog:
+
+These are dependencies of mods I installed last update. That's about it.
+
+Added McJty Lib
+Added Valkyrie Lib
+Added Shadowfact's Forgelin
+Added Shadow MC

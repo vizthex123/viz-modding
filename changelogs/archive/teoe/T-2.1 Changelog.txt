@@ -1,0 +1,59 @@
+v2.1 Changelog - Many Quests, Many Changes, Many Fixes
+
+Re-enabled the use of non-tinker bows
+Worked on Logistics Pipes quests more
+Fixed "Watch of Flowing Time" quest (Should be able to submit it now)
+Deleted Loot Exchange questline, replaced with recipes
+Disabled Tome of Knowledge crafting
+-Added different recipe in different crafting station (The item used will have more uses later)
+
+
+
+Recipe Changes
+
+Changed recipe for Philosopher's Stone
+Changed recipe for Transmutation Table
+Changed recipe for Transmutation Tablet
+Changed recipe for both vanilla Golden Apples
+Changed recipe for Hardcore Wither's Starry Apple
+Added recipes for all HQM Bags
+Added recipe for an item from Avaritia
+
+
+Reward Changes
+
+Changed rewards for "Machine Basics"
+Changed rewards for "So Much EMC..."
+Changed rewards for "Hidden Expensive Items"
+Changed rewards for "OP Armour!"
+Changed rewards for "Infinite Protection"
+Changed rewards for "Neutronium"
+Changed rewards for "Singularity Crafting"
+Changed rewards for "(Actual) INFINITE COSMIC POWER!"
+Changed rewards for "MOAR FUEL!"
+-Changed description
+Changed rewards for "More...Storage..."
+-Changed description
+Changed rewards for "Philosopher's Stone"
+Changed rewards for all Collector/Relay quests
+-Changed from giving back resources to giving Revward Bags (Of varying Tiers)
+Changed rewards for "Infinite Red Matter"
+Changed rewards for "Portable Transmutation"
+Changed rewards for "Portable Transmutation"
+Changed rewards for "Infinity..."
+
+
+
+Mod Edits
+
+Added Armor Overlay by TheOldOne22
+Added StatusEffectHUD by bspkrs, jadedcat
+-Added bskprs Core by bspkrs
+Added MineTweaker by StanH
+-Added ModTweaker by jaredll08, SnowShock35, Yulife
+Added ProjectE by sinkillerj
+-Added ExtraE by solidDoWant
+--Added Thaumic Equivalence by Lilylicious
+
+
+Removed Common Sense Food

@@ -1,0 +1,41 @@
+v0.5 Changelog - Reputable Update
+
+ 
+
+Renamed HQM Book
+Changed Iron Coin recipe (needs 2 IC2 credits instead of 8, like it's supposed to be)
+Reduced Pixel rewards from Bags
+Disabled renames for HQM Bags (Renames all of them at once to the same thing, not sure how to fix)
+Added a Universal Trade Station to the Main Building (meant to do this in 0.4....oops)
+Removed the 2,400 Crafts from the ATM (not sure why it was there...)
+Removed ProjectE
+- Not really any need for it
+-- Removed ExtraE
+Added Ore Processing wing
+Built (basic) quarry site
+- To power this, use the Tesseract provided at the start. Hook it up to the TE or EIO Capacitors in the Power Room (which is also explained in the book)
+-- There will be multiple of these in the future, for now just the one though.
+Slightly reorganized the Power Room
+Added ME Drive and 4 1k Cells to starting resources
+Working on changing all Pixel recipes to reflect lore
+Disabled/removed a few tooltips
+Added tooltips to all Pixels and Minecraft Money items
+Started on "Magic" questline
+Renamed "Money Pouch" to "Pixel Pouch"
+- Removed tooltip
+Added a new reputation - "Big Business". These companies deals with anything money-related, and are mostly found in the "Capitalism!" questline. It's rather difficult to progress through their ranks though.
+Changed a few reputation rewards
+Changed a couple quest rewards
+
+Added NEI Mystcraft Plugin
+Added Mystcraft
+Added AgriCraft
+Added Blood Magic
+
+Removed IC2 Classic Version - something broke so it doesn't work anymore
+Added IndustrialCraft 2
+- Replaced MFE in starting area with MFSU
+
+ 
+
+Added 7 new quests

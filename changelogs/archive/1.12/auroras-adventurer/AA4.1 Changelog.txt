@@ -1,0 +1,9 @@
+v4.1 Changelog - Left Behind Extras
+
+Added recipes for Storage Crates (Actually Additions) and their upgrades
+Added set bonuses to Constantan and Invar armour
+
+Started working on the Blood Magic quests
+
+Added the final quest to "Enemy Simulation" (Deep Mob Learning)
+Reduced rewards from "Pristine Souls"

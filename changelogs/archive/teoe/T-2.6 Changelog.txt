@@ -1,0 +1,17 @@
+v2.6 Changelog - Dragon's Quests!
+
+Added 11 Quests to "Dragons?!"
+Changed some Reward Bag stuff
+Changed a few quest rewards
+Changed EMC of Diamond Dust
+-It's now 0 to prevent you from turning Diamonds to Dust with just ProjectE
+
+
+Added 11 Quests total
+
+
+Mod Edits:
+
+ 
+Added Looking Glass by XCompWiz
+Added Chisel by tterrag1098, Drulkus, and Minecreatr

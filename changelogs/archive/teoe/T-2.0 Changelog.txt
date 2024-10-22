@@ -1,0 +1,11 @@
+v2.0 Changelog - Many Changes Update
+
+Removed ProjectE and all of its addons. (Too OP and making my testers not play the pack properly)
+-All quests relating to ProjectE are removed too. 54 less quests for you guys to do.
+Added Industrial Craft 2 (FINALLY they put it on Curse!)
+-This also (somewhat) makes up for the lost quests due to removing ProjectE
+Added ElectroMagic tools (Addon for IC2)
+Added CompactSolars (Addon for IC2) [Wish I could get Advanced Solars, that one is so much better, but it's not on Curse
+Started on IC2 Questline (ElectroMagic tools will come later, I want to finish Thaumcraft's first)
+
+Added 12 quests total.

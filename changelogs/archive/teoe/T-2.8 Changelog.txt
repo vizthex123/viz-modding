@@ -1,0 +1,125 @@
+v2.8 Changelog - The Mod Update
+
+
+
+This update mostly changes around mods, but it does add a few quests
+
+
+
+Renamed a few reward bags rewards
+- Minor changes to loottables
+Removed 2 quests - "Shop Start", Shop Questline, and "Unlocking: Shop"
+Added 6 quests total (All in the Aether questline, I'm working on getting through the Aether to make the rest)
+
+
+
+Removed Mods:
+
+
+FoodDetails - AppleCore does the same thing
+Blood Baubles
+WailaAddonBC
+
+
+
+
+
+Mods Added:
+
+Advanced Solar Panels
+AdvancedVanilla
+Aroma1997s Dimensional World
+BetterStorage
+Bigger Crafting Tables
+BuildcraftCompat
+Calculator
+CartFix
+Chest Transporter
+Chunk Animator
+Controlling
+Doomlike Dungeons
+Engineer's Toolbox
+ExtrabiomesXL
+FTBLib
+FloatingRuins
+Food Expansion
+Gany's End
+Gany's Nether
+GraviSuite & ASP + GS Patcher
+Hopper Ducts
+HungerOverhaul & AppleCore
+Liquid Dirt
+Mekanism
+Mekanism Generators
+Mekanism Tools
+Modular Powersuits
+Mouse Tweaks
+Pam's Harvestcraft
+Power Converters 3
+Practical Logistics & SonarCore
+Progressive Automation
+Railcraft
+Reinforced Stone Recipe Adder
+Reliquary
+Runic Dungeons
+Snad
+Solar Flux
+Soul Shards: The Old Ways
+StartingInvetory
+Steve's Carts 2
+Storage Drawers: Misc Pack
+Super Crafting Frame
+Super Solar Panels
+Thaumic Energistics
+Torcherino
+Treecapitator
+Tubes!
+Vending Machines Revamped
+Vending Block
+WAWLA
+Wireless Crafting Terminal
+
+
+
+
+
+Updated Mods:
+
+AppleCore
+Avaritia
+AvaritiaAddons
+BiblioCraft
+BiggerCraftingTables
+BuildCraft
+ChanceCubes
+ExtraCells2
+FastCraft
+Logistics Pipes
+Mystcraft
+SaltyMod
+Storage Drawers
+Super Solar Panels
+ThaumOres
+Thaumic Energistics
+WanionLib
+
+
+
+
+
+Configs:
+
+Editied Hunger Overhaul config, it isn't as painful to use now
+COMPLETELY overhauled Simply Jetpacks config
+- It's much more balanced now (or at least, should be)
+
+
+
+
+
+Scripts:
+
+Ripped off some scripts from my other packs
+Removed recipes that use Currency items
+- Added more recipes for Loot Roulette items
+-- Still figuring out what to replace them with

@@ -1,0 +1,242 @@
+Beta 3 Changelog:
+
+This will be the last beta before release, so hopefully it's good lol
+
+
+Main changes:
+
+Swapped trivia pack for the one I've published so updates are easier
+Implemented all changes from v1.2+ of my Extra Data Models [resource pack](https://github.com/vizthex123/ExtraDataModels/blob/main/changelog.md)
+Implemented all changes from v1.3+ of my Extra Data Models [data pack](https://github.com/vizthex123/ExtraDataModels/blob/main/changelog.md)
+- Modpack-only changes:
+-- Warden Predictions can now give into 3 Disc Fragments
+
+
+Added a few more loading screen tips
+Finally got custom ore variations working
+- Each ore (and stone type) from mods that don't have native support for Excavated Variants now has variations (excluding Xychorium since the textures aren't working rn)
+- A few don't have standard tags by default, so I had to add them manually. I did ask the dev why it's not working, so hopefully it can be fixed before release
+
+
+Added the rest of my Sawdust recipes
+Added Tiny Scrap for Iron and Gold
+- All Shredder recipes that output Nuggets now give Tiny Scrap
+Imported Quicklime from The Essence of Everything: Quintessence
+- Has the same uses as it does in that pack in addition to being used in the Rusty Barrel -> Metal Barrel recipe
+
+
+Finalized my custom collapsible entries
+- Added one for Hollow Logs
+- Added everything that was missing to all of them
+- Deleted the one for Ancient Debris
+
+
+
+
+
+Bugfixes:
+
+Fixed the typo in "Transmuter"
+Fixed Rose Gold Blocks not being uncraftable
+Fixed Glow Lichen Fungus having its tags removed
+Fixed the recipe for Magnolia Planks using the wrong tag
+Fixed Lapis Lazuli's Dye Extractor recipe not having the proper duration
+Fixed Galosphere's Silver Ingot being obtainable from smelting/blasting
+
+
+
+
+Balance changes:
+
+Reduced the spawnrate of Deep Resonance crystals
+Most Shredder recipes now require 4,000 RF
+
+The Dye Extractor now processes items in 10 seconds by default (was 15)
+- Mob drops take 12.5 seconds
+- Minerals take 15 seconds
+
+Adjusted the RF cost for Dye Extractor recipes
+- Mob drops now use 1,600 (was 1,000)
+- Minerals now use 2,400 (was 2,000)
+- Xychorium now uses 3,200 (was 4,000)
+
+
+
+
+
+Quest changes:
+
+Added more quests
+Reduced the Shop Membership quest to $100 (was $500)
+
+
+
+
+
+Recipe changes:
+
+Added a recipe to craft torches with Coal Coke (and one for Tar)
+Torches now use a custom tag for their fuel source (allows (char)coal, bitumen, torch spores, glow lichen, and glow lichen fungus to be used in a single recipe)
+Added a Reprocessor recipe for Sculk Sensors (25% chance to give an Echo Shard)
+Pink Salt Shards now have a separate Gunpowder recipe
+Recycling the Silver Lattice now gives Silver Dust
+Dust smelting recipes are now part of the regular smelting recipes
+Changed the recipe for the Incomplete Processor
+Added a recipe to convert Silver Birch Planks into Birch Planks
+
+
+Removed redundant recipes for dyeing wool
+Added a recipe to make Flawless Certus Buds
+Added recipes to dye 8 Wool at once in a Amalgamation Station
+Added a Reprocessor recipe to convert Fallen Stars into Nether Stars
+Apples, Nether Wart, and Redstone can now be used to make Red Dye
+Added a recipe to make Blue Dye with Light Blue Dye and Black Dye
+Torch Spores can now be used to make Yellow Dye
+Added Transmutor recipes for Rose Gold Blocks
+Separating Glow Ink Sacs now gives 3 Dye
+
+
+Refining Acid now uses 250 mB of Acid (and gives 2.5 XP)
+Added a recipe to refine Ad Astra's Oil into Bitumen
+Moved disc fragment recipes to the Amalgamation Station
+Moved the Ender Fragment recipe to the Amalgamation Station
+Added an Amalgamation Station recipe for MDF Boards (makes 4 instead of 2)
+Glue now uses 8 paper or 2 rubber
+Removed modded recycling recipes
+Game Controllers now give 8 Nickel Nuggets (was 6)
+Processing Disc Residue now gives some Crude Oil
+Processing Coal in a Separator now gives some Crude Oil
+
+
+Added recipes to upgrade item ports to the next tier
+- Large Item Inputs now require either Quartz or Prismarine instead of Item Ports
+- Also added recipes to downgrade each one
+Changed the recipe for the Disenchanter
+Added a recipe to make Crying Obsidian with Glue
+- Takes twice as long, twice as much RF, and requires 2 Lapis Blocks instead of 1
+Moved the Energy Acceptor upgrade recipe to the Amalgamation Station
+- Made it slightly cheaper
+
+
+Added a recipe to recycle Fire Charges
+Moved the Ender Drawer recycling recipe to the Reprocessor
+Converting Xychorium to Certus Quartz now requires a Neodymium Ingot (was either Quartz Dust)
+Hyacinth Stocks & Blooms can now be turned into Light Blue and White Dye
+Converting Fibers into String now requires 2 Fibers (was 3)
+Converting Pulp into Paper now gives 2 Paper (was 1)
+Changed the Paper recipe for Glue to be Shaped
+Unified all Mossy Block recipes
+- Add Transmutator recipes for Deeper Caves and Regions Unexplored's versions
+
+
+Added a recipe to craft Birch Chests with Silver Birch Planks
+Restoring Rusty Barrels now uses the modpack:cleaner tag
+- Now has a 50% chance to restore the Barrel
+Added a recipe to convert Moss Balls into Green Dye
+Added a recipe to convert Moss Carpet into Moss Balls
+Unified Moss Balls to use the one from Ecologics (Surface Moss)
+- Changed Deeper Caves' recipes to use a new tag (contains Ecologics' Surface Moss and Quark's Moss Paste)
+Added a recipe to convert Prismarine Shards and Crystals
+Added a recipe to convert Tropical Fish into Cod
+Moss Balls can now be turned into Green Dye
+Added a recipe for the Bundle
+
+
+
+
+Misc changes:
+
+Disabled Xenon's Leaf Culling in favour of Cull Less Leaves
+Added my own Stone Stick since I removed CB Multipart
+Added the Dead Branch from Biomes o' Plenty to the regions_unexplored:branches tag
+Diamond Dust is now a pulverizer catalyst
+
+
+Changed the name of the Elder Eye to Elder Guardian Eye
+Echo Shards can now be turned into RF (250k each)
+Micyurite can now be turned into RF (100k each)
+Apatite can now be turned into RF (40k each)
+Niter can now be turned into RF (60k each)
+Amethyst Shards and Prismarine Crystals now give 80k RF
+Corundum now gives 40k RF
+
+
+Disabled the Extractinator since it isn't working properly
+Changed the whitelisted Item IO Ports for my custom multiblocks
+- Each one's minimum tiers now correspond to the amount of inputs/outputs it has (e.g. if even 1 recipe has 2+ outputs, it will blacklist the tiny port)
+Changed the recipe tab order for my custom multiblocks
+- Moved the ones that are less likely to be used to the back
+
+
+
+
+
+
+Mod changes:
+
+Added the following mods:
+
+Artemis' Laboratory Blocks
+Awesome Dungeons: Ocean Edition
+Copperworks
+Essentials
+Fusion
+Modular Force Field Systems
+Storage Labels
+Stuff Ain't Cheap
+Thermaloot
+YUNG's Better Desert Temples
+YUNG's Better Ocean Monuments
+
+
+
+
+
+Added the following mods:
+
+Ad Astra: Giselle Addon (disabled for now since it crashes the game. Reported it and hope it gets fixed before release)
+Ender Trigon
+Enhanced AI
+Elytra Slot
+LieOnLion's Enderite
+Long NBT Killer
+Moog's End Structures
+
+
+
+Removed the following mods:
+
+CB Multipart - not working properly
+Translocators - requires multipart
+YUNG's Better Nether Fortresses - Quark already improves them a bit, and both mods aren't fully compatible
+
+
+
+Updated the following mods:
+
+Additional Enchanted Miner
+CoFH Core
+CraftTweaker
+Curios API
+Enchantment Descriptions
+Entity Culling
+FTB Library
+FTB Quests
+FTB Teams
+ForgeEndertech
+GeckoLib
+Masterful Machinery
+Max Health Fix
+Moonlight Lib
+Neruina
+Open Loader
+Panda's Falling Trees
+Polymorph
+Puzzle's Lib
+Quark
+Resourceful Lib
+Sound Physics Remastered
+TerraBlender
+Thermal Series (Foundation, Expansion, Dynamics, Innovation, Integration, Cultivation, and Locomotion)
+XNet
+Xenon

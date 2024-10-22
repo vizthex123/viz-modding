@@ -1,0 +1,25 @@
+v3.2.2 Changelog
+
+
+Fixed the food pouch recipes not accepting any damage value (oops)
+- Note that anything inside the pouches will be lost when upgraded
+Removed the recipes for the automatic pouches (since they've been disabled, though the mod should've done this on its own...)
+- They should also be hidden in JEI
+Added a tooltip to Slimesteel Reinforcements listing the capacity increase
+Massively reduced the size of clay veins (from 33 to 8)
+- Reduced the spawnrate to 7 (redstone is 8)
+
+
+Added a recipe to convert Pink Slimeballs into their fluid at a Mixer 
+Changed the recipe for every Repair Chest. Due to them not using resources of any kind after crafting, I find the recipes bit hard to balance.
+- I think this has a good balance to it, but they may change (again) in the future
+Added a quest to make some Storage Racks
+Changed the rewards for a few quests
+Renamed the "Gift" tier of the Engineering Guild to "Gifted"
+
+
+Added Storage Racks
+
+
+Disabled The Outer End since at least 3 people are having the same crash (https://www.curseforge.com/minecraft/modpacks/netherium/issues/1 and https://www.curseforge.com/minecraft/modpacks/netherium/issues/2, also in the comments)
+- Disabled the crystal recipes for now until the mod gets fixed

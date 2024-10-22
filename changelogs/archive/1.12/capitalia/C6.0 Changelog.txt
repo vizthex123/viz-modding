@@ -1,0 +1,74 @@
+v6.0 Changelog
+
+THE STORAGE CRATE (BETTERSTORAGE) HAS BEEN REMOVED FROM THE GAME DUE TO THE MULTIPLE CRASHES IT CAUSES!
+BEFORE UPDATING, be sure to move any items you have stored in them to another inventory! You have been WARNED!!
+
+
+
+Updated Rich Presence text
+Integrated Refined Storage and Applied Energistics
+- Most of RS is disabled, as it's meant to be a "stepping-stone" to AE2
+
+
+Changed recipe for the Miner's Ring to use a Bronze Pickaxe
+Remove the shapeless recipe for the Research Table
+- Changed the shaped recipe to need a Book & Quill (because you're writing down research notes). Quest reward has also been changed.
+Buffed recipe for the Unrefined Information Data Disk
+- Now gives 2 per recipe instead of 1
+Buffed recipe for Unrefined Machine Data Disk
+- Now gives 2 per recipe instead of 1
+
+
+Added rewards to the Solar Flux quests
+Changed the stage for Osmium ore
+- Now needs the Iron instead of Industrial age
+Staged a few misc crafting items
+Boosted the output for the Coal Coke + Iron = Steel recipe
+- Now gives 2 steel
+Fixed improper staging of Bronze Tools & a few other items
+Fixed multiple quests having duplicate dependencies
+
+
+Removed the "reach the stone age" requirement from "Technology Research"
+- Increased XP reward to 7 (was 5)
+Increased the reward of "Industrial Shelves"
+Added dye OreDict entries to all Natura berries
+Properly disabled Reinforced Chests & Lockers
+
+
+
+Waystones can now be bought for $250
+- Removed recipe
+-- Added tooltips to Waystones about how they're obtained
+
+
+Tweaked Waystones config:
+- There's apparently a teleport keybind you can use, the cooldown has been reduced to 60 seconds (was 300)
+- The Warp Stone cooldown has been reduced to 60 seconds (was 300), and its durability increased to 150
+- Warp Stones are now used 50% faster
+- Scrolls are now used twice as fast
+- Only the owner of a Waystone (whoever placed or activated it) can re-name it {click on the name in the Waystones GUI to re-name them}
+- Reduced limit required to trigger the XP Cost to 100 Blocks
+
+
+
+
+
+
+
+Added Just Enough Calculation
+- Changed the recipe for the Math Calculator so you can make it in the Bronze Age (Also made it use vanilla stone) {Crafting Calculator is the same though}
+Added Simple Storage - Crates
+Added Better Slimes
+- All the mobs have been staged (except for a few biome-specific ones, since the biomes they spawn in are rare)
+
+
+Removed Reborn Core
+Removed Reborn Storage
+Removed Refined Storage Addons
+Removed Refined Storage Fluxified
+
+
+Updated Fantastic Lib
+Updated MixinBootstrap
+Updated FTB Quests

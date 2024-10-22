@@ -1,0 +1,16 @@
+BETA v0.0.6 Changelog
+
+Added Chisel (Suggested by Beta Tester JerySprigs)
+Added "buy" recipes for all AE Processors (Totally forgot you probably won't be able to get the presses to craft them xD)
+Added "buy" recipe for Nether Stars
+Added "buy" recipe for Sky Stone
+
+
+Quest changes:
+
+Changed a couple reward bag things
+Started on "Periodic Table" questline
+Made pack Hardcore, added recipe for hearts
+Changed template world
+
+Added 20 new quests total

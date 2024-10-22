@@ -1,0 +1,6 @@
+Changed a couple Quest Descriptions
+Added 1 quest to Technology
+Fixed the "Basic Machine" quest from Immersive Engineering
+-Changed the icon to reflect the quest
+That's about it, this is more of a hotfix than anything else.
+Added 3 Quests to Applied Energistics questgroup

@@ -1,0 +1,39 @@
+v1.6 Changelog - Many Hotfixs
+
+Added better description to Ewy's Workshop quests
+Updated description for Tinker's, it says how you can use Iguana's tweaks
+Changed quest reward for "Housing" to Full Heart and a Chance Cube
+Changed all the vanilla tool quests to "Consume" (Cuz you're meant to use Tinker's tools, not vanilla ones)
+Fixed typo in "Iron Tools!"
+Changed rewards in "D: GOLD D:" to 4 Gold and Three-Quarters of a Heart
+Changed name of "Diamonds!" to "Diamond Tools!'
+-Changed description
+Changed description of "Housing"
+Changed "#DoubleCraft" reward from Quarter of a Heart to Full Heart
+Changed "Netronium" reward from Quarter of a Heart to Full Heart
+Changed "Singularity Crafting" from Quarter of a Heart to Full Heart
+Changed requirements for "Unlocking: Crazy Stuff" to needing Nether Stars too
+-Changed it to "Detection"
+Changed rewards of "Stuff For Tech" to Randomite ore x1 (It was 1 Super Ore of each kind previosuly)
+Changed task name of "Diamonds!"
+Changed "Unlocking: Magic & Tech" reqs to Detection
+
+
+Mod Edits
+
+
+Added Alternate Terrain Generation by TTFCUTS
+Added Keeping Inventory by Silly511
+Added The Twilight Forest by Benimatic
+
+
+Edited config for Iguana's Tinker Tweaks, making vanilla tools unusable
+Edited Morph config, so now you can't fly with it (This is to encourage use of alt flight options)
+Edited Tinker's Construct config to make the Smeltery only give 1 Ingot per ore (This is to discourage using it as ore doubling)
+
+
+Removed Super Ores, spawn rates are WAY too high & there's no config so I can't change that...
+-To compensate, upped the spawn rates for all Dense Ores
+
+
+Disabled Blood Moons

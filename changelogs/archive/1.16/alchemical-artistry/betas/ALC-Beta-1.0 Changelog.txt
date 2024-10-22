@@ -1,0 +1,76 @@
+Beta v1.0 Changelog:
+
+
+Initial release.
+
+
+
+Changes from Dev Build 2:
+
+Should've fixed multiple Induction Smelter recipes not working
+Added Niter, Dimensional Shards, and Apatite to the Lapidary Dynamo
+Added recipes to convert Soul Sand and Soul Soil into Red Sand
+Added recipes to make Black Dye out of coal and charcoal
+- You use a lot of it, and squids are annoying to find.
+Added an AMC to Lead Ingots (20)
+Changed the recipes for all the pipes from Refined Pipes
+- You can now upgrade previous tiers into the next, as well as crafting them on their own for slightly cheaper
+Remove some unnecessary recipes
+Added a recipe to convert 8x 125 AMC items into a Matter Ticket
+Swapped the token > ticket recipes to Combination Crafting
+- Ashen is still Compression though, which allows you to get some tickets while using a lower-tier device.
+Disabled my flesh > leather and sand > glass (blast furnace) recipes, as they keep not being added correctly
+Added a shop for Ender Pearls
+Moved the 5 & 10k Crate > Ticket recipes to the Combination Crafter
+Reduced the RF rate of the Ashen Token > Ticket recipe
+
+
+Changed the Water Bucket pulverizer catalyst
+- Now reduces energy use by 20%, but leaves everything else at the defaults
+Changed the Lava Bucket induction smelter catalyst
+- Now reduces energy use by 25%, but leaves everything else at the defaults
+Increased the amount of time advancement plaques last
+Added recipes to compress items worth 75 AMC
+Reduced the AMC of Dimensional Shards and Magma to 50 respectively
+Added burn times to Magma Cream, Blaze Powder, and Magma (Block)
+- Values are copied from my Netherium modpack
+Reduced the string > alchemical bag recipe to 32 string
+The leather > alchemical bag recipe now makes 32
+Minecarts now stack to 3
+
+
+Added several combination recipes for alchemical bags/crates
+Changed token and ticket catalysts to use Alchemical Bags instead of items
+Added Quantum Compressor recipes to convert Cobblestone/Dirt into 100 AMC Bags or 250 AMC Crates
+Combination & conversion recipes for Crates now use a regular crafting table
+- Note that the Extended Crafting one still works as a regular table
+Fixed the following AMC items not having a compression recipe:
+- 120
+- 150
+- 200 (Can be used to make 250 Crates in addition to Tickets)
+- 4,000 (Expanded upon existing recipes)
+- 6,000
+- 7,000 (Expanded upon existing recipes)
+Changed the recipe for the Very Advanced Alchemical Catalyst
+- Now uses 4 Cut Diamonds instead of 4 Diamonds
+Added recipes to recycle Tartaric Gems
+
+
+Elytras are now worth 5,000 AMC
+Re-balanced the time taken to ender craft multiple items
+
+
+
+Updated Equipment Compare
+
+
+Added Akashic Tome
+Added DisenchantingForge
+Added Measurements
+Added Patchouli
+Added Reap Mod
+Added Thermal Cultivation
+Added Thermal Locomotion
+Added Vanilla Excavators
+Added Vanilla Hammers
+Added Watercan 1.16

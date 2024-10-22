@@ -1,0 +1,58 @@
+v2.2 Changelog
+
+
+Made a better texture for circuits
+Adjusted the temperature gain for Torches
+- Now gives 1.5 instead of 1
+JAC's campfire now increases the temperature around it by 5 (Simple Difficulty's is 7)
+Tweaked the coolant values for Purified Water and Ooze
+Tweaked the chances to get Iron Nuggets from a Water Strainer
+Tweaked the chances to get Sticks from Water Strainers
+Acacia and Dark Oak wood can now show up in Strainers
+Added Cobblestone artisan tools
+- They're slightly worse than stone. Might change/remove later on.
+
+
+Better Diving's armour now insulates you against the cold
+- Each piece gives +1 temperature, improved are +1.5, and reinforced are +2
+- You can no longer combine them with liners
+Added a recipe for Diving Gear from the Shipwrecks mod
+- Uses reinforced gear, and gives +4 insulation
+Expanded the list of items that the following researches will accept:
+- Basic Cooking
+- Better Cooking
+- Inscription
+- Technology
+
+
+Changed the basic worktable recipe for the Fisherman's Net
+Added the bone OreDict entry to both fish bones
+Added a new "Bone Stick" item
+- Can be used as normal sticks, and is made with 2 Bones (makes 3)
+Seagrass can now be put in a Combustion Generator
+- Makes 500 RF at 5/tick
+Added recipes to repair Better Diving's armour, using Fiber Mesh and Titanium (basically the parts they're made of)
+Filtering water can sometimes give you Gold & Iron Nuggets
+- You can also do this in a Basic Worktable, albeit it with less success
+Added tooltips stating how you get the ores from Better Diving
+
+
+High-Capacity Oxygen Tanks now store 120s of Oxygen
+Reinforced Oxygen Tanks now store 50s of Oxygen
+Liners now insulate slightly better
+The flint & steel you get from the campfire quest now has 1 durability
+Bone armour is now accepted for the "Basic Defenses" quest
+Added a recycling recipe for red beds
+- Might do the rest later, but I'm lazy af rn and these seem to be the only ones that generate in structures
+
+
+
+Added the supply ship from Wanderlust (dev said I could here: https://www.reddit.com/r/feedthebeast/comments/78n6yl/has_anyone_made_a_bunch_of_recurrent_complex/dov5tnt?utm_source=share&utm_medium=web2x&context=3)
+
+
+
+Added Chest Transporter
+Re-added TickrateChanger
+
+
+Disabled reskillable for the moment

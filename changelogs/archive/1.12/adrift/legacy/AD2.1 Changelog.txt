@@ -1,0 +1,23 @@
+v2.1 Changelog
+
+
+Fixed sidebar buttons not being in the proper place
+Fixed the template loading wrong
+Increased starting nutrients to 45%
+Both kinds of seaweed can be used to make Sushi Rolls
+Massively reduced the saturation value of Loaded Baked Potatoes
+
+
+Added a recipe to recycle Passenger Seats
+Added a recipe to recycle Message in a Bottle
+Dark Oak Wood Planks are now accepted for the "Drifting Wood" quest
+Fixed a few quest names/rewards
+Added nutrients to the Energy Drink from Harvestcraft
+
+
+Removed FTB Quests Importer
+- Meant to do that last update, but forgot. Oops.
+
+
+
+Added Hunger Tweaker

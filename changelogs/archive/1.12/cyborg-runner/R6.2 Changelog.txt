@@ -1,0 +1,22 @@
+v6.2 Changelog:
+
+
+Alright, I'm declaring this and all of my other 1.12 modpacks unsupported. I will fix any game-breaking issues, crashes, etc. if people report them - but I'm finally moving out of my rut and onto 1.16+. Mods for 1.12 aren't really being updated anymore, and newer mods have cool systems I'd like to use (plus, this pack is complete - so all I've been doing for the past few updates is bugfixes and minor tweaks).
+
+Since the issue tracker is just the GitHub repository, I'll leave the label for this pack up - just in case people report more minor bugs that others may want to know about.
+
+Thank you for downloading & playing this pack, and I hope you enjoy my newer ones as much as you enjoyed this.
+
+
+
+Finally configured Scaling Wealth
+- Every vanilla enemy now has a chance to drop coins based on the current difficulty (the Scaling Health difficulty, not the game difficulty)
+- Most modded mobs will too, but I couldn't get BetterSlimes' to work.
+- Adjusted some existing droprates
+Fixed Ceramics recycling recipes giving clay blocks instead of balls
+Added a couple more quests
+
+
+
+Updated ModTweaker
+Updated SuperMartijn642's Config Lib

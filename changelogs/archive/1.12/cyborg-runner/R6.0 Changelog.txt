@@ -1,0 +1,171 @@
+v6.0 Changelog:
+
+
+IMPORTANT: Open Terrain Generator may be asking for OTG Core v9.4, simply delete the ones from mods/1.12.2 and it will fix itself when you load the game again!
+
+Added an ending
+- It's vastly different from what I wanted, but it works for now. I can't get Onslaught to work the way I want it to, but I've delayed the ending for too long already.
+
+If anyone knows how to make the mod work, please let me know and you can help me make a proper ending.
+
+
+Finally added all the planned IPC attacks
+XP ore now generates in the Alien Jungle (and other dimensions)
+Tin no longer generates in the Alien Jungle
+Chaotic Coal Ore no longer generates in the Alien Jungle
+Added a few new structures
+Tweaked some quest rewards
+Updated some lore, enabled a previously broken one
+Renamed the Chemist's tables to Scientist's
+Expanded the list of items accepted by the "Base Defenses" research
+
+
+Overhauled the "Advanced Crafting" research
+- Moved everything to a new tree called "Crafting"
+- Each table now has its own research, which will unlock the table itself + the tools it uses
+- Most tables 
+Added proper locks to all Artisan's Tables recipes
+- You now need the game stage or research to look up recipes (if they need either as a requirement)
+Changed the "Cybernetic Excavation" (was Advanced Mining) research's list of accepted items
+- Now only accepts specific Cyberware upgrades (of either quality)
+Added skill locks to the tools & armour that were missing it
+
+
+Refined Storage's processor now use the itemSilicon OreDict
+The Disk Drive now uses 4,000 mB of Resonant Ender (was 16,000)
+All Open Modular Turrets ammo now has scaling durability costs
+Fixed the Thermal Technology research not giving the proper game stage
+Fixed a few quests having lore pages set as team rewards
+Toolboxes now retain their contents when broken
+- Added a tooltip to reflect this change
+Added research for Furnaces
+Added research for Storage Tech
+Added Blazing Pyrotheum, Biofuel, Crude Oil, and Refined Fuel to the fluid fuel upgrade (from Furnace Overhaul)
+
+
+Fixed my custom torch recipes having to be shapeless
+Reduced the durability of Artisan's Flint Tools to 75
+The Blacksmith's & Mason's Tables now uses the stone OreDict
+Fixed the wireless stuff from Refined Storage having way more RF than it can hold when crafted with redstone
+The Portable Grid now uses an Engineer's Worktable/station/shop
+The Miner's Ring now uses an Artisan's File
+Added a tooltip to Fuel Canister that states to hold shift for the list of accepted items
+
+
+Fixed the Pristeel Block > Ingots recipe not being added
+Moved the Engineer's Worktable (and station) recipes to the Blacksmith's Worktables
+Added names to all the Artisan's Worktables recipes
+- Mostly to help me debug them if needed
+- It took way too long.
+Changed my alternate Nether Quartz tool recipes to the only recipe
+- Now uses raw quartz instead of blocks
+- Increased white dye cost (from 1 to 5)
+Pumpkin Mash now uses water instead of lava
+Changed the recipe and nutrients for Carrot and Tropical Fish soups
+Changed the recipe for Spider Eye soup (now uses 1 less eye, but needs a bit of water)
+Changed the recipe for the Carbon Compressor (Diamond Machine) to use Steel instead of Iron blocks
+
+
+Added 2 new loading screen tips
+Updated a few loading screen tips
+XL Food's plants should now give XP when harvested
+XP gain from harvesting has been increased to 10
+XP ore now starts at 20 XP
+- Each level now has 2x the previous ones' XP, and there are now 5 tiers total
+Cauldrons can now be smelted into Iron Nuggets
+Village Names' Codex can now be smelted
+
+
+Added my sawable items script: https://www.curseforge.com/minecraft/customization/sawable-items
+Fixed the bottled cocoa beans using Peppers
+Tweaked how Coal Ore drops the extra variants
+- Now replaces the regular drop (if it drops)
+Reduced the amount of stacks the Pouch of Unknown can store to 2 (from 4)
+Fixed a typo in "On the Run"
+Massively increased the time between difficulty changes
+- Now 15 minutes from the easy > normal one (was 5)
+- Now 30 minutes from the normal > hard one (was 10)
+
+
+Golden Defense is now optional
+Bronze Armour can now be used in "Basic Defenses II"
+Disabled Constantan, Invar, Steel, and Platinum gear from Thermal Expansion
+Re-enabled Thermal Foundation Fishing Rods
+- But since everything's been disabled but Bronze, you're only gonna have a couple extra ones to choose from
+Re-balance Bone & Iron swords
+- Bone now deals 4 damage
+- Iron now deals 5 damage
+The gold hammer's durability in-line with my changes to golden items
+
+
+Tortillas, Baguettes, Waffles, Pancakes, Bacon, and Pie Shells are now part of the "Cooking" stage
+Blueberry, Strawberry, and Green Apple Pie are now part of the "Advanced Cooking" stage
+Nether Cake is now part of the "Special Cooking" stage
+Ham now only costs 1 salt
+- Increased food value to 5 (2.5 shanks)
+Removed some obsolete scripts
+Both buns now use the listAllgrain OreDict
+Changed the recipes for Golden Apple Pie
+- Regular now gives 3, enchanted gives 16
+Changed the recipe for Chocolate
+- Replaced the Cocoa Bean in the centre with a Milk Bucket
+- Now makes 6 (was 4)
+- The beaker now uses 8 durability (was 6)
+- Added a Pyrotheum version
+Added water versions of the Tomato and Vegetable Soup recipes
+Bacon now uses a knife
+
+
+Changed Fluxed Armour Plating to use 250 mB of Gelid Cryotheum (was 1,000)
+Added skill locks to Fishing Rods, Shears, Shields, and Sickles
+Disabled Extra Utilities and Thermal Expansion Sickles
+Buffed the durability of the Gold saw, sickle, excavator, and fishing rod to be in-line with the rest of the pack
+Added several sifting recipes
+
+
+
+
+Removed Onslaught
+Removed Serene Seasons
+- I thought I'd done this a few updates ago, but I guess not
+
+
+Updated Forge
+
+
+Updated Anvil Patch - lawful
+Updated Artisan Integrations
+Updated Athenaeum
+Updated B.A.S.E
+Updated Capsule
+Updated ContentTweaker
+Updated CraftTweaker
+Updated Double Doors
+Updated Dropt
+Updated DupeFix Project
+Updated Durability101
+Updated Fantastic Lib
+Updated FoamFix
+Updated ForgeEndertech
+Updated Hammer Lib
+Updated I Know What I'm Doing (IKWID)
+Updated JustEnoughIDs
+Updated LootTweaker
+Updated MTLib
+Updated MixinBootstrap
+Updated ModTweaker
+Updated Nutrition
+Updated OMLib
+Updated Onslaught
+Updated Open Modular Turrets
+Updated Open Terrain Generator
+Updated Packed Up
+Updated Recipe Stages
+Updated Robotic Parts (Cyberware)
+Updated Simply Jetpacks 2
+Updated SuperMartijn642's Config Lib
+Updated SuperMartijn642's Core Lib
+Updated Tesla Core Lib
+Updated UniDict
+Updated Village Names
+Updated WanionLib

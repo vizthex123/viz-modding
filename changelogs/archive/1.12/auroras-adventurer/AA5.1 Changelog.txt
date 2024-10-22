@@ -1,0 +1,16 @@
+v5.1 Changelog
+
+Fixed the Wither not dropping anything
+- It should now (always) drop 5 Platinum Aurum and a Nether Star
+Changed storage values and names of all EMC Storage Cells
+Re-enabled Twilight Forest's Uncrafting Table
+
+
+Re-balanced a few quest rewards
+Re-balanced recipes for the Transmutation Table & Tablet
+
+
+Added quests to craft items from Equivalent Energistics
+Added quests to craft items from Equivalent Integrations
+Finished the ProjectE quests I implemented last update (v5.0)
+- Added a couple more

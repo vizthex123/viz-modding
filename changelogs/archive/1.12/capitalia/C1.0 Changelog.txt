@@ -1,0 +1,130 @@
+[Overhaul] v1.0 Changelog - The First Restructuring
+
+YOU MUST MAKE A NEW WORLD!!
+
+Overhauled the entire modpack. Coins and the shop work differently, there's a new progression and research system, etc.
+
+Here's a list of the major changes:
+You can now progress through technological ages (stone, bronze, iron, etc). This makes it feel more like you're progressing (Factorio-style or something) instead of just selling random items randomly with no real progression system.
+
+There's a new research system, courtesy of Research Table. This is how you unlock stages, technology, etc.
+- There's also research to unlock better weaponry :from Foundry and Tech Guns)
+JJCoin is now the way you store and manage money. Mobs will drop coins as well.
+-- Note that you still use AdminShop to sell stuff (because I do not want to make a million "sell this random thing!" quests), but you'll need to convert the money to coins to do quests, recipes (if any get added), etc.
+
+All basic TE tools (pickaxe, axe, sword, hoe, etc.) have been disabled in favour of Mekanism's
+-- Bows, Hammers, and Excavators remain; but only the ones that use alloy ingots (bronze, Steel, etc.) {And Platinum since it's a rare metal}
+--- Fishing Rods (useless), Sickles (redundancy), and Shears (redundancy) have also been disabled
+
+You no longer sell basic items. You 've got to process things (at least a bit) before being able to sell them.
+This is to encourage you to build an actual factory, instead of just having a quarry feed a seller or something.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Normal Changelog:
+
+Note that late-game content hasn't really been worked on, so it's all basically the same as before right now.
+
+
+Enemies now drop small amounts of money
+
+
+Disabled all of the ores, ingots, and nuggets from Tech Guns
+- Uranium & Titanium are still around though
+
+
+Disabled Gold-tier and higher Iron Chests
+Disabled all Shulker boxes from Iron Chests
+
+
+Unity & Unity: Dark Edition are now packaged with the modpack.
+Re-did all the quests to fit the new progression system
+
+
+Replaced Just Coins with JJCoin
+Replaced Furnace Overhaul with Iron Furnaces
+Replaced AE2 with Refined Storage
+Replaced AE2 Stuff with Refined Storage Addons & Reborn Storage
+- Doesn't add the same content, but they're both add-ons to a parent mod so idrc. Plus, RS is easier to stage since it has fewer parts.
+Replaced Extended Crafting with Extended Crafting: Omnifactory Edition
+- This new version is actually supported by the developers, and has a few bug fixes packaged in.
+
+
+
+
+Added Baubles
+Added Ignition: Foundry
+Added Industrial Foregoing
+Added Classic Bars
+Added Research Table
+Added Phosphor
+Added ReAuth
+Added VanillaFix
+Added Builder's Bag
+Added Advanced Rocketry
+Added Extreme Reactors
+Added Just Enough Reactors
+Added Game Stages Viewer
+Added Hardcore Item Stages
+Added YAMDA - Yet Another Mining Dimension Attempt
+Added DefaultOptions
+Added Forestry
+Added Custom Starter Gear
+Added Akashic Tome
+Added Better Storage Too
+Added Refined Storage Fluxified
+Added Thermal Innovation
+Added Stone Crafying Table
+Added Marble Crafting Table
+Added Natura
+Added Mob Stages
+Added Better Advancements
+Added FoamFix
+Added SwingThroughGrass
+Added RandomPatches
+Added JustEnoughIDs
+Added DiscordSuite
+Added Extra Utilities Fixes
+Added Primitive Crafting
+Added Durability101
+Added MixinBootstrap
+Added Mixin 0.7-0.8 Compatibility
+Added Item Damage Rebalancer
+Added AI Improvements
+Added Clay Bucket
+Added YUNG's Better Caves
+Added YUNG's Better Mineshafts
+Added Speedy Hoppers
+Added Wopper
+Added Demagnetize
+Added Patchouli
+Added More Loot Tables
+
+
+
+
+Updated AppleSkin
+Updated Controlling
+Updated CraftTweaker
+Updated Don't Even Axe
+Updated Energy Converters
+Updated Flux Networks
+Updated FTB Lib
+Updated FTB Quests
+Updated Hammer Lib
+Updated Loot Tweaker
+Updated Netherending Ores
+Updated Simply Jetpacks 2
+
+
+
+
+Removed The Disenchanter Mod
+Removed Overloaded Armor Bar
+Removed Recurrent Complex
+Removed DimStorage
+Removed Simple Wooden Pipes
+Removed OpenComputers
+Removed Loot Bags
+Removed Food Expansion
+Removed Mo' Villages
+Removed Better Than Mending
+Removed Iron Backpacks

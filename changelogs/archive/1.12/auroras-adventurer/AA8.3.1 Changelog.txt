@@ -1,0 +1,8 @@
+v8.3.1 Changelog - Hotfix 3
+
+
+The Wooden Kinesis Pipe is now craftable
+Fixed a few recipes I broke
+Hid a few technical items from JEI
+Replaced Aurorian Glass in Crystal Growth Chamber recipe with Managlass
+Replaced Manasteel Ingots in Crystal Growth Chamber recipe with Blank Slates

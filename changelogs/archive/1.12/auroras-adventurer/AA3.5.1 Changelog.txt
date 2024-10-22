@@ -1,0 +1,44 @@
+R3.6 Changelog:
+
+Changed range of OpenBlocks elevators
+- Added tooltips to reflect change
+
+Added Bronze Pickaxes as alternatives to the "Further Mining Improvements" quest
+- This is because you can get them (along with Manasteel) at around the same tech level, but Bronze just needs a little more work (and thus has more durability)
+
+Changed Miner's Ring to accept any advanced pickaxe
+
+Removed Heart Dust -> Heart Piece recipe for balancing issues
+- Added repeatable quests to convert various hearts (so that the Healthy Singularity takes less time to craft)
+- I'll most likely have to work on this more, as I want to make Heart Dust more useful so that you aren't stuck with a few extras laying around
+
+Adeed Certus Quartz back to the Miner's Backpacks' accepted items list
+- Blacklisted Grave's Dust. I find it annoying how this gets picked up but isn't an ore nor related to ores
+
+Changed several XP Level rewards to regular XP (at a ratio of 75 XP per XP Level) [https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/4]
+- I'm still working towards this, and as I find them I'll change them (I have my own playtesting world, but I only started recently)
+
+Changed Level Hearts' config (due to the amount of XP you can gain early on. Might need furthur balancing, but I'm not sure)
+
+Now a heart is gained at the following levels:
+
+30
+40
+50
+75
+100
+
+
+Added UniDict (due to this issue: https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/1)
+- This will standardize all ore outputs, thus preventing you from having 40 different Copper ingots. The ores will still remain though.
+
+Added VanillaFix (https://www.curseforge.com/minecraft/modpacks/auroras-adventurer/issues/2)
+- I didn't know this existed, and it helps quite a bit with the performance issues (I [and the reporter of the issue] both have some AMD equipment, which tends not to play well with Minecraft. I'm fairly certain this will help with all types of cards and CPUs and such, but if not you can replace it with OptiFine or something)
+
+Added Project Red (all modules)
+- Disabled the ore gen (except Electrotine). There's enough already.
+
+Updated Arcane Archives
+Updated Hammer (Lib) Core
+Updated Botanic Additions
+Updated Redstone Arsenal

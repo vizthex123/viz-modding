@@ -1,0 +1,62 @@
+v5.2 Changelog:
+
+
+Fixed the template not working correctly (thanks to @Shade#8220 on the Discord for telling me it was broken)
+- Seems like the difficulty keeps ignoring what I set though. Not sure why.
+Changed how IPC groups hunt you
+- Now trigger later, and have more enemy variety
+- Added 2 new triggers that happen later in the game
+Tweaked the skill locks of Glacidus items
+- Wood Items are now locked behind Attack/Mining 5 and Gathering 2
+- Eukeite Items are now locked behind Attack/Mining 7 and Gathering 3
+- Glacidite items are now locked behind Attack/Mining 8 and Gathering 5
+Pristeel Armour now gives 6 toughness from a full set
+
+
+Fixed how Iron Pickaxes had the wrong mining level (no clue what's causing it)
+Reduced the Pristeel pickaxe to mining level 2 (same as iron)
+Fixed how the Advanced Crafting research didn't give you the stage
+- You can run /gamestage add @a advanced_crafting to give it to yourself if you've unlocked the research
+Re-enabled the Stone File and Cutters
+Reduced the Rough Mobs boosted stats for several enemies
+- Mostly reducing the follow range for vanilla enemies
+Reduced the beetroot cost of Beetroot Soup by half
+
+
+Expanded the list of accepted items for the "Advanced Cooking" research
+- Added a research minigame to it
+Added a research minigame to the "Technological Tools" research
+Reduced HUDLens float
+The solarskin repair recipe only uses 1 tool now
+Tweaked the level staggering of Reskillable
+- This will make the Farming, Agility, Building, and Gathering skills cheaper.
+Fixed how the "Special Cooking" research was way further apart from the tree than intended
+The Grilled Cheese Sandwich now has an alternate recipe that uses a pan instead of lava
+
+
+Reduced chance of getting Nibrock's Coal from Coal Ore
+- Also reduced it from Chaotic Coal Ore
+- Slightly reduced chances from Dense and Super Coal Ores
+Re-enabled Artisan's Lead Tools
+The Toolbox now drops itself
+Sausages Sausage Rolls, and Spidereye Soup have been moved to the "(Basic) Cooking" stage
+Removed the staging from Silicon
+Added an alternate recipe for the Tank (Open Blocks)
+Added a shop for feathers (3 for 50 Toilaries)
+Added recipes to recycler Leather Armour
+Added tooltips about recycling Compact Machines
+All smelting recipes now give back 1/2 of their recipe costs
+
+
+Added research for Pristeel gear
+Reduced attack requirement for the Pristeel Dagger
+
+
+
+Updated Vulcanite
+Updated Village Names
+Updated From the Ground Up
+
+
+Added Tips
+Added Wetstone

@@ -1,0 +1,42 @@
+v2.1 Changelog
+
+
+Dropped the "revival" tag since the project has been revived
+2 new sprites made by masterfulpotato#4037 on the Discord
+Fixed multiple researches not having the correct requirements
+
+
+Enabled Nutrition loss on death (all bars get reduced by 25%)
+Reduced nutrition multiplier to 3x the default
+Fixed broken name of "Vegetables" nutrition
+Increased global decay rate to 1.5x the default
+- Protein still decays at 1x the rate though (because protein is a high-energy, low-absorption rate nutrient IRL)
+Increased nutrition loss to 10%
+- This is to prevent more complex foods from filling most of the bar, which kind of ruins the point of the mod
+
+
+Fixed the Ice Cream Sandwich recipes not registering properly, removed water cost. They now require Ice as a secondary input. (Gelid Cryotheum one remains unchanged  though)
+Several vanilla foods now need the Chef's Table
+Added a Stone Hammer and Cutter as rewards for making a Basic Worktable
+Changed recipe for Cheese, added an extra one
+Chocolate Syrup is now behind the "cooking" stage
+Staged Oreo Cookies behind "cooking"
+
+
+Changed the recipe for waffles
+Fixed the Pumpkin Mash recipe using a bowl as a secondary ingredient instead of a main one
+Removed the secondary recipe for Pumpkin Bread
+Buffed the hunger & saturation values for Pumpkin Stew and Bacon Pie
+Should've fixed the Satchel not lacking staging
+Rebalanced Bone and Gold sword damages
+
+
+Skeletons now have a half second cooldown between shots
+Fixed the Nutrition button overlapping with the offhand slot (at least on "Auto" GUI scaling)
+Updated a few quest rewards that didn't auto-claim, even though they were supposed too
+XL Food's cans are now unlocked with the "Cooking" research
+- "Beverages" now only needs "Basic Cooking"
+Fixed a recipe conflict with Stone Crafting Plates and Cobblestone Parts
+
+
+Actually removed BiblioCraft & Deep Mob Learning

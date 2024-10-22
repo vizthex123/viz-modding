@@ -1,0 +1,26 @@
+v1.9 Changelog - Tweaking & Lots of Quests
+
+Disabled Watch of Flowing Time giving bonus ticks - it's too OP
+-Changed quest description about it, and the task is Consume now
+Re-Did all Reward Bag rewards and weights of rewards
+-Seriously, there are A LOT of possible rewards now
+Added "Loot Exchange" questline (With repeatable quests) where you can turn in Loot Roulette items for reward bags
+Changed many quest rewards from "Giving Materials Back" to Reward Bags (And a few other quest rewards)
+-They're basically my go-to reward now.
+Added new quests to "Crazy Stuff"
+Changed a couple quest pictures
+
+Added 20 Quests total
+
+
+Mod Edits
+
+I can't find anything like MineTweaker but simple to use, this means all the recipes are defaults....great....
+Changed Craftable Nether Star + to Hard mode recipe
+Made creepers explode blocks again
+Added HelpFixer by matthewprenger
+
+
+Other
+
+Looking for alternates to ProjectE, because it's just too OP. If you know of any please tell me!!

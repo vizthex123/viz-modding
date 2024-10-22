@@ -1,0 +1,37 @@
+v7.3 Changelog
+
+
+Added tools & weapons from the Aurorian Mod to InvTweaksTree.txt
+Should've made the recipe for Aurorian Steel more visible in JEI
+Amazing Technicolour Glasses now sell for 1,000 Aurum
+Added shops for Twilight Forest's various Charms
+- They've been in the pack for awhile, but remained unfinished. You've got to complete "Magical Charms" to unlock them, in addition to "Exotic Goods Buyers"
+
+
+Added a pattern chest as a reward to "A Proper Forge"
+- It's a team reward, meant to store the casts you make
+Replaced the plastic reward in "Power Storage & Transmission" with a Latex Processing Unit and Tree Fluid Extractor
+- They're team rewards, and gives you a headstart on plastic production.
+Fixed the recipe for Lavender Flour
+
+
+Added an alternate recipe for Aurorian Glass that uses blue dye
+Finally integrated AE2 with the early stages of other mods
+- Currently integrates with Blood Magic, Botania, Actually Additions, The Aurorian, ProjectRed, Iron Chests, Wireless Redstone: ChickenBones Edition, RF Tools, and Mystical World
+-- Note that several of the integrations are mere OreDict entries. Botania and Blood Magic hold the main content.
+Changed recipe for ME Security Terminal
+Removed ME Security Terminal reward from "Energistic Autocrafting"
+- Replaced it with a 16k ME Drive, doesn't auto-claim anymore
+
+
+Added Sky Stone Chests (both variants), non-coloured Shulker Boxes, and Ender Chests (vanilla) to the highlyAdvancedChest OreDict entry
+Added a recipe to smelt Hardened Clay into Bricks
+- Would've done Clay (block) -> Bricks, but the game didn't like that since there was already a smelting recipe for Clay (blocks)
+-- Gives 4x the XP from making brick (item)
+
+
+Removed the Pigiron recipe for Iron Toolkits
+Re-balanced the recipes for Gold Toolkits
+Ender Toolkits basic recipe now needs Reinforced Slates instead of the scrapIngot OreDict
+Reduced cost of Dark & Red Matter furnaces
+- Blocks replaced with items

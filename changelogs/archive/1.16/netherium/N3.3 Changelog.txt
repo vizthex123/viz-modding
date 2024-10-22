@@ -1,0 +1,54 @@
+v3.3 Changelog
+
+
+The default JourneyMap theme should now be the nether fortress one
+Tinker's Construct should now turn items into their Create and Electrodynamics variants before using its own
+Removed the water_provider tag from Phantom Membranes
+- The recipes shouldn't have conflicted, but just in case.
+Added a new recipe to use 4 items with the water_provider tag to make 750 mB of water
+The pummeler remants recipe for Blaze Cake Base no longer requires heating
+Added recipes to process anything with the forge:stone tag into Cobblestone, Gravel (25%), and Sand (15%) in Crushing Wheels
+- Any existing recipes should override it
+Reduced the burn time of the Uranium Canister to 2,560 (128 items smelted)
+- Added multiple new tiers of uranium fuel cell-type items, from pellet (16 smelted items) to a dense core (8,192 smelted items). Might remove the super high-tier ones later on, but for now I think they're fine.
+All of Electrodymanics' advanced ores (uraninite, monazite, etc.) now sometimes give cobblestone when crushed (like other ores do)
+Fixed my custom crushed ore smelting recipes swapping the times for blasting & smelting
+Baleen Filters now turn into water instead of lava
+
+
+Changed the fluid Magma Cream to Magma Cream recipes to use a Spout
+Removed my custom tooltip from Slimesteel Reinforcements
+Changed the final stage of Obsidian crafting to use Compacting instead of Mixing
+The Coin Press now uses Lava instead of Magma Cream (fluid), and requires no heating
+Fixed the first quest not registering due to asking for the wrong quest book (sorry about breaking that, lol)
+Fixed the command reward on Metallic Fight being broken
+Doused Torches (both kinds) can now be milled (or crushed) back into some resources
+
+
+Carrot on a Stick and Fishing Rods can now be recycled in a Mill
+Added a recipe to craft torches using mini (char)coal
+- I was originally going to fix all the duplicate recipes, but the game won't make them work in the 2x2 grid and I don't know why
+Disabled overworld recipe for Agility Oil
+- I might re-add it (alongside other overworld recipes for things), but I'm still not quite sure
+
+
+
+Added Enderite Mod
+
+
+Replaced The Outer End with The Endergetic Expansion & End Remastered
+
+
+Updated Biomes O' Plenty
+Updated FTB Library
+Updated FPS Reducer
+Updated Structurize
+Updated CodeChickenLib 1.8+
+Updated ContentTweaker
+Updated Ender Storage 1.8+
+Updated JEITweaker
+Updated JourneyMap
+Updated Patchouli
+
+
+Removed Ore Tweaker

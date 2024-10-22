@@ -1,0 +1,61 @@
+v2.0 Changelog - Restructuring Continues
+
+
+Fixed the staging for a few of Foundry's machines
+You now have to use the Metal Caster to make tools, weapons & armour
+- Still WIP of course, but currently Bronze & Iron have been supported
+All Foundry molds now have tooltips stating their fluid usage
+Disabled the Wither Tools (Progressive Automation)
+Tech Guns ore clusters now generate in the world
+- They'll also retrogen, so don't worry about missing out
+Deleted unnecessary ore configs
+
+
+Added basic quests for Mekanism machines
+Extreme Reactors' buildings now make half as much power
+- Yellorite is a bit more common to compensate for the loss
+Fixed machine age research using Charcoal Blocks instead of Steel Machine Casings
+Added a new research for Golden Revolvers, and a recipe for them
+Increased cost of some research
+- Revolver
+- Shotgun
+- Golden Revolver
+Fixed some research having broken requirements
+
+
+Boosted coin drops from Zombies & Skeletons
+Tweaked recipe of Carbon Bricks so you can mix & match coal/charcoal
+- Also uses half as much coal
+Changed recipes for Buildcraft Quarry
+- Now uses either a Powered Quarry or Diamond Miner, Steel Paxel, Electrotine Dust, Copper, Iron, and Bronze Gears
+-- Now part of the machine age game stage
+
+
+Updated recipes for the Fueled & Powered quarries
+- Both are now staged properly (Bronze & Industrial)
+Added a (placeholder?) quest to build an Oil Heater
+- Currently the only way I can find to make Steam (for the Industrial Age research). Subject to change
+
+
+Hid all Refined Storage facades (covers) from JEI
+Hid multiple creative items from JEI
+
+
+Re-structured Game Stages scripts
+- Has no real effect on gameplay, just makes it easier to develop for
+
+
+
+
+Removed Hopper Ducts
+- Faucets & Filters adds a better version of both items
+Removed Iron Chests
+- Other mods have better (and more industrial-themed) ways to store items
+
+
+The Regular Builder's Bag & higher now have the Supplier module
+Reduced Shipping Container storage to 32,000 (500 Stacks)
+
+
+Added Waystones
+Added NotEnoughScaffold

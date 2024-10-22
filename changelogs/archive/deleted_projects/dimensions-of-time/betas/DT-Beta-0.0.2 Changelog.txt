@@ -1,0 +1,12 @@
+Beta v0.0.2 Changelog
+
+Removed LockedDimension - Unnecessary
+Removed FuelCanister - Broken textures
+Added MineFactoryReloaded - You can *kinda* make a permanent base if you want but aren't meant too....there is a pocket dimension though so you can use that for your home
+Added Applied Energistics 2 - See above statement
+Changed Reward Bag stuff (Actually added rewards and also chagned weights and 1 reward tier name)
+Added Ewy's Workshop - Due to the nomadic nature you (should be) doing, this is very helpful
+Added a recipe for Ecoplasm (since you need it for the pokcet dimension)
+Added recipes for all currency money (up to 25 Credit Bill, more coming next patch)
+
+Added more than like 3 quests xD

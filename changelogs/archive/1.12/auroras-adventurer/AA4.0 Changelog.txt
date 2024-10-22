@@ -1,0 +1,69 @@
+v4.0 Changelog
+
+Added a new lore entry about Wither Skeletons and the curse that causes them to become that.
+Added some more Champion names & suffixes
+Boosted recipe value of Chance Cubes
+
+Should've removed structure generation in The Aurorian
+- It gives you very early access to some powerful gear, which is kind of unbalanced
+-- I've noticed that the configs sometimes just ignore my changes though, so it depends
+--- Battle Towers still spawn because I have no way of stopping that. I did incorporate that in the lore though, but it would be nice if I could at least change the loot for the dimension
+
+Changed multiple values for Lapidary Calibration
+Added lots of items to the Numismatic Dynamo
+
+Fixed a few exploits
+Added 3 recipes for the Creative Modifier (from Tinker's Construct)
+Fixed a couple recipe conflicts
+
+"Shop Orders" now requires you to leave The Aurorian before being able to unlock it
+Re-balanced amount for string shop orders
+Added a one-time shop for Aurorian Glass
+- Pretty much only because I don't want to go through a bunch of hassle just to get 1 thing I need for 1 item, plus at that point coins are kind of useless yet you have quite a few
+
+Moved page 4 of "The Last Refuge" to "The Dungeon's Guardian"
+- Renamed its lore category to "The Last Refuge"
+
+Added profiles to Inventory Tweaks, by default there are 2: The default one, and the one I use.
+- There's a quest covering how to swap between them as well
+Added multiple food items to the "edibleFood" tag in InventoryTweaks
+- Mostly from the Aurorian Mod
+
+Fixed the thank you message for "The Dungeon's Guardian" not using the proper formatting
+Moved the lore about Blood Moons to "Better Tools"
+- They don't occur in the Aurorian dimension so it feels out of place. Honestly I want it to automatically be given after finishing a Blood Moon, but that isn't possible
+Renamed "Slay the Cultists" to "Cultist Culling"
+
+Fixed Akashic's dialogue in "The Temple of the Moon"
+- Added another one that tells you what to do
+
+Added a tooltip for how to get Crystalline Shields (explains the process for all of them)
+- Just in case someone is wondering how to get it and/or any other Crystalline gear
+Added tooltips for how to get Aurorianite items
+
+Re-did the lore of "The Last Refuge (all pages)
+- Added more details and re-organized the structure. Their quest placements are mostly the same though. (I try to place each page somewhere that sort of connects it to the topic of that page)
+
+Removed all the Thermal Foundation sickles
+Buffed Knight's Armour drops
+- It's a bit more common, and can drop from Tier 2 champions; and will be enchanted when it drops
+
+Changed smelting values for Knight Armour
+- Each piece gives Iron equal to half the cost of regular craftable armour (eg the Chestplate gives 4 ingots)
+
+Added an optional quest to make a Scrapper
+- I advise making one if you're still trying to get Aurorian Steel, as it gives twice the output of the furnace recipe for a fairly cheap cost
+
+Added some extra drops to Deep Mob Learning's Data Models
+- Mostly coins and the like
+-- I did this because you really don't need 86 stacks of Rotten Flesh and such. In the future, I'd like to add craftable boxes of loot for each enemy
+Buffed reward of "Gifting a Diamond Necklace"
+Reduced alchemical quiver arrow capacity to 60
+- Increased fluid capacity to 3,000 mB (enough for 60 arrows, if completely filled)
+
+
+Updated The Aurorian
+
+
+Added Tinker's Addons
+- Changed recipes for the bonus modifier items

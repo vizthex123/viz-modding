@@ -1,0 +1,147 @@
+v7.0 Changelog
+
+
+Removed OreStages
+- It's rather annoying to not be able to see higher-tier ores until you unlock their tier.
+-- They're still locked behind Item Stages though, so you will need the research to process them
+
+Updated ResearchTable to Alpha 1.0.0
+- There may be some instability; but I think it's good enough to be included. I do hope it becomes the new stable build soon though.
+
+All research to now uses the new tab system!
+- If you're in the Discord server; you may have seen this in the #modpack-updates channel
+-- This makes the entire research UI more organized and aesthetically pleasing.
+--- Due to this, unavailable research is now no longer hidden. This allows you to plan ahead (and see how much work you have cut out for ya)
+Added a new Military Research Disk, used to unlock weapons & ammo
+
+
+You can now research the Space Age, but there are still no quests for it as of yet.
+Added a new liquefied version of research
+- Due to higher-tier things not needing low-tier data disks, I've added a system to liquify all the disks and use that liquid to make higher-tier disks.
+-- Requires the Machine Age since you need a Magma Crucible and Fluid Transposer
+Improved the descriptions of all research
+Changed the recipe for Stone Data Disks
+- Now uses 1 Compressed Cobblestone and 1 Cobblestone
+
+
+Changed research costs for the following:
+- Stone Age: Now needs 1 Compressed Cobblestone and 4 Wood (of any kind)
+- Bronze Age: Now needs 3 Stone Data Chunks (removed bronze disk requirement)
+- Industrial Age: Removed Industrial Data Disk cost
+- Machine Age: Removed Machine Data Disk cost
+- Information Age: Removed Information Data Disk cost. Changed cost to 4 machine, 8 industrial, and 16 iron disks
+- Atomic Age: Removed Atomic Data Disk cost. Changed cost to 5 information, 12 machine, 24 industrial, and 64 iron disks
+
+- Advanced Matter-Energy Conversion: Reduced machine disks by 2 (was 8, now 6)
+- Basic Reactors: Removed stone, bronze, and iron disk cost. Industrial disk cost increased by 2 (was 6, now 8)
+
+
+- Primitive Bow Research: Now requires 2 flint and 1 Stone Data Chunk. Increased research rewards (from 4 arrows to 8)
+- Primitive Handgun Research: Now requires 2 Stone Data Chunks and 3 Gunpowder
+- Basic Handgun Research: Now requires 1 Iron Data Disk and 2 Bronze Data Disks
+- Improved Handgun Research: Now requires 2 Iron Data Disks and 3 Bronze Data Disks
+
+
+
+
+Reduced the crafting cost for Information Disks
+- Now only needs 24 Unrefined Information Disks
+Proton and Electron Data Models now give 4 per crafting operation
+- Neutrons now give 6, and cost slightly more
+-- Maximum RF/t for all have been tweaked slightly
+The Quantum Compressor is now locked behind the Industrial Age
+
+
+Reduced casting cost of all Paxels by 100 mB (so you use a bit less than half the resources to cast them vs. crafting them)
+Reduced crafting cost of the ME Chest
+- No longer uses the Logistical and Energy Conversion Processing Units
+-- Now uses 3,000 RF at 300 RF/t
+Increased RF Cost to craft an ME Drive
+- Now 8,000 RF at 800 RF/t
+
+
+Renamed "Energy Conversion Computer Chip" to "Energy Management Computer Chip"
+- Both to prevent confusion, and make it sound different
+Increased durability of the Warp Stone to 225
+Increased the price of Waystones to $2,500
+Increased the RF Cost of crafting Fluix Crystals to 12,000 at 24 RF/t
+- Now makes 16 per crafting operation
+-- The crafting cost of the Crystal Compound has been slightly increased to compensate for this change
+
+
+Increased the cost to purchase basic material items
+- All of them went up by ~10x, and you can now buy Ender Pearls for $500 each
+Dyed Terracotta now sells for $2.50 each, regular for $1 (was $3 per dyed, $2 for regular)
+Reduced the price of Pistol Magazine (Incendiary) to $12.50
+
+
+Updated the sprites for all Data Disks
+Changed the name of Stone Data Disks
+- They're now called "Stone Data Chunks", and have a unique sprite
+Renamed "Unrefined Industrial Data Disk" to "Unrefined Industrial Data Core"
+Renamed "Unrefined Machine Data Disk" to "Unrefined Machine Data Core"
+Renamed "Unrefined Information Data Disk" to "Broken Information Pad"
+Renamed "Information Data Disk" to "Information Pad"
+Renamed "Atomic Data Disk" to "Atomic Data Model"
+- The recipe now makes 4 per crafting operation instead of 1
+
+
+Changed a few tooltips
+Bronze (recipes and items) is now locked behind the Bronze Age
+Reduced durability of Bronze tools & armour to 350
+Increased durability of Steel tools & armour to 850
+
+
+Bronze armour now gives 12 total protection
+Iron armour now gives 16 total protection
+- The chestplate and Leggings now give 1 toughness each
+Diamond armour now gives 24 total protection
+- Also gives 2 extra toughness points, for a total of 10 (full set)
+Buffed durability of Refined Obsidian armour
+Reduced defense of Lapis armour to 8 total (1/3/3/1)
+Buffed damage of Steel items
+Still working on a fix for all of the broken Foundry crafting recipes for tools & armour
+
+
+Added an explanation for how to set up Foundry
+"Basic Mathematics" is now optional, and gives rewards
+- Same for "Crafting Calculations"
+"Better Flight" and "Even Better Flight" are both optional
+- Rewards slightly decreased
+"Tunneling" is now optional. Rewards slightly increased.
+"Portable System" is now optional, rewards increased
+
+
+Slightly reduced spawnrate of King Slime
+Removed duplicate tooltip on the Research Table
+Increased mining speed of Stone to 5
+Slightly reduced fuel efficiency of the Fueled Quarry (it's 50% of the default)
+Fixed the Upgrade Base (Solar Flux) from not being accessible when it's supposed to
+Updated the modpack info (conveyed in "Basic Crafting")
+Minor tweaks to several quests
+Staged a few items
+- Still more to come, but I'll do them in another update. They're less pressing than what I staged here
+
+
+
+
+Removed Item Damage Rebalancer
+
+
+Added Material Changer
+
+
+Updated Demagnetize
+Updated FantasticLib
+Updated Patchouli
+Updated UniDict
+Updated Builder's Bag
+Updated Item Damage Rebalancer
+Updated Simply Jetpacks
+Updated RandomPatches
+Updated FTB Quests
+Updated ForgeEndertech
+Updated FoamFix
+
+
+Removed a few unnecessary configs

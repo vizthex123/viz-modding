@@ -1,0 +1,42 @@
+v8.2 Changelog
+
+
+Changed alternate recipes for Blue Heart Canisters
+- The Green Canister one now uses 1 Soul Essence and 2 Life Essence
+-- The Orange Canister one now uses 3 Body Essence
+The Deep Dark portal now uses Chaos Essence
+Reduced infusion speed of the Life and Soul Essence recipes
+Reduced infusion speed of the Philosopher's Stone recipe
+Massively increased durability cost of making ProjectE fuels using a Red Stone
+- Alchemical Coal now uses 50 durability
+- Mobius Fuel now uses 125 durability
+- Aeternalis Fuel now uses 250 durability
+- Zeithereon Fuel cannot be crafted with a Red Stone
+These changes are to encourage you to either repair it or craft a new Red Stone
+Increased Mana cost to repair a Red Stone
+
+
+Boosted alternate recipe for Rudimentary Snares
+- Now makes 12 instead of 8
+Boosted Mixed Seeds recipe
+- Now gives 4 instead of 1 per craft
+Tweaked consumption and drain values for Blood Bronze's Blood Altar recipe
+Fixed recipe conflicts between Fluid and Storage Components
+Tweaked droprates of Knight Armour and Blue Hearts from Champions
+
+
+Updated a few of the messages that play after killing the Ender Dragon
+Added a new menu background
+Angel Ring recipe now uses any gemValuable
+- No longer needs Pristine Ghast Matter
+The Alchemical Chest recipe that uses Terrasteel now uses an Iron Chest (was Gold)
+Added an alternate (mid-ish-game) recipe to the Heart Container (from LevelHearts) 
+
+
+
+
+Updated RandomPatches
+Updated Solar Flux Reborn
+Updated YUNG'S Better Mineshafts
+Updated The Twilight Forest
+- Sadly, they're never going to add the Final Castle to this Minecraft version. But, at least they still do bug fixes.

@@ -1,0 +1,16 @@
+v1.2.1 Changelog:
+
+Fixed a hardlock caused by the Alloy Furnace being staged wrong (discovered by stav200011 on the Discord)
+
+
+"Electric Alloys" now requires "Electric Power"
+"Network Control" now only requires 1 Cable (was 32)
+"Primitive Auto-Mining" is now optional
+- Boosted the Charcoal reward to the intended range of 16 - 128 and made it a team reward
+- Now gives 1 - 2 Emerald Coins (was 1)
+
+
+Added a recipe to upgrade the Alloy Furnace to a Blulectric Alloy Furnace
+
+
+Updated Polymorph

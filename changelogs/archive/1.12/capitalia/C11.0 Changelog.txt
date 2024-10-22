@@ -1,0 +1,88 @@
+v11.0 Changelog:
+
+
+Added more post-game quests
+The entire end game chapter is now optional (as it should've been forever ago)
+Added sell values to more items (mainly alloy ingots)
+Diamond Furnaces can now be sold for $1,250 each
+Increased the sell value of both Quantum Quarry pieces
+Removed extraneous items from JAOPCA
+
+
+Added a new research to unlock lava power gen
+- Requires the machine age and oil processing. Uses 500 mB of Hellish Viscera and 1,000 mB of Liquified Research.
+Refined Storage now drains much more power than AE2 to encourage people to use AE2 (as intended, especially since it's better in every way)
+The Advanced Metal Melting and Electrical Heating quests are now optional, and give greater rewards
+Fixed the tooltip for Crystaltine not stating its correct value
+Fixed the Redstone Furnacen ot having its default recipe
+Slimeballs can now be bought in the shop kiosk
+
+
+Wind Turbines (Mekanism) now generate 192 RF/t (was 320)
+Carbon Bricks now make 50k RF in a Steam Dynamo (was 40k)
+Celestial Crystals from Biomes o' Plenty now make 1 million RF in a Numismatic Dynamo
+Yellowcake now makes 25k RF in an Enervation Dynamo
+Enriched Uranium now makes 1 million RF in an Enervation Dynamo
+Reduced the cost of the Basic Crafting Table
+- Also fixed its staging
+- Also changed quest reward
+Increased the RF cost of Industrial and Machine Data Disks
+
+
+The Ranged Pump now requires the new lava research
+Added a tooltip to warp stones about how they're craftable
+The resonator quest is no longer optional
+Buffed the rewards of the AE2 quests
+Added more quests focusing on AE2
+All Compact Machines quests are now optional
+Re-staged them both to the Atomic Age
+Added cables to the wind turbine quest reward
+
+
+Cobblestone can now be used to make Stone Data Lumps
+Added more recipes for Compost
+Fixed Steel Blend not being smeltable
+Enriched Lava can now be used as fuel in a Magmatic Dynamo
+Properly staged Thermal Expansion
+
+
+Fixed multiple recipes in the Pulverizer
+Tweaked the crafting times for some AE2 recipes
+Increased the RF requirement for most AE2 recipes
+Changed the recipe for Magmatic Generators & Dynamos
+Changed the recipe for the Pump (Ranged Pumps)
+Changed the recipe for the Bedrock Miner
+Changed the recipes for the Quantum Quarry & the Actuator
+Changed the recipe for the ME Quantum Ring
+- The recipe now makes 16 at once
+- The ME Quantum Link now gives 2 per craft, and now uses Quartz Glass
+
+
+Added a burn time to River Cane
+Added a recipe to upgrade the Chargepad into an Energetic Infuser
+Fixed Osmium using Magneticraft ingots instead of Mekanism
+Fixed the Cyberdemons being processed into materials instead of Hellish Viscera
+The crafting recipes for plates now use Thermal Expansion plates
+Cardboard Boxes can no longer pick up Sluice Boxes
+Disabled cobblestone generation methods
+Fixed the Induction Smelter recipes for Refractory Glass using the wrong RF values
+
+
+Added better recycling recipes for Mekanism's tools & armour
+- All of them (apart from Iron and Gold) use the Induction Smelter, so you will need the machine age to use them
+- Removed XP from all of them
+Anvils can no longer be recycled in a Furnace
+Fixed Foundry making Mekanism bronze instead of TE bronze
+Fixed Alloy Furnace recipes not using TE ingots
+Added recipes to convert Universal Cables into Fluxducts
+
+
+
+
+Added Water Control Extreme
+Added Gendustry JEI Addon
+Added JEI Bees
+
+
+Updated Advanced Rocketry
+Updated LibVulpes

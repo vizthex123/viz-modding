@@ -1,0 +1,21 @@
+v8.3.2 Changelog - Hotfix 4
+
+
+Actually added the NBT stripper recipe for Nether Stars
+Added JEI info to P2P tunnels
+Fixed both Klein Star quests giving a null lore page that crashed the game
+Reduced amount of Wireless Boosters required for "Range Boosters"
+- Also renamed the quest to "Range Boosters" from "Boosting the Wireless Range"
+Hid several technical items from in JEI
+
+
+Integrated the recipe for Energy Acceptor with Botania and The Aurorian
+- Updated the "System Powering Up..." quest to only accept an Energy Acceptor
+Integrated the recipe for ME Controllers with Blood Magic
+- Also requires an Energy Acceptor to craft. Or, you can use Demonic Slates (or Terrasteel Ingots) to skip that step
+Reduced Slate tier required to make a Crafting Unit (empty) to Blank Slates (was Reinforced)
+- Now requires the scrapIngot OreDict instead of Moonstone Ingots
+
+
+The Security Station now requires Cerulean Ingots in addition to Moonstone
+The recipe to convert an ME Interface into a Fluid Interface now uses Mana Lapis

@@ -1,0 +1,220 @@
+v5.0 Changelog:
+
+WARNING: This update WILL corrupt your old worlds due to a datapack error I can't fix! You'll have to either manually fix it, make a new world, or just play the old version.
+
+Sorry about this, but I have no clue what's wrong or how to fix it. Hate when this happens... one of many reasons I hate this stupid datapack system.
+
+
+In other news, I like this new changelog template, so I'm gonna start using it from now on.
+
+
+
+Bugfixes:
+
+The Blazing Quartz, Processed Soulstone, Diamond, and Emerald Singularities now use the intended amounts of their resource to be crafted
+White Puffball Stew now stacks to 1, preventing the issue OMGCALLUMMM reported where an entire stack gets consumed at a time
+Changed the Limestone recipe for Steel
+- Instead of the planned 8 Limestone, it now uses 1 Limestone, 4 Iron, and 16 Lime
+- This is the only way I fix the recipe without making like 6 duplicates of it (which I hate doing), but I might change it later on
+
+
+Mods that fixed themselves:
+Pulverizer Catalysts showing up in the Phytogenic Insolator has been fixed in some version of Thermal Expansion
+Apotheosis enchantments can now be used in the Dischantment Dynamo
+Enigmatic Legacy's tooltips now work properly when wearing an Enigmatic Amulet or Dormant Eye
+The Flugel Tiara bar overriding toughness is now fixed since I changed the default bar placement
+- If you prefer the toughness bar on the right, by all means, change the config. Client-side mods like that are meant to be configured, after all.
+
+
+
+
+Quest Changes:
+
+
+Changed "A Short Jaunt" to require 100,000 distance walked
+- This now means you walk 1 actual minecraft kilometer, as the description says.
+- Slightly buffed bread reward
+Dynamo quests are now optional (excluding "Burning Power")
+Replaced the Ward-Enforced Belt quest (since a mod update removed the belt)
+"Halitosis" is now optional
+
+
+Tweaked the reward for "The Essence of Everything"
+Technological Revolution now requires ingots instead of raw ore, reduced copper gear reward to 1
+Added optional quests to make an Energetic Infuser and Tesseract
+Removed the RF coil reward from Vacuum'd
+
+
+
+Recipe Changes:
+
+Replaced the Ultimate Chunk Loader in the Quintessence recipe with a Spot Loader
+Hollow Logs -> Planks now gives 4 planks
+Added Sawmill recipes for modded woods
+AE2 presses now require 2 Emerald Coins instead of 1 Emerald and 1 Gold
+Added a Combination Crafting recipe for Fluix
+- Uses nether materials, but doesn't require you to wait around for 20 minutes
+
+
+The Creative Crate now requires Diamond Grit instead of Magic Dust
+The Creative Cake now requires Magic Dust
+Added recipes for the Creative Energy, Item, and Fluid Cells
+Added a recipe for the Creative Mana Tablet
+Added a recipe for the Creative Motor
+
+
+
+Balance Changes:
+
+
+Pulverizer Catalysts
+Buffed the energy reduction of Wrappist Shards to 70% (was 90)
+Reduced the energy reduction of corundum to 90% (was 85)
+
+
+Induction Smelter Catalysts
+Reduced the use chance of Magic Dust to 25% (was 75)
+Reduced the use chance of Sky Stone Dust to 50% (was 85)
+Reduced the use chance of Cinnabar Dust to 70% (was 80)
+
+
+Phytogenic Insolator Catalysts
+Ash now gives 15% more auxiliary output
+Added Hex Ash (same as Ash, but gives 25% output instead of auxiliary, and has a lower use chance)
+
+
+
+Item Changes:
+
+Added an Artificial Dragon Egg, used to craft Quintessence
+- This allows you to get Quintessence without killing the Ender Dragon
+Added the magic_dust tag to Gem Dust from Apotheosis
+Added the rare rarity to the Infused Diamond & Ender Pearl from RF Tools
+Added the shadow rarity to the Ender Crafter & Alternator
+Firecracker Bushes now give Orange Dye instead of Pink
+
+
+
+Misc:
+
+
+P2P tunnels now show up in JEI since recipe support was added
+Updated the Stoneborn texture pack
+
+
+
+
+
+Mod Changes:
+
+Added Armor Points++ 
+Removed Armor Toughness Bar (Ported)
+- Armor Points does the same thing
+Replaced Chunk Loaders with Chicken Chunks
+
+
+Removed Endless Ocean
+
+
+
+Updated Forge
+Updated AE2 Things
+Updated AI Improvements
+Updated Apotheosis
+Updated AppleSkin
+Updated Applied Energistics 2
+Updated Aquamirae
+Updated Aquamirae Mod Extra Music
+Updated Architectury API
+Updated BALM
+Updated Bee Fix
+Updated Better Advancements
+Updated Better Mods Button
+Updated Bookshelf
+Updated Boss Music Mod
+Updated Botania
+Updated Chunk Loaders
+Updated Chunk Pregenerator
+Updated Clumps
+Updated CoFH Core
+Updated CodeChicken Lib
+Updated Configured
+Updated ConnectedTexturesMod
+Updated Controlling
+Updated Cooking for Blockheads
+Updated Cosmetic Armor Reworked
+Updated CraftTweaker
+Updated Create
+Updated Create Crafts & Additions
+Updated CreateTweaker
+Updated Cucumber Library
+Updated Deep Resonance
+Updated Easy Paxel Lite
+Updated Ender Storage
+Updated Enigmatic Legacy
+Updated Extended Crafting
+Updated FTB Backups
+Updated FTB Chunks
+Updated FTB Library
+Updated FTB Ranks
+Updated FTB Teams
+Updated FancyMenu
+Updated FastWorkbench
+Updated FerriteCore
+Updated Flywheel
+Updated Food Enhancements
+Updated GeckoLib
+Updated Geode+
+Updated Iceberg
+Updated Industrial Foregoing
+Updated Iron Chests
+Updated Iron Jetpacks
+Updated Item Filters
+Updated JEITweaker
+Updated JER Integration
+Updated Jade
+Updated Jade Addons
+Updated Just Enough Items
+Updated JourneyMap
+Updated Konkrete
+Updated KubeJS
+Updated Legendary Tooltips
+Updated Lightman's Currency
+Updated Lightman's Discord Integration
+Updated Liquid Blocks
+Updated Lodestone
+Updated Mantle
+Updated McJtyLib
+Updated Measurements
+Updated Nature's Aura
+Updated Neko's Enchanted Books
+Updated Nourished Nether
+Updated Oh The Biomes You'll Go
+Updated PackagedAuto
+Updated PackagedExCrafting
+Updated Placebo
+Updated Polymorph
+Updated Property Modifier
+Updated Quantum Quarry Plus
+Updated RFTools Base
+Updated Reliquary Reincarnations
+Updated Rhino
+Updated Rubidium
+Updated Simple Discord RPC
+Updated Structure Gel API
+Updated TerraBlender
+Updated Terralith
+Updated The Twilight Forest
+Updated Thermal Cultivation
+Updated Thermal Expansion
+Updated Thermal Foundation
+Updated Thermal Innovation
+Updated Thermal Integration
+Updated Thermal Locomotion
+Updated Tinker's Construct
+Updated Titanium
+Updated When Dungeons Arise
+Updated Wither Skeleton Tweaks
+Updated XNet
+Updated YUNG's API
+Updated YUNG's Better Desert Temples

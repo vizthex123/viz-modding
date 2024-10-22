@@ -1,0 +1,29 @@
+R3.5 Changelog:
+
+Removed WIP Message from "Better Storage" since the questline is complete
+
+Changed recipe for Tool Station
+- Now you need to at least get to The Nether before being able to use Tinker's
+
+Added several recipes that use Extended Crafting's items
+- Most of them are just ways to mass-craft Chance Cubes (because why not?), but there are a few other ones. I will expand upon this as the pack develops, but the main issue is finding items that should be gated behind the crafting of these tables (and the other crafting system it adds). (There's also a couple alternate recipes for existing items)
+
+Properly fixed recipes for Cooked Fish
+
+Added a couple quests, and a questline for Extended Crafting
+
+Added Demagnetize
+
+Removed Construct's Armory
+- There's already enough armor to make the game interesting (plus flux-infused nullifies all the others since it uses RF), and people tend to default to Tinker's all the time (myself included, which is why I try to minimize it in my packs) whereas I want them to use other types of tools and armour.
+
+Updated Champions
+Updated Controlling
+Updated Corali Tombstone
+Updated CraftTweaker
+Updated Electrobob's Wizardry
+Updated HeartDrops
+Updated Netherending Ores
+Updated The Aurorian
+Updated Thermal Expansion
+- Updated Thermal Foundation

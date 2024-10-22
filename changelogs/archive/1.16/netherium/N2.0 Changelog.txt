@@ -1,0 +1,82 @@
+v2.0 Changelog
+
+
+The "death" quest can now only be activated once
+- Increased reward to 9 Bones and 3 Golden Apples
+Added recipes to smelt various items into their parts
+- It's mostly buffing the vanilla ones, with a couple additions
+Fixed how nether ores smelting into the wrong ingots
+
+
+The player now starts with 32 dirt, in case you spawn in a lava lake (like I did)
+Changed "Welcome to Hell!" to detect the quest book you start with
+- The reputation detection wasn't working, so instead it'll do this.
+You can now turn bones into wood
+Added the stone_tool_materials tag to Basalt
+- This allows you to use it to make stone tools using Basalt
+Added a recipe for the furnace that uses Basalt
+Reduced the lava gained by melting Pummeler Remnants to 350 (was 500)
+
+
+Increased the chance to get Magma Cream from Pummeler Remnants in a Crusher (now 35%, was 25%)
+Pummeler Remnants now get crushed faster (6 seconds)
+Pummeler Remnants can now be milled into Magma Cream (15% chance, takes 12 seconds)
+Popped Pummeler Remnants can now be milled into Magma Cream (25% chance, takes 10 seconds)
+Popped Pummeler Remnants can now be crushed into Blackstone (65% chance) & Magma Cream (50% chance) {Takes 5 seconds}
+Fixed how the Magma Cream recipe was disabled (blaze powder + slimeball in a Mixer)
+
+
+Added a burn time to Blaze Powder (600) and Magma Cream (400)
+- Both are now accepted by the Fuel Canister
+Added a burn time to Magma Blocks (1,600, same as Coal)
+Added a burn time to Popped Pummeler Remnants (1,200, bit less than Coal)
+- I might change this one later, but all of these are so you can have some fuel for your furnaces earlier on.
+Increased the Champions HUD range to 75 (was 50)
+Changed the Anointing Table to a Mechanical Crafting recipe
+Tweaked a few things from Create (mainly reducing the exhaustion when using a hand crank)
+Configured Bountiful (as best I can at least)
+
+
+Increased the amount of lava Magma Blocks give in a Mixer (from 250 to 500)
+Liquid Magma (from Tinker's Construct) can now be made in a Mixer (lava + magma block/cream)
+- Makes half as much as the melter recipes
+Increased the amount of Obsidian Dust gained from the recipe
+- Now gives 12
+Crafting Obsidian now requires 2,000 mB of Molten Magma
+Added a recipe to liquify Rotten Flesh into 125 mB of water
+Increased the amount of water gained by liquifying a Stuffed Filter (was 500, now 1,000)
+
+
+The Polished Blackstone recipe for the mill now accepts Polished Basalt
+Warped Wart can now be turned into 150 mB of water
+Nether Wart Blocks can now be turned into 750 mB of water
+Crying Obsidian now requires Basalt and any cobblestone (in addition to the existing Blackstone)
+Tweaked the water recipe for Raw Porkchops
+- Now gives 2, but uses 1 bucket of water
+- Now requires heat
+
+
+Changed the first Engineer's Guild gift to 7 points
+Changed the recipe for all anointing oils
+- All of them are now made in the mechanical crafter, and the Eyes of Ender have been replaced based on the oil
+- End Crystals have been replaced with a Netherite Ingot
+Added a recipe to convert Wallcreep into Rotten Flesh & Wraps, as well as Pink Slime
+Added a recipe to crush Soul Soil into Soul Sand
+Added a recipe to crush Shroomlight into Glowstone (65%) & Fungi (both kinds, 50% chance each) {also red & brown mushrooms, 25% each}
+Added a recipe to crush Warped Wart into Warped Fungus (1, 50% chance for an extra) and Nether Wart (50%)
+
+
+
+
+Removed some obsolete scripts
+
+
+
+Added Repair Chests
+Added Simple Discord Rich Presence
+Updated Comfortable Nether
+
+
+Changed JourneyMap to the Beta version
+
+Deleted Extended Crafting

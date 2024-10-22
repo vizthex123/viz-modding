@@ -1,0 +1,97 @@
+v3.0 Changelog
+
+
+You can now relax in a hammock without having to sleep in it
+Made a better texture for the Advanced Wiring Kit
+Started distributing some of the lore
+- Some comes from quests, some found in the world, etc.
+Plants from Better Diving should now properly generate
+Multiple researches will now accept many more items
+Tweaked Worley's Cave generation
+- It should make them a bit more cave-like, but it also depends on how well the game generates new stuff in existing worlds
+
+
+Solar Furnaces now heat you up
+- Heats you up by 3 (regular furnace is 4 when active)
+The recycling recipe for Power Cells now gives more Copper
+Tweaked Lycanite's Mobs config
+- This should (hopefully) help with the tickrate lag spikes, but it's not a guarantee.
+Properly named the Bone Stick (oops)
+Fixed some Artisan's Tools not being craftable
+Removed my cobblestone tool material
+- It was very useless, sorry for adding it
+
+
+Reduced the durability of flint tools
+- Now 50, was 75
+A few recipes that should be hidden until later on are now hidden until later on
+Changed the recipe for the Heat Exchanger
+- Now locked behind the "Technology" and "Smithing" researches, and uses Pliers instead of a Solderer. Durability cost has been doubled.
+- The existing solderer recipe is still avaliable, and is slightly cheaper, but requires an Engineering table.
+The following researches now accept more items:
+- Advanced Cooking
+- Smithing
+- Engineering
+- Multi-Machines (was Modular Machinary)
+
+
+Removed the hammer from the Machine Controller recipe
+Several recipes will now accept both Gold Ingots, and Gold from Better Diving
+The Machine Controller recipe now uses Copper instead of a Diamond or Emerald
+Fixed a couple Modular Machinery recipes not being sorted correctly
+Machine Casing now use Stone (or anything with the sediment OreDict entry) instead of a Block of Redstone
+Swapped the durability costs for both Reinforced Casing recipes
+Slightly tweaked the recipe for the Fuel Canister
+The campfire from SimpleDifficulty now drops itself when broken
+- Not sure why it doesn't do this by default, but oh well.
+- Now gives +10 temperature instead of +7
+
+
+Water Strainers now take slightly longer to catch items
+- They also have a moderate chance to be empty, which helps balance them out quite a bit (the sea is rather large after all)
+Changed the recipe for the Circuit (swapped Fibrous String for Silicon)
+Changed the recipe for the Advanced Wiring Kit (changed Redstone to Circuit)
+Reduced the RF gained from Creepvines, Creepvine Seed Clusters, and Ink Sacs
+Increased the durability use of all recipes that use an Artisan's Carver
+Increased the amount of RF Energy Input/Outputs can store/transfer:
+- Tiny: 2,048/512
+- Small: 4,096/1,024
+- Normal: 8,192/2,048
+- Reinforced: 32,768/4,096
+- Enabled the Big one, it's at 65,536/8,192
+- Enabled the Huge one, it's at 131,072/16,384
+
+
+Tweaked Fluid Funnels
+- Funnels now hold 500 mB of fluid
+- Funnels now take 3 seconds to transport fluids, and transfer 250 mB at once
+- Taps now hold 50 mB of fluid
+- Taps now take 1 second to transport fluids, but transfer all 50 mB at once
+Added the listAllfishfresh OreDict entry to Better Diving's fish
+Added the chest OreDict entry to Item Buffers and Vacuum Chests
+
+
+
+
+Added AtomicStryker's Battle Towers
+Added Better Burning
+Added Dropt
+Added Fall Damage Tweak
+Added Mowzie's Mobs
+
+
+Replaced Iron Chests with Storage Drawers
+- I feel this is a bit more thematic (and also stores more items)
+
+Disabled Weather, Storms & Tornadoes for now
+- A few (well, one) people on the Discord said that it causes a lot of lag
+
+
+Removed Smooth Font
+Removed Watercan
+
+
+Updated Collective
+Updated CreativeCore
+Updated Ender IO Fluxified
+Updated Nutrition

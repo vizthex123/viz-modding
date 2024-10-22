@@ -1,0 +1,68 @@
+Revival v2.0 Changelog
+
+
+All of the ContentTweaker items have had sprite updates! The good ones were made by masterfulpotato#4037 on the Discord server, you can join and say thanks if ya want.
+
+
+Scaling Health has been added to help encourage the player to visit various dimensions (planets in the lore).
+Each one has a set multiplier on how fast difficulty scales, based on whatever I feel is "fair" (so for example, it's 75% the base speed in the Alien Jungle)
+Nutrition has been added both to encourage you use more than 1 food type, and to make it seems a tad more realistic (but not annoyingly so)
+The starting area has been overhauled. Now, zombies (and other enemies) will constantly spawn and threaten to kill you. There are 2 turrets for defense, but they won't last all that long. Best to move on.
+- There's also a new bit of dialogue to urge the player to check the quest book.
+
+
+Most XL Food items are now made in the Chef's Table
+Most Biomes You'll Go foods are now made in the Chef's Table
+Pristeel Items are now made in the Blacksmith's Table
+Made passive mobs actually drop bones
+Fixed how you couldn't get enough skill points to buy everything
+
+
+Reduced maximum tolerance to 100
+- Rejection now starts at 15 instead of 20. You can buy Neuropozene on the Black Market.
+Fixed a few typos in some lore pages
+Pigs, cows, and parrots now drop bones
+The Miner's Ring uses a block of Stone instead of Iron Block
+Disabled all of Thermal Foundation's armour & tools
+- The bows still remain though, as do the shields
+
+
+RPG-Hud is now enabled by default
+- The UI changes are minimal though, and the quest explains how to change that
+Tweaked the cost of the Ceramics research
+- Now costs 2 clay and 1 block of coal. Changed the reward to 4 Porcelain Clay.
+Removed the duplicate info quest about Reskillable
+
+
+Updated Packed Up
+
+
+Added SwingThroughGrass
+Added Open Modular Turrets
+- There's now a couple near the crashed ship, and the giant hole in the ceiling is no longer blocked. Zombies can get inside so you should leave quickly.
+Added Player Plates
+Added Vulcanite
+Added Don't Even Axe
+
+
+Removed FactInventory
+Removed Extended Crafting
+- Replaced it with Artisan Worktables
+Removed Roguelike Dungeons
+Removed Large Ore Deposits
+- Replaced with Dense Metals (a spiritual successor of Dense Ores)
+Removed BiblioCraft
+Removed Dimension Stages
+- I can't get it to work so it's kind of pointless.
+Removed Bauble Shulker Boxes
+Removed Chest Hoppers
+Removed Deep Mob Learning
+Removed Demagnetize
+Removed Ore Stages
+Removed Torch Bandolier
+Removed Simple Quarry
+
+
+Deleted Mechanics, the recipes I was going to add with it are now made with Artisan Tables' blocks
+Deleted Lightweight Blood Mechanics
+- I really wanted to use this, but it seems to be abandoned and there's multiple issues with it.

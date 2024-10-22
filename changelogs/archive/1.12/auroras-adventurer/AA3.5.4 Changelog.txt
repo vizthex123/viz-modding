@@ -1,0 +1,32 @@
+R3.5.4 Changelog
+
+Removed duplicate Alloy Furnace (Foundry) recipes
+Increased durability of all Paxels and Universal Tools
+
+Disabled the Great Wall world type
+- It doesn't work at all with this modpack's progression & theme, so I don't want people to think they can use it
+
+Changed the recipe for the Quantum Quarry (and reduced the amount of RF it uses per operation from 25,000 to 5,000 [might change later])
+- Requires a regular BuildCraft one instead of the Snow Globe (and since that was the only use for the Snow Globe, it's been disabled)
+
+Tweaked some quests (rewards, shapes, descriptions, etc.)
+Added WIP info to several questlines
+Added a final quest - crafting a Command Block
+- It's incredibly expensive (naturally), and is technically the "ultimate goal"; but truly completing the back is finishing every quest (except the shop ones since they're repeatable)
+
+Boosted recipe output of Solar Panel VII and VIII (gives 2 per craft like the other recipes do)
+
+Added shop for Ender Pearls
+- They can be bought (in groups of 1 or 2) for 1 Valuable Gemstone, or 16 XP Levels. Might change the prices later, but it depends
+
+Changed recipe for Mixed Seeds 
+- It now uses 4 of any seed (instead of just some due to an OreDict glitch), and can be crafted in the 2x2 crafting UI, and directly turns into Toasted Seeds (which are edible)
+-- This is because I see these items as a way to quickly make some food if you're stranded out in a field or something, but their crafting recipes don't make sense if that is their intended purpose
+--- You can also use 8 seeds and a piece of coal (in a shaped recipe) to make 4 Toasted Seeds at once. In case you find some underground or something.
+
+Added Simple Quarry
+- This was supposed to be added awhile ago, but I guess I forgot or it didn't download properly.
+-- The Powered Quarry serves as a mid-tier quarry, roughly equal to the BuildCraft one (which comes before the Quantum Quarry)
+--- The Fueled Quarry is an early-game Quarry, attainable after getting some Ender Pearls
+
+Updated The Aurorian

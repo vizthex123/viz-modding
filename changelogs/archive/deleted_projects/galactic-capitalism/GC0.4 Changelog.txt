@@ -1,0 +1,22 @@
+v0.4 Changelog - Lore & Quests
+
+ 
+
+NOTE: DUE TO THE EXTENSIVE CHANGES TO THE MAP, PLEASE MAKE A NEW WORLD!
+
+Added a new secret
+Renamed secrets to meteors
+- Also renamed the items you need to turn in for the quests
+Improved loot from most secrets
+Added new "Exchange" questline, which lets you change Crafts and Coins into Credits.
+Changed basically every quest description to better fit the lore.
+- Also changed intro text
+Added elevator to get back to the portal that leads to the starting area
+
+ 
+
+Starting implementing reputation systems, currently two exist: Archeological Society and Company Standing (Only 1 quest so far use this system, but I plan to have more. Several quests increase each reputation though.)
+
+ 
+
+Added ~12 quests total

@@ -1,0 +1,12 @@
+v5.1 Changelog
+
+
+Re-enabled all of AE2's addons, and the mod itself.
+- This is because for whatever reason, Mekanism & a few other mods disable themselves when I disable AE2. I have no idea what is causing this, but it breaks the entire modpack.
+
+
+Staged all of AE2 & its addons behind the Information Age
+- I'll make the proper progression in v6.0, but this is a band-aid fix to get the game running for now.
+
+
+Improved  info about how Storage Crates (Better Storage Too) will randomize the slot an item is in

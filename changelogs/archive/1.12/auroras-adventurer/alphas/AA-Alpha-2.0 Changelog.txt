@@ -1,0 +1,34 @@
+A2.0 Changelog:
+
+Renamed "Mining Advancements" to "Mining Improvements"
+- You also need to get a Stone Pickaxe now, icon changed to match.
+-- Also gives 4 torches in addition to the 4 Cobblestone (oh btw it's Cobble instead of Iron now)
+
+Added a reward to "More Lights"
+
+Renamed "Kill Zombies - 10" to "Zombie Hunter I"
+
+Renamed "Kill 100 Enemies' to "Mob Hunter I"
+- Registers all mobs since it's going off stats, but I do hope to make it hostile-only sooon™
+
+
+Improved description formatting of several quests
+All XP rewards are now auto-claimed
+Changed icon for "Starting Out", it's now a Crafting Table
+Added 2 new Questlines:
+The Aurorian Mod, and Botania. Both are incomplete, but have a few quests.
+
+
+
+Mod Changes:
+
+Added Custom Starter Gear
+Added Scaling Health
+Added XPTome
+Added [SBM] Cardboard Boxes
+Added Headcrumbs
+Added Chance Cubes
+Added Set Bonus
+- Current armours with bonuses are: Leather, Iron, Gold, and Diamond armour (There's also a secret one!)
+
+Disabled all Stages mods since I can't get them to work, but want to use them in the future.

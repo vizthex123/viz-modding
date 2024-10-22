@@ -1,0 +1,20 @@
+v3.2 Changelog - A Few Small Things
+
+
+Added the last few set bonuses I had planned
+- I might add some for Aether armour later, but for now there's plenty
+Buffed the attack set bonus Diamond Armour gives
+- Removed Armor Toughness bonus
+Fixed a couple tooltips being inaccurate or misspelled
+
+Buffed Ruby Armour set bonus
+- Regeneration II lasts 2 seconds longer
+
+Fixed a few exploits
+
+Added 2 new quests to "The End" (re-named questline to "The Ancient Void")
+- Started working on adding the "thank you" messages each character will give. About half are implemented right now.
+
+Renamed "The Nether" to "The Nether Realm"
+
+Added a few new quests to "Serving Her Majesty"

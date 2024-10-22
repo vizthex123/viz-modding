@@ -1,0 +1,20 @@
+Dev Build 2 Changelog:
+
+
+Overhauled the entire ticket/token system
+Added *a lot* of AMC values (seriously it took like 2 days)
+Changed a few AMC values (I think?)
+Greatly expanded upon the quest system, added a few shops and uses for tickets & tokens
+- Tokens can be used to purchase various materials of the AMC tier they're a part of (AMC tooltips are coloured based on said tiers)
+- Tickets can be used to purchase rare materials/collectibles
+- You can gain tokens/tickets by crafting them or selling rare items
+
+
+Changed the texture for both Token Catalysts
+Added 3 new tokens: Azure, Minium, and Alchemist's
+- If you can figure out where I got the names for the ashen, verdant, azure, and minium ones from, let me know to win 10,000 internet points. And maybe a special role or something.
+Added 3 new token catalysts: Very Advanced Token Catalyst, Highly Advanced Token Catalyst, and Alchemist's Advanced Token Catalyst
+- Each tier is used to be the corrosponding token, because a few of them have overlapping recipes. I may change this later.
+Added a few new recipes for Alchemical Bags/Crates
+Should've fixed some items missing tooltips (may have missed a few though)
+Gave Deep Sand items an AMC

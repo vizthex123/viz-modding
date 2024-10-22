@@ -1,0 +1,4 @@
+v5.0 Test Build Mini-Update Changelog:
+
+Removed all nutrients from Rockshrooms (they are made of rocks after all)
+- Hard Stew still has the Vegetables nutrient (since you mix in some stuff there)

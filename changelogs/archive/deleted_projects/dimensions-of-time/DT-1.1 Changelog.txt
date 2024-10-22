@@ -1,0 +1,58 @@
+v1.1 Changelog - The Big Update
+
+Added 20 quests total
+
+
+Only managed to add half a row to the Periodic Table questline. Sorry.
+Restructured Peridoic Table questline
+Boosted Helium amount form Nether Star grindstone recipe
+Hopefully fixed Lockdown not working
+Fixed Uranium (MineChem) recipe
+- Should be working now, if not please tell me
+
+Remove HQM Heart recipe
+- I had played around with using Hardcore mode on HQM, but decided not to.
+Changed Certus Quartz "Buying" recipe
+- Gives 3 Certus for 125 Credits
+Changed Forestry T2 Bag recipes
+- Uses 1,500 Credits instead of 5,000
+-- As I find more "useful" backpacks I'll add recipes for them
+Removed Cooldown time on "A Whole New World"
+- In my testing, I noticied it was rather irritating to have to wait 3 Minecraft days to leave a terribly generated dimension.
+
+Added recipe for redying wool to white
+- Personally I don't like having 16 different colours of wool, I only use white wool. I'm sure some other people are like this too
+-- The recipe is any wool colour in a Furnace shape (you can mix and match too, for example 1 Purple wool, 3 Blue wool, 2 Orange wool and 2 White wool will still work) and 1 bone meal in the middle. Gives 8 white wool.
+Editied several quests
+Increased rewards on some quests
+
+Changed Mystcraft Crystal grindstone recipe to only 5% for 500 Bonus Credits
+- This gives a higher chance of you getting the bonus credits, I'll change it if it's too OP
+Added use for Geodite Block
+- Can be ground into 5k Credits
+-- Removed recipe for regular Geodite (So the only way to get it is the ore or a Mystcraft Crystal)
+
+Angel Ring reward from Reward bags is rarer
+Started working on Broex'yht-Y'Afht questline (IC2, Mekanism and Super Multi-Drills)
+Expanded Broex'yht-Qrueag (Technology) questline
+
+
+
+
+
+Mod Edits:
+
+Added Uncrafting Grinder
+Added EIORecipesTEInductionSmelter
+Added Twilight Forest Portal Catalyst
+- Costs 1 Diamond and 750 Credits
+Added Craftable Nether Star +
+- Disabled Blaze Powder recipe, as it conflict with the Glowstone-Redstone Mixture recipe.
+Added Gany's Mods
+Added Super Ores
+- If it's too OP I'll remove it, but this is mostly for testing.
+Edited Void Decay config
+- Made it slower and pre-infect less chunks
+-- The rate before this patch was a bit too fast
+Editied MouseTweaks config
+- Disabled mouse wheel scrolling (NEI and InventoryTweaks work together to do this already)

@@ -1,0 +1,121 @@
+v10.0 Changelog (Finality):
+
+
+The final (major) content update!
+
+This will add the last few pending late-game quests I wanted to add, some balancing changes, etc.
+
+I wanted to add Advanced Rocketry quests too, but the mod is dumb & doesn't work so I won't do that.
+
+
+Added a new fluid: Alien Goo
+- You gain it by melting down Tech Guns' Alien Blaster in a Magma Crucible (makes 10,000 mB of fluid per item) and processing Alien Bugs in an Enstabulation Apparatus (makes 2,500 mB per mob)
+- Currently, its only use is to be processed into Liquified Research (in a Fractionating Still. 500 mB makes 250 mB of research)
+Re-enabled the Centrifugal Separator and its augment: Enstabulation Apparatus
+- Added recipes to process Alien Bugs, Nether Wasps, and Cyberdemons
+Overhauled the recipes for storage cells
+Changed the base RF storage of all Thermal Innovation items to 25,000
+- This value will scale with the item tier, so by the time you get resonant it should be at ~100k or more
+Finished the recipes for AE2 content
+Tweaked the recipe for the ME Interface
+Tweaked the recipe for the ME Fluid Interface
+Changed the recipe for the ME Dual Interface
+Swapped the cores over to the Basic Crafting Table (Extended Crafting)
+Re-named the logistical computer chips/processors to "Logistics"
+
+
+Changed the reward for the millionaire's quest
+Fixed the localization of Liquified Research
+Liquified Research is now sellable (1 bucket = $50)
+Tweaked the properties of Liquified Research
+Should've fixed how staged recipes can't be crafted in AE2 terminals
+Fixed the Automation Interface being staged incorrectly
+Re-staged the Bedrock Miner (now Atomic instead of Machine)
+- Changed the recipe
+
+
+Sign Edit no longer requires you to hold a sign
+Balanced out Bedrock Ores
+Buffed the barley seed recipe to give 2 each craft
+Buffed all Flux Networks storages
+- Fixed recipe conflict between the basic storage and flux plug
+Added flux plug/point conversion recipes
+Coins now give info about how they can be sold when first picked up
+Swapped the order of the buying tabs from AdminShop
+
+
+Changed the recipe for the Warp Stone
+- Tweaked RF cost and remove the waystone as a component
+Re-enabled the Pulverizer, Redstone Furnace, Induction Smelter, and their exclusive upgrades
+- Changed the recipes to use Mekanism machines
+Added tooltips to Data Disks that states their Liquified Research values
+Re-balanced all the Data Disk > Liquified Research recipes
+- Huge thanks to @JonaB03#3856 on the Discord for fixing these for me
+-- Also re-did their RF costs
+Re-balanced all the Liquified Research > Data Disk recipes
+- I've made them cost 50% more than you gain from the disk (and cost 50% more RF), but this is subject to change
+
+
+Buffed the Alloy Furnace recipe for Hardened Glass to be like it should (inputs > 2 glass)
+Changed the recipe for the Filler Upgrade
+Opinium Cores can no longer be sold
+- I may re-add this later, but for now it's been disabled
+Nerfed the power output of various Mekanism generators
+Nerfed Ethylene (again)
+Removed the Disk Manipulator from Refined Storage
+Moved AE2 silicon to the Information Age
+Added both Refractory Glass recipes to the Induction Smelter
+Changed reward for finishing the AE2 research to a 4k Storage Disk
+
+
+Reduced Lapis Lazuli's price to $5
+Increased empty honeycomb to $7.50
+Increased filled honeycomb to $10
+Re-balanced prices for Nether Quartz
+Ash Bricks are now sellable ($6 per)
+Bricks are now sellable ($4 per)
+
+
+Added a recipe to convert Yellorium Dust into Yellowcake
+Tweaked RF values of JAOPCA's coins
+Migrated my custom Rocky Chunks to JAOPCA's ones (because they look 100x better)
+Tweaked recipes for XP > Liquified Research
+Added a recipe to make Blaze Powder in the Crusher
+Overhauled staging of magnets (Tiered Magnets)
+Reduced the mining speed of the Diamond Paxel to 12
+The Black Iron Pedestal recipe now makes 4 per craft (was 2)
+Boosted RF cost for the various data disks
+
+
+The carbon brick recipe now gives 2 if Charcoal is used
+Fixed the compacter recipes not using the correct amounts
+- Reduced RF costs
+Fixed 2 of the recipes for Liquid XP > Liquified Research not working as intended
+Changed the recipe for the filler upgrade
+Added several  items to the bio/protein reactors
+Added Project Red gems to Lapidary Calibration
+Added Dilithium Crystals to Lapidary Calibration
+Added Certus Quartz (and charged) to Lapidary Calibration
+Massively increased the recipe cost for Black Hole units & tanks
+Tweaked the recipe for the Security Terminal (now uses an advanced circuit)
+
+
+
+
+Added JAOPCA
+- This (should) fix how Mekanism smelters refuse to work for basically no reason. If not, it'd be best to just use TE machines.
+
+
+Updated UniDict
+Updated Exchangers
+Updated Flux Networks
+Updated Simple Quarry
+- This fixes the crash with the Powered Quarry
+
+
+Removed RF Tools
+
+
+SERVER PACK:
+
+Added Hunting Dimension

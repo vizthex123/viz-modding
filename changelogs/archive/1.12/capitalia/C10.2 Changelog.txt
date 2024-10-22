@@ -1,0 +1,44 @@
+v10.2 Changelog
+
+
+Actually made miners use the ore dictionary
+- Fixed the duplicate recipes
+Removed chest oredict entry from shulker boxes
+Fixed Iron Plates from Tech Guns not showing up in JEI
+Crucibles now give 400 mB when melted down (intended for the last update but I forgot to change it)
+Steel Paxels now have 5 extra durability
+
+
+Fixed the buy categories of the shop being out of order
+Fixed all the Shroom Powder recipes conflicting with dye recipes
+Changed the messages of all research to be in first-person rather than third-person
+Obsidian Swords now do 16 damage
+Peridot Swords now do 8 damage
+
+
+Added a new fluid: "Hellish Viscera"
+- Like Alien Goo, it hasn't been named properly; but can be turned into liquified research
+- Can be gained from nether-themed TechGuns gear (and imp leather)
+- 1,000 mB makes 250 mB of liquified research
+Added 2 workaround "sample" items to allow you to process TechGuns' gear into their fluids
+Swapped the Iron Data Disks in the Information Age research to 2,000 mB of Liquified Research
+The Revolver quest now accepts both the Foundry and TechGuns revolvers
+
+
+XP rewards are no longer team rewards
+Buffed the reward for "Backpacks"
+Buffed the reward for "Metal Press"
+Added a recipe to make Black Artifical Dye out of Carbon Bricks
+Reduced the price of the Miner's Ring to $25
+Added recipes to make Military Science Packs out of TechGuns ammo
+
+
+
+Added AttributeFix
+
+
+Updated AdvancedRocketry
+Updated CraftTweaker
+Updated JAOPCA
+Updated LibVulpes
+Updated Magneticraft

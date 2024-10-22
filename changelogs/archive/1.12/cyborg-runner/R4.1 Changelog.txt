@@ -1,0 +1,69 @@
+v4.1 Changelog:
+
+
+Changed a bit of dialogue to make things more clear
+Added several anti-cheat measures to the starting area
+Increased the amount of food you start with
+
+
+Sign Edit no longer requires you to hold a sign
+Tweaked the Champions config
+- Added a new tier, changed the colouring system, re-balanced the spawnrates & affix spawn chances (and their minimum tiers)
+-- Disabled the "shielding" affix
+Enabled the Artisan's Wooden & Stone Sifters
+Changed the recipes for the Survival and Furnace generators
+Migrated craftable Capsules to no-blueprint ones
+- The hoes used in the farm capsules now lose durability instead of being consumed
+
+
+Changed the Miner's Ring recipe to use 4 Artisan's Pliers durability
+Added Bonecraft items to the InvTweaks sorting tree
+Added the Quest Book to the InvTweaks sorting tree
+Re-enabled stone and wooden shears
+Serene Seasons should now apply to every dimension
+- The world now starts in a random season
+
+
+Fixed the Refined Storage research not being labelled properly
+Changed the Bronze recipe to use an Artisan's Hammer + 250 mB of Lava
+Changed the Steel recipe to use an Artisan's Hammer Cutter + 1,000 mB of Lava
+Changed the recipe for Electrum, Invar, and Constant to use Cutters instead of Solderers
+Changed the recipe for Platinum Toilaries to use 2,000 mB of Lava (was 3,000)
+Rotten Flesh and Spider Eyes now restore some protein
+The DIY Melon Circuit now uses Glowstone or Redstone in its recipe
+
+
+Added Block of Electrotine to the Enervation Dynamo
+Fixed Totem of Undying and Dragon Egg being in the wrong dynamo
+Buffed Bronze tools to 7.25 mining speed
+Reduced spanner durability usage on the Disk Drive recipe to 100 (was 125)
+Buffed the chances of gaining bones from decrafting Bonecraft items
+- Armour is now a 35% chance to get an extra, and a 20% chance to get one more (was 25/20)
+- Tools now have a 50% chance to gain an extra
+Changed the colouration of Artisan's Flint Tools
+
+
+Buffed the (regular golden apple) recipe for Golden Apple Pie to make 2 per craft instead of 1
+Tweaked the Caramel Apple recipes (4 & 8 per craft) to use 1 (2 for 8-apple recipe) less sugar
+- Now uses an Artisan's Beaker (to pour the molten caramel)
+- Tweaked lava costs a bit
+The Butter recipe now uses an Artisan's Beaker
+The Chocolate recipe now uses an Artisan's Beaker
+- Increased chocolate gain to 4
+Added a recipe for Cheese that uses Blazing Pyrotheum
+
+
+
+Updated UniDict
+
+
+Added Level Up HP (Forge)
+Added Login HP Fix
+
+
+Added Better Burning
+Added BurnBabyBurn
+Added Coal Processing Machine
+Added Nibrock's More Coal Mod
+- I've removed the recipes, but made them drop from Coal Ore. Also renamed them to be more thematic.
+Added Crimson Coal

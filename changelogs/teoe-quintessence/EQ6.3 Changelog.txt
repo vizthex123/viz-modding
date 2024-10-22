@@ -1,0 +1,167 @@
+v6.3 Changelog:
+
+Main changes:
+
+Added custom game window icons, and a custom window name
+The menu will now load different versions based on your game window's resolution
+- If the buttons aren't aligned properly, let me know in the Discord and I'll fix it
+Fixed the tooltip on Spent Filters
+
+
+Sawmill recipes for tools will now accept damaged ones
+Overhauled my recycling recipes
+- Create now gives more primary output, but TE gives more secondary output
+- Pulverizing items to recycle them now gives Scrap
+- Induction Smelting items to recycle them still gives Ingots & Nuggets
+-- Due to some nuggets missing, a few recipes will give Small Scrap (with a boosted chance) in lieu of them
+- Does not apply to Sawdust recipes
+
+
+Ring of the Seven Curses changes:
+
+- Players now only deal 25% less damage instead of 50
+- Bees, Iron Golems, Snow Golems, and Guard Villagers are no longer hostile when using the Ring of the Seven Curses
+- Tweaked the placement of the Ring of Ender's chest button
+- Now auto-equips when purchased
+
+
+
+
+Quest changes:
+
+The following quest lines no longer display completion plaques:
+- Multiplayer Utilities
+- Extradimensional Emporium
+- Miscellaneous Magic
+
+"Basic Smelting" no longer gives you a fuel container choice reward
+- The Seared Heater is no longer consumed
+- Info has been added explaining how to recycle the blocks
+"Basic Wallet" now accepts any wallet
+Renamed "Glow it Up" to "Glow Up"
+Fixed XP not auto-claiming on several quests
+Added a few quests for Farmer's Delight
+
+
+Added a quest for TE ducts
+Added a quest for the Fluid Cell
+Added a quest for the Lapidary Dynamo
+"Compressed Powergen" now rewards 5 Iron Coins (was 25 Copper)
+"Steaming Hot Powergen" now rewards 5 Iron Coins (was 25 Copper)
+"Foodificated Powergen" now rewards 2 Iron Coins (was 1)
+"Disenchanted Powergen" now rewards an Emerald Coin (was gold)
+"Moneyriffic Powergen" now rewards up to 3 steel coins (was 2), and rewards 3 Iron Coins
+Slightly increased the Sawdust reward from "Serratious Sawing"
+"It's Not People" now gives 1 Gold coin (was 5 Iron)
+
+
+
+
+
+
+Balance changes:
+
+Massively reduced the RF usage on the Fluid Extractor and Latex Processing Unit
+- Both now use 400 RF per operation (was 1,000)
+Restored the default RF rate for Nether Quartz (40k, was 50)
+Restored the RF rate for Amethyst Shards (40k, was 30)
+Swapped the RF rates for the Gourmand (now 40) and Magmatic dynamos (now 50)
+Fixed modded Coals giving less RF than they should in a Stirling Dynamo
+
+
+All Induction Smelter recycling recipes now use less RF, and thus finish faster
+The Magic Dust smelter catalyst is now 2x energy usage (was 2.25)
+The Amethyst Shard smelter catalyst is now 35% energy usage (was 0.25)
+Reduced the catalyst gains of Certus Quartz Dust to 1.25x primary and 1.35x secondary
+- Increased use chance to 35%
+
+
+Leather Armour now recycles consistently
+Reduced the amount of items Horse Armours give when recycled
+The Sawmill recipe for Saddles now matches Create's
+Item Frames now saw into their intended amount of Sawdust
+Halved the burn time of Sawdust Blocks (now 6 items instead of 12)
+
+
+Loyalty now maxes out at 3 levels (was 10)
+Reduced the chance of affixed items spawning in chests to 3% (was 5)
+Reduced the chance of affix gems spawning in chests to 5% (was 30 & 15)
+Slightly reduced the dropchance of affix gems & items from random mobs
+Explosive Arrows no longer damage blocks
+
+
+
+
+Recipe changes:
+
+Beetroot Soup now uses 3 Beetroots instead of 6
+Fixed BYG sands not smelting into normal glass
+- Their coloured variants are still craftable in the Blast Furnace
+Upgrading Item Pipes now needs 6 at once
+Added recipes to convert Glow Ink Sacs into normal ones
+Added recipes to scrap Platinum and Rose Gold items
+
+
+Added a recipe to pulverize Zinc
+Added boosted recycling recipes in the Induction Smelter
+The Basalt Ash -> Charcoal recipe no longer uses blocks
+The Subzero Ash -> Charcoal recipe now has a rare chance to give Arcane Charcoal
+Added a Pyrolyzer recipe to convert Compressed Sawdust into Charcoal
+All Scrap types can now be smelted in a Redstone Furnace
+The Engimatic Amulet can now longer be coinified
+
+
+Tweaked crushing recipes for a couple of raw ore blocks
+Added a recipe to mill all Terracotta types into Clay
+Added recipes to recycle furnaces
+4x Compressed Sawdust can now be made into 2 Blocks of Sawdust
+Items can now be scrapped in the Induction Smelter for boosted outputs
+Removed rail recycling in the Induction Smelter
+Actually added Platinum Scrap, and recipes for it
+
+
+
+Misc changes:
+
+Changed the default controls agai, should now have most things unbound
+- This won't affect existing settings
+Compressed Sawdust now has a burn time (400, smelts 2 items)
+Disabled the Depth Meter, Wrench, and Pocket Jukebox
+Added Natural Quartz to the Lapidary Dynamo (30k RF)
+Changed the internal name of Artificial Dragon Eggs
+- Was going to do the same with the Iridium Fuel Cell, but it keeps crashing the game
+
+
+Foliage can now be composted (15% chance)
+Added the meltable tags to Iron Chests items
+Recycling shop stands is now more sensible
+- All of them now use the Pulverizer
+The Wood -> Iron Chest upgrade now has the better_chest tag, allowing it to be used in the "Better Storage" quest
+
+
+
+
+Mod changes:
+
+Swapped Refined Pipes for Thermal Dynamics
+- Refined Pipes is still installed, but has been restricted to just item pipes
+-- All (non-item) pipes are now uncraftable, but can be recycled so you can transition to Dynamics
+Swapped Food Enhancements for Farmer's Delight
+Added Nether's Delight
+
+Removed Overloaded Armor Bar
+Removed Rare Ice
+Removed libIPN
+
+Updated Architectury API
+Updated CoFH Core
+Updated CraftTweaker
+Updated Death Counter
+Updated Deep Resonance
+Updated Ding
+Updated Thermal Cultivation
+Updated Thermal Expansion
+Updated Thermal Foundation
+Updated Thermal Innovation
+Updated Thermal Integration
+Updated Thermal Locomotion

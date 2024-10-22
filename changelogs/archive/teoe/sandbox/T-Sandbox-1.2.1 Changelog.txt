@@ -1,0 +1,17 @@
+v1.2.1 Changelog - Hotfix
+
+Added AI Improvements
+Actually added Quadrum
+Added Extra Fixes
+
+Added Mine Trading Cards
+
+ 
+
+Removed Fastcraft - causes issues now, replace with BetterFPS
+Removed Galacticraft and all its addons/dependicies
+- Causes lots of lag
+
+ 
+
+Fixed Emerald Nugget recipes

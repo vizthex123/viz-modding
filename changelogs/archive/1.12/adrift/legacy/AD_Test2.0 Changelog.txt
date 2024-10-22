@@ -1,0 +1,91 @@
+Test Build v2.0 Changelog:
+
+
+Updated the starting items
+Tweaked Better Diving values for various items
+Updated a few early-game researches to actually be possible
+Blacklisted several items from Lootbags
+Added 2 new Modular Machines:
+- Recycler: Recycles items. Kind of in the name.
+- Pulverizer: Currently does nothing, but will double ores & such
+Tweaked the Alloy Furnaces' upgrade
+- Machine Vent upgrade now increases speed by 25% (was double output items)
+-- The same upgrade can now be applied to the Iron Reinforced Centrifuge.
+
+
+Generated a new world for the template to use
+- This one has a much deeper ocean, as well as some slight differences with the secrets and whatnot
+Put a few bonus items into the raft chest
+Tweaked spawning logic of Lycanite's Mobs
+Tweaked the amount of time Water Strainers take to catch an item
+Migrated the Scribe and Tailor's Table research to a matching game
+Added unlock requirements for various Artisan's Tables recipes that should be locked behind research
+
+
+Added OreDict entries for Better Diving's raw and cooked fish
+Tweaked Mineshaft spawnrates
+Fixed how the starting inventory didn't have the correct items
+Tweaked driftwood rarity, it should be more common now
+Change Basic Worktable recipe, now uses 1 crafting table and 2 driftwood
+
+
+Added recipes to smelt horse (called pet in-game) armour
+Buffed Aquaculture's wooden fishing rod to 64 durability
+- You now get this one instead of a minecraft one, enabling you to catch Driftwood & other loot
+Reduced the amount of time strainers take to catch items
+Tweaked a couple of item chances in water strainers
+Added the cobblestone OreDict entry to Moss Stone
+
+
+Balanced out Pristeel armour
+- Reduced durability of chestplate and leggings by 10
+Increased burn time of Blaze Rods to 3,200 (16 items) & Blaze Powder (8 items, same as Coal)
+- Updated Fuel Canister config and tooltips to reflect this change
+Added a recipe to smash a blaze rod into 4 Blaze Powder
+- Locked it behind its own research. I want to expand upon it, but there's not really any other dusts or powders right now. It's optional (as several other researches are), but it'll help conserve resources.
+Set all beds to have a burn time of 400
+Added a burn time to Fire Charges (525)
+Buffed Neptunium Sword damage to 12
+Buffed Neptunium Boots & Helmet defense to 5, added 1 Armour Toughness to the chestplate and leggings (set now gives 24 defense and 10 toughness)
+
+
+Tweaked armour values and crafting recipe for Hardened Leather Armour
+- Now gives 13 defense instead of 15, and is slightly cheaper
+-- Also fixed the incorrect name for the helmet and chestplate
+Disabled Geonach from Lycanite's Mobs
+
+
+
+Updated From the Ground Up
+
+
+Replaced Realistic Item Physics with ItemPhysic Full
+
+
+Added A Block of Charcoal
+Added Just Enough Harvestcraft (JEHC)
+Added Just A Few Fish
+Added Primitive Crafting
+Added Water Erosion
+Added Perfect Spawn
+Added Simple Magnets
+Added Vanilla+ Satchels (by TeamCoFH)
+Added Bedrock B Gone
+Added Bedrock Ores
+Added Keep Equipment
+Added Stone Crafting Table
+Added Lapis to Emerald
+Added Solarfurnace
+Added Worse Solars
+Added Tesslocator
+
+
+
+
+Removed Capsule
+Removed Serene Seasons
+Removed Pollution of the Realms
+Removed Advanced Hook Launchers
+Removed BNB Core & Lib
+Removed Solar Generation
+Removed Default World Generator

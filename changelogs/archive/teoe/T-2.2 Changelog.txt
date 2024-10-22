@@ -1,0 +1,28 @@
+v2.2 Changelog - Quests! Changes! Things!
+
+Changed recipe for Philosopher's Stone (4 Diamond & Emerald Blocks and 1 Nether Star)
+
+
+Fixed "Materials, For Infinity" requirements
+Fixed "Immersive Engineering Start: P1"
+
+
+Added rewards for "Better (Magical) Armour"
+Added description for "Stuff for Magic"Changed amount of Fluix required by "Unlocking: Applied Energistics"
+
+
+Changed reward for "Unlocking: Magi-Tech Limbo"
+Changed reward for "Unlocking: Transmutation"
+Changed rewards for "Infinite Red Matter"
+
+
+Changed amount of times you can get "The Best RNG" reward (From infinite to 3)
+Changed amount of times you can get the "Draconium" reward (From 3 to infinite)
+-Changed amount of bars from 32 to 16
+
+
+Finished Logistics Pipes questline (I LOVE THIS MOD SO MUCH!!!) 
+Added some IC2 quests
+
+
+Added 14 Quests total.

@@ -1,0 +1,152 @@
+v7.0 Changelog:
+
+So I know I said that v6.2 would be the final update.... but I then I started playing again and found more stuff I could fix.
+
+So, you now have v7.0! (and v6.3, which I released awhile ago)
+
+This'll probably happen for my other 1.12 packs if I ever re-play them.
+
+I do still consider the pack complete, but I tend to just keep adding stuff until I eventually stop playing (which you can easily see in Capitalia).
+
+
+Template Changes:
+
+The template world is now locked to hard mode, due to my original scaling plan not working properly. If you wish to reduce it using NBT editing or commands or what have you, feel free to do so.
+Added the missing survivor diaries
+Fixed the various written books saying they were written by vizthex instead of unknown authors
+Fixed up the roads so the village looks more like a constructed village rather than a worldgen one
+Removed the linking book from the starting area
+Tweaked the rewards of a few secrets
+Tweaked the starting village a bit:
+- Slightly reduced the number of spawners, removed the Furnace Generator (that wasn't supposed to be there)
+- Increased the range of the turrets to 10 and doubled their starting ammo
+- Added some more secrets
+- Removed the difficulty lock, should fix how it's meant to increase over time
+- I was also going to disable cheats, but that breaks a lot of the technical quests; so they must remain
+
+
+
+
+Quest Changes:
+
+Fixed the Security Log quest not accepting the Security Log
+Changed the reward for Specialized Crafting
+Changed the feather reward in "Running" to an Ink Vial
+Quests now unlock based on progression (like Capitalia's quests), that way you don't get overwhelmed & have a clear goal from the start.
+
+
+
+
+Research Changes:
+
+Added hints for all the Artisan's Tables and cooking researches
+Renamed furnace researches to "Smelting" (was "Cooking")
+Re-organized the "Crafting" research tree to prevent visual weirdness with the dependency lines
+Added more accepted items to several researches
+- It's mainly in the constants file (which are basically categories that multiple researches use), but I did greatly expanded the list of accepted items for the Engineering & Science researches
+
+
+
+
+
+
+Balance Changes:
+
+Adjusted the storage of Backpacks (again)
+The Alien Jungle no longer generates with the same seed every time
+Reduced the damage of the Stone Sword to 4
+Reduced the damage of the Bone Sword to 5
+Restored the Iron Sword's damage
+Swapped the damage required for the Scientist's Workstation recipes
+Doubled the damage dealt by Flint & Steel
+
+
+Added a few more spawners to the starting area
+Disabled HP-XP loss on death since it kind of punished you
+Reduced the droprate of cybernetics
+The Engineering Table now has a 20% chance to give the player a blueprint (up from 15)
+Minecraft worldgen is now handled by CoFH Core
+- Shouldn't change anything other than removing Coal from the Alien Jungle
+Reduced the droprate of non-vanilla coals from Coal Ore
+Reduced the requirements for the Obsidian Smasher skill
+
+
+
+
+
+Recipe Changes:
+
+Iron Rings can now be used to craft Chain Plating
+Fixed the Mechanical Toolbox recipe not working
+Fixed my recycling recipes giving way more items than intended
+Changed my Sawmill recipes for Beds to give Sawdust instead of Planks
+All Soups/Stews/Salads now require a Burner/Knife to make
+- Drains 3 durability each craft (5 for stews)
+Machine Walls are now crafted in groups of 8
+Enabled the miniaturization recipe for the Miner's Ring
+
+
+Buns now require 125 mB of water to craft (was 500)
+Removed the lava from the Poisonous Potato -> Potato recipe
+Added a recipe to make a Cheeseburger with a Hamburger and Cheese
+Added a recipe to make Buns from Bread
+Changed the Pyrotheum recipe for Cheese to use Milk Fluid
+Brick recipes (brick, stairs, and slab) now require a Mason's Table
+- Same applies to Stone Bricks
+Changed the Solderer in the Designer's Workstation recipe to a Hammer
+Changed the Solderer in the Designer's Workshop recipe to Cutters
+- Tweaked the damage values
+
+
+The Ore Processing upgrade now requires Steel instead of Lead
+Added the Carpenter's Worktable and Artisan's Handsaw, alongside recipes that use them both
+- It must be researched after unlocking the Basic Worktable in order to be used
+- You can use the saws to gain some extra wood from logs, and have a chance to get Sawdust
+- Sawdust can be compressed then smelted into Charcoal, or used to make an MDF Board (which acts like wooden planks)
+- A few table recipes now use the Handsaw, listed below
+
+
+The Toolbox now requires an Artisan's Handsaw to craft (was Artisan's Cutters)
+- Also applies to the Mechanical Toolbox
+The Basic Workstation now requires an Artisan's Handsaw to craft (was Artisan's Cutters)
+The Chef's Worktable & station now requires an Artisan's Handsaw to craft (was Artisan's Cutters)
+The Mason's Worktable & station now requires Water to craft
+The Designer's Worktable & station now requires Water to craft
+The Blacksmith's Worktable & station now requires Lava to craft
+
+
+Crimson Coal can now be used to make Bone Torches
+Migrated the metal furnaces to the Blacksmith's Table
+- The Iron one uses a basic table
+The Pulverizer and Redstone Furnace now require the Engineering Table to craft, and have different recipes
+All Circuits can now use Electrotine
+- The Elite Circuit now requires it
+Reduced the coins gained from selling organs & parts
+Added a recipe to craft the Scanner with Human Eyes
+
+
+
+
+Miscellaneous Changes:
+
+Finally fixed the smelting recipe for Steel, which wasn't meant to be added at all
+The Engineer's Worktable & station can now store fluids
+Tweaked the gravestones a bit
+- Should now be able to spawn anywhere, and no longer spawns skeletons
+Compressed Sawdust can now be used to make MDF Boards (like in The Essence of Everything: Quintessence)
+Added modded foods to the Inventory Tweaks Sorting Tree
+- This allows you to use them within the sorting rules file
+- If you want to know their IDs, you can look through InvTweaksTree.txt
+
+
+Drastically reduced the float of the HUDLens
+- Disabled HUDJack floating
+Tweaked the default positions of the Cyberware & RPG-HUD UI elements
+Added Ore Dictionary entries to many items that were missing them
+
+
+
+Mod Changes:
+
+Updated CraftTweaker
+Updated Village Names

@@ -1,0 +1,84 @@
+v2.3 Changelog - Small Content Update
+
+Re-structured & completed The Aurorian questline
+- You've got to go through the entire mods' progression before leaving now (don't worry it doesn't take all that long)
+-- I'll expand it as the mod does, but for now it covers basically everything so I'm considering it completed.
+
+Finished adding set bonuses for Actually Additions' armour
+- Void Crystal, Emeradic, and Palis now have bonuses
+-- Tweaked tooltips for bonuses added previously
+
+Changed set bonus for Emerald armour
+- Removed Haste effect, now gives Resistance II
+
+Changed Leather set bonus to +10% Attack/Movement speed
+
+Changed Cerulean armour set bonus to give Strength I instead of II
+
+Removed my work-around quests and changed the order of the starting quests a tad
+
+Fixed some broken quests
+Swapped shapes of Shop & Boss Fight quests
+- Pentagons are now shops, Octagons are now boss fights
+
+Re-balanced spawnrates of coins in battle towers
+Slightly reduced spawnrate of Battle Towers
+Removed Stone Buttons from Battle Towers' loot table
+Removed Stone tools from Battle Towers' loot table
+Removed Fishing Rods from Battle Towers' loot table
+Reduced spawnrate of Gold in Battle Towers
+
+Added torches to Battle Towers' loot table
+
+Starting difficulty is now 3
+- This is because in the Aurorian (starting dimension) difficulty is reduced by 3, so these cancel out and make it 0 by default. Plus, you'll have some gear before heading to the Overworld so you should be able to handle things (and Aurorian enemies can't spawn as Champions, so you won't encounter any powerful foes unless you find a Battle Tower)
+
+Removed (most) dev references as Champion names
+Slightly reduced effect of Vortex affix
+
+Added a recipe to convert Silentwood Sticks to regular ones
+Added a recipe to decraft Cobwebs into 2 string each
+Added a recipe to melt Aurorian Furnace Chimneys back into ingots
+Added a recipe to melt Cups {The Aurorian} (I renamed them to "Cerulean Mug") to Cerulean
+
+Added a set bonus to (basic) Wizard Armour
+- I might add some for the others later, but for now it's fine
+
+Changed droprate of Red Hearts to 3%
+
+Added Crystal (The Aurorian) to Lapidary Calibration (worth 50k RF)
+- Renamed it to "Aurorian Crystal"
+Reduced Magic Crystals (Electroblob's Wizardry) to 15k RF each
+
+Removed water breathing potions from recipes for Diving Suit
+- The pre-enchanted ones still need it, but only the short version
+
+Increased the arrow capacity of the Basic Alchemical Quiver to 72 (was 40)
+- Reduced maximum potion capacity to 1,250 mB
+-- They all scale based on this, so the rest have been changed as well
+
+Fixed the bug where Backpacks (Forestry) didn't pick up items they're supposed to
+
+Finished Electroblob's Wizardry questline
+- A lot of the mod content is about customizing your wand and playstyle and such, so I'll leave that up to the player
+
+Started working on the "The End" questline
+Started working on the "Enemy Simulation" questline
+
+
+
+Added The Mushroom Oak to the world generator - https://complex.ivorius.de/submissions/73
+
+Added Worley's Caves
+- This brings variety to caves while also not making them massive
+Added More Loot Tables
+Added Game Stages
+Added Recipe Stages
+Added Item Stages
+Added Bloodmoon
+- Set them to have a 7% spawn chance, and tweaked the min/max spawnrate, range, etc.
+
+Removed Customized Dungeon Loot
+- It doesn't work the way I thought it would, rip
+Removed Just Another Rotten Flesh to Leather Mod
+- Food Expansion adds an item and recipes to do this, so I've modified those to work as I want them to

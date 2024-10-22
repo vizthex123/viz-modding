@@ -1,0 +1,43 @@
+v4.0 Changelog
+
+
+Added the oreTitanium OreDict entry to Tech Guns' Titanium Ore
+Boosted Steel Hammer durability to 576 (can process 192 items)
+- Updated tooltip
+Nerfed crushing table recipe for Overworld Quartz
+- Now gives 1 Rocky Chunk, which can be processed in a Sluice box
+
+
+Added an alternate recipe for Steel that uses Coal Coke
+Boosted the durability of Steel tools to 700
+Re-enabled regular recipes for Steel tools
+- It's still cheaper to use the molds though
+Buffed durability of Diamond Paxels
+
+
+Disabled reinforced chests & lockers from Better Storage Too
+- The normal locker can still be used though
+Disabled cardboard tools from Better Storage
+- They're just useless
+
+
+Disabled copper & tin worldgen from Forestry
+Disabled lead & copper oregen from Magneticraft
+Added quests to make a Compact Machine, and staged it behind the Atomic Age
+Added research for the Atomic Age, and a special Data Disk
+
+
+Made the last few quests for basic generators from Mekanism
+Made basic quests for Refined Storage
+Made quests for Compact Machines 3
+Finished staging & making quests for Solar Flux
+Changed the recipe for Woven Digger's & Miner's backpacks
+
+
+
+
+Added MultiStorage
+
+
+Removed BetterBedrockGen
+- COFH World already covers this, but you have to manually enable it (no idea why it's not on by default tbh)

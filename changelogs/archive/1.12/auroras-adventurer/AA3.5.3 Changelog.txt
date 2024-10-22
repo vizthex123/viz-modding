@@ -1,0 +1,16 @@
+R3.5.3 Changelog
+
+Tweaked some quests
+- Deleted the "OreDict Conversions" quest, and tweaked some XP values on other quests
+
+Reduced the XP Level cost of the following quests:
+
+"Fragments of a Heart"
+"Shards of a Heart"
+"Charged Certus Seller - XP"
+"Difficulty Decrease"
+"Difficulty Increase"
+
+Added an extra reward to "Diamond Horse Armour Buyers"
+
+Updated HammerLib

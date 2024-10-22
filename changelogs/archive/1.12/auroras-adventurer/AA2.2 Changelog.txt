@@ -1,0 +1,87 @@
+v2.2 Changelog - The Balance Update
+
+Finally dropped the "REV" from all updates
+- I consider this project officially revived now
+
+Added a set bonus for Wither Bone armour
+Removed stat buffs from Emerald armour
+- It only gives the potion effects now
+
+Started making set bonuses for crystal armours (Actually Additions)
+- Restonia, Palis, and Diamantine are implemented. I plan to add the rest next update.
+
+Re-balanced both flux armour set bonuses
+
+Reduced spawnrates of battle towers
+Added Fire Charges and both Golden Apples to Battle Towers' loot table
+Added all of Actually Additions' crystals to Battle Towers' loot table
+- Regular ones will spawn uncommonly from floors 4 - 8
+-- Empowered ones can spawn rarely on the top 2 floors (9-10)
+--- Both varieties can be picked up by the Adventurer's Backpack (Forestry)
+---- Added Enchanted and Cursed hearts to the loot table for Battle Towers (top floor only, and they're somewhat rare)
+
+Reduced min/max amount of Coins inside battle towers
+
+Finished implementing "Alloyed Armour" quest
+Finished implementing "Gem Encrusted Armour" quest
+Added a new quest to gather Nether armour
+- As with the others, it's optional
+
+Reduced maximum health of the player to 100 (50 Hearts)
+- Anything past this makes you basically immortal. Especially with the variety of armour/enchantments you can get
+
+Added several items to the Adventurer's Backpack whitelist
+- Tweaked a couple others as well
+
+Removed Enchanted Books from the Champion loot table
+- You get way too many all the time, idk why
+
+Tweaked Bountiful config
+Added a few recipes
+Fixed broken recipes for Blue Heart Canisters
+
+Reduced droprates of Scaling Health's heart canisters by half
+- Passive mobs can no longer drop them
+-- You must use 5 XP levels to use a container
+--- The healing received is 50% more effective
+
+Overhauled difficulty modifiers: (Scaling Health)
+Note that higher difficulties give greater rewards, and you can buy/find Enchanted/Cursed hearts to combat that
+
+The game starts at a difficulty of 1
+Nothing is changed when you die (previously it went up by 0.25 per death)
+Maximum difficulty is now 250 (was 150)
+Every boss kill makes you lose 1 difficulty (I believe it only counts vanilla ones though, hopefully I can add custom bosses)
+
+Blight enemies have invisibility
+
+Dimension-specific:
+
+Difficulty increases twice as fast in the Deep Dark
+- In addition, there is a flat bonus of 1 applied. So if you enter at difficulty 5, the game acts as if the difficulty is 6
+
+Difficulty increases 25% faster in the Nether
+Difficulty increases twice as fast in The End
+Difficulty increases 32% faster in the Hunting Dimensions
+
+While in the Daedalus Labyrinth, difficulty is increased by 7. Better find a way out fast.
+
+Difficulty is lowered by 3 while in The Aurorian (lore-wise, because of the queen's magic and guards protecting it)
+Difficulty is only 90% as effective while in the Twilight Forest
+Difficulty is only 80% as effective while in the Aether
+
+
+Added my Tomb of Dire Terror to the world generator: https://complex.ivorius.de/submissions/130
+- This took awhile to build so please check it out if you find one
+Added Endwatcher to the world generator - https://complex.ivorius.de/submissions/50
+
+Removed my Overgrown Maze from the world generator
+- It broke so I gotta fix it
+
+Added Underwater Chest Bubbles
+Added Underwater World
+Added Customized Dungeon Loot
+Added Bloodmoon
+- Added a lore page for it (disabled since Lore Expansion hates working)
+
+Updated FTB Quests

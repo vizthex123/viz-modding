@@ -1,0 +1,7 @@
+v4.1 Changelog
+
+
+Hid multiple items from JEI
+Hide some useless Thermal Expansion content in JEI
+Disabled some Thermal Expansion content
+Staged some items from Lib Vulpes behind the Space Age

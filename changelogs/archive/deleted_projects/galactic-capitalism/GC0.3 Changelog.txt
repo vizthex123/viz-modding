@@ -1,0 +1,24 @@
+v0.3 Changelog - Small Update
+
+Changed starting area
+Added 3 new quests
+
+I'm trying to think of what else to add, sorry for the (very) infrequent updates
+
+ 
+
+Mod Updates:
+Updated AppleCore
+Updated GalaxySpace
+
+ 
+
+Removed FTB Lib and FTB Utils
+
+- I can't get gamemods to work, so there's no need for these
+
+Removed millienare
+Removed Thaumcraft
+Removed Redstone Paste
+- Project Red does the same thing better
+Added Magneticraft

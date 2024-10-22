@@ -1,0 +1,31 @@
+v1.8 Changelog - Basically More Bugfixes
+
+Changed rewards the reward bags give (I accidentally made them very OP...)
+Added new quest for getting 1,000 Dense Energy Cells (MUHAHAHAHHAHA >:D)
+Changed EMC's of processors from AE, so they have the correct amount (Instead of 4,096 per)
+Fixed ME IO Port quest (Added something to do for it and named it...xD)
+Started Logistics Pipes questline
+-Made the Buildcraft one visible
+Fixed "Compressed Storage" (Crazy Stuff) (Gave Giant Chance Cube instead of Normal)
+Fixed "Thaumcraft" (I forgot to add a Crucible to the Crucible part xD)
+Fixed "Pure Daisy" (Made it detection, as HQM doesn't pick up the crafting)
+Added custom achievement icons for:
+ExtraE
+
+
+
+Mod Edits:
+
+Added LootBags by Malorolam
+-Changed chest drop rates to make them rare (Can't do that with the regular drop rates though, so if they are too common I'll remove the mod)
+Added Hardcore Wither by thor12022
+Changed config for Modular Powersuits, RF gives 1 Power per and EU gives 0.5 Power per (Though IC2 isn't installed)
+-Also, when you change a module mode it will say so in chat
+--Disabled Clock, Compass, Lux Capacitor, Binoculars and Magnet modules
+---Enabled EnderIO recipes
+Changed Craftable Nether Star + config, Nether Star now needs nether materials to craft
+Updated Storage Drawers
+Edited Config of Igauana's Tinker Tweaks, so you can use vanilla tools now (This was supposed to be in the last patch, but I forgot...)
+-Not bows though, as they are bad + Tinker's ones are way better
+
+If I can ever learn how to use it I'll add MineTweaker (so I can configure some recipes).

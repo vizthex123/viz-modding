@@ -1,0 +1,140 @@
+v8.1 Changelog:
+
+Main changes
+
+Added a menu for 1080p
+- My monitor is 1440p, so I just kinda forgot to do this lol
+
+
+Updated both books you find in the starting crashed ship
+Added a Credit Chip to the ship so players can unlock the Alien Jungle portal without exploring
+The regular attack waves now have better enemies
+- Replaced Elder Guardians with cyber mobs
+Overhauled regular attack waves
+- The first few now trigger later so you have time to gather basic materials & whatnot
+
+
+Added an arrow pointing to the research quests
+Moved most quests downwards in Chapter 1 to help mitigate UI clutter
+Removed the rotten flesh from player's starting inventory
+Fixed the worldborder not being set properly
+Tweaked the droprates for Credit Chips
+
+
+Disabled Project Red's oregen
+- Everything still generates with CoFH Core so I can properly control it
+Restored the old method of warning people not to use OTG
+The Research Table is now made in a Mason's Worktable
+Tweaked XP rewards on info quests to better reflect the amount of reading each one requires
+- All of them no longer trigger the "reward claimed!" toast
+
+
+
+
+Bugfixes
+
+Fixed the Gold Capsule not being craftable
+Fixed (non-Electrotine) Project Red ores spawning in the Alien Jungle
+Fixed Coal spawning in the Alien Jungle when it should be spawning Crimson Coal instead
+Fixed the Artisanal Tools research not accepting as many items as it should
+- Reduced it to 2 items instead of 3
+- Moved its position in the UI to make things clearer
+
+
+
+
+
+Balance changes
+
+Tweaked HP-XP scaling
+- Players now require about double the kills per level
+- Players no longer lose HP-XP on death
+
+
+Halved the nutrition foods restore
+Players now lose 15% nutrients on death (was 10)
+- Sadly, I can't configure it per-nutrient like I want to, so I might change this again in a future update.
+Tweaked rally health a bit
+- You now have a 5 second window (was 3)
+- Chance to regain health is now 90% (was 80)
+- Now plays a sound if you successfully heal
+
+
+Tweaked Electrotine generation
+- Now spawns at Y=0 to 32 (was 1 to 24)
+
+
+
+
+Economy changes
+
+Removed the robosurgeon selling quest
+- Players can now craft Robosurgeons and Surgery Chambers in a Basic Worktable in case they lose the starting ones (or forget to grab them)
+- Spare Robosurgeons you may find can be decrafted into the parts you use to craft them
+
+
+
+
+
+
+
+Quest changes
+
+Reward tables in Chapter 3 are now random instead of choices
+
+
+
+
+
+Recipe changes
+
+Basic Circuits now accept Redstone and Electrotine (was Electrotine only)
+The Miner's Ring is now made in a Basic Worktable
+- Now requires Redstone or Electrotine instead of an Electrotine Alloy Ingot
+
+
+
+
+
+
+Research changes
+
+Research Hints are now much more useful
+- Each one now requires items equal to what the research itself accepts (e.g. if the research needs 3 items then the hint needs 3 items)
+- Updated descriptions so they're actually useful now
+Most researches can now utilize the Magifying Glass
+- Due to the way it works, I can only add 1 scannable block per category in the match game, so you will still have to scan somewhat random blocks (although several can be deduced from reading the text and quest hints).
+
+
+Moved some of the "Crafting" research around to make it a bit more sensible
+"Sol Credit Conversion" now requires the Basic Worktable research 
+The Recycling research now requires the Basic Worktable research
+- Now requires 2 items instead of 3
+- Move its position in the research UI so players can more easily notice the dependency requirement
+
+
+
+
+Misc changes
+
+De-staged Thermal Foundation
+Wooden Mortars no longer have a skill lock
+Added names to most of my custom recipes
+- Has basically 0 impact on the end user, but it lets me pad out the changelog so I'm listing it anyway
+
+
+
+
+Mod changes
+
+Removed First Join Message
+Removed Mo' Villages
+Removed Rally Health
+- Universal Tweaks does it already, but I didn't realize that lol
+
+
+Updated ConfigAnytime
+Updated Controlling
+Updated JourneyMap
+Updated Red Core
+Updated Village Names

@@ -1,0 +1,110 @@
+v12.0 Changelog
+
+
+Tweaked the spawn values of Bedrock Ores
+- They now become richer and larger further away from spawn (250 - I assume chunks, but the config doesn't say)
+- They now can't spawn within 15 distance of spawn (again, I assume chunks but idk for sure)
+- Reduced spawnchance from 65% to 50%
+Fixed Mana Infused stuff making Mithril Ingots from Magneticraft
+Staged Thermal Innovation
+Standardized Steel recipes to all give TE steel
+Added the Carbon Brick + iron Ingot > Steel recipes to the Induction Smelter
+
+
+Buffed reward for the "Bedrock Mining" quest
+Chisel's Basalt can now be used to craft Stone Data Lumps
+Fixed Refined Storage system not accepting items due to lack of power
+- The controller can now accept 256 RF/t max, allowing the player to build a small storage system (as intended)
+Long Fall Boots now have 512 durability, and must be crafted in a basic crafting table
+Hid a few Refined Storage items I missed
+Security Cards now use Mathematics Processing Units instead of Logistics
+
+
+Charcoal Block recipes should now craft the ones from Mekanism
+Tweaked the recipes for rods (from LibVulpes)
+- Foundry recipes now use 4 ingots to make 2 rods
+- Added basic crafting recipes that use 3 ingots to make 1 rod
+The Incomplete Information Pad recipe now makes 4 per craft instead of 2
+Foundry recipes now give TE ingots instead of Mekanism ones
+Added Enriched Uranium and Yellowcake to the Enervation Dynamo
+Nether & End ores should now process into Thermal Expansion ores if smelted
+End Ores now give 4 products instead of 3
+- Only applies to non-gem ores
+Extreme Reactors recipes now require Hardened Glass instead of standard Glass
+Yellorite Ore should now generate (and retrogen on existing worlds)
+
+
+Tweaked the spawnrate of underground clay deposits
+Disabled the Coke Oven from Foundry
+Tweaked jetpack values
+- Basic ones can now store 100k RF
+- All jetpacks now have different max RF/t input limits based on their max storage (basically means they'll charge a bit slower/faster with Flux Linkage)
+Refined Obsidian tools now have 2,500 durability
+- The Paxles now have 3,125 durability
+Added rewards to some AE2 quests I forgot to add rewards to
+
+
+Removed the 4k Storage Block from the ME Drive recipe, replaced it with a Mathematics Computer Chip
+The ME Chest now uses a Machine Casing instead of 1k Storage Block
+The ME Security Terminal no longer requires a 1k Store Block
+- Also swapped the Network Card for a Security Card
+- Now requires 10,000 RF at 50 RF/t to craft
+The ME Controller now requires 262,144 RF to craft
+Added Quartz-Enriched Iron to Storage Cell recipes
+Change Storage Components to use Basic Crafting (recipes remain unchanged)
+- Also did the same for Fluid Storage Components
+Changed Spatial Components to use Ender Crafting (recipes remain unchanged)
+Changed Spatial Storage Cells to use Combination Crafting (recipes are similar to Storage Cells)
+Added alt recipes for 1k and 4k Storage Cells that use the blocks/disk from Refined Storage
+- They are slightly cheaper, and have double the RF rate (so they craft twice as fast)
+Fixed the Dense Energy Cell recipe not using 8 Energy Cells
+Swapped out raw processer rewards with regular ones on several RS quests
+
+
+Disabled Solar Panels 6 and 7
+Tweaked the Solar Panel V recipe so that it's no longer softlocked behind the Atomic Age
+- Tweaked other solar panel recipes to help it feel more natural
+Added a recipe to upgrade Hardened Fluxducts into Reinforced ones
+Added a alternate recipes for Quartz Glass
+- One uses Refractory Glass and makes 8 per craft. Takes 5 seconds to craft
+- One uses Hardened Glass and makes 32 per craft. Takes 20 seconds to craft
+- Buffed the Redstone Glass recipe to make 16 per craft. Now takes 10 seconds to craft
+Doubled the reward from "Combination Crafting"
+Buffed the reward for "ME Drive"
+Fixed the dependencies for the Atomic Age research
+Added 4x Yellorite Ore as a reward for reaching the Atomic Age
+The Space Age research now requires 8,000 mB of Alien Goo
+
+
+Added a recipe to make Anvils out of Lead
+The Imp Leather > Leather recipe now makes 6 Leather per craft instead of 1
+Fixed blocks from Extreme Reactors having "(Legacy)" in their names
+Removed the recipe to melt Cybernetic Parts into Hellish Viscera
+Removed the recipe to melt Imp Leather into Hellish Viscera
+Fixed Cyberdemons not being processable
+Added recipes to process the following mobs in an Enstabulation Apparatus:
+- Nitro Creepers
+- Imps
+- TechGuns mobs
+- Better Slimes' mobs
+Buffed the rewards from some quests
+Re-balanced the magnet upgrade recipes
+- All of them now require Electrotine Alloy and a Reinforced Alloy
+- Fixed the recipes to use any durability
+The Mechanical Fluid Transfer quest is now optional
+- Rewards buffed
+
+
+Added optional quests to make Thermal Dynamics ducts
+Changed the Berry Medley recipes to use the "berry" OreDict entry
+The Solar Panel III recipe now uses an Electrotine Alloy instead of a Block of Steel
+Reduced the RF required to melt down Atomic Data Models to 64,000
+Added a quest to make the Ender Crafter
+Added more sellable items, and buffed the price for some existing ones
+
+
+
+Added Yet Another Recipe Conflict Fixer (YARCF)
+
+
+Removed Water Control Extreme

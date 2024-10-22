@@ -1,0 +1,23 @@
+v2.3.1 Changelog - Hotfix 1
+
+Fixed bugged recipe to convert Parchment Fragments to Magical Silk
+
+Tweaked droprates of Aurum from Zombies, Zombie Villagers, and Skeletons
+
+Removed Name Tags, Saddles, and all Horse Armour from Hunter's Backpack accepted items list
+- They're meant to go in the Adventurer's backpack
+
+Added Aurorian Pork & Bacon to Hunter's Backpack accepted items list
+Added Antlers to Hunter's Backpack accepted items list
+
+Added Aurorianite, Crystalline, and Umbra scrap to Miner's backpack accepted item list
+Added Aurorian Crystals to Miner's backpack accepted item list
+
+Added Sticky Spiker to Adventurer's backpack accepted item list
+Added Codex to Adventurer's backpack accepted item list
+Added Fire Charge to Adventurer's backpack accepted item list
+Added Signs to Adventurer's backpack accepted item list
+
+Added Bigger Crafting Tables
+- There's a few recipes I wanted to make that don't fit in a regular 3 x 3 one, and Extended Crafting is geared more towards late-game
+-- A few recipes use them, but I mainly added it for the Simulation Chamber and Loot Fabricator

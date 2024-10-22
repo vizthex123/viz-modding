@@ -1,0 +1,99 @@
+v10.1 Changelog:
+
+Changed the internal name of Liquified Research
+- NOTE: This WILL delete any existing fluid in your world! Be sure to either accept the loss or give yourself the lost fluid back.
+
+
+Fixed some miscellanous quests
+Re-enabled the Techguns revolver
+- It can be unlocked alongside the Foundry one, and can be upgraded into the golden one
+The Atomic Age research now requires 8 buckets of Liquiified Research instead of industrial and iron disks
+The Space Age research now requires 16 buckets of Liquiified Research instead of industrial and iron disks
+The Space Age research now requires 8 atomic data models (was 6)
+Tweaked fuel usage rates for Simple Quarry's upgrades
+Fixed Red Coal not having the proper fuel filling amount when used with a Fuel Canister
+Fixed the Space Age research not giving the correct game stage
+Added a recipe to make Stone Data Chunks with Andesite/Diorite/Granite
+- This makes a new Stone Data Lump item, 2 of which make a Stone Data Chunk
+
+
+Buffed the burn time of Bitumous Peat to 4800 (24 items)
+- Updated Fuel Canister config & tooltips to reflect this change
+Removed the staging on Sky Stone blocks
+Added a recipes to melt down Sky Stone Dust and Chests into Alien Goo
+- Added tooltips to them all
+Removed the water output from the Fractionating Still recipe for Honey
+
+
+Added Squeezer recipes to process honey items into honey (fluid) and honey drops/dew
+Tweaked the item gains of the Centrifuge recipes
+Fixed typos in the metallurgic infuser tooltips
+The alternate Machine Disk recipe now require 2,000 mB of Liquified Research to craft (was 1875)
+The alternate Information Pad recipe now require 2,500 mB of Liquified Research to craft (was 2250)
+Added 2 alternate recipes for the Atomic Data Model (using Protons and Electrons)
+The AE2 research now requires 1 bucket of Alien Goo
+- Removed Machine and Industrial data disks
+The Wireless Power research now requires 500 mB of Alien Goo
+Wooden Miners are now cheaper, accept any damage pickaxe, and accept any type of chest
+- All other miners also use the ore dictionary and accept any damage value pickaxes
+Tweaked the military pack costs for a couple of weapon researches
+Added recipes to convert Magnets into Fluxomagnets
+
+
+
+
+Imported the following mods from the server pack:
+- FTB Utilities
+- Together Forever
+- Morpheus
+
+This is so you can use the regular pack to play on something that hosts the server pack.
+
+
+Removed Game Stages Viewer from the server pack
+- This fixes the common crash because the mod hates being on a server
+
+
+
+Added MekaTweaker
+
+
+Removed Just Enough IDs
+- If your world was made using this mod, re-add it or restart.
+
+
+Updated Forge
+
+
+Updated AE2 Fluid Crafting
+Updated B.A.S.E
+Updated Better Mineshafts
+Updated Biomes O' Plenty
+Updated Buildcraft
+Updated Builder's Bag
+Updated ContentTweaker
+Updated CraftTweaker
+Updated Durability101
+Updated Exchangers
+Updated Extended Crafting
+Updated Extreme Reactors
+Updated Fantastic Lib
+Updated FoamFix
+Updated ForgeEndertech
+Updated Hammer Lib
+Updated Just Enough Calculation
+Updated LootTweaker
+Updated MTLib
+Updated Magneticraft
+Updated MixinBoostrap
+Updated ModTweaker
+Updated Recipe Stages
+Updated Research Table
+Updated Simple Quarry
+Updated Simply Jetpacks 2
+Updated Super Factory Manager
+Updated Tesla Core Lib
+Updated UniDict
+Updated WanionLib
+Updated YUNG's Better Mineshafts
+Updated ZeroCore

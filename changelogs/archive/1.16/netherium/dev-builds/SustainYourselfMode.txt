@@ -1,0 +1,38 @@
+Added an optional gamemode: Sustain Yourself. (probably gonna renaim it later)
+You can enable this by enabling the Diet and Water Source mods, and disabling Classic Bars (as it breaks the UI - reported to the authors).
+Be sure to rename the general_common.sustain file in the powah config (config/powah) to general_common.toml! (be sure to delete the existing .tmol config first)
+- The player now starts with a book stating these same instructions
+
+To enable it on an existing world, enable the mods (listed above), then copy the diet-groups.toml and diet-effects.toml files from the defaultconfig folder into your world's serverconfig folder, and rename the general_common.sustain file in the powah config (config/powah) to general_common.toml (be sure to delete the existing .tmol config first).
+
+Currently, water can only be gained from vanilla items, but I'll expand the list if I can find out how to do so.
+You can do @watersource in JEI to find most of the supported items though. (item tooltips will also say so)
+
+
+There are 6 different nutrients to manage:
+- Grains [starts at 50%]
+- Fruits [starts at 45%]
+- Vegetables [starts at 40%]
+- Proteins (drains are 85% the rate of the others) [starts at 35%]
+- Vitamins (drains at 50% the rate of the others) [starts at 60%]
+- Sugars (drains 25% faster than the others) [starts at 75%]
+
+Different nutrient levels will apply different effects to the player:
+- If Fruits are below 20%, you'll gain Weakness I
+- If Vegetables are below 30%, you'll gain Posion II
+- If Proteins are below 25%, you'll gain Hunger I and Slowness II
+- If Vitamins are below 35%, you'll gain Blindness I and Slowness I
+- If Sugars are below 15%, you'll gain Slowness I
+
+- If everything (excluding sugars) is above 85%, you'll gain 2 extra Max Health and 0.5 extra attack damage for each nutrient above the threshold.
+- If Sugars and Vitamins are above 85%, your movement speed will increase by 5% for each one above the threshold
+- If Proteins and Vitamins are above 90%, you'll gain 2 Armour Toughness
+- If Vitamins are above 80%, you'll gain 1 Luck
+- If everything averages out to 60% or higher, you'll gain 1 Knockback Resistance
+
+
+
+Added & disabled Diet (Forge)
+Added & disabled Water Source
+- If both are enabled (and Classic Bars is disabled), you'll be playing in the new "Sustain Yourself" mode. I'm looking into ways to make this a command or something, but for now this is the best I can do. More info at the top of the changelog (you should've seen it first lol) and in the Discord.
+

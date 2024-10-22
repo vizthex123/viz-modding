@@ -1,0 +1,28 @@
+R3.5.2 Changelog
+
+Creepers shouldn't spawn as Champions anymore
+- I find it annoying since they explode fairly quickly, so you don't really have time to kill them (it's a config option so feel free to re-enable it if you want)
+
+Changed Crafting Runes, instead of decrafting into Bottle o' Enchanting, they now decraft into lower tier runes
+- Since you can upgrade to the next tier, you should be able to downgrade as well. Common runes still give 1 Bottle o' Enchanting
+
+Tweaked amount of Crafting Runes needed to make each Singularity
+- Rarer runes need less to make a Singularity
+-- Also fixed broken recipe for Distilled Luck
+
+Slightly increased cost to mass craft 64 Chance Cubes at once
+
+Changed recipe for Solar Panel VIII
+- Doesn't need a Dragon Egg anymore. Having to do all of that just for a solar panel is too much work.
+
+Singularity missions (except for the Ultimate one and a few others) don't consume the item anymore
+- idk why it was set to consume the items, it shouldn't have been
+Reduced cost for Mithril, Platinum, and Iridium singularities. Each only needs 500 of the item and 500,000 RF. Although the ingots aren't useful; 10,000 is a lot for a rare item.
+
+
+
+Added MultiTools
+- I like Paxels but Mekanism doesn't fit the modpack
+
+Updated The Aurorian
+Updated Roots

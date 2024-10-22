@@ -1,0 +1,12 @@
+--- setblock below player to air after they enter the jungle
+--- remove command block output command
+--- fix controls (quest book)
+--- bookmark akashic tome by default (or have an easy-to-see quest)
+--- change info to information on cyberzombie kill
+--- check on HP-XP gains
+
+
+--- fix starting gear not giving parts
+--- add a hint factory that uses food/resources to give hints about research
+--- reduce bone tools to stone mining level
+--- JEI info for glowstone

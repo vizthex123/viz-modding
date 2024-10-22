@@ -1,0 +1,63 @@
+v5.0 Changelog:
+
+Main changes:
+
+Stews & Soups now stack to 8
+Renamed Scrap to Iron Scrap
+Renamed Small Scrap to Small Iron Scrap
+Beetroot Soup now requires 3 Beetroots instead of 6
+Added the c:crops tag to Carrots & Potatoes
+Biomass now has a 70% compost chance
+- Meaty Clumps are now 65%
+Edited the colours on Better Advancements
+- Completed lines are now green
+- Incomplete lines are now red 
+- Tabs should now be sorted alphabetically instead of randomly
+
+
+
+Recipe changes:
+
+Added a recipe to get Echo Shards out of Sculk Catalysts
+Shear recycling recipes now use the bookshelf:shears tag
+- Added a recipe to recycle banners
+Blasting a Heart of the Sea now gives 4 scrap instead of 3
+Fixed Diamond Scrap taking too long to smelt in a Blast Furnace
+Glistering Melons can now be scrapped
+Bow and Fishing Rod recycling now accepts any damage (as intended)
+Reduced the amount of Echo Shards require for the Angel Ring to 1
+
+
+
+Miscellaneous changes:
+
+Golden Bread no longer has wheat tags
+Golden Bread/Wheat/Seeds now have the "uncommon" rarity
+Diamond items now have the "uncommon" rarity
+Echo Shards now have the "uncommon" rarity
+Netherite items now have the "rare" rarity
+Disc Residue now has the "rare" rarity
+Squid (and Glow Squid) now have the c:raw_fishes tag
+Removed some duplicate tags I made
+
+Walnuts can now be composted (30% chance)
+Carved Pumpkins can now be turned into Biomass
+Coconuts (and their husks) can now be turned into Biomass
+Rotten Tomatoes can now be turned into Biomass
+Crab Meat can now be composted
+Hoglin Loins can now be composted
+Ham can now be composted
+
+
+
+Mod changes:
+
+Updated Fabric
+
+Updated CraftTweaker
+Updated OpenBlocks Elevator
+
+Added Geophilic
+Added Presence Footsteps
+Added YUNG's Better Mineshafts
+Added YUNG's Better Witch Huts

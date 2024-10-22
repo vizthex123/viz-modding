@@ -1,0 +1,29 @@
+v1.5 Changelog - Minor Patch
+
+Changed "Start on Gooder Tools" requirements
+Changed unlock requirements for "Hidden Expensive Items"
+Changed unlock requirements for "More...Storage...." from only Infinity Ingots to Ingots + Compressed Chest
+(Lazily) finished the quests for Ewy's Workshop, by adding a quest for all the upgrades.
+-One of them has its own quest though, since it needs Nether materials
+--It basically counts as [REDACTED] quests...
+I'm pausing work on the Botania questgroup for now, til I can figure out more quests to add.......so no quests for that for a bit
+-Fixed many missing things from Botania questgroup...sorry for breaking it...
+Blood Magic quests are completed, though they have been since v1.0.......(Fixed descriptions though)
+Fixed "The Nether" because...I broke the quest...
+Changed "Transmitting the Water" to "Moving The Water"
+Changed reference "Stuff For Tech" makes
+-Also fixed my typos
+Changed reference of "Power Transmission" (All but IE)
+Changed rewards of "Power Transmission" (TE)
+-Changed quest type from "Crafting" to"Detection"
+Changed order of several IE quests
+Changed unlock requirements for [DATA EXPUNGED] in "Technology"
+Busy working on trying to structure the Thaumcraft/AE Quests, so there might not be a patch for awhile, but I haven't abonded the development.
+
+ 
+
+Removed Equivalent Energistics cuz it caused too many crashes (as in, place the blocks it has to use to function = crash, which is bad...)
+
+ 
+
+Added 3 new quests total (Unless you count the new Ewy's upgrades quests as [REDACTED] quests...)

@@ -1,0 +1,27 @@
+BETA v0.0.8 Hotfix Changelog
+
+
+The "world not appearing" bug should be fixed now
+Tweaked some reward bag loot
+Changed rewards of some Periodic Table quests
+Added recipes for: (All cost 500.03, goes up by 1 penny each time)
+Boron
+Fluorine
+Selenium
+Scandium
+Germanium
+
+Added 3 quests total
+
+
+
+Mod Edits:
+
+Added OpenEye
+Updated CoFH Lib
+Updated CoFH Core
+Updated OpenBlocks
+Updated OpenModsLib
+Updated Thermal Dynamics
+Updated Thermal Expansion
+Updated Thermal Foundation

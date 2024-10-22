@@ -1,0 +1,34 @@
+v5.3 Changelog
+
+
+Buffed the Crying Obsidian & Glowstone gained from recycling a Respawn Anchor
+Slightly buffed the amount of Uraninite gained from processing its ore
+- The Uraninite ores from Powah can now be processed into Uraninite in a Create Crusher (if you want to silk touch them)
+Fixed the duplicate recipes for Fire Charges
+Disabled the conversion recipes for my custom slime crystals since they seem to be working now (at least in my dev world)
+- Updated their textures to try and match the Tinker's ones better
+- Pink Slime Crystals now take 15 seconds to blast (was 20)
+
+
+Fyrite and Superconductive Dusts now have the fuel_dust tag
+Changed the rewards of the "Metallic Flight" quest
+Fixed a couple quests not working correctly
+The death quest now makes you lose 15 reputation instead of 5
+Added a new quest to activate Keep Inventory
+- Gives 5 Hellraisers reputation and costs a few materials. Can be unlocked after dying 3 times.
+The flower quests now give more Hellraiser reputation (now 15/10, was 5)
+The sand quest now gives 5 Hellraiser reputation (was 10)
+- Note that you won't get the new reputation rewards if you finished the quests before the update.
+Fixed a few known issues
+
+
+Added Refined Pipes
+- Overhauled the config file and recipes to match the modpack's progression
+- This is mainly meant to be used for fluids and energy, as those 2 forms of transport are somewhat lacking in the pack
+- (I may disable the item and energy pipes later on since those 2 do exist already)
+
+
+Updated Create Crafts & Additions
+Updated AI Improvements
+Updated CraftTweaker
+Updated Repurposed Structures

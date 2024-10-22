@@ -1,0 +1,27 @@
+v3.1 Changelog
+
+
+Added recipes to melt down various items:
+- Minecarts
+- Buckets
+- Powered Rails
+- Rails
+Fixed a recipe conflict with the Iron Data Disk and heavy pressure plate
+
+
+Changed a few research costs:
+- "Basic Shotgun Research" now costs 1 Industrial and 3 Iron Data Disks
+- "Pistol Research" now cost 1 Industrial and 4 Bronze Data Disks
+- "Machine Age" - Machine Data Disks reduced to 2
+- "Advanced Rounds"  now costs 1 Machine Data Disk
+- "Advanced Shells" now costs 1 Machine & 1 Industrial Data Disk
+- "Information Age" - Information Data reduced to 2 (also increased Bronze data to 16)
+- "Basic Handgun Research" - now requires 2 Iron Data Disks (was 1)
+- "Armour-Piercing Shells" now costs 2 Industrial and 2 Iron Data Disks
+
+
+The Pistol Research now requires the Golden Revolver to be researched
+- This is because Pistol Rounds are staged behind the Golden Revolver research. You won't need to craft a revolver though, just research it.
+
+
+Added a box of armour molds you can buy from the shop for $50

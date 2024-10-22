@@ -1,0 +1,15 @@
+v7.2 Changelog
+
+
+Renamed "Breaking Into The Dungeon" to "Entering the Dungeon"
+- Runestone Keys are now accepted by the quest (note that you can only find those in naturally generated structures)
+Added a quest to kill Aurorian Slimes
+Added a quest to kill Undead Knights
+
+
+Should've fixed most of the dialogue rewards printing multiple times in multiplayer
+Buffed the Aurum reward from "The Tower's Guardian"
+Added a quest to make an Atomic Reconstructor
+- It's now required to complete "Infused Power"
+Reduced aurum reward from "Pristine Souls"
+- You can now choose the reward from "Lady Luck's Vault"

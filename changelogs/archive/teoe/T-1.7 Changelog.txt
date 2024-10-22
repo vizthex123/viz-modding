@@ -1,0 +1,30 @@
+v1.7 Changelog - Bug Fixes And A Few Quests
+
+New logo provided by XDFlame
+
+
+Added Reward Bags system
+-It's still a bit broken though
+
+
+Changed Tinker's Construct config (Made the mod a bit easier to use)
+Fixed MANY EMC dupe bugs.
+Added a new quest that requires 100,000 FULL Klein Star Omegas (I tested it, and it ONLY accepts full ones!!)
+
+
+Changed "#DoubleCraft" to "Detection"
+Re-Enabled the ability to use non-Tinker's tools, but you are supposed to use Tinker's tools
+Changed reward on "Stuff For Tech" to 1 Reward Bag (Greater)
+Changed reward of "Infinity", added 1 Reward Bad (Legendary)
+Changed reward of "Hidden Expensive Items", added 32 Reward Bag (Legendary)
+-Changed task to "Detection"
+
+Changed rewards for "Transmutation 101"
+-Changed to 1 Reward Bag (Good) from 16 Redstone)
+Changed name of "Cheaty Ores" to "Cheaty Ore Location"
+-Changed task type to "Consume"
+Changed reward of "Last Few Things", added 1 Reward Bag (Good)
+Changed "Back to Basics" to "Detection"
+
+
+Added 3 Quests total

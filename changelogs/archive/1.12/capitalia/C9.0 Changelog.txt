@@ -1,0 +1,73 @@
+C9.0 Changelog
+
+
+Should've fixed how the Enrichment Chamber doesn't accept half of the ores in the game
+Added Cooked Imphide to the inventory tweaks sorting tree
+Removed alternate recipe for the Woven Miner's & Digger's backpacks
+Biomes O' Plenty Honeycombs (and Honey Jar) can now be turned into Honey Drops/Dew
+Biomes O' Plenty Honey Blocks can now be turned into Honey Dew
+Changed the recipe for the Small Tank (Magneticraft)
+- It now has 3 recipes that vary based on the materials used
+
+
+Reduced oil per stage in Magneticraft blocks to 800
+- Each one has 10 stages, so you get 8,000 mB of oil per block
+Increased storage of Shipping Containers to 32,768
+- Increased max drops to 8,192 (everything else gets deleted)
+Tweaked staging of the Automation Interface
+Hid multiple items in JEI (mostly deprecated ones, and monster eggs. A few creative-only ones.)
+
+
+Added all (eligible) Natura items to the Bio & Protein Reactor
+Added all (eligible) Biomes O' Plenty items to the Bio & Protein Reactor
+Increased the cost of the Bronze Age research to 4 Stone Data Chunks, 2 Copper Ore, and 1 Tin Ore
+The first 3 Opinium Cores are now sellable
+- I plan to make them all sellable, but am having trouble balancing the prices
+Fixed the late-game quests not consuming items
+Biomes O' Plenty honeycombs can now be sold, or turned into RF (in a Bioreactor)
+
+
+The Crescent Hammer quest now uses the iron age as a dependency
+Sloped Conveyors can now be decrafted into normal ones
+Fixed improper staging of Osmium Ingots
+Finished staging Thermal Expansion machines
+Re-enabled Fluiducts
+Changed Diamond tool durability to 1,500
+Increased base range of the magnets to  4
+Re-enabled Fluxomagnets
+Tweaked staging of some magic magnets
+Tweaked the staging of some miscellaneous ores
+
+
+Added smelting recipes for Compressed Netherrack (up to triple)
+Properly staged Iron, Gold, and Diamond furnaces
+Unified Block of Charcoal rewards to be Forestry ones
+- Replaced recipes for them with Forestry ones
+Boosted durability of Gold tools to 100
+- Armour has been buffed by 35 (per piece)
+Updated durabilites of bronze/iron/steel TE tools
+Tweaked mining speeds of Paxels
+- They now have a slight increase over the regular tool speed
+Increased the durability of the Diamond Paxel to properly be in-line with the others
+
+
+Moved the Bioreactor to the Industrial Age
+Moved the Protein Recator to the Machine Age
+Added an alternate recipe for the Basic Component that uses 2 Sulfur instead of 1 Redstone/Electrotine 
+Boosted the reward for finding/buying a Waystone
+Reduced the RF storage of the Quantum Compressor to 1,000,000
+- Increased default energy use rate to 25,000
+Reduced the cost of the Efficiency Upgrade (Solar Flux) to 1 Blank Upgrade and 1 Mirror
+Increased the damage of Project Red's sword to roughly match that of Iron
+
+
+
+
+Added RFTools
+Added SignEdit
+Added Dirt2Path
+Added Gendustry
+Added SimpleHarvest
+
+
+Updated GunpowderLib

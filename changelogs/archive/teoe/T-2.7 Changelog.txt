@@ -1,0 +1,58 @@
+v2.7 Changelog - The Long Awaited Update
+
+
+PSA: Sorry for not updating in forever, the Curse App broke and my dev version wouldn't load - but it's working now so I'll be updating the pack more regularly
+
+
+Non-tinkers tools work now, but I HEAVILY recommend using Tinkers' tools
+Changed money rewards in Reward Bag lootables to use new currency mod5
+Disabled hardcore mode
+- Heart rewards and recipe are still here, for now. Eventually™ I'll remove them
+Changed lots of quest rewards
+
+
+
+
+
+
+Mod Edits:
+
+Added The Aether II
+Added Aether Aspects
+Added Currency
+-This is to add more variation to the Currency system, as well as a better way to add my experimental "Shop" system
+-- Due to this, Simply Currency has been removed (The mod names conflict)
+--- Due to this as well, any Reward Bags (From Simply Currency) have been replace with Currency notes, based on average loot (Please report any of the missing ones in the comments!)
+Added ProjectE Aether Addon
+
+
+Removed Thaumic Energistics - For whatever reason, if its installed the pack doesn't load, I love this mod a lot and am sad to see it go (Also this means about 50 quests or something are gone...)
+
+
+Might add AbyssalCraft later since it seems cool.
+
+Added 2 or 3 new quests total
+Removed 50 ish or more quests total
+
+
+
+
+
+Mod Updates:
+
+AvaritiaAddons
+CoFH Core
+CoFH Lib
+Industrial Craft 2
+JourneyMap
+LootBags
+OpenBlocks
+OpenModsLib
+Redstone Arsenal
+Storage Drawers
+Thaumic Equivalence
+Thaumic Exploration
+Thermal Dynamics
+Thermal Expansion
+Thermal Foundation
+WAILAPlugins

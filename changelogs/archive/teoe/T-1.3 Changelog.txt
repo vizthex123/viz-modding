@@ -1,0 +1,12 @@
+v1.3 - More Quests Update
+
+Changed description of "Craft-a-star"
+-Added rewards....sorry I forgot about those...
+Finally added more quests to the Thaumcraft questgroup
+-Changed a couple descriptions & rewards
+--Re-organized the quests to make them make more sense
+
+Added 10 New Quests total
+
+
+Sorry for the small patch again, I'm still stumped as to what quests to add..... other than Thaumcraft (which I'm still wondering how to properly structure).

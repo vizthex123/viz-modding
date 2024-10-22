@@ -1,0 +1,22 @@
+v2.2 Changelog - Mod Edits
+
+ 
+
+Added ArmorStatusHUD
+Added Diamond Plus
+Removed Equivalent Exchange 3
+- Sadly, causes lots of crashes & issues, EMCs constantly change by themselves, and the Calcinator doesn't work correctly
+-- Removed guide for EE3
+Removed EMC Condensor
+- Crashes whenever you open the UI, I'm not sure why or what causes it
+-- Plus it needs EE3 to work, so it wouldn't work at all
+Added AetherCraft
+- Replaces EE3. Was going to add ProjectE, but that's a bit too overpowered...so, instead you get AetherCraft. It's a bit more balanced (maybe too expensive, but I'll work on that as I find things I find unabalanced/if anyone suggests anything) but is still very cool & interesting.
+-- Replaced EE3 guide with AetherCraft guide
+
+ 
+
+Disabled Unstable Ingot "reward" from Chance Cubes
+Disabled "Wait for It" reward from Chance Cubes
+Changed Angel Ring recipes
+Edited a few other scripts

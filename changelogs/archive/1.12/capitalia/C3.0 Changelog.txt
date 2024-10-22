@@ -1,0 +1,103 @@
+C3.0 Changelog - Basic Restructuring Finished
+
+
+Introduced a new item: Data Disks! You need to craft these to research things now. They're made by compressing items in a Quantum Compressor, or crafting things together (depending on the tier).
+- The Compressor's recipe has been changed so you can build it in the Iron Age
+- The Heat Generator is now gated behind the Iron Age
+
+
+All the planned restructuring is now done!
+Note that this doesn't mean the content is done, but the overall progression & feel of the pack is finished
+
+
+I've made a series of tutorial videos as well, if you would like to get some tips & tricks:
+https://www.youtube.com/playlist?list=PLO_1VuIxogvx_aNvAET2NoX4HKQae2NAO
+
+
+Buffed the amount of blocks a Simple Quarry can mine
+- It's now twice as efficient (1 coal breaks 32 blocks instead of 16)
+Changed the recipe for the Fueled & Powered Quarry
+- Changed the name of the Powered Quarry to "Basic Electrical Quarry"
+-- It's now staged behind the iron age
+Added quests for all the quarries
+
+
+Basic tools no longer force you to use Foundry to craft them
+- This is due to the re-structure of the research I did. It's still cheaper to make them with Foundry though.
+-- Armour still requires you to use Foundry, as do Steel tools
+
+
+Fixed AP Shell & Rounds research having broken requirements
+Split Lumium shells & ammo into 2 branches
+- Components are now unlocked in each one's game stage
+All weaponry research now also locks the recipes until they've been researched
+Fixed some incorrect tooltips
+The Research Table now uses any kind of stone
+
+
+Added torch reward to "Basic Mining" quest
+Fuel Canisters now require Bronze
+Stone Conveyors are now staged behind the Stone Age
+Added a Crucible Table recipe for Overworld Quartz ore
+Increased the melting temperature of the basic crucible to 1,225K
+- This is so you can melt down bronze with the basic crucible, as intended; albeit slowly at first
+
+
+Changed the recipe for the Mirror (Solar Flux) to use Bronze
+Evened out Paxel durability to be multiples of 25
+Removed the recipe for Forge Microblocks' Stone Rods, they now turn into Stone Sticks
+Fixed Classic Bars warning you about Advanced Rocketry
+Re-enabled alloy bows
+
+
+Reduced durability of Magneticraft's steel hammer to 384 (128 items before breaking)
+Added coin drops to Zombie & Skeleton horses
+Fixed recipe conflicts with ore blocks not turning into the correct ingots
+
+
+Added Terracotta to the Digger's backpack
+Placed Logistical Automation's components behind the proper stages
+Fixed staging of Simply Jetpacks' items & recipes
+Added a quest to make an Iron Jetpack
+- Also added one for Gold & Diamond
+Added an optional quest to craft a Factory Manager
+
+
+Added a shop for Terracotta (Hardened Clay) & its dyed variants
+Added a shop for random dungeon loot & other miscellaneous items
+Added sell prices to (Project Red) Marble & (Magneticraft) Limestone Bricks
+Boosted sell price of the Mechanical Crafter
+Boosted sell price of Polished stones
+Boosted sell price of Sandstone
+Added recipes for Steel Plates
+
+
+Adjusted defense & damage of Steel
+Boosted powergen amounts for Mekanism generators
+- The config uses their Joules instead of FE or RF, so it's annoying to try and fine-tune it. Be prepared for later changes.
+Removed the custom Yellorium & Iridium dusts I made
+- I forgot they already existed lol
+
+Replaced DiscordSuite with DiscordRichPresence
+
+
+Added Ore Stages
+- Various ores are now staged based on when you can obtain/use them
+Added Bedrock Ores
+Added Large Ore Deposits
+- Customized every ore vein, removed unused ones, and added one for Yellorite & Peridot
+Added CoralReef
+Added Custom Main Menu
+- For now, it's unused; but I plan to make a factory-themed menu.
+
+
+
+
+Updated RandomPatches
+Updated UniDict
+Updated WanionLib
+Updated YUNG's Better Mineshafts
+
+
+Removed Barrels, Drums, Storage & More
+- Other mods do the same thing better, so this one is now obsolete. The barrel quest has been changed to a cache.

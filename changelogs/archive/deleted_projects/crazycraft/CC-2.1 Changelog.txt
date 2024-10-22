@@ -1,0 +1,23 @@
+v2.1 Changelog
+
+ 
+Added Cooking for Blockheads
+Added Common Sense Food
+Added Catwalks 2
+Re-Added Mo' Villages
+
+ 
+
+Removed Millenaire
+- Not working, idk why
+Removed Mine Trading Cards
+Removed Weather 2
+- Broke for some reason and causes lots of lag now.
+Edited a few scripts
+Slightly edited Iguana Tweaks levelling rules
+Finally got the Traveller's Gear button to the correct spot
+Changed the Onyx and Mythril furnaces:
+- Onyx now has a 66% chance to give an extra item
+- Mythril Furnace now uses fuel 4x slower than vanilla furnace
+
+- Both use the Ore Dictionary

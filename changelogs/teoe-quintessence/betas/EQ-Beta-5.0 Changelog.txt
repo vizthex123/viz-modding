@@ -1,0 +1,111 @@
+B5.0 Changelog:
+
+
+The modpack now has a proper icon in-game!
+
+If you check the quest list in FTB Quests, you'll notice the proper texture for Quintessence is there (and it's on the end-game questline too)
+
+
+Added all my planned custom items, with the main one being Quintessence
+- This replaces the bedrock placeholder, and I've removed the placeholder info from that quest
+- I was going to consider the modpack released after I added custom items, but I would like to make this the final beta *just in case* (and there's still a couple other issues)
+
+
+Activating the Twilight Forest portal now requires a Portal Catalyst
+- Thanks to the dev of Twilight Forest Portal Catalyst for the texture
+- The quest now requires a Portal Catalyst instead of a Diamond
+- Players can craft the catalyst with 2 Steel or Hepatizon Ingots and a Diamond in a Basic Table
+
+
+Questlines are now hidden until you unlock the starting quest(s) in each one
+- This prevents visual spam and - as suggested by CubixThree - helps players know what to focus on
+- "The Basics", "Storage & Relocation", "Multiplayer Utilities", and "Extradimensional Emporium" are exempt from this rule since the latter 2 are optional, and the former 2 are rather basic things I assume most Minecraft players know about
+
+
+Disabled Quark's Totem of Holding since Enigmatic Legacy's amulet does the same thing (and the keep inventory quest)
+Added recipes to make Torches with most fuel-style items
+Coinfication recipes now use 3,000 RF
+Added Crushing Wheel versions of all coinification recipes (takes 5 seconds each, about half the time of the pulverizer ones)
+Reduced the cost of Trading Cores
+Vastly reduced the cost of Extended Crafting's tables
+- Both regular and auto tables have reduced crafting costs, and integrate with Lightman's Currency + 1 other mod (varying based on the table)
+Tweaked the Waystones config a bit
+- Max XP cost is now 5 levels
+- Scrolls are used a bit faster than Warp Stones
+
+
+Added (optional) quests to make craft the other TE Dynamos
+Replaced pattern rewards with an option to get patterns or coins
+Copper Wallets no longer require a Basic Crafting Table
+Moved my custom Crescent Hammer recipe to a Basic Table
+Upgrading to Iron and Gold wallets now requires Coin Piles
+Big Dripleaves now give 2 dye when smelted
+
+
+Magnetic Rings now give 4 iron when recycled
+Added tooltips to overslime restoring items
+Fixed packing tape's recipe not using tags
+Changed the spent filter recycling recipes to use Lime instead of Clay
+- Removed the bulk recipe
+Fixed wallet upgrade recipes not using the proper tiers
+Moved "Watery Lighting" to the "Beneath the Waves" chapter
+Added 100 Essenarium as a reward for "Must Swim Faster"
+Fixed "Diving Deep" not using my custom tags
+- Changed the reward to Glow Sacs, also added 50 Essenarium
+- Made the quest optional
+
+
+Buffed the rewards on the Magical Storage quest
+Changed the Item Retention quest to use an emerald coin
+Added coin rewards to Pulverization and Serratious Sawing
+Fluidic Transposition and Magmatic Melting are now optional, and have buffed rewards
+Buffed the rewards of a few other quests
+
+
+Removed some duplicate recipes
+Fixed the repeater recipes not using tags
+Added a recipe to make rubber with saplings
+Fixed my recycling recipes not accepting any damage value
+Replace the slimeball in the book recipe (from Tinker's) with Glue
+Fixed several recipes not using tags, not being shapeless when they should be, etc.
+Changed the recipes for the Fueled & Powered Quarries
+Added recycling recipes for Note Blocks & Jukeboxes
+Added a recipe to saw Wool intro String
+
+
+Reduced Dimensional Shards to 500,000 RF in a Lapidary Dynamo
+Reduced Amethyst to 30,000 RF in a Lapidary Dynamo
+Buffed the durability of the Forgotten Hat to 72
+Fixed Pendorite Swords have 15 durability instead of 15 damage
+Reduced the coin drops of a few enemies
+Reduced the maximum coin spawn tiers for a few structures
+Added a recipe to convert Blazing Quartz into Nether Quartz
+
+
+
+
+Added the Vertical Iron Nuggets resource pack
+
+
+Removed Better Compatibility Checker
+
+
+Added Better Villages
+Added Clickable Advancements
+Added Food Enhancements
+Added Guard Villagers
+Added KubeJS
+Added More Villagers
+Added My Server Is Compatible
+Added Radium Reforged
+Added Server Performance - Smooth Chunk Save
+Added Underground Villages
+Added Villagers Respawn
+
+
+Updated Better Advancements
+Updated CraftTweaker
+Updated GeckoLib
+Updated Industrial Foregoing
+Updated Lightmans Currency
+- Big shout out to the dev for adding my feedback about the ATM UI and mirrored recipes into the mod

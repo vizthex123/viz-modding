@@ -1,0 +1,159 @@
+v8.0 Changelog - Balance Pass v2
+
+
+Reduced Cold Parachute durability to 10
+Fixed gold gear recipe
+Removed buildcraft & forestry gears
+Tree Chopper now only works when shift is held down
+- I find it annoying to cut down a bunch of wood when I don't want to. Revert this if you wish.
+
+
+Tweaked both Fuel Generators from Industrial Foregoing
+- Pitiful burns items for 50% of their burn time (default 75%), Petrified 85% (default 75%)
+Added Smeltery melting recipes for Moonstone & Aurorian Steel tools
+Removed the Energetic Infuser reward from "Power Storage & Transmission"
+- Has its own quest now
+Added dialogue to "The Failed Replica"
+Added dialogue to "Arcane Infusion (was the "Arcane Crafting" quest)
+Changed icon for the Aether Questline
+- Added the first quest to it
+
+
+Added 3 new lore entries: "Alchemical Matter", "The Valkyrie Order" and "Eir, Fallen Valkyire"
+The Twilight Portal Catalyst now accepts any Essence and Actually Additions crystal
+Tweaked a few quest descriptions
+Changed all enemy-killing quests in "Serving Her Majesty" to have alliterative names.
+Added my Simply Jetpacks Thruster Boost script
+Tweaked some item EMC values
+Removed REther Pearls from the magicalPearl OreDict
+
+
+1k ME Storage & Fluid Components now require Botania items
+Reduced Luck Pendant durability back to the default (32, was 36)
+Removed step assist from the "Masterful" quality
+- Buffed the other attributes it gives to compensate
+-- It's glitchy and sort of superfluous
+Removed the bone from the recipe for empty heart canisters that uses Tin
+Changed recipe for the Adventurer's Backpack
+- Now requires 2 Platinum Aurum instead of 2 Bones
+Reduced XP usage of Scaling Health's Heart Containers to 1 level
+- Updated tooltip
+Enabled Mushroom Cave generation in the Aurorian
+
+
+Re-worked Aurorian Steel Tools & Armour:
+
+Requires 125 "XP" to level up an enchantment
+Now has a mining level of 4
+Now has 50% more durability than the default
+Now mines 25% faster than the default
+Now has 50% more attack
+
+Set Bonus now gives Resistance 3 instead of Fire Resistance
+
+Knight Armour set bonus now gives Resistance 5 and Strength 3
+Swapped set bonuses for Living & Sentient Armour
+
+
+Changed material stats for Fluix, Certus Quartz, Silentwood, Aurorian Stone, Cerulean, Moonstone, and Aurorian Steel when used in Tinker's Construct items
+Added a recipe for Blood Bronze
+Disabled a few Tinker's materials that were unobtainable
+Added an alternate recipe for Balls of Moss
+Added a JEI Info tab for Mending Moss
+Changed minimum health to 20 (vanilla default)
+Removed emeralds from Lapidary Calibration
+- They're already in the regular one, and I think having it be duplicated is messing up other stuff
+Reduced Nether Amethyst to 1.5 million RF in Lapidary Calibration
+Nether Rime crystals are now worth 1.25 million RF in Lapidary Calibration
+Removed Flux Crystals (Redstone Arsenal) from Lapidary Calibration
+Increased Ambrosium Shard's value in Lapidary Calibration to 100,000
+Black Quartz is now worth 20,000 in Lapidary Calibration
+Astral Diamonds are now worth 10 Million in Lapidary Calibration
+
+
+Disabled the shielding affix on Champions
+- I suggested this to the mod dev awhile back, cool that he added it
+Added a few new Champion suffixes
+Slightly boosted droprates of a few Champion items
+Changed recipes for Alchemical Chest
+Changed recipe for Aurorian Crystal that uses Glowstone
+- Now requires a Grand Magic Crystal, makes 16 Crystals at once
+Removed blockGlass OreDict from all Extra Utilities glass types
+- Having that OreDict entry caused recipe conflicts, woops
+
+
+Disabled Quartz (Mystical World) from spawning
+Added all 3 Aurorian Scraps to the lower levels (1-3) of Battle Towers
+Added Aurorian Crystals to the middle levels (4-6) of Battle Towers
+Added several items to forestry's backpacks
+Disabled alternate recipes for Flux (Flux Networks)
+Changed evil infused iron recipe for Iron Toolkit
+- Now uses Ancient Laous Runes
+Changed recipes for Diamond Toolkit
+- Extra diamonds have been removed, amounts changed
+Changed Reinforced Slates in Ender Toolkit recipe to Etheral Slates
+- The other alternate recipes now use 4 Ethereal Slates in addition to the other materials
+
+
+Properly fixed lavender flour recipe, 1 lavender -> 1 flour
+- Changed seed one, it's 2 lavender to make 1 seeds
+Reduced slate used in ME Drive recipe to Reinforced
+Tweaked infusion speed of a few custom Blood Altar recipes
+Added several new quest rewards, changed a few existing ones
+Changed recipe for Dimensional Shards
+Re-balanced recipes for Efficiency Catalysts
+Fixed a recipe exploit
+Removed ME Chests from the highlyAdvancedChest OreDict
+Changed Small Storage Crate recipe
+- Now uses 4 Chests
+Fixed a few typos
+All sigil quests are now hidden until you can see their dependencies, and the lines are hidden
+- Exceptions are the required ones (divination and seer's), as well as both sigils of holding
+
+
+Re-organized the structure of a few Blood Magic quests (visual only) so the screen isn't as cluttered
+Added an alternate recipe for managlass
+Added Electrotine & its block to the Enervention Dynamo
+Added the Searing & Hot fluids from BuildCraft to the Compression and Magmatic dynamo, respectively
+Disabled all the Extra Utilites sickles
+COFH World will now flatten out bedrock layers
+- Hopefully it applies to all dimensions
+-- It will also retrogen, flattening bedrock in existing chunks & replacing them with Stone
+
+
+Greatly increased the spawnrate of mineshafts
+Added JER support for most ores in the game
+- It's sort of a dynamic list, but for now it works
+Boosted Runestone Dungeon Keeper health by 53% (from ~85 to ~130)
+Changed Legendary quality
+- Boosted attack damage, removed attack speed
+Boosted durability of the Orb of Absorption to 350
+Fixed quests to kill Undead Knights & Aurorian Slimes not becoming available when they're supposed to
+
+
+Renamed "Energetic Crystals" to "Mystical Crystals"
+"Improved" reward on "Tribute" quest
+Increased reward on "Gaining Her Majesty's Favour - Task I", "Gaining Her Majesty's Favour - Task II", "Gaining Her Majesty's Favour - Task III", "Gaining Her Majesty's Favour - Task IV", and "Gaining Her Majesty's Favour - Task V"
+Changed rewards on "Basic Storage"
+The "Technological Improvements" questline is now hidden until you reach the overworld
+
+
+
+
+Re-enabled Custom Main Menu
+- Design by Larcek#9531 on the Aurorian discord, thanks again for making it.
+
+Added Gendustry
+Added Gendustry JEI Addon
+Added BetterPortals
+- Disabled because it's buggy rn and idk why
+Added NetherPortalFix
+Added Item Damage Rebalancer
+- The developer of Don't Even Axe made this since several people asked for a way to configure damage values
+
+
+
+Removed Wireless Charger
+- Flux Networks & other mods already let you do this, plus I doubt anyone is using RF-based gear in this pack
+Removed JER Ore Integration
+- Doesn't do what I wanted, so I did it with regular JER

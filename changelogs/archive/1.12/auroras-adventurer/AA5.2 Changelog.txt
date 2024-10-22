@@ -1,0 +1,14 @@
+v5.2 Changelog - Balance Patch
+
+
+Tweaked several recipes to make them more balanced
+Fixed a few recipes I broke
+Finished the ProjectE questline
+- I'll add some bonus quests to gather lots of EMC later down the road
+Finished "The Ancient Void" (questline for the end)
+
+
+Added Equivalent Additions
+
+Removed Bountiful
+- It's really not useful. Villages are sort of uncommon, and you get plenty of money from enemy drops and quests

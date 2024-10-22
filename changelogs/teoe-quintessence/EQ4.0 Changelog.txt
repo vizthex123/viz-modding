@@ -1,0 +1,145 @@
+v4.0 Changelog:
+
+
+I'm gonna try out new formatting for changelogs where I group things together instead of having a big list of stuff. Let me know whatcha think.
+
+
+Bugfixes:
+
+Fixed Fiery Essence not being accepted in the Magmatic Dynamo when it should've been
+Fixed the Pump Upgrade not using the proper items, and having an Ender Crafting recipe
+Fixed some recipes made for Pendorite using Platinum instead
+
+
+
+Quest changes:
+
+Added optional quests for Tesla Coils and Steam Engines
+Fixed the slimeball purchasing quest not consuming coins
+Disabled completion toasts for all the shop quests
+Fixed the description of "A Twilit Realm"
+The "Blocky Measurements" quest now accepts the Abacus from Quark, as does the recipe for Quintessence does the same
+Changed the rewards for "Refinitive Refining", "Flash Freezing", and "Vacuum'ed"
+
+
+
+Recipe Changes:
+
+
+Singularities now require 1,000 of each material instead of 10,000
+- The only exceptions are Processed Soulstone (500), Blazing Quartz (1,500), Diamonds (100), and Emeralds (250)
+Overhauled my sawdust recipes to give 1 Sawdust per plank used in the item's crafting recipe
+- The Mechanical Saw recipes will now give 50% extra sawdust (to encourage you to use it over TE's sawmill)
+- Removed sticks as an output from every recipe that gives Sawdust
+Removed the sawmill recipe for wool -> string
+- The Multiservo Press lets you unpack it into 
+- Add tag support to the Multiservo Press recipe
+The compressed sawdust recipe for sticks now uses 2 instead of 3
+Armour Stands now saw into Sticks instead of Sawdust
+Added more sawdust recipes
+Added mechanical saw recipes for regular sawmill recycling recipes
+- They will give sawdust rather than the recycled resources
+
+
+Removed my Induction Smelter recipes for Raw Ores & their blocks
+- You'd get *way* too much from them when using Catalysts, and I can't disable catalysts for custom recipes, so I'm just going to remove them for now.
+- Hoping to re-add them soon though, because they were some of my favourite recipes
+- Iridium has been migrated to the raw ore recipes for each thing, and washing recipes have been added
+Simplified my torch recipes to just have a 4x and 8x output
+Extended Crafting's tables now require Coins instead of Coin Piles
+- Larvitar suggested this, and although I've gotten a lot of coins fairly quickly during playtesting; you do need some basic industry set up to make Coin Piles (due to me changing the recipes) - but tables are required for multiple things, so this makes it a bit easier to get them
+
+
+Added recipes to get Fiery Essence
+Added recipes to coinify Twilight Forest's Scepters and the Maze Map Focus
+Removed the upgrade recipes for Extended Crafting's tables
+- You need one of each table to do things, but I made the upgrade recipes before making recipes inside the tables, and just never got around to removing them
+Moved the Zinc recipe for Fuel Canisters to regular crafting
+Removed the useless secondary recipe for Capacitors
+Added Subzero and Therium Shards to the Enhanced Golden Apple recipe
+Added a pulverizer recipe for Raw Platinum
+
+
+Changed the pulverizer recipe for Raw Quartz -> Quartz to only give 1, with a 50% chance for an extra
+Added mechanical saw recipes to recycle Lightman's wooden shops
+Added a recipe to pulverize or crush subzero crystal blocks into shards
+Removed Experience Nuggets from the Wrappist Block crushing recipe
+Changed my Lime(stone) + Iron -> Steel recipes to use 8 Lime(stone) and 4 Iron
+Changed the Ash -> Charcoal recipes to use 4 Ash, and have a 50% chance of giving a Charcoal
+Added recipes to saw leather armour into leather
+Added recipes to coinify Charms of Life & Keeping
+
+
+Removed Induction Smelter recipes for slime crystals
+Changed my Induction Smelter recipe for Travertine to blasting & smelting recipes
+Added a recipe to repair Long Fall Boots with Combination Crafting
+Quartize Sand can now be processed into Nether Quartz and Sand
+Pendorite can now be used instead of Manyullyn when making The Ultimate Ingot
+
+
+
+Balance Changes:
+
+Reduced Fiery Essence to 75k
+Replaced the alloy singularities with Nether Quartz, Blazing Quartz, Certus Quartz, and Apatite
+Replaced the Platinum Singularity with Processed Soulstone
+Increased coinficiation of Spellstones to 20k Essenarium (2 diamond coins)
+Moved the Portal Catalyst to Mechanical Crafting
+- This means it's technically accessible a tad earlier, though I might re-add the Basic Table version later
+Reduced the capacity of item vaults to 8 stacks (512 items) per vault block
+Improved Extractors can now filter items
+Changed the Black Hole upgrade recipes to use tiered ender items, rather than a regular ingot each time
+
+
+
+Item Changes:
+
+Added Processed Soulstone to the Lapidary Dynamo (25k per)
+Removed the minecraft:coals tag from Arcane Charcoal
+Added tooltips to the quarry blocks
+Removed the coal generator from Wormholes
+
+
+
+Misc:
+
+Finally fixed the Wormhole mod not saving my configs
+- So now the mod is properly configured, only took like 2 updates
+AE2's blocks now shows RF by default
+Lava Buckets no longer let you delete items from your inventory
+Ender Alternators now increase the crafter speed by 3% per
+Reduced Wrappist to 65k RF in the Lapidary Dynamo
+Magic Dust can now drop from Randomium
+Added JEI info for how to get Magic Dust
+Hid Titanium's technical items from JEI
+
+
+
+Mod Changes:
+
+Added Lazy Data Fixer Upper
+Re-Added Iron Jetpacks
+- Balanced the mod out so it requires some work, just like the Flugel Tiara from Botania
+- This also gives the Tesla Coil more things to charge, which is nice
+
+
+
+Updated the Vertical Nuggets texture pack
+
+
+Updated Forge
+
+
+Updated Chunk Loaders
+Updated Create
+Updated Create Crafts & Additions
+Updated CreateTweaker
+Updated FancyMenu
+Updated Item Filters
+Updated Jade Addons
+Updated KubeJS
+Updated Lightman's Currency
+Updated Placebo
+Updated Quantum Quarry Plus
+Updated Rhino
+Updated The Twilight Forest

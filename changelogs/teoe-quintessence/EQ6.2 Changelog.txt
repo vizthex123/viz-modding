@@ -1,0 +1,113 @@
+v6.2 Changelog:
+
+Main changes:
+
+Tweaked the menu again
+- Will now render properly on 1920x1080 monitors, and the 2k version is just disabled in the config file (so if you want to change it, you can just move it & delete the old one - join the Discord if you want specific instructions on how to do it)
+Iron & Gold Wallets can now be crafted in a normal Crafting Table
+Iron Scrap recycling recipes now properly give Small Iron Scrap
+Diamond and Netherite Coins, Piles, and Blocks now give much more RF in the Numismatic Dynamo
+Updated Stoneborn Modded Compatibility
+
+
+
+
+Bugfixes:
+
+Fixed the burn time on modded crafting tables
+Sawing Saddles in the Mechanical Saw now gives Leather (as intended)
+Damaged bows can now be sawed 
+Damaged leather armour can now be sawed
+
+
+
+
+Quest changes:
+
+Fixed the starting quests printing out incorrect information
+"A Classical Start" now uses tags
+Fixed the reward on "Boating About the Place"
+- Its spinefin reward is no longer a team reward
+The bread reward on "A Short Jaunt" is no longer a team reward
+
+
+
+
+Balance changes:
+
+Money Mending now requires 10 Essenarium to repair 1 durability (was 1)
+Tomatoes and Strawberries now give 25 mB of Latex (was 100)
+Quicklime can now be used to make Paper
+The Sawdust -> Paper recipe now uses Clumps (or Compressed) and makes 3 at once
+The Enchanted Golden Apple recipe now gives 16 (was 8)
+Slightly increased the rotation Water Wheels give
+
+
+The Non-Euclidean Cube now gives 250k Essenarium (was 100k)
+Amethyst Shards now have a 75% use chance as a Pulverizer Catalyst (was 85)
+Nerfed Rose Gold damage
+
+
+
+
+Item changes:
+
+Compressed Sawdust can now be composted (50% chance)
+Compressed Sawdust can now be used as a catalyst in the Phytogenic Insolator
+Removed the small_flowers tag from tall flowers
+Poisonous Potatoes, Spider Eyes, and Illager Flesh now have the gross_foods tag, and can be composted
+Crop Crates can now be composted
+
+
+
+
+Recipe changes:
+ 
+Added a recipe to convert modded Crafting Tables into normal ones
+Added Create recipes for coinpiles and coinblocks
+Soul Beads and Blank Runes now give Iron Coins instead of Iron Coinpiles
+Heart of Diamond now coinifies into 25k Essenarium (was 10k)
+Candles can now be smelted into Honeycombs
+
+The Debris Scrap -> Netherite Scrap recipe can now be crafted in a normal crafting table
+The Zinc recipe for Extractors now only needs 5 (was 8)
+Removed my mechanical saw recipe to recycle Saddles
+The following items can now be turned into Sawdust:
+- Lectern
+- Loom
+- Cartography Table
+- Fletching Table
+- Smithing Table
+
+Added Crushing Wheel recipes for Quark's stones & their ore variants
+Added a Crushing Wheel recipe for Nether Iron Ore
+Scorchia and Scoria can now be processed in Crushing Wheels
+
+
+
+
+Mod changes:
+
+Removed ConnectedTexturesMod
+Removed EnchantmentDescriptions
+
+Added Pluto
+Added Saturn
+Added Smooth Boot (Reloaded)
+Added ServerConfig Updater
+Swapped Radium Reforged for Canary
+
+Updated Aquamirae Mod Extra Music
+Updated Armor Points++
+Updated CodeChickenLib 1.8+
+Updated CraftTweaker
+Updated Create Crafts & Additions
+Updated Deep Resonance
+Updated FTB Chunks
+Updated FTB Teams
+Updated KubeJS
+Updated LIghtman's Currency
+Updated PackagedAuto
+Updated PackagedExCrafting
+Updated RFTools Base
+Updated XNet

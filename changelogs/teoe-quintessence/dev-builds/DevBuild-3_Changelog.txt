@@ -1,0 +1,83 @@
+Dev Build 3 Changelog:
+
+
+Added a temporary end goal: Submit 1 Bedrock
+- This will be replaced with the planned final item as soon as ContentTweaker gets ported
+- Added a recipe for Bedrock (crafted using 1 of every* end-game item from each installed mod)
+* Note that it doesn't actually use items from every mod, just the core ones
+
+
+Added Corundum crystals as a Pulverizer catalyst
+- The blocks can now be crushed (in a crushing wheel) into crystals
+- Every crystal has the same stats, but if you think they should be changed let me know
+Added durability tooltips to several modded items
+Actually implemented the config changes I've made since the new system is stupid af and never saves >:{
+Actually added content into the AE2 questline
+Quest plaques no longer render for tasks
+Doubled the cost of rods in the Blast Chiller (it should be 90, but the game makes it 1k - so I'm making it 180)
+- Recipes have been disabled since they aren't working
+Removed the tags from TE's Rose Gold
+The Mana Pool quest now requires mana spreader to be started, rather than completed.
+- Both quests now have proper names
+Gave proper names to multiple quests
+Tweaked a couple of pulverizer catalysts
+Removed the copper recipes for Powered Rails
+
+
+Fixed rail recycling recipes having an invalid tag for sand
+Tweaked the rail recycling recipes to be more balanced
+Added recycling recipes for rails from Create and Thermal Locomotion
+Restored the old recipe for the Crescent Hammer (iron + tin)
+- The current one feels too expensive for a basic tool
+Fixed my custom processing recipes using Create's nuggets instead of TE's
+Added some QoL recipes:
+- Webs can be crafted into string
+- Basic Pipes can be made with Zinc (though it makes 3 per craft instead of 6)
+- Way to many sawmill recipes for random dungeon loot (most of which are adapted from my sawable items script)
+Restored Sand as an Induction Smelter catalyst
+Fixed the apothecary quest not registering either of them
+
+
+Sky Stone Dust can now be used a s a catalyst in the Induction Smelter and Phytogenic Insolator
+Cinnabar Dust can now be used as a catalyst in the Pulverizer
+- Its stats are identical to Cinnabar in an Induction Smelter
+Halved Paxel damage, and reduced their durabilites to be 30% more than the base tool's durability
+Rounded off Fluix tool damage, and reduced their durability to 350
+Removed the weapons from Wither Skeleton Tweaks
+Changed my custom tags to teoe:tag instead of minecraft:tag or forge:tag
+Certus Quartz Dust can now be used as a pulverizer catalyst
+Added a recipe to upgrade an Energy Acceptor into an ME Controller
+Added a recipe to upgrade Wooden Hoppers into normal ones (as I always do)
+Reduced the cost of the Security Terminal
+Blacklisted mob drops from being uncrafted into Reliquary's mob drop items
+Blacklisted the wither skeleton skull from the uncrafting table
+
+
+
+
+Updated Forge
+
+
+Added Cosmetic Armor Reworked
+Added FuelCanister
+Added Overloaded Armor Bar
+Added Wooden Hopper
+
+
+Updated Applied Energistics 2
+Updated Architectury API
+Updated CraftTweaker
+Updated Easy Paxel
+Updated Enigmatic Legacy
+Updated GeckoLib
+Updated McJtyLib
+Updated Oh The Biomes You'll Go
+Updated RFTools Base
+Updated ReAuth
+Updated Structure Gel API
+Updated The Twilight Forest
+
+
+Removed Iron Jetpacks
+Removed Ocean Recovery
+Deleted Chisels & Bits

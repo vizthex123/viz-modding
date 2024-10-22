@@ -1,0 +1,66 @@
+Beta 2 Changelog:
+
+Added a menu design (for 1080p and 1440p)
+Imported my dye fixer system from Vanilla++ and added support for the mods in this pack
+Moved the Cosmetic Armour button to prevent conflict with Eldritch End's inventory button
+
+
+Fixed resource packs not loading properly
+Finally managed to remove Deep Aether's loading screen tips
+- Meant to do this before posting the beta, but I wasn't able to get it working.
+Added more loading screen tips
+
+
+Bounty Boards now generate 50% more often
+Slightly reduced the spacing between Alex's Caves
+Removed Deeper Cave's Copper Button recipe and hid it from REI
+Condensed the annoying armour spam (for Leather and Iron) into REI Categories
+Added several custom categories (bark, ores, beds, and many more)
+Re-enabled Spelunkery's ore system
+- Changed the Diamond Grindstone recipe
+- Added quests to teach players the system
+
+
+Bells now have the meltable_gold tag
+Added tags to some items that were missing them
+Added blasting recipes for Blocks of Raw Silver and Rose Gold
+Spelunkery's big mushrooms are now affected by Falling Trees
+Added a the gloomoth and underzealot tags to a few more blocks
+Disabled the Chorus Plant Falling Tree
+Enabled Small Nether Dungeons
+
+
+Hollow Logs can now be turned into Planks
+Added recipes to recycle Candles
+Added a recipe for Bundles
+
+
+
+
+
+Fixed Dark Waters not working
+
+
+Added Custom Starter Gear
+Added Eldritch End
+Added Ender Trigon
+Added Gilded Shers
+Added Oh My Sherd
+Added Open Loader
+Added ServerConfig Updater
+
+
+Updated AzureLib
+Updated Collective
+Updated Connector Extras
+Updated ModernFix
+Updated Panda's Falling Trees
+Updated PandaLib
+Updated Roughly Enough Items
+Updated Searchables
+Updated Structure Gel API
+
+
+Removed Underground Jungle
+Removed Measurements
+- I always forget about Quark's Abacus lol

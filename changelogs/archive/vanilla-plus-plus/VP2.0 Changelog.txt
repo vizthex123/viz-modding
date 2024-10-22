@@ -1,0 +1,136 @@
+v2.0 Changelog:
+
+If you want to keep your 1.19.3 save, copy it over from the previous instance! Join the Discord if you want me to help you do so.
+(It'll load up fine, but getting it copied alongside your waypoints is more involved though)
+
+
+You'll probably need to re-install the pack since I backported it, and existing worlds may not work (sorry if so). I probably should've made this on 1.19.2 in the first place, but oh well.
+
+
+Main Changes:
+
+Backported the entire project to 1.19.2
+- This is most likely going to be the main 1.19 modding version until 1.20 comes out (but if not, I can always re-make the pack again)
+
+Colourized rarities
+- Epic is Purple, Rare is Blue, and Uncommon is Green (as per the universal standard one of my Discord friends enforces)
+-- I can't colourize item names, but if anyone knows how let me know. Would love to do that so it's consistent
+- I might add custom rarities later on (like in Quintessence), but for now these are fine
+- The Heart of the Sea now has the "rare" rarity
+- The Totem of Undying now has the "rare" rarity
+- Echo Shards now have the "uncommon" rarity
+- Diamond Scrap has the "uncommon" rarity
+
+
+
+
+Recipe Changes:
+
+Added a few Quality of Life recipes:
+- 2x (any) Logs -> 16x Sticks
+- 1x (any) Sapling -> 1x  Stick
+- Tiny (Char)coal can now be combined back into (Char)coal
+- The Coconut Husk has a bowl tag (as do normal bowls)
+- Any recipe that uses bowls now uses the bowl tag (cleans up UI clutter and adds cross-mod compat)
+- Added the Mushroom tag to red & brown mushrooms, crimson & warped fungus, and umbral fungus
+- Mushroom & Rabbit Stew now use the mushroom and bowls tags
+- Farmer's Delight recipes now use the bowl tag
+- (Iron) Chains (and Gold Chains) are now cheaper (3 nuggets instead of 2 + 1 ingot)
+-- Iron Chains are now crafted by combining a Chain with an Iron Nugget (or using 6 nuggets, makes 2 at once)
+
+
+Improved the vanilla recycling recipes and added more of them
+- You now get small scrap that can be assembled into a normal one, which can then be smelted into an ingot
+-- This system isn't what I wanted to do, but I have to due to Minecraft limitations
+- Iron, Gold, and Diamond have their own scrap items
+-- Diamond and Netherite items can only be recycled in a Blast Furnace
+- I might expand upon scrap or just replace it with a direct recipe in the future
+Added a recipe to blast Echo Shards into Diamond Scrap
+Added a recipe to blast Hearts of the Sea into Diamond Scrap
+- Be sure to only process one item at a time though, otherwise you won't get the full amount
+
+
+
+Misc Changes:
+
+Updated the Stoneborn Resource Pack
+Added the Stoneborn Modded Compatibility resource pack
+
+
+Coconut Husks now have 150 Burn Time (was 100)
+Added a recipe to upgrade the Baby Backpack to a Frayed one
+Added a recipe to upgraded the Blazing Backpack to a Withered one
+Fire Charges now have 600 Burn Time (smelts 3 items)
+Magma Blocks now have 800 Burn Time (smelts 4 items)
+Golden Mage Hands now harvest modded seeds
+
+
+Tweaked the default options a bit
+- Controls that would normally be unused are now unbound by default, freeing up keys for useful stuff
+Disabled slot refill
+- Edit the mouse wheelie config if you want to change it back
+The Siphon and Blazing enchantments are now treasure-only
+Increased the enchantability of Dragon Scale items to 30 (was 20)
+Increased the base damage of Dragon Tools & Weapons
+Textile Backup now keeps 5 backups
+
+
+
+Mod Changes:
+
+Replaced CombatEdit with Old Combat Mod
+
+Added Advancement Plaques
+Added Amphitrite Coffer
+Added Angel Block Renewed
+Added Archeology Mod
+Added Better Advancements
+Added Better Tridents
+Added Charm
+Added Charm of Undying
+Added Clickable Advancements
+Added Cooking for Blockheads
+Added CraftTweaker
+Added Cultural Delights
+Added Death Counter Fabric
+Added Death Knell
+Added Elytra Slot
+Added Equipment Compare
+Added Farmer's Delight
+Added Fast Furnace
+Added Incendium
+Added Inmis
+Added KubeJS
+Added Lapis Reserve
+Added Legendary Tooltips
+Added Mage Hand
+Added Mini Miner
+Added Nears
+Added Nether's Delight
+Added Nullscape
+Added Nyf's Quivers
+Added Roughly Enough Resources
+Added Roughly Enough Trades
+Added TooltipFix
+
+
+Removed AttributeFix
+Removed Applied Energistics 2
+- Tech Reborn will be removed after I can find a mod that lets me balance weapon damage (as I do in all my packs)
+Removed Better Trident Return
+- Better Tridents does the same thing
+Removed Bow Infinity Fix
+- All Arrows Infinity Fix does the same thing
+Removed Double Doors
+- Charm does it already
+Removed Ring of Enderchest
+- Inmis does the same thing
+
+
+Mods Missing (because they aren't for 1.19.2):
+
+Game Menu Remove GFARB
+Probably a few unused core mods
+
+
+Removed Herobrine

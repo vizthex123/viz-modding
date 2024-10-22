@@ -1,0 +1,21 @@
+v1.2 Changelog - The Questing Update
+
+Updated WanionLib to v1.5
+Changed rewards for "(Useless) Power Storage" and "Still Useless" from 1k ME Drives to 4k
+Gave AE its own questline (This is due to having lots of quests for it, and Technology not having enough space for 4 tech mods)
+Changed unlock requirements for "AE Start!"
+-Changed completion requirements for "AE Start!"
+--Changed rewards for "AE Start!"
+Changed "4k items" to "Basic Storage...With AE!"
+-Changed completion requirements from 1 4k ME Storage Cell to 1 1k ME Storage Cell
+--Changed reward to 1 1k ME Storage Cell
+Added EMC to (Some) AE items.
+Changed description for "AE Start!"
+Added 5 Quests to "Applied Energistics"
+Changed description for "OP Armour!"
+Re-Organized Thaumcraft's questgroup in "Magic"
+-Added 1 new quest
+--Removed 1 unnecessary quest
+
+
+Only added 6 quests total, but I can't really think of a good way to structure the rest of the ones I have in mind (Mostly for Thaumcraft, due to the free-roaming research)

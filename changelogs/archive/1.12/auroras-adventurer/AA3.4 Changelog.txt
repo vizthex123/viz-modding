@@ -1,0 +1,58 @@
+R3.4 Changelog:
+
+Reduced the cost of the Wireless Charger
+- It doesn't need an energy cell anymore. Replaced with Redstone Dust
+--- Range reduced to 15 (note that is a radius not a diameter)
+
+Finished Jetpack quests
+- If you've already crafted the previous tiers, you can use admin tools to mark the quest as complete (look up how)
+Tweaked Flux Pack charge rates
+- Each one charges faster, and their output is 1/3 of their input speed
+
+Boosted amount of items in "Box of Assorted Rewards"
+Fixed rewards from "Magical Leaf-Eater"
+
+Both Hearts now change difficulty by 5 instead of 10
+- Shop costs (XP only) are cheaper
+-- Stacksizes changes to 5
+
+Reduced health bonus from LevelHearts
+- Only gives 5 Hearts (+10 HP) total, at the following XP levels (once per player, per world):
+
+5
+10
+20
+25
+30
+
+Re-added regular recipe for Quartz Fiber (I didn't mean to remove it oops)
+
+Added a recipe to craft 8 Rudimentary Snares at once using Gold
+Changed "Extra Item Storage" to accept other backpack-style items
+
+
+Replaced PlusTiC with Moar Tinkers
+- For some reason PlusTiC's page of CurseForge doesn't exist anymore so I can't use it in my modpack
+
+Added HelpFixer
+Added Login HP Fix
+Added Extended Crafting
+- Currently unused, but I plan to add some recipes to it soon
+Added Hunting Dimension
+-  Difficulty is 1.5x (150%) more effective in this dimension
+-- Only hostile mobs will spawn, and they have a 50% chacne to drop 2.5x the normal amount of XP, and always act like Looting I was applied on death
+--- Mobs have 15% more attack & health than normal (and 6 extra armor). This can be furthur increased by the current difficulty
+---- Positive potion effects (strength, resistance, etc.) will wear off twice as fast
+
+
+Updated Botanic Additions
+Updated CoFH Core
+Updated CoFH World
+Updated Corail Tombstone
+Updated ForgeEndertech
+Updated Mystical World
+Updated Netherending Ores
+Updated Redstone Arsenal
+Updated Redstone Flux API
+Updated the Thermal Suite (Foundation, Expansion, Dynamics, and Innovation)
+Updated WAWLA

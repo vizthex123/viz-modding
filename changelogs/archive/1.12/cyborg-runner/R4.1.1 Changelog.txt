@@ -1,0 +1,8 @@
+v4.1.1 Changelog
+
+
+Should've fixed the issue where Dropt is duplicated and thus crashes the modpack
+Fixed the Basic Cooking research using the wrong number of items
+Locked Pristeel recipes behind their required Reskillable skills
+Added a JEI info tab for the Carbon Compressor
+Changed the recipes for the EU Furnace and Survival Generator because neither worked correctly

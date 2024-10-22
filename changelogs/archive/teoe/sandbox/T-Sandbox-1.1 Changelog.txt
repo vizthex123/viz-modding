@@ -1,0 +1,16 @@
+Hunger Overhaul is now disabled by default, added a page on the FTB Guide (Book icon inn inventory) explaining the increased challenge enabling it gives.
+
+Removed Mine Trading Cards
+Removed Advanced Rocketry
+
+ 
+
+Added MicDoodle8Core
+Added Galacticraft
+Added Galacticraft Planets
+Added Extra Planets
+
+ 
+
+Added Ding by iChun
+Added Portal Gun by iChun

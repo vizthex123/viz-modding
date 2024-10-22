@@ -1,0 +1,16 @@
+v3.3 Changelog - A Quick Fix
+
+Fixed Recurrent Complex config formatting
+- My tester found that it was formatted wrong and sent me the fix
+
+Added a recipe to craft Bedrock Bricks, and a quest to submit them
+- Don't use them for building of course, as you can't mine them in Survival.
+
+Updated icons of all "Kill X Enemies" quests
+Fixed a few quest descriptions
+
+Finally fixed the Loot Fabricator recipe! Now it uses the OreDict, as intended
+
+Removed the tooltip stating the Giant Crafting Table was unused
+
+Fixed a few quest descriptions/rewards

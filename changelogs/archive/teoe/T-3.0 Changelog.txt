@@ -1,0 +1,37 @@
+v3.0 Changelog - The Reputation Update
+
+Added recipe to turn HQM Invalid Items into Basic Reward bags as a temporary measure until I can replace them all
+- Added a tooltip explaining this
+
+ 
+
+Quest Edits:
+
+
+Added 2 new quests
+Updated rewards for ME Storage Cell quests
+Added more reputation rewards from quests
+Renamed "Blacksmith's Associates" to "Blacksmith's Association"
+Reordered "Alchemical Circle" ranks
+- 250 is Tim Marcoh, 500 is Nicholas Flamel, 750 (new) is Dovahkiin
+
+ 
+
+Mod Edits:
+
+
+Removed Keeping Inventory
+
+ 
+
+Added Crafting Tweaks
+Added Mine Trading Cards
+Added Storage Drawers NEI Fix
+Added Tube Transport System
+
+ 
+
+Updated Craftable Nether Star+
+Updated Forge Multipart Integration
+Updated Hopper Ducts
+Updated Inventory Tweaks

@@ -1,0 +1,42 @@
+v7.1 Changelog - Slight Balancing
+
+
+Reduced EMC of Aurorian Cobblestone to 1
+- This was intended from the start, but I misclicked when setting its EMC
+Fixed inaccurate tooltip on Aurorian Chimneys
+Added a tooltip to Silkworm Eggs conveying their use to make String
+
+
+Reduced the level requirements for the last 2 hearts
+- Now at levels 90 and 100 instead of 95 and 110
+Improved wording on Cerulean Arrow tooltip
+Several quests are now hidden until you unlock them
+
+
+Added XP Rewards to "The Overworld's Metals" and "Technological Components"
+Changed arrow reward in "Basic Ranged Combat" to Cerulean Arrows
+Fixed the Silentwood Log -> Sticks recipe being broken
+Added an alternate recipe for the Iron Chest Transporter using Cerulean and Silentwood Sticks
+
+
+Changed EMC of all slimeballs to 48
+Re-balanced the chances of various qualities to spawn
+- Positive ones should appear a bit more often than the negative ones
+-- Things related to magic shielding will spawn a bit less often (since they're kind of pointless)
+
+
+Webs can no longer be excavated
+Hopefully boosted mob spawning in the Darkstone Dungeon enough to make it an actual dungeon, instead of just a boss fight after a maze
+Added a new lore entry for the Moon Acolytes
+Added a custom recipe for Lavender Flour & Bread
+
+
+Elder Guardians now always spawn as Champions
+"Tribute" quest is no longer optional
+- It unlocks the final quest in the Aurorian questline (which is required), so it should be a requirement as well.
+Fixed "Basic Tinkered Tools" not detecting items
+- Same for "Ranged Tinkering", "Metal Tinkered Tools", and "Advanced Tools"
+Fixed "Tool Forging" not detecting all the forges
+
+
+Updated Aurorian Items
