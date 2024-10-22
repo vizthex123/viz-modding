@@ -1,0 +1,13 @@
+All nutrients now give various potion effects at different levels: (X = positive effect, based on the nutrient level. Y is a negative effect)
+
+<=25 - Y3
+26 - 40 - Y2
+41 - 49 - Y1
+
+50 - 60 = No effect(s)
+
+60 - 75 - X1
+76 - 90 - X2
+91 - 100 - X3
+
+This encourages you to keep your nutrients up, while also not being too over/underpowered

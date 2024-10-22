@@ -1,0 +1,13 @@
+Remove:
+
+ClickAdv
+ClientTweaks
+Ding
+Durability101
+EffectsLeft
+Item Stitching Fix
+Legendary Tooltips
+Neko's Enchanted Books
+Radon
+ReAuth
+Rubidium
