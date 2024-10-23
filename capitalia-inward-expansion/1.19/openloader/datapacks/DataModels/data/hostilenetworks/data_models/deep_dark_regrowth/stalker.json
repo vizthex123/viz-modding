@@ -1,0 +1,41 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "deep_dark_regrowth"
+		}
+	],
+    "type": "deep_dark_regrowth:stalker",
+    "name": "entity.deep_dark_regrowth.stalker",
+    "name_color": "#716c44",
+    "gui_scale": 0.69,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1792,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.stalker_regrowth",
+    "fabricator_drops": [
+		{
+			"item": "deep_dark_regrowth:mossy_fluorite",
+			"count": 8
+		}
+    ],
+	"tier_data": [
+        1,
+        373,
+        5337,
+		9321
+    ],
+    "data_per_kill": [
+        1,
+        125,
+        888,
+        777
+    ]
+}

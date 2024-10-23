@@ -1,0 +1,29 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "endergetic"
+		}
+	],
+    "type": "endergetic:booflo",
+    "name": "entity.endergetic.booflo",
+    "name_color": "#713C7A",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 96,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.booflo",
+    "fabricator_drops": [
+		{
+			"item": "endergetic:booflo_hide",
+			"count": 4
+		}
+    ]
+}

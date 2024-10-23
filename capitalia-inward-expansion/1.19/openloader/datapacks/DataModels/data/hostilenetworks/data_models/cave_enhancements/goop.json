@@ -1,0 +1,29 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "cave_enhancements"
+		}
+	],
+    "type": "cave_enhancements:goop",
+    "name": "entity.cave_enhancements.goop",
+    "name_color": "#AA9D67",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "capitalia.trivia.goop",
+    "fabricator_drops": [
+		{
+			"item": "cave_enhancements:goop",
+			"count": 8
+		}
+    ]
+}

@@ -1,0 +1,29 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "deep_dark_regrowth"
+		}
+	],
+    "type": "deep_dark_regrowth:corrupted_skeleton",
+    "name": "entity.deep_dark_regrowth.corrupted_skeleton",
+    "name_color": "#847C59",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.corrupted_skeleton",
+    "fabricator_drops": [
+		{
+			"item": "deep_dark_regrowth:sculk_bone",
+			"count": 8
+		}
+    ]
+}

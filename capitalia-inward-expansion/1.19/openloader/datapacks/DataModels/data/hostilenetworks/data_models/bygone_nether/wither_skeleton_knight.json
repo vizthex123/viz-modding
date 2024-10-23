@@ -1,0 +1,42 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+    "type": "bygonenether:wither_skeleton_knight",
+    "name": "entity.bygonenether.wither_skeleton_knight",
+    "name_color": "#0A3935",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 768,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "capitalia.trivia.wither_skeleton_knight",
+    "fabricator_drops": [
+		{
+			"item": "minecraft:bone",
+			"count": 32
+		},
+		{
+			"item": "minecraft:coal",
+			"count": 48
+		},
+		{
+			"item": "minecraft:wither_skeleton_skull",
+			"count": 4
+		},
+		{
+			"optional": true,
+			"item": "wstweaks:fragment",
+			"count": 48
+		}
+    ]
+}

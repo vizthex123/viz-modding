@@ -1,0 +1,30 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "sculkybits"
+		}
+	],
+    "type": "sculkybits:sculk_saprophyte",
+    "name": "entity.sculkybits.sculk_saprophyte",
+    "name_color": "#052931",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 384,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.sculk_saprophyte",
+    "fabricator_drops": [
+		{
+			"optional": true,
+			"item": "deep_dark_regrowth:mossy_fluorite",
+			"count": 4
+		}
+    ]
+}

@@ -1,0 +1,41 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "deep_dark_regrowth"
+		}
+	],
+    "type": "deep_dark_regrowth:tentacle_lamp",
+    "name": "entity.deep_dark_regrowth.tentacle_lamp",
+    "name_color": "#02303B",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 384,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.tentacle_lamp",
+    "fabricator_drops": [
+		{
+			"item": "deep_dark_regrowth:reinforced_lamp",
+			"count": 1
+		}
+    ],
+	"tier_data": [
+        6,
+        69,
+        666,
+        6666
+    ],
+    "data_per_kill": [
+        6,
+        23,
+        222,
+        1666
+    ]
+}

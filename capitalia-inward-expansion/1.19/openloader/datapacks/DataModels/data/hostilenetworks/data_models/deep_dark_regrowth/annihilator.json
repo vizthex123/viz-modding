@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "deep_dark_regrowth"
+		}
+	],
+    "type": "deep_dark_regrowth:annihilator",
+    "name": "entity.deep_dark_regrowth.annihilator",
+    "name_color": "#094553",
+    "gui_scale": 0.9,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 3200,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.annihilator",
+    "fabricator_drops": [
+		{
+			"item": "deep_dark_regrowth:plasmatic_sculk",
+			"count": 4
+		}
+    ],
+	"tier_data": [
+        6,
+        66,
+        666,
+        6666
+    ],
+    "data_per_kill": [
+        6,
+        33,
+        222,
+        1666
+    ]
+}

@@ -1,0 +1,45 @@
+{
+	"conditions": [
+	{
+		"modid": "upgrade_aquatic",
+		"type": "forge:mod_loaded"
+	}
+	],
+    "type": "upgrade_aquatic:great_thrasher",
+    "name": "entity.upgrade_aquatic.great_thrasher",
+    "name_color": "#416c7e",
+    "gui_scale": 0.45,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 196,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.great_thrasher",
+    "fabricator_drops": [
+        {
+            "item": "upgrade_aquatic:thrasher_tooth",
+            "count": 16
+        },
+        {
+            "item": "upgrade_aquatic:disc_fragment_atlantis",
+            "count": 1
+        }
+    ],
+    "tier_data": [
+        6,
+        36,
+        512,
+        1020
+    ],
+    "data_per_kill": [
+        3,
+        9,
+        64,
+        85
+    ]
+}

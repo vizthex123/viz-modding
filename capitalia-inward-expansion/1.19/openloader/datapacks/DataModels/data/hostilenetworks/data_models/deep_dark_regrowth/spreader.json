@@ -1,0 +1,45 @@
+{
+		"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "deep_dark_regrowth"
+		}
+	],
+    "type": "deep_dark_regrowth:spreader",
+    "name": "entity.deep_dark_regrowth.spreader",
+    "name_color": "#011D1E",
+    "gui_scale": 0.75,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1280,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.spreader",
+    "fabricator_drops": [
+		{
+			"item": "deep_dark_regrowth:mossy_fluorite",
+			"count": 8
+		},
+		{
+			"item": "deep_dark_regrowth:sculk_remnants",
+			"count": 4
+		}
+    ],
+	"tier_data": [
+        3,
+        33,
+        333,
+        3333
+    ],
+    "data_per_kill": [
+        3,
+        11,
+        33,
+        280
+    ]
+}

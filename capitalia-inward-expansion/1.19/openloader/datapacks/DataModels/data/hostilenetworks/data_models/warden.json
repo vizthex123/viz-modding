@@ -1,0 +1,66 @@
+{
+	"type": "minecraft:warden",
+	"subtypes": [],
+	"name": "entity.minecraft.warden",
+	"name_color": "#05343F",
+	"gui_scale": 0.65,
+	"gui_x_offset": 0,
+	"gui_y_offset": -0.15,
+	"gui_z_offset": 0,
+	"sim_cost": 2560,
+	"input": {
+	"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+	"item": "hostilenetworks:end_prediction"
+	},
+	"trivia": "capitalia.trivia.warden",
+	"fabricator_drops": [
+		{
+		  "item": "minecraft:echo_shard",
+		  "count": 2
+		},
+		{
+		  "optional": true,
+		  "item": "apotheosis:warden_tendril",
+		  "count": 1
+		},
+		{
+		  "optional": true,
+		  "item": "deeperdarker:heart_of_the_deep",
+		  "count": 1
+		},
+		{
+		  "optional": true,
+		  "item": "deeperdarker:warden_carapace",
+		  "count": 1
+		},
+		{
+		  "optional": true,
+		  "item": "deep_dark_regrowth:soul_of_the_depths",
+		  "count": 1
+		},
+		{
+		  "optional": true,
+		  "item": "deep_dark_regrowth:sculk_remnants",
+		  "count": 4
+		},
+		{
+		  "optional": true,
+		  "item": "deep_dark_regrowth:mossy_fluorite",
+		  "count": 20
+		}
+	],
+	"tier_data": [
+        19,
+		65,
+        118,
+        666
+    ],
+    "data_per_kill": [
+        19,
+        33,
+        40,
+        222
+    ]
+}
