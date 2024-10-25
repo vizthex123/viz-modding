@@ -1,0 +1,35 @@
+Coins are multiples of 100 (1 Gold = 100 Silver)
+
+
+Quest shapes:
+
+Circle - default
+Square - Tech
+Rounded Square - Create
+Octagon - Magic
+Hexagon - Exploration
+Gear - Info for players
+
+
+
+Rarities:
+
+Quintessal (Level 0)
+Stellar (Level 1)
+Radiant (Level 2)
+Shadow (Level 7)
+Legendary (Level 3)
+[MC] Epic (Level 4)
+[MC] Rare (Level 5)
+[MC] Uncommon (Level 6)
+
+
+
+How to use tellraw (make sure it's a team reward!):
+
+Colours:
+
+Green - Research unlocks
+
+/tellraw @p {"text":"MSG", "color":"green"}
+

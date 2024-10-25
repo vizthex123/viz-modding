@@ -1,0 +1,9 @@
+
+[General]
+	#Should the quarry gui screen be rendered in Dark Mode.
+	enable_quarry_darkmode = true
+	#Enable dark mode button.
+	enable_quarry_darkmode_button = true
+	#Render the with Area Card selected corners in world.
+	enable_area_card_corner_rendering = true
+

@@ -1,0 +1,27 @@
+
+[General]
+	#What Color should the overlay at the first corner be [Format: #RRGGBB]
+	first_corner_overlay_color = "#116300"
+	#What Color should the overlay at the second corner be [Format: #RRGGBB]
+	second_corner_overlay_color = "#630000"
+	#BurnTick consumption of the quarry in idle mode per second
+	quarry_idle_consumption = 10
+	#Default mode BurnTick consumption
+	quarry_mode_default_consumption = 100
+	#Efficient mode BurnTick consumption
+	quarry_mode_efficient_consumption = 80
+	#Fortune mode BurnTick consumption
+	quarry_mode_fortune_consumption = 200
+	#Silk Touch mode BurnTick consumption
+	quarry_mode_silktouch_consumption = 200
+	#Void mode BurnTick consumption
+	quarry_mode_void_consumption = 100
+	#Speed 1 BurnTick consumption multiplier
+	quarry_speed_one_multiplier = 1.0
+	#Speed 2 BurnTick consumption multiplier
+	quarry_speed_two_multiplier = 1.25
+	#Speed 3 BurnTick consumption multiplier
+	quarry_speed_three_multiplier = 1.5
+	#Speed 4 BurnTick consumption multiplier
+	quarry_speed_four_multiplier = 2.0
+
