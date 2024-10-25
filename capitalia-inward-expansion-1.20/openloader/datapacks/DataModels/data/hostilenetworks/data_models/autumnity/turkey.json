@@ -1,0 +1,37 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "autumnity"
+		}
+	],
+    "entity": "autumnity:turkey",
+    "name": "entity.autumnity.turkey",
+    "name_color": "#653B36",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.turkey",
+    "fabricator_drops": [
+        {
+            "item": "autumnity:turkey",
+            "count": 32
+        },
+		{
+            "item": "minecraft:feather",
+            "count": 32
+        },
+		{
+            "item": "autumnity:turkey_egg",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:tortured_soul",
+    "name": "entity.aquamirae.tortured_soul",
+    "name_color": "#23363E",
+    "gui_scale": 0.95,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 160,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.tortured_soul",
+	"fabricator_drops": [
+		{
+            "item": "minecraft:rotten_flesh",
+            "count": 64
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 32
+        },
+        {
+            "item": "minecraft:bread",
+            "count": 16
+        },
+        {
+            "item": "aquamirae:ship_graveyard_echo",
+            "count": 1
+        }
+	]
+}

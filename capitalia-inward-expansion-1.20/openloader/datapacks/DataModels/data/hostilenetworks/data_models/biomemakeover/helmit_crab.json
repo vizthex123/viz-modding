@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomemakeover"
+		}
+	],
+    "entity": "biomemakeover:helmit_crab",
+    "name": "entity.biomemakeover.helmit_crab",
+    "name_color": "#F67E1D",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.helmit_crab",
+    "fabricator_drops": [
+        {
+            "item": "biomemakeover:raw_crab",
+            "count": 32
+        }
+    ]
+}

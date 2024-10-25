@@ -1,0 +1,11 @@
+{
+	"id": "fluid",
+	"name": "Fluid",
+	"controllerIds": ["mm:laboratory_heart"],
+	"type": "mm:fluid",
+	"config": {
+		"rows": 1,
+		"columns": 1,
+		"slotCapacity": 4000
+	}
+}

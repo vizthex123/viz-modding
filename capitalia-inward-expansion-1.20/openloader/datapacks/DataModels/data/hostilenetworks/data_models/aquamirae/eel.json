@@ -1,0 +1,49 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:eel",
+    "name": "entity.aquamirae.eel",
+    "name_color": "#03598C",
+    "gui_scale": 0.3,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.eel",
+    "fabricator_drops": [
+        {
+            "item": "aquamirae:fin",
+            "count": 64
+        },
+        {
+            "item": "aquamirae:sharp_bones",
+            "count": 32
+        },
+        {
+            "item": "aquamirae:spinefish",
+            "count": 16
+        },
+        {
+            "item": "aquamirae:ship_graveyard_echo",
+            "count": 4
+        },
+        {
+            "item": "aquamirae:treasure_pouch",
+            "count": 4
+        },
+        {
+            "item": "aquamirae:dead_sea_scroll",
+            "count": 1
+        }
+    ]
+}

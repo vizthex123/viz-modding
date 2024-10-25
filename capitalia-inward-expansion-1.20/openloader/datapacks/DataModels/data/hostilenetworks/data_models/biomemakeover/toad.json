@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomemakeover"
+		}
+	],
+    "entity": "biomemakeover:toad",
+    "name": "entity.biomemakeover.toad",
+    "name_color": "#97953B",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.toad",
+    "fabricator_drops": [
+        {
+            "item": "biomemakeover:wart",
+            "count": 4
+        },
+		{
+            "item": "biomemakeover:raw_toad",
+            "count": 8
+        }
+    ]
+}

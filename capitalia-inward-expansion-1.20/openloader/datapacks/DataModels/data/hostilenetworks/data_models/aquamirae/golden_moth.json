@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:golden_moth",
+    "name": "entity.aquamirae.golden_moth",
+    "name_color": "#FFFF1A",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 24,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.golden_moth",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:gold_ingot",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:chicken",
+    "name": "entity.minecraft.chicken",
+    "name_color": "#F0EAD6",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.chicken",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:chicken",
+            "count": 32
+        },
+        {
+            "item": "minecraft:feather",
+            "count": 24
+        },
+        {
+            "item": "minecraft:egg",
+            "count": 8
+        }
+    ]
+}

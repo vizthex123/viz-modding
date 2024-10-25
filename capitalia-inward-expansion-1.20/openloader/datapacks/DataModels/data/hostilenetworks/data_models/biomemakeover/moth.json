@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomemakeover"
+		}
+	],
+    "entity": "biomemakeover:moth",
+    "name": "entity.biomemakeover.moth",
+    "name_color": "#1B1E48",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0.25,
+    "gui_z_offset": 0,
+    "sim_cost": 24,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.moth",
+    "fabricator_drops": [
+        {
+            "item": "biomemakeover:moth_scales",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "netherexp"
+		}
+	],
+    "entity": "netherexp:stampede",
+    "name": "entity.netherexp.stampede",
+    "name_color": "#33271F",
+    "gui_scale": 0.48,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 96,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.stampede",
+    "fabricator_drops": [
+        {
+            "item": "netherexp:stridite",
+            "count": 4
+        }
+    ]
+}

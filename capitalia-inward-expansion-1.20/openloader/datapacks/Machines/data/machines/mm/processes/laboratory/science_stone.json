@@ -1,0 +1,31 @@
+{
+	"ticks": 200,
+	"structureId": "machines:laboratory",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 1000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:cobblestone",
+			"count": 8
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:science_stone",
+			"count": 1
+		}
+	}
+  ]
+}

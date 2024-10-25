@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "netherexp"
+		}
+	],
+    "entity": "netherexp:ecto_slab",
+    "name": "entity.netherexp.ecto_slab",
+    "name_color": "#143534",
+    "gui_scale": 2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.ecto_slab",
+    "fabricator_drops": [
+        {
+            "item": "netherexp:phasmo_shard",
+            "count": 16
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"compounds": [
+	{
+		"type": "replication:metallic",
+		"amount": 9
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "createdeco:industrial_iron_ingot",
+		"count": 1
+	}
+  }
+}

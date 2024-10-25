@@ -1,0 +1,52 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+    "entity": "bygonenether:wraither",
+    "name": "entity.bygonenether.wraither",
+    "name_color": "#121212",
+    "gui_scale": 0.85,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 800,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.wraither",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:bone",
+            "count": 36
+        },
+        {
+            "item": "minecraft:coal",
+            "count": 42
+        },
+        {
+            "item": "minecraft:wither_skeleton_skull",
+            "count": 3
+        },
+		{
+			"optional": true,
+			"item": "iceandfire:witherbone",
+			"count": 10
+		},
+		{
+			"optional": true,
+			"item": "reliquary:withered_rib",
+			"count": 3
+		},
+		{
+			"optional": true,
+			"item": "wstweaks:fragment",
+			"count": 32
+		}
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"compounds": [
+	{
+		"type": "replication:nether",
+		"amount": 1
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "create:cinder_flour",
+		"count": 1
+	}
+  }
+}

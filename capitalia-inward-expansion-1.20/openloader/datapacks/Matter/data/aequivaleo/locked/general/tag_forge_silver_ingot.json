@@ -1,0 +1,21 @@
+{
+	"compounds": [
+	{
+		"type": "replication:metallic",
+		"amount": 18
+	},
+	{
+		"type": "replication:precious",
+		"amount": 9
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:tag",
+	"data": {
+		"tagName": "forge:ingots/silver",
+		"tagType": "minecraft:item",
+		"count": 1
+	}
+  }
+}

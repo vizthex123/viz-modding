@@ -1,0 +1,5 @@
+resourcePacks:["vanilla","mod_resources","mm_resources","builtin/add_xycraft_overrides_glass","builtin/add_xycraft_overrides_metal","builtin/add_xycraft_overrides_stone","netherexp:jne_retextures","default_seamless","file/STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip","file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip","file/STONEBORN Inventory Tweaks compat.zip","file/ExtraModelTrivia-1.6.2.zip","file/Vertical Nuggets 1.20.zip"]
+incompatibleResourcePacks:["file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip"]
+chatHeightUnfocused:0.45
+hideBundleTutorial:true
+tutorialStep:none

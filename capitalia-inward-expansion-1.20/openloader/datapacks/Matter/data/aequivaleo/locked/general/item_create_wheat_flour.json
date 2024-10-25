@@ -1,0 +1,20 @@
+{
+	"compounds": [
+	{
+		"type": "replication:earth",
+		"amount": 2
+	},
+	{
+		"type": "replication:organic",
+		"amount": 2
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "create:wheat_flour",
+		"count": 1
+	}
+  }
+}

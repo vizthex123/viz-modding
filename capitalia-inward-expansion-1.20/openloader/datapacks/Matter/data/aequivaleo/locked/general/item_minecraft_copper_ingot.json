@@ -1,0 +1,16 @@
+{
+	"compounds": [
+	{
+		"type": "replication:metallic",
+		"amount": 9
+	}
+	],
+	"mode": "REPLACING",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "minecraft:copper_ingot",
+		"count": 1
+	}
+  }
+}

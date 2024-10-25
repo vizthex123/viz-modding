@@ -1,0 +1,37 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:anglerfish",
+    "name": "entity.aquamirae.anglerfish",
+    "name_color": "#5CDBDB",
+    "gui_scale": 0.3,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.angler_fish",
+    "fabricator_drops": [
+        {
+            "item": "aquamirae:fin",
+            "count": 8
+        },
+        {
+            "item": "aquamirae:anglers_fang",
+            "count": 4
+        },
+        {
+            "item": "aquamirae:esca",
+            "count": 2
+        }
+    ]
+}

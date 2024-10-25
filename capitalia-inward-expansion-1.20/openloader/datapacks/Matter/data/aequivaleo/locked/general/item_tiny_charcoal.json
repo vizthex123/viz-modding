@@ -1,0 +1,10 @@
+{
+	"mode": "DISABLED",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "coal_additions:tiny_charcoal",
+		"count": 1
+	}
+  }
+}

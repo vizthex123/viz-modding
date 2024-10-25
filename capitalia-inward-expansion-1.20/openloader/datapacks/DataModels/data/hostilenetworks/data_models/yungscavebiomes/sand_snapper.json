@@ -1,0 +1,89 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "yungscavebiomes"
+		}
+	],
+    "entity": "yungscavebiomes:sand_snapper",
+    "name": "entity.yungscavebiomes.sand_snapper",
+    "name_color": "#CBBD98",
+    "gui_scale": 0.6,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.sand_snapper",
+    "fabricator_drops": [
+        {
+            "item": "yungscavebiomes:ancient_sand",
+            "count": 8
+        },
+        {
+            "item": "minecraft:sand",
+            "count": 16
+        },
+        {
+            "item": "minecraft:red_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomesoplenty:black_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomesoplenty:white_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomesoplenty:orange_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomeswevegone:black_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomeswevegone:white_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomeswevegone:purple_sand",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomeswevegone:pink_sand",
+            "count": 16
+		},
+		{
+			"optional": true,
+            "item": "biomeswevegone:windswept_sand",
+            "count": 16
+		}
+    ],
+    "tier_data": [
+        6,
+        12,
+        48,
+        60
+    ],
+    "data_per_kill": [
+        6,
+        9,
+        12,
+        15
+    ]
+}

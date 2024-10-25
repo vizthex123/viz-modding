@@ -1,0 +1,37 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:maw",
+    "name": "entity.aquamirae.maw",
+    "name_color": "#68CBF1",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 96,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.maw",
+	"fabricator_drops": [
+		{
+            "item": "aquamirae:fin",
+            "count": 8
+        },
+        {
+            "item": "aquamirae:sharp_bones",
+            "count": 8
+        },
+        {
+            "item": "minecraft:slime_ball",
+            "count": 4
+        }
+	]
+}

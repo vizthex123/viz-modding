@@ -1,0 +1,39 @@
+{
+	"ticks": 50,
+	"structureId": "machines:laboratory",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 500
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "expansion:binding",
+			"count": 1
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:fibers",
+			"count": 8
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:science",
+			"count": 1
+		}
+	}
+  ]
+}

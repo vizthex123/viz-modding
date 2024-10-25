@@ -1,0 +1,20 @@
+{
+	"compounds": [
+	{
+		"type": "replication:organic",
+		"amount": 2
+	},
+	{
+		"type": "replication:living",
+		"amount": 2
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "kubejs:pig_hide",
+		"count": 1
+	}
+  }
+}

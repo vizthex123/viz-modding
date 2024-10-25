@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "biomemakeover"
+		}
+	],
+    "entity": "biomemakeover:rootling",
+    "name": "entity.biomemakeover.rootling",
+    "name_color": "#5C4D25",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.rootling",
+    "fabricator_drops": [
+        {
+            "item": "biomemakeover:bulbus_root",
+            "count": 4
+        },
+        {
+            "item": "biomemakeover:rootling_seeds",
+            "count": 16
+        }
+    ]
+}

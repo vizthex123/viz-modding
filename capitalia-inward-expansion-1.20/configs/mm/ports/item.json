@@ -1,0 +1,10 @@
+{
+	"id": "item",
+	"name": "Item",
+	"controllerIds": ["mm:laboratory_heart"],
+	"type": "mm:item",
+	"config": {
+		"rows": 3,
+		"columns": 3
+	}
+}

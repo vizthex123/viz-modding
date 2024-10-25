@@ -1,0 +1,53 @@
+{
+	"name": "Laboratory",
+    "controllerIds": "mm:laboratory_heart",
+    "layout": [
+        [
+            "   ",
+            " V ",
+            "   "
+        ],
+        [
+            "BWB",
+            "WRW",
+            "BCB"
+        ],
+        [
+            "SES",
+            "IRO",
+            "STS"
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "port": "mm:item",
+            "input": true
+        },
+		"O": {
+            "port": "mm:item",
+            "input": false
+        },
+		"B": {
+            "block": "minecraft:iron_bars"
+        },
+		"R": {
+            "block": "minecraft:iron_block"
+        },
+		"S": {
+            "block": "createdeco:copper_sheet_metal"
+        },
+		"T": {
+            "block": "mm:circuitry"
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"W": {
+            "block": "createdeco:zinc_window"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"input": {
+		"count": 2,
+		"ingredient": {
+			"item": "create:brass_ingot"
+		}
+	},
+	"output": {
+		"item": "lightmanscurrency:coin_iron",
+		"count": 2
+	}
+}

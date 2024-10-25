@@ -1,0 +1,20 @@
+{
+	"compounds": [
+	{
+		"type": "replication:earth",
+		"amount": 3
+	},
+	{
+		"type": "replication:precious",
+		"amount": 3
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "projectred_core:electrotine_dust",
+		"count": 1
+	}
+  }
+}

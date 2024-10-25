@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": "Adds custom machines (and recipes that use them)."
+    }
+}

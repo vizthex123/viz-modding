@@ -1,0 +1,35 @@
+{
+    "entity": "minecraft:ravager",
+    "name": "entity.minecraft.ravager",
+    "name_color": "#39342B",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.ravager",
+    "fabricator_drops": [
+        {
+            "item": "quark:ravager_hide",
+            "count": 8
+        }
+	],
+	"tier_data": [
+		128,
+        512,
+        3072,
+        9216
+    ],
+    "data_per_kill": [
+        64,
+        128,
+        512,
+        768
+    ]
+}

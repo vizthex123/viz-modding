@@ -1,0 +1,20 @@
+{
+	"compounds": [
+	{
+		"type": "replication:organic",
+		"amount": 1
+	},
+	{
+		"type": "replication:living",
+		"amount": 1
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "kubejs:fibers",
+		"count": 1
+	}
+  }
+}

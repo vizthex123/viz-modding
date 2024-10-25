@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "autumnity"
+		}
+	],
+    "entity": "autumnity:snail",
+    "name": "entity.autumnity.snail",
+    "name_color": "#9B805B",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.snail",
+    "fabricator_drops": [
+        {
+            "item": "autumnity:snail_goo",
+            "count": 8
+        }
+    ]
+}

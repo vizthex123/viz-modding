@@ -1,0 +1,16 @@
+{
+	"compounds": [
+	{
+		"type": "replication:quantum",
+		"amount": 64
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:item",
+	"data": {
+		"item": "kubejs:matter_cube_quantum",
+		"count": 1
+	}
+  }
+}

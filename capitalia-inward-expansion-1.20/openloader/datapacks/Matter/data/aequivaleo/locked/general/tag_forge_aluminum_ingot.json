@@ -1,0 +1,17 @@
+{
+	"compounds": [
+	{
+		"type": "replication:metallic",
+		"amount": 9
+	}
+	],
+	"mode": "ADDITIVE",
+	"targets": {
+	"type": "aequivaleo:tag",
+	"data": {
+		"tagName": "forge:ingots/aluminum",
+		"tagType": "minecraft:item",
+		"count": 1
+	}
+  }
+}

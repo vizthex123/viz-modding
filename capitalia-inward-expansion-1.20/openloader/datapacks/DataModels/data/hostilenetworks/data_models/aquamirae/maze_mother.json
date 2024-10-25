@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "entity": "aquamirae:maze_mother",
+    "name": "entity.aquamirae.maze_mother",
+    "name_color": "#AB37A5",
+    "gui_scale": 0.2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.maze_mother",
+	"fabricator_drops": [
+		{
+            "item": "aquamirae:abyssal_amethyst",
+            "count": 1
+        },
+        {
+            "item": "aquamirae:sharp_bones",
+            "count": 16
+        },
+        {
+            "item": "aquamirae:ship_graveyard_echo",
+            "count": 2
+        },
+        {
+            "item": "minecraft:prismarine_crystals",
+            "count": 32
+        }
+	]
+}

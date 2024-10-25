@@ -1,0 +1,36 @@
+{
+    "entity": "minecraft:turtle",
+    "variants": [
+		"alexsmobs:alligator_snapping_turtle",
+		"alexsmobs:terrapin"
+	],
+    "name": "entity.minecraft.turtle",
+    "name_color": "#3EA141",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.turtle",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:scute",
+            "count": 16
+        },
+        {
+            "item": "minecraft:turtle_egg",
+            "count": 8
+        },
+        {
+			"optional": true,
+            "item": "alexsmobs:terrapin_egg",
+            "count": 4
+        }
+    ]
+}

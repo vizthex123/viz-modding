@@ -1,0 +1,39 @@
+{
+	"ticks": 300,
+	"structureId": "machines:laboratory",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:science",
+			"count": 1
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:ingots/brass",
+			"count": 4
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:science_brass",
+			"count": 2
+		}
+	}
+  ]
+}

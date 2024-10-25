@@ -1,0 +1,11 @@
+{
+	"id": "energy",
+	"name": "Energy",
+	"controllerIds": ["mm:laboratory_heart"],
+	"type": "mm:energy",
+	"config": {
+		"maxReceive": 4000,
+		"maxExtract": 4000,
+		"capacity": 16000
+	}
+}
