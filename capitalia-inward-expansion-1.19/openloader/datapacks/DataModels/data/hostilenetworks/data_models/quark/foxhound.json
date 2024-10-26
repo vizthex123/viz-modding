@@ -1,18 +1,18 @@
 {
 	"conditions": [
-	{
-		"modid": "quark",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
 	],
     "type": "quark:foxhound",
     "name": "entity.quark.foxhound",
-    "name_color": "#751d23",
-    "gui_scale": 1.25,
+    "name_color": "#751D23",
+    "gui_scale": 0.85,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 192,
+    "sim_cost": 128,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },

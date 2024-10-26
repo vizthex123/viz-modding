@@ -1,8 +1,5 @@
 {
     "type": "minecraft:skeleton_horse",
-    "subtypes": [
-		"bygonenether:wither_skeleton_horse"
-	],
     "name": "entity.minecraft.skeleton_horse",
     "name_color": "#BABABA",
     "gui_scale": 1,
@@ -19,12 +16,12 @@
     "trivia": "custom.trivia.skeleton_horse",
     "fabricator_drops": [
         {
-            "item": "minecraft:bone",
-            "count": 32
-        },
-        {
             "item": "minecraft:saddle",
             "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 32
         },
         {
             "optional": true,

@@ -1,18 +1,18 @@
 {
 	"conditions": [
-	{
-		"modid": "upgrade_aquatic",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "upgrade_aquatic"
+		}
 	],
     "type": "upgrade_aquatic:nautilus",
     "name": "entity.upgrade_aquatic.nautilus",
-    "name_color": "#a48269",
+    "name_color": "#A48269",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 32,
+    "sim_cost": 48,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },

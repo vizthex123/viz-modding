@@ -25,17 +25,12 @@
 		},
 		{
 			"item": "minecraft:wither_skeleton_skull",
-			"count": 2
-		},
-		{
-			"optional": true,
-			"item": "reliquary:withered_rib",
-			"count": 2
+			"count": 3
 		},
 		{
 			"optional": true,
 			"item": "wstweaks:fragment",
-			"count": 16
+			"count": 32
 		}
 	]
 }

@@ -1,13 +1,13 @@
 {
 	"conditions": [
-	{
-		"modid": "upgrade_aquatic",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "upgrade_aquatic"
+		}
 	],
     "type": "upgrade_aquatic:perch",
     "name": "entity.upgrade_aquatic.perch",
-    "name_color": "#758a43",
+    "name_color": "#758A43",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

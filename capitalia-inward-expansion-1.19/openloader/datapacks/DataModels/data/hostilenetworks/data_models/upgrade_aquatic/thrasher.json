@@ -1,18 +1,18 @@
 {
 	"conditions": [
-	{
-		"modid": "upgrade_aquatic",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "upgrade_aquatic"
+		}
 	],
     "type": "upgrade_aquatic:thrasher",
     "name": "entity.upgrade_aquatic.thrasher",
-    "name_color": "#416c7e",
+    "name_color": "#416C7E",
     "gui_scale": 0.62,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 132,
+    "sim_cost": 128,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },
@@ -23,19 +23,19 @@
     "fabricator_drops": [
         {
             "item": "upgrade_aquatic:thrasher_tooth",
-            "count": 12
+            "count": 8
         }
     ],
-    "tier_data": [
-        12,
-        64,
-        512,
-        1152
+	"tier_data": [
+		64,
+        256,
+        1024,
+        4096
     ],
     "data_per_kill": [
-        3,
         8,
+        16,
         32,
-        48
+        64
     ]
 }

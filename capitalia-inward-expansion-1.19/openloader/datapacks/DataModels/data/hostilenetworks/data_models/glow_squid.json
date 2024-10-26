@@ -2,10 +2,10 @@
     "type": "minecraft:glow_squid",
     "name": "entity.minecraft.glow_squid",
     "name_color": "#32A1A1",
-    "gui_scale": 1.0,
-    "gui_x_offset": 0.0,
+    "gui_scale": 1,
+    "gui_x_offset": 0,
     "gui_y_offset": 1,
-    "gui_z_offset": 0.0,
+    "gui_z_offset": 0,
     "sim_cost": 32,
     "input": {
         "item": "hostilenetworks:empty_prediction"

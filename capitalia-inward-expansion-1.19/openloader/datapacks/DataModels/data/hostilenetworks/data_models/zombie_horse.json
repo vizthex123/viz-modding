@@ -4,7 +4,7 @@
         "enderzoology:fallen_mount"
     ],
     "name": "entity.minecraft.zombie_horse",
-    "name_color": "#406c40",
+    "name_color": "#406C40",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -19,12 +19,12 @@
     "trivia": "custom.trivia.zombie_horse",
     "fabricator_drops": [
         {
-            "item": "minecraft:rotten_flesh",
-            "count": 64
-        },
-        {
             "item": "minecraft:saddle",
             "count": 1
+        },
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 64
         },
         {
             "optional": true,

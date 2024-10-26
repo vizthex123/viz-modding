@@ -1,13 +1,13 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "biomemakeover"
 		}
 	],
-    "type": "biomemakeover:decayed",
-    "name": "entity.biomemakeover.decayed",
-    "name_color": "#2C2E16",
+    "type": "biomemakeover:ghost",
+    "name": "entity.biomemakeover.ghost",
+    "name_color": "#4C725A",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -19,15 +19,21 @@
     "base_drop": {
         "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "custom.trivia.decayed",
+    "trivia": "custom.trivia.ghost_makeover",
     "fabricator_drops": [
         {
-            "item": "minecraft:rotten_flesh",
-            "count": 64
-        },
-        {
-            "item": "minecraft:slime_ball",
+            "item": "biomemakeover:ectoplasm",
             "count": 8
-        }
+        },
+		{
+			"optional": true,
+			"item": "iceandfire:ectoplasm",
+			"count": 8
+		},
+		{
+			"optional": true,
+			"item": "nourished_nether:ectoplasm",
+			"count": 8
+		}
     ]
 }

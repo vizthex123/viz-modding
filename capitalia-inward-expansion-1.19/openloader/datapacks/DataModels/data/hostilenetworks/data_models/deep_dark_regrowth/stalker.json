@@ -1,5 +1,5 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "deep_dark_regrowth"
@@ -7,7 +7,7 @@
 	],
     "type": "deep_dark_regrowth:stalker",
     "name": "entity.deep_dark_regrowth.stalker",
-    "name_color": "#716c44",
+    "name_color": "#716C44",
     "gui_scale": 0.69,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -27,15 +27,15 @@
 		}
     ],
 	"tier_data": [
-        1,
+        61,
         373,
-        5337,
-		9321
+        4719,
+		5733
     ],
     "data_per_kill": [
-        1,
-        125,
-        888,
-        777
+        61,
+        187,
+        1573,
+        1435
     ]
 }

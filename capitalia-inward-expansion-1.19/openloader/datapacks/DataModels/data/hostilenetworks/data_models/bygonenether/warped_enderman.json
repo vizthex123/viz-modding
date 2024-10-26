@@ -1,5 +1,5 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "bygonenether"
@@ -17,7 +17,7 @@
         "item": "hostilenetworks:empty_prediction"
     },
     "base_drop": {
-        "item": "hostilenetworks:overworld_prediction"
+        "item": "hostilenetworks:nether_prediction"
     },
     "trivia": "custom.trivia.warped_enderman",
     "fabricator_drops": [

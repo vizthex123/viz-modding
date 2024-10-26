@@ -1,9 +1,9 @@
 {
 	"conditions": [
-	{
-		"modid": "upgrade_aquatic",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "upgrade_aquatic"
+		}
 	],
     "type": "upgrade_aquatic:immortal_jellyfish",
     "subtypes": [
@@ -11,12 +11,12 @@
 		"upgrade_aquatic:cassiopea_jellyfish"
 	],
     "name": "entity.upgrade_aquatic.immortal_jellyfish",
-    "name_color": "#96d1d5",
+    "name_color": "#96D1D5",
     "gui_scale": 1,
-    "gui_x_offset": 0,
-    "gui_y_offset": 0,
+    "gui_x_offset": 0.15,
+    "gui_y_offset": 0.3,
     "gui_z_offset": 0,
-    "sim_cost": 32,
+    "sim_cost": 48,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },

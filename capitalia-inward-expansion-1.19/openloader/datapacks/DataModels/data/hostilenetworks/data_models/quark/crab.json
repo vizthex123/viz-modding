@@ -1,8 +1,8 @@
 {
 	"conditions": [
 		{
-			"modid": "quark",
-			"type": "forge:mod_loaded"
+			"type": "forge:mod_loaded",
+			"modid": "quark"
 		}
 	],
     "type": "quark:crab",
@@ -27,7 +27,7 @@
         },
 		{
             "item": "quark:crab_leg",
-            "count": 4
+            "count": 8
         }
     ]
 }

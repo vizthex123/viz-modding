@@ -2,32 +2,28 @@
 	"conditions": [
 		{
 			"type": "forge:mod_loaded",
-			"modid": "upgrade_aquatic"
+			"modid": "biomemakeover"
 		}
 	],
-    "type": "upgrade_aquatic:lionfish",
-    "name": "entity.upgrade_aquatic.lionfish",
-    "name_color": "#CE0A00",
+    "type": "biomemakeover:helmit_crab",
+    "name": "entity.biomemakeover.helmit_crab",
+    "name_color": "#F67E1D",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 32,
+    "sim_cost": 48,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },
     "base_drop": {
         "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "custom.trivia.lionfish",
+    "trivia": "custom.trivia.helmit_crab",
     "fabricator_drops": [
         {
-            "item": "upgrade_aquatic:lionfish",
+            "item": "biomemakeover:raw_crab",
             "count": 32
-        },
-        {
-            "item": "minecraft:bone_meal",
-            "count": 2
         }
     ]
 }

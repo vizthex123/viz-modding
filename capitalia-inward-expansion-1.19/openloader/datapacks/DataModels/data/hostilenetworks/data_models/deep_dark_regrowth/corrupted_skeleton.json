@@ -1,5 +1,5 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "deep_dark_regrowth"
@@ -25,5 +25,17 @@
 			"item": "deep_dark_regrowth:sculk_bone",
 			"count": 8
 		}
+    ],
+	"tier_data": [
+        6,
+        66,
+        118,
+        666
+    ],
+    "data_per_kill": [
+        6,
+        33,
+		30,
+        111
     ]
 }

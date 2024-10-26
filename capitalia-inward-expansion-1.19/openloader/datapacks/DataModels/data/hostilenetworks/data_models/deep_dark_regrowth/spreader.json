@@ -1,5 +1,5 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "deep_dark_regrowth"
@@ -31,15 +31,15 @@
 		}
     ],
 	"tier_data": [
-        3,
-        33,
-        333,
-        3333
+        1357,
+        1633,
+        3419,
+        5235
     ],
     "data_per_kill": [
-        3,
-        11,
-        33,
-        280
+        1357,
+        817,
+        1140,
+        1310
     ]
 }

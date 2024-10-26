@@ -6,13 +6,13 @@
     ],
     "name": "entity.minecraft.sheep",
     "name_color": "rainbow",
-    "display_nbt": {
+	"display_nbt": {
         "CustomName": "{\"text\":\"jeb_\"}"
     },
-    "gui_scale": 1.0,
-    "gui_x_offset": 0.0,
-    "gui_y_offset": 0.0,
-    "gui_z_offset": 0.0,
+    "gui_scale": 0.9,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
     "sim_cost": 64,
     "input": {
         "item": "hostilenetworks:empty_prediction"

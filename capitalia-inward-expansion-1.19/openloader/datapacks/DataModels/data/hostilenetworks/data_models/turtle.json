@@ -5,7 +5,7 @@
 		"alexsmobs:terrapin"
 	],
     "name": "entity.minecraft.turtle",
-    "name_color": "#3ea141",
+    "name_color": "#3EA141",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

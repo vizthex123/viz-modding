@@ -1,9 +1,9 @@
 {
 	"conditions": [
-	{
-		"modid": "quark",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
 	],
     "type": "quark:toretoise",
     "name": "entity.quark.toretoise",
@@ -12,7 +12,7 @@
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 192,
+    "sim_cost": 72,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },
@@ -23,15 +23,15 @@
 	"fabricator_drops": [
 		{
             "item": "minecraft:coal",
-            "count": 4
+            "count": 12
         },
 		{
             "item": "minecraft:lapis_lazuli",
-            "count": 6
+            "count": 8
         },
 		{
             "item": "minecraft:redstone",
-            "count": 6
+            "count": 8
         },
 		{
             "item": "minecraft:raw_copper",
@@ -39,7 +39,7 @@
         },
 		{
             "item": "minecraft:raw_iron",
-            "count": 8
+            "count": 6
         }
     ]
 }

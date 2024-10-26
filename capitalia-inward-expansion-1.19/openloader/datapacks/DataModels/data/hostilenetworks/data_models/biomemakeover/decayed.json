@@ -1,29 +1,33 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "biomemakeover"
 		}
 	],
-    "type": "biomemakeover:helmit_crab",
-    "name": "entity.biomemakeover.helmit_crab",
-    "name_color": "#F67E1D",
+    "type": "biomemakeover:decayed",
+    "name": "entity.biomemakeover.decayed",
+    "name_color": "#2C2E16",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 48,
+    "sim_cost": 128,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },
     "base_drop": {
         "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "custom.trivia.helmit_crab",
+    "trivia": "custom.trivia.decayed",
     "fabricator_drops": [
         {
-            "item": "biomemakeover:raw_crab",
-            "count": 32
+            "item": "minecraft:rotten_flesh",
+            "count": 64
+        },
+        {
+            "item": "minecraft:slime_ball",
+            "count": 8
         }
     ]
 }

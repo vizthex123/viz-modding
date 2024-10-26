@@ -1,18 +1,18 @@
 {
 	"conditions": [
-	{
-		"modid": "quark",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
 	],
     "type": "quark:wraith",
     "name": "entity.quark.wraith",
-    "name_color": "#d7fbfc",
+    "name_color": "#D7FBFC",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 144,
+    "sim_cost": 92,
     "input": {
         "item": "hostilenetworks:empty_prediction"
     },

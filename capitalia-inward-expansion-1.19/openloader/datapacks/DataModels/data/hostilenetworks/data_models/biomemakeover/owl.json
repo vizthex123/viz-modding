@@ -1,13 +1,13 @@
 {
-		"conditions": [
+	"conditions": [
 		{
 			"type": "forge:mod_loaded",
 			"modid": "biomemakeover"
 		}
 	],
-    "type": "biomemakeover:rootling",
-    "name": "entity.biomemakeover.rootling",
-    "name_color": "#5C4D25",
+    "type": "biomemakeover:owl",
+    "name": "entity.biomemakeover.owl",
+    "name_color": "#483316",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -19,15 +19,16 @@
     "base_drop": {
         "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "custom.trivia.rootling",
+    "trivia": "custom.trivia.owl_makeover",
     "fabricator_drops": [
         {
-            "item": "biomemakeover:bulbus_root",
-            "count": 4
+            "item": "minecraft:feather",
+            "count": 20
         },
         {
-            "item": "biomemakeover:rootling_seeds",
-            "count": 16
+			"optional": true,
+            "item": "enderzoology:owl_egg",
+            "count": 4
         }
     ]
 }

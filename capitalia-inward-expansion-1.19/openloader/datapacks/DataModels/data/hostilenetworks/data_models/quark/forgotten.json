@@ -1,9 +1,9 @@
 {
 	"conditions": [
-	{
-		"modid": "quark",
-		"type": "forge:mod_loaded"
-	}
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
 	],
     "type": "quark:forgotten",
     "name": "entity.quark.forgotten",
@@ -33,18 +33,22 @@
 		{
             "item": "minecraft:bone",
             "count": 48
+        },
+		{
+            "item": "minecraft:skeleton_skull",
+            "count": 2
         }
     ],
     "tier_data": [
-        2,
-        20,
-        222,
-        2000
+        1874 ,
+        1922 ,
+        1981,
+        2023
     ],
     "data_per_kill": [
-        2,
-        10,
-        74,
-        500
+        1874,
+        961,
+        660,
+        404
     ]
 }

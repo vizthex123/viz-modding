@@ -1,7 +1,7 @@
 {
     "type": "minecraft:pufferfish",
     "name": "entity.minecraft.pufferfish",
-    "name_color": "#9e6d13",
+    "name_color": "#9E6D13",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

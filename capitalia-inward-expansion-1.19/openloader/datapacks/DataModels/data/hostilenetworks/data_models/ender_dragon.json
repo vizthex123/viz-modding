@@ -25,30 +25,20 @@
 		},
 		{
 			"optional": true,
-			"item": "irons_spellbooks:dragonskin",
-			"count": 8
-		},
-		{
-			"optional": true,
 			"item": "quark:dragon_scale",
-			"count": 8
-		},
-		{
-			"optional": true,
-			"item": "tetra:dragon_sinew",
 			"count": 8
 		}
 	],
     "tier_data": [
 		100,
-        300,
-        600,
+        150,
+        200,
         1200
     ],
     "data_per_kill": [
         50,
-        100,
-        150,
+        50,
+        50,
         240
     ]
 }

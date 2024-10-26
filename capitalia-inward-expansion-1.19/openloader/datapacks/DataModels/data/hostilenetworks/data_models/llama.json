@@ -5,10 +5,10 @@
 	],
     "name": "entity.minecraft.llama",
     "name_color": "#998967",
-    "gui_scale": 1.0,
-    "gui_x_offset": 0.0,
-    "gui_y_offset": 0.0,
-    "gui_z_offset": 0.0,
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
     "sim_cost": 64,
     "input": {
         "item": "hostilenetworks:empty_prediction"

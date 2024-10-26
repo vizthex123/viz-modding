@@ -1,11 +1,12 @@
 {
     "type": "minecraft:cow",
     "subtypes": [
+		"buzzier_bees:moobloom",
 		"friendsandfoes:moobloom"
 	],
     "name": "entity.minecraft.cow",
     "name_color": "#352A1F",
-    "gui_scale": 1,
+    "gui_scale": 0.9,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
