@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Makes files use CRLF since that's what Notepad++ uses
+* text eol=crlf

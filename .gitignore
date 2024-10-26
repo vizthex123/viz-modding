@@ -1,4 +1,3 @@
 server.properties
-.cache
-*.xcf
 *.lnk
+*.xcf
