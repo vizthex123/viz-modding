@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "aquamirae"
+		}
+	],
+    "type": "aquamirae:captain_cornelia",
+    "name": "entity.aquamirae.captain_cornelia",
+    "name_color": "#FC54FC",
+    "gui_scale": 0.9,
+    "gui_x_offset": 0,
+    "gui_y_offset": -0.25,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.captain_cornelia",
+    "fabricator_drops": [
+        {
+            "item": "aquamirae:three_bolt_helmet",
+            "count": 1
+        },
+        {
+            "item": "aquamirae:oxygen_tank",
+            "count": 1
+        },
+        {
+            "item": "aquamirae:ship_graveyard_echo",
+            "count": 4
+        },
+        {
+            "item": "aquamirae:treasure_pouch",
+            "count": 4
+        }
+    ]
+}

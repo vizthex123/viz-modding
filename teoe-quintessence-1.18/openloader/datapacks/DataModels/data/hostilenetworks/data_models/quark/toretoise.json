@@ -1,0 +1,45 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+    "type": "quark:toretoise",
+    "name": "entity.quark.toretoise",
+    "name_color": "#838383",
+    "gui_scale": 0.7,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 72,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+	"trivia": "custom.trivia.toretoise",
+	"fabricator_drops": [
+		{
+            "item": "minecraft:coal",
+            "count": 12
+        },
+		{
+            "item": "minecraft:lapis_lazuli",
+            "count": 8
+        },
+		{
+            "item": "minecraft:redstone",
+            "count": 8
+        },
+		{
+            "item": "minecraft:raw_copper",
+            "count": 8
+        },
+		{
+            "item": "minecraft:raw_iron",
+            "count": 6
+        }
+    ]
+}

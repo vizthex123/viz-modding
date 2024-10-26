@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:hoglin",
+    "subtypes": [
+		"minecraft:zoglin",
+		"ad_astra:mogler",
+		"ad_astra:zombified_mogler"
+	],
+    "name": "entity.minecraft.hoglin",
+    "name_color": "#E8A074",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.hoglin",
+    "fabricator_drops": [
+        {
+			"optional": true,
+            "item": "nourished_nether:raw_hoglin",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "nourished_nether:hoglin_hide",
+            "count": 8
+        },
+        {
+            "item": "minecraft:porkchop",
+            "count": 32
+        },
+        {
+            "item": "minecraft:leather",
+            "count": 16
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+    "type": "tconstruct:ender_slime",
+    "name": "entity.tconstruct.ender_slime",
+    "name_color": "#673C90",
+    "gui_scale": 2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+	"trivia": "custom.trivia.ender_slime",
+    "fabricator_drops": [
+        {
+            "item": "tconstruct:ender_slime_ball",
+            "count": 32
+        }
+    ]
+}
