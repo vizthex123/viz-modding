@@ -8,7 +8,7 @@ ServerEvents.tags("item", e => {
     e.add("expansion:workbench", ["#forge:workbenches", "crafting_table", "ae2:cell_workbench"])
 */
     // Bindings & paper (book recipe)
-    e.add("forge:leather", ["endergetic:booflo_hide", "nourished_nether:hoglin_hide", "quark:ravager_hide"])
+    e.add("forge:leather", ["endergetic:booflo_hide", "nourished_nether:hoglin_hide"])
     e.add("expansion:binding", ["#forge:leather", "phantom_membrane"])
     e.add("expansion:paper", ["paper", "kubejs:parchment"])
 

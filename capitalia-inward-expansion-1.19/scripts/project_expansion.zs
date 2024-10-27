@@ -21,18 +21,19 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(name, <input>, <output>, inp
 
 Drill Parts:
 
-Bits
+Bits (need 3)
 Head
 Shaft
-Supports
+Support Frame
 Foundation
 
 Completion Order:
+
 Shaft
 - Segments first
 Head
-- Bits first
-Supports/Foundation
+- 3 Bits first
+Support Frame/Foundation
 
 The Drill™
 */
@@ -64,39 +65,42 @@ val cognitive = <item:experienceobelisk:cognitive_alloy>;
 
 val super_glue = <item:create:super_glue>;
 
-val bits = <item:kubejs:bits>;
-val scaffold = <item:kubejs:scaffold>;
-val segment = <item:kubejs:shaft_segment>;
-val foundation = <item:kubejs:foundation>;
+val bit = <item:kubejs:drill_bit>;
+val head = <item:kubejs:drill_head>;
+val shaft_segment = <item:kubejs:drill_shaft_segment>;
+val shaft = <item:kubejs:drill_shaft>;
+val scaffold = <item:kubejs:drill_scaffold>;
+val support_frame = <item:kubejs:drill_support_frame>;
+val foundation = <item:kubejs:drill_foundation>;
 
 // Shaft Segment
-mods.extendedcrafting.CombinationCrafting.addRecipe("shaft_segment", segment, 1000, [obsidian, tungsten_carbide, tungsten_carbide, tungsten_carbide, tungsten_carbide], 5);
+mods.extendedcrafting.CombinationCrafting.addRecipe("drill_shaft_segment", shaft_segment, 1000, [obsidian, tungsten_carbide, tungsten_carbide, tungsten_carbide, tungsten_carbide], 5);
 
 // Shaft
-mods.extendedcrafting.FluxCrafting.addShaped("shaft", <item:kubejs:shaft>,
-	[[segment, super_glue, segment], 
+mods.extendedcrafting.FluxCrafting.addShaped("drill_shaft", shaft,
+	[[shaft_segment, super_glue, shaft_segment], 
 	[super_glue, soul_steel, super_glue], 
-	[segment, super_glue, segment]], 10000, 10);
+	[shaft_segment, super_glue, shaft_segment]], 10000, 10);
 
 // Drill Bits
-mods.extendedcrafting.FluxCrafting.addShaped("drill_bits", bits,
+mods.extendedcrafting.FluxCrafting.addShaped("drill_bit", bit,
 	[[tungsten_carbide], 
 	[tungsten_carbide], 
 	[<item:createoreexcavation:drill>]], 8000, 8);
 
 // Drill Head
-mods.extendedcrafting.TableCrafting.addShaped("drill_head", 2, <item:kubejs:head>,
+mods.extendedcrafting.TableCrafting.addShaped("drill_head", 2, head,
 	[[super_glue, obsidian_plate, red, obsidian_plate, super_glue], 
 	[zinc, obsidian_plate, red, obsidian_plate, zinc], 
 	[empty, soul_steel, <item:bluepower:motor>, soul_steel, empty], 
-	[empty, bits, soul_steel, bits, empty], 
-	[empty, empty, bits, empty, empty]]);
+	[empty, bit, soul_steel, bit, empty], 
+	[empty, empty, bit, empty, empty]]);
 
 // Scaffold
-mods.extendedcrafting.CompressionCrafting.addRecipe("scaffold", <item:create:powdered_obsidian>, scaffold, 10, soul_steel, 25000, 250);
+mods.extendedcrafting.CompressionCrafting.addRecipe("drill_scaffold", <item:create:powdered_obsidian>, scaffold, 10, soul_steel, 25000, 250);
 
-// Supports
-mods.extendedcrafting.TableCrafting.addShaped("supports", 3, <item:kubejs:supports>,
+// Support Frame
+mods.extendedcrafting.TableCrafting.addShaped("drill_support_frame", 3, support_frame,
 	[[empty, empty, empty, empty, empty, empty, empty], 
 	[empty, empty, cognitive, cognitive, cognitive, empty, empty], 
 	[empty, bismuth, tungsten_carbide, crystaltine, tungsten_carbide, bismuth, empty], 
@@ -106,7 +110,7 @@ mods.extendedcrafting.TableCrafting.addShaped("supports", 3, <item:kubejs:suppor
 	[scaffold, empty, empty, empty, empty, empty, scaffold]]);
 
 // Foundation
-mods.extendedcrafting.TableCrafting.addShaped("foundation", 3, foundation,
+mods.extendedcrafting.TableCrafting.addShaped("drill_foundation", 3, foundation,
 	[[empty, empty, empty, empty, empty, empty, empty], 
 	[empty, empty, empty, empty, empty, empty, empty], 
 	[empty, empty, purple, empty, purple, empty, empty], 
@@ -117,8 +121,8 @@ mods.extendedcrafting.TableCrafting.addShaped("foundation", 3, foundation,
 
 // Worldbreaker Drill
 mods.extendedcrafting.FluxCrafting.addShaped("worldbreaker_drill", <item:kubejs:worldbreaker_drill>,
-	[[empty, <item:kubejs:head>, empty], 
-	[<item:kubejs:shaft>, <item:kubejs:supports>, <item:kubejs:shaft>], 
+	[[empty, head, empty], 
+	[shaft, support_frame, shaft], 
 	[empty, foundation, empty]], 5000000, 50);
 
 print("project_expansion.zs loaded");

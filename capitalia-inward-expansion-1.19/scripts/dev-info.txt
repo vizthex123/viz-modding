@@ -47,7 +47,7 @@ Legendary (Level 2) - O R A N G E!
 
 
 
-Menu text options (textcraft):
+Menu text options (on textcraft):
 
 - Blocked font option (subtitle: square)
 - Extra large #2C262E (subtitle: medium #261E4E)
@@ -56,7 +56,7 @@ Menu text options (textcraft):
 
 
 
-Menu text options (textcraft) REBUILT:
+Menu text options (on textcraft) REBUILT:
 
 - Blocked font option (subtitle: square, "rebuilt": minecrafter)
 - Extra large (subtitle: mid, "rebuilt": small)

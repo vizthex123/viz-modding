@@ -1,5 +1,5 @@
-resourcePacks:["vanilla","mod_resources","defaultresources","dynamic_asset_generator:assets","file/STONEBORN - 1.19 - V3.2.1.zip","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","quark:emote_resources","file/FutureHUD-1.19-1.0.0.zip","Solar Flux Generated Resources","file/ExtraModelTrivia-1.6.2.zip","resources/Renamer.zip","file/Vertical Nuggets 1.19.1 - 1.19.2.zip"]
-incompatibleResourcePacks:["quark:emote_resources","file/ExtraModelTrivia-1.6.2.zip"]
+resourcePacks:["vanilla","mod_resources","defaultresources","dynamic_asset_generator:assets","file/STONEBORN - 1.19 - V3.2.1.zip","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","quark:emote_resources","file/FutureHUD-1.19-1.0.0.zip","Solar Flux Generated Resources","file/ExtraModelTrivia-1.6.4.zip","resources/Renamer.zip","file/Vertical Nuggets 1.19.1 - 1.19.2.zip"]
+incompatibleResourcePacks:["quark:emote_resources","file/ExtraModelTrivia-1.6.4.zip"]
 advancedItemTooltips:false
 chatHeightUnfocused:0.45
 skipMultiplayerWarning:true

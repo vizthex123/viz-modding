@@ -18,8 +18,8 @@ craftingTable.remove(<item>);
 */
 
 val fiber = <item:kubejs:fibers>;
-val leather = <item:kubejs:shredded_hide>;
 val sawdust = <item:kubejs:sawdust>;
+val shredded_hide = <item:kubejs:shredded_hide>;
 
 val scrap_copper = <item:kubejs:small_copper_scrap>;
 # val tiny_copper = <item:kubejs:tiny_copper_scrap>;
@@ -53,10 +53,10 @@ val sand = <item:minecraft:sand>;
 # Blocks get demoted if possible (e.g. cobble -> gravel)
 
 // Books
-<recipetype:create:milling>.addRecipe("recycle_books", [leather, fiber*3], <item:minecraft:book>|<item:minecraft:written_book>.anyDamage(), 30);
+<recipetype:create:milling>.addRecipe("recycle_books", [shredded_hide, fiber*3], <item:minecraft:book>|<item:minecraft:written_book>.anyDamage(), 30);
 
 	// Quill
-<recipetype:create:milling>.addRecipe("recycle_book_and_quill", [leather, fiber*3, <item:minecraft:feather> % 25, <item:minecraft:black_dye> % 50], <item:minecraft:writable_book>, 30);
+<recipetype:create:milling>.addRecipe("recycle_book_and_quill", [shredded_hide, fiber*3, <item:minecraft:feather> % 25, <item:minecraft:black_dye> % 50], <item:minecraft:writable_book>, 30);
 
 // Fishing Rods
 <recipetype:create:milling>.addRecipe("recycle_fishing_rod", [sawdust, sawdust % 50, fiber*2], <item:minecraft:fishing_rod>.anyDamage(), 30);
@@ -234,7 +234,7 @@ val sand = <item:minecraft:sand>;
 # Blocks
 val flour = <item:create:cinder_flour>;
 
-<recipetype:create:milling>.addRecipe("recycle_item_frame", [leather, sawdust*4], <item:minecraft:item_frame>);
+<recipetype:create:milling>.addRecipe("recycle_item_frame", [shredded_hide, sawdust*4], <item:minecraft:item_frame>);
 
 <recipetype:create:crushing>.addRecipe("recycle_furnace", [gravel*8], <item:minecraft:furnace>);
 <recipetype:create:crushing>.addRecipe("recycle_smoker", [gravel*8, sawdust*16], <item:minecraft:smoker>);
@@ -251,34 +251,35 @@ val flour = <item:create:cinder_flour>;
 # Full blocks take 5 seconds, partial ones take 3, and items take 1 - 2
 
 
-### Recycling recipes
+### Mechanical Saw recycling recipes
 # Gives only 1 output. Used for things made of leather, paper, etc.
 
 // Recycle Leather gear
-<recipetype:create:milling>.addRecipe("recycle_leather_helmet", [leather*5], <item:minecraft:leather_helmet>.anyDamage(), 40);
-<recipetype:create:milling>.addRecipe("recycle_leather_chestplate", [leather*8], <item:minecraft:leather_chestplate>.anyDamage(), 40);
-<recipetype:create:milling>.addRecipe("recycle_leather_leggings", [leather*7], <item:minecraft:leather_leggings>.anyDamage(), 40);
-<recipetype:create:milling>.addRecipe("recycle_leather_boots", [leather*4], <item:minecraft:leather_boots>.anyDamage(), 40);
+<recipetype:create:cutting>.addRecipe("recycle_leather_helmet", shredded_hide*5, <item:minecraft:leather_helmet>.anyDamage(), 40);
+<recipetype:create:cutting>.addRecipe("recycle_leather_chestplate", shredded_hide*8, <item:minecraft:leather_chestplate>.anyDamage(), 40);
+<recipetype:create:cutting>.addRecipe("recycle_leather_leggings", shredded_hide*7, <item:minecraft:leather_leggings>.anyDamage(), 40);
+<recipetype:create:cutting>.addRecipe("recycle_leather_boots", shredded_hide*4, <item:minecraft:leather_boots>.anyDamage(), 40);
 
 // Recycle Ropes
-<recipetype:create:milling>.addRecipe("recycle_rope", [fiber*2], <item:additionaladditions:rope>, 40);
+<recipetype:create:cutting>.addRecipe("recycle_rope", fiber*2, <item:additionaladditions:rope>, 25);
+<recipetype:create:cutting>.addRecipe("recycle_thick_rope", fiber*8, <item:quark:rope>, 50);
 
 // Recycle Name Tags
-<recipetype:create:milling>.addRecipe("recycle_name_tag", [fiber*6], <item:minecraft:name_tag>, 20);
+<recipetype:create:cutting>.addRecipe("recycle_name_tag", fiber*6, <item:minecraft:name_tag>, 20);
 
 // Recycle Witch Hat
-<recipetype:create:milling>.addRecipe("recycle_witch_hat", [leather*6], <item:biomemakeover:witch_hat>.anyDamage(), 30);
+<recipetype:create:cutting>.addRecipe("recycle_witch_hat", shredded_hide*6, <item:biomemakeover:witch_hat>.anyDamage(), 30);
 
 // Recycle Forgotten Hat
-<recipetype:create:milling>.addRecipe("recycle_forgotten_hat", [leather*8], <item:quark:forgotten_hat>.anyDamage(), 30);
+<recipetype:create:cutting>.addRecipe("recycle_forgotten_hat", shredded_hide*12, <item:quark:forgotten_hat>.anyDamage(), 30);
 
 // Recycle Carpets
-<recipetype:create:milling>.addRecipe("recycle_carpet", [fiber*2], <tag:items:minecraft:wool_carpets>, 20);
+<recipetype:create:cutting>.addRecipe("recycle_carpet", fiber*2, <tag:items:minecraft:wool_carpets>, 20);
 
 // Make Wool -> String give Fibers instead
 <recipetype:create:milling>.removeByName("create:milling/wool");
 <recipetype:create:crushing>.removeByName("create:crushing/wool");
-<recipetype:create:milling>.addRecipe("recycle_wool", [fiber*4], <tag:items:minecraft:wool>, 60);
+<recipetype:create:cutting>.addRecipe("recycle_wool", fiber*4, <tag:items:minecraft:wool>, 60);
 
 
 
@@ -286,7 +287,7 @@ val flour = <item:create:cinder_flour>;
 # Full blocks take 5 seconds, partial ones are 3, misc/small things are 1 - 2
 # 1 Plank = 1 Sawdust
 # 1 Slab = 0.5 Sawdust
-# If an item uses metal to craft, put it in create_recycling.zs instead!
+# 1 Stick = 0.25 Sawdust
 
 // Banners
 <recipetype:create:milling>.addRecipe("recycle_banners", [fiber*24, sawdust % 50], <tag:items:minecraft:banners>, 40);

@@ -15,6 +15,8 @@ craftingTable.addShaped("recipeName", <output>,
 craftingTable.removeByName("recipeName");
 craftingTable.remove(<item>);
 
+<recipetype:create:cutting>.addRecipe("name", <output>, <item>, duration);
+
 <recipetype:create:milling>.addRecipe("name", [<outputs>], <item>, duration);
 <recipetype:create:crushing>.addRecipe("name", [<outputs>], <item>, duration);
 
@@ -44,6 +46,7 @@ val iron_plate = <tag:items:forge:plates/iron>;
 val cobblestone = <item:minecraft:cobblestone>;
 val dust = <item:createsifter:dust>;
 
+
 // Change the Sandpaper recipes to add tag support
 craftingTable.remove(<item:create:sand_paper>);
 craftingTable.remove(<item:create:red_sand_paper>);
@@ -68,6 +71,9 @@ craftingTable.addShaped("lid", <item:createdieselgenerators:basin_lid>,
 furnace.addRecipe("smelt_crushed_silver", <item:bluepower:silver_ingot>, <item:create:crushed_raw_silver>, 0.1, 200);
 blastFurnace.addRecipe("blast_crushed_silver", <item:bluepower:silver_ingot>, <item:create:crushed_raw_silver>, 0.1, 100);
 
+
+// Cut Ravager Hide into Shredded Hide
+<recipetype:create:cutting>.addRecipe("saw_ravager_hide", <item:kubejs:shredded_hide>*8, <item:quark:ravager_hide>, 80);
 
 
 ### Mixing recipes

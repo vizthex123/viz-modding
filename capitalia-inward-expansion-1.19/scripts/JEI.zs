@@ -1,4 +1,5 @@
 # Adds info and hides items from JEI
+
 import mods.jeitweaker.Jei;
 import crafttweaker.api.text.Component;
 
@@ -9,12 +10,6 @@ Jei.addIngredientInformation(<item>, Component.literal(TEXT"));
 
 Jei.hideIngredient(<item>);
 */
-
-# Hide disabled items
-Jei.hideIngredient(<item:bluepower:project_table>);
-Jei.hideIngredient(<item:bluepower:auto_project_table>);
-
-
 
 # Info tab
 Jei.addIngredientInformation(<item:additionaladditions:copper_patina>, Component.literal("Gained by by scraping oxidation off of Copper Blocks with an Axe"));
@@ -73,5 +68,11 @@ Jei.addIngredientInformation(<item:powah:ender_gate_niotic>, Component.literal("
 Jei.addIngredientInformation(<item:powah:ender_gate_spirited>, Component.literal("Remotely transfers energy across vast distances." + "\n\nStarter Gates can only have 1 channel, but higher tiers let you select a channel. Power is shared across all Cells and Gates set to the same channel."));
 
 Jei.addIngredientInformation(<item:powah:ender_gate_nitro>, Component.literal("Remotely transfers energy across vast distances." + "\n\nStarter Gates can only have 1 channel, but higher tiers let you select a channel. Power is shared across all Cells and Gates set to the same channel."));
+
+
+
+# Hide disabled items
+Jei.hideIngredient(<item:bluepower:project_table>);
+Jei.hideIngredient(<item:bluepower:auto_project_table>);
 
 print("JEI.zs loaded");

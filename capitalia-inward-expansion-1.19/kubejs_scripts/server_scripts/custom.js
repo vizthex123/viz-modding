@@ -9,11 +9,11 @@ ServerEvents.recipes(e => {
     e.shapeless("kubejs:seller", ["createdeco:copper_coin", "createdeco:copper_coin"]).id("kubejs:sales_token_deco")
 
     // Prestige Conversions
-    e.shapeless("4x kubejs:prestige_chit", ["kubejs:prestige_scrip"]).id("kubejs:prestige_chits")
+    e.shapeless("4x kubejs:prestige_chit", ["kubejs:prestige_scrip"]).id("kubejs:prestige_chit")
     e.shapeless("kubejs:prestige_scrip", ["kubejs:prestige_chit", "kubejs:prestige_chit", "kubejs:prestige_chit", "kubejs:prestige_chit"]).id("kubejs:prestige_scrip")
 
     // Convert Shredded Hide into Leather
-    e.shapeless("leather", ["kubejs:shredded_hide", "kubejs:shredded_hide"]).id("kubejs:hide_to_leather")
+    e.shapeless("leather", ["kubejs:shredded_hide", "kubejs:shredded_hide"]).id("kubejs:shredded_hide_to_leather")
 
     // Quicklime
     e.blasting("kubejs:quicklime", "#forge:limestone", 0.1).id("kubejs:blast_limestone")
@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:parchment_fiber")
 
-    // Sawdust
+    // Compressed Sawdust
     e.shaped(
       "3x kubejs:parchment",
         [
@@ -91,7 +91,7 @@ ServerEvents.recipes(e => {
         ],
         {
           G: "kubejs:glue",
-          S: "kubejs:sawdust"
+          S: "kubejs:compressed_sawdust"
         }
     ).id("kubejs:parchment")
 
@@ -105,7 +105,7 @@ ServerEvents.recipes(e => {
         ],
         {
           G: "kubejs:glue",
-          S: "kubejs:sawdust",
+          S: "kubejs:compressed_sawdust",
           Q: "kubejs:quicklime"
         }
     ).id("kubejs:parchment_quicklime")
@@ -175,7 +175,7 @@ ServerEvents.recipes(e => {
 
     // Compressed
     e.shaped(
-      "kubejs:mdf",
+      "4x kubejs:mdf",
         [
           "SGS",
           "SGS"

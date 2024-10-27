@@ -53,11 +53,6 @@
         },
         {
 			"optional": true,
-            "item": "bettertridents:trident_fragment",
-            "count": 1
-        },
-        {
-			"optional": true,
             "item": "upgrade_aquatic:elder_eye",
             "count": 1
         },

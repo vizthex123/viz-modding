@@ -1,54 +1,58 @@
 // Adds custom items
-StartupEvents.registry("item", event => {
+StartupEvents.registry("item", e => {
 
     // Scientific Dossiers
-    event.create("science").displayName("Unwritten Scroll")
-    event.create("science_stone").displayName("Scientific Tablet: Stone Research")
-    event.create("science_brass").displayName("Scientific Scroll: Brass Research")
-    event.create("science_iron").displayName("Scientific Dossier: Iron Research")
-    event.create("science_industrial").displayName("Scientific Dossier: Industrial Research").rarity("uncommon")
-    event.create("science_information").displayName("Scientific Data Pad: Information Research").rarity("rare")
-    event.create("science_atomic").displayName("Scientific Hologram: Atomic Research").rarity("epic")
+    e.create("science").displayName("Unwritten Scroll")
+    e.create("science_stone").displayName("Scientific Tablet: Stone Age")
+    e.create("science_brass").displayName("Scientific Scroll: Brass Age")
+    e.create("science_iron").displayName("Scientific Dossier: Iron Age")
+    e.create("science_industrial").displayName("Scientific Dossier: Industrial Age").rarity("uncommon")
+    e.create("science_information").displayName("Scientific Data Pad: Information Age").rarity("rare")
+    e.create("science_atomic").displayName("Scientific Hologram: Atomic Age").rarity("epic")
 
-    // Sawdust
-    event.create("glue")
-    event.create("sawdust")
-    event.create("sawdust_clump")
-    event.create("compressed_sawdust")
-    event.create("mdf").displayName("MDF Board").tag("planks").burnTime(200)
-
-    // Scrap
-    event.create("copper_scrap")
-    event.create("small_copper_scrap")
-    event.create("iron_scrap")
-    event.create("small_iron_scrap")
-    event.create("tiny_iron_scrap").tag("forge:nuggets/iron")
-    event.create("gold_scrap")
-    event.create("small_gold_scrap")
-    event.create("tiny_gold_scrap").tag("forge:nuggets/gold")
-    event.create("diamond_scrap")
-    event.create("small_diamond_scrap")
 
     // Project Expansion
     // Organized by progression order
-    event.create("shaft_segment").rarity("uncommon")
-    event.create("shaft").rarity("uncommon")
-    event.create("bits").displayName("Drill Bits").rarity("uncommon")
-    event.create("head").displayName("Drill Head").rarity("rare")
-    event.create("scaffold").rarity("rare")
-    event.create("supports").rarity("epic")
-    event.create("foundation").rarity("epic")
-    event.create("worldbreaker_drill").rarity("epic").maxStackSize(1)
+    e.create("drill_shaft_segment").rarity("uncommon")
+    e.create("drill_shaft").rarity("uncommon")
+    e.create("drill_bit").rarity("uncommon").rarity("uncommon")
+    e.create("drill_head").rarity("rare")
+    e.create("drill_scaffold").rarity("rare")
+    e.create("drill_support_frame").rarity("uncommon").rarity("epic")
+    e.create("drill_foundation").rarity("epic")
+    e.create("worldbreaker_drill").rarity("epic").maxStackSize(1)
+
+
+    // Sawdust
+    e.create("glue")
+    e.create("sawdust")
+    e.create("sawdust_clump")
+    e.create("compressed_sawdust")
+    e.create("mdf").displayName("MDF Board").tag("planks").burnTime(200)
+
+
+    // Scrap
+    e.create("copper_scrap")
+    e.create("small_copper_scrap")
+    e.create("iron_scrap")
+    e.create("small_iron_scrap")
+    e.create("tiny_iron_scrap").tag("forge:nuggets/iron")
+    e.create("gold_scrap")
+    e.create("small_gold_scrap")
+    e.create("tiny_gold_scrap").tag("forge:nuggets/gold")
+    e.create("diamond_scrap")
+    e.create("small_diamond_scrap")
+
 
     // Misc
-    event.create("fibers")
-    event.create("pig_hide").tag("forge:leather")
-    event.create("sheepskin").tag("forge:leather")
-    event.create("shredded_hide")
-    event.create("parchment").tag("expansion:paper").tag("lightmanscurrency:ticket_material").tag("lightmanscurrency:ticket_material/paper")
-    event.create("quicklime")
-    event.create("prestige_chit").rarity("rare")
-    event.create("prestige_scrip").rarity("epic")
-    event.create("seller").displayName("Sales Token").rarity("uncommon")
+    e.create("fibers")
+    e.create("pig_hide").tag("forge:leather")
+    e.create("sheepskin").tag("forge:leather")
+    e.create("shredded_hide")
+    e.create("parchment").tag("expansion:paper").tag("lightmanscurrency:ticket_material").tag("lightmanscurrency:ticket_material/paper")
+    e.create("quicklime")
+    e.create("prestige_chit").rarity("rare")
+    e.create("prestige_scrip").rarity("epic")
+    e.create("seller").displayName("Sales Token").rarity("uncommon")
 
 })

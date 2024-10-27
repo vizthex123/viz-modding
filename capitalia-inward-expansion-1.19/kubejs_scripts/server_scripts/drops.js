@@ -1,4 +1,4 @@
-// Adds loot to various things
+// Adds drops to various things
 LootJS.modifiers((e) => {
 
     // Make Sheeps drop Sheepskin
@@ -39,21 +39,18 @@ LootJS.modifiers((e) => {
 
 
 
-    //// Blocks
+    //// Chest/block loot
 
     // Add Coins to Deep Dark: Regrowth's vases
-    e
-      .addLootTableModifier("deep_dark_regrowth:blocks/ancient_vase")
+    e.addLootTableModifier("deep_dark_regrowth:blocks/ancient_vase")
       .randomChance(0.35)
       .addLoot("lightmanscurrency:coin_iron");
 
-    e
-      .addLootTableModifier("deep_dark_regrowth:blocks/large_ancient_vase")
+    e.addLootTableModifier("deep_dark_regrowth:blocks/large_ancient_vase")
       .randomChance(0.25)
       .addLoot("lightmanscurrency:coin_gold");
 
-    e
-      .addLootTableModifier("deep_dark_regrowth:blocks/time_capsule_open")
+    e.addLootTableModifier("deep_dark_regrowth:blocks/time_capsule_open")
       .randomChance(0.15)
       .addLoot("lightmanscurrency:coin_emerald");
 

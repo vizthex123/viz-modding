@@ -1,5 +1,5 @@
-# Adds recipes to Create's Mechanical Saw
-print("crate_sawing.zs loading...");
+# Adds wood cutting recipes to Create's Mechanical Saw
+print("create_sawing.zs loading...");
 /*
 <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration);
 */
