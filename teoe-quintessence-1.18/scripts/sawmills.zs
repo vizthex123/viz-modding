@@ -47,7 +47,7 @@ val stick = <item:minecraft:stick>;
 <recipetype:create:cutting>.addRecipe("mech_saw_map", paper*4,<item:minecraft:map>|<item:minecraft:filled_map>, 2);
 
 // Ropes
-<recipetype:thermal:sawmill>.addRecipe("saw_ropes", [spider_string % 50], <tag:items:teoe:rope>, 1000);
+<recipetype:thermal:sawmill>.addRecipe("saw_ropes", [spider_string % 50], <tag:items:quintessence:rope>, 1000);
 
 // Saddles
 <recipetype:thermal:sawmill>.addRecipe("saw_saddle", [leather*2, leather*2 % 50], <item:minecraft:saddle>, 1000);
@@ -93,8 +93,8 @@ val stick = <item:minecraft:stick>;
 <recipetype:create:cutting>.addRecipe("mech_saw_item_frames", sawdust*3, <item:minecraft:item_frame>|<item:minecraft:glow_item_frame>, 1);
 
 // Leather Armour
-<recipetype:thermal:sawmill>.addRecipe("saw_leather_armour", [leather*2, leather*2 % 50], <tag:items:teoe:leather_armour>.asIIngredient().anyDamage(), 3000);
-<recipetype:create:cutting>.addRecipe("mech_saw_leather_armour", leather*3, <tag:items:teoe:leather_armour>.asIIngredient().anyDamage(), 4);
+<recipetype:thermal:sawmill>.addRecipe("saw_leather_armour", [leather*2, leather*2 % 50], <tag:items:quintessence:leather_armour>.asIIngredient().anyDamage(), 3000);
+<recipetype:create:cutting>.addRecipe("mech_saw_leather_armour", leather*3, <tag:items:quintessence:leather_armour>.asIIngredient().anyDamage(), 4);
 
 	// Strap
 <recipetype:thermal:sawmill>.addRecipe("saw_leather_strap", [leather*2, <item:minecraft:iron_nugget> % 25], <item:ironjetpacks:strap>, 3000);

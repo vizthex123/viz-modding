@@ -1,0 +1,25 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:coinifier",
+	"time": 600,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 30000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "enigmaticlegacy:the_cube",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_netherite",
+			"amount": 1
+		}
+	]
+}

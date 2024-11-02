@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enlightened_end"
+		}
+	],
+    "type": "enlightened_end:bouncer",
+    "name": "entity.enlightened_end.bouncer",
+    "name_color": "#FB79F1",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.bouncer",
+    "fabricator_drops": [
+        {
+            "item": "enlightened_end:squished_bouncer",
+            "count": 16
+        }
+    ]
+}

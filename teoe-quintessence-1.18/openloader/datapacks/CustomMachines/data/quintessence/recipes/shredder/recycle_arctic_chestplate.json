@@ -1,0 +1,25 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 40,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "twilightforest:arctic_chestplate",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "twilightforest:arctic_fur",
+			"amount": 4
+		}
+	]
+}

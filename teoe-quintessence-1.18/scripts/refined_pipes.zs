@@ -40,11 +40,11 @@ mods.jei.JEI.hideIngredient(<item:refinedpipes:ultimate_energy_pipe>);
 
 
 # Basic Pipe tag (quest)
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_item_pipe>);
-<tag:items:teoe:basic_pipe>.add(<item:refinedpipes:basic_extractor_attachment>);
-<tag:items:teoe:basic_pipe>.add(<item:thermal:energy_duct>);
-<tag:items:teoe:basic_pipe>.add(<item:thermal:fluid_duct_windowed>);
-<tag:items:teoe:basic_pipe>.add(<item:thermal:fluid_duct>);
+<tag:items:quintessence:basic_pipe>.add(<item:refinedpipes:basic_item_pipe>);
+<tag:items:quintessence:basic_pipe>.add(<item:refinedpipes:basic_extractor_attachment>);
+<tag:items:quintessence:basic_pipe>.add(<item:thermal:energy_duct>);
+<tag:items:quintessence:basic_pipe>.add(<item:thermal:fluid_duct_windowed>);
+<tag:items:quintessence:basic_pipe>.add(<item:thermal:fluid_duct>);
 
 val zinc = <item:create:zinc_ingot>;
 

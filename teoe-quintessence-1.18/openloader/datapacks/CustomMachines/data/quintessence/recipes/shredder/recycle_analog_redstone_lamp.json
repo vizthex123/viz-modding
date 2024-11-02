@@ -1,0 +1,39 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "essentials:analog_lamp",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "thermal:quartz_dust",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 2
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:glowstone",
+			"amount": 2
+		}
+	]
+}

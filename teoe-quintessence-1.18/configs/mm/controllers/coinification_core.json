@@ -1,0 +1,7 @@
+{
+	"id": "coinification_core",
+	"name": {
+        "translation": "machines.mm.coinification_core"
+    },
+	"type": "mm:machine"
+}

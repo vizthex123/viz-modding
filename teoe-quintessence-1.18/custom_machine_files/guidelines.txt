@@ -1,0 +1,5 @@
+Slots are 19x19 (1 pixel bigger than minecraft's, but i don't feel like re-doing the UIs again)
+
+Progress arrows are 3 pixels thick with a 3-pixel buffer between the line and end for the back of the arrow
+- This lets me center them with a 7-pixel gap on each side of the slot (8 if the arrow points at the slot)
+- 2-pixel gap between the end of the arrow and the slot (3 for input)

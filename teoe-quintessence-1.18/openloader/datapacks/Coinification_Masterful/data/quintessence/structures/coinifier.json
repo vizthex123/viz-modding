@@ -1,0 +1,39 @@
+{
+    "controllerId": "mm:coinification_core",
+	"structureId": "quintessence:coinifier",
+    "name": {
+        "translation": "machine.mm.coinifier"
+    },
+    "layout": [
+        [
+            "   ",
+            " C ",
+            "   "
+        ],
+        [
+            "   ",
+            "IEO",
+            "   "
+        ]
+    ],
+    "key": {
+		"E": {
+            "type": "mm:port",
+            "id": "energy",
+			"port": "mm:energy_input",
+			"input": true
+        },
+		"I": {
+            "type": "mm:port",
+            "id": "input",
+			"port": "mm:item_input",
+			"input": true
+        },
+		"O": {
+            "type": "mm:port",
+            "id": "output",
+			"port": "mm:item_output",
+			"input": false
+        }
+    }
+}

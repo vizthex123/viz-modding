@@ -1,0 +1,165 @@
+{
+	"name": "machines.shredder",
+	"appearance": {
+		"tool_type": "minecraft:mineable/pickaxe",
+		"mining_level": "minecraft:needs_iron_tool",
+		"block": "minecraft:copper_block",
+		"item": "minecraft:copper_block"
+	},
+	"gui": [
+		{
+			"type": "custommachinery:texture",
+			"texture": "quintessence:textures/gui/machine_background.png",
+			"x": 0,
+			"y": 0
+		},
+		{
+			"type": "custommachinery:player_inventory",
+			"x": 45,
+			"y": 108
+		},
+		{
+			"type": "custommachinery:energy",
+			"x": 69,
+			"y": 33
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "fluid_output",
+			"x": 168,
+			"y": 33
+		},
+		{
+			"type": "custommachinery:progress",
+			"emptyTexture": "quintessence:textures/gui/shredder_progress_bar_empty.png",
+			"filledTexture": "quintessence:textures/gui/shredder_progress_bar_filled.png",
+			"direction": "top",
+			"x": 118,
+			"y": 59
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "input",
+			"x": 118,
+			"y": 33
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output",
+			"x": 91,
+			"y": 10
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output2",
+			"x": 145,
+			"y": 10
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output3",
+			"x": 91,
+			"y": 33
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output4",
+			"x": 145,
+			"y": 33
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output5",
+			"x": 91,
+			"y": 58
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output6",
+			"x": 145,
+			"y": 58
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output7",
+			"x": 91,
+			"y": 82
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output8",
+			"x": 145,
+			"y": 82
+		}
+	],
+	"components": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"id": "energy_input",
+			"capacity": 8000,
+			"maxInput": 800
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"id": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output2"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output3"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output4"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output5"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output6"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output7"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output8"
+		},
+		{
+			"type": "custommachinery:fluid",
+			"mode": "output",
+			"id": "fluid_output",
+			"capacity": 4000,
+			"maxOutput": 400
+		}
+	]
+}

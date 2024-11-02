@@ -1,0 +1,47 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 2000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:waystones",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:powdered_stone",
+			"amount": 8
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "create:powdered_obsidian",
+			"amount": 8
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "waystones:warp_dust",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "waystones:warp_dust",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

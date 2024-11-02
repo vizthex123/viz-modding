@@ -1,0 +1,5 @@
+// Changes recipes for Tinker's Construct
+// I can't change the Smeltery, oof
+onEvent('recipes', event => {
+
+})

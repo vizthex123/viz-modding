@@ -1,0 +1,39 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"time": 300,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 3000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:scrappable/gold",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:gold_nugget",
+			"amount": 14
+		},
+		{
+			"mode": "output",
+			"output_slot": "secondary_output",
+			"type": "custommachinery:item",
+			"item": "minecraft:gold_nugget",
+			"chance": 0.85,
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "cofh_core:experience",
+			"amount": 10
+		}
+	]
+}

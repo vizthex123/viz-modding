@@ -26,7 +26,7 @@ mods.extendedcrafting.TableCrafting.addShaped("old_hammer", 1, <item:thermal:wre
 // Lets you upgrade a Furnace and Smoker since I hate having duplicates
 craftingTable.addShaped("redstone_furnace_smoker", <item:thermal:machine_furnace>,
     [[empty, <item:minecraft:redstone>, empty],
-    [<item:minecraft:smoker>, <item:thermal:machine_frame>, <tag:items:teoe:furnace>],
+    [<item:minecraft:smoker>, <item:thermal:machine_frame>, <tag:items:quintessence:furnace>],
     [<tag:items:forge:gears/copper>, <item:thermal:rf_coil>, <tag:items:forge:gears/copper>]]);
 
 // Make the Gearworking Die from any gears
@@ -44,8 +44,8 @@ val saplings = <tag:items:minecraft:saplings>;
 val small_flowers = <tag:items:minecraft:small_flowers>;
 val tall_flowers = <tag:items:minecraft:tall_flowers>;
 val glow_lichen = <item:minecraft:glow_lichen>;
-val slimy_vines = <tag:items:teoe:slimy_vines>;
-val vines = <tag:items:teoe:vines>;
+val slimy_vines = <tag:items:quintessence:slimy_vines>;
+val vines = <tag:items:quintessence:vines>;
 
 // Saplings
 craftingTable.removeByName("thermal:rubber_from_dandelion");
@@ -124,9 +124,11 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:smelter>.addRecipe("smelt_ash_lump", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:ash_lump>*4], 0, 6400);
 
 // Use Iridium to improve Platinum production
-<recipetype:thermal:smelter>.addRecipe("platinum_boost", [<item:ob_core:platinum_ingot>*2, <item:ob_core:platinum_ingot> % 50], [<item:kubejs:crushed_platinum>, iridium], 0, 4000);
+<recipetype:thermal:smelter>.addRecipe("platinum_boost", [<item:ob_core:platinum_ingot>*4, <item:ob_core:platinum_ingot> % 50], [<item:kubejs:crushed_platinum>, iridium], 0, 4000);
 
-<recipetype:thermal:smelter>.addRecipe("platinum_ore_boost", [<item:ob_core:platinum_ingot>*2, <item:ob_core:platinum_ingot> % 55, <item:minecraft:deepslate> % 15], [<item:ob_core:deepslate_platinum_ore>, iridium], 0, 6000);
+<recipetype:thermal:smelter>.addRecipe("platinum_ore_boost", [<item:ob_core:platinum_ingot>*4, <item:ob_core:platinum_ingot>*2 % 50, <item:minecraft:deepslate> % 15], [<item:ob_core:deepslate_platinum_ore>, iridium], 0, 6000);
+
+
 
 ### Ore Pulverizing Recipes ###
 

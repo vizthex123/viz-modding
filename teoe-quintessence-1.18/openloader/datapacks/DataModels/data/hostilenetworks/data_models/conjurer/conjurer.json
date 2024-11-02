@@ -1,0 +1,37 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "conjurer_illager"
+		}
+	],
+    "type": "conjurer_illager:conjurer",
+    "name": "entity.conjurer_illager.conjurer",
+    "name_color": "#451837",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.conjurer",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:emerald",
+            "count": 64
+        },
+        {
+            "item": "conjurer_illager:throwable_ball",
+            "count": 16
+        },
+        {
+            "item": "conjurer_illager:throwing_card",
+            "count": 32
+        }
+    ]
+}

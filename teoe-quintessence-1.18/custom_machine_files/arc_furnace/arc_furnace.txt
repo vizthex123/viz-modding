@@ -1,0 +1,8 @@
+uses 50% more rf than the smelting recipe (3,000), but takes the same amount of time (10 seconds)
+- tiny items take 1,000 and 5 seconds
+- big items take 9,000 and 15 seconds
+
+gives double the items (6 nuggets instead of the normal 3)
+- exceptions for hybrid items (like Rose Gold)
+- tiny items give 2 nuggets
+- big items give 18 nuggets

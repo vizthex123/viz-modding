@@ -14,11 +14,17 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
-// Make chains cheaper
 
+// Make chains cheaper
+craftingTable.remove(<item:minecraft:chain>);
+craftingTable.addShaped("chain", <item:minecraft:chain>,
+    [[<tag:items:forge:nuggets/iron>],
+    [<tag:items:forge:nuggets/iron>],
+    [<tag:items:forge:nuggets/iron>]]);
+/*
 // Rose Gold decraft
 craftingTable.addShapeless("rose_gold_fix", <item:tconstruct:rose_gold_ingot>*9, [<item:thermal:rose_gold_block>]);
-
+*/
 // Myalite recipes
 craftingTable.addShapeless("myalite", <item:quark:myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:bulbis_shell>]);
 craftingTable.addShapeless("dusky_myalite", <item:quark:dusky_myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:purple_bulbis_shell>]);
@@ -50,7 +56,7 @@ craftingTable.addShapeless("rabbit_stew", <item:minecraft:rabbit_stew>, [<item:m
 
 // Make Nether Grout work with modded soul sands
 craftingTable.remove(<item:tconstruct:nether_grout>);
-craftingTable.addShapeless("nether_grout", <item:tconstruct:nether_grout>*2, [<tag:items:teoe:soul_sand>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>]);
+craftingTable.addShapeless("nether_grout", <item:tconstruct:nether_grout>*2, [<tag:items:quintessence:soul_sand>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>]);
 
 craftingTable.addShapeless("nether_grout_sludge", <item:tconstruct:nether_grout>, [<item:nourished_nether:soul_sludge>, <tag:items:forge:gravel>, <item:minecraft:magma_cream>|<item:minecraft:blaze_powder>]);
 
@@ -80,27 +86,27 @@ craftingTable.addShapeless("fire_charge", <item:minecraft:fire_charge>*3, [<tag:
 
 // Fixes chests not being craftable with modded planks & logs
 craftingTable.addShaped("chest", <item:minecraft:chest>,
-    [[<tag:items:teoe:planks>, <tag:items:teoe:planks>, <tag:items:teoe:planks>],
-    [<tag:items:teoe:planks>, <item:minecraft:air>, <tag:items:teoe:planks>],
-    [<tag:items:teoe:planks>, <tag:items:teoe:planks>, <tag:items:teoe:planks>]]);
+    [[<tag:items:quintessence:planks>, <tag:items:quintessence:planks>, <tag:items:quintessence:planks>],
+    [<tag:items:quintessence:planks>, <item:minecraft:air>, <tag:items:quintessence:planks>],
+    [<tag:items:quintessence:planks>, <tag:items:quintessence:planks>, <tag:items:quintessence:planks>]]);
 
 craftingTable.addShaped("chest_logs", <item:minecraft:chest>*4,
-    [[<tag:items:teoe:logs>, <tag:items:teoe:logs>, <tag:items:teoe:logs>],
-    [<tag:items:teoe:logs>, <item:minecraft:air>, <tag:items:teoe:logs>],
-    [<tag:items:teoe:logs>, <tag:items:teoe:logs>, <tag:items:teoe:logs>]]);
+    [[<tag:items:quintessence:logs>, <tag:items:quintessence:logs>, <tag:items:quintessence:logs>],
+    [<tag:items:quintessence:logs>, <item:minecraft:air>, <tag:items:quintessence:logs>],
+    [<tag:items:quintessence:logs>, <tag:items:quintessence:logs>, <tag:items:quintessence:logs>]]);
 
 // Fix the Blast Furnace having 4 recipes (quark moment)
 craftingTable.remove(<item:minecraft:blast_furnace>);
 craftingTable.addShaped("blast_furnace", <item:minecraft:blast_furnace>,
     [[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
-    [<item:minecraft:iron_ingot>, <tag:items:teoe:furnace>, <item:minecraft:iron_ingot>],
+    [<item:minecraft:iron_ingot>, <tag:items:quintessence:furnace>, <item:minecraft:iron_ingot>],
     [<item:minecraft:smooth_stone>|<item:minecraft:smooth_basalt>, <item:minecraft:smooth_stone>|<item:minecraft:smooth_basalt>, <item:minecraft:smooth_stone>|<item:minecraft:smooth_basalt>]]);
 
 // Fix the Smoker having 3 recipes (quark moment)
 craftingTable.remove(<item:minecraft:smoker>);
 craftingTable.addShaped("smoker", <item:minecraft:smoker>,
     [[<item:minecraft:air>, <tag:items:minecraft:logs>, <item:minecraft:air>],
-    [<tag:items:minecraft:logs>, <tag:items:teoe:furnace>, <tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>, <tag:items:quintessence:furnace>, <tag:items:minecraft:logs>],
     [<item:minecraft:air>, <tag:items:minecraft:logs>, <item:minecraft:air>]]);
 
 // Fixes Copper having like 4 recipes when it just needs 2

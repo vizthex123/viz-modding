@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enlightened_end"
+		}
+	],
+    "type": "enlightened_end:elevibloom",
+    "name": "entity.enlightened_end.elevibloom",
+    "name_color": "#451837",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.elevibloom",
+    "fabricator_drops": [
+        {
+            "item": "enlightened_end:elevibloom",
+            "count": 16
+        }
+    ]
+}

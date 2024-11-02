@@ -1,13 +1,31 @@
 Info for the modpack dev.
+
 You shouldn't be reading this!
 
+
+How to use tellraw (make sure it's a team reward!):
+
+Colours:
+
+Dark Purple - messages from me
+
+/tellraw @p {"text":"MSG", "color":"dark_purple"}
+
+
+
+
+
+
+
 Quest shapes:
+
 Circle - default
 Square - tech
 Rounded Square - Create
 Diamond - Deep Resonance
 Octagon - magic
 Hexagon - exploration
+
 
 
 Rarities:
@@ -26,10 +44,9 @@ wallet slot is at 100, 59 | open button is at 20, 5 (x, y)
 
 1,000 RF = 1 Second for Create
 
-toggle FancyMenu with control + alt + c
-
 
 rose gold is set to have +100 durability, armour has same defense as gold but gives +2 toughness
+
 
 
 Server Pack Exporting:

@@ -17,7 +17,7 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
-
+/*
 # Crushed Ores
 # Recipes to make them are in create.zs
 blastFurnace.addRecipe("blast_crushed_cobalt", <item:tconstruct:cobalt_ingot>, <item:kubejs:crushed_cobalt>, 1.5, 100);
@@ -91,7 +91,7 @@ blastFurnace.addRecipe("blast_lumium_scrap", <item:thermal:lumium_ingot>, lumium
 blastFurnace.addRecipe("blast_fiery_scrap", <item:twilightforest:fiery_ingot>, fiery, 0, 100);
 blastFurnace.addRecipe("blast_ironwood_scrap", <item:twilightforest:ironwood_ingot>, ironwood, 0, 100);
 blastFurnace.addRecipe("blast_knightmetal_scrap", <item:twilightforest:knightmetal_ingot>, knightmetal, 0, 100);
-
+*/
 
 # Quicklime
 val quicklime = <item:kubejs:quicklime>;
@@ -101,8 +101,8 @@ blastFurnace.addRecipe("blast_travertine", quicklime, <item:byg:travertine>, 0, 
 
 <recipetype:create:mechanical_crafting>.addRecipe("paper_quicklime", <item:minecraft:paper>, [[quicklime, quicklime, quicklime]]);
 
-// Recycle Spent Filters
-<recipetype:thermal:smelter>.addRecipe("recycle_filters", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, quicklime], 0, 6000);
+// Clean Spent Filters
+<recipetype:thermal:smelter>.addRecipe("clean_filter", [<item:deepresonance:filter_material> % 50], [<item:deepresonance:spent_filter_material>, quicklime], 0, 6000);
 
 // Induction Smelt Quicklime to make Steel
 <recipetype:thermal:smelter>.addRecipe("induction_smelt_quicklime", [<item:thermal:steel_ingot> % 15], [<item:minecraft:iron_ingot>|<item:thermal:iron_dust>, <tag:items:create:stone_types/limestone>, quicklime*8], 0, 6400);

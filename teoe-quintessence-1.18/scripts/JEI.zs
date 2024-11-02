@@ -84,8 +84,16 @@ mods.jei.JEI.hideIngredient(<item:minecraft:bedrock>);
 mods.jei.JEI.hideIngredient(<item:minecraft:end_portal_frame>);
 
 mods.jei.JEI.hideIngredient(<item:ae2:identity_annihilation_plane>);
-
+/*
+mods.jei.JEI.hideIngredient(<item:custommachinery:box_creator_item>);
+mods.jei.JEI.hideIngredient(<item:custommachinery:machine_creator_item>);
+mods.jei.JEI.hideIngredient(<item:custommachinery:structure_creator>);
+*/
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:soul_crystal>);
+
+mods.jei.JEI.hideIngredient(<item:hammerlib:wrench>);
+
+mods.jei.JEI.hideIngredient(<item:mm:structure_wand>);
 
 mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm>);
 mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm_fragment>);

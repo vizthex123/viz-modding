@@ -5,10 +5,10 @@ import crafttweaker.api.tag.MCTag;
 
 print("0-tags_wood.zs loading...");
 
-# TEoE Planks
+# Quintessence Planks
 # Used in my custom Chest recipe
-val planks = <tag:items:teoe:planks>;
-val logs =  <tag:items:teoe:logs>;
+val planks = <tag:items:quintessence:planks>;
+val logs =  <tag:items:quintessence:logs>;
 
 planks.add(<item:botania:livingwood_planks>);
 planks.add(<item:botania:mossy_livingwood_planks>);

@@ -1,0 +1,12 @@
+RF cost & duration is per coin type (amount given is irrelevant).
+
+Determined by the highest value coin the item gives.
+
+Copper: 500 (3 seconds)
+Iron: 1,000 (5 seconds)
+Gold: 2,500 (7 seconds)
+Emerald: 5,000 (10 seconds)
+Diamond: 15,000 (15 seconds)
+Netherite: 30,000 (30 seconds)
+
+if there's only one coin output, it goes in the middle slot.

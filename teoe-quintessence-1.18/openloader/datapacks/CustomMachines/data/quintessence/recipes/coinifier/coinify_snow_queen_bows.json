@@ -1,0 +1,32 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:coinifier",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 5000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:snow_queen_bow",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_emerald",
+			"amount": 3
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_gold",
+			"amount": 5
+		}
+	]
+}

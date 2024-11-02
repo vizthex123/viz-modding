@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:copper_ladder"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 45
+	},
+	"temperature": 500,
+	"time": 40
+}

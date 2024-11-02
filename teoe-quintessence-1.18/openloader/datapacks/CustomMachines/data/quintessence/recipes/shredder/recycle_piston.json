@@ -1,0 +1,46 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "minecraft:piston",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"amount": 3
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "kubejs:powdered_stone",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 1
+		}
+	]
+}

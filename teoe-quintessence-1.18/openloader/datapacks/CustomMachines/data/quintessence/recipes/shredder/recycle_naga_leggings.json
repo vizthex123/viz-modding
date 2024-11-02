@@ -1,0 +1,33 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 40,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "twilightforest:naga_leggings",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "twilightforest:naga_scale",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "twilightforest:naga_scale",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

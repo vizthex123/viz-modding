@@ -1,0 +1,13 @@
+{
+	"id": "energy_input",
+	"name": {
+		"translation": "port.mm.energy_input"
+	},
+	"port": "mm:energy",
+	"input": true,
+	"config": {
+		"maxReceive": 2000,
+		"maxExtract": 2000,
+		"capacity": 8000
+	}
+}

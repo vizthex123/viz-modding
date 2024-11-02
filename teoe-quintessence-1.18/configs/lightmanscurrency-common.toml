@@ -96,7 +96,7 @@
 		enableSpawnerEntityDrops = false
 		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
 		#Set to false to help prevent coin farming.
-		allowFakePlayerTrigger = false
+		allowFakePlayerTrigger = true
 		#Entities that will occasionally drop T1 loot.
 		entityListT1 = ["minecraft:zombie", "minecraft:husk", "minecraft:slime", "minecraft:silverfish", "minecraft:magma_cube", "twilightforest:carminite_broodling", "twilightforest:carminite_ghastling", "twilightforest:death_tome", "twilightforest:fire_beetle", "twilightforest:hedge_spider", "twilightforest:helmet_crab", "twilightforest:hostile_wolf", "twilightforest:kobold", "twilightforest:maze_slime", "twilightforest:mist_wolf", "twilightforest:pinch_beetle", "twilightforest:redcap", "twilightforest:redcap_sapper", "twilightforest:skeleton_druid", "twilightforest:slime_beetle", "twilightforest:snow_guardian", "twilightforest:swarm_spider", "twilightforest:towerwood_borer", "twilightforest:winter_wolf", "twilightforest:wraith", "tconstruct:terracube", "tconstruct:earth_slime", "tconstruct:sky_slime", "tconstruct:ender_slime", "ob_aquamirae:maw", "quark:wraith"]
 		#Entities that will occasionally drop T1 -> T2 loot.

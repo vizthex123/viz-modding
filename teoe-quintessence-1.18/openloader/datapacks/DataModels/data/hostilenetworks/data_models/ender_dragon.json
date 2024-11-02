@@ -25,23 +25,13 @@
 		},
 		{
 			"optional": true,
-			"item": "irons_spellbooks:dragonskin",
-			"count": 8
-		},
-		{
-			"optional": true,
 			"item": "quark:dragon_scale",
-			"count": 8
+			"count": 4
 		},
 		{
 			"optional": true,
 			"item": "tconstruct:dragon_scale",
 			"count": 4
-		},
-		{
-			"optional": true,
-			"item": "tetra:dragon_sinew",
-			"count": 8
 		}
 	],
     "tier_data": [

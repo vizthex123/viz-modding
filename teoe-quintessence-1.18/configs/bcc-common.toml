@@ -1,0 +1,12 @@
+#General settings
+[general]
+	#The CurseForge project ID for the modpack
+	#Range: > 0
+	modpackProjectID = 631413
+	#The name of the modpack
+	modpackName = "The Essence of Everything: Quintessence"
+	#The version of the modpack
+	modpackVersion = "6.4"
+	#Use the metadata.json to determine the modpack version
+	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
+	useMetadata = false

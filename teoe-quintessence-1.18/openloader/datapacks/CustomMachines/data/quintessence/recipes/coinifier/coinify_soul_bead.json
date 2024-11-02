@@ -1,0 +1,25 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:coinifier",
+	"time": 140,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 2500
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "quark:soul_bead",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_gold",
+			"amount": 2
+		}
+	]
+}

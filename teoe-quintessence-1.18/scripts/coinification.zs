@@ -41,8 +41,8 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 
 ### AE2 ###
 // AE2 Presses -> 1,500 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [emerald, gold*5], <tag:items:teoe:ae2_press>, 0, 3000);
-<recipetype:create:crushing>.addRecipe("coinify_presses2", [emerald, gold*5], <tag:items:teoe:ae2_press>);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_presses", [emerald, gold*5], <tag:items:quintessence:ae2_press>, 0, 3000);
+<recipetype:create:crushing>.addRecipe("coinify_presses2", [emerald, gold*5], <tag:items:quintessence:ae2_press>);
 
 
 
@@ -79,8 +79,8 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 <recipetype:create:crushing>.addRecipe("coinify_dormant_eye2", [emerald*7, gold*5], <item:enigmaticlegacy:architect_eye>);
 
 // Spellstones -> 20,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [diamond*2], <tag:items:teoe:spellstone>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinify_spellstone2", [diamond*2], <tag:items:teoe:spellstone>);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_spellstone", [diamond*2], <tag:items:quintessence:spellstone>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinify_spellstone2", [diamond*2], <tag:items:quintessence:spellstone>);
 
 // Non-Euclidean Cube -> 250,000 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_cube", [netherite*2, diamond*5], <item:enigmaticlegacy:the_cube>, 0, 8000);

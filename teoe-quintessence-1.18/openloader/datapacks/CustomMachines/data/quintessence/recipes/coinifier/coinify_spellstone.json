@@ -1,0 +1,25 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:coinifier",
+	"time": 300,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 15000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:spellstone",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_diamond",
+			"amount": 2
+		}
+	]
+}

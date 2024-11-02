@@ -56,7 +56,7 @@ print("thermal_dynamos.zs loading...");
 <recipetype:thermal:lapidary_fuel>.addFuel("soul_quartz_fuel", <item:nourished_nether:soul_quartz>, 60000);
 <recipetype:thermal:lapidary_fuel>.addFuel("dimshard_fuel", <item:rftoolsbase:dimensionalshard>, 250000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <tag:items:teoe:corundum>.asIIngredient(), 30000);
+<recipetype:thermal:lapidary_fuel>.addFuel("corundum_fuel", <tag:items:quintessence:corundum>.asIIngredient(), 30000);
 
 
 # Magmatic & Compression

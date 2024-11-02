@@ -1,0 +1,31 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 3000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:scrappable/prismarine",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:prismarine_crystals",
+			"amount": 3
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "cofh_core:experience",
+			"amount": 25
+		}
+	]
+}

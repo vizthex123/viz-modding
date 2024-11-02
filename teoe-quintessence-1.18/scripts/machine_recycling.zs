@@ -96,40 +96,40 @@ recipes.removeByName("thermal:smelter_iron_armor");
 recipes.removeByName("thermal:smelter_gold_armor");
 
 // Copper
-<recipetype:thermal:smelter>.addRecipe("smelt_copper_item", [<item:minecraft:copper_ingot>, <item:thermal:copper_nugget>*4 % 50], [<tag:items:teoe:meltable_copper>.asIIngredient().anyDamage()], 0.1, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_copper_item", [<item:minecraft:copper_ingot>, <item:thermal:copper_nugget>*4 % 50], [<tag:items:quintessence:meltable_copper>.asIIngredient().anyDamage()], 0.1, 2000);
 
 // Iron
-<recipetype:thermal:smelter>.addRecipe("smelt_iron_item", [<item:minecraft:iron_ingot>, <item:minecraft:iron_nugget>*4 % 50], [<tag:items:teoe:meltable_iron>.asIIngredient().anyDamage()], 0.2, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_iron_item", [<item:minecraft:iron_ingot>, <item:minecraft:iron_nugget>*4 % 50], [<tag:items:quintessence:meltable_iron>.asIIngredient().anyDamage()], 0.2, 2000);
 
 	// Iron (big)
-<recipetype:thermal:smelter>.addRecipe("smelt_big_iron_item", [<item:minecraft:iron_ingot>*2, <item:minecraft:iron_nugget>*6 % 50], [<tag:items:teoe:meltable_iron_big>.asIIngredient().anyDamage()], 0.4, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_big_iron_item", [<item:minecraft:iron_ingot>*2, <item:minecraft:iron_nugget>*6 % 50], [<tag:items:quintessence:meltable_iron_big>.asIIngredient().anyDamage()], 0.4, 2000);
 
 // Gold
-<recipetype:thermal:smelter>.addRecipe("smelt_gold_item", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>*4 % 50], [<tag:items:teoe:meltable_gold>.asIIngredient().anyDamage()], 0.6, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_gold_item", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>*4 % 50], [<tag:items:quintessence:meltable_gold>.asIIngredient().anyDamage()], 0.6, 2000);
 
 // Diamond
-<recipetype:thermal:smelter>.addRecipe("smelt_diamond_item", [<item:minecraft:diamond>, <item:kubejs:small_diamond_scrap> % 55], [<tag:items:teoe:meltable_diamond>.asIIngredient().anyDamage()], 1.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_diamond_item", [<item:minecraft:diamond>, <item:kubejs:small_diamond_scrap> % 55], [<tag:items:quintessence:meltable_diamond>.asIIngredient().anyDamage()], 1.0, 2000);
 
 // Netherite
-<recipetype:thermal:smelter>.addRecipe("smelt_netherite_item", [<item:minecraft:netherite_ingot>, <item:thermal:netherite_nugget>*4 % 50], [<tag:items:teoe:meltable_netherite>.asIIngredient().anyDamage()], 2.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_netherite_item", [<item:minecraft:netherite_ingot>, <item:thermal:netherite_nugget>*4 % 50], [<tag:items:quintessence:meltable_netherite>.asIIngredient().anyDamage()], 2.0, 2000);
 
 // Platinum
-<recipetype:thermal:smelter>.addRecipe("smelt_platinum_item", [<item:ob_core:platinum_ingot>, <item:ob_core:platinum_nugget>*4 % 50], [<tag:items:teoe:meltable_platinum>.asIIngredient().anyDamage()], 2.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_platinum_item", [<item:ob_core:platinum_ingot>, <item:ob_core:platinum_nugget>*4 % 50], [<tag:items:quintessence:meltable_platinum>.asIIngredient().anyDamage()], 2.0, 2000);
 
 // Ironwood
-<recipetype:thermal:smelter>.addRecipe("smelt_ironwood_item", [<item:twilightforest:ironwood_ingot>, <item:kubejs:small_ironwood_scrap> % 55], [<tag:items:teoe:meltable_ironwood>.asIIngredient().anyDamage()], 3.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_ironwood_item", [<item:twilightforest:ironwood_ingot>, <item:kubejs:small_ironwood_scrap> % 55], [<tag:items:quintessence:meltable_ironwood>.asIIngredient().anyDamage()], 3.0, 2000);
 
 // Fiery
-<recipetype:thermal:smelter>.addRecipe("smelt_fiery_item", [<item:twilightforest:fiery_ingot>, <item:kubejs:small_fiery_scrap> % 55], [<tag:items:teoe:meltable_fiery>.asIIngredient().anyDamage()], 4.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_fiery_item", [<item:twilightforest:fiery_ingot>, <item:kubejs:small_fiery_scrap> % 55], [<tag:items:quintessence:meltable_fiery>.asIIngredient().anyDamage()], 4.0, 2000);
 
 // Knightmetal
-<recipetype:thermal:smelter>.addRecipe("smelt_knightmetal_item", [<item:twilightforest:knightmetal_ingot>, <item:kubejs:small_knightmetal_scrap> % 55], [<tag:items:teoe:meltable_knightmetal>.asIIngredient().anyDamage()], 6.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_knightmetal_item", [<item:twilightforest:knightmetal_ingot>, <item:kubejs:small_knightmetal_scrap> % 55], [<tag:items:quintessence:meltable_knightmetal>.asIIngredient().anyDamage()], 6.0, 2000);
 
 // Lumium
-<recipetype:thermal:smelter>.addRecipe("smelt_lumium_item", [<item:thermal:lumium_ingot>, <item:thermal:lumium_nugget>*4 % 50], [<tag:items:teoe:meltable_lumium>.asIIngredient().anyDamage()], 4.0, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_lumium_item", [<item:thermal:lumium_ingot>, <item:thermal:lumium_nugget>*4 % 50], [<tag:items:quintessence:meltable_lumium>.asIIngredient().anyDamage()], 4.0, 2000);
 
 // Rose Gold
-<recipetype:thermal:smelter>.addRecipe("smelt_rose_gold_item", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>*4 % 50, <item:minecraft:copper_ingot>, <item:thermal:copper_nugget>*4 % 50], [<tag:items:teoe:meltable_rose_gold>.asIIngredient().anyDamage()], 1.5, 2000);
+<recipetype:thermal:smelter>.addRecipe("smelt_rose_gold_item", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>*4 % 50, <item:minecraft:copper_ingot>, <item:thermal:copper_nugget>*4 % 50], [<tag:items:quintessence:meltable_rose_gold>.asIIngredient().anyDamage()], 1.5, 2000);
 
 
 

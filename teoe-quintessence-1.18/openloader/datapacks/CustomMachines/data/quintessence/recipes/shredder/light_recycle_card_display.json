@@ -1,0 +1,48 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#lightmanscurrency:traders/card_display",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_iron",
+			"chance": 0.5,
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_gold_scrap",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

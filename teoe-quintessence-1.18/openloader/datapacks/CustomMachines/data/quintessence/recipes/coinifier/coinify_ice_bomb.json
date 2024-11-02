@@ -1,0 +1,39 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:coinifier",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 5000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "twilightforest:ice_bomb",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "left_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_emerald",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "middle_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_gold",
+			"amount": 5
+		},
+		{
+			"mode": "output",
+			"output_slot": "right_output",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_iron",
+			"amount": 5
+		}
+	]
+}

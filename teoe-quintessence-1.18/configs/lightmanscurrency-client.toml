@@ -2,6 +2,19 @@
 #Client configuration settings
 [client]
 
+	#Quality Settings
+	[client.quality]
+		#Maximum number of items each Item Trader can render (per-trade) as stock. Lower to decrease client-lag in trader-rich areas.
+		#Setting to 0 will disable item rendering entirely, so use with caution.
+		#Range: > 0
+		itemTraderRenderLimit = 2147483647
+
+	#Time Formatting Settings
+	[client.time]
+		#How Notification Timestamps are displayed.
+		#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+		timeFormatting = "MM/dd/yy hh:mmaa"
+
 	#Wallet Slot Settings
 	[client.wallet_slot]
 		#The position that the wallet slot will be placed at in the players inventory.
@@ -20,48 +33,10 @@
 		#Range: -1000 ~ 1000
 		buttonY = 5
 
-	#Inventory Button Settings
-	[client.inventory_buttons]
-		#The x position that the notification & team manager buttons will be placed at in the players inventory.
-		#Range: > -2147483648
-		buttonX = 152
-		#The x position that the notification & team manager buttons will be placed at in the players inventory.
-		#Range: > -2147483648
-		buttonY = 3
-		#The x position that the notification & team manager buttons will be placed at in the players creative inventory.
-		#Range: > -2147483648
-		buttonCreativeX = 171
-		#The y position that the notification & team manager buttons will be placed at in the players creative inventory.
-		#Range: > -2147483648
-		buttonCreativeY = 3
-
-	#Notification Settings
-	[client.notification]
-		#Whether notifications should be posted in your chat when you receive them.
-		notificationsInChat = true
-
-	#Sound Settings
-	[client.sounds]
-		#Whether Money Mending should make a noise when triggered.
-		moneyMendingClink = true
-
-	#Quality Settings
-	[client.quality]
-		#Maximum number of items each Item Trader can render (per-trade) as stock. Lower to decrease client-lag in trader-rich areas.
-		#Setting to 0 will disable item rendering entirely, so use with caution.
-		#Range: > 0
-		itemTraderRenderLimit = 2147483647
-
-	#Time Formatting Settings
-	[client.time]
-		#How Notification Timestamps are displayed.
-		#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
-		timeFormatting = "MM/dd/yy hh:mmaa"
-
 	#Wallet Overlay Settings
 	[client.wallet_hud]
 		#Whether an overlay should be drawn on your HUD displaying your wallets current money amount.
-		enabled = false
+		enabled = true
 		#The corner of the screen that the overlay should be drawn on.
 		#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
 		displayCorner = "BOTTOM_LEFT"
@@ -72,7 +47,20 @@
 		displayOffsetY = -5
 		#Whether the wallets contents should be displayed as a coin item, or as value text.
 		#Allowed Values: ITEMS_WIDE, ITEMS_NARROW, TEXT
-		displayType = "ITEMS_WIDE"
+		displayType = "TEXT"
+
+	#Inventory Button Settings
+	[client.inventory_buttons]
+		#The position that the notification & team manager buttons will be placed at in the players inventory.
+		#Range: -1000 ~ 1000
+		buttonX = 152
+		#Range: -1000 ~ 1000
+		buttonY = 3
+		#The position that the notification & team manager buttons will be placed at in the players creative inventory.
+		#Range: -1000 ~ 1000
+		buttonCreativeX = 171
+		#Range: -1000 ~ 1000
+		buttonCreativeY = 3
 
 	#Chest Button Settings
 	[client.chest_buttons]
@@ -81,6 +69,11 @@
 		#Whether the 'Move Coins into Wallet' button should collect coins flagged as 'hidde'
 		#By default these would be the coin pile and coin block variants of the coins.
 		allowHiddenCollection = false
+
+	#Notification Settings
+	[client.notification]
+		#Whether notifications should be posted in your chat when you receive them.
+		notificationsInChat = true
 
 	#Slot Machine Animation Settings
 	[client.slot_machine]
@@ -92,4 +85,9 @@
 		#The number of Minecraft ticks the slot machine will pause before repeating the animation.
 		#Range: 0 ~ 1200
 		animationRestDuration = 20
+
+	#Sound Settings
+	[client.sounds]
+		#Whether Money Mending should make a noise when triggered.
+		moneyMendingClink = true
 

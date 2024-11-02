@@ -40,7 +40,7 @@ craftingTable.addShapeless("beetroot_soup", <item:minecraft:beetroot_soup>, [<it
 
 // Fuel Canister with Zinc
 craftingTable.addShaped("fuel_canister_zinc", <item:fuel_canister:fuel_canister>, 
-    [[<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:create:zinc_ingot>],
+    [[<item:minecraft:air>, <item:extendedcrafting:black_iron_ingot>, <item:create:zinc_ingot>],
     [<item:create:zinc_ingot>, <item:minecraft:air>, <item:create:zinc_ingot>],
     [<item:create:zinc_ingot>, <item:create:zinc_ingot>, <item:create:zinc_ingot>]]);
 

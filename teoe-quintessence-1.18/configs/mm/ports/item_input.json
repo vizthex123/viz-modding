@@ -1,0 +1,9 @@
+{
+	"id": "item_input",
+	"type": "mm:port",
+	"name": {
+        "translation": "port.mm.item_input"
+    },
+	"port": "item",
+	"input": true
+}

@@ -1,0 +1,32 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 3000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#quintessence:scrappable/knightmetal_big",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:knightmetal_scrap",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "cofh_core:experience",
+			"amount": 20
+		}
+	]
+}

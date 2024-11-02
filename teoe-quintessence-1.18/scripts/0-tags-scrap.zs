@@ -1,19 +1,21 @@
 # Adds meltable tags to various items
 # Used in the scrapping recipes I made
+/*
 #priority 10
 
 import crafttweaker.api.tag.MCTag;
 
 print("0-tags-scrap.zs loading...");
+*/
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
 */
 
-
+/*
 ### Scrap Items ###
 # Copper
-val copper = <tag:items:teoe:meltable_copper>;
+val copper = <tag:items:quintessence:meltable_copper>;
 
 copper.add(<item:minecraft:lightning_rod>);
 copper.add(<item:minecraft:spyglass>);
@@ -35,8 +37,9 @@ copper.add(<item:tconstruct:copper_can>);
 
 
 
+
 # Iron
-val iron = <tag:items:teoe:meltable_iron>;
+val iron = <tag:items:quintessence:meltable_iron>;
 
 iron.add(<item:minecraft:chainmail_helmet>);
 iron.add(<item:minecraft:chainmail_chestplate>);
@@ -128,7 +131,7 @@ iron.add(<tag:items:whisperwoods:wisp_lantern>);
 
 
 	// These items melt into a nugget since they use 3 nuggets or less per craft
-val iron_small = <tag:items:teoe:meltable_iron_small>;
+val iron_small = <tag:items:quintessence:meltable_iron_small>;
 
 iron_small.add(<item:minecraft:iron_bars>);
 iron_small.add(<item:cookingforblockheads:tool_rack>);
@@ -138,7 +141,7 @@ iron_small.add(<item:twilightforest:iron_ladder>);
 
 
 	// Melts into regular Scrap since they use 9 ingots or more
-val iron_big = <tag:items:teoe:meltable_iron_big>;
+val iron_big = <tag:items:quintessence:meltable_iron_big>;
 
 iron_big.add(<item:minecraft:anvil>);
 iron_big.add(<item:minecraft:chipped_anvil>);
@@ -154,7 +157,7 @@ iron_big.add(<item:xnet:antenna_base>);
 
 
 # Gold
-val gold = <tag:items:teoe:meltable_gold>;
+val gold = <tag:items:quintessence:meltable_gold>;
 
 gold.add(<item:minecraft:golden_helmet>);
 gold.add(<item:minecraft:golden_chestplate>);
@@ -187,7 +190,7 @@ gold.add(<item:twilightforest:gold_minotaur_axe>);
 
 
 # Diamond
-val diamond = <tag:items:teoe:meltable_diamond>;
+val diamond = <tag:items:quintessence:meltable_diamond>;
 
 diamond.add(<item:minecraft:diamond_helmet>);
 diamond.add(<item:minecraft:diamond_chestplate>);
@@ -220,7 +223,7 @@ diamond.add(<item:twilightforest:diamond_minotaur_axe>);
 
 
 # Netherite
-val netherite = <tag:items:teoe:meltable_netherite>;
+val netherite = <tag:items:quintessence:meltable_netherite>;
 
 netherite.add(<item:minecraft:netherite_helmet>);
 netherite.add(<item:minecraft:netherite_chestplate>);
@@ -245,7 +248,7 @@ netherite.add(<item:aquamirae:whisper_of_the_abyss>);
 
 
 # Platinum
-val platinum = <tag:items:teoe:meltable_platinum>;
+val platinum = <tag:items:quintessence:meltable_platinum>;
 
 platinum.add(<item:ob_core:paladin_helmet>);
 platinum.add(<item:ob_core:paladin_extra_helmet>);
@@ -261,7 +264,7 @@ platinum.add(<item:ob_core:sword_billet>);
 
 
 # Rose Gold
-val rose_gold = <tag:items:teoe:meltable_rose_gold>;
+val rose_gold = <tag:items:quintessence:meltable_rose_gold>;
 
 rose_gold.add(<item:additionaladditions:rose_gold_helmet>);
 rose_gold.add(<item:additionaladditions:rose_gold_chestplate>);
@@ -276,7 +279,7 @@ rose_gold.add(<item:additionaladditions:rose_gold_axe>);
 
 
 # Lumium
-val lumium = <tag:items:teoe:meltable_lumium>;
+val lumium = <tag:items:quintessence:meltable_lumium>;
 
 lumium.add(<item:thermal:lumium_glass>);
 lumium.add(<item:thermal:lumium_rail>);
@@ -288,7 +291,7 @@ lumium.add(<item:thermal:lumium_detector_rail>);
 
 
 # Fiery
-val fiery = <tag:items:teoe:meltable_fiery>;
+val fiery = <tag:items:quintessence:meltable_fiery>;
 
 fiery.add(<item:twilightforest:fiery_helmet>);
 fiery.add(<item:twilightforest:fiery_chestplate>);
@@ -301,7 +304,7 @@ fiery.add(<item:twilightforest:fiery_pickaxe>);
 
 
 # Ironwood
-val ironwood = <tag:items:teoe:meltable_ironwood>;
+val ironwood = <tag:items:quintessence:meltable_ironwood>;
 
 ironwood.add(<item:twilightforest:ironwood_helmet>);
 ironwood.add(<item:twilightforest:ironwood_chestplate>);
@@ -317,7 +320,7 @@ ironwood.add(<item:twilightforest:ironwood_axe>);
 
 
 # Knightmetal
-val knightmetal = <tag:items:teoe:meltable_knightmetal>;
+val knightmetal = <tag:items:quintessence:meltable_knightmetal>;
 
 knightmetal.add(<item:twilightforest:knightmetal_helmet>);
 knightmetal.add(<item:twilightforest:knightmetal_chestplate>);
@@ -333,8 +336,9 @@ knightmetal.add(<item:twilightforest:knightmetal_ring>);
 knightmetal.add(<item:twilightforest:knightmetal_shield>);
 
 
+
 # Prismarine
-val prismarine = <tag:items:teoe:meltable_prismarine>;
+val prismarine = <tag:items:quintessence:meltable_prismarine>;
 
 prismarine.add(<item:thermal:prismarine_powered_rail>);
 prismarine.add(<item:thermal:prismarine_activator_rail>);
@@ -342,5 +346,5 @@ prismarine.add(<item:thermal:prismarine_crossover_rail>);
 prismarine.add(<item:thermal:prismarine_detector_rail>);
 prismarine.add(<item:thermal:prismarine_rail>);
 
-
 print("0-tags-scrap.zs loaded");
+*/

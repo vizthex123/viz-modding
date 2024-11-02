@@ -233,7 +233,7 @@
 [management]
 	"Quick Armor Swapping" = true
 	"Item Sharing" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Hotbar Changer" = true
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = false
@@ -1634,7 +1634,7 @@
 		#How much each candle influences an enchantment. This works as a multiplier to its weight
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
-		"Automatically Convert" = true
+		"Automatically Convert" = false
 		#Candles with soul sand below them or below the bookshelves dampen enchantments instead of influence them.
 		"Soul Candles Invert" = true
 

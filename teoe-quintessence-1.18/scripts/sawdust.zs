@@ -23,7 +23,7 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_bowl", sawdust, <item:minecraft:bowl>, 1);
 
 // Torches
-<recipetype:thermal:sawmill>.addRecipe("saw_torch", [sawdust % 5], <tag:items:teoe:torch>, 750);
+<recipetype:thermal:sawmill>.addRecipe("saw_torch", [sawdust % 5], <tag:items:quintessence:torch>, 750);
 
 // Chests
 <recipetype:thermal:sawmill>.addRecipe("saw_chests", [sawdust*8], <tag:items:forge:chests/wooden>, 2000);
@@ -100,16 +100,16 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_signs", sawdust*3, <tag:items:minecraft:signs>, 1);
 
 // Pressure Plates
-<recipetype:thermal:sawmill>.addRecipe("saw_pressure_plates", [sawdust], <tag:items:minecraft:wooden_pressure_plates>, 750);
-<recipetype:create:cutting>.addRecipe("mech_saw_pressure_plates", sawdust*2, <tag:items:minecraft:wooden_pressure_plates>, 1);
+<recipetype:thermal:sawmill>.addRecipe("saw_pressure_plates", [sawdust*2], <tag:items:minecraft:wooden_pressure_plates>, 750);
+<recipetype:create:cutting>.addRecipe("mech_saw_pressure_plates", sawdust*3, <tag:items:minecraft:wooden_pressure_plates>, 1);
 
 // Buttons
-<recipetype:thermal:sawmill>.addRecipe("saw_buttons", [sawdust % 50], <tag:items:minecraft:wooden_buttons>, 500);
+<recipetype:thermal:sawmill>.addRecipe("saw_buttons", [sawdust], <tag:items:minecraft:wooden_buttons>, 500);
 <recipetype:create:cutting>.addRecipe("mech_saw_buttons", sawdust, <tag:items:minecraft:wooden_buttons>, 1);
 
 // Wooden Tools
-<recipetype:thermal:sawmill>.addRecipe("saw_wood_tools", [sawdust*2, sawdust % 50], <tag:items:teoe:wooden_tool>.asIIngredient().anyDamage(), 500);
-<recipetype:create:cutting>.addRecipe("mech_saw_wood_tools", sawdust*3, <tag:items:teoe:wooden_tool>.asIIngredient().anyDamage(), 1);
+<recipetype:thermal:sawmill>.addRecipe("saw_wood_tools", [sawdust*2, sawdust % 50], <tag:items:quintessence:wooden_tool>.asIIngredient().anyDamage(), 500);
+<recipetype:create:cutting>.addRecipe("mech_saw_wood_tools", sawdust*3, <tag:items:quintessence:wooden_tool>.asIIngredient().anyDamage(), 1);
 
 
 ### Modded Stuff ###

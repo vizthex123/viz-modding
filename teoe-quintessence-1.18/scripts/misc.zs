@@ -16,11 +16,11 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
-
+/*
 // Modded Crafting Table -> Normal One
 // Nobody uses tags in their recipes AUGHUHUAGUAH
 craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
-
+*/
 // Craft Debris Scrap into Netherite Scrap
 var scrap_nugget = <tag:items:forge:nuggets/netherite_scrap>;
 craftingTable.addShaped("netherite_scrap", <item:minecraft:netherite_scrap>,

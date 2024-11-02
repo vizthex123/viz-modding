@@ -1,13 +1,13 @@
 
 [Materials]
 	#If TRUE, Thermal Series' Rose Gold material and recipes are enabled.
-	"Rose Gold" = false
+	"Rose Gold" = true
 	#If TRUE, Thermal Series' Steel material and recipes are enabled.
 	Steel = true
 
 ["Mod Compatibility"]
 	#If TRUE, mod integration support for Create is enabled, if the mod is loaded.
-	Create = false
+	Create = true
 	#If TRUE, mod integration support for Dyenamics is enabled, if the mod is loaded.
 	Dyenamics = true
 	#If TRUE, mod integration support for Farmer's Delight is enabled, if the mod is loaded.
@@ -26,4 +26,6 @@
 	"Mystical Agriculture" = true
 	#If TRUE, mod integration support for Redstone Arsenal is enabled, if the mod is loaded.
 	"Redstone Arsenal" = true
+	#If TRUE, mod integration support for Mekanism is enabled, if the mod is loaded.
+	Mekanism = true
 

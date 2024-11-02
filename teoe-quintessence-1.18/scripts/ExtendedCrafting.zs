@@ -44,7 +44,7 @@ craftingTable.addShaped("matrix_enchanter", <item:quark:matrix_enchanter>,
 
 mods.extendedcrafting.TableCrafting.addShaped("enchanting_table", 1, <item:minecraft:enchanting_table>,
 	[[empty, <item:twilightforest:carminite>, empty], 
-	[<tag:items:teoe:magic_dust>, <item:quark:matrix_enchanter>, <tag:items:teoe:magic_dust>], 
+	[<tag:items:quintessence:magic_dust>, <item:quark:matrix_enchanter>, <tag:items:quintessence:magic_dust>], 
 	[<item:minecraft:crying_obsidian>, <item:deepresonance:dense_obsidian>, <item:minecraft:crying_obsidian>]]);
 
 # Reduce the cost of tables
@@ -127,13 +127,13 @@ mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots
 
 # Artificial Dragon Egg
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:artificial_dragon_egg>,
-	[[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>],
-	[<tag:items:teoe:magic_dust>, <tag:items:teoe:egg>, <tag:items:teoe:magic_dust>],
-	[<tag:items:teoe:dragon_scale>, <tag:items:teoe:magic_dust>, <tag:items:teoe:dragon_scale>]], 120);
+	[[<tag:items:quintessence:dragon_scale>, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:dragon_scale>],
+	[<tag:items:quintessence:magic_dust>, <tag:items:quintessence:egg>, <tag:items:quintessence:magic_dust>],
+	[<tag:items:quintessence:dragon_scale>, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:dragon_scale>]], 150);
 
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <item:kubejs:artificial_dragon_egg>,
 	[[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>],
-	[<item:botania:dragonstone>, <tag:items:teoe:egg>, <item:botania:dragonstone>],
+	[<item:botania:dragonstone>, <tag:items:quintessence:egg>, <item:botania:dragonstone>],
 	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]], 300);
 
 # Doubles Enhanced Ender output
@@ -146,13 +146,13 @@ mods.extendedcrafting.EnderCrafting.addShaped("enhanced_ender", <item:extendedcr
 # Enchanted Golden Apple recipe
 craftingTable.remove(<item:minecraft:enchanted_golden_apple>);
 mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item:minecraft:enchanted_golden_apple>*16,
-	[[gold_coin, <tag:items:teoe:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:teoe:shard>, gold_coin],
-	[<tag:items:teoe:shard>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <tag:items:teoe:shard>],
+	[[gold_coin, <tag:items:quintessence:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:quintessence:shard>, gold_coin],
+	[<tag:items:quintessence:shard>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <tag:items:quintessence:shard>],
 	[<item:tconstruct:rose_gold_ingot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_apple>, <item:createaddition:honey_cake>, <item:minecraft:golden_apple>, <item:minecraft:golden_carrot>, <item:tconstruct:rose_gold_ingot>],
 	[<item:additionaladditions:gold_ring>, <item:minecraft:golden_carrot>, <item:createaddition:honey_cake>, <item:reliquary:midas_touchstone>, <item:createaddition:honey_cake>, <item:minecraft:golden_carrot>, <item:additionaladditions:gold_ring>],
 	[<item:tconstruct:rose_gold_ingot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_apple>, <item:createaddition:honey_cake>, <item:minecraft:golden_apple>, <item:minecraft:golden_carrot>, <item:tconstruct:rose_gold_ingot>],
-	[<tag:items:teoe:shard>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <tag:items:teoe:shard>],
-	[gold_coin, <tag:items:teoe:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:teoe:shard>, gold_coin]]);
+	[<tag:items:quintessence:shard>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <item:minecraft:golden_carrot>, <tag:items:quintessence:shard>],
+	[gold_coin, <tag:items:quintessence:shard>, <item:tconstruct:rose_gold_ingot>, <item:additionaladditions:gold_ring>, <item:tconstruct:rose_gold_ingot>, <tag:items:quintessence:shard>, gold_coin]]);
 
 
 # Ultimate Ingot recipes
@@ -173,14 +173,14 @@ mods.extendedcrafting.TableCrafting.addShaped("evil_ultimate_ingot", 2, <item:ex
 
 # Quintessence
 mods.extendedcrafting.TableCrafting.addShaped("quintessence", 4, <item:kubejs:quintessence>,
-	[[<tag:items:teoe:tape_measure>, empty, empty, empty, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, empty, empty, empty, <item:easypaxellite:diamond_paxel>.anyDamage()],
-	[empty, <item:packingtape:tape>.anyDamage(), empty, <item:lightmanscurrency:speed_upgrade_5>, <item:botania:dice>, <item:refinedpipes:advanced_item_pipe>|<item:refinedpipes:advanced_extractor_attachment>, empty, <tag:items:elevatorid:elevators>],
-	[empty, empty, <item:ftbquests:book>, <item:enderquarry:ender_quarry>, <item:bloodmagic:sacrificerune2>, <item:tconstruct:plate_chestplate>.anyDamage(), <item:rangedpumps:pump>, empty, empty],
+	[[<tag:items:quintessence:tape_measure>, empty, empty, empty, empty, empty, empty, empty, <item:quark:flamerang>.anyDamage()],
+	[empty, <item:packingtape:tape>.anyDamage(), empty, <item:minecraft:dragon_egg>|<item:kubejs:artificial_dragon_egg>, empty, <item:refinedpipes:advanced_item_pipe>|<item:refinedpipes:advanced_extractor_attachment>, empty, <item:tconstruct:plate_chestplate>.anyDamage()],
+	[empty, empty, <item:lightmanscurrency:speed_upgrade_5>, <tag:items:elevatorid:elevators>, <item:bloodmagic:sacrificerune2>, <item:rangedpumps:pump>, <item:botania:dice>, empty, empty],
 	[empty, <item:ob_core:witchstone_shard>, <item:byg:therium_lamp>|<item:additionaladditions:amethyst_lamp>|<item:essentials:analog_lamp>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:tesseract:tesseract>, netherite_coin, empty],
 	[<item:create:blaze_cake>, <item:naturesaura:end_city_finder>, <item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:ultimate_singularity>, <item:extendedcrafting:the_ultimate_ingot>, <item:thermal:upgrade_augment_3>, <item:aquamirae:three_bolt_helmet>.anyDamage(), <item:chickenchunks:spot_loader>],
 	[empty, <item:reliquary:infernal_chalice>, <item:minecraft:netherite_block>|<item:byg:pendorite_block>, <item:extendedcrafting:crystaltine_ingot>, <item:extendedcrafting:the_ultimate_ingot>, <item:extendedcrafting:crystaltine_ingot>, <item:nourished_nether:necronium_block>, <item:functionalstorage:linking_tool>|<item:functionalstorage:configuration_tool>, empty],
-	[empty, empty, <item:ironchest:obsidian_chest>|<item:ironchest:trapped_obsidian_chest>, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>, <item:industrialforegoing:mycelial_reactor>, <item:longfallboots:longfallboots>.anyDamage(), <item:ae2things:disk_drive_64k>, empty, empty],
-	[empty, <item:minecraft:netherite_pickaxe>.anyDamage(), empty, empty, <item:quarryplus:solid_fuel_quarry>, empty, empty, <item:appliedcooking:kitchen_station>, empty],
-	[<item:quark:flamerang>.anyDamage(), empty, empty, empty, <item:deepresonance:generator_controller>, empty, empty, empty, <item:ae2:quantum_ring>]]);
+	[empty, empty, <item:ironchest:obsidian_chest>|<item:ironchest:trapped_obsidian_chest>, <item:industrialforegoing:mycelial_reactor>, <item:enderquarryplus:ender_quarry>, <item:deepresonance:generator_controller>, <item:ae2things:disk_drive_64k>, empty, empty],
+	[empty, <item:minecraft:netherite_pickaxe>.anyDamage(), empty, <item:appliedcooking:kitchen_station>, empty, <item:ae2:quantum_ring>, empty, <item:longfallboots:longfallboots>.anyDamage(), empty],
+	[<item:easypaxellite:netherite_paxel>.anyDamage(), empty, empty, empty, empty, empty, empty, empty, <item:twilightforest:charm_of_keeping_3>|<item:twilightforest:charm_of_life_2>]]);
 
 print("ExtendedCrafting.zs loaded");

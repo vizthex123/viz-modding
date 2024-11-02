@@ -61,11 +61,11 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_mana_cell", 4, <item:app
 mods.extendedcrafting.TableCrafting.addShaped("creative_mana_tablet", 4, <item:botania:mana_tablet>.withTag({creative: 1 as byte, mana: 500000 as int}),
 	[[empty, empty, empty, empty, empty, empty, empty, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty],
-	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:malum:soul_stained_steel_ingot>, <item:rftoolsbase:infused_diamond>, <tag:items:teoe:magic_dust>, <tag:items:teoe:magic_dust>, empty, empty], 
-	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:botania:elementium_ingot>, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), <item:botania:terrasteel_ingot>, <tag:items:teoe:magic_dust>, empty, empty],
+	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:malum:soul_stained_steel_ingot>, <item:rftoolsbase:infused_diamond>, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:magic_dust>, empty, empty], 
+	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:botania:elementium_ingot>, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), <item:botania:terrasteel_ingot>, <tag:items:quintessence:magic_dust>, empty, empty],
 	[empty, empty, <item:rftoolsbase:infused_enderpearl>, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), quintessence, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), <item:rftoolsbase:infused_enderpearl>, empty, empty],
-	[empty, empty, <tag:items:teoe:magic_dust>, <item:botania:terrasteel_ingot>, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), <item:botania:elementium_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty], 
-	[empty, empty, <tag:items:teoe:magic_dust>, <tag:items:teoe:magic_dust>, <item:rftoolsbase:infused_diamond>, <item:malum:hallowed_gold_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty],
+	[empty, empty, <tag:items:quintessence:magic_dust>, <item:botania:terrasteel_ingot>, <item:botania:mana_tablet>.withTag({mana: 500000 as int}), <item:botania:elementium_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty], 
+	[empty, empty, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:magic_dust>, <item:rftoolsbase:infused_diamond>, <item:malum:hallowed_gold_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty]]);
 
@@ -74,11 +74,11 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_mana_tablet", 4, <item:b
 mods.extendedcrafting.TableCrafting.addShaped("creative_mana_pool", 4, <item:botania:creative_pool>,
 	[[empty, empty, empty, empty, empty, empty, empty, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty],
-	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:malum:soul_stained_steel_ingot>, <item:rftoolsbase:infused_diamond>, <tag:items:teoe:magic_dust>, <tag:items:teoe:magic_dust>, empty, empty], 
-	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:botania:elementium_ingot>, <item:botania:fabulous_pool>, <item:botania:terrasteel_ingot>, <tag:items:teoe:magic_dust>, empty, empty],
+	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:malum:soul_stained_steel_ingot>, <item:rftoolsbase:infused_diamond>, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:magic_dust>, empty, empty], 
+	[empty, empty, <item:malum:soul_stained_steel_ingot>, <item:botania:elementium_ingot>, <item:botania:fabulous_pool>, <item:botania:terrasteel_ingot>, <tag:items:quintessence:magic_dust>, empty, empty],
 	[empty, empty, <item:rftoolsbase:infused_enderpearl>, <item:botania:fabulous_pool>, quintessence, <item:botania:fabulous_pool>, <item:rftoolsbase:infused_enderpearl>, empty, empty],
-	[empty, empty, <tag:items:teoe:magic_dust>, <item:botania:terrasteel_ingot>, <item:botania:fabulous_pool>, <item:botania:elementium_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty], 
-	[empty, empty, <tag:items:teoe:magic_dust>, <tag:items:teoe:magic_dust>, <item:rftoolsbase:infused_diamond>, <item:malum:hallowed_gold_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty],
+	[empty, empty, <tag:items:quintessence:magic_dust>, <item:botania:terrasteel_ingot>, <item:botania:fabulous_pool>, <item:botania:elementium_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty], 
+	[empty, empty, <tag:items:quintessence:magic_dust>, <tag:items:quintessence:magic_dust>, <item:rftoolsbase:infused_diamond>, <item:malum:hallowed_gold_ingot>, <item:malum:hallowed_gold_ingot>, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty],
 	[empty, empty, empty, empty, empty, empty, empty, empty, empty]]);
 
@@ -110,24 +110,24 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_crate", 4, <item:create:
 
 # Creative Fluid Tank
 mods.extendedcrafting.TableCrafting.addShaped("creative_fluid_tank", 4, <item:create:creative_fluid_tank>*4,
-	[[<tag:items:teoe:fluiduct>, empty, empty, empty, empty, empty, empty, empty, <tag:items:teoe:fluiduct>], 
-	[empty, <tag:items:teoe:fluiduct>, empty, empty, empty, empty, empty, <tag:items:teoe:fluiduct>, empty], 
-	[empty, empty, <tag:items:teoe:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:teoe:fluiduct>, empty, empty], 
+	[[<tag:items:quintessence:fluiduct>, empty, empty, empty, empty, empty, empty, empty, <tag:items:quintessence:fluiduct>], 
+	[empty, <tag:items:quintessence:fluiduct>, empty, empty, empty, empty, empty, <tag:items:quintessence:fluiduct>, empty], 
+	[empty, empty, <tag:items:quintessence:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:quintessence:fluiduct>, empty, empty], 
 	[empty, empty, <tag:items:forge:dusts/diamond>, <item:create:fluid_tank>, <item:create:fluid_tank>, <item:create:fluid_tank>, <tag:items:forge:dusts/diamond>, empty, empty], 
 	[empty, <item:refinedpipes:ultimate_extractor_attachment>, <item:extendedcrafting:enhanced_ender_ingot>, <item:thermal:fluid_cell>.withTag({BlockEntityTag: {TankInv: [{Amount: 0 as int, FluidName: "minecraft:empty", Capacity: 32000 as int, Tank: 0 as byte}]}}), quintessence, <item:thermal:fluid_cell>.withTag({BlockEntityTag: {TankInv: [{Amount: 0 as int, FluidName: "minecraft:empty", Capacity: 32000 as int, Tank: 0 as byte}]}}), <item:extendedcrafting:enhanced_ender_ingot>, <item:refinedpipes:ultimate_extractor_attachment>, empty], 
 	[empty, empty, <tag:items:forge:dusts/diamond>, <item:create:fluid_tank>, <item:create:fluid_tank>, <item:create:fluid_tank>, <tag:items:forge:dusts/diamond>, empty, empty], 
-	[empty, empty, <tag:items:teoe:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:teoe:fluiduct>, empty, empty], 
-	[empty, <tag:items:teoe:fluiduct>, empty, empty, empty, empty, empty, <tag:items:teoe:fluiduct>, empty], 
-	[<tag:items:teoe:fluiduct>, empty, empty, empty, empty, empty, empty, empty, <tag:items:teoe:fluiduct>]]);
+	[empty, empty, <tag:items:quintessence:fluiduct>, <item:industrialforegoing:simple_black_hole_tank>, <item:enderstorage:ender_tank>, <item:industrialforegoing:simple_black_hole_tank>, <tag:items:quintessence:fluiduct>, empty, empty], 
+	[empty, <tag:items:quintessence:fluiduct>, empty, empty, empty, empty, empty, <tag:items:quintessence:fluiduct>, empty], 
+	[<tag:items:quintessence:fluiduct>, empty, empty, empty, empty, empty, empty, empty, <tag:items:quintessence:fluiduct>]]);
 
 # Creative Blaze Cake
 mods.extendedcrafting.TableCrafting.addShaped("creative_blaze_cake", 4, <item:create:creative_blaze_cake>,
 	[[<item:twilightforest:experiment_115>, empty, empty, empty, empty, empty, empty, empty, <item:twilightforest:experiment_115>],
 	[empty, <item:reliquary:glowing_bread>, empty, empty, empty, empty, empty, <item:reliquary:glowing_bread>, empty],
 	[empty, empty, <item:minecraft:honeycomb>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:honeycomb>, empty, empty],
-	[empty, empty, <tag:items:teoe:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:teoe:magic_dust>, empty, empty],
+	[empty, empty, <tag:items:quintessence:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:quintessence:magic_dust>, empty, empty],
 	[empty, empty, <item:extendedcrafting:enhanced_ender_ingot>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, quintessence, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:extendedcrafting:enhanced_ender_ingot>, empty, empty],
-	[empty, empty, <tag:items:teoe:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:teoe:magic_dust>, empty, empty],
+	[empty, empty, <tag:items:quintessence:magic_dust>, <item:create:blaze_cake>, <item:minecraft:cake>|<item:createaddition:chocolate_cake>|<item:createaddition:honey_cake>, <item:create:blaze_cake>, <tag:items:quintessence:magic_dust>, empty, empty],
 	[empty, empty, <item:minecraft:honeycomb>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:sugar>, <item:minecraft:honeycomb>, empty, empty],
 	[empty, <item:reliquary:glowing_bread>, empty, empty, empty, empty, empty, <item:reliquary:glowing_bread>, empty],
 	[<item:twilightforest:experiment_115>, empty, empty, empty, empty, empty, empty, empty, <item:twilightforest:experiment_115>]]);

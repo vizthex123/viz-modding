@@ -1,0 +1,57 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "twilightforest"
+		}
+	],
+	"type": "twilightforest:stable_ice_core",
+	"subtypes": [
+		"twilightforest:ice_crystal",
+		"twilightforest:unstable_ice_core"
+	],
+	"name": "name.hostilenetworks.twilight_ice",
+	"name_color": "#5572A0",
+	"gui_scale": 1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 256,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:twilight_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.twilight_ice",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:snowball",
+			"count": 32
+		},
+        {
+			"optional": true,
+            "item": "ad_astra:ice_shard",
+            "count": 16
+        },
+		{
+			"item": "minecraft:ice",
+			"count": 8
+		},
+        {
+			"optional": true,
+            "item": "byg:black_ice",
+            "count": 4
+        },
+        {
+			"optional": true,
+            "item": "ecologics:thin_ice",
+            "count": 48
+        },
+        {
+			"optional": true,
+            "item": "iceandfire:dragon_ice",
+            "count": 4
+        }
+	]
+}

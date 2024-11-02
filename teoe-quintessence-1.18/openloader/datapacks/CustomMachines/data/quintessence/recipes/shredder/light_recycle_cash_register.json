@@ -1,0 +1,46 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 300,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 6000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:cash_register",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 6
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "thermal:ender_pearl_dust",
+			"amount": 2
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "kubejs:powdered_stone",
+			"amount": 7
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 1
+		}
+	]
+}

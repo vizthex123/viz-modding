@@ -1,0 +1,33 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_chest",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"amount": 8
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_copper",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

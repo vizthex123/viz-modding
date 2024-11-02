@@ -1,0 +1,45 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "whisperwoods"
+		}
+	],
+    "type": "whisperwoods:wisp",
+    "name": "entity.whisperwoods.wisp",
+    "name_color": "#AA75AB",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 96,
+    "input": {
+        "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.wisp",
+    "fabricator_drops": [
+        {
+            "item": "whisperwoods:ghost_light_electric_blue",
+            "count": 8
+        },
+		{
+            "item": "whisperwoods:ghost_light_gold",
+            "count": 8
+        },
+		{
+            "item": "whisperwoods:ghost_light_toxic_green",
+            "count": 8
+        },
+		{
+            "item": "whisperwoods:ghost_light_fiery_orange",
+            "count": 8
+        },
+		{
+            "item": "whisperwoods:ghost_light_magic_purple",
+            "count": 8
+        }
+    ]
+}

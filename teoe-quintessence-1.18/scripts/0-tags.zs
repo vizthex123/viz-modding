@@ -11,18 +11,18 @@ print("0-tags.zs loading...");
 
 /*
 # Dynamics duct (quest)
-val duct = <tag:items:teoe:duct>;
-val fluiduct = <tag:items:teoe:fluiduct>;
+val duct = <tag:items:quintessence:duct>;
+val fluiduct = <tag:items:quintessence:fluiduct>;
 
 duct.add(<item:thermal:energy_duct>);
 duct.add(<item:thermal:fluid_duct>);
 duct.add(<item:thermal:fluid_duct_windowed>);
 fluiduct.add(<item:thermal:fluid_duct>);
 fluiduct.add(<item:thermal:fluid_duct_windowed>);
-*/
+
 
 # Torches (recipes)
-val torch = <tag:items:teoe:torch>;
+val torch = <tag:items:quintessence:torch>;
 
 torch.add(<item:minecraft:torch>);
 torch.add(<item:minecraft:soul_torch>);
@@ -34,7 +34,7 @@ torch.add(<item:malum:iridescent_ether_torch>);
 
 
 # Wooden tools (recipe)
-val wooden_tool = <tag:items:teoe:wooden_tool>;
+val wooden_tool = <tag:items:quintessence:wooden_tool>;
 
 wooden_tool.add(<item:minecraft:wooden_sword>);
 wooden_tool.add(<item:minecraft:wooden_pickaxe>);
@@ -44,7 +44,7 @@ wooden_tool.add(<item:minecraft:wooden_axe>);
 
 
 # Leather Armour (recipe)
-val leather_armour = <tag:items:teoe:leather_armour>;
+val leather_armour = <tag:items:quintessence:leather_armour>;
 
 leather_armour.add(<item:minecraft:leather_horse_armor>);
 leather_armour.add(<item:minecraft:leather_helmet>);
@@ -53,8 +53,8 @@ leather_armour.add(<item:minecraft:leather_leggings>);
 leather_armour.add(<item:minecraft:leather_boots>);
 
 
-# Egg (recipe)
-val egg = <tag:items:teoe:egg>;
+# Eggs (recipe)
+val egg = <tag:items:quintessence:egg>;
 
 egg.add(<item:minecraft:egg>);
 egg.add(<item:minecraft:turtle_egg>);
@@ -67,14 +67,14 @@ egg.add(<item:quark:egg_parrot_grey>);
 
 
 # Dragon Scales (recipe)
-val dragon_scale = <tag:items:teoe:dragon_scale>;
+val dragon_scale = <tag:items:quintessence:dragon_scale>;
 
 dragon_scale.add(<item:tconstruct:dragon_scale>);
 dragon_scale.add(<item:quark:dragon_scale>);
 
 
 # Presses (recipe)
-val ae2_press = <tag:items:teoe:ae2_press>;
+val ae2_press = <tag:items:quintessence:ae2_press>;
 
 ae2_press.add(<item:ae2:silicon_press>);
 ae2_press.add(<item:ae2:logic_processor_press>);
@@ -84,7 +84,7 @@ ae2_press.add(<item:ae2:engineering_processor_press>);
 
 
 # Belts (quest)
-val belt = <tag:items:teoe:belt>;
+val belt = <tag:items:quintessence:belt>;
 
 belt.add(<item:malum:belt_of_the_starved>);
 belt.add(<item:malum:belt_of_the_prospector>);
@@ -93,7 +93,7 @@ belt.add(<item:malum:belt_of_the_magebane>);
 
 
 # Tape Measures (quest)
-val tape_measure = <tag:items:teoe:tape_measure>;
+val tape_measure = <tag:items:quintessence:tape_measure>;
 
 tape_measure.add(<item:measurements:tape_measure>);
 tape_measure.add(<item:quark:abacus>);
@@ -101,7 +101,7 @@ tape_measure.add(<item:quark:abacus>);
 
 
 # Magic Dust (recipes)
-val magic_dust = <tag:items:teoe:magic_dust>;
+val magic_dust = <tag:items:quintessence:magic_dust>;
 
 magic_dust.add(<item:enigmaticlegacy:astral_dust>);
 magic_dust.add(<item:obscure_api:astral_dust>);
@@ -110,16 +110,16 @@ magic_dust.add(<item:ob_core:magic_dust>);
 
 
 # Shards (recipes)
-val shard = <tag:items:teoe:shard>;
+val shard = <tag:items:quintessence:shard>;
 
 shard.add(<item:minecraft:amethyst_shard>);
 shard.add(<item:byg:subzero_crystal_shard>);
 shard.add(<item:byg:therium_shard>);
-
+*/
 
 
 # Scrolls (quest)
-val scrolls = <tag:items:teoe:scrolls>;
+val scrolls = <tag:items:quintessence:scrolls>;
 
 scrolls.add(<item:waystones:warp_scroll>);
 scrolls.add(<item:waystones:bound_scroll>);
@@ -128,7 +128,7 @@ scrolls.add(<item:waystones:return_scroll>);
 
 
 # RF Coils (quest)
-val coil = <tag:items:teoe:coil>;
+val coil = <tag:items:quintessence:coil>;
 
 coil.add(<item:thermal:rf_coil_augment>);
 coil.add(<item:thermal:rf_coil_storage_augment>);
@@ -136,7 +136,7 @@ coil.add(<item:thermal:rf_coil_xfer_augment>);
 
 
 # Soul Sand (recipe)
-val soul_sand = <tag:items:teoe:soul_sand>;
+val soul_sand = <tag:items:quintessence:soul_sand>;
 
 soul_sand.add(<item:minecraft:soul_sand>);
 soul_sand.add(<item:minecraft:soul_soil>);
@@ -145,9 +145,9 @@ soul_sand.add(<item:byg:warped_soul_soil>);
 
 
 # Cooking for Blockheads' items (quests)
-val upgrade = <tag:items:teoe:upgrade>;
-val storage = <tag:items:teoe:storage>;
-val decor = <tag:items:teoe:decor>;
+val upgrade = <tag:items:quintessence:upgrade>;
+val storage = <tag:items:quintessence:storage>;
+val decor = <tag:items:quintessence:decor>;
 
 upgrade.add(<item:cookingforblockheads:heating_unit>);
 upgrade.add(<item:cookingforblockheads:ice_unit>);
@@ -162,8 +162,8 @@ decor.add(<item:cookingforblockheads:hanging_corner>);
 
 
 # Malum's pedestals & totem bases (quests)
-val pedestal = <tag:items:teoe:pedestal>;
-val base = <tag:items:teoe:base>;
+val pedestal = <tag:items:quintessence:pedestal>;
+val base = <tag:items:quintessence:base>;
 
 pedestal.add(<item:malum:tainted_rock_item_pedestal>);
 pedestal.add(<item:malum:twisted_rock_item_pedestal>);
@@ -228,7 +228,7 @@ sleepers.add(<item:quark:tuff_slab>);
 
 
 # Vines (recipe)
-val vines = <tag:items:teoe:vines>;
+val vines = <tag:items:quintessence:vines>;
 
 vines.add(<item:minecraft:vine>);
 vines.add(<item:minecraft:weeping_vines>);
@@ -240,8 +240,8 @@ vines.add(<item:byg:embur_gel_vines>);
 vines.add(<item:byg:wailing_vine>);
 vines.add(<item:byg:shulkren_vine>);
 
-<tag:items:teoe:slimy_vines>.add(<item:tconstruct:sky_slime_vine>);
-<tag:items:teoe:slimy_vines>.add(<item:tconstruct:ender_slime_vine>);
+<tag:items:quintessence:slimy_vines>.add(<item:tconstruct:sky_slime_vine>);
+<tag:items:quintessence:slimy_vines>.add(<item:tconstruct:ender_slime_vine>);
 
 
 
@@ -254,7 +254,7 @@ music_discs.add(<item:conjurer_illager:music_disc_delve_deeper>);
 
 
 # Corundum (quest & catalyst)
-val corundum = <tag:items:teoe:corundum>;
+val corundum = <tag:items:quintessence:corundum>;
 
 corundum.add(<item:quark:red_corundum_cluster>);
 corundum.add(<item:quark:orange_corundum_cluster>);
@@ -268,7 +268,7 @@ corundum.add(<item:quark:black_corundum_cluster>);
 
 
 # Ropes (quest)
-val rope = <tag:items:teoe:rope>;
+val rope = <tag:items:quintessence:rope>;
 
 rope.add(<item:quark:rope>);
 rope.add(<item:additionaladditions:rope>);
@@ -276,7 +276,7 @@ rope.add(<item:additionaladditions:rope>);
 
 
 # Waystones (quest & recipe)
-val waystones = <tag:items:teoe:waystones>;
+val waystones = <tag:items:quintessence:waystones>;
 
 waystones.add(<item:waystones:waystone>);
 waystones.add(<item:waystones:mossy_waystone>);
@@ -285,10 +285,10 @@ waystones.add(<item:waystones:sandy_waystone>);
 
 
 # Diving Gear (quest)
-val diving_helmet = <tag:items:teoe:diving_helmet>;
-val diving_chestplate = <tag:items:teoe:diving_chestplate>;
-val diving_leggings = <tag:items:teoe:diving_leggings>;
-val diving_boots = <tag:items:teoe:diving_boots>;
+val diving_helmet = <tag:items:quintessence:diving_helmet>;
+val diving_chestplate = <tag:items:quintessence:diving_chestplate>;
+val diving_leggings = <tag:items:quintessence:diving_leggings>;
+val diving_boots = <tag:items:quintessence:diving_boots>;
 
 diving_helmet.add(<item:aquamirae:three_bolt_helmet>);
 diving_helmet.add(<item:thermal:diving_helmet>);
@@ -308,7 +308,7 @@ diving_boots.add(<item:create:copper_diving_boots>);
 
 
 # Paxels (quest)
-val paxels = <tag:items:teoe:paxels>;
+val paxels = <tag:items:quintessence:paxels>;
 
 paxels.add(<item:easypaxellite:wood_paxel>);
 paxels.add(<item:easypaxellite:stone_paxel>);
@@ -320,7 +320,7 @@ paxels.add(<item:easypaxellite:netherite_paxel>);
 
 
 # Furnaces (quest + recipes)
-val furnace = <tag:items:teoe:furnace>;
+val furnace = <tag:items:quintessence:furnace>;
 
 furnace.add(<item:minecraft:furnace>);
 furnace.add(<item:quark:blackstone_furnace>);
@@ -329,7 +329,7 @@ furnace.add(<item:quark:deepslate_furnace>);
 
 
 # Crafting Storage (quest)
-val crafting_storage = <tag:items:teoe:crafting_storage>;
+val crafting_storage = <tag:items:quintessence:crafting_storage>;
 
 crafting_storage.add(<item:ae2:1k_crafting_storage>);
 crafting_storage.add(<item:ae2:4k_crafting_storage>);
@@ -339,7 +339,7 @@ crafting_storage.add(<item:ae2:64k_crafting_storage>);
 
 
 # Chest Upgrades (quest)
-val better_chest = <tag:items:teoe:better_chest>;
+val better_chest = <tag:items:quintessence:better_chest>;
 
 better_chest.add(<item:ironchest:copper_chest>);
 better_chest.add(<item:ironchest:iron_chest>);
@@ -350,7 +350,7 @@ better_chest.add(<item:ironchest:copper_to_iron_chest_upgrade>);
 
 # Beacon Base
 # Mainly for the Gaia quest, but can also be used to find them easier
-val beacon_base = <tag:items:teoe:beacon_base>;
+val beacon_base = <tag:items:quintessence:beacon_base>;
 
 beacon_base.add(<item:minecraft:iron_block>);
 beacon_base.add(<item:minecraft:gold_block>);
@@ -379,14 +379,14 @@ signs.add(<item:malum:soulwood_sign>);
 
 
 # Apothecaries (quest)
-val apothecary = <tag:items:teoe:apothecary>;
+val apothecary = <tag:items:quintessence:apothecary>;
 
 apothecary.add(<item:botania:apothecary_mossy>);
 apothecary.add(<item:botania:apothecary_default>);
 
 
 # Spellstones (recipe)
-val spellstone = <tag:items:teoe:spellstone>;
+val spellstone = <tag:items:quintessence:spellstone>;
 
 spellstone.add(<item:enigmaticlegacy:enigmatic_item>);
 spellstone.add(<item:enigmaticlegacy:golem_heart>);
@@ -728,14 +728,14 @@ whitelist.add(<item:lightmanscurrency:coin_gold>);
 whitelist.add(<item:lightmanscurrency:coin_emerald>);
 
 
-
+/*
 # Tag Removal
 <tag:items:forge:ingots>.remove(<item:thermal:rose_gold_ingot>);
 <tag:items:forge:ingots/rose_gold>.remove(<item:thermal:rose_gold_ingot>);
 
 <tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
 <tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
-
+*/
 <tag:items:forge:gears>.remove(<item:industrialforegoing:iron_gear>);
 <tag:items:forge:gears>.remove(<item:industrialforegoing:gold_gear>);
 <tag:items:forge:gears>.remove(<item:industrialforegoing:diamond_gear>);

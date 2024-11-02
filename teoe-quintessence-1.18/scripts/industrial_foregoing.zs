@@ -33,11 +33,11 @@ craftingTable.remove(<item:industrialforegoing:mycelial_furnace>);
 craftingTable.addShaped("furnace_generator", <item:industrialforegoing:mycelial_furnace>,
 	[[<item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>],
     [<item:minecraft:coal_block>|<item:thermal:charcoal_block>, <item:extendedcrafting:redstone_ingot>, <item:minecraft:coal_block>|<item:thermal:charcoal_block>],
-    [<tag:items:teoe:furnace>, <item:industrialforegoing:machine_frame_simple>, <item:thermal:dynamo_stirling>]]);
+    [<tag:items:quintessence:furnace>, <item:industrialforegoing:machine_frame_simple>, <item:thermal:dynamo_stirling>]]);
 
 craftingTable.addShaped("furnace_generator_coke", <item:industrialforegoing:mycelial_furnace>,
     [[<item:minecraft:air>, <item:thermal:dynamo_stirling>, <item:minecraft:air>],
-    [<item:thermal:coal_coke_block>, <tag:items:teoe:furnace>, <item:thermal:coal_coke_block>],
+    [<item:thermal:coal_coke_block>, <tag:items:quintessence:furnace>, <item:thermal:coal_coke_block>],
     [<item:extendedcrafting:redstone_ingot>, <item:industrialforegoing:machine_frame_simple>, <item:extendedcrafting:redstone_ingot>]]);
 
 
