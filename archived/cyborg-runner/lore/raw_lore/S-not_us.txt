@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "not_us",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Anything But My Family",
+    "body": "Quickly, everyone get inside! We have to hide here until they pass us.\nNo, I don't know how long it will take. We'll just... know.\nThey can't stay here forever, right?\n\nIt's been 3 years since they were taken from me....my entire family, gone before my eyes... I barely managed to escape with my life, but what is it worth?\nI have nothing left.... maybe I should join them.... maybe I should just.... let go, and open a new chapter of my life?"
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

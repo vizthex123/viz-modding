@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "auroraian",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Aurorian",
+    "body": "The Aurorian is a mysterious dimension, shrouded in constant moonlight.\nIts current ruler is Queen Aurora, who has been handling things very well. Not that there is much to handle ever since the Abandonment centuries ago....\nBut, nevertheless; our Queen has handled things very well, and has even said you will be the one to free us from the great Dragon Tyrant.\nI too have confidence in you, Adventurer. Do not disappoint us."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

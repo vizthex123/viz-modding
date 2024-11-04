@@ -7,8 +7,8 @@
 <contenttweaker:datadisk_iron>.displayName = "Iron Data Disk";
 <contenttweaker:datadisk_industrial>.displayName = "Industrial Data Disk";
 <contenttweaker:datadisk_industrial_unref>.displayName = "Unrefined Industrial Data Core";
+<contenttweaker:datadisk_machine>.displayName = "Machine Data Disk";
 <contenttweaker:datadisk_machine_unref>.displayName = "Unrefined Machine Data Core";
-<contenttweaker:datadisk_machine>.displayName = "Machine Data Core";
 <contenttweaker:datadisk_information>.displayName = "Information Pad";
 <contenttweaker:datadisk_information_unref>.displayName = "Incomplete Information Pad";
 

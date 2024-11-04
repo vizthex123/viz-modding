@@ -28,7 +28,7 @@ print("Loading CraftingRunes.zs...");
 <sccraftingrunes:itemlegendarymat>.displayName = "Ancient Laous Rune";
 
 // Add lore tooltips
-<sccraftingrunes:itemmatbag>.addTooltip(format.lightPurple("An ancient rune, once thought to be lost"));
+<sccraftingrunes:itemmatbag>.addTooltip(format.lightPurple("An ancient rune, thought to be lost to time immemorium"));
 <sccraftingrunes:itemmatbag>.addTooltip(format.lightPurple("It seems to have something written on it..."));
 
 <sccraftingrunes:itemcommonmat>.addShiftTooltip(format.lightPurple("Thought to be lost, this rune was used to symbolize safety, or the destruction of it"));
@@ -39,7 +39,7 @@ print("Loading CraftingRunes.zs...");
 
 
 // Upgrade/Downgrade Runes
-// 4 of the previous tier makes 1 of the next, and vica-versa
+// 4 of the previous tier makes 1 of the next, and vice-versa
 recipes.addShapeless(<sccraftingrunes:itemuncommonmat>, [<sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>]);
 recipes.addShapeless(<sccraftingrunes:itemraremat>, [<sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>]);
 recipes.addShapeless(<sccraftingrunes:itemlegendarymat>, [<sccraftingrunes:itemraremat>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemraremat>]);

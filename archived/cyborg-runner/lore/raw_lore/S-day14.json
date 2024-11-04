@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "day14",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Day 14 Log",
+    "body": "It's been a fortnight since the outbreak started. Almost everyone's been turned, with just me and a couple neighbors remaining.\nWe've stared on the quarantine dome, but I haven't been able to gather more supplies - everyone's house is overrun.\nGot some basics stockpiled, but I doubt it will last for long.\nI hope this dome plan works, and protects whoever is unfortunate enough to find this planet. If not, this disease could spread across the entire system - perhaps even the universe."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

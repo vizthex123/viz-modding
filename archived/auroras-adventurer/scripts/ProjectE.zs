@@ -50,9 +50,15 @@ recipes.addShapeless(<projecte:item.pe_gem_armor_1>, [<projecte:item.pe_klein_st
 recipes.addShapeless(<projecte:item.pe_gem_armor_0>.withTag({StepAssist: 0 as byte}), [<projecte:item.pe_klein_star:5>.withTag({StoredEMC: 51200000 as long}), <projecte:item.pe_swrg>, <projecte:item.pe_swrg>, <projecte:item.pe_rm_armor_0>]);
 
 // Craft fuels with a Red Stone
-recipes.addShapeless(<projecte:item.pe_fuel>, [<retroexchange:transmutation_stone:*>.transformDamage(25), <minecraft:coal>, <minecraft:coal>, <minecraft:coal>, <minecraft:coal>]);
-recipes.addShapeless(<projecte:item.pe_fuel:1>, [<retroexchange:transmutation_stone:*>.transformDamage(50), <projecte:item.pe_fuel>, <projecte:item.pe_fuel>, <projecte:item.pe_fuel>, <projecte:item.pe_fuel>]);
-recipes.addShapeless(<projecte:item.pe_fuel:2>, [<retroexchange:transmutation_stone:*>.transformDamage(75), <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>]);
+recipes.addShapeless(<projecte:item.pe_fuel>, [<retroexchange:transmutation_stone:*>.transformDamage(100), <minecraft:coal>, <minecraft:coal>, <minecraft:coal>, <minecraft:coal>]);
+
+recipes.addShapeless(<projecte:item.pe_fuel:1>, [<retroexchange:transmutation_stone:*>.transformDamage(125), <projecte:item.pe_fuel>, <projecte:item.pe_fuel>, <projecte:item.pe_fuel>, <projecte:item.pe_fuel>]);
+
+recipes.addShapeless(<projecte:item.pe_fuel:2>, [<retroexchange:transmutation_stone:*>.transformDamage(250), <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>, <projecte:item.pe_fuel:1>]);
+
+recipes.addShapeless(<equivadditions:zeitheron_fuel>, [<retroexchange:transmutation_stone:*>.transformDamage(1000), <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]);
+
+
 
 # Change recipe for Dark Matter Armour & Tools
 # Forces you to get Glitch Infused or Aurorian Steel armour
@@ -123,7 +129,7 @@ mods.bloodmagic.BloodAltar.addRecipe(<projecte:item.pe_philosophers_stone>, <ret
 
 // Change the recipe for the Mk 1 Energy Condenser
 recipes.remove(<projecte:condenser_mk1>);
-mods.biggercraftingtables.Big.addShaped(<projecte:condenser_mk1>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <projecte:condenser_mk1>, 
 	[[<projecte:item.pe_matter>, <ore:obsidian>, <ore:gemValuable>, <ore:obsidian>, <projecte:item.pe_matter>],
 	[<ore:obsidian>, <theaurorian:auroriansteel>, <deepmoblearning:glitch_infused_ingot>, <theaurorian:auroriansteel>, <ore:obsidian>],
 	[<ore:gemValuable>, <deepmoblearning:glitch_infused_ingot>, <projecte:alchemical_chest>, <deepmoblearning:glitch_infused_ingot>, <ore:gemValuable>],
@@ -144,7 +150,7 @@ recipes.addShaped(<projecte:alchemical_chest>, [[<projecte:item.pe_covalence_dus
 
 # Recipe for Transmutation Table
 recipes.remove(<projecte:transmutation_table>);
-mods.biggercraftingtables.Giant.addShaped(<projecte:transmutation_table>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <projecte:transmutation_table>, 
 	[[<aurorianitems:compressedshard>, <botania:manaresource:1>, null, <sccraftingrunes:itemlegendarymat>, <bloodmagic:slate:3>, <sccraftingrunes:itemlegendarymat>, null, <botania:manaresource:1>, <aurorianitems:compressedshard>],
 	[<botania:manaresource:1>, <deepmoblearning:glitch_infused_ingot>, null, null, <elementaristics:essence:9>, null, null, <deepmoblearning:glitch_infused_ingot>, <botania:manaresource:1>],
 	[null, null, <theaurorian:auroriansteel>, null, null, null, <theaurorian:auroriansteel>, null, null],
@@ -158,7 +164,7 @@ mods.biggercraftingtables.Giant.addShaped(<projecte:transmutation_table>,
 
 # Recipe for Transmutation Tablet
 recipes.remove(<projecte:item.pe_transmutation_tablet>);
-mods.biggercraftingtables.Huge.addShaped(<projecte:item.pe_transmutation_tablet>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <projecte:item.pe_transmutation_tablet>, 
 	[[<projecte:matter_block>, null, <theaurorian:auroriansteel>, <sccraftingrunes:itemlegendarymat>, <deepmoblearning:glitch_infused_ingot>, null, <projecte:matter_block>],
 	[null, <aurorianitems:compressedshard>, null, null, null, <aurorianitems:compressedshard>, null],
 	[<theaurorian:auroriansteel>, null, <elementaristics:essence:15>, <ore:gemValuable>, <elementaristics:essence:15>, null, <deepmoblearning:glitch_infused_ingot>],
@@ -170,7 +176,7 @@ mods.biggercraftingtables.Huge.addShaped(<projecte:item.pe_transmutation_tablet>
 
 # Recipe for Dark Matter Furnace
 recipes.remove(<projecte:dm_furnace>);
-mods.biggercraftingtables.Giant.addShaped(<projecte:dm_furnace>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <projecte:dm_furnace>, 
 	[[<projecte:item.pe_matter>, <projecte:item.pe_matter>, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemuncommonmat>, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<projecte:item.pe_matter>, <projecte:item.pe_matter>, null, <sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>, null, <projecte:item.pe_matter>, <projecte:item.pe_matter>],
 	[<sccraftingrunes:itemuncommonmat>, null, <ore:scrapIngot>, <tconstruct:ingots:2>, <deepmoblearning:glitch_infused_ingot>, <tconstruct:ingots:2>, <ore:scrapIngot>, null, <sccraftingrunes:itemuncommonmat>],
@@ -184,7 +190,7 @@ mods.biggercraftingtables.Giant.addShaped(<projecte:dm_furnace>,
 
 # Recipe for Red Matter Furnace
 recipes.remove(<projecte:rm_furnace>);
-mods.biggercraftingtables.Giant.addShaped(<projecte:rm_furnace>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <projecte:rm_furnace>, 
 	[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemraremat>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
 	[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, null, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, null, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
 	[<sccraftingrunes:itemraremat>, null, <theaurorian:auroriansteel>, <deepmoblearning:glitch_infused_ingot>, <twilightforest:alpha_fur>, <deepmoblearning:glitch_infused_ingot>, <theaurorian:auroriansteel>, null, <sccraftingrunes:itemraremat>],
@@ -196,7 +202,7 @@ mods.biggercraftingtables.Giant.addShaped(<projecte:rm_furnace>,
 	[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemraremat>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>]]);
 
 // Alt recipe - uses Life Essence tanks
-mods.biggercraftingtables.Giant.addShaped(<projecte:rm_furnace>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <projecte:rm_furnace>, 
 	[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <sccraftingrunes:itemraremat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemlegendarymat>, <sccraftingrunes:itemraremat>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
 	[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, null, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, <sccraftingrunes:itemuncommonmat>, null, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
 	[<sccraftingrunes:itemraremat>, null, <theaurorian:auroriansteel>, <deepmoblearning:glitch_infused_ingot>, <twilightforest:alpha_fur>, <deepmoblearning:glitch_infused_ingot>, <theaurorian:auroriansteel>, null, <sccraftingrunes:itemraremat>],
@@ -234,15 +240,16 @@ recipes.remove(<equivalentintegrations:conjuration_assembler>);
 recipes.addShaped(<equivalentintegrations:conjuration_assembler>, [[<ore:ingotGold>, <retroexchange:transmutation_stone:*>.transformDamage(250), <ore:ingotGold>],
                                     	                    			                [<ore:ingotIron>, <projecte:item.pe_alchemical_bag:*>, <ore:ingotIron>],
                                    	                   			             	                [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+																								
 recipes.remove(<equivalentintegrations:efficiency_catalyst>);
-mods.biggercraftingtables.Big.addShaped(<equivalentintegrations:efficiency_catalyst>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <equivalentintegrations:efficiency_catalyst>, 
 	[[<ore:gemPeridot>, <botanicadds:elven_lapis>, <ore:gemLapis>, <botanicadds:elven_lapis>, <ore:gemPeridot>],
 	[<ore:gemPeridot>, <botanicadds:elven_lapis>, <botanicadds:mana_lapis>, <botanicadds:elven_lapis>, <ore:gemPeridot>],
 	[<ore:gemPeridot>, <botanicadds:elven_lapis>, <botanicadds:mana_lapis>, <botanicadds:elven_lapis>, <ore:gemPeridot>],
 	[<ore:gemPeridot>, <botanicadds:elven_lapis>, <botanicadds:elven_lapis>, <botanicadds:elven_lapis>, <ore:gemPeridot>],
 	[<ore:gemPeridot>, <ore:gemPeridot>, <ore:gemPeridot>, <ore:gemPeridot>, <ore:gemPeridot>]]);
 
-mods.biggercraftingtables.Big.addShaped(<equivalentintegrations:efficiency_catalyst>*2, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <equivalentintegrations:efficiency_catalyst>*2, 
 	[[<ore:gemEmerald>, <botanicadds:mana_lapis>, <ore:gemLapis>, <botanicadds:mana_lapis>, <ore:gemEmerald>],
 	[<ore:gemEmerald>, <botanicadds:mana_lapis>, <ore:gemLapis>, <botanicadds:mana_lapis>, <ore:gemEmerald>],
 	[<ore:gemEmerald>, <botanicadds:mana_lapis>, <ore:gemLapis>, <botanicadds:mana_lapis>, <ore:gemEmerald>],

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "twilight-forest",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Twilight Realm",
+    "body": "The Twilight Realm is.... a great place of mystery, adventure, and danger.\nThis place is attuned with nature, as expected of a place so entrenched in foliage; but be warned, for some of the greenery may house deadly foes.\nAncient tales speak of great castles, dens for ancient beasts, and mountains made of gold!\nAh, if only they were true.... but who knows, if you venture there you may find these things and more."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

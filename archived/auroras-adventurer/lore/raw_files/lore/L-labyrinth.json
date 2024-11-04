@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "labyrinth",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Long-Forgotten Labyrinth",
+    "body": "Legends tell of a man called Daedalus, who constructed a great labyrinth to trap a beast at the request of a king named Minos.\nHe crafted this labyrinth to be inescapable, except by those who knew how to navigate through the treacherous maze and locate the magical exit stone\nBut, since so many adventurers have died trying to recover whatever is there, I’m sure there’s bound to be at least some treasure, waiting to be discovered."
+  },
+  "sortingIndex": 7,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

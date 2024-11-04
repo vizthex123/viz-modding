@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "crash",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #1: The Crash",
+    "body": "Captain's Log, entry 1.\nI don't know where I am, or what even happened. My leg was crushed during the crash… I have some replacements on-board, but the surgery will take time. And be… unpleasant, to say the least.\nIn the meantime, I’ve decided to log everything, and store it as a decrypted personal log so whoever finds this can read it. Maybe they’ll get some useful advice from it, who knows?\nThe ship's AI just went haywire - crashed me into this strange planet, overtaken by a massive jungle… I'm sure by the time anyone finds this, it would've been consumed by this shifting maze of vines - but I still want to record my journey so far. Maybe be remembered in some way.\nIt's been about a day since the crash according to the chronometer, and my supplies won't last much longer. Should've packed more. I have no doubt this place is home to many forms of hostile life, so I must move on as soon as my leg is replaced.\nI hope someone finds whatever supplies I have left useful. If they can find this wreck, at least…"
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

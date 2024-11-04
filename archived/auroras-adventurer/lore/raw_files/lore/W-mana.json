@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "mana",
+    "category": "world"
+  },
+  "content": {
+    "title": "Natural Magic",
+    "body": "The world is subjected to the natural influence of \"mana\", the very force of magic itself. This mana permeates everything, and in rare cases flowers infused with enough mana will begin to transform. We call those few that finish the transformation\"mystical flowers.\"\nThese magical plants can be utilized in a variety of ways, from basic mana generation and manipulation; to more complex setups involving summoned faeries to do one's bidding for you.\nElves are the ones most familiar with this natural magic of the world, but being a secretive race, they rarely share the information with outsiders.\nSome believe the elves left long ago, crafting their own realm and sealing the portal behind them.\nIn some rare cases though, a hybrid elf will leave the shroud and interact with human society, sharing their knowledge with us."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "partial_chip_theory",
+    "category": "observations"
+  },
+  "content": {
+    "title": "Partial Theory: Credit Chips",
+    "body": "toilaries"
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

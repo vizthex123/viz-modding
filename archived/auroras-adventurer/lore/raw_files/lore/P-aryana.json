@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "aryana",
+    "category": "people"
+  },
+  "content": {
+    "title": "Aryana, the Dryad",
+    "body": "The Dryads are an ancient race of beings known for their wisdom, affinity with nature, and longevity.\nAryana is one of them, and is highly trusted by the Queen. Her Majesty has been reluctant to tell us exactly how they met though, even after many months of questioning.\nAryana is graceful and straight-forward, and as a dryad is naturally mysterious and young-looking, despite her age probably being greater than all of us (save for Forgebrow) combined.\nShe’s been known to work closely with Oseille, as both of them share a great interest in the magic of nature."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "akashic",
+    "category": "people"
+  },
+  "content": {
+    "title": "Dr. Akmon Akashic",
+    "body": "Dr. Akmon Akashic is the inventor of the Akashic Tome and the Queen's most trusted scientist.\nHe's always been a pioneer in his field of general studies, but when things get too specific, he does pass it on to a member of his staff.\nBeing the Queen's most trusted researcher and adviser, she denotes most tasks to him; despite the fact that there are many servants who could easily take over for menial tasks.\nNot much is known about his past, but it is said that he was once a wanderer with no direction or place to call home - until Queen Aurora hired him as a science adviser.\nHe's proven himself since that day, adamant to show that Her Majesty made a good choice when taking him in.\nHe's generally quiet, reserved, and straight-forward; but very intelligent and adaptable."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

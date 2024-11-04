@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "interdem",
+    "category": "people"
+  },
+  "content": {
+    "title": "Archmage Interdem",
+    "body": "The Archmage is seldom, only appearing to say what he deems necessary.\nDue to his reclusive and secretive nature, very little is known about him; but the Queen seems to trust him with her life.\nAlthough he may not seem like it, he is also quite knowledgeable on alchemy, and even natural magic; and as such Oseille will occasionally seek his advice on certain subjects.\nThough he seems more talkative with you, Adventurer. I wonder why..."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

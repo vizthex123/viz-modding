@@ -1,0 +1,14 @@
+{
+	"key": {
+		"id": "pilot",
+		"category": "people"
+	},
+	"content": {
+		"title": "Stranded Pilot",
+		"body": "I've found multiple logs from a pilot who was stranded on this planet before I arrived here - even locating a few of the things he'd built along the way.\nIt seems like he managed to survive on this planet for some time, and made regular logs about it.\nI wonder how his story ends... did he manage to leave, or succumb to the environment?"
+	},
+	"sortingIndex": 2,
+	"requirements": [],
+	"autoAdd": false,
+	"defaultLore": false
+}

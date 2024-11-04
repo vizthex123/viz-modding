@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "matter",
+    "category": "ancient_alchemy"
+  },
+  "content": {
+    "title": "Alchemical Matter",
+    "body": "Alchemy is the art of understanding, deconstructing, and reconstructing matter; and follows multiple laws, rules, and stipulations.\nThe first and more important is the law of Equivalent Exchange, stating that anything you transmute must have matter equal to (or exceeding) your products’.\nAny extra matter can be stored for later use, or transmuted into something else; but you cannot make something from nothing.\nBe wary, Adventurer. You must follow this law to the letter, or the consequences may result in your untimely demise.\nMatter itself is what everything is composed of. Most alchemists refer to it as \"EMC\", though what it stands for has been lost to time.\nAlmost everything has an EMC value, but a few items are composed of a type of matter that cannot be transmuted; no matter what you try."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

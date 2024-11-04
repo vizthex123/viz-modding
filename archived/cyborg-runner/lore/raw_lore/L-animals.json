@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "animals",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #3: Animals",
+    "body": "Captain's Log, entry 3.\nFound some animals. They seem like the ones from those old stories of Earth, but they're somehow... different. I tried to tame them, but they weren't interested in my potatoes. That's right - potatoes. From Earth. I found another wreck, so it seems like I'm not the only one who's crashed here before.\nRegardless though, I can't tame the animals. Means I can't breed them for food either. I'll just have to hunt them in the wild for the time being, maybe try some of the native plants.\nI have been able to repurpose their bones into usable tools, but without being able to farm them myself it doesn't prove as useful as it could've been.\nI need to move on though. I must find a renewable food source soon, lest I starve to death."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "champions",
+    "category": "world"
+  },
+  "content": {
+    "title": "Necromantic Elites",
+    "body": "During the ancient war, the Necromancers had raised great armies of undead to fight for them\nSome of them still cling to life to this day, bestowed with special powers by their maniacal creators; eager to destroy any adventurer who dares cross their path."
+  },
+  "sortingIndex": 7,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

@@ -1,0 +1,15 @@
+{
+  "key": {
+    "id": "new_plan",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #6: New Plan",
+    "body": "Captain’s Log, entry 6.\nI’ve finally secured a renewable food source! I found some local plants, and seeds from other planets scattered about. Managed to make a basic greenhouse. Still stuck with hunting the nearby animals though.\nI had some success in trying to domesticate a few of these creatures, but not enough to be a reliable food source.\nStill, I’ll take what I can get. I need all the calories I can secure for my plan.
+	\nIt seems this planet is some kind of ship graveyard, given the amount of debris and seemingly non-native plants, animals, and more that I’ve found. I’ve decided to take some of these debris (in addition to my ship’s remains) and build a new ship. Hopefully, it will be enough to escape this place.\nI’ve managed to salvage some of the AI cores I’ve found in these ships, and mine as well. They’re not going to be as interactive, but they can fly the thing and give me access to their databanks at least.\nThe only real issue I can think of is a fuel source. Thankfully, most ships can be adapted to use almost any type of fuel - but the problem is going to be the type of fuel. It’s not like starships run on coal, after all. Takes a lot of power to leave a planet.\nLet’s hope biofuel works for now, seems that will be the easiest to get."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

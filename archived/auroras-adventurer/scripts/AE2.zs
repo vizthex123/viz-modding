@@ -87,7 +87,8 @@ recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
 recipes.addShaped(<appliedenergistics2:quartz_growth_accelerator>, [[<theaurorian:moonstoneingot>, <appliedenergistics2:part:16>, <theaurorian:moonstoneingot>],
                                    					                 [<appliedenergistics2:quartz_glass>, <ore:crystalFluix>, <appliedenergistics2:quartz_glass>],
                                     					                 [<theaurorian:moonstoneingot>, <appliedenergistics2:part:16>, <theaurorian:moonstoneingot>]]);
-mods.biggercraftingtables.Big.addShaped(<ae2stuff:grower>, 
+																		 
+mods.extendedcrafting.TableCrafting.addShaped(2, <ae2stuff:grower>, 
 	[[<ore:scrapIngot>, <projectred-core:resource_item:104>, <appliedenergistics2:quartz_growth_accelerator>, <projectred-core:resource_item:104>, <ore:scrapIngot>],
 	[<bloodmagic:slate>, <botania:managlass>, <appliedenergistics2:part:16>, <botania:managlass>, <bloodmagic:slate>],
 	[<appliedenergistics2:quartz_growth_accelerator>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:chest>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_growth_accelerator>],
@@ -100,11 +101,13 @@ recipes.remove(<appliedenergistics2:crafting_unit>);
 recipes.addShaped(<appliedenergistics2:crafting_unit>, [[<botania:manaresource>, <bloodmagic:slate>, <botania:manaresource>],
                                    				         [<appliedenergistics2:part:16>, <ore:magicalPearl>, <appliedenergistics2:part:16>],
                                      				         [<ore:scrapIngot>, <bloodmagic:slate>, <ore:scrapIngot>]]);
+
 // Change recipe for the Security Terminal
 recipes.remove(<appliedenergistics2:security_station>);
 recipes.addShaped(<appliedenergistics2:security_station>, [[<theaurorian:ceruleaningot>, <appliedenergistics2:material:24>, <theaurorian:ceruleaningot>],
                                    				                [<appliedenergistics2:part:16>, <ore:magicalPearl>, <appliedenergistics2:part:16>],
                                 				                [<theaurorian:moonstoneingot>, <appliedenergistics2:chest>, <theaurorian:moonstoneingot>]]);
+
 // Change recipe for ME Chest
 recipes.remove(<appliedenergistics2:chest>);
 recipes.addShaped(<appliedenergistics2:chest>, [[<theaurorian:aurorianglass>, <appliedenergistics2:part:180>, <theaurorian:aurorianglass>],
@@ -114,6 +117,7 @@ recipes.addShaped(<appliedenergistics2:chest>, [[<theaurorian:aurorianglass>, <a
 recipes.addShaped(<appliedenergistics2:chest>*2, [[<botania:managlass>, <appliedenergistics2:part:380>, <botania:managlass>],
                                       			                    [<appliedenergistics2:part:16>, <bloodmagic:slate:1>, <appliedenergistics2:part:16>],
                                     			                    [<ore:scrapIngot>, <ore:magicalPearl>, <ore:scrapIngot>]]);
+
 // Change recipe for ME Drive
 // Integrates with Blood Magic, Botania, and The Aurorian
 // Also whatever else is in that OreDict entry
@@ -121,14 +125,17 @@ recipes.remove(<appliedenergistics2:drive>);
 recipes.addShaped(<appliedenergistics2:drive>, [[<theaurorian:auroriansteel>, <appliedenergistics2:material:24>, <theaurorian:auroriansteel>],
                                  			              [<appliedenergistics2:part:16>, <bloodmagic:slate>, <appliedenergistics2:part:16>],
                                       			              [<theaurorian:auroriansteel>, <ore:magicalPearl>, <theaurorian:auroriansteel>]]);
+
 // Upgrade Chest to Drive
 // Integrates with Actually Additions, Botania, and Project Red
 recipes.addShaped(<appliedenergistics2:drive>, [[null, <projectred-core:resource_item:104>, null],
                                       			              [<ore:quartzDark>, <appliedenergistics2:chest>, <ore:quartzDark>],
                                    			              [<botania:manaresource:4>, null, <botania:manaresource:4>]]);
+
 // Convert regular Interfaces to Fluid ones
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:interface>, <botanicadds:mana_lapis>]);
 
+# Craft Processors with Crafting Runes
 // Order: Silicon, Logic, Calculation, Engineering
 recipes.addShaped(<appliedenergistics2:material:19>, [[null, <sccraftingrunes:itemcommonmat>, null],
                                  			                           [<sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>, <sccraftingrunes:itemcommonmat>],

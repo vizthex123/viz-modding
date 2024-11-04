@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "oroxious",
+    "category": "people"
+  },
+  "content": {
+    "title": "Oroxious the Bloody",
+    "body": "Very little is known about Oroxious, other than the fact he has an almost supernatural affinity with life essence.\nVery few species are able to be so attuned with the natural energy that flows within all of us, yet he treats it almost as second nature. He's a man of few words, shrouded in mystery.\nNo one knows much about Oroxious' true nature except Her Majesty, and I doubt very many ever will."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

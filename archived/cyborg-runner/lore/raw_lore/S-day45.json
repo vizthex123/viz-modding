@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "day45",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Day 45 Log",
+    "body": "We've stockpiled some Terracotta - it should be enough to build the teleporter. Even gathered some extra Clay just in case it needs more than we thought. Going to test it within the hour.\nWe lost a member today.... can't believe the outbreak got him.\nMyself and the last survivor haven't turned yet, so I don't think we're infected - but only time will tell. Either way, we need to leave this planet before it gets any worse.\nIf anyone's reading this, good luck. The next world may not be so forgiving."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

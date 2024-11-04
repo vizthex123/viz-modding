@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge4",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page IV",
+    "body": "Due to this, our people had to build prisons to trap not only stray necromancers; but Moon Queen loyalists.\nNeeding some extra security, they posted guards clad in great armour, and with the training to match. They populated the lower floors with corrosive slimes, whose sole purpose was to destroy anyone trying to get in, or out.\nAnd for a time, it worked. There was an uneasy peace in the realm.\nAt least, for a year’s time…"
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

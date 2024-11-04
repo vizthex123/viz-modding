@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "deep-dark",
+    "category": "locations"
+  },
+  "content": {
+    "title": "A Realm Unspoken",
+    "body": "If any are reading this, you must not seek this place. It is far too dangerous for even the great hunters of myth.\nThis realm is a place unspoken, for it is so dangerous that none who seek it ever return. It is full of the greatest of threats, even though they masquerade as regular undead. Some say the darkness itself will try and consume any adventurer who goes there."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

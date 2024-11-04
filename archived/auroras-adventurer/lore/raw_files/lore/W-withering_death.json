@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "withering_death",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Curse of Withering Death",
+    "body": "Legends tell of an ancient curse, bound to the Nether Realm. It is said that this curse would corrupt the very bones of whoever caught it, rendering them a mere husk of what they once were.\nNow usually, a mixture of people is what one would expect to see. People from all walks of life, young and old, healthy and dying; succumbing to the curse and withering away.\nBut it seems this curse was more…. selective - It would only affect those of the elite guard in training. And these were no ordinary fighters, mind you; they were training to become part of the Moon Queen’s elite force.\nBut - as all things do - this too has fallen into obscurity. Now a mere myth; when it was once feared across the entire land."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

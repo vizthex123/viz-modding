@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "forgebrow",
+    "category": "people"
+  },
+  "content": {
+    "title": "Forgebrow the Dwarf",
+    "body": "Forgebrow is the dwarven blacksmith in charge of the army's weapons supply and all things related to it.\nDespite officially holding the title of \"Doctor\", he hates being called that; though no one but he is quite sure why. (Though I speculate it’s because the title of \"doctor\" only refers to the ones who practice medicine in dwarven culture, and he is not very fond of medical equipment)\nBeing a dwarf (and a trained blacksmith), he has a natural affinity for forges, weapon crafting, and even enchanting.\nHe is the foremost authority on all things related to metal working, and as such is the Queen’s first choice whenever she requires his skills.\nHe holds great pride in his dwarven heritage, and it shows by his seemingly constant need to explain all the intricate details about metalworking and dwarven engineering.\nHe and Oseille don't get along very well though, (due to the natural millennia-long hatred between dwarves and elves) but they can stifle that long enough to work together for brief periods of time."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

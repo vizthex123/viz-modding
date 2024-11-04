@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "tower-golem",
+    "category": "world"
+  },
+  "content": {
+    "title": "Ancient Tower Golems",
+    "body": "During the time of the Ancient War, the Necromancers constructed great machines to fight for them.\nThey referred to these constructs as \"Tower Golems\", and placed them all over their great defensive towers.\nThese golems were well-built, hard to slay, and hard to survive a hit from. They slaughtered thousands of our ancestors’ protective mages.\nThese towers remain standing in their prime to this day, their guardians waiting for someone to challenge them."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

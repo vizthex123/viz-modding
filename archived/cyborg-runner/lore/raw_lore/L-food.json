@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "food",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #2: Food Shortages",
+    "body": "Captain's Log, entry 2.\nIt's been three days since the crash, the computer has finally finished implanting my new leg. I barely managed to ration out my food for this long. I need to find some on this planet.\nBut from the looks of things, that won’t be an easy task… it seems like an incredibly hostile jungle out there. I don’t think any sort of prey animal lives for very long on this rock.\nI could farm something, but I doubt I’d be able to find any seeds. Doesn’t seem like I’ll have a shortage of dirt though.\nI’m just hoping I can make it until the rescue team comes. They should’ve been dispatched by now, though there’s no telling how far out they are… or what my last known location was.\nThat’s it for now, I suppose. I just want some food…"
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

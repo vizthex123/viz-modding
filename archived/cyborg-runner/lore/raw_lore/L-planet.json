@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "planet",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #4: This Planet",
+    "body": "Captain's Log, entry 4.\nIt's been at least a month, maybe? Since I crashed here.\nWith minimal supplies.\nAnd no spare food.\nI’ve been trying my best to survive out here, but it’s been tough.\nAll kinds of monsters are everywhere I turn, and there's very little in the way of useful supplies. My databanks said I could make a circuit out of one of the melons that grows here. No idea how it's possible, but, hey - if the computer says so, then it must work, right?\nI’ll make another log when I can, but I’m running out of space on this old L-Drive. Curse me for not upgrading to a Q-Drive when I could…"
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

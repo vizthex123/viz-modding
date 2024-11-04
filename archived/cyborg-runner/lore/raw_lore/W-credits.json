@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "credits",
+    "category": "world"
+  },
+  "content": {
+    "title": "Credits",
+    "body": "The Standard Sol Credit (SSC) was first minted just a few short years after the Sol Colonies were granted independence in order to standardize currency across the entire system to facilitate easier trade, tourism, etc. by the newly formed Sol System Currency Council (SSCC)\nAfter humanity reached further into the universe, they were rebranded to the Standard Galactic Credit (SGC v3.0, colloquially known as \"Credits\"), with the original Sol Credit Chips now being a valuable collector's item.\nDue to the limited usecases outside of colonized systems, Standard Galactic Credits tend to be scarcer in remote systems, with merchant ships frequently getting raided by pirates originating from remote systems"
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

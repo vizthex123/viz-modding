@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge1",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page I",
+    "body": "This ancient text tells of a time long ago, before the Abandonment. Before our people had to run and hide like common prey.\nYou will have to reconstruct it though, as it is so old decay has begun to set in.\nI possess a copy of the first page, and will gladly share it with you.\nIn ancient times, there was a great battle. Fought not with swords and bows, but with magic and golems.\nIt was not a war fought for resources or land, but one of ideology. This was very close to the start of the great Aurorian Kingdom, a time of great prosperity and peace.\nOne faction believed that Necromancy was the answer to their problems. After all, why let all those bodies rot when you can use them for labour?\nThe other, however, did not - and wanted to respect the dignity of those who had passed.\nThis simple disagreement is what caused the largest conflict in our recorded history to begin."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

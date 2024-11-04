@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "wessex",
+    "category": "people"
+  },
+  "content": {
+    "title": "Dr. Marlow Wessex",
+    "body": "Dr. Wessex helped pioneer the invention of cybernetics, and was a key proponent of the Cyborg Rights Movement.\nHe's been awarded multiple prizes, chief of which was a Nobel Peace Prize - the last person to receive one of those before its rebranding.\nHe's the one who helped me when I first came to him, practically begging for cybernetics to replace my near-destroyed limbs and organs."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

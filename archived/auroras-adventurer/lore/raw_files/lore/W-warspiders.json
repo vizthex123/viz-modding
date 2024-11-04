@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "warspiders",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Ancient Warspiders",
+    "body": "During the time of The Ancient Battle, there was a third faction our ancestors had to fight: the Warspiders.\nThese were giant spiders, bred for battle. Riders would mount them as they would a horse, and charge into battle. Sometimes climbing up walls, or hanging from ceilings; waiting to ambush any unsuspecting warrior.\nThankfully, they proved a great distraction for the Necromancer’s forces. Some of our ancestors even had their own Warspider mounts, and some of the weaker Necromancers would as well.\nAfter the battle, the few spiders tamed rebelled against their masters; and after a short skirmish were locked away by our ancestors.\nOver time, their existence had faded into myth. Simply another relic of the Ancient Battle, an old tale parents would tell their children to keep them in line.\nBut, some travellers would sight the spiderlings. Young warspiders who simply needed to grow, given time.\nI am sure their queen lurks in the depths of the ancient Darkstone Prisons, creating more of her kind; lying in wait to spread her spawn across the land."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

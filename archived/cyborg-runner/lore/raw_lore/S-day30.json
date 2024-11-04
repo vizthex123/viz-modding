@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "day30",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Day 31 Log",
+    "body": "It's now been a month since the outbreak.\nThe dome is coming along fairly well. Glad I found some other survivors.\nWe've located some blueprints for an escape teleporter- but it will need a decent amount of Terracotta. Clay isn't very common here, so we've gone scouting for more.\nHoping to get enough to make the teleporter... and have some left over in case anything goes wrong."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

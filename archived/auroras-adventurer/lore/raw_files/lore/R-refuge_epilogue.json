@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge8",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Epilogue",
+    "body": "Now you know our history, Adventurer.\nYou’re one of the few to have re-constructed the entirety of the last refuge, our most important document.\nI hope to one day find this near-mythical group of our ancient ancestors, just to meet them. To ask if they remember this dark time as we do.\nBut, I doubt that would be possible… especially due to how old I’ve been getting as of late…\nPerhaps you could do it for me, Adventurer? Meet our ancestors, and tell them that we remember?"
+  },
+  "sortingIndex": 7,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

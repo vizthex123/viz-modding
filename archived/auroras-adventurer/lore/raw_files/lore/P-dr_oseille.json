@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "oseille",
+    "category": "people"
+  },
+  "content": {
+    "title": "Dr. Haewyn Oseille",
+    "body": "Dr. Haewyn Oseille is the half-elf researcher in charge of all things related to nature, due to her natural affinity (and fondness) for plants.\nShe tends to ramble on and on almost endlessly, but most people are too polite to say anything to her.\nShe's been in the Queen's service for many years, and as such is highly trusted.\nShe's advised the Queen on multiple medical matters, as well as attending to her when Her Majesty falls ill.\nShe generally gets along well with everyone due to her upbeat nature (though due to dwarves' and elves' natural hatred of each other, she doesn't work very well with Forgebrow), and is rarely one to complain without at least offering a possible solution."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "nether",
+    "category": "locations"
+  },
+  "content": {
+    "title": "A Hellish Place",
+    "body": "The Nether Realm is a dark, hellish place; with a flaming floor, fiery foes, scorched remains, and many unknown things yet to be discovered.\nThis place has long been the subject of many legends: great tales of heroes, epic journeys, and nigh-unkillable foes. It can become the foundation of your legend, too; if you survive."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

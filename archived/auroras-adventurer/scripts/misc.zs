@@ -207,8 +207,8 @@ recipes.addShaped(<shipwrecks_winslow:diving_boots>.withTag({ench: [{lvl: 3 as s
                            				               [<minecraft:potion>.withTag({Potion: "minecraft:water_breathing"}), <ore:gemValuable>, <minecraft:potion>.withTag({Potion: "minecraft:water_breathing"})],
                                				               [<ore:ingotInvar>, <minecraft:iron_boots>, <ore:ingotInvar>]]);
 
-// Replace Adventurer's Backpack with Woven one in the regular recipe
-// Basically only because 15 slots is not enough for a Backpack designed to carry non-stackable items
+// Replace the Adventurer's Backpack with the Woven one
+// Basically only because 15 slots is not enough for a Backpack I've decided should carry non-stackable items
 recipes.remove(<forestry:adventurer_bag>);
 recipes.remove(<forestry:adventurer_bag_t2>);
 recipes.addShaped(<forestry:adventurer_bag_t2>, [[<ore:string>, <ore:blockWool>, <ore:string>],
@@ -240,7 +240,7 @@ recipes.addShaped(<marblecraftingtable:marble_crafting_table>, [[<ore:dyeWhite>,
 recipes.addShapeless(<loreexpansion:lore_journal>, [<minecraft:book>, <minecraft:paper>]);
 
 // Convert Books to Books
-// Because for some reason randomly named ones generated for me and NBt data is annoying
+// Because for some reason randomly named ones generated for me and NBT data is annoying
 recipes.addShapeless(<minecraft:book>, [<minecraft:book>]);
 
 // Miner's Ring (Baubles) recipes

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "queen-aurora",
+    "category": "people"
+  },
+  "content": {
+    "title": "The Queen",
+    "body": "Her Majesty, Queen Aurora IV.\nThe current ruler of the Aurorian, she's been in charge longer than I can remember.\nDespite what some of her opposition thinks, she's actually done quite the job handling our homeland.\nShe's been able to maintain the ancient dungeons holding the Necromancers, as well as keeping the peace of the land; and improving our economy.\nLong live the Queen!"
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

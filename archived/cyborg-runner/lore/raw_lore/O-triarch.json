@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "triarch",
+    "category": "organizations"
+  },
+  "content": {
+    "title": "Triarch Construction",
+    "body": "Triarch is the go-to manufacturer for spaceships, shuttles, and most other things\nFounded on the princapels of high-quality, affordable parts, they haven't strayed too far from their foudner's original intent.\nI seem to have stolen one of their ships, and they were kind enough to include an operation manual alongside it."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

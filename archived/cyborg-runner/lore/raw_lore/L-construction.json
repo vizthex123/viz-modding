@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "construction",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #7: Construction Begins",
+    "body": "Captain’s Log, entry 7.\nI’ve been working on that ship for about 2 years now, and it’s been going…. not great, honestly. I did manage to cobble together a barely-functional ship AI, but it’s not very efficient. Keeps using all the power I can generate.\nMost of the internals are done, but all the circuitry is going to be a pain to get. It seems there’s almost nothing here that I could use (other than those melons - but there’s no way they’ll be powerful enough to fly a ship).\nI’ve been trying to find alternatives, but the ship’s AI hasn’t been much help, and I don’t know the first thing about how to design my own circuits.\nI’m hoping to find some usable spares in a few of these wrecks, but my hopes aren’t set very high."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

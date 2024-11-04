@@ -1,0 +1,14 @@
+{
+	"key": {
+		"id": "not_them",
+		"category": "survivor_diaries"
+	},
+	"content": {
+		"title": "Get Inside!",
+		"body": "Quickly, everyone get inside!\nWe can't dally now, get in the house!\nBut father, why?\nDo you not see them outside?! They've gone mad, the lot of them!\nThe village isn't safe anymore, we have to get what we can and go.\nI'll write a brief note here, detailing what's going on. Hopefully whoever finds it gets out alive..."
+	},
+	"sortingIndex": 3,
+	"requirements": [],
+	"autoAdd": false,
+	"defaultLore": false
+}

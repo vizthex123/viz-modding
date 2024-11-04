@@ -1,0 +1,113 @@
+Botania Mana Pools can hold 1,000,000 Mana maximum
+
+Internal ID for Creating Tables:
+biggercraftingtables:biggercreatingtable:0 - 2
+
+How to use tellraw:
+Make sure it's a team reward
+/tellraw @p {"text":"MSG", "color":"aqua"}
+
+
+
+Aqua: Queen Aurora
+Gray: Dr. Akashic
+Blue: Forgebrow
+Green: Oseille
+Dark Purple: Azoless
+Dark Green: Aryana
+Dark Blue: Interdem
+Gold: Artemis
+White: The Archivist
+Dark Red: Oroxious
+Light Purple: Eir
+
+
+CHARACTERS:
+
+[M] Dr. Akashic - Main researcher, straight-forward but not rude. Creator of the Akashic Tome.
+[F] Queen Aurora - Basically abducted you. Mysterious & unknown; but the loyalty of her subjects makes her seem trustworthy and noble.
+[F] Dr. Haewyn Oseille (OH-si-ehl) - Half-Elf Botania researcher, always excited, upbeat, and talks way too much sometimes
+[Male Demon] Oroxious the Bloody - Blood Magic wizard. Mysterious and reserved. Revealed as a demon later down the line (spoilers!)
+
+[M] Archmage Interdem - ElectroBlob's Wizardry researcher. Also an alchemist.
+[Unknown] Azoless, Twilight Guide - Resident of the Twilight Forest. No one has seen them before, and doesn't know if they're male or female. Many speculate they're some type of magical creature though. (True identity revealed at the end of the Twilight Forest quests)
+- Talks about itself in third person
+-- Highly trusted by the Queen
+--- Former King of Twilight
+
+[M] {Dr.} Forgebrow - Dwarf in charge of all technology-related research. Hates being called Doctor. Generally cheerful. Loves to tell people about gemstones and Dwarven engineering.
+[F] Artemis - Manages the shops. She'll inform you of "good deals" that may arise. Sometimes tries to annoy people, especially Forgebrow. Totally not a reference.
+[F] Aryana - Drya in charge of Elementaristics
+[F] Eir - Falen Valkyrie who helps you overthrow the Valkryie Queen. She wants to be accepted by them again.
+
+
+[M] The Archivist - Meticulously cataloges every scrap of information about the kingdom and its inhabitants. Very reclusive.
+
+
+Character Relationships:
+
+Forgebrow and Oseille don't get along well, since Dwarves and Elves hate each other
+Akashic works well with everyone, but can have difficuly with Azoless (since they only communicate over interdimensional mail, which is inefficient)
+(Archmage) Interdem works fine with everyone, even bettter with Oseille {since they both cover magic}
+
+Azoless doesn't really care as much about interpersonal relationships, but does work fine enough with everyone (especially Oseille, (Archmage) Interdem, and Oroxius, since they're in charge of the magical things)
+
+The Librarian is known, yet nothing is known about them
+
+Atremis loves teasing Forgebrow by calling him "Doctor" (which he hates)
+Forgebrow doesn't actually mind, but he pretends to be annoyed
+
+
+EXTRA INFO:
+
+Aurum - Currency of the Aurorian
+The Abandonment - A time when the ancient Aurorians escaped the Necromancers
+The Ancient Battle - A great war that took place between the Aurorians and the Necromancers
+
+
+QUEST SHAPES:
+
+Circle - Default shape
+Diamond - Mob-related quests, or ones to gather lots of items. Near-exclusive to "Serving Her Majesty"
+Pentagon - Shop-style quests
+Hexagon - Exploration-related quests
+Octagon - (Mini-)Boss fights. Dialouge is always from the Queen (+ Azoless {as description} in Twilight quests). Regular bosses are size 2, "mid-tier" (mini) bosses (like the Runestone Guardian) are 1.5
+Square - All technology-related things
+Rounded Square - Magic Stuff
+Heart - Health-related things (currently near-unused, might never be used)
+Gear - Info, uses the Questgiver Mark Botania bauble as icon by default.
+
+
+
+DIMENSION IDS: (Default ID)
+(This is so I can try to make them increase numerically and just in case something crashes)
+
+Deep Dark: -3 (-11325)
+Quantum Quarry:-2 (-9999)
+Nether: -1
+Overworld: 0
+End: 1
+Spatial Pylon: 2
+Aurorian: 3 (424)
+Twilight Forest: 4 (7)
+Hunting: 5 (25)
+Daedalus Labyrinth: 6 (1024)
+Aether: 7 (4)
+
+
+RC Structures:
+
+Boat Thing 2.0 - https://complex.ivorius.de/submissions/88
+Large Village Library - https://complex.ivorius.de/submissions/59
+HobbitHole - https://complex.ivorius.de/submissions/30
+
+Abandoned Building With Big Dungeon Tree - https://complex.ivorius.de/submissions/79
+TwoStoryDungeon - https://complex.ivorius.de/submissions/35
+Endwatcher - https://complex.ivorius.de/submissions/50
+
+Water Temple - https://complex.ivorius.de/submissions/90
+Ocean Ruin - https://complex.ivorius.de/submissions/92
+
+The Mushroom Oak - https://complex.ivorius.de/submissions/73
+
+https://complex.ivorius.de/users/338

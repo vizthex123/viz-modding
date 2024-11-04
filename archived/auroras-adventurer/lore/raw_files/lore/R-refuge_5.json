@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge5",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page V",
+    "body": "After the first Year of Peace, our ancestors held a great festival to celebrate their escape from the forces of evil.\nBut, it was all in vain. The Necromancers raised their armies once again; the sounds of celebration attracting their bloodhounds to our ancestors’ refuge. This peace - thought to last forever - had vanished in just one years’ time.\nAnd so, our people escaped again. They constructed another portal in secret, hundreds of mages and warriors gave their lives so the rest could escape; and hopefully rebuild their realm."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

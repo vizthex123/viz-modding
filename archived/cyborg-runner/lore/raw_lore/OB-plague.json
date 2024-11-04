@@ -1,0 +1,19 @@
+{
+  "key": {
+    "id": "plague_theory",
+    "category": "observations"
+  },
+  "content": {
+    "title": "Theory: Plague",
+    "body": ""
+  },
+  "sortingIndex": 1,
+  "requirements": [
+    {
+      "id": "village",
+      "category": "world"
+    }
+  ],
+  "autoAdd": false,
+  "defaultLore": false
+}

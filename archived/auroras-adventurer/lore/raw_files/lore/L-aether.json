@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "aether",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The City Above the Clouds",
+    "body": "High above the clouds sits a great city, one of myth and legend; full of flying creatures, sky whales, Valkyries, and even living clouds.\nIt is said that our ancestors tried to flee here after their defeat in the Ancient War, but the Necromancers caught up with them and laid waste to the land.\nAn enchantment was placed upon it shortly afterwards, to hide the realm and protect it from outside threats\nDue to this, the place is known only to a few, and even fewer know how to get there. But if you can make the journey; you will surely be rewarded with all manners of treasure; and maybe some insight as to what happened during that ancient battle."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

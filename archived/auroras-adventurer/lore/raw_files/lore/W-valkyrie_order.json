@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "valkyrie-order",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Valkyrie Order",
+    "body": "The Valkyries have always been a proud race, mythically revered for centuries due to their strength and prowess in battle.\nTheir most elite fighters are known as the Valkyrie Order, and members of it carry a lofty title - \"Valkyrie Protector\". Those who bear this title are known to be ruthless in battle, with skills almost surpassing those of the war god.\nThey are one of the oldest all-female warrior sects in existence, along with the Amazons and ancient guard order of the Aurorian Queen.\nNo one is quite sure why all Valkyries born are women, or if it’s a knowledge so old it's been lost to time\nValkyries have guarded over the Aether Realm for millennia, and occasionally venture down to the mortal realm for reasons known only to them."
+  },
+  "sortingIndex": 8,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

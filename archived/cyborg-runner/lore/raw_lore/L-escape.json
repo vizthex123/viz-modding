@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "escape",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #10: Escape",
+    "body": "Captain’s Log, final entry.\nThe launch worked! There were some strange noises (and I thought for sure it would fail), but it WORKED!\nI managed to make it into space, finally escaping this stupid jungle. But… it ended there.\nI wasn’t able to make it past low orbit alongside the few random chunks of my ship that blew off.\nI almost got there, but it just… didn’t work. The circuits got fried, and I doubt I’ll be able to fix it - especially since I used the best materials available here to make them.\nI guess I’m just… doomed to stay here. Wasting away until a rescue ship arrives.... or until I die. I highly doubt anyone would venture this far out, though. There’s just… nothing here. A few random ore deposits, sure - but you can find much more on other worlds\nI still don’t know why my ship chose this planet out of all of them, but I doubt I’ll ever find out now.\nI suppose this is goodbye, then. To whoever is reading this: If you haven’t brought some good circuits with you (or can't improvise something decent with whatever's nearby), you’ll be doomed like I am.\nUnless you have a long-range contact beacon of some sort, I doubt we’ll ever escape this place.\nI hope these logs helped you, in some way. At least it gave you something to pass the time while trying to survive, right?"
+  },
+  "sortingIndex": 9,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

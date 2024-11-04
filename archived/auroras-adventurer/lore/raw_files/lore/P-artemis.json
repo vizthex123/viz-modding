@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "artemis",
+    "category": "people"
+  },
+  "content": {
+    "title": "Artemis, Hunter of Deals",
+    "body": "Artemis is an interesting one, to say the least.\nNamed after the ancient goddess of the hunt, she (sort of) lives up to it by hunting for good deals on all kinds of exotic goods.\nFor the Queen has appointed her as the chief merchant of the realm. Artemis has lived up to this post, boosting the economy of our realm fivefold.\nBut she also has her moments of downfall. She will accept anything presented as a good deal, and as such may request you sell rotten flesh or spider eyes to some poor soul.\nShe’s also quite young, and hasn’t yet been taught of the Ancient War. Be sure to avoid any Necromancers that purchase things from you, as they may repay you with death."
+  },
+  "sortingIndex": 8,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

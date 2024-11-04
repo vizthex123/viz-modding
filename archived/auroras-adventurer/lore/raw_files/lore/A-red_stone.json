@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "philo-stone_failed",
+    "category": "ancient_alchemy"
+  },
+  "content": {
+    "title": "The Failed Replica",
+    "body": "Many have heard of the legend of the Philosopher’s Stone, and even more have tried to replicate its power. All of them failed, as the alchemist who discovered the stone refused to share the secret of how to make one.\nEventually, the failures were combined with a diamond (those without access to one discovered you could use other rare and valuable gems) and dubbed the Red Stone.\nWhile it wasn’t as powerful as a Philosopher’s Stone, it was still capable of transmuting many things; and the alchemists were content with that. For the time being."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

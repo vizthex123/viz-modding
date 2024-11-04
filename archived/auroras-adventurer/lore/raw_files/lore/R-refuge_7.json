@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge7",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page VII",
+    "body": "Perhaps though, it’s for the better. Perhaps our ancestors are still in hiding; waiting for a time to safely return.\nWaiting for the Dragon Tyrant to be slain, and the Necromancer’s powers to fade into oblivion.\nWaiting for the great hero of legend to arise, take up the mantle; and slay our ancestors’ ancient foe."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

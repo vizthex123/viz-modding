@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "not_me",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Not Me!",
+    "body": "No, I can't allow this. I won't allow this! I will not DIE here, in this HOVEL!\nI must get back to my city. Surely there's something here that I can use to get back... there must be... there has to be....\nI have to get back… I have to… get… back…\nI should've joined that other group when I had the chance..."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

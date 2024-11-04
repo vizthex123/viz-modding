@@ -5,7 +5,7 @@ print("Loading quarries.zs...");
 
 // Add upgrade recipe for the Quantum Quarry
 recipes.remove(<extrautils2:quarry>);
-mods.biggercraftingtables.Big.addShaped(<extrautils2:quarry>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <extrautils2:quarry>, 
 	[[<minecraft:end_stone>, <minecraft:end_stone>, <ore:highTierPickaxe>, <minecraft:end_stone>, <minecraft:end_stone>],
 	[<minecraft:end_stone>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <minecraft:end_stone>],
 	[<ore:highTierPickaxe>, <extrautils2:decorativesolid:7>, <buildcraftbuilders:quarry>, <extrautils2:decorativesolid:7>, <ore:highTierPickaxe>],
@@ -17,6 +17,7 @@ recipes.removeShaped(<extrautils2:quarryproxy>);
 recipes.addShaped(<extrautils2:quarryproxy>, [[<minecraft:end_stone>, <minecraft:end_rod>, <minecraft:end_stone>],
                                       			             [<minecraft:end_stone>, <ore:highTierPickaxe>, <minecraft:end_stone>],
                                   			              [<ore:quartzDark>, <extrautils2:decorativesolid:7>, <ore:quartzDark>]]);
+														  
 // Change the recipe for the Fueled Quarry
 // Makes it a bit cheaper
 recipes.remove(<simplequarry:fuel_quarry>);

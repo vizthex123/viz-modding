@@ -1,0 +1,19 @@
+{
+  "key": {
+    "id": "improved_chip_theory",
+    "category": "observations"
+  },
+  "content": {
+    "title": "Improved Theory: Credit Chips",
+    "body": "toilaries"
+  },
+  "sortingIndex": 3,
+  "requirements": [
+    {
+      "id": "credits",
+      "category": "world"
+    }
+  ],
+  "autoAdd": false,
+  "defaultLore": false
+}

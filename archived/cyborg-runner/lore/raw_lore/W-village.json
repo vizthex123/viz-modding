@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "village",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Village of Desh'tra",
+    "body": "[Archived log, c. [REDACTED] - approximately 50 years before now]\nDesh'tra is a newly small village situated on the planet of TR-E-4, which was recently terraformed and colonized to test the viability of long-range colonies.\nAs of this log, the population consists only of the colony ship (500 individuals) and clones of genetic farm animal samples that were brought along (cows, pigs, sheep, etc.)\nColonization efforts are progressing nicely, with everyone voting to name the colony \"Desh'tra\" and call it a \"village\", unpacking some of the pre-fab housing, and constructing other basic necessities we didn't anticipate until landing.\nWe expect colonization procedures to be fully completed within the next few years, with phase 2 of the colonization guidelines to begin shortly afterwards."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

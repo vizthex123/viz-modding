@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "hunting-dim",
+    "category": "locations"
+  },
+  "content": {
+    "title": "Hunter's Dream",
+    "body": "Tales of old tell of great hunters, using their swords, bows, and sheer will to carve their prey. Some are said to have fought in the ancient war that led to the Abandonment of the Aurorian, long since faded into myth.\nThese legends also speak of a special realm, made for hunters by the great ones of old.\nHow to find it though, is a mystery. Not even the most ancient of scholars knows how to do that."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

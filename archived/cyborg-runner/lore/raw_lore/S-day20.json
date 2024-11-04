@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "day20",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Day 20 Log",
+    "body": "Almost a month since the outbreak. Supplies are running low, and we've barely been able to scavenge a day's worth of food each time we venture outside.\nThe areas beyond the village have been barely accessible, and only have a handful of useful materials. We keep finding spare armour, weapons, and even tools. Useful for gathering supplies, but they're not edible...\nI did find a basic communications beacon though. Seems like it only connects to a single market world, but they've been able to sell us a few supplies with what little money we had left.\nHoping we can find a way out soon."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

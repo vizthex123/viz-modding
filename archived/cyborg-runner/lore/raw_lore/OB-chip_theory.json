@@ -1,0 +1,23 @@
+{
+  "key": {
+    "id": "chip_theory",
+    "category": "observations"
+  },
+  "content": {
+    "title": "Theory: Credit Chips",
+    "body": "I have formulated a theory about the reasons the various creatures I've faced have dropped Credit Chips.\nGiven the lack of civilization on this jungle planet, I believe most (if not all) of the humanoid entities were survivors from the village I crashed in who managed to escape their dying world through the teleporter one of them constructed - however, there's no way that many people would've lived in a single village, so I further postulate that whatever infected them either severely mutated most of the life on this planet, they somehow reproduced in great numbers while infected (or other planets were affected the by same plague (or a similar one)), at least some of which could have (theoretically, at least) found their way to this planet.\nBased on the evidence I've gathered so far, I believe the latter to be true - especially since I've been able to establish communications with Wessex and SR-358, proving that this planet isn't as remote as I first thought."
+  },
+  "sortingIndex": 4,
+  "requirements": [
+	{
+      "id": "partial_chip_theory",
+      "category": "observations"
+    },
+	{
+      "id": "improved_chip_theory",
+      "category": "observations"
+    }
+  ],
+  "autoAdd": false,
+  "defaultLore": false
+}

@@ -45,35 +45,6 @@ mpearl.add(<rftools:infused_enderpearl>);
 mpearl.add(<botania:manaresource:1>);
 mpearl.add(<mysticalworld:pearl>);
 
-/*
-// OreDict Aurorian Steel and Glitch-Infused Items
-// For use in the Dark Matter armour/tool recipes
-// Replace with the cool item1|item2 method
-// So glad I can do that
-
-val darkh = <ore:darkHelmetMat>;
-val darkc = <ore:darkChestplateMat>;
-val darkl = <ore:darkLeggingsMat>;
-val darkb = <ore:darkBootsMat>;
-
-darkh.add(<theaurorian:auroriansteelhelmet>);
-darkh.add(<deepmoblearning:glitch_infused_helmet>);
-
-darkc.add(<theaurorian:auroriansteelchestplate>);
-darkc.add(<deepmoblearning:glitch_infused_chestplate>);
-
-darkl.add(<theaurorian:auroriansteelleggings>);
-darkl.add(<deepmoblearning:glitch_infused_leggings>);
-
-darkb.add(<theaurorian:auroriansteelboots>);
-darkb.add(<deepmoblearning:glitch_infused_boots>);
-
-val darks = <ore:darkSwordMat>;
-
-darks.add(<theaurorian:auroriansteelsword>);
-darks.add(<deepmoblearning:glitch_infused_sword>);
-*/
-
 // High-Tier Pickaxes
 // Classified as being capable of mining Obsidian and higher
 // Used for Quantum Quarry
@@ -237,6 +208,5 @@ scrapi.add(<theaurorian:umbraingot>);
 <ore:essence>.add(<elementaristics:essence:*>);
 <ore:foodFlour>.add(<aurorianitems:lavenderflour>);
 <ore:dyePurple>.add(<aether_legacy:aechor_petal>);
-
 
 print("3_OreDict.zs loaded");

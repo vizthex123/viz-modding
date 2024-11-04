@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "bloodmoon",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Blood-Red Moon",
+    "body": "The Blood Moon is a rare occasion in which everything will attack with greater ferocity than usual. Some claim that even the dead rise up to enact revenge on those who slew them.\nIt's been known to drive people mad, especially since you aren't able to get a good night's sleep whilst one rages outside.\nThe only options for survival are to wait it out, or fight your way through.... if you can survive the hordes."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

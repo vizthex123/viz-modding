@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "overworld",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Overworld",
+    "body": "The Overworld is the realm known to most creatures.\nUnlike the Aurorian, it isn't hidden from view; nor does it require you to construct a portal to get there. In fact, most people start there, thrust into a strange new realm rich in resources, but equally threatening.\nIt is said that the great hunters of old used this place as their sacred hunting grounds, until they found much more fertile land."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

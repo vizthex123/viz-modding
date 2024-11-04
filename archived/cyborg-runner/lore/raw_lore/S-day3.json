@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "day3",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "Day 3 Log",
+    "body": "It's been three days since the outbreak started, and a quarter of the village has already turned. I feel like I'm next...\nI've been gathering supplies from everyone's house, but some still remain. I can't carry everything, but I plan to go back soon.\nHere's hoping someone else survived.\nI'll need help to construct a proper quaratine dome, and although I could do it alone it'd go much faster if I had help."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

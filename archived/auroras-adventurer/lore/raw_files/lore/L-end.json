@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "end",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Void Lands",
+    "body": "Legends tell of a strange, unexplored area; known to few, and survived by even fewer. The great Ender Dragon rules this realm with an iron fist, and the few subjects who escape are prone to being killed while trying to get help for their kin.\nThe legends also tell of ancient cities only found on the very edges of this realm, full of the loot from times long past.\nMagical items, ancient scrolls of power, and strange monsters; said to use magic to disable their foes. All of this and more resides within this ancient and mysterious realm."
+  },
+  "sortingIndex": 8,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "setback",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #8: A Small Setback",
+    "body": "Captain’s Log, entry 8.\nIt’s only been a month since my last entry, but I’ve hit a major setback: None of these ships have usable circuits. I’ve ventured as far as I dare to, but none of my searches have turned up anything useful.\nI’ve scoured the databanks, and haven’t found much that I didn’t already know… until yesterday.\nDeep underground, I found a strange red dust imbued with power. I had the ship’s AI analyze it, and it found that this dust could be used to make a viable circuit - a basic one, to be sure; but it should be just enough to get me into orbit. My major setback is now more of a minor one!\nSadly though, this dust is rather scarce. I’m hoping to find just enough to make my replacement circuits, maybe a bit extra in case something fails - but my hopes aren’t exactly sky-high or anything.\nI just hope everything doesn’t get fried mid-launch. I might be able to do a controlled crash - but there’s almost no large bodies of water here, so it’d be…. difficult to recover, to say the least."
+  },
+  "sortingIndex": 7,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

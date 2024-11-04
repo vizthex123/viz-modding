@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "battle-towers",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Ancient Battle Towers",
+    "body": "During the time of the Ancient War, the Necromancers realized that height was a huge advantage to them.\nThey realized they could control their armies in relative peace if placed at a sufficient height, and constructed great towers to serve this purpose.\nAt the top of these towers, they had placed great golems and rooms of undead to defend them while they rained death upon our ancestors.\nMany of these towers still remain, taunting us with their mere presence.\nSome of them have fallen below the ground, but their guardians are still active. Lying in wait for an adventurer to challenge them."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

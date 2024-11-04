@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "twilight-palace",
+    "category": "locations"
+  },
+  "content": {
+    "title": "The Twilight Palace",
+    "body": "Long ago - when the realm of Twilight and Aurorian had just become one - a grand palace was constructed to commemorate the occasion.\nIt was called the Aurora Palace, and was visited by all the Aurorian Queens and Twilight Kings; both to conduct meetings, and as a place to relax and be free of the troubles of state.\nThis palace was always kept in top shape, and being located in the freezing cold tundra, had a natural barrier around it.\nBut all was lost when Queen Aurora’s eldest sister commandeered the place. She ran it into the ground, and infected it with monsters.\nNow, we must hope it may one day be reclaimed; and restored to its former glory."
+  },
+  "sortingIndex": 7,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

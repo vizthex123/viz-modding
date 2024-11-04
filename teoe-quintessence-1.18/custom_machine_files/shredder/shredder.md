@@ -12,8 +12,8 @@ Tiny Scrap: 1,000 RF (3 seconds)
 
 Full block: 2,000 (10 seconds)<br />
 Partial block: 1,500 (5 seconds)
-- Slab-style blocks are 1,000 (3 seconds)
-Items: 500 (2 seconds)
+- Slab-style blocks are 1,250 (3 seconds)
+Items: 1,000 (3 seconds)
 
 <br />
 

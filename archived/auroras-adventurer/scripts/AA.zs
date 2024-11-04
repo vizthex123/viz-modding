@@ -154,14 +154,15 @@ recipes.remove(<actuallyadditions:block_giant_chest_medium>);
 recipes.remove(<actuallyadditions:block_giant_chest_large>);
 
 // Small
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:block_giant_chest>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:block_giant_chest>, 
 	[[<ore:logWood>, <ore:plankWood>, <ore:chestWood>, <ore:plankWood>, <ore:logWood>],
 	[<ore:plankWood>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:plankWood>],
 	[<ore:chestWood>, <ore:ingotIron>, <theaurorian:moonstoneblock>, <ore:ingotIron>, <ore:chestWood>],
 	[<ore:plankWood>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:plankWood>],
 	[<ore:logWood>, <ore:plankWood>, <ore:chestWood>, <ore:plankWood>, <ore:logWood>]]);
+
 // Medium
-mods.biggercraftingtables.Huge.addShaped(<actuallyadditions:block_giant_chest_medium>, 
+mods.extendedcrafting.TableCrafting.addShaped(3, <actuallyadditions:block_giant_chest_medium>, 
 	[[<ore:plankWood>, <ore:logWood>, <ore:plankWood>, <ore:logWood>, <ore:plankWood>, <ore:logWood>, <ore:plankWood>],
 	[<ore:logWood>, <ore:ingotGold>, null, <minecraft:iron_bars>, null, <ore:ingotGold>, <ore:logWood>],
 	[<ore:plankWood>, null, <ore:ingotGold>, <minecraft:iron_bars>, <ore:ingotGold>, null, <ore:plankWood>],
@@ -169,8 +170,9 @@ mods.biggercraftingtables.Huge.addShaped(<actuallyadditions:block_giant_chest_me
 	[<ore:plankWood>, null, <ore:ingotGold>, <minecraft:iron_bars>, <ore:ingotGold>, null, <ore:plankWood>],
 	[<ore:logWood>, <ore:ingotGold>, null, <minecraft:iron_bars>, null, <ore:ingotGold>, <ore:logWood>],
 	[<ore:plankWood>, <ore:logWood>, <ore:plankWood>, <ore:logWood>, <ore:plankWood>, <ore:logWood>, <ore:plankWood>]]);
+
 // Large
-mods.biggercraftingtables.Giant.addShaped(<actuallyadditions:block_giant_chest_large>, 
+mods.extendedcrafting.TableCrafting.addShaped(4, <actuallyadditions:block_giant_chest_large>, 
 	[[<minecraft:planks>, <minecraft:log>, <minecraft:log>, <extrautils2:ingredients:11>, <minecraft:planks>, <extrautils2:ingredients:11>, <minecraft:log>, <minecraft:log>, <minecraft:planks>],
 	[<minecraft:log>, <ore:gemDiamond>, null, null, <minecraft:iron_bars>, null, null, <ore:gemDiamond>, <minecraft:log>],
 	[<minecraft:log>, null, <ore:gemDiamond>, null, <minecraft:iron_bars>, null, <ore:gemDiamond>, null, <minecraft:log>],
@@ -184,7 +186,7 @@ mods.biggercraftingtables.Giant.addShaped(<actuallyadditions:block_giant_chest_l
 
 // Chest to Crate upgrade
 recipes.remove(<actuallyadditions:item_chest_to_crate_upgrade>);
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_chest_to_crate_upgrade>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_chest_to_crate_upgrade>, 
 	[[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<theaurorian:silentwoodstick>, null, <ironchest:iron_chest:3>, null, <theaurorian:silentwoodstick>],
@@ -192,7 +194,7 @@ mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_chest_to_crate_u
 	[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>]]);
 
 // Alternate recipe
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_chest_to_crate_upgrade>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_chest_to_crate_upgrade>, 
 	[[<ore:logWood>, <minecraft:iron_bars>, <ore:stickStone>, <minecraft:iron_bars>, <ore:logWood>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<ore:stickStone>, null, <ironchest:iron_chest:3>, null, <ore:stickStone>],
@@ -201,7 +203,7 @@ mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_chest_to_crate_u
 
 // Small to Medium crate upgrade
 recipes.remove(<actuallyadditions:item_small_to_medium_crate_upgrade>);
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_small_to_medium_crate_upgrade>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_small_to_medium_crate_upgrade>, 
 	[[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<theaurorian:silentwoodstick>, null, <ironchest:iron_chest>|<ironchest:iron_chest:4>, null, <theaurorian:silentwoodstick>],
@@ -209,7 +211,7 @@ mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_small_to_medium_
 	[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>]]);
 
 // Alternate recipe
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_small_to_medium_crate_upgrade>,
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_small_to_medium_crate_upgrade>,
 	[[<ore:logWood>, <minecraft:iron_bars>, <ore:stickStone>, <minecraft:iron_bars>, <ore:logWood>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<ore:stickStone>, null, <ironchest:iron_chest>|<ironchest:iron_chest:4>, null, <ore:stickStone>],
@@ -218,7 +220,7 @@ mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_small_to_medium_
 
 // Medium to Large crate upgrade
 recipes.remove(<actuallyadditions:item_medium_to_large_crate_upgrade>);
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_medium_to_large_crate_upgrade>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_medium_to_large_crate_upgrade>, 
 	[[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<theaurorian:silentwoodstick>, null, <ironchest:iron_chest:1>, null, <theaurorian:silentwoodstick>],
@@ -226,7 +228,7 @@ mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_medium_to_large_
 	[<theaurorian:silentwoodlog>, <minecraft:iron_bars>, <theaurorian:silentwoodstick>, <minecraft:iron_bars>, <theaurorian:silentwoodlog>]]);
 
 // Alternate recipe
-mods.biggercraftingtables.Big.addShaped(<actuallyadditions:item_medium_to_large_crate_upgrade>, 
+mods.extendedcrafting.TableCrafting.addShaped(2, <actuallyadditions:item_medium_to_large_crate_upgrade>, 
 	[[<ore:logWood>, <minecraft:iron_bars>, <ore:stickStone>, <minecraft:iron_bars>, <ore:logWood>],
 	[<minecraft:iron_bars>, null, null, null, <minecraft:iron_bars>],
 	[<ore:stickStone>, null, <ironchest:iron_chest:6>, null, <ore:stickStone>],

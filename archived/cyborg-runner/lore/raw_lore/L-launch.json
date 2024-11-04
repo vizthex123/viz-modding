@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "launch",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #9: Take-Off",
+    "body": "Captain’s Log, entry 9.\nFinally, after all these years…. I’ve built my escape vessel.\nIt’s been at least, what, 5 years now? 6? With nobody to help or even talk to except my broken ship AI, and he’s not exactly the conversational type. I don’t even know how I’ve survived this long, but at this point… I don’t care anymore. I just want to leave.\nAnd now, I’m finally able to do just that… I can finally just… leave. I’ve lost so much - my leg, my sanity, probably some internal bits… but now, I can just leave it all behind. I can just…. look up to the sky, and know that I’ll be able to reach it.\nSo, I’ve prepared everything for launch. I’ve packed some provisions, spare gear, this log, and some spare materials I sourced from this planet. I think I’ve got everything now. Let’s hope it goes well.\nI won’t make another log until I escape this rock, or die trying. Wish me good luck, I’m going to need it."
+  },
+  "sortingIndex": 8,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

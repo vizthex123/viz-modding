@@ -41,7 +41,7 @@ StartupEvents.registry("item", e => {
     e.create("quicklime")
     e.create("quintessence").rarity("epic").maxStackSize(1).glow(true)
     //e.create("iridium_fuel_cell").rarity("rare").burnTime(51200).maxStackSize(4)
-    //e.create("artificial_dragon_egg").texture("kubejs:item/artificial_dragon_egg").rarity("epic").maxStackSize(1)
+    e.create("artificial_dragon_egg").texture("kubejs:item/artificial_dragon_egg").rarity("epic").maxStackSize(1)
     e.create("portal_catalyst").displayName("Twilight Portal Catalyst").tag("twilightforest:portal/activator").maxStackSize(1).rarity("uncommon").glow(true)
 
 })

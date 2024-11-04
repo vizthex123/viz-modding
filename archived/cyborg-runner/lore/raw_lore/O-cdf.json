@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "cdf",
+    "category": "organizations"
+  },
+  "content": {
+    "title": "The Cyborg Defamation Foundation",
+    "body": "Fredrick Defamont heads this organization, though it's more of a disorganized mob than the fierce mafia facade they put up...\nThey're composed of anyone who wants to join - provided they have a prejudice against cyborgs and aren't one themselves.\nWe couldn't gather much more than that before the squad got killed. Not being known gives you a huge advantage alongside the ability to easily dispatch anyone seeking information."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

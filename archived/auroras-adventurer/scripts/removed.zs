@@ -1,6 +1,7 @@
 # Removes recipes but leaves items in JEI
 /*
 recipes.remove(<>);
+recipes.removeByRecipeName("modid:recipename");
 */
 print("Loading removed.zs...");
 

@@ -1,0 +1,16 @@
+{
+  "key": {
+    "id": "ipc",
+    "category": "organizations"
+  },
+  "content": {
+    "title": "The IPC & IPF",
+    "body": "The Intergalactic Prison Complex is owned and operated by the Intergalactic Protection Force - known for how the higher-ups will abuse their power (and pay off anyone necessary) to ensure their domination of policing the system.\nI experienced that firsthand during my stay there, and am more than happy to have escaped. So many aren't able to...\nBut, I managed to make it out alive. Now, I must do my best to avoid them for as long as possible.\nIPF guards aren’t exactly known for being friendly, after all. I have to constantly watch my back for fear of getting surprised by one of them - even on a remote world like this."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false,
+  "trigger": null,
+  "action": null
+}

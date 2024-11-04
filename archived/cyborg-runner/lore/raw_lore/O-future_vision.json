@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "future_vision",
+    "category": "organizations"
+  },
+  "content": {
+    "title": "Future Vision",
+    "body": "Future Vision... that name spells doom or hope for many. They've got a near-monopoly on cybernetics, and have been clamoring for Dr. Wessex to join them for years due to his major advancements in the field.\nAlthough their products are good (I myself use their surgery chamber, after all), they've been the target of multiple lawsuits ranging from neglect to denial of service... and they turned me over to the authorities, so I don't hold a very high opinion of them."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

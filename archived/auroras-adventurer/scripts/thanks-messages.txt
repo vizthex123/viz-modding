@@ -1,0 +1,67 @@
+/tellraw @a {"text":"MSG",  "color":"aqua"}
+
+Character Colours:
+
+Aqua: Queen Aurora
+Gray: Dr. Akashic
+Blue: Forgebrow
+Green: Oseille
+Dark Purple: Azoless
+Dark Green: Aryana
+Dark Blue: Interdem
+Gold: Artemis
+Yellow: The Archivist
+Dark Red: Oroxious
+
+
+
+Queen (split in 2 because stupid character limits):
+
+Thank you, Adventurer. You have freed us from the great Dragon Tyrant. Consider your services to me completed. My subjects will now be able to roam free, without having to worry of this threat.
+
+But, others do remain....will you once again take up your sword, and slay our other foes?
+
+
+Akashic:
+
+Ah, the Adventurer prevailes! I am glad that you've survived, and thank you for your help.
+
+
+Forgebrow:
+
+Oh-ho, the great Adventurer has won the fight! And now, you earn the Dwarven title of Dragonslayer. It's a high honour, rarely bestowed to those outside of our clan; but you have earned it, Adventurer.
+
+
+Oseille:
+
+Thank you, Adventurer! My ancestors are also quite pleased. Now I can tend to my gardens in peace.
+
+
+Interdem:
+
+Ah, it seems the student has become the master. I thank you for your help, Adventurer. May your ventures into alchemy and wizardry prove fruitful.
+
+
+Artemis:
+
+Hey, you killed the big dragon! Thank you!!
+Be sure to stop by the shop!
+
+
+The Archivst:
+
+Ah, thank you; Adventurer. Now I can read my books in peace.
+
+
+Oroxious:
+
+Dragon.....dead.....? Work....in....peace?.....thank.....you....
+
+
+Azoless:
+
+I am now free to wander my realm. Thank you, Adventurer.
+
+Eir:
+
+Thank you, Adventurer. Aiding you in this quest has brought me one step closer to reclaiming my place among the Valkyries.

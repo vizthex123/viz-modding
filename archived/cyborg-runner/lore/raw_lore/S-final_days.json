@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "final_days",
+    "category": "survivor_diaries"
+  },
+  "content": {
+    "title": "My Final Days",
+    "body": "This is it. This is where I die.\nThe plague has ravaged our entire world. We thought ourselves invincible, but that was far from the truth... our entire civilization has crumbled to dust. Our great cities lay abandoned, destroyed by our own hubris.\nAnother group seems to have found an escape, and I regret not going with them when I had the chance.\nI write this as the monsters loom outside, waiting for yet another helpless meal.... I only wish I could've saved them..."
+  },
+  "sortingIndex": 6,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

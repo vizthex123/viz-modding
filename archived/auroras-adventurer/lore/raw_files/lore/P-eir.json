@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "eir",
+    "category": "people"
+  },
+  "content": {
+    "title": "Eir, Fallen Valkyire",
+    "body": "The Valkyries have always been a proud order, mythically revered for their strength and prowess in battle.\nThey’re quite secretive, but occasionally one will venture down to the mortal realm, with intent known only to she who left.\nI myself have met one such Valkyrie, named Eir. She was cast out of the Valkyrie Order for a crime she did not commit - attempting to assassinate the Valkyrie Queen.\nShe asked for a hearing with Queen Aurora to ask for her help, and the Queen responded by saying whoever the next Adventurer is would take up that mantle.\nYou have many tasks to accomplish if you wish to impress her, Adventurer. I suggest you do them with haste."
+  },
+  "sortingIndex": 9,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

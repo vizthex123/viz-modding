@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "awhile",
+    "category": "logs"
+  },
+  "content": {
+    "title": "Personal Log #5: It’s Been A While",
+    "body": "Captain's Log, entry 5.\nIt’s been…. A long time, to say the least. I haven’t bothered making more logs for a while now, but I figured I could archive at least a bit - just in case, you know?\nIn the past few months, I’ve noticed that the replacement leg has been failing. I’ve run some diagnostics, seems the issue is just dirt & dust building up, rather than some deep-seated structural failure.\nIt will still require some work (and materials) to repair, but at least I’ll still have a leg up on this place, haha…\nI hope someone groaned in pain at that. It would almost make all of this worth it."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

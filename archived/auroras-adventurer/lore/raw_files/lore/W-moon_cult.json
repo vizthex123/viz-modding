@@ -1,0 +1,15 @@
+
+{
+  "key": {
+    "id": "moon-cult",
+    "category": "world"
+  },
+  "content": {
+    "title": "The Cult of the Moon Queen",
+    "body": "The Moon Goddess has long been worshipped by the inhabitants of the Aurorian, and she has shined there for millennia.\nThere was even an ancient ritual we had when appointing a new Princess as Queen, in which we would invoke the Moon Goddess’ name during the ceremony to ensure fruitfulness upon the land, and wisdom upon the Princess.\nThe ceremony was halted shortly after one Princess became enamored with the power, driven mad by the attention and praise she received during it.\nLong after that, Queen Aurora's sister had begun to think she was the next avatar of the Moon Goddess - a blasphemy of the worst kind - and demanded to be worshipped as such.\nThese few worshippers soon became a cult; but thankfully a weak one whose influence rarely spread outside of the luxurious Moon Temples.\nBut be warned - though they may be a small force, they are more than willing to die for their Queen."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

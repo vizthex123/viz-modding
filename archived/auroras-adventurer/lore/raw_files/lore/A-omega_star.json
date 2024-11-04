@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "omega-star",
+    "category": "ancient_alchemy"
+  },
+  "content": {
+    "title": "Alchemical Apotheosis",
+    "body": "There’s an old myth of an evil alchemist wielding a Klein Star whose power dwarfed all others to destroy entire worlds.\nNot much is known of this alchemist, but the Star he wielded is known to all: The Omega Klein Star. Capable of storing massive amounts of matter, and unleashing it at will.\nIt’s unknown how the alchemist was able to make a Klein Star shoot out matter as if it were some type of Destruction Catalyst or Hyperkinetic Lens, but he did; and its effects were felt in many places.\nThankfully, this knowledge has long been lost - and it is best for it to remain that way."
+  },
+  "sortingIndex": 4,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

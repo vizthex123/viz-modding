@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "archivist",
+    "category": "people"
+  },
+  "content": {
+    "title": "The Archivist",
+    "body": "Greetings, Adventurer. I am the Archivist.\nI have served Her Majesty for many years, and have been tasked with giving you copies of my various tomes that cover a wide variety of topics.\nI hope that these brief descriptions of things will help you in some capacity. Do note that they are all from my perspective, so they may not cover everything you desire to know.\nSadly though, much has changed since the great Ender Dragon rose to power. It ravaged our lands, and forced us back into our ancestral home – the Aurorian.\nYou have been summoned here to help us slay the great beast, and restore our once prosperous kingdom to its former glory.\nI hope you see, Adventurer, that our hope lies with you. You must slay the Dragon Tyrant and her minions, as well as helping the Queen’s friends and subordinates with any troubles they may have."
+  },
+  "sortingIndex": 10,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

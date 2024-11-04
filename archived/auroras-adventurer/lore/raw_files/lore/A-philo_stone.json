@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "philo-stone",
+    "category": "ancient_alchemy"
+  },
+  "content": {
+    "title": "The Philosopher's Stone",
+    "body": "Legends tell of an ancient alchemist who discovered a way to manipulate the very nature of the world around him.\nIt’s said that he crafted an ancient relic with his own life essence, and named it the Philosopher’s Stone.\nIt allowed him to live for many years more than a normal man, but took a toll on his mind. Holding such great power in your hands was sure to corrupt any man, and he was no exception.\nAs the years passed, he grew more and more insane, losing fragments of his mind and soul. Many asked for the method he used to make the stone, but none got an answer.\nEventually, he died without passing on the secrets of the stone. Now, it has faded into myth; with few left who know its secrets."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

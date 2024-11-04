@@ -1,0 +1,16 @@
+{
+  "key": {
+    "id": "black_market",
+    "category": "organizations"
+  },
+  "content": {
+    "title": "The Black Market of SR-358",
+    "body": "SR-358's reputation as a hive for scum and villainy of all kinds precedes it by lightyears. Some smugglers flat out refuse to travel to it for fear of their lives. They deal in all manner of wares - food, scouting supplies, even cybernetics - and although the sale of cybernetics isn't fully illegal, some systems still outlaw them - leading to the foundation of this market, hidden from everyone who isn't provided with the exact coordinates (or communication beacon).\n\nDue to visitors coming from all corners of the universe, the market will accept any form of currency and exchange it for the correlating amount of standard Galactic Credits."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false,
+  "trigger": null,
+  "action": null
+}

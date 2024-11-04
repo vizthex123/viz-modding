@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge3",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page III",
+    "body": "They constructed great temples to worship our Moon Goddess, with a ceremony where the princess was crowned as the queen in the goddess’ name.\nBut as time passed, one princess became corrupted with power; and thought herself to be the real Goddess of the Moon. She became the first Moon Queen; and ruled the land with an iron fist, never seeking to return us to our great time of peace and prosperity."
+  },
+  "sortingIndex": 2,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

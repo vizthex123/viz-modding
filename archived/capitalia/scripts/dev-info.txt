@@ -1,0 +1,23 @@
+Info for the modpack dev.
+You shouldn't be reading this!
+
+
+Quest Shapes:
+Circle - Default
+Square - Technology
+Diamond - Weapons/Combat
+Hexagon - Economy
+Gear - Info
+
+
+DIMENSION IDs: [default]
+
+[-11325] - Deep Dark
+[-9999]- Quantum Quarry Dimension
+[-10] - Mining Dimension
+[-2] - Space Station
+-1 - Nether
+0 - Overworld
+1 - End
+2 - ? - Advanced Rocketry planets
+[144] - Pocket Dimension (Compact Machines 3)

@@ -2,6 +2,12 @@ uses 50% more rf than the smelting recipe (3,000), but takes the same amount of 
 - tiny items take 1,000 and 5 seconds
 - big items take 9,000 and 15 seconds
 
+
+non-scrap items take 1,500 and 5 seconds
+- gives double the items in terms of nuggets (e.g. small scrap becomes 6 nuggets)
+- gives double the XP of smelting the scrap
+
+
 gives double the items (6 nuggets instead of the normal 3)
 - exceptions for hybrid items (like Rose Gold)
 - tiny items give 2 nuggets

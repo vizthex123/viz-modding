@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "klein-star",
+    "category": "ancient_alchemy"
+  },
+  "content": {
+    "title": "The Klein Star",
+    "body": "The Klein Star is an ancient relic, as old as the art of alchemy itself. It harnesses the power of alchemical fuels to store EMC.\nSadly though, it’s been fragmented due to the passage of time. But the art is not lost! \nTalented alchemists are able to re-forge this ancient relic, and use its power for themselves.\nAll we can do is hope that whoever crafts it is not bound to the forces of evil."
+  },
+  "sortingIndex": 3,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

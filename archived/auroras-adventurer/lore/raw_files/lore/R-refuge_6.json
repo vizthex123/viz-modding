@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge6",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page VI",
+    "body": "This time though; they made sure the portal would destroy itself after everyone had entered, to ensure that never again would the Necromancers attack.\nIt is said that this worked, and the Necromancers never found their secret realm; nor were they able to construct the portal again.\nNow, this story has all but faded into myth and obscurity. None of the descendants know or even remember any of this happening."
+  },
+  "sortingIndex": 5,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

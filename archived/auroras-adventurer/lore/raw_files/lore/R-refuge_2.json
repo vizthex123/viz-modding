@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "refuge2",
+    "category": "the_last_refuge"
+  },
+  "content": {
+    "title": "The Last Refuge - Page II",
+    "body": "The other faction, however, vehemently opposed this view. They thought that you should leave bodies to their rest, to have a peaceful death.\nThe great war was fought, and the Necromancers won due to their vast army. Our noble faction retreated back to our realm, broken and defeated, with countless thousands dead on the battlefield; seeking a place to hide."
+  },
+  "sortingIndex": 1,
+  "requirements": [],
+  "defaultLore": false,
+  "autoAdd": false
+}

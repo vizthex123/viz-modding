@@ -1,0 +1,14 @@
+{
+  "key": {
+    "id": "life_theory",
+    "category": "observations"
+  },
+  "content": {
+    "title": "Theory: Planetary Lifeforms",
+    "body": "I've only spent a few days here, but the biodiversity is truly astounding for such a remote planet. I've even encountered some species I thought were only native to Earth - which means they were imported here by someone (or possibly evolved parallel to those on Earth).\nI've also encountered many humanoid creatures (who have all proven hostile), and even a few human skeletons that are able to move (despite the lack of muscle tissue). I don't even know how that's possible, but there must be an explanation.\nIt does seem like the \"plague\" mentioned in some logs of the village I crashed landed in has managed to spread here, leading me to believe one of two possibilities:\n\n1) Some survivors managed to escape in one way or another and are the humanoid creatures I've encountered, meaning that this pathogen is able to rewrite DNA\n2) It spread from another planet (or individual) who either crashed or landed here.\n3) The plague originated here\n\nI don't yet have enough evidence to support the first two theories, but I do believe them to be the most plausible explanations. The third one is more of an edge case with little evidence, but it is still possible.\nIf the "
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": false,
+  "defaultLore": false
+}

@@ -161,6 +161,8 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fuel_gaseous_heat_2>, 12
 
 
 # Enervation Dynamo
+mods.thermalexpansion.EnervationDynamo.addFuel(<aether_legacy:golden_amber>, 100000);
+mods.thermalexpansion.EnervationDynamo.addFuel(<aether_legacy:enchanted_gravitite>, 500000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-core:resource_item:105>, 88000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<projectred-exploration:stone:11>, 880000);
 mods.thermalexpansion.EnervationDynamo.addFuel(<theaurorian:trophykeeper>, 50000);
